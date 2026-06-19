@@ -394,6 +394,31 @@ equipment_modules = {
 		}
 	}
 
+	tank_medium_plav_tank_turret = {
+		abbreviation = "fz2"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = { anti_tank }
+		forbid_equipment_type_exact_match = armor
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament 
+			}
+		}
+		add_stats = {
+			breakthrough = 24
+			build_cost_ic = 1
+			defense = 3
+			
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 0
+		multiply_stats = {
+			breakthrough = -0.15
+		}
+	}
+
 	tank_medium_one_man_tank_turret = {
 		abbreviation = "m1m"
 		category = tank_medium_turret_type
