@@ -1,0 +1,74 @@
+add_namespace = fra_congress
+
+country_event = {
+	id = fra_congress.1
+	title = fra_congress.1t
+	desc = fra_congress.1d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fra_congress.a
+		create_wargoal = {
+        	type = take_state_focus
+        	target = GER
+        	expire = 0	
+    	}
+		add_timed_idea = {
+			idea = FRA_start_offensive
+			days = 70
+		}
+	}
+}
+add_namespace = fra_anatolia
+
+country_event = {
+	id = fra_anatolia.1
+	title = fra_anatolia.1t
+	desc = fra_anatolia.1d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = fra_anatolia.a
+		create_wargoal = {
+			type = take_state_focus
+			target = TUR
+			expire = 0
+		}
+	}
+}
+add_namespace = fra_with_eng
+
+country_event = {
+	id = fra_with_eng.1
+	title = fra_with_eng.1t
+	desc = fra_with_eng.1d
+	picture = GFX_report_event_french_british_officers
+
+	is_triggered_only = yes
+
+	option = {
+		name = fra_with_eng.a
+		add_to_faction = FRA
+	}
+
+	option = {
+		name = fra_with_eng.b
+		add_opinion_modifier = {
+				target = ROOT
+				modifier = FRA_go_with_britain_reject
+			}
+		FRA = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+				expire = 0
+			}
+		}
+		
+	}
+}	
+	

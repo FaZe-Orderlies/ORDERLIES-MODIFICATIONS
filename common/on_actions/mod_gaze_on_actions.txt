@@ -1,0 +1,35 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_timed_idea = {
+                    idea = starting_production
+                    days = 30
+                }
+				add_timed_idea = {
+                    idea = starting_doc
+                    days = 1095
+                }
+				if = {
+					limit = {
+						is_ai = no
+					}
+					country_event = { id = startup.institut.1 }
+				}
+			}
+		}
+	}
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = {
+					USA = {
+						has_war_with = CAN
+						has_government = communism
+					}
+				}
+				set_cosmetic_tag = COM_UNIT_USA
+			}
+		}
+	}
+}

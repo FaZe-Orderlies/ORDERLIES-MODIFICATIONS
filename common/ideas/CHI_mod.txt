@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+		CHI_low_supp_from_usa = {
+			picture = CHI_baojia_system
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = JAP    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		
+		CHI_great_supp_from_usa = {
+			allowed = {
+                always = no
+            }
+			picture = CHI_baojia_system
+			removal_cost = -1
+			targeted_modifier = {
+				tag = JAP    # this can also take a variable that stores a scope
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		CHI_USA_attache = {
+			allowed = {
+				always = no
+			}
+			picture = GER_attack_usa
+			removal_cost = -1
+			on_add = {
+				add_daily_mastery = {
+					amount = 0.25
+					days = 250	
+					name = usa_attache
+					folder = land
+					grand_doctrine = grand_battleplan
+					track = infantry
+					index = 1
+					
+				}
+			}
+			modifier = {
+				custom_modifier_tooltip = usa_attache_tt
+			}
+		}
+	}
+}

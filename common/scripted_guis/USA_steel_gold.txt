@@ -1,0 +1,89 @@
+scripted_gui = {
+	usa_steel_gold_ui = {
+		context_type = decision_category
+		window_name = "usa_steel_gold_ui"
+		properties = {
+			usa_steel_gold_fra = {
+			    image = "[fra_gay_mod]"
+			}
+			usa_steel_gold_ger = {
+			    image = "[bel_gay_mod]"
+			}
+			usa_steel_gold_uk = {
+			    image = "[uk_gay_mod]"
+			}
+		}
+		effects = {
+			clear_all_click = {
+				set_country_flag = clear_all
+			}
+			usa_steel_gold_fra_click = {
+				set_country_flag = Usa_gold_fra_preready
+				clr_country_flag = clear_all
+				if = {
+					limit = {
+						has_country_flag = Usa_gold_bel_preready #бельгия
+					}
+					clr_country_flag = Usa_gold_bel_preready #бельгия
+				}
+				else_if = {
+					limit = {
+						has_country_flag = Usa_gold_uk_preready #англия
+					}
+					clr_country_flag = Usa_gold_uk_preready #англия
+				}
+			}
+			usa_steel_gold_ger_click = {
+				set_country_flag = Usa_gold_bel_preready
+				clr_country_flag = clear_all
+				if = {
+					limit = {
+						has_country_flag = Usa_gold_fra_preready #фра
+					}
+					clr_country_flag = Usa_gold_fra_preready #фра
+				}
+				else_if = {
+					limit = {
+						has_country_flag = Usa_gold_uk_preready #англия
+					}
+					clr_country_flag = Usa_gold_uk_preready #англия
+				}
+			}
+			usa_steel_gold_uk_click = {
+				set_country_flag = Usa_gold_uk_preready
+				clr_country_flag = clear_all
+				if = {
+					limit = {
+						has_country_flag = Usa_gold_fra_preready #бельгия
+					}
+					clr_country_flag = Usa_gold_fra_preready #бельгия
+				}
+				else_if = {
+					limit = {
+						has_country_flag = Usa_gold_bel_preready #фра
+					}
+					clr_country_flag = Usa_gold_bel_preready #фра
+				}
+			}
+		}
+
+		triggers = {
+			usa_steel_gold_fra_click_enabled = {
+				has_completed_focus = USA_gold_1
+			}
+			fra_not_avalable_fake_visible = {
+				NOT = {
+					has_completed_focus = USA_gold_1
+				}
+			}
+			usa_steel_gold_ger_click_enabled = {
+				has_completed_focus = USA_gold_2
+			}
+			bel_not_avalable_fake_visible = {
+				NOT = {
+					has_completed_focus = USA_gold_2
+				}
+			}
+		}
+	}
+}

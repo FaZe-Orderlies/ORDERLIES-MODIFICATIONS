@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_tank_medium_plav_tank_turret"
+		textureFile = "gfx\interface\equipmentdesigner\tanks\modules\tank_medium_plav_tank_turret.dds"
+		legacy_lazy_load = no
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_tank_faze_cannon_1"
+		textureFile = "gfx\interface\equipmentdesigner\tanks\modules\tank_faze_cannon_1.dds"
+		legacy_lazy_load = no
+	}
+}

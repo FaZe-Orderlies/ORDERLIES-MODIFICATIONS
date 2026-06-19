@@ -1,0 +1,9 @@
+﻿templates_category = {
+}
+    template_decisions = {
+    icon = GFX_decision_category_army_reform
+    visible_when_empty = no 
+    
+    allowed = {
+    }
+}

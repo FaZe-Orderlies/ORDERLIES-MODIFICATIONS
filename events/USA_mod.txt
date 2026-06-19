@@ -1,0 +1,523 @@
+add_namespace = USA_revolution
+
+country_event = {
+	id = USA_revolution.1
+	title = USA_revolution.1t
+	desc = USA_revolution.1d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_revolution.a
+		hidden_effect = {
+			378 = { set_demilitarized_zone = yes }
+			379 = { set_demilitarized_zone = yes }
+			377 = { set_demilitarized_zone = yes }
+			385 = { set_demilitarized_zone = yes }
+			386 = { set_demilitarized_zone = yes }
+			387 = { set_demilitarized_zone = yes }
+			380 = { set_demilitarized_zone = yes }
+			388 = { set_demilitarized_zone = yes }
+			382 = { set_demilitarized_zone = yes }
+			376 = { set_demilitarized_zone = yes }
+			375 = { set_demilitarized_zone = yes }
+			381 = { set_demilitarized_zone = yes }
+
+			add_war_support = 0.20
+			add_threat = 10
+		}
+		custom_effect_tooltip = USA_revolutionlc
+	}
+}
+
+add_namespace = USA_new_england
+
+country_event = {
+	id = USA_new_england.1
+	title = USA_new_england.1t
+	desc = USA_new_england.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_new_england.a
+		CAN = {
+			transfer_state = 357
+			add_state_core = 357
+			transfer_state = 358
+			add_state_core = 358
+			transfer_state = 463
+			add_state_core = 463
+			transfer_state = 650
+			add_state_core = 650
+		}
+		ENG = {
+			transfer_state = 685
+			transfer_state = 686
+		}
+	}
+
+	option = {
+		name = USA_new_england.b
+		ENG = {
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 685
+			transfer_state = 686
+		}
+		CAN = {
+			transfer_state = 463
+			add_state_core = 463
+			transfer_state = 650
+			add_state_core = 650
+		}
+	}
+
+	
+}
+
+add_namespace = USA_Breakthrough_to_Hawaii
+
+country_event = {
+	id = USA_Breakthrough_to_Hawaii.1
+	title = USA_Breakthrough_to_Hawaii.1t
+	desc = USA_Breakthrough_to_Hawaii.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_Breakthrough_to_Hawaii.a
+		hidden_effect = {
+			JAP = {
+				transfer_state = 629
+				transfer_state = 630
+				transfer_state = 631
+				transfer_state = 632
+				transfer_state = 727
+				transfer_state = 642
+				transfer_state = 638
+			}
+			USA = {
+				end_puppet = PHI
+			}
+			USA = {
+				dismantle_faction = yes
+			}
+		}
+		custom_effect_tooltip = USA_Breakthrough_to_Hawaii.1_tt
+	}
+
+}
+
+add_namespace = USA_back_power_on_states
+
+country_event = {
+	id = USA_back_power_on_states.1
+	title = USA_back_power_on_states.1t
+	desc = USA_back_power_on_states.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_back_power_on_states.a
+		custom_effect_tooltip = USA_back_power_on_states.1_tt
+		hidden_effect = {
+			381 = { set_demilitarized_zone = no }
+			385 = { set_demilitarized_zone = no }
+			386 = { set_demilitarized_zone = no }
+			387 = { set_demilitarized_zone = no }
+			388 = { set_demilitarized_zone = no }
+			382 = { set_demilitarized_zone = no }
+			376 = { set_demilitarized_zone = no }
+			375 = { set_demilitarized_zone = no }
+		}
+	}
+}
+
+add_namespace = USA_destroy_macarthur
+
+country_event = {
+	id = USA_destroy_macarthur.1
+	title = USA_destroy_macarthur.1t
+	desc = USA_destroy_macarthur.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_destroy_macarthur.a
+		custom_effect_tooltip = USA_destroy_macarthur.1_tt
+		hidden_effect = {
+			378 = { set_demilitarized_zone = no }
+			379 = { set_demilitarized_zone = no }
+			377 = { set_demilitarized_zone = no }
+			380 = { set_demilitarized_zone = no }
+		}
+	}
+}
+
+add_namespace = USA_claims_on_new_england
+
+country_event = {
+	id = USA_claims_on_new_england.1
+	title = USA_claims_on_new_england.1t
+	desc = USA_claims_on_new_england.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims_on_new_england.a
+		custom_effect_tooltip = USA_claims_on_new_england.a_tt
+		hidden_effect = {
+			USA = {
+				transfer_state = 357
+				transfer_state = 358
+			}
+		}
+	}
+	
+	option = {
+		name = claims_on_new_england.b
+
+		trigger = {
+			country_exists = NEG
+		}
+
+		USA = {
+			create_wargoal = {
+				target = NEG
+				type = take_core_state
+			}
+		}
+		USA = {
+			create_wargoal = {
+				target = ENG
+				type = take_core_state
+			}
+		}
+
+		USA = {
+			create_wargoal = {
+				target = CAN
+				type = take_core_state
+			}
+		}
+		
+	}
+
+	option = {
+		name = claims_on_new_england.c
+
+		USA = {
+			create_wargoal = {
+				target = ENG
+				type = take_core_state
+			}
+		}
+
+		USA = {
+			create_wargoal = {
+				target = CAN
+				type = take_core_state
+			}
+		}
+	}
+}
+
+add_namespace = USA_open_the_second_front
+
+country_event = {
+	id = USA_open_the_second_front.1
+	title = USA_open_the_second_front.1t
+	desc = USA_open_the_second_front.1d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_open_the_second_front.a
+		SOV = {
+			add_timed_idea = {
+				idea = USA_open_the_second_front
+				days = 100
+			}
+		}
+	}
+}
+
+add_namespace = USA_resources_of_ussr 
+
+country_event = {
+    id = USA_resources_of_ussr.1
+    title = USA_resources_of_ussr.1t
+    desc = USA_resources_of_ussr.1d
+    picture = GFX_x
+
+    is_triggered_only = yes
+
+    option = {
+        name = USA_resources_of_ussr.a
+        SOV = {
+            add_resource = {
+                type = aluminium
+                amount = 25
+                state = 874
+            }
+            add_resource = {
+                type = aluminium
+                amount = 20
+                state = 644
+            }
+        }
+    }
+}
+
+add_namespace = USA_conngress_war_effective
+
+country_event = {
+    id = USA_conngress_war_effective.1
+    title = USA_conngress_war_effective.1t
+    desc = USA_conngress_war_effective.1d
+    picture = GFX_report_event_china_politicians_captured
+
+    is_triggered_only = yes
+
+    option = {
+        name = USA_conngress_war_effective.a
+        USA_congress_large_support = yes
+    }
+}
+
+add_namespace = USA_conngress_war
+
+country_event = {
+    id = USA_conngress_war.1
+    title = USA_conngress_war.1t
+    desc = USA_conngress_war.1d
+    picture = GFX_report_event_china_politicians_captured
+
+    is_triggered_only = yes
+
+    option = {
+        name = USA_conngress_war.a
+		USA_congress_medium_opposition = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		custom_effect_tooltip = USA_more_effective_isolation_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		swap_ideas = {
+			remove_idea = undisturbed_isolation_TWO
+			add_idea = undisturbed_isolation_three
+		}
+		hidden_effect = {
+			country_event = {
+				id = USA_conngress_war_effective.1
+				days = 180
+			}
+		}
+    }
+	
+	option = {
+        name = USA_conngress_war.b
+        add_stability = 0.15
+		custom_effect_tooltip = generic_skip_one_line_tt
+		swap_ideas = {
+			remove_idea = undisturbed_isolation_TWO
+			add_idea = undisturbed_isolation_three
+		}
+    }
+}
+
+add_namespace = my_news_event_USA
+news_event = {
+    id = my_news_event_USA.1
+	picture = GFX_news_event_USA_contact_gov
+    title = {
+        text = my_event.1.t
+    }
+    desc = {
+        text = my_event.1.desc
+    }
+    
+    is_triggered_only = yes
+    
+    
+    option = {
+        name = my_news_event.1.c
+    }
+}
+
+add_namespace = USA_need_military_bases
+
+country_event = {
+	id = USA_need_military_bases.1
+	title = USA_need_military_bases.1t
+	desc = USA_need_military_bases.1d
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+
+	option = { 
+		ai_chance = {
+			base = 8
+		}
+		name = USA_need_military_bases.a
+		ROOT = {
+			give_military_access = USA
+			diplomatic_relation = {
+				country = USA
+				relation = non_aggression_pact
+				active = yes
+			}
+			add_ideas = { USA_army_in_our_country }
+		}
+	}
+	option = {
+		name = USA_need_military_bases.b
+		USA = {
+			ai_chance = {
+				base = 8
+			}
+			create_wargoal = {
+				target = ROOT
+				type = liberate_wargoal
+			}
+			diplomatic_relation = {
+				country = root
+				relation = embargo
+				active = yes
+			}
+		}
+	}
+	
+}
+
+add_namespace = USA_against_jap
+
+country_event = {
+	id = USA_against_jap.1
+	title = USA_against_jap.1t
+	desc = USA_against_jap.1d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_against_jap.a
+		ROOT = {
+			add_ideas = { USA_against_jap }
+		}
+	}
+}
+
+add_namespace = USA_against_eng
+
+country_event = {
+	id = USA_against_eng.1
+	title = USA_against_eng.1t
+	desc = USA_against_eng.1d
+	picture = GFX_report_event_canadian_artillery
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_against_jap.a
+		ROOT = {
+			add_ideas = { USA_against_eng }
+		}
+	}
+}
+
+add_namespace = USA_trade_agreement
+
+country_event = {
+	id = USA_trade_agreement.1
+	title = USA_trade_agreement.1t
+	desc = USA_trade_agreement.1d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_trade_agreement.a
+		custom_effect_tooltip = Trade_agreement
+	}
+}
+
+add_namespace = USA_trade_agreement_improve 
+
+country_event = {
+	id = USA_trade_agreement_improve.1
+	title = USA_trade_agreement_improve.1t
+	desc = USA_trade_agreement_improve.1d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_trade_agreement_improve.a
+		ROOT = {
+			swap_ideas = {
+				remove_idea = USA_trade_agreements
+				add_idea = 	USA_trade_agreements_improve
+			}
+		}
+	}
+}
+
+add_namespace = USA_allience
+
+country_event = {
+	id = USA_allience.1
+	title = USA_allience.1t
+	desc = USA_allience.1d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_allience.a
+		set_country_flag = USA_yes_allience
+	}
+	option = {
+		name = USA_allience.b
+		set_country_flag = USA_no_allience
+		custom_effect_tooltip = no_usa_with_us_tt
+	}
+}
+
+add_namespace = USA_bases_in_atlantika_one
+country_event = {
+	id = USA_bases_in_atlantika_one.1
+	title = USA_bases_in_atlantika_one.1t
+	desc = USA_bases_in_atlantika_one.1d
+	picture = GFX_report_event_british_artillery
+
+	is_triggered_only = yes
+	
+	option = {
+		name = USA_bases_in_atlantika.a
+
+		USA = {
+			transfer_state = 689
+			transfer_state = 690
+			transfer_state = 693
+			transfer_state = 308
+			transfer_state = 692
+			transfer_state = 691
+			transfer_state = 696
+			transfer_state = 331
+		}
+		add_ideas = USA_esmik
+	}
+
+	option = {
+		name = USA_bases_in_atlantika.b
+
+	}
+}

@@ -1,0 +1,8 @@
+ORDL_decisions2 = {
+    icon = GFX_decision_category_usa_intervention_mandate
+    priority = 50
+    visible_when_empty = yes
+    allowed = { tag = ENG }
+    visible = { tag = ENG }
+    available = { tag = ENG }
+}

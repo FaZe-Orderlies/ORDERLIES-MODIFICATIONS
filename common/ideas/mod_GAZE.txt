@@ -1,0 +1,267 @@
+ideas = {
+
+	country = {
+
+		starting_production = {
+            allowed = {
+                always = no
+            }
+            picture = chi_hyper_inflation5
+            removal_cost = -1
+            modifier = {
+                production_factory_start_efficiency_factor = 0.5
+            }
+        }
+		
+		starting_doc = {
+            allowed = {
+                always = no
+            }
+            picture = generic_guerilla_warfare
+            removal_cost = -1
+            modifier = {
+				custom_modifier_tooltip = daily_dock_tt
+			}
+			on_add = {
+				add_daily_mastery = {
+					amount = 0.4
+					days = 1095	
+					name = daily_doc
+				}
+			}
+        }
+		
+		###ИТА РЕЗИНА
+		ITA_rubber_ger_coop = {
+			picture = fra_down_marianne
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		
+		FRA_french_domination = {
+			picture = vittoria_mutilata
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+
+			}
+		}
+		FRA_use_swiss_gold = {
+				picture = SPR_relocate_the_gold_reserves
+				allowed = {
+					original_tag = FRA
+					always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.15 
+			}
+		}	
+		
+		FRA_start_offensive = {
+			picture = FIN_german_threat
+			allowed = {
+				OR = {
+					original_tag = FRA
+					original_tag = ITA
+					original_tag = POR
+					original_tag = SPR
+				}
+			}
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+   				tag = GER
+    			attack_bonus_against = 0.1
+    			defense_bonus_against = 0.1
+			}
+		}
+		
+		FRA_old_and_good_capitalism = {
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+
+		}
+
+		FRA_restoration_of_the_nobility = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.10
+				stability_weekly = 0.0025
+			}
+
+		}
+
+		FRA_old_capitalism = {
+			picture = generic_economic_increase
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.25
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = 0.10
+			}
+
+		}
+
+		FRA_napoleon_army = {
+			picture = raj_heavy_vehicles_factory_avadi
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_armor_defence_factor = 0.10
+				max_planning = 0.10	
+				planning_speed = 0.10
+				experience_gain_factor = 0.10
+			}
+
+		} 
+		
+		FRA_traditional = {
+			picture = BEL_traditional_family_values
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.25
+			}
+
+		}
+
+		FRA_neokonservatism = {
+			picture = generic_reserve_divisions
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				navy_advisor_cost_factor  = -0.15 
+				army_advisor_cost_factor = -0.15
+				air_advisor_cost_factor = -0.15
+			}
+
+		}
+
+		FRA_consolidation_power = {
+			picture = AUS_habsburg_monarchy_restored
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = 0.05
+				resistance_target = -0.10
+				political_power_factor = 0.05
+			}
+
+		}
+
+		FRA_dios_patria_rey = {
+			picture = spa_carlism
+			allowed = {
+				original_tag = FRA
+				always = no 
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.10
+				democratic_drift = -0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+				stability_factor = 0.10
+			}
+
+		}
+
+		FRA_nationalization1 = {
+			picture = idea_generic_sea_focused_navy
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+
+		FRA_hui_soset = {
+
+			picture = generic_army_problems
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+   				tag = GER
+    			attack_bonus_against = -0.20
+    			defense_bonus_against = 0.1
+			}
+		}
+
+	}	
+
+}

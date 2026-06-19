@@ -1,0 +1,13 @@
+defined_text = { 
+	name = get_fra_steeled_gold
+	text = {
+		localization_key = GFX_FRA_EU_ALLY_GUI
+	}
+}
+
+defined_text = { 
+	name = get_ger_steeled_gold
+	text = {
+		localization_key = GFX_GER_EU_gui
+	}
+}

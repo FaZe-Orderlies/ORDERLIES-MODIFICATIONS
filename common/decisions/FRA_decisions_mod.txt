@@ -1,0 +1,75 @@
+
+FRA_integrate_conquered_territories = {
+    
+FRA_core_conquered_state = {
+
+icon = GFX_decision_generic_form_nation
+
+        ai_will_do = {
+            base = 50
+        }
+
+        allowed = {
+            original_tag = FRA
+        }
+
+        available = {
+            OR = {
+                has_completed_focus = FRA_fraspain5
+            }
+        } 
+
+        visible = { 
+            OR = {
+                has_completed_focus = FRA_fraspain5
+            } 
+        }
+
+        state_target = any_owned_state
+
+        target_trigger = {
+            FROM = {
+                impassable = no
+                AND = {
+                    OR = {
+                        state = 8
+                        state = 980
+                        state = 34
+                        state = 6
+                        state = 977
+                        state = 35
+                        state = 7
+                        state = 36
+                        state = 180
+                        state = 181
+                        state = 112
+                        state = 795
+                        state = 179
+                        state = 697
+                        state = 698
+                    }
+                    is_owned_and_controlled_by = ROOT
+                }
+                NOT = {
+                    is_core_of = ROOT
+                }
+            }
+        }
+
+        on_map_mode = map_and_decisions_view 
+        cost = 75
+
+        fire_only_once = yes
+        days_remove = 35
+
+        modifier = {
+            political_power_factor = -0.15
+        }
+
+        remove_effect = {
+            FROM = {
+                add_core_of = ROOT
+            }
+        }
+    }
+}

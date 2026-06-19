@@ -1,0 +1,416 @@
+add_namespace = USA_gold_for_fra
+
+country_event = {
+	id = USA_gold_for_fra.1
+	title = USA_gold_for_fra.1t
+	desc = USA_gold_for_fra.1d
+	picture = GFX_report_event_france_tank_production
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_fra.a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = FRA_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = FRA_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_fra.b
+		USA = {
+			add_dynamic_modifier = {
+				modifier = FRA_STEAL_GOLD_dm
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		FRA = {
+			add_dynamic_modifier = {
+				modifier = FRA_get_GOLD_dm
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_fra.2
+	title = USA_gold_for_fra.2t
+	desc = USA_gold_for_fra.2d
+	picture = GFX_report_event_france_tank_production
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_fra.2a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = FRA_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = FRA_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_fra.2b
+		USA_steal_gold = yes
+		USA = {
+			add_to_variable = {
+				USA_industrial_capacity_factory_mod_isolation_GOLD = 0.075
+				tooltip = industrial_capacity_factory_tt
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold = yes
+		FRA = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_fra.3
+	title = USA_gold_for_fra.3t
+	desc = USA_gold_for_fra.3d
+	picture = GFX_report_event_france_tank_production
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_fra.3a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = FRA_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = FRA_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_fra.3b
+		USA_steal_gold = yes
+		add_to_variable = {
+			USA_industrial_capacity_factory_mod_isolation_GOLD = 0.1
+			tooltip = industrial_capacity_factory_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold = yes
+		FRA = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_fra.4
+	title = USA_gold_for_fra.4t
+	desc = USA_gold_for_fra.4d
+	picture = GFX_report_event_france_tank_production
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_fra.4a
+		custom_effect_tooltip = FRA_for_usa_no_gold
+	}
+}
+##################################################################################################################################################
+add_namespace = USA_gold_for_uk
+
+country_event = {
+	id = USA_gold_for_uk.1
+	title = USA_gold_for_uk.1t
+	desc = USA_gold_for_uk.1d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_uk.a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = UK_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = UK_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_uk.b
+		USA = {
+			add_dynamic_modifier = {
+				modifier = uk_STEAL_GOLD_dm
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		ENG = {
+			add_dynamic_modifier = {
+				modifier = uk_get_GOLD_dm
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_uk.2
+	title = USA_gold_for_uk.2t
+	desc = USA_gold_for_uk.2d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_uk.2a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = UK_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = UK_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_uk.2b
+		USA_steal_gold_uk = yes
+		USA = {
+			add_to_variable = {
+				industrial_capacity_dockyard_war_time_GOLD = 0.075
+				tooltip = industrial_capacity_dockyard_tt
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold_uk_tt = yes
+		ENG = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden_uk = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_uk.3
+	title = USA_gold_for_uk.3t
+	desc = USA_gold_for_uk.3d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_uk.3a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = UK_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = UK_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_uk.3b
+		USA_steal_gold_uk = yes
+		add_to_variable = {
+			industrial_capacity_dockyard_war_time_GOLD = 0.1
+			tooltip = industrial_capacity_dockyard_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold_uk_tt = yes
+		ENG = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden_uk = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}
+##################################################################################################################################################
+add_namespace = USA_gold_for_bel
+
+country_event = {
+	id = USA_gold_for_bel.1
+	title = USA_gold_for_bel.1t
+	desc = USA_gold_for_bel.1d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_bel.a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = BEL_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = BEL_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_bel.b
+		USA = {
+			add_dynamic_modifier = {
+				modifier = bel_STEAL_GOLD_dm
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold_bel = yes
+		BEL = {
+			add_dynamic_modifier = {
+				modifier = bel_get_GOLD_dm
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_bel.2
+	title = USA_gold_for_bel.2t
+	desc = USA_gold_for_bel.2d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_bel.2a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = BEL_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = BEL_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_bel.2b
+		USA_steal_gold_bel = yes
+		USA = {
+			add_to_variable = {
+				production_factory_max_efficiency_factor_gold_gui = 0.075
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold_bel = yes
+		BEL = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden_bel = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA_gold_for_bel.3
+	title = USA_gold_for_bel.3t
+	desc = USA_gold_for_bel.3d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_gold_for_bel.3a
+		trigger = {
+			USA = {
+				NOT = {
+					has_country_flag = BEL_no_gold
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				set_country_flag = BEL_no_gold
+				country_event = USA_gold_for_fra.4
+			}
+		}
+		custom_effect_tooltip = FRA_gold_brake_tt
+	}
+	
+	option = {
+		name = USA_gold_for_bel.3b
+		USA_steal_gold_bel = yes
+		add_to_variable = {
+			production_factory_max_efficiency_factor_gold_gui = 0.1
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA_get_gold_bel = yes
+		BEL = {
+			add_to_variable = {
+				USA_consumer_goods_expected_value_mod_golden_bel = -0.05
+				tooltip = USA_solve_economic_problems_TT
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+FRA_integralism_script = {
+	custom_effect_tooltip = FRA_integralism_script_tt
+}
+FRA_imperial_economic_script = {
+	custom_effect_tooltip = FRA_imperial_economic_script_tt
+}
+USA_american_people_front = {
+	custom_effect_tooltip = USA_american_people_front_tt
+}
+USA_oil_problem = {
+	custom_effect_tooltip = USA_oil_problem_tt
+}
+USA_isolation = {
+	custom_effect_tooltip = USA_isolation_tt
+}
+USA_navy_commisariat = {
+	custom_effect_tooltip = USA_navy_commisariat_tt
+}
+USA_resource_gay = {
+	custom_effect_tooltip = USA_resource_gay_tt
+}
+USA_war_time = {
+	custom_effect_tooltip = USA_war_time_tt
+}
+GER_reichsform = {
+	custom_effect_tooltip = GER_reichsform_tt
+}
+USA_steal_gold = {
+	custom_effect_tooltip = USA_steal_gold_tt
+}
+USA_get_gold = {
+	custom_effect_tooltip = USA_get_gold_tt
+}
+USA_steal_gold_uk = {
+	custom_effect_tooltip = USA_steal_gold_uk_tt
+}
+USA_get_gold_uk = {
+	custom_effect_tooltip = USA_get_gold_uk_tt
+}
+USA_steal_gold_bel = {
+	custom_effect_tooltip = USA_steal_gold_bel_tt
+}
+USA_get_gold_bel = {
+	custom_effect_tooltip = USA_get_gold_bel_tt
+}
+USA_whiter_plan = {
+	custom_effect_tooltip = USA_whiter_plan_tt
+}
+USA_PENTAGON_mod = {
+	custom_effect_tooltip = USA_PENTAGON_TT
+}
+USA_army = {
+	custom_effect_tooltip = USA_army_tt
+}
+USA_airforce = {
+	custom_effect_tooltip = USA_airforce_tt
+}
+USA_fleet = {
+	custom_effect_tooltip = USA_fleet_tt
+}
+POR_economy = {
+	custom_effect_tooltip = POR_economy_tt
+}
+SAF_economic = {
+	custom_effect_tooltip = SAF_economic_tt
+}
+SAF_army ={
+	custom_effect_tooltip = SAF_army_tt
+}
+ROM_mod = {
+	custom_effect_tooltip = ROM_mod_tt
+}

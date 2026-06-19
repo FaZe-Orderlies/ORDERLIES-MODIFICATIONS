@@ -1,0 +1,12 @@
+defined_text = {
+	name = alternativegermanyhabsburg
+	text = {
+		trigger = {
+			has_completed_focus = GER_habsburger
+		}
+		localization_key = GER_carve_up_czechoslovakia_hab
+	}
+	text = {
+		localization_key = GER_carve_up_czechoslovakia
+	}
+}

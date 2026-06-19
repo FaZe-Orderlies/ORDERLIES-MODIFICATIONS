@@ -1,0 +1,1309 @@
+USA_steel_gold_dec_cat = {
+
+	USA_offer_to_get_gold_from_fra_Starter = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 50
+		visible = {
+			has_country_flag = Usa_gold_fra_preready
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = FRA_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					FRA = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = FRA_get_gold_pressed
+				set_country_flag = USA_starter
+			}
+			activate_mission = USA_offer_to_get_gold_from_fra_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_fra_middle = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 100
+		visible = {
+			has_country_flag = Usa_gold_fra_preready
+			has_country_flag = USA_middle
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = FRA_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					FRA = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = FRA_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_fra_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_fra_final = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 150
+		visible = {
+			has_country_flag = Usa_gold_fra_preready
+			has_country_flag = USA_final
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = FRA_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					FRA = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = FRA_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_fra_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_fra_mission = {
+		activation = {always = no}
+		available = {always = no}
+		visible = { 
+			has_country_flag = FRA_get_gold_pressed
+		}
+		days_mission_timeout = 180
+		cost = 0
+		fire_only_once = no
+		complete_effect = {}
+		timeout_effect = {
+			IF = {
+				limit = {
+					has_country_flag = USA_starter
+				}
+				clr_country_flag = USA_starter
+				set_country_flag = USA_middle
+				FRA = {
+					country_event = USA_gold_for_fra.1
+				}
+			}
+			else_if = {
+				clr_country_flag = USA_middle
+				set_country_flag = USA_final
+				FRA = {
+					country_event = USA_gold_for_fra.2 
+				}
+			}
+			else_if = {
+				FRA = {
+					country_event = USA_gold_for_fra.3
+				}
+			}
+			
+			hidden_effect = {
+				clr_country_flag = FRA_get_gold_pressed
+				clr_country_flag = BEL_get_gold_pressed
+				clr_country_flag = UK_get_gold_pressed
+			}
+		}
+	}
+	
+######################################################################################################################################################################
+	
+	USA_offer_to_get_gold_from_uk_starter = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 50
+		visible = {
+			has_country_flag = Usa_gold_uk_preready
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = UK_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					ENG = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = UK_get_gold_pressed
+				set_country_flag = UK_starter
+			}
+			activate_mission = USA_offer_to_get_gold_from_uk_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_uk_middle = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 100
+		visible = {
+			has_country_flag = Usa_gold_uk_preready
+			has_country_flag = UK_middle
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = UK_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					ENG = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = UK_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_uk_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_uk_final = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 150
+		visible = {
+			has_country_flag = UK_final
+			has_country_flag = Usa_gold_uk_preready
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_bel_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = UK_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					ENG = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = UK_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_uk_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_uk_mission = {
+		activation = {always = no}
+		available = {always = no}
+		visible = { 
+			has_country_flag = UK_get_gold_pressed
+		}
+		days_mission_timeout = 180
+		cost = 0
+		fire_only_once = no
+		complete_effect = {}
+		timeout_effect = {
+			IF = {
+				limit = {
+					has_country_flag = UK_starter
+				}
+				clr_country_flag = UK_starter
+				set_country_flag = UK_middle
+				ENG = {
+					country_event = USA_gold_for_uk.1
+				}
+			}
+			else_if = {
+				clr_country_flag = UK_middle
+				set_country_flag = UK_final
+				ENG = {
+					country_event = USA_gold_for_uk.2
+				}
+			}
+			else_if = {
+				ENG = {
+					country_event = USA_gold_for_uk.3
+				}
+			}
+			
+			hidden_effect = {
+				clr_country_flag = FRA_get_gold_pressed
+				clr_country_flag = BEL_get_gold_pressed
+				clr_country_flag = UK_get_gold_pressed
+			}
+		}
+	}
+	
+######################################################################################################################################################################
+	
+	USA_offer_to_get_gold_from_bel_starter = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 50
+		visible = {
+			has_country_flag = Usa_gold_bel_preready
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = BEL_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					BEL = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BEL_get_gold_pressed
+				set_country_flag = BEL_starter
+			}
+			activate_mission = USA_offer_to_get_gold_from_BEL_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_bel_middle = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 100
+		visible = {
+			has_country_flag = Usa_gold_bel_preready
+			has_country_flag = BEL_middle
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = BEL_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					BEL = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BEL_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_BEL_mission
+		}
+	}
+	
+	USA_offer_to_get_gold_from_bel_final = {
+		allowed = {
+			original_tag = USA
+		}
+		fire_only_once = yes
+		cost = 150
+		visible = {
+			has_country_flag = Usa_gold_bel_preready
+			has_country_flag = BEL_final
+			NOT = {
+				OR = {
+					has_country_flag = Usa_gold_uk_preready
+					has_country_flag = Usa_gold_fra_preready
+					has_country_flag = BEL_no_gold
+					has_country_flag = FRA_get_gold_pressed
+					has_country_flag = UK_get_gold_pressed
+					has_country_flag = BEL_get_gold_pressed
+					has_country_flag = clear_all
+					BEL = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+		priority = 1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BEL_get_gold_pressed
+			}
+			activate_mission = USA_offer_to_get_gold_from_BEL_mission
+		}
+	}	
+	
+	USA_offer_to_get_gold_from_BEL_mission = {
+		activation = {always = no}
+		available = {always = no}
+		visible = { 
+			has_country_flag = BEL_get_gold_pressed
+		}
+		days_mission_timeout = 180
+		cost = 0
+		fire_only_once = no
+		complete_effect = {}
+		timeout_effect = {
+			IF = {
+				limit = {
+					has_country_flag = BEL_starter
+				}
+				clr_country_flag = BEL_starter
+				set_country_flag = BEL_middle
+				BEL = {
+					country_event = USA_gold_for_bel.1
+				}
+			}
+			else_if = {
+				clr_country_flag = BEL_middle
+				set_country_flag = BEL_final
+				BEL = {
+					country_event = USA_gold_for_bel.2
+				}
+			}
+			else_if = {
+				BEL = {
+					country_event = USA_gold_for_bel.3
+				}
+			}
+			
+			hidden_effect = {
+				clr_country_flag = FRA_get_gold_pressed
+				clr_country_flag = BEL_get_gold_pressed
+				clr_country_flag = UK_get_gold_pressed
+			}
+		}
+	}
+}
+######################################################################################################################################################################
+USA_chi_supp = {
+	USA_chi_supp_chip_no_senate = {
+		icon = GFX_decision_jap_conquer_china
+		allowed = {
+			original_tag = USA
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = USa_high_sup
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				CHI = {
+					has_idea = CHI_low_supp_from_usa
+				}
+			}
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		cost = 50
+		days_remove = 30 
+		modifier = { 
+			political_power_gain = -0.10
+		}
+		complete_effect = {
+			set_country_flag  = USa_low_sup
+		}
+		remove_effect  = {
+			CHI = {
+				add_timed_idea = {
+					days = 150
+					idea = CHI_low_supp_from_usa
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = USa_low_sup
+			}
+		}
+	}
+	
+	USA_strong_supp_without_senat = {
+		icon = GFX_decision_jap_conquer_china
+		allowed = {
+			original_tag = USA
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		available = {
+			command_power > 29
+			has_political_power > 99
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = USa_low_sup
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				CHI = {
+					has_idea = CHI_great_supp_from_usa
+				}
+			}
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		custom_cost_trigger = {
+	    	command_power > 29
+	    	has_political_power > 99
+	    }
+		custom_cost_text = decision_cost_CP_30_mod
+		days_remove = 30 
+		modifier = { 
+			political_power_gain = -0.15 
+			consumer_goods_expected_value = 0.05
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_command_power = -30
+				set_country_flag = USa_high_sup
+			}
+		}
+		remove_effect  = {
+			CHI = {
+				add_timed_idea = {
+					days = 150
+					idea = CHI_great_supp_from_usa
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = USa_high_sup
+			}
+		}
+	}
+	
+	USA_lend_lease_supp = {
+		icon = GFX_decision_jap_conquer_china
+		allowed = {
+			original_tag = USA
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_1 > 1499
+				anti_air_equipment_1 > 399
+			}
+		}
+		days_re_enable = 180
+		visible = {
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		custom_cost_trigger = {
+	    	has_equipment = {
+				infantry_equipment_1 > 5999
+				anti_air_equipment_1 > 399
+			}
+	    }
+		custom_cost_text = decision_cost_INF_1500
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = -6000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment_1
+					amount = -400
+					producer = USA
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment_1
+				amount = 6000
+				target = CHI
+			}
+			send_equipment = {
+				equipment = anti_air_equipment_1
+				amount = 400
+				target = CHI
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	USA_lend_lease_supp_air = {
+		icon = GFX_decision_jap_conquer_china
+		allowed = {
+			original_tag = USA
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		available = {
+			has_equipment = {
+				small_plane_airframe_1 > 149
+			}
+		}
+		days_re_enable = 180
+		visible = {
+			CHI = {
+				has_war_with = JAP
+			}
+			has_completed_focus = USA_get_air_to_china
+		}
+		custom_cost_trigger = {
+	    	has_equipment = {
+				small_plane_airframe_1 > 149
+			}
+	    }
+		custom_cost_text = decision_cost_air_150
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					variant_name = "Me 115 China"
+					type = small_plane_airframe_1
+					amount = -150
+					producer = USA
+				}
+			}
+			CHI = {
+				add_equipment_to_stockpile = {
+					amount = 150
+					variant_name = "Me 115 China"
+					type = small_plane_airframe_1
+					producer = USA
+				}
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+}
+######################################################################################################################################################################
+
+######################################ПЕЙ ЕНД ГОУ#############################################################################################################################
+USA_pay_and_go_cat = {
+	ENG_pay_and_go = {
+		allowed = {
+			original_tag = USA
+			ENG = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_2 > 3499
+			}
+			ENG = {
+				exists = yes
+			}
+		}
+		visible = {
+			ENG = {
+				exists = yes
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				infantry_equipment_2 > 3499
+			}
+	    }
+		custom_cost_text = decision_cost_INF_2500
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = -3500
+					producer = USA
+				}
+			}
+			USA = {
+				374 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = infantry_equipment_2
+				amount = 3500
+				target = ENG
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	ENG_pay_and_go_DOPP = {
+		allowed = {
+			original_tag = USA
+			ENG = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				support_equipment_1 > 699
+			}
+			ENG = {
+				exists = yes
+			}
+		}
+		visible = {
+			ENG = {
+				exists = yes
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				support_equipment_1 > 699
+			}
+	    }
+		custom_cost_text = decision_cost_dopp_700
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = -700
+					producer = USA
+				}
+			}
+			USA = {
+				382 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = support_equipment_1
+				amount = 700
+				target = ENG
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	ENG_pay_and_go_ARTA = {
+		allowed = {
+			original_tag = USA
+			ENG = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				artillery_equipment_2 > 499
+			}
+			ENG = {
+				exists = yes
+			}
+		}
+		visible = {
+			ENG = {
+				exists = yes
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				artillery_equipment_2 > 499
+			}
+	    }
+		custom_cost_text = decision_cost_ARTA_499
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = -500
+					producer = USA
+				}
+			}
+			USA = {
+				391 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = artillery_equipment_2
+				amount = 500
+				target = ENG
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	FRA_pay_and_go_ARTA = {
+		allowed = {
+			original_tag = USA
+			FRA = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				artillery_equipment_2 > 499
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		visible = {
+			FRA = {
+				exists = yes
+			}
+			USA = {
+				has_completed_focus = USA_lend_lease_action
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				artillery_equipment_2 > 499
+			}
+	    }
+		custom_cost_text = fra_decision_cost_ARTA_499
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = -500
+					producer = USA
+				}
+			}
+			USA = {
+				358 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = artillery_equipment_2
+				amount = 500
+				target = FRA
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	FRA_pay_and_go_DOPP = {
+		allowed = {
+			original_tag = USA
+			FRA = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				support_equipment_1 > 699
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		visible = {
+			FRA = {
+				exists = yes
+			}
+			USA = {
+				has_completed_focus = USA_lend_lease_action
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				support_equipment_1 > 699
+			}
+	    }
+		custom_cost_text = fra_decision_cost_dopp_700
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = -700
+					producer = USA
+				}
+			}
+			USA = {
+				357 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = support_equipment_1
+				amount = 700
+				target = FRA
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+	
+	FRA_pay_and_go = {
+		allowed = {
+			original_tag = USA
+			FRA = {
+				exists = yes
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_2 > 3499
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		visible = {
+			FRA = {
+				exists = yes
+			}
+			USA = {
+				has_completed_focus = USA_lend_lease_action
+			}
+		}
+		days_remove = 50
+		days_re_enable = 180
+		custom_cost_trigger = {
+	    	has_equipment = {
+				infantry_equipment_2 > 3499
+			}
+	    }
+		custom_cost_text = fra_decision_cost_INF_2500
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = -3500
+					producer = USA
+				}
+			}
+			USA = {
+				368 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			send_equipment = {
+				equipment = infantry_equipment_2
+				amount = 3500
+				target = FRA
+			}
+			custom_effect_tooltip = USA_lend_lease_supp_tt
+		}
+	}
+}
+######################################ПЕЙ ЕНД ГОУ#############################################################################################################################
+
+USA_form_defens_decision_cat = {
+    USA_invite_to_faction = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+            original_tag = USA
+		}
+		visible = {
+			has_completed_focus = USA_form_defens
+        }
+        available = {
+            has_completed_focus = USA_form_defens
+            FROM = {
+                has_opinion = {
+                    target = ROOT
+                    value > 30
+                }
+            }
+            NOT = {
+                has_war_with = FROM
+            }
+        }
+        on_map_mode = map_and_decisions_view
+        target_trigger = {
+            FROM = { 
+                AND = {
+                    NOT = { 
+                        is_in_faction_with = ROOT
+                        tag = ROOT
+                    }
+                    OR = { 
+                        is_subject = no
+                        is_subject_of = ROOT
+                    }
+                }
+                capital_scope = { is_on_continent = south_america }
+            }
+        }
+        cost = 20
+        ai_will_do = {
+            base = 35
+            modifier = {
+                factor = 0
+                is_in_faction = yes
+            }
+        }
+        fire_only_once = no
+        days_remove = 10
+        complete_effect = {}
+		remove_effect = {
+            FROM = {
+                country_event = {
+                    id = generic.5
+                    hours = 1
+                }
+            }
+            #custom_effect_tooltip = BRA_invite_to_organization_of_american_states_tt
+		}
+    }
+}
+
+USA_com_polux_decision_cat = {
+	USA_mexico = {
+		icon = GFX_decision_category_SOV_paranoia
+        allowed = { always = yes }
+        available = {
+            MEX = { is_subject_of = USA }
+			has_completed_focus = USA_union_of_north_america
+        }
+        visible = { 
+			has_completed_focus = USA_union_of_north_america
+		}
+		cost = 75
+        fire_only_once = yes
+        complete_effect = {
+			annex_country = {
+				target = MEX
+			}
+            every_state = {
+				limit = {
+					is_core_of = MEX
+				}
+				set_compliance = 50
+			}
+        }
+	}
+
+	USA_central_america_com = {
+		icon = GFX_decision_category_SOV_paranoia
+        allowed = { always = yes }
+        available = {
+            GUA = { is_subject_of = USA }
+			HON = { is_subject_of = USA }
+			ELS = { is_subject_of = USA }
+			NIC = { is_subject_of = USA }
+			COS = { is_subject_of = USA }
+			PAN = { is_subject_of = USA }
+			has_completed_focus = USA_union_of_north_america
+        }
+        visible = { 
+			has_completed_focus = USA_union_of_north_america
+		}
+		cost = 100	
+
+        fire_only_once = yes
+        complete_effect = {
+			annex_country = {
+				target = GUA
+			}
+            every_state = {
+				limit = {
+					is_core_of = GUA
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = HON
+			}
+            every_state = {
+				limit = {
+					is_core_of = HON
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = ELS
+			}
+            every_state = {
+				limit = {
+					is_core_of = ELS
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = NIC
+			}
+            every_state = {
+				limit = {
+					is_core_of = NIC
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = COS
+			}
+            every_state = {
+				limit = {
+					is_core_of = COS
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = PAN
+			}
+            every_state = {
+				limit = {
+					is_core_of = PAN
+				}
+				set_compliance = 50
+			}
+        }
+	}
+
+	USA_caribbean_bassein = {
+		icon = GFX_decision_category_SOV_paranoia
+        allowed = { always = yes }
+        available = {
+            CUB = { is_subject_of = USA }
+			HAI = { is_subject_of = USA }
+			DOM = { is_subject_of = USA }
+			has_completed_focus = USA_union_of_north_america
+        }
+        visible = { 
+			has_completed_focus = USA_union_of_north_america
+		}
+		cost = 100	
+
+        fire_only_once = yes
+        complete_effect = {
+			annex_country = {
+				target = CUB
+			}
+            every_state = {
+				limit = {
+					is_core_of = CUB
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = HAI
+			}
+            every_state = {
+				limit = {
+					is_core_of = HAI
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = DOM
+			}
+            every_state = {
+				limit = {
+					is_core_of = DOM
+				}
+				set_compliance = 50
+			}
+        }
+	}
+
+	USA_caribbean_bassein = {
+		icon = GFX_decision_category_SOV_paranoia
+        allowed = { always = yes }
+        available = {
+            CUB = { is_subject_of = USA }
+			HAI = { is_subject_of = USA }
+			DOM = { is_subject_of = USA }
+			has_completed_focus = USA_union_of_north_america
+        }
+        visible = { 
+			has_completed_focus = USA_union_of_north_america
+		}
+		cost = 100	
+
+        fire_only_once = yes
+        complete_effect = {
+			annex_country = {
+				target = CUB
+			}
+            every_state = {
+				limit = {
+					is_core_of = CUB
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = HAI
+			}
+            every_state = {
+				limit = {
+					is_core_of = HAI
+				}
+				set_compliance = 50
+			}
+			annex_country = {
+				target = DOM
+			}
+            every_state = {
+				limit = {
+					is_core_of = DOM
+				}
+				set_compliance = 50
+			}
+        }
+	}
+
+	USA_canada = {
+		icon = GFX_decision_category_SOV_paranoia
+        allowed = { always = yes }
+        available = {
+			controls_state = 276
+			controls_state = 468
+			controls_state = 465
+			controls_state = 464
+			controls_state = 860
+			controls_state = 861
+			controls_state = 466
+			controls_state = 862
+			controls_state = 682
+			controls_state = 866
+			controls_state = 467
+			controls_state = 276
+			controls_state = 867
+			controls_state = 683
+			controls_state = 469
+			controls_state = 470
+			controls_state = 473
+			controls_state = 740
+			controls_state = 739
+			controls_state = 471
+			controls_state = 864
+			controls_state = 472
+			controls_state = 865
+			has_completed_focus = USA_union_of_north_america
+        }
+        visible = { 
+			has_completed_focus = USA_union_of_north_america
+		}
+		cost = 100	
+
+        fire_only_once = yes
+        complete_effect = {
+			annex_country = {
+				target = CAN
+			}
+            every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				set_compliance = 50
+			}
+        }
+	}
+}

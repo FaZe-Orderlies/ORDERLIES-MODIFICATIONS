@@ -1,0 +1,257 @@
+defined_text = {
+	name = USA_plan_economy
+
+	text = {
+		trigger = {
+			USA = {
+				has_completed_focus = USA_tax_for_riches
+			}
+		}
+		localization_key = USA_plan_economy_focus
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_completed_focus = USA_research_council
+			}
+		}
+		localization_key = USA_plan_economy_focus_vpo
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_completed_focus = USA_giant_gets_sexy
+			}
+		}
+		localization_key = USA_plan_economy_focus_partial_intervention
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+		}
+		
+		localization_key = USA_plan_economy_nofocus
+	}
+}
+
+defined_text = {
+	name = USA_FASHIKS_COOL
+
+	text = {
+		trigger = {
+			FRA = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+		}
+		localization_key = USA_yes_fash
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = FRA_no_gold
+			}
+		}
+		localization_key = FRA_no_more_gold
+	}
+	text = {
+		trigger = {
+			FRA = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = USA_no_fash
+	}
+}
+
+defined_text = {
+	name = UK_FASHIKS_COOL
+
+	text = {
+		trigger = {
+			ENG = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+		}
+		localization_key = UK_yes_fash
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = UK_no_gold
+			}
+		}
+		localization_key = UK_no_more_gold
+	}
+	text = {
+		trigger = {
+			ENG = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = UK_no_fash
+	}
+}
+
+defined_text = {
+	name = BEL_FASHIKS_COOL
+
+	text = {
+		trigger = {
+			BEL = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+		}
+		localization_key = BEL_yes_fash
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = BEL_no_gold
+			}
+		}
+		localization_key = BEL_no_more_gold
+	}
+	text = {
+		trigger = {
+			BEL = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = BEL_no_fash
+	}
+}
+
+defined_text = {
+	name = fra_gay_mod
+	text = {
+		trigger = {
+			OR = {
+				FRA = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				USA = {
+					has_country_flag = FRA_no_gold
+				}	
+			}
+		}
+		localization_key = "GFX_FRA_not_available_GUI"
+	}
+	text = {
+		trigger = {
+			FRA = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = "GFX_FRA_EU_ALLY_GUI"
+	}
+}
+
+defined_text = {
+	name = uk_gay_mod
+	text = {
+		trigger = {
+			OR = {	
+				ENG = {
+					OR = {
+						has_government = fascism
+						has_government = communism	
+					}
+				}
+				USA = {
+					has_country_flag = UK_no_gold
+				}
+			}
+		}
+		localization_key = "GFX_UK_not_available_gui"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = "GFX_UK_EU_gui"
+	}
+}
+
+defined_text = {
+	name = bel_gay_mod
+	text = {
+		trigger = {
+			OR = {	
+				BEL = {
+					OR = {
+						has_government = fascism
+						has_government = communism	
+					}
+				}
+				USA = {
+					has_country_flag = BEL_no_gold
+				}
+			}
+		}
+		localization_key = "GFX_bel_not_available_GUI"
+	}
+	text = {
+		trigger = {
+			BEL = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = "GFX_GER_EU_gui"
+	}
+}
+
+defined_text = {
+	name = sov_economy_loca
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "SOV_NO_COMMU"
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism	
+			}
+		}
+		localization_key = "SOV_COMMU"
+	}
+}

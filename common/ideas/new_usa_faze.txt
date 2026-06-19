@@ -1,0 +1,720 @@
+ideas = {
+
+	industrial_concern = {
+		usa_and_eng_MOD = {
+
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = USA
+				}
+			}
+			
+			available = {
+				USA = {	
+					has_completed_focus = USA_war_centers
+				}
+				IF = {
+					ENG = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+
+			cost = 100
+
+			traits = {MOD_TRAIT}
+			modifier = {
+				industrial_capacity_dockyard = 0.07
+				local_building_slots_factor = 0.15
+			}
+		}
+	}
+	
+	country = {
+		###FOR BOOKMARK AKA GD DM fake###
+		USA_fake_great_deppresion = {
+			picture = HABSBURG_economy
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_expected_value = 0.5
+				recruitable_population_factor = -0.5
+			}
+		}
+		###FOR BOOKMARK AKA GD DM fake###
+		
+		USA_reduce_corporations = {
+			picture = ARG_political_corruption_modifier
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.25
+				production_speed_industrial_complex_factor = -0.10
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		USA_anti_rascism = {
+			picture = usa_desegregation_1
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.05
+				recruitable_population_factor = 0.02
+
+			}
+		}
+
+		USA_people = {
+			picture = citizen_militia_2
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = 0.01
+			}
+		}
+
+		USA_contact_with_USSR = {
+			picture = SOV_war_heroes
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		USA_five_years_plan = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.30
+				production_speed_infrastructure_factor = 0.20
+			}
+		}
+
+		USA_peoples_corporations = {
+			picture = por_nation_in_arms
+
+			allowed = { 
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+			modifier = {
+				communism_drift = 0.25
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.10
+				military_industrial_organization_research_bonus = 0.25
+			}
+		}
+	
+		USA_home_for_all = {
+			picture = ARG_american_allyship
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_factories = 0.25
+			}
+		}
+
+		USA_new_taxes = {
+			picture = RAJ_taxes
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		USA_american_dream = {
+			picture = PRC_peoples_bank_of_china
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.0025
+				war_support_weekly = 0.0025
+			}
+		}
+		
+		USA_american_railways = {
+			picture = ARG_invest_in_railways
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.25
+			}
+		}
+
+		USA_active_build_arms_factory = {
+			picture = ARG_rapid_militarization
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+
+		USA_vehicles_production = {
+			picture = FRA_motorized_focus
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+
+		USA_engines_of_war = {
+			picture = man_five_year_plan_tank
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.15
+				}
+				armor = {
+					build_cost_ic = -0.10
+				}
+				
+			}
+
+		}
+
+		USA_steel_fleet = {
+			picture = generic_coastal_defense_ships
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+		USA_com_peace_maker = {
+			picture = por_volunteers_in_the_war2
+
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 4
+				air_volunteer_cap = 4
+			}
+			
+		}
+
+		USA_back_to_pacific_ocean1 = {
+			picture = eng_steady_as_she_goes
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				navy_max_range_factor = 0.15
+				convoy_escort_efficiency = 0.20
+				spotting_chance = 0.10
+			}
+		}
+
+		USA_great_red_fleet_of_usa = {
+			picture = eng_a_change_in_course
+			
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				navy_max_range_factor = 0.25
+				convoy_escort_efficiency = 0.30
+				spotting_chance = 0.15
+			}
+		}
+
+		USA_open_the_second_front = {
+			picture = usa_desegregation_1
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+   				tag = GER
+    			attack_bonus_against = 0.1
+    			defense_bonus_against = 0.1
+			}
+		}
+		
+		USA_union_of_workers = {
+			picture = por_iberian_workers_united
+
+			allowed = {
+				always = yes 
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+		
+		USA_hist_Way = {
+			picture = AFG_parliament_building
+			
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		USA_research_council_idea = {
+			picture = jap_duplicate_research
+			
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		USA_TVA = {
+			picture = ARG_rapid_militarization
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+				industrial_capacity_factory = 0.02
+			}
+		}
+
+		USA_army_in_our_country = {
+			picture = ETH_conservative_high_command
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				democratic_drift = 0.07
+				experience_gain_army = 0.10
+				land_mastery_gain_factor = 0.10
+			}
+		}
+
+		USA_izolation_army = {
+			picture = SWE_hodgepodge_of_equipment
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				land_mastery_gain_factor = 0.15
+				naval_mastery_gain_factor = 0.15
+				air_mastery_gain_factor = 0.15
+				experience_gain_army = 0.15
+			}
+		}
+
+		USA_against_jap = {
+			picture = generic_japanese_conflict
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+   				tag = JAP
+    			attack_bonus_against = 0.1
+    			defense_bonus_against = 0.1
+			}
+		}
+
+		USA_against_eng = {
+			picture = eng_guided_by_britain
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+   				tag = ENG
+    			attack_bonus_against = 0.1
+    			defense_bonus_against = 0.1
+			}
+		}
+
+		USA_strike_london = {
+			picture = eng_tackle_capitalism
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = ENG
+
+				attack_bonus_against = 0.05
+    			defense_bonus_against = 0.05
+			}
+
+			modifier = {
+				naval_invasion_capacity = 10
+				naval_invasion_prep_speed = 0.10
+				naval_invasion_planning_bonus_speed = 0.15
+				invasion_preparation = -0.20
+			}
+		}
+
+		USA_strike_jap = {
+			picture = Cockatoo_doe
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = jap
+
+				attack_bonus_against = 0.05
+    			defense_bonus_against = 0.05
+			}
+
+			modifier = {
+				naval_invasion_capacity = 10
+				naval_invasion_prep_speed = 0.10
+				naval_invasion_planning_bonus_speed = 0.15
+				invasion_preparation = -0.20
+			}
+		}
+
+		USA_trade_agreements = {
+			picture = ARG_argentine_beef_trade
+		
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+				industrial_capacity_factory = 0.02
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		USA_trade_agreements_improve = {
+			picture = ARG_argentine_beef_trade
+			name = USA_trade_agreements
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.07
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		USA_doctrine_defend = {
+			picture = ARG_eliminate_american_imperialism
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.05
+				max_planning = 0.02
+				special_forces_cap = 0.05
+			}
+		}
+
+		USA_doctrine_defend_improve = {
+			picture = ARG_eliminate_american_imperialism
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.10
+				max_planning = 0.10
+				special_forces_cap = 0.15
+			}
+		}
+		
+		usa_potanzeval = {
+			picture = ARG_invest_in_roads
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		USA_armi_of_souz = {
+			picture = FRA_fortification_focus
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.05
+				max_planning = 0.02
+				special_forces_cap = 0.05
+			}
+		}
+
+		USA_armi_of_souz_improve = {
+			picture = FRA_fortification_focus
+			name = USA_armi_of_souz
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.10
+				max_planning = 0.10
+				special_forces_cap = 0.10
+				land_mastery_gain_factor = 0.10
+				naval_mastery_gain_factor = 0.10
+				air_mastery_gain_factor = 0.10
+				experience_gain_army = 0.15
+			}
+		}
+
+		USA_armi_of_souz_improve_usa = {
+			picture = FRA_fortification_focus
+			name = USA_armi_of_souz
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.10
+				max_planning = 0.10
+				special_forces_cap = 0.10
+				land_mastery_gain_factor = 0.10
+				naval_mastery_gain_factor = 0.10
+				air_mastery_gain_factor = 0.10
+				experience_gain_army = 0.15
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+			}
+		}
+
+		USA_esmik = {
+			picture = generic_navy_bonus
+			name = USA_esmik
+
+			allowed = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.10
+				}
+			}
+		}
+
+		USA_focus_on_asia_faze = {
+			picture = JAP_east_asian_co_prosperity
+			name = USA_focus_on_asia_faze
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				naval_invasion_capacity = 10
+				naval_invasion_prep_speed = 0.10
+				naval_invasion_planning_bonus_speed = 0.15
+				invasion_preparation = -0.20
+				naval_torpedo_damage_reduction_factor = 0.10
+				navy_capital_ship_attack_factor = 0.05
+				navy_screen_attack_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = ger
+
+				attack_bonus_against = -0.10
+    			defense_bonus_against = -0.10
+			}
+			targeted_modifier = {
+				tag = jap
+
+				attack_bonus_against = 0.10
+    			defense_bonus_against = 0.10
+			}
+
+		}
+
+		USA_focus_on_germany = {
+			picture = AFG_work_with_ger_intel_bonus
+			name = USA_focus_on_germany
+
+			modifier = {
+				air_mission_efficiency = 0.05
+				air_agility_factor = 0.05
+				air_strategic_bomber_bombing_factor = 0.10
+				air_range_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = jap
+
+				attack_bonus_against = -0.10
+    			defense_bonus_against = -0.10
+			}
+			targeted_modifier = {
+				tag = ger
+
+				attack_bonus_against = 0.10
+    			defense_bonus_against = 0.10
+			}
+		}
+
+		USA_sverhbust = {
+			picture = ARG_invest_in_railways
+			name = USA_sverhbust
+
+			modifier = {
+                production_lack_of_resource_penalty_factor = -1
+				resource_trade_cost_bonus_per_factory = -100
+				country_resource_chromium = 35 
+				country_resource_rubber = 35				
+		    }
+		}
+
+		USA_rezina = {
+			picture = generic_stockpile_fuel
+			name = USA_rezina
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+
+
+	}
+}
