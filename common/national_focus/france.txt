@@ -5228,6 +5228,7 @@
 					has_completed_focus = FRA_review_foreign_policy
 				}
 			}
+			always = no
 		}
 
 		prerequisite = {
@@ -5302,6 +5303,7 @@
 				NOT = { has_completed_focus = FRA_review_foreign_policy }
 				NOT = {	has_completed_focus = FRA_the_council_of_rambouillet }
 			}
+			always = no
 		}
 
 		prerequisite = {
@@ -6853,6 +6855,7 @@
 				NOT = { has_completed_focus = FRA_review_foreign_policy }
 				NOT = {	has_completed_focus = FRA_national_regeneration }
 			}
+			always = no
 		}
 
 		prerequisite = {
@@ -8133,6 +8136,10 @@
 			}
 		}
 		
+		allow_branch = {
+			always = no
+		}
+
 		bypass = {
 
 		}

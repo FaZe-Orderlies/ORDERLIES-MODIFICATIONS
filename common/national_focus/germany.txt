@@ -8184,7 +8184,7 @@ focus_tree = {
 			}
 		}
 
-		x = 33
+		x = 31
 		y = 0
 		relative_position_id = GER_prioritize_economic_growth
 
@@ -9247,6 +9247,10 @@ focus_tree = {
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
 		available = {
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER }
@@ -21526,6 +21530,7 @@ focus_tree = {
 					has_completed_focus = GER_remilitarize_the_rhineland
 				}
 			}
+			always = no
 		}
 
 		offset = {
@@ -21859,6 +21864,7 @@ focus_tree = {
 					has_completed_focus = GER_remilitarize_the_rhineland
 				}
 			}
+			always = no
 		}
 
 		offset = {
@@ -25649,6 +25655,7 @@ focus_tree = {
 					has_completed_focus = GER_remilitarize_the_rhineland
 				}
 			}
+			always = no
 		}
 
 		offset = {
@@ -25790,6 +25797,7 @@ focus_tree = {
 					}
 				}
 			}
+			always = no
 		}
 
 		offset = {
@@ -29580,6 +29588,7 @@ focus_tree = {
 				}
 				has_completed_focus = GER_conquer_italy
 			}
+			always = no
 		}
 
 		cost = 10
