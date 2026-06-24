@@ -68,14 +68,6 @@ political_actions = {
 		priority = 10
 		available = {
 			has_stability < 1.0
-			if = {
-				limit = {
-					tag = SPR
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
 		}
 
 		visible = {
@@ -312,9 +304,6 @@ propaganda_efforts = {
 				limit = {
 					tag = SPR
 					has_dlc = "La Resistance"
-				}
-				NOT = {
-					has_idea = SPR_political_violence
 				}
 			}
 			if = {
@@ -606,9 +595,6 @@ propaganda_efforts = {
 					tag = SPR
 					has_dlc = "La Resistance"
 				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
 			}
 			if = {
 				limit = {
@@ -664,9 +650,6 @@ propaganda_efforts = {
 				limit = {
 					tag = SPR
 					has_dlc = "La Resistance"
-				}
-				NOT = {
-					has_idea = SPR_political_violence
 				}
 			}
 			if = {
