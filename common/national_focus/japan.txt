@@ -3712,6 +3712,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
@@ -3844,6 +3845,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
@@ -6699,6 +6701,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			has_country_flag = JAP_empress_nagako_became_queen_flag
 			IF = {
@@ -6860,6 +6863,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			has_country_flag = JAP_empress_nagako_became_queen_flag
 			IF = {
@@ -7404,6 +7408,10 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_promulgate_the_military_ministers_system }
 
+		allow_branch = {
+			always = no
+		}
+
 		cost = 2
 
 		ai_will_do = {
@@ -7458,7 +7466,7 @@ focus_tree = {
 		id = JAP_the_harakiri_debate
 		icon = GFX_focus_JAP_the_harakiri_debate
 		mutually_exclusive = { focus = JAP_reprimand_hamada_kunimatsu }
-		x = 2
+		x =0
 		y = 1
 		relative_position_id = JAP_promulgate_the_military_ministers_system
 
@@ -7581,7 +7589,7 @@ focus_tree = {
 		id = JAP_new_order_in_east_asia
 		icon = GFX_focus_JAP_new_order_in_east_asia
 		#mutually_exclusive = { focus = JAP_reprimand_hamada_kunimatsu }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = JAP_konoes_first_cabinet
 
@@ -9782,8 +9790,8 @@ focus_tree = {
 		id = JAP_tojos_premiership
 		icon = GFX_focus_JAP_tojos_premiership
 		mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
-		x = -2
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = JAP_ichioku_isshin
 
 		prerequisite = { focus = JAP_ichioku_isshin }
@@ -9868,6 +9876,10 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_ichioku_isshin }
 
+		allow_branch = {
+			always = no
+		}
+
 		cost = 5
 
 		offset = {
@@ -9938,6 +9950,10 @@ focus_tree = {
 		relative_position_id = JAP_ichioku_isshin
 
 		prerequisite = { focus = JAP_ichioku_isshin }
+
+		allow_branch = {
+			always = no
+		}
 
 		cost = 5
 
@@ -10014,6 +10030,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_ichioku_isshin }
 
 		allow_branch = {
+			always = no
 			has_country_flag = JAP_tohokai_prime_minister_added
 			IF = {
 				limit = {
@@ -10197,7 +10214,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 5
 
@@ -10323,7 +10340,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 5
 
@@ -10366,7 +10383,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 5
 
@@ -10414,7 +10431,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 10
 
@@ -10463,7 +10480,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 5
 
@@ -10655,7 +10672,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_tojos_premiership }
 
 		cost = 10
 
@@ -10932,7 +10949,7 @@ focus_tree = {
 		id = JAP_revisit_the_thirteen_demands
 		icon = GFX_focus_generic_treaty
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -13
+		x = -8
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -11127,6 +11144,10 @@ focus_tree = {
 		relative_position_id = JAP_establish_mongol_military_government
 
 		prerequisite = { focus = JAP_establish_mongol_military_government }
+
+		allow_branch = {
+			always = no
+		}
 
 		cost = 5
 
@@ -11356,6 +11377,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -12270,6 +12295,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			TIB = {
 				exists = yes
@@ -12710,7 +12739,7 @@ focus_tree = {
 		id = JAP_nanshin_ron
 		icon = GFX_focus_JAP_nanshin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -21
+		x = -15
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -14468,7 +14497,7 @@ focus_tree = {
 		id = JAP_hokushin_ron
 		icon = GFX_focus_JAP_hokushin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -28
+		x = -21
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -14630,13 +14659,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			CHI = { 
-				country_event = {
-					id = wtt_japan.11 
-					days = 1
-					random_days = 2
-				}
-			} 
+			
 
 			IF = {
 				limit = {
@@ -16441,6 +16464,7 @@ focus_tree = {
 		relative_position_id = JAP_bribe_generals
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
@@ -16500,6 +16524,7 @@ focus_tree = {
 		relative_position_id = JAP_bribe_generals
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
@@ -17339,6 +17364,7 @@ focus_tree = {
 		relative_position_id = JAP_revoke_the_peace_preservation_law
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
@@ -21966,6 +21992,7 @@ focus_tree = {
 		relative_position_id = JAP_revoke_the_peace_preservation_law
 
 		allow_branch = {
+			always = no
 			has_dlc = "No Compromise, No Surrender"
 			IF = {
 				limit = {
