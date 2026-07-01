@@ -23,8 +23,11 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-
+<<<<<<< Updated upstream
 	continuous_focus_position = { x = 80 y = 1600 }
+=======
+	continuous_focus_position = { x = 50 y = 1600 }
+>>>>>>> Stashed changes
 	shared_focus = ABDA_abdacom
 	default = no
 #	focus = {
@@ -300,10 +303,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			always = no
 		}
 
 		available = {
@@ -1326,10 +1325,10 @@ focus_tree = {
 	focus = {
 		id = USA_asia_tvd
 		icon = GFX_goal_generic_occupy_states_coastal
-		x = 0
+		x = -9
 		y = 1
-		prerequisite = { focus = USA_war_plan_orange }
-		relative_position_id = USA_war_plan_orange
+		prerequisite = { focus = USA_global_potential }
+		relative_position_id = USA_global_potential
 		mutually_exclusive = {
 			focus = USA_war_esm
 		}
@@ -1447,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_jap_number_one
-		icon = GFX_focus_AST_war_japan
+		icon = GFX_focus_attack_japan
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_asia_tvd }
@@ -1566,10 +1565,10 @@ focus_tree = {
 	focus = {
 		id = USA_war_esm
 		icon = GFX_goal_generic_navy_cruiser
-		x = 0
+		x = -11
 		y = 1
-		prerequisite = { focus = USA_war_plan_black }
-		relative_position_id = USA_war_plan_black
+		prerequisite = { focus = USA_global_potential }
+		relative_position_id = USA_global_potential
 		mutually_exclusive = {
 			focus = USA_asia_tvd
 		}
@@ -1608,7 +1607,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_germany_number_one
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_focus_attack_germany
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_war_esm }
@@ -3175,7 +3174,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = USA_neutrality_act
-			
+			focus = USA_limited_intervention
 		}
 		
 
@@ -5812,7 +5811,7 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 64
+		x = 68
 		y = 0
 		
 		cost = 10
@@ -5850,10 +5849,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			always = no
 		}
 
 		available = {
@@ -6049,10 +6044,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		allow_branch = {
-			always = no
-		}
-
 		available = {
 
 		}
@@ -6078,7 +6069,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -2
+		x = -1
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
@@ -6122,7 +6113,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_intervention_in_europe
 		cost = 8.7
 		#ai_will_do = {
@@ -6155,10 +6146,6 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-
-		allow_branch = {
-			always = no
-		}
 
 		available_if_capitulated = yes
 
@@ -6219,10 +6206,6 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-
-		allow_branch = {
-			always = no
-		}
 
 		available_if_capitulated = yes
 
@@ -6294,7 +6277,7 @@ focus_tree = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 2
+		x = 4
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -6330,7 +6313,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = USA_intervention_in_asia
 		cost = 10
@@ -6357,10 +6340,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			always = no
 		}
 
 		available = {
@@ -6487,7 +6466,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
+		x = 17
 		y = 0
 		relative_position_id = USA_war_plans_division
 		
@@ -8363,10 +8342,6 @@ focus_tree = {
 			}
 		}
 		
-		allow_branch = {
-			always = no
-		}
-
 		bypass = {
 
 		}

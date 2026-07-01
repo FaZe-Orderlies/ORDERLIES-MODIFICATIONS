@@ -137,6 +137,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
@@ -1033,9 +1037,9 @@ focus_tree = {
 	focus = {
 		id = GER_construct_the_reichsautobahn
 		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = GER_prioritize_economic_growth focus = GER_the_four_year_plan }
+		prerequisite = { focus = GER_the_four_year_plan }
 
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = GER_prioritize_economic_growth
 		cost = 5
@@ -1108,7 +1112,7 @@ focus_tree = {
 	focus = {
 		id = GER_build_the_rur_dam
 		icon = GFX_focus_generic_hydroelectric_energy
-		prerequisite = { focus = GER_construct_the_reichsautobahn focus = GER_currency_reforms }
+		prerequisite = { focus = GER_construct_the_reichsautobahn}
 
 		x = -2
 		y = 1
@@ -1325,10 +1329,10 @@ focus_tree = {
 				52 = { #Oberbayern
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				152 = { #Upper Austria
+				50 = { #Upper Austria
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				4 = { #Lower Austria
+				978 = { #Lower Austria
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -1351,7 +1355,7 @@ focus_tree = {
 				53 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1366,37 +1370,37 @@ focus_tree = {
 				52 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					152 = { #Upper Austria
+					50 = { #Upper Austria
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				152 = { 
+				50 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					4 = { #Lower Austria
+					978 = { #Lower Austria
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				4 = { 
+				978 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1439,10 +1443,10 @@ focus_tree = {
 				63 = { #Hinterpommern
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				807 = { #Gdynia
+				66 = { #Gdynia
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				85 = { #Danzig
+				67 = { #Danzig
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -1465,7 +1469,7 @@ focus_tree = {
 				68 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1480,37 +1484,37 @@ focus_tree = {
 				63 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					807 = { #Gdynia
+					66 = { #Gdynia
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				807 = { 
+				66 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					85 = { #Danzig
+					67 = { #Danzig
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				85 = { 
+				67 = { 
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1602,16 +1606,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
+			
+			50 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-				random_select_amount = 2
+			}
+			52 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1625,8 +1629,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_the_four_year_plan
 				bonus = 1
-				uses = 1
-				category = industry
+				uses = 3
+				technology = dispersed_industry2
+				technology = concentrated_industry2
+				technology = dispersed_industry3
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry4
 			}
 		}
 	}
@@ -1646,15 +1655,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			65 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1662,22 +1663,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				random_select_amount = 4
-				add_extra_state_shared_building_slots = 1
-			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_tech_bonus = {
-				name = GER_autarky_efforts
-				bonus = 1
-				uses = 1
-				category = industry
+			64 = {
+				add_extra_state_shared_building_slots = 2
 			}
-
+			59 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			60 = {
+				add_extra_state_shared_building_slots = 2
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_gain_autarkic_economy_lock_free_trade_tt
@@ -1723,10 +1718,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = 0.05
 			add_popularity = {
 			    ideology = ROOT
-			    popularity = -0.05
+			    popularity = 0.05
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1816,7 +1811,7 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
+				GER_industrial_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			if = {
@@ -1867,21 +1862,6 @@ focus_tree = {
 			}
 		}
 
-		cancel = {
-			NOT = {
-				any_controlled_state = {
-					is_core_of = ROOT
-					OR = {
-						steel > 25
-						aluminium > 20
-						oil > 15
-						tungsten > 10
-						chromium > 10
-					}
-				}
-			}
-		}
-
 		bypass = {
 			OR = {
 				has_resources_in_collection = {
@@ -1920,23 +1900,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			random_controlled_state = {
-				limit = {
-					NOT = { is_core_of = ROOT }
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 			random_controlled_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
@@ -1954,51 +1918,26 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			every_controlled_state = {
-				limit = {
-					NOT = { 
-						is_core_of = ROOT 
-						any_neighbor_state = {
-							controller = {
-								has_war_with = ROOT
-							}
-						}	
-					}
-					is_fully_controlled_by = ROOT
-					is_on_continent = europe
-					OR = {
-						steel > 19
-						aluminium > 10
-						oil > 9
-						tungsten > 9
-						chromium > 9
-					}
-				}
-				random_select_amount = 5
+			50 = {
 				add_dynamic_modifier = { 
 					modifier = GER_nationalized_industries_modifier
 					scope = GER
 				}
 			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_tech_bonus = {
-				name = GER_seize_foreign_industries
-				bonus = 0.5
-				uses = 1
-				category = excavation_tech
+			52 = {
+				add_dynamic_modifier = { 
+					modifier = GER_nationalized_industries_modifier
+					scope = GER
+				}
 			}
-			add_equipment_to_stockpile = {
-				type = train_equipment
-				amount = 20
-			}
+				
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
+				GER_industrial_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			if = {
@@ -2019,7 +1958,12 @@ focus_tree = {
 				tooltip = local_resources_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-
+			add_tech_bonus = {
+				name = GER_seize_foreign_industries
+				bonus = 1
+				uses = 1
+				category = excavation_tech
+			}
 		}
 	}
 	
@@ -2075,7 +2019,7 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
+				GER_industrial_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			if = {
@@ -2174,7 +2118,7 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
+				GER_industrial_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			if = {
@@ -2202,6 +2146,13 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = synth_resources
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			53 = {
+				add_dynamic_modifier = { 
+					modifier = GER_nationalized_industries_modifier
+					scope = GER
+				}
 			}
 
 		}
@@ -2275,9 +2226,16 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			54 = {
+				add_dynamic_modifier = { 
+					modifier = GER_nationalized_industries_modifier
+					scope = GER
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
+				GER_industrial_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			if = {
@@ -2844,7 +2802,7 @@ focus_tree = {
 		icon = GFX_focus_GER_army
 		#prerequisite = { focus = }
 
-		x = 8
+		x = 16
 		y = 0
 		#relative_position_id = GER_prioritize_economic_growth
 		cost = 5
@@ -8382,12 +8340,15 @@ focus_tree = {
 		id = GER_heed_von_neuraths_concerns #Von Neurath
 		icon = GFX_focus_GER_heed_von_neuraths_concerns
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		mutually_exclusive = { focus = GER_reorganize_the_wehrmacht }
 		x = -10
 		y = 1
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
 		available = {
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -8515,111 +8476,6 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 25
-			}
-		}
-	}
-
-	focus = {
-		id = GER_reorganize_secret_services
-		icon = GFX_focus_generic_secret_service_agency
-		prerequisite = { focus = GER_war_preparations }
-		x = -1
-		y = 1
-		relative_position_id = GER_war_preparations
-		cost = 10
-
-		allow_branch = {
-			has_dlc = "La Resistance"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = GER_oppose_hitler
-						has_completed_focus = GER_oppose_hitler_ww
-					}
-				}
-			}
-		}
-
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = generic_remove_as_political_advisor_tt
-			show_ideas_tooltip = GER_wilhelm_canaris
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_military_intelligence_service = yes
-			add_to_variable = { 
-				GER_military_intelligence_service_operative_slot = 1
-				tooltip = operative_slot_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_agency_upgrade_time = -0.2
-				tooltip = agency_upgrade_time_tt
-			}
-
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				GER_create_operative_hans_haupt = yes
-			}
-		}
-	}
-
-	focus = {
-		id = GER_subversive_infiltrators
-		icon = GFX_focus_ARG_keep_it_in_the_party
-		prerequisite = { focus = GER_reorganize_secret_services }
-
-		x = 0
-		y = 2
-		relative_position_id = GER_reorganize_secret_services
-		cost = 5
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = GER_modify_military_intelligence_service_modifier_tt
-			add_to_variable = { 
-				GER_military_intelligence_service_operative_slot = 1
-				tooltip = operative_slot_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_boost_ideology_mission_factor = 0.25
-				tooltip = boost_ideology_mission_factor_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_master_ideology_drift = 0.15
-				tooltip = master_ideology_drift_tt
-			}
-
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				GER_create_operative_otto_von_bolschwing = yes
-
-				if = {
-					limit = {
-						controls_state = 16 #PARIS
-					}
-					GER_create_operative_coco_chanel = yes
-				}
-				else = {
-					set_country_flag = GER_coco_chanel_ready_to_join_as_operative_flag
-				}
 			}
 		}
 	}
@@ -14402,7 +14258,6 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_reorganize_the_wehrmacht_historical
 
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		mutually_exclusive = { focus = GER_heed_von_neuraths_concerns }
 		x = 20
 		y = 0
 		relative_position_id = GER_heed_von_neuraths_concerns
@@ -18186,7 +18041,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		x = -17
+		x = -16
 		y = 8
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
