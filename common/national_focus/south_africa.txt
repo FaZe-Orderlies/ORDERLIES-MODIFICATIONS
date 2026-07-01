@@ -630,6 +630,10 @@
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1999,7 +2003,7 @@
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 22
+		x = 11
 		y = 0
 
 		cost = 5
@@ -2896,7 +2900,7 @@
 	focus = {
 		id = SAF_army_airforce_fleet
 		icon = GFX_goal_generic_army_doctrines
-		X = 35
+		X = 24
 		y = 0
 
 		Cost = 5

@@ -48,6 +48,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -152,7 +153,7 @@ focus_tree = {
 		icon = GFX_focus_rom_handle_king
 		#prerequisite = { focus = }
 		mutually_exclusive = { focus = wuw_HUN_end_the_regency focus = wuw_HUN_end_the_white_terror }
-		x = 16
+		x = 1
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
@@ -269,6 +270,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -512,6 +514,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -653,6 +656,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -800,6 +804,7 @@ focus_tree = {
 		cost = 2
 
 		allow_branch = {
+			always = no
 			has_dlc = "La Resistance"
 			IF = {
 				limit = {
@@ -934,6 +939,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -1027,6 +1033,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -5494,6 +5501,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -5586,6 +5594,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -5809,6 +5818,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -7666,7 +7676,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_strengthen_horthys_reign
 		prerequisite = { focus = wuw_HUN_continue_the_regency }
 		mutually_exclusive = { focus = wuw_HUN_undermine_the_admiral }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_continue_the_regency
 
@@ -7776,6 +7786,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -12132,6 +12143,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -12242,6 +12254,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -12347,6 +12360,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			IF = {
 				limit = {
 					has_game_rule = {
@@ -14870,7 +14884,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		mutually_exclusive = { focus = wuw_HUN_economic_intervention }
-		x = 45
+		x = 8
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
@@ -15083,7 +15097,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 47
+		x = 10
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
@@ -15283,7 +15297,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 55
+		x = 18
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
