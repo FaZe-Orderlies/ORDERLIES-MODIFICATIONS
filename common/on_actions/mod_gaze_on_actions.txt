@@ -32,4 +32,20 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_DEN = {
+		effect = {
+			if = {
+				limit = {
+					DEN = {
+						has_war_with = GER 
+					}
+				}
+				GER = {
+					country_event = {
+						id = denmark_occupation_event.2
+					}
+				}
+			}
+		}
+	}
 }

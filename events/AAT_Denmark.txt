@@ -1,0 +1,36 @@
+add_namespace = denmark_occupation_event
+country_event = { #Denmark wants to become a puppet
+	id = denmark_occupation_event.2
+	title = denmark_occupation_event.2.t
+	desc = denmark_occupation_event.2.desc
+	picture = GFX_report_event_DEN_denmark_surrenders
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Accept puppet
+		
+		name = denmark_occupation_event.2.a
+
+		every_state = {
+			limit = {
+				is_controlled_by = DEN 
+			}
+			transfer_state_to = ROOT
+		}
+		hidden_effect = {
+			101 = {
+				transfer_state_to = ENG
+			}
+			337 = {
+				transfer_state_to = ENG
+			}
+			ENG = {
+				annex_country = {
+					target = ICE
+					transfer_troops = no
+				}
+			}
+		}
+	}
+}
