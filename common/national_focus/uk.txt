@@ -2084,24 +2084,9 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_national_unity
-		x = 29
+		x = 24
 		y = 0
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "Man the Guns" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = uk_empire_focus
-					}
-				}
-			}
-		}
+		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2141,7 +2126,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		offset = {
-			x = 2
+			x = 0 
 			y = 0
 			trigger = {
 				OR = {
@@ -2184,7 +2169,7 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 1
+		x = 8
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 2
@@ -5802,7 +5787,7 @@ focus_tree = {
 		id = uk_colonial_focus 
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_research2
-		x = -7
+		x = 0
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -8789,62 +8774,11 @@ focus_tree = {
 			}
 		}
 
-		x = 0
+		x = 2
 		y = 0
 		relative_position_id = ENG_revisit_colonial_policy
 
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_dlc = "Man the Guns"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = uk_empire_focus
-			}
-		}
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_revisit_colonial_policy
-			}
-		}
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_global_defense
-			}
-		}
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_home_defence
-			}
-		}
+		
 
 		cost = 5
 		ai_will_do = {
