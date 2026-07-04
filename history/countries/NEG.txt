@@ -1,4 +1,4 @@
-capital = 357
+capital = 500
 set_convoys = 100
 
 recruit_character = NEG_moris

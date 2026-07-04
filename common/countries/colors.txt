@@ -1,11 +1,8 @@
 #reload countrycolors
-
-
-NEG = {
+NEG = { 
 	color = rgb { 0 0 0 }
-	color_ui = rgb { 0 0 0}
+	color_ui = rgb { 0 0 0 }
 }
-
 
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
@@ -1268,4 +1265,5 @@ GAL = {
 	color = rgb { 195 72 17 }
 	color_ui = rgb { 195 72 16 }	
 }
+
 
