@@ -1,21 +1,23 @@
 state={
-	id=799
-	name="STATE_799"
+	id=267
+	name="STATE_267"
 	manpower = 1
-	state_category = enclave
+	state_category = town
 	resources = {
 	}
 	history={
 		owner = NEG
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		victory_points = {
-			12029 1
+			10737 5
 		}
 	}
 	provinces={
-		12029
+		7916 7984 10737 10852 12769
 	}
 	local_supplies=0.0
 }

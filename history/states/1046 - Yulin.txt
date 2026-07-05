@@ -1,0 +1,23 @@
+state={
+	id=1046
+	name="STATE_1046"
+	manpower = 1057400
+	state_category = town
+	resources={
+		coal = 12
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7314 1
+		}
+	}
+	provinces={
+		1458 7314 7659
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies=0.0
+}

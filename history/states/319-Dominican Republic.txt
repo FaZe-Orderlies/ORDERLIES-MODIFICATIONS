@@ -1,29 +1,30 @@
 state={
-	id=501
-	name="STATE_501"
+	id=319
+	name="STATE_319"
 	manpower = 1
-	state_category = city
+	state_category = town
 	resources = {
 	}
 	history={
 		owner = NEG
 		buildings = {
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
-			infrastructure = 3
-			5112 = {
-				naval_base = 4
+			air_base = 1
+			7660 = {
+				naval_base = 2
 			}
 		}
 		victory_points = {
-			10513 20
+			7660 5
 		}
 		victory_points = {
-			5112 1
+			4598 1
 		}
 	}
 	provinces={
-		1583 5186 7636 10513 10947 10994 11003 11008 12937 12972 10432 5112 5167 7553
+		4598 7632 7660 10484
 	}
 	local_supplies=0.0
 }

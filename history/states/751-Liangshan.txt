@@ -1,0 +1,29 @@
+state={
+	id=751
+	name="STATE_751"
+	manpower = 300000
+	state_category = pastoral
+	resources = {
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+		}
+		victory_points = {
+			7294 1
+		}
+		victory_points = {
+			10841 3
+		}
+	}
+	provinces = {
+		2067 7294 10726 10841
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies=1.0
+}

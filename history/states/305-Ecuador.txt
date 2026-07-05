@@ -1,6 +1,6 @@
 state={
-	id=501
-	name="STATE_501"
+	id=305
+	name="STATE_305"
 	manpower = 1
 	state_category = city
 	resources = {
@@ -8,22 +8,26 @@ state={
 	history={
 		owner = NEG
 		buildings = {
+			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 3
-			infrastructure = 3
-			5112 = {
+			industrial_complex = 4
+			air_base = 1
+			8252 = {
 				naval_base = 4
 			}
 		}
 		victory_points = {
-			10513 20
+			12798 10
 		}
 		victory_points = {
-			5112 1
+			8252 5
+		}
+		victory_points = {
+			5120 2
 		}
 	}
-	provinces={
-		1583 5186 7636 10513 10947 10994 11003 11008 12937 12972 10432 5112 5167 7553
+	provinces = {
+		5051 5120 8047 8075 8252 10888 11020 12798
 	}
 	local_supplies=0.0
 }

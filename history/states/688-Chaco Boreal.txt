@@ -1,8 +1,8 @@
 state={
-	id=799
-	name="STATE_799"
+	id=688
+	name="STATE_688"
 	manpower = 1
-	state_category = enclave
+	state_category = pastoral
 	resources = {
 	}
 	history={
@@ -11,11 +11,14 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			12029 1
+			2195 1
+		}
+		victory_points = {
+			5165 1
 		}
 	}
-	provinces={
-		12029
+	provinces = {
+		2195 2209 5165 8203 10973
 	}
 	local_supplies=0.0
 }

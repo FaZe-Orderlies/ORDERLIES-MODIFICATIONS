@@ -1,8 +1,8 @@
 state={
-	id=799
-	name="STATE_799"
+	id=1008
+	name="STATE_1008"
 	manpower = 1
-	state_category = enclave
+	state_category = rural
 	resources = {
 	}
 	history={
@@ -11,11 +11,12 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			12029 1
+			5064 1
 		}
 	}
 	provinces={
-		12029
+		4949 5020 5064 8090 10789
 	}
-	local_supplies=0.0
+	buildings_max_level_factor = 1.000
+	local_supplies=0.000
 }

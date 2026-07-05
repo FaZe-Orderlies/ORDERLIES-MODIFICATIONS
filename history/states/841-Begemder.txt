@@ -1,0 +1,20 @@
+state={
+	id=841
+	name="STATE_841"
+	manpower = 1100000
+	state_category = pastoral
+	resources = {
+	}
+	history={
+		owner = ITA
+		buildings = {
+		}
+		victory_points = {
+			1984 2
+		}
+	}
+	provinces = {
+		1984 2040 13137 13241
+	}
+	local_supplies=0.0
+}
