@@ -2092,7 +2092,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SAF_army"
 		texturefile = "gfx/interface/ideas/SAF_army.dds"
-	}
+	}     
 
 	###USA GUI###
 	
@@ -2101,6 +2101,14 @@ spriteTypes = {
 		name = "GFX_portrait_ENG_max_horton"
 		texturefile = "gfx/leaders/ENG/portrait_ENG_max_horton.png"
 	}
+	###New England leader###
+	
+	###Старый новый лидер неигровой страны NEG###
+	spriteType = {
+		name = "GFX_portrait_BRA_mascarenhas_de_morais_1"
+		texturefile = "gfx/leaders/NEG/portrait_BRA_mascarenhas_de_morais_1.dds"
+	}
+	###Старый новый лидер неигровой страны NEG###
 }
 
 #####КАСТОМ ШРИФТ НЕ ТРОГАТЬ !!!#####

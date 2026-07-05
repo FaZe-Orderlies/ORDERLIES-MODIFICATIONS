@@ -44,14 +44,17 @@ army_experience = 50
 navy_experience = 50
 air_experience = 50
 
+recruit_character = BRA_getulio_vargas
      
 set_politics = {
-    ruling_party = neutrality
+    ruling_party = populism
     last_election = "1933.3.5"
     election_frequency = 48
     elections_allowed = no
 }
-
+add_ideas = {
+	armed_neutrality
+}
 set_popularities = {
-    neutrality = 100
+    democratic =100
 }

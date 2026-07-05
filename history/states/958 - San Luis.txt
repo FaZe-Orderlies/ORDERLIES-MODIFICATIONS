@@ -9,7 +9,6 @@ state={
 		owner = NEG
 		buildings = {
 			infrastructure = 2
-			5152 = { dam = 1 }
 		}
 		victory_points = {
 			12942 2
