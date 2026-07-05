@@ -9,9 +9,6 @@ state={
 		owner = NEG
 		buildings = {
 			infrastructure = 2
-			3118 = {
-				naval_base = 1
-			}
 		}
 		victory_points = {
 			3118 1

@@ -9,19 +9,6 @@ state={
 		owner = NEG
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
-			dockyard = 1
-			air_base = 4
-			9833 = {
-				naval_base = 8
-				landmark_hagia_sophia = {
-					level = 1
-					allowed = {
-						has_dlc = "Graveyard of Empires"
-					}
-				}
-			}
 		}
 		victory_points = {
 			9833 25

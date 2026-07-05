@@ -17,6 +17,48 @@ on_actions = {
 					country_event = { id = startup.institut.1 }
 				}
 			}
+			JAP = {
+				745 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				716 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				610 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				611 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				1043 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				612	= {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				715 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				714 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				761 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+				609 = {
+					set_compliance = 100
+					set_resistance = 0
+				}
+			}
 		}
 	}
 	on_daily_USA = {
