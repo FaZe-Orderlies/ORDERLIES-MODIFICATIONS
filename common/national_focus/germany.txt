@@ -9869,6 +9869,8 @@ focus_tree = {
 
 		completion_reward = {
 			effect_tooltip = { country_event = { id = news.60 } }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = hun_get_cze
 			hidden_effect = {
 				add_to_variable = {
 					var = GER_mefo_bill_counter
@@ -9892,8 +9894,25 @@ focus_tree = {
 			
 				HUN = { 
 					transfer_state = 70 
+					70 = {
+						set_compliance = 100
+						set_resistance = 0
+					}
 					transfer_state = 71 
-					transfer_state = 73 
+					71 = {
+						set_compliance = 100
+						set_resistance = 0
+					}
+					transfer_state = 73
+					73 = {
+						set_compliance = 100
+						set_resistance = 0
+					} 
+					transfer_state = 664 
+					664 = {
+						set_compliance = 100
+						set_resistance = 0
+					}
 				}
 				
 				POL = { transfer_state = 72 }

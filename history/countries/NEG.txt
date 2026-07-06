@@ -54,6 +54,7 @@ set_politics = {
 }
 add_ideas = {
 	armed_neutrality
+	free_trade
 }
 set_popularities = {
     democratic =100

@@ -2054,6 +2054,30 @@ ideas = {
 				}
    			}
 		}
+		
+		bot_no_play_economy = {
+			
+			available = {
+				has_idea = armed_neutrality
+			}
+			
+			visible = {
+				has_idea = armed_neutrality
+				NOT = {
+					original_tag = NEG
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+			picture = RAJ_special_economic_zones
+			
+			modifier = {
+				min_export = 0
+			}
+
+			cancel_if_invalid = no
+		}
 
 		special_economic_zones = {
 			available = {
