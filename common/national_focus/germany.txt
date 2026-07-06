@@ -2792,7 +2792,14 @@ focus_tree = {
 				} 
 				activate_decision = women_in_the_workforce
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_cosmetic_tag = GER_greater_german_reich
+
 		}
+
+
 	}
 
 
@@ -10603,6 +10610,15 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
+			add_state_core = 85
+				add_state_core = 807
+				add_state_core = 86
+            	add_state_core = 87
+				add_state_core = 98
+				add_state_core = 762
+				add_state_core = 28
+				add_state_core = 8
+				add_state_core = 912
 		}
 	}
 
