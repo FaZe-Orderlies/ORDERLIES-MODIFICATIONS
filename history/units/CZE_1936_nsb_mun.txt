@@ -1,0 +1,134 @@
+﻿division_template = {
+	name = "Pěší divize"					# Infantry Division
+	division_names_group = CZE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+
+units = {
+	#### Československá Vojenská Jednotka #####
+	# directly subordinate
+	division = {
+		name = "1.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = { # "1. fast"
+		name = "2.Pěší divize"
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+}

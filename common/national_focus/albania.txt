@@ -1,0 +1,20 @@
+focus_tree = {
+	id = lux_focus
+	 
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALB
+		}
+		 
+		modifier = {
+			add = 10
+			original_tag = ALB
+		}
+	}
+	
+	default = no
+	
+}
