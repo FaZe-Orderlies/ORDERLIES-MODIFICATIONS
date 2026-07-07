@@ -8840,8 +8840,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		available = {
-			has_war = no
-			is_subject = no
+			date>1937.7.1
 			
 		}
 
@@ -11307,7 +11306,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_molotov_ribbentrop_pact
-		cost = 10
+		cost = 1
 
 		will_lead_to_war_with = POL
 
@@ -11331,38 +11330,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		available = {
-			is_subject = no
-			has_army_manpower = { size > 949999 } #100 div			
-			#Make custom trigger tooltip here
-			85 = {
-				owner = {
-					original_tag = POL
-				}
-				controller = {
-					original_tag = POL
-				}
-			}
-			OR = {
-				POL = {
-					has_civil_war = no
-				}
-				#custom_trigger_tooltip = {
-					#tooltip = GER_danzig_trigger_polish_civil_war
-					AND = {
-						any_other_country = {
-							original_tag = POL
-							has_civil_war = yes
-							OR = {
-								is_in_faction_with = ROOT
-								has_volunteers_amount_from = {
-									tag = GER
-									count > 0
-								}
-							}
-						}
-					}
-				#}
-			}
+			date>1939.1.1
 		}
 
 		ai_will_do = {
@@ -11629,7 +11597,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 2
 
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
@@ -11781,7 +11749,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 2
 
 		will_lead_to_war_with = DEN 
 		will_lead_to_war_with = NOR
@@ -13645,63 +13613,66 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }	
 		
 		completion_reward = {
+			custom_effect_tooltip = GER_fate_of_yugoslavia_custom
+			hidden_effect = {
+					GER = {
+					transfer_state = 102
+					transfer_state = 764
+					transfer_state = 107
+					transfer_state = 108
+					
+				}
+				
+				ITA = {
+					transfer_state = 109
+					transfer_state = 104
+					transfer_state = 804
+					transfer_state = 105
+					transfer_state = 802
+					transfer_state = 970
+				}
 
-			GER = {
-				transfer_state = 102
-				transfer_state = 764
-				transfer_state = 107
-				transfer_state = 108
-				transfer_state = 853
+				109 = {
+					set_compliance = 100
+				}
+				104 = {
+					set_compliance = 100
+				}
+				804 = {
+					set_compliance = 100
+				}
+				105 = {
+					set_compliance = 100
+				}
+				802 = {
+					set_compliance = 100
+				}
+				970 = {
+					set_compliance = 100
+				}
+				102 = {
+					set_compliance = 100
+				}
+				764 = {
+					set_compliance = 100
+				}
+				107 = {
+					set_compliance = 100
+				}
+				108 = {
+					set_compliance = 100
+				}
+
+				BUL = {
+					transfer_state = 803
+					transfer_state = 106
+				}
+
+				HUN = {
+					transfer_state = 45
+				}
 			}
 			
-			ITA = {
-				transfer_state = 109
-				transfer_state = 104
-				transfer_state = 804
-				transfer_state = 105
-				transfer_state = 802
-				transfer_state = 970
-			}
-
-			109 = {
-				set_compliance = 100
-			}
-			104 = {
-				set_compliance = 100
-			}
-			804 = {
-				set_compliance = 100
-			}
-			105 = {
-				set_compliance = 100
-			}
-			802 = {
-				set_compliance = 100
-			}
-			970 = {
-				set_compliance = 100
-			}
-			102 = {
-				set_compliance = 100
-			}
-			764 = {
-				set_compliance = 100
-			}
-			107 = {
-				set_compliance = 100
-			}
-			108 = {
-				set_compliance = 100
-			}
-
-			BUL = {
-				transfer_state = 803
-				transfer_state = 106
-			}
-
-			HUN = {
-				transfer_state = 45
-			}
 
 		}
 	}
@@ -14065,38 +14036,42 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			ITA = {
-				transfer_state = 185
-				transfer_state = 47
-				transfer_state = 186
-				transfer_state = 182
-				transfer_state = 187
-				transfer_state = 164
-			}
+			custom_effect_tooltip = GER_fate_of_greece_custom
+			hidden_effect = {
+					ITA = {
+					transfer_state = 185
+					transfer_state = 47
+					transfer_state = 186
+					transfer_state = 182
+					transfer_state = 187
+					transfer_state = 164
+				}
 
-			185 = {
-				set_compliance = 100
-			}
-			47 = {
-				set_compliance = 100
-			}
-			186 = {
-				set_compliance = 100
-			}
-			182 = {
-				set_compliance = 100
-			}
-			164 = {
-				set_compliance = 100
-			}
-			187 = {
-				set_compliance = 100
-			}
+				185 = {
+					set_compliance = 100
+				}
+				47 = {
+					set_compliance = 100
+				}
+				186 = {
+					set_compliance = 100
+				}
+				182 = {
+					set_compliance = 100
+				}
+				164 = {
+					set_compliance = 100
+				}
+				187 = {
+					set_compliance = 100
+				}
 
-			BUL = {
-				transfer_state = 731
-				transfer_state = 184
+				BUL = {
+					transfer_state = 731
+					transfer_state = 184
+				}
 			}
+			
 		}
 	}
 
@@ -21048,6 +21023,10 @@ focus_tree = {
 		relative_position_id = GER_fuhrerprinzip
 		cost = 5
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			has_government = fascism
 
@@ -21154,7 +21133,7 @@ focus_tree = {
 		icon = GFX_focus_GER_loyalty_to_the_fuhrer
 		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
 		mutually_exclusive = { focus = GER_a_strong_successor }
-		x = 2
+		x = 0
 		y = 5
 		relative_position_id = GER_fuhrerprinzip
 		cost = 5

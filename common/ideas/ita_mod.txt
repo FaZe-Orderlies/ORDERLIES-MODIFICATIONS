@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+			ITA_Operazione_E_spirit = {
+			picture = GFX_idea_ITA_victory
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = { }
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+	}
+	
+}
