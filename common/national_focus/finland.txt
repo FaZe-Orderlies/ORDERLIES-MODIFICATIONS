@@ -65,6 +65,7 @@ focus_tree = {
 		#icon = GFX_focus_ITA_grande_rivolta_rurale
 
 		allow_branch = {
+			always = no
 			has_dlc = "Arms Against Tyranny"
 			if = {
 				limit = {
@@ -4581,26 +4582,11 @@ focus_tree = {
 			}
 		}
 
-		x = 16
+		x = -16
 		y = 0
 		relative_position_id = FIN_suomalainen_sosialismi
 
-		offset = {
-			x = -16
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "Arms Against Tyranny" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = FIN_finnish_neutrality
-					}
-				}
-			}
-		}
+		
 
 		mutually_exclusive = { focus = FIN_right_wing_policies focus = FIN_suomalainen_sosialismi }
 		
@@ -4769,7 +4755,7 @@ focus_tree = {
 	focus = {
 		id = FIN_align_the_agrarian_league
 		icon = GFX_focus_generic_workers
-		prerequisite = { focus = FIN_political_unity focus = FIN_social_democracy }
+		prerequisite = { focus = FIN_political_unity  }
 
 		x = -3
 		y = 1
@@ -4798,7 +4784,7 @@ focus_tree = {
 	focus = {
 		id = FIN_the_finnish_swedish_peoples_party
 		icon = GFX_focus_generic_industrialists
-		prerequisite = { focus = FIN_social_democracy focus = FIN_political_unity }
+		prerequisite = {  focus = FIN_political_unity }
 
 		x = 2
 		y = 0
@@ -5371,6 +5357,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			is_subject = no
 			threat > 0.55
@@ -5528,6 +5518,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		search_filters = {}
 
 		completion_reward = {
@@ -5598,17 +5592,12 @@ focus_tree = {
 		icon = GFX_focus_FIN_the_lone_wolf
 		prerequisite = { focus = FIN_moderate_politics }
 		mutually_exclusive = { focus = FIN_northern_defense_front focus = FIN_join_the_allies }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = FIN_moderate_politics
 		cost = 5
 		available = {
-			is_subject = no
-			is_in_faction = no
-			threat > 0.5
-			neutrality > 0.85
-			NOT = { has_government = democratic }
-			NOT = { has_government = communism }
+			
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
@@ -5861,11 +5850,11 @@ focus_tree = {
 	focus = {
 		id = FIN_mineral_wealth_development
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = FIN_military_aid }
+		prerequisite = { focus = FIN_tornio_steel_factory }
 
 		x = -1
 		y = 1
-		relative_position_id = FIN_military_aid
+		relative_position_id = FIN_tornio_steel_factory
 		cost = 5
 		available = {
 			any_core_state = {
@@ -6417,12 +6406,12 @@ focus_tree = {
 	focus = {
 		id = FIN_finnish_march_of_conquest
 		icon = GFX_focus_generic_attack_finland
-		prerequisite = { focus = FIN_wartsila_engine_production }
-		prerequisite = { focus = FIN_german_military_advisors }
+		prerequisite = { focus = FIN_joint_scientific_program }
+		
 
-		x = 1
-		y = 1
-		relative_position_id = FIN_wartsila_engine_production
+		x = 0
+		y = 2
+		relative_position_id = FIN_joint_scientific_program
 		cost = 10
 		available = {
 			is_subject = no
@@ -6455,7 +6444,8 @@ focus_tree = {
 	focus = {
 		id = FIN_joint_scientific_program
 		icon = GFX_focus_research
-		prerequisite = { focus = FIN_industrialize_the_region focus = FIN_cooperation_with_germany focus = FIN_military_aid }
+		prerequisite = { focus = FIN_german_military_advisors  }
+		prerequisite = { focus = FIN_wartsila_engine_production  }
 
 		x = 0
 		y = 2
@@ -6509,7 +6499,7 @@ focus_tree = {
 		id = FIN_modernize_the_industry
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = FIN_joint_scientific_program }
-		mutually_exclusive = { focus = FIN_modernize_the_army }
+		
 		x = -1
 		y = 1
 		relative_position_id = FIN_joint_scientific_program
@@ -6589,7 +6579,7 @@ focus_tree = {
 		id = FIN_modernize_the_army
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FIN_joint_scientific_program }
-		mutually_exclusive = { focus = FIN_modernize_the_industry }
+		
 		x = 1
 		y = 1
 		relative_position_id = FIN_joint_scientific_program
@@ -6668,7 +6658,7 @@ focus_tree = {
 	focus = {
 		id = FIN_national_unity
 		icon = GFX_focus_EST_national_pride_in_finland
-		prerequisite = { focus = FIN_finnish_neutrality focus = FIN_right_wing_policies }
+		prerequisite = { focus = FIN_finnish_neutrality  }
 
 		x = 3
 		y = 0
@@ -7054,7 +7044,7 @@ focus_tree = {
 	focus = {
 		id = FIN_greater_finland
 		icon = GFX_focus_FIN_greater_finland
-		prerequisite = { focus = FIN_finnish_march_of_conquest focus = FIN_militarized_society focus = FIN_keepers_of_the_north }
+		prerequisite = {  focus = FIN_militarized_society  }
 
 		x = 0
 		y = 1
@@ -7129,6 +7119,7 @@ focus_tree = {
 		icon = GFX_focus_FIN_right_wing_policies
 		
 		allow_branch = {
+			always = no
 			has_dlc = "Arms Against Tyranny"
 			if = {
 				limit = {
@@ -9879,38 +9870,11 @@ focus_tree = {
 		id = FIN_enhance_southern_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 
-		x = 13
+		x = -2
 		y = 0
 		relative_position_id = FIN_right_wing_policies
 
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "Arms Against Tyranny" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = FIN_finnish_neutrality
-					}
-				}
-			}
-		}
-
-		offset = {
-			x = -27
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FIN_suomalainen_sosialismi
-			}
-		}
+		
 
 		cost = 5
 		available = {

@@ -13638,6 +13638,7 @@ focus_tree = {
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
+			date>1937.6.1
 		}
 
 		search_filters = {}
