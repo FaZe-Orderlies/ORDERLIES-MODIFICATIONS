@@ -44,6 +44,9 @@
 				idea = FRA_devalue_the_franc
 				days = 365
 			}
+			
+			
+			
 		}
 	}
 	focus = {

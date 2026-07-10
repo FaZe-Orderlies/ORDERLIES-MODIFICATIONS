@@ -39,22 +39,7 @@ country_event = {
 			}
 		}
 	}
-	option = { # Refuse
-		name = france.1.b
-		ai_chance = { 
-			base = 25 
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		JAP = {
-			country_event = { 
-				days = 5 
-				id = japan.7 
-			}
-		}
-	}
+	
 }
 
 # Maginot Line Extension
@@ -513,6 +498,10 @@ country_event = {
 							state = 543
 							state = 708
 							state = 706
+							state = 553
+							state = 554
+							state = 677
+							state = 680
 						}
 					}
 					event_target:vichy_france = { transfer_state = PREV }
