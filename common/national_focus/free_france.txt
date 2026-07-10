@@ -14,7 +14,7 @@
 	default = no
 	focus = {
 		id = FRA_appeal_to_the_french_nation
-		icon = GFX_focus_fra_french_union
+		icon = GFX_goal_generic_propaganda
 		x = 18
 		y = 0
 		offset = {
@@ -47,7 +47,7 @@
 	}
 	focus = {
 		id = FRA_appeal_to_overseas_territories
-		icon = GFX_focus_focus_fra_fascist_threat
+		icon = GFX_goal_generic_radar
 		x = 0
 		y = 1
 		offset = {
@@ -80,52 +80,12 @@
 				type = industrial_complex
 				level = 2
 			}
-
-			539 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 20 }
-				add_resource = { type = steel amount = 40 }
-				add_resource = { type = chromium amount = 10 }
-				add_resource = { type = coal amount = 20 }
-			}
-
-			772 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 15 }
-				add_resource = { type = steel amount = 35 }
-				add_resource = { type = chromium amount = 8 }
-				add_resource = { type = coal amount = 15 }
-			}
-
-			773 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 20 }
-				add_resource = { type = steel amount = 45 }
-				add_resource = { type = chromium amount = 12 }
-				add_resource = { type = coal amount = 25 }
-			}
-
-			660 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 10 }
-				add_resource = { type = steel amount = 30 }
-				add_resource = { type = chromium amount = 15 }
-				add_resource = { type = coal amount = 10 }
-			}
-
-			774 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 25 }
-				add_resource = { type = steel amount = 50 }
-				add_resource = { type = chromium amount = 20 }
-				add_resource = { type = coal amount = 30 }
-			}
 			
 		}
 	}
 	focus = {
 		id = FRA_intervention_in_north_africa
-		icon = GFX_focus_generic_camel_corps
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
 		offset = {
@@ -160,7 +120,7 @@
 	}
 	focus = {
 		id = FRA_intervention_in_west_africa
-		icon = GFX_focus_CONGO_gold_and_diamonds
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
 		offset = {
@@ -177,7 +137,9 @@
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+				FRA_controls_west_africa = yes
+			}
 		}
 		
 		bypass = {
@@ -188,146 +150,14 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			775 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			515 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			782 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			786 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			781 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 22 }
-				add_resource = { type = coal amount = 15 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
-
-			776 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 }
-			}
-
-			777 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 18 }
-				add_resource = { type = coal amount = 12 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
-
-			778 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			898 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			556 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 }
-			}
-
-			779 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			780 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			899 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			272 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			557 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			538 = { 
-				transfer_state = FRA 
-				add_state_core = FRA
-				add_resource = { type = steel amount = 18 }
-				add_resource = { type = coal amount = 12 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 2 } 
-			}
-			295 = { 
-				transfer_state = FRA 
-				add_state_core = FRA
-				add_resource = { type = steel amount = 12 }
-				add_resource = { type = coal amount = 8 }
-				add_resource = { type = tungsten amount = 1 }
-				add_resource = { type = chromium amount = 1 } 
-			}
-			888 = { 
-				transfer_state = FRA 
-				add_state_cor = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 } 
-			}
-			718 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			890 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			889 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			769 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			768 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
+			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_west_africa }
+			unlock_decision_tooltip = { decision = FRA_promise_independence_to_west_africa }
+			unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
 		}
 	}
 	focus = {
 		id = FRA_intervention_in_syria
-		icon = GFX_focus_GER_afrikakorps
+		icon = GFX_goal_generic_position_armies
 		x = -2
 		y = 1
 		offset = {
@@ -344,7 +174,9 @@
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+				FRA_controls_syria = yes
+			}
 		}
 		
 		bypass = {
@@ -355,25 +187,9 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			553 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			554 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			677 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			680 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_syria }
+			unlock_decision_tooltip = { decision = FRA_promise_independence_to_syria }
+			unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
 		}
 	}
 	focus = {
@@ -462,7 +278,7 @@
 	}
 	focus = {
 		id = FRA_intervention_in_madagascar
-		icon = GFX_focus_PHI_reunite_madagascar
+		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
 		offset = {
@@ -479,7 +295,19 @@
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+				543 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							OR = {
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -490,29 +318,13 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			543 = {
-        		transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 22 }
-				add_resource = { type = coal amount = 15 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
-
-			706 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			708 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_madagascar }
+			unlock_decision_tooltip = { decision = FRA_promise_independence_to_madagascar }
 		}
 	}
 	focus = {
 		id = FRA_form_the_national_committee
-		icon = GFX_focus_generic_commission
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 3
 		offset = {
@@ -532,11 +344,21 @@
 			factor = 1
 		}
 		available = {
-			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_legitimacy > 90
+			}
+			else = {
+				num_of_factories > 24
+			}
 		}
 		
 		bypass = {
-			
+			16 = {
+				is_controlled_by = ROOT
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -545,13 +367,11 @@
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.1
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = { FRA_industrial_expansion_mod }
 		}
 	}
 	focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_goal_tripartite_pact
 		x = 0
 		y = 1
 		offset = {
@@ -592,7 +412,7 @@
 	}
 	focus = {
 		id = FRA_continue_the_fight
-		icon = GFX_focus_PER_communist_afghanistan_intervention
+		icon = GFX_goal_generic_major_war
 		x = 5
 		y = 1
 		offset = {
@@ -648,7 +468,7 @@
 	}
 	focus = {
 		id = FRA_the_free_french_navy
-		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+		icon = GFX_goal_generic_build_navy
 		x = 0
 		y = 1
 		offset = {
@@ -693,7 +513,7 @@
 	}
 	focus = {
 		id = FRA_colonial_recruitment
-		icon = GFX_focus_INS_evacuate_soldiers_to_australia
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
 		y = 1
 		offset = {
@@ -731,7 +551,7 @@
 	}
 	focus = {
 		id = FRA_the_regiment_normandie
-		icon = GFX_focus_generic_cruiser_submarines
+		icon = GFX_focus_fra_regiment_normandie
 		x = 0
 		y = 1
 		offset = {
@@ -776,7 +596,7 @@
 
 	focus = {
 		id = FRA_refus_absurde
-		icon = GFX_focus_generic_army_doctrines_2
+		icon = GFX_goal_generic_demand_territory
 		x = -6
 		y = 1
 		
@@ -816,7 +636,7 @@
 	}
 	focus = {
 		id = FRA_the_maquis
-		icon = GFX_focus_AST_owen_gun
+		icon = GFX_focus_focus_fra_maquis
 		x = -2
 		y = 1
 		offset = {
@@ -844,18 +664,23 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_avtomati_granati
-				bonus = 1.0
-				uses = 2
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
+			add_ideas = { FRA_maquis }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+					not = { is_controlled_by = ROOT }
+					infrastructure < 3
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_the_maquis
+				}
 			}
 		}
 	}
 	focus = {
 		id = FRA_reach_out_to_trade_unions
-		icon = GFX_focus_generic_industrialists
+		icon = GFX_goal_generic_major_alliance
 		x = 0
 		y = 1
 		offset = {
@@ -883,17 +708,12 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
-				name = assembly_line_bonus
-				bonus = 1.0
-				uses = 1
-				technology = assembly_line_production
-			}
+			add_ideas = FRA_connections_to_trade_unions
 		}
 	}
 	focus = {
 		id = FRA_cooperation_with_the_communists
-		icon = GFX_focus_generic_public_works
+		icon = GFX_focus_generic_soviet_politics
 		x = 0
 		y = 1
 		offset = {
@@ -921,39 +741,21 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
-				name = excavation1_bonus
-				bonus = 1.0
-				uses = 1
-				technology = excavation1
+			if = {
+				limit = {
+					communism < 0.14
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
 			}
-
-			add_tech_bonus = {
-				name = excavation2_bonus
-				bonus = 1.0
-				uses = 1
-				technology = excavation2
-			}
-
-			add_tech_bonus = {
-				name = excavation3_bonus
-				bonus = 1.0
-				uses = 1
-				technology = excavation3
-			}
-
-			add_tech_bonus = {
-				name = excavation4_bonus
-				bonus = 1.0
-				uses = 1
-				technology = excavation4
-			}
-
+			add_ideas = FRA_communist_cooperation_2
 		}
 	}
 	focus = {
 		id = FRA_connections_to_industrialists
-		icon = GFX_focus_generic_industrial_experts
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 2
 		y = 1
 		offset = {
@@ -981,17 +783,12 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
-				name = concentrated_industry5_bonus
-				bonus = 1.0
-				uses = 1
-				technology = concentrated_industry5
-			}
+			add_ideas = FRA_industrialist_connections
 		}
 	}
 	focus = {
 		id = FRA_the_civil_and_military_organization
-		icon = GFX_focus_generic_anti_tank_guns
+		icon = GFX_goal_generic_military_deal
 		x = 0
 		y = 1
 		offset = {
@@ -1019,12 +816,10 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_ptoshki
-				bonus = 1.0
-				uses = 1
-				technology = antitank5
-			}	
+			swap_ideas = {
+				remove_idea = FRA_industrialist_connections
+				add_idea = FRA_civil_and_military_organization
+			}
 		}
 	}
 	focus = {
@@ -1058,12 +853,15 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = { FRA_national_resistance_council }
+			swap_ideas = {
+				remove_idea = FRA_civil_and_military_organization
+				add_idea = FRA_national_council_of_the_resistance
+			}
 		}
 	}
 	focus = {
 		id = FRA_national_uprising
-		icon = GFX_focus_SWI_fortify_border_with_france
+		icon = GFX_goal_generic_dangerous_deal
 		x = -2
 		y = 1
 		offset = {
@@ -1090,12 +888,12 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = { FRA_national_uprising_mod }
+			add_timed_idea = { idea = FRA_national_uprising days = 90 }
 		}
 	}
 	focus = {
 		id = FRA_french_forces_of_the_interior
-		icon = GFX_focus_fra_milice
+		icon = GFX_focus_prc_infiltration
 		x = 2
 		y = 1
 		offset = {
@@ -1122,7 +920,42 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = { FRA_french_internal_forces }
+			custom_effect_tooltip = FRA_french_forces_of_the_interior_tt
+			division_template = {
+				name = "FFI Demi-Brigade" 	
+				division_names_group = FRA_INF_01
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }		
+					infantry = { x = 0 y = 2 }		
+					infantry = { x = 0 y = 3 }		
+					infantry = { x = 0 y = 4 }		
+				}
+				support = {
+					
+				}
+			}
+			every_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					not = { has_state_flag = FRA_core_state_liberated }
+					is_fully_controlled_by = ROOT
+				}
+				create_unit = {
+					division = "name = \"1re Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					owner = ROOT
+				}
+				set_state_flag = FRA_core_state_liberated
+			}
 		}
 	}
 		

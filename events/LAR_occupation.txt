@@ -1,6 +1,0 @@
-﻿
-add_namespace = occupied_countries
-
-#instantiate a collabration government
-
-
