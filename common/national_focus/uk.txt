@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = ABDA_abdacom
+	
 
 	focus = {
 		id = crypto_bomb_focus

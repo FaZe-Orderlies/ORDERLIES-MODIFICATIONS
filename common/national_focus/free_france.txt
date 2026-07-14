@@ -59,7 +59,7 @@
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
 		
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -75,51 +75,64 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			custom_effect_tooltip = FRA_appeal_to_overseas_territories_resources_cust
+			hidden_effect = {
+					add_offsite_building = {
+					type = industrial_complex
+					level = 2
+					add_offsite_building = {
+					type = dockyard
+					level = 5
+					}
+				}
+				FRA = {
+					add_state_core = 539
+					add_state_core = 772
+					add_state_core = 773
+					add_state_core = 660
+					add_state_core = 774
+				}
+				539 = {
+					
+					add_resource = { type = tungsten amount = 20 }
+					add_resource = { type = steel amount = 40 }
+					add_resource = { type = chromium amount = 10 }
+					add_resource = { type = coal amount = 20 }
+				}
+
+				772 = {
+					
+					add_resource = { type = tungsten amount = 15 }
+					add_resource = { type = steel amount = 35 }
+					add_resource = { type = chromium amount = 8 }
+					add_resource = { type = coal amount = 15 }
+				}
+
+				773 = {
+					
+					add_resource = { type = tungsten amount = 20 }
+					add_resource = { type = steel amount = 45 }
+					add_resource = { type = chromium amount = 12 }
+					add_resource = { type = coal amount = 25 }
+				}
+
+				660 = {
+					
+					add_resource = { type = tungsten amount = 10 }
+					add_resource = { type = steel amount = 30 }
+					add_resource = { type = chromium amount = 15 }
+					add_resource = { type = coal amount = 10 }
+				}
+
+				774 = {
+					
+					add_resource = { type = tungsten amount = 25 }
+					add_resource = { type = steel amount = 50 }
+					add_resource = { type = chromium amount = 20 }
+					add_resource = { type = coal amount = 30 }
+				}
+			}
 			
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
-
-			539 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 20 }
-				add_resource = { type = steel amount = 40 }
-				add_resource = { type = chromium amount = 10 }
-				add_resource = { type = coal amount = 20 }
-			}
-
-			772 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 15 }
-				add_resource = { type = steel amount = 35 }
-				add_resource = { type = chromium amount = 8 }
-				add_resource = { type = coal amount = 15 }
-			}
-
-			773 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 20 }
-				add_resource = { type = steel amount = 45 }
-				add_resource = { type = chromium amount = 12 }
-				add_resource = { type = coal amount = 25 }
-			}
-
-			660 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 10 }
-				add_resource = { type = steel amount = 30 }
-				add_resource = { type = chromium amount = 15 }
-				add_resource = { type = coal amount = 10 }
-			}
-
-			774 = {
-				add_state_core = FRA
-				add_resource = { type = tungsten amount = 25 }
-				add_resource = { type = steel amount = 50 }
-				add_resource = { type = chromium amount = 20 }
-				add_resource = { type = coal amount = 30 }
-			}
 			
 		}
 	}
@@ -172,7 +185,7 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -188,141 +201,115 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			775 = {
-				transfer_state = FRA
-				add_state_core = FRA
+			custom_effect_tooltip = FRA_invade_west_africa_cust
+			hidden_effect = {
+				FRA = {
+				transfer_state = 775
+				add_state_core = 775
+				transfer_state = 515
+				add_state_core = 515
+				transfer_state = 782
+				add_state_core = 782
+				transfer_state = 786
+				add_state_core = 786
+				transfer_state = 781
+				add_state_core = 781
+				transfer_state = 776
+				add_state_core = 777
+				transfer_state = 778
+				add_state_core = 778
+				transfer_state = 898
+				add_state_core = 898
+				transfer_state = 556
+				add_state_core = 556
+				transfer_state = 779
+				add_state_core = 779
+				transfer_state = 780
+				add_state_core = 780
+				transfer_state = 899
+				add_state_core = 899
+				transfer_state = 272
+				add_state_core = 272
+				transfer_state = 557
+				add_state_core = 557
+				transfer_state = 538
+				add_state_core = 538
+				transfer_state = 295
+				add_state_core = 295
+				transfer_state = 888
+				add_state_core = 888
+				transfer_state = 718
+				add_state_core = 718
+				transfer_state = 890
+				add_state_core = 890
+				transfer_state = 889
+				add_state_core = 889
+				transfer_state = 769
+				add_state_core = 769
+				transfer_state = 768
+				add_state_core = 768
+				transfer_state = 777
+				add_state_core = 777
 			}
+			
+				781 = {
+					
+					add_resource = { type = steel amount = 22 }
+					add_resource = { type = coal amount = 15 }
+					add_resource = { type = tungsten amount = 3 }
+					add_resource = { type = chromium amount = 2 }
+				}
 
-			515 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+				776 = {
+					
+					add_resource = { type = steel amount = 15 }
+					add_resource = { type = coal amount = 10 }
+					add_resource = { type = tungsten amount = 2 }
+					add_resource = { type = chromium amount = 1 }
+				}
 
-			782 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+				777 = {
+					
+					add_resource = { type = steel amount = 18 }
+					add_resource = { type = coal amount = 12 }
+					add_resource = { type = tungsten amount = 3 }
+					add_resource = { type = chromium amount = 2 }
+				}
 
-			786 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+				
 
-			781 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 22 }
-				add_resource = { type = coal amount = 15 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
+				556 = {
+					
+					add_resource = { type = steel amount = 15 }
+					add_resource = { type = coal amount = 10 }
+					add_resource = { type = tungsten amount = 2 }
+					add_resource = { type = chromium amount = 1 }
+				}
 
-			776 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 }
+				538 = { 
+					
+					add_resource = { type = steel amount = 18 }
+					add_resource = { type = coal amount = 12 }
+					add_resource = { type = tungsten amount = 2 }
+					add_resource = { type = chromium amount = 2 } 
+				}
+				295 = { 
+					
+					add_resource = { type = steel amount = 12 }
+					add_resource = { type = coal amount = 8 }
+					add_resource = { type = tungsten amount = 1 }
+					add_resource = { type = chromium amount = 1 } 
+				}
+				888 = { 
+					
+					add_resource = { type = steel amount = 15 }
+					add_resource = { type = coal amount = 10 }
+					add_resource = { type = tungsten amount = 2 }
+					add_resource = { type = chromium amount = 1 } 
+				}
+				
 			}
-
-			777 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 18 }
-				add_resource = { type = coal amount = 12 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
-
-			778 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			898 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			556 = {
-				transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 }
-			}
-
-			779 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			780 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			899 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			272 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			557 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			538 = { 
-				transfer_state = FRA 
-				add_state_core = FRA
-				add_resource = { type = steel amount = 18 }
-				add_resource = { type = coal amount = 12 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 2 } 
-			}
-			295 = { 
-				transfer_state = FRA 
-				add_state_core = FRA
-				add_resource = { type = steel amount = 12 }
-				add_resource = { type = coal amount = 8 }
-				add_resource = { type = tungsten amount = 1 }
-				add_resource = { type = chromium amount = 1 } 
-			}
-			888 = { 
-				transfer_state = FRA 
-				add_state_cor = FRA
-				add_resource = { type = steel amount = 15 }
-				add_resource = { type = coal amount = 10 }
-				add_resource = { type = tungsten amount = 2 }
-				add_resource = { type = chromium amount = 1 } 
-			}
-			718 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			890 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			889 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			769 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
-			768 = { 
-				transfer_state = FRA 
-				add_state_core = FRA 
-			}
+			
 		}
 	}
 	focus = {
@@ -339,7 +326,7 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -355,25 +342,21 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			553 = {
-				transfer_state = FRA
-				add_state_core = FRA
+			custom_effect_tooltip = FRA_invade_syria_cust
+			hidden_effect = {
+				FRA = {
+					transfer_state = 553
+					add_state_core = 533
+					transfer_state = 554
+					add_state_core = 554
+					transfer_state = 677
+					add_state_core = 677
+					transfer_state = 680
+					add_state_core = 680
+				}
+			
 			}
-
-			554 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			677 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
-
-			680 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+			
 		}
 	}
 	focus = {
@@ -474,7 +457,7 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -490,24 +473,27 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			543 = {
-        		transfer_state = FRA
-				add_state_core = FRA
-				add_resource = { type = steel amount = 22 }
-				add_resource = { type = coal amount = 15 }
-				add_resource = { type = tungsten amount = 3 }
-				add_resource = { type = chromium amount = 2 }
-			}
+			custom_effect_tooltip = FRA_invade_madagascar_cust
+			hidden_effect = {
+				FRA = {
+					transfer_state = 543
+					add_state_core = 543
+					transfer_state = 706
+					add_state_core = 706
+					transfer_state = 708
+					add_state_core = 708
+				}
+				543 = {
+					
+					add_resource = { type = steel amount = 22 }
+					add_resource = { type = coal amount = 15 }
+					add_resource = { type = tungsten amount = 3 }
+					add_resource = { type = chromium amount = 2 }
+				}
 
-			706 = {
-				transfer_state = FRA
-				add_state_core = FRA
+				
 			}
-
-			708 = {
-				transfer_state = FRA
-				add_state_core = FRA
-			}
+			
 		}
 	}
 	focus = {
@@ -644,7 +630,7 @@
 				planning_skill = 2
 				logistics_skill = 2
 			}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 350
@@ -681,7 +667,7 @@
 		available_if_capitulated = yes
 		completion_reward = {
 
-			set_technology = { improved_ship_hull_heavy = 1 }
+			
 
 			create_equipment_variant = {
 				name = "ACL Battleship Class"
@@ -704,6 +690,120 @@
 				}
 			}
 
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = FRA
+					version_name = "ACL Battleship Class"
+				}
+				name = "Madagascar" 
+				requested_factories = 20
+				progress = 0.99
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+
+			create_equipment_variant = {
+				name = "ACL Battleship Class"
+				type = ship_hull_heavy_3
+
+				parent_version = 0
+
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_engine_slot = ship_engine_heavy_3
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_secondaries_dp_2
+					rear_1_custom_slot = ship_anti_air_3
+
+					ship_fire_control_system_slot = ship_fire_control_system_3
+					ship_radar_slot = ship_radar_3
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = FRA
+					version_name = "ACL Battleship Class"
+				}
+				name = "Tongo" 
+				requested_factories = 20
+				progress = 0.99
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+
+			create_equipment_variant = {
+				name = "ACL Battleship Class"
+				type = ship_hull_heavy_3
+
+				parent_version = 0
+
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_engine_slot = ship_engine_heavy_3
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_secondaries_dp_2
+					rear_1_custom_slot = ship_anti_air_3
+
+					ship_fire_control_system_slot = ship_fire_control_system_3
+					ship_radar_slot = ship_radar_3
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = FRA
+					version_name = "ACL Battleship Class"
+				}
+				name = "Gabon" 
+				requested_factories = 20
+				progress = 0.99
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+
+			create_equipment_variant = {
+				name = "ACL Battleship Class"
+				type = ship_hull_heavy_3
+
+				parent_version = 0
+
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_engine_slot = ship_engine_heavy_3
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_secondaries_dp_2
+					rear_1_custom_slot = ship_anti_air_3
+
+					ship_fire_control_system_slot = ship_fire_control_system_3
+					ship_radar_slot = ship_radar_3
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = FRA
+					version_name = "ACL Battleship Class"
+				}
+				name = "Kongo" 
+				requested_factories = 20
+				progress = 0.99
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
 			
 		}
 	}
@@ -759,17 +859,12 @@
 		}
 		relative_position_id = FRA_colonial_recruitment
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			any_enemy_country = {
-				has_war_with = SOV
-			}
-			NOT = {
-				has_war_with = SOV
-			}
+			
 		}
 		
 		bypass = {
@@ -779,14 +874,15 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 25
-			SOV = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 100
-					producer = FRA
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
 				}
+
+				add_ideas = FRA_allied_convoy_program
 			}
+
+			add_ideas = { FRA_allied_convoy_program }
 		}
 	}
 

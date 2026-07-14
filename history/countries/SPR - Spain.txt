@@ -3,7 +3,8 @@
 oob = "SPR_1936"
 
 add_ideas = {
-	armed_neutrality	
+	armed_neutrality
+	free_trade
 }
 
 

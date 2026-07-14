@@ -13545,7 +13545,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_the_triumphant_will
 
-		cost = 10
+		cost = 5
 
 		bypass = {
 			OR = {
@@ -13985,7 +13985,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_fate_of_yugoslavia
-		cost = 10
+		cost = 5
 		
 		available = {
 			is_subject = no
@@ -14389,9 +14389,9 @@ focus_tree = {
 		prerequisite = { focus = GER_fate_of_greece }
 		
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_fate_of_greece
-		cost = 10
+		cost = 2
 
 		will_lead_to_war_with = SOV
 
@@ -14406,8 +14406,7 @@ focus_tree = {
 		}
 
 		cancel = {
-			is_subject = yes
-			NOT = { country_exists = SOV }
+			
 		}
 
 		historical_ai = {
@@ -14464,46 +14463,56 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
-			IF = {
-				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
-				}
-			}
-			ELSE = {
-				every_country = {
-					limit = { original_tag = SOV }
+			custom_effect_tooltip = GER_barbarossa_fate_of_the_reich_tooltip
+			hidden_effect = {
 					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-							expire = 0
-						}
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
 					}
 				}
-			}
 
-			IF = {
-				limit = {
-					KUB = {
-						exists = no
-					}
-					DON = {
-						exists = no
-					}
-					SOV = {
-						NOT = {
-							has_completed_focus = SOV_beaten_but_not_defeated
-						}
+				ITA = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
 					}
 				}
-				country_event = {
-					id = wuw_GER_legions.8
-				}	
+
+				HUN = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+
+				ROM = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+
+				BUL = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+
+				FIN = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+					
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				set_cosmetic_tag = GER_greater_german_reich
 			}
+			
 		}
 	}
 

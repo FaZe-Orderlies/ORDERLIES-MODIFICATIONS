@@ -36,8 +36,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 30 y = 1600 }
 
-	shared_focus = ABDA_abdacom
-
 	inlay_window = { #Empty version to show before ast_right_vs_left_campaign_inlay_window is unlocked
 		id = ast_right_vs_left_campaign_empty_inlay_window
 		position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_inlay_window if changed
@@ -1297,7 +1295,7 @@ focus_tree = {
 	focus = {
 		id = AST_pleading_britain
 		icon = GFX_focus_generic_phone_alp
-		overlay = GFX_focus_election_overlay_red_1_blue_1
+		
 
 #		prerequisite = { }
 		mutually_exclusive = { focus = AST_the_ultimate_overseas_duty focus = AST_inevitably_independent focus = AST_bring_on_the_giant }
@@ -1323,28 +1321,7 @@ focus_tree = {
 		}
 
 		available = {
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = AST_uap_win_count_trigger_tt
-					COUNT = 1
-				}
-				check_variable = {
-					var = AST_uap_election_win_count
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = AST_alp_win_count_trigger_tt
-					COUNT = 1
-				}
-				check_variable = {
-					var = AST_alp_election_win_count
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
+			date>1940.1.1
 			
 		}
 
@@ -1922,6 +1899,10 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
+
+		allow_branch = {
+			always = no
+		}
 	
 		completion_reward = {
 			remove_dynamic_modifier = { 
@@ -2752,6 +2733,7 @@ focus_tree = {
 		cost = 5
 
 		allow_branch = {
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -3547,6 +3529,10 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
+
+		allow_branch = {
+			always = no
+		}
 	
 		completion_reward = {
 			every_state = {

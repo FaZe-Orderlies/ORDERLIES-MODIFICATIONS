@@ -353,7 +353,7 @@ SAF_army = {
 	special_forces_cap = SAF_special_forces_cap_mod
 	initiative_factor = SAF_initiative_factor_mod
 	shore_bombardment_bonus = SAF_shore_bombardment_bonus_mod
-	
+	conscription_factor = SAF_conscription_mod
 }
 
 ROM_mod = {

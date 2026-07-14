@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 			ITA_Operazione_E_spirit = {
-			picture = GFX_idea_ITA_victory
+			picture = ITA_impero_italiano
 			allowed = {
 				original_tag = ITA
 			}
@@ -63,7 +63,7 @@ ideas = {
     	}
 
 		FRA_french_internal_forces = {
-			picture = idea_resistance
+			picture = FRA_national_mobilization_focus
 
 			allowed = {
 				original_tag = FRA
@@ -78,7 +78,7 @@ ideas = {
 		}
 
 		FRA_national_uprising_mod = {
-			picture = idea_war
+			picture = FRA_scw_intervention_nationalists_focus
 
 			allowed = {
 				original_tag = FRA
@@ -94,7 +94,7 @@ ideas = {
 		}
 
 		FRA_industrial_expansion_mod = {
-			picture = idea_generic_industry
+			picture = generic_goods_red_bonus
 
 			allowed = {
 				original_tag = FRA
@@ -105,6 +105,23 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.08
 				industrial_capacity_factory = 0.05
+			}
+		}
+
+		FRA_allied_convoy_program = {
+
+			picture = idea_generic_convoys
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				convoy_1 = {
+					build_cost_ic = -0.10
+				}
 			}
 		}
 	}

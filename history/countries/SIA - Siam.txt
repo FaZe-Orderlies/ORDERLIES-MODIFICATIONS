@@ -1,23 +1,14 @@
 ﻿capital = 1076
 
 oob = "SIA_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SIA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SIA_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SIA_1936_air_bba"
-	else = {
-		set_air_oob = "SIA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
+
+
+add_ideas = {
+	civilian_economy
+	limited_conscription
+	free_trade
+	armed_neutrality
+	
 }
 
 
@@ -32,110 +23,17 @@ if = {
 	recruit_character = SIA_luang_phibunsongkhram #This is Phibun
 	recruit_character = SIA_phraya_preechacholayudha
 	recruit_character = SIA_phraya_chitnasongkhla
-
-	add_ideas = idea_SIA_army_of_siam
+	add_ideas = {
+		civilian_economy
+		limited_conscription
+		free_trade
+		armed_neutrality
+	
+	}
+	
 }
 recruit_character = SIA_phraya_phahon
-recruit_character = SIA_pridi_banomyong
-recruit_character = SIA_plaek_phibunsongkhram
 
-
-
-recruit_character = SIA_phra_silpasakrakorn
-recruit_character = SIA_luang_sinthusongkhramchai
-recruit_character = SIA_thawon_thamrongnawasawat
-
-recruit_character = SIA_phraya_thayarnpikart
-recruit_character = SIA_phra_vechayanrangsarit
-
-
-recruit_character = SIA_phraya_wichcitcholathai
-recruit_character = SIA_sawat_phutianands
-recruit_character = SIA_phraya_chalermarkiart
-recruit_character = SIA_kuang_abhayavongsa
-recruit_character = SIA_thawee_punyaketu
-recruit_character = SIA_phot_bhahalyodin
-
-
-
-
-### PROPAGANDA ###
-set_variable = { SIA_new_propaganda_campaign = 0 } #Used to pick a poster slot
-set_variable = { SIA_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
-set_variable = { SIA_poster_left_icon_frame = constant:propaganda.SIA.propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
-set_variable = { SIA_poster_center_icon_frame = constant:propaganda.SIA.propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
-set_variable = { SIA_poster_right_icon_frame = constant:propaganda.SIA.propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
-
-set_variable = { SIA_propaganda_cost = constant:propaganda.SIA.propaganda_cost } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
-set_variable = { SIA_propaganda_celebrating_the_constitution_cost = SIA_propaganda_cost } # ID = 2
-set_variable = { SIA_propaganda_the_revolution_of_24th_june_cost = SIA_propaganda_cost } # ID = 3
-set_variable = { SIA_propaganda_suppressing_the_rebellion_of_1933_cost = SIA_propaganda_cost } # ID = 4
-set_variable = { SIA_propaganda_the_king_of_krung_thon_cost = SIA_propaganda_cost } # ID = 5
-set_variable = { SIA_propaganda_blood_of_suphan_cost = SIA_propaganda_cost } # ID = 6
-set_variable = { SIA_propaganda_thai_soldiers_blood_cost = constant:propaganda.SIA.propaganda_cost_large } # ID = 7
-set_variable = { SIA_propaganda_undauntedly_love_nation_cost = constant:propaganda.SIA.propaganda_cost_large } # ID = 8
-
-set_variable = { SIA_propaganda_campaigns_taken = 0 } #Used as a requirement
-
-
-set_war_support = 0
-set_stability = 0.07 #+12 from ruling party
-
-
-if = {
-	limit = {
-		has_dlc = "Thunder at Our Gates"
-	}
-	#add_ideas = idea_SIA_military_neutral
-	#add_ideas = idea_SIA_civilian_neutral
-	recruit_character = SIA_phraya_songsuradet
-	recruit_character = SIA_rangsit_prayurasakdi
-	recruit_character = SIA_luang_wichitwathakan
-	recruit_character = SIA_charun_rattanakun_seriroengrit
-	recruit_character = SIA_adul_aduldejajaras
-	recruit_character = SIA_phichit_kriangsakphichit
-	recruit_character = SIA_luang_haansongkhram 
-	recruit_character = SIA_mangkorn_phromyothi
-	recruit_character = SIA_luang_chawengsaksongkhram
-	recruit_character = SIA_aditya_dibabha
-	recruit_character = SIA_prince_subhasvasti
-	recruit_character = SIA_jira_wichitsongkhram
-	recruit_character = SIA_ananda_mahidol
-	recruit_character = SIA_prajadhipok
-	recruit_character = SIA_rambai_barni
-	recruit_character = SIA_bowardej
-
-	recruit_character = SIA_josiah_crosby
-	recruit_character = SIA_puey_ungpakorn
-	recruit_character = SIA_seni_pramoj
-	recruit_character = SIA_prayoon_pamornmontri
-	recruit_character = SIA_direk_jayanama
-	recruit_character = SIA_phra_sitthi_ruang_dejpol
-	recruit_character = SIA_pao_pienlert_boripanyutakit
-	recruit_character = SIA_sanguan_tularaksa
-	recruit_character = SIA_chao_phraya_sri_dharmathibhet
-	recruit_character = SIA_vanich_pananont
-	recruit_character = SIA_manopakorn_nitithada
-	recruit_character = SIA_damrong_rajanubhab
-	recruit_character = SIA_paribatra_sukhumbandhu
-	recruit_character = SIA_wan_waithayakon
-	recruit_character = SIA_vilas_osathanondh
-	recruit_character = SIA_dhani_nivat
-	recruit_character = SIA_chamkat_phalangkun
-	recruit_character = SIA_phra_bisal_sukhumvit
-	recruit_character = SIA_kukrit_pramoj
-	recruit_character = SIA_sindh_kamalanavin
-	recruit_character = SIA_prayoon_yuthasastrkosol
-	recruit_character = SIA_luang_subhachalasai
-	recruit_character = SIA_phin_choonhavan
-	recruit_character = SIA_tiang_sirikhan
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "Thunder at Our Gates" }
-	}
-	recruit_character = SIA_sindhu_kamalanavin
-}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

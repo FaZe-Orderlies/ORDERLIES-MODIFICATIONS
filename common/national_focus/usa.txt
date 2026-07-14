@@ -25,7 +25,7 @@ focus_tree = {
 	}
 
 	continuous_focus_position = { x = 80 y = 1600 }
-	shared_focus = ABDA_abdacom
+	
 	default = no
 #	focus = {
 #		id = USA_
@@ -66,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_focus_generic_self_management
-		x = 50
+		x = 22
 		y = 0
 		mutually_exclusive = { focus = USA_communism1 }
 		mutually_exclusive = { focus = USA_America_first_mod }
@@ -1717,10 +1717,11 @@ focus_tree = {
 	focus = {
 		id = USA_neutrality_act
 		icon = GFX_focus_ARG_the_american_push
-		x = 50
+		x = 0
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal  }
 		mutually_exclusive = { focus = USA_limited_intervention }
+		relative_position_id = USA_continue_the_new_deal
 		
 
 		cost = 10
@@ -3886,7 +3887,7 @@ focus_tree = {
 		available = {
 			date>1939.10.1
 			OR = {
-				has_completed_focus = USA_comitet_of_defend_of_himesphere
+				
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -5812,7 +5813,7 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 64
+		x = 35
 		y = 0
 		
 		cost = 10
