@@ -1,0 +1,31 @@
+
+state={
+	id=411
+	name="STATE_411" # Isfahan
+	manpower = 1
+	resources={
+		
+	}
+	state_category = town
+	
+
+	history={
+		owner = NEG
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			2026 1 
+		}
+		victory_points = {
+			4928 1 
+		}
+		
+	}
+
+	provinces={
+		2026 4928 4983 5067 8074 12756 
+	}
+
+	local_supplies=0.0 
+}

@@ -644,6 +644,11 @@
 				planning_skill = 2
 				logistics_skill = 2
 			}
+
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 350
+			}
 		}
 	}
 	focus = {
@@ -675,20 +680,31 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 50
+
+			set_technology = { improved_ship_hull_heavy = 1 }
+
+			create_equipment_variant = {
+				name = "ACL Battleship Class"
+				type = ship_hull_heavy_3
+
+				parent_version = 0
+
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_engine_slot = ship_engine_heavy_3
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_secondaries_dp_2
+					rear_1_custom_slot = ship_anti_air_3
+
+					ship_fire_control_system_slot = ship_fire_control_system_3
+					ship_radar_slot = ship_radar_3
+				}
 			}
-			create_navy_leader = {
-				name = "Emilie Muselier"
-				GFX = GFX_portrait_fra_emilie_muselier
-				skill = 3
-				traits = {  }
-				attack_skill = 1
-				defense_skill = 2
-				maneuvering_skill = 3
-				coordination_skill = 4
-			}
+
+			
 		}
 	}
 	focus = {

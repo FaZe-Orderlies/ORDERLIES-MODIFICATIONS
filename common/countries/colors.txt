@@ -9,11 +9,11 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 209 30 54 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
+	color = rgb { 142 17 30 }
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
@@ -21,7 +21,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 26 77 195 }
 	color_ui = rgb { 74 147 255 }
 }
 LUX = {
@@ -62,7 +62,7 @@ SPR = {
 	color_ui = rgb { 245 123 38 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
+	color = rgb { 51 124 46 }
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
@@ -258,7 +258,7 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 20 133 237 }
+	color = rgb { 14 95 176 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {

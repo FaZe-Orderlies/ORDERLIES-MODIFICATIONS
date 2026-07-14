@@ -1504,6 +1504,10 @@ focus_tree = {
 			factor = 3
 		}
 
+		available = {
+			date>1941.6.1
+		}
+
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
