@@ -4302,10 +4302,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			show_unit_leaders_tooltip = GER_heinz_guderian
+			
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = heinz_guderian
-			show_unit_leaders_tooltip = GER_erwin_rommel
+			
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = erwin_rommel
 

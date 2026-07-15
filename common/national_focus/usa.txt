@@ -190,8 +190,8 @@ focus_tree = {
 		icon = GFX_focus_ARG_strengthening_the_concordancia
 		prerequisite = { focus = USA_neutrality_act }
 		available = {
-			has_government = democratic
-			congress_medium_support_trigger = yes
+			
+			
 		}
 
 		bypass = {
@@ -267,7 +267,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_high_support_trigger = yes
+			
 		}
 		
 		bypass = {
@@ -279,8 +279,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = USA_neutrality_act
-			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			swap_ideas = {
 				remove_idea = undisturbed_isolation_three
 				add_idea = undisturbed_isolation_four
@@ -435,7 +434,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_high_support_trigger = yes
+			
 		}
 		
 		bypass = {
@@ -1730,7 +1729,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			congress_low_support_trigger = yes
+			
 			democratic > 0.95
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
