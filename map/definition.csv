@@ -13412,12 +13412,17 @@
 13411;120;133;80;land;false;forest;6
 13412;243;251;68;land;true;plains;6
 13413;171;238;52;land;true;urban;1
-13414;140;238;52;land;true;desert;1
-13415;52;140;238;land;true;desert;1
-13416;238;52;140;land;true;desert;1
-13417;255;52;67;land;true;desert;1
-13418;67;255;52;land;true;desert;1
-13419;52;67;255;land;true;desert;1
-13420;93;30;180;land;true;desert;1
+13414;140;238;52;land;false;desert;1
+13415;52;140;238;land;false;desert;1
+13416;238;52;140;land;false;desert;1
+13417;255;52;67;land;false;desert;1
+13418;67;255;52;land;false;desert;1
+13419;52;67;255;land;false;desert;1
+13420;93;30;180;land;false;desert;1
+13421;180;90;30;land;false;desert;1
+13422;30;180;93;land;false;desert;1
+13423;47;93;28;land;false;desert;1
+13424;28;47;93;land;false;desert;1
+13425;93;28;47;land;false;desert;1
 
 
