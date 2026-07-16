@@ -1,29 +1,29 @@
-
 state={
-	id=450
-	name="STATE_450"
-	manpower = 82535
-	
-	state_category = wasteland
+	id=701
+	name="STATE_701"
 
 	history={
-		owner = ITA
-		
+		owner = ENG
 		victory_points = {
-			11954 3 
+			4989 1 
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 1
-			11954 = {
+			4989 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		 4120 10123 11954 
+		4989 13213 
 	}
+	manpower=199520
+	buildings_max_level_factor=1.000
+	state_category=enclave
 
 	local_supplies=0.0 
 }

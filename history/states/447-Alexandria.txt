@@ -32,7 +32,6 @@ state={
 			}
 		}
 
-		add_core_of = EGY
 	}
 
 	provinces={
