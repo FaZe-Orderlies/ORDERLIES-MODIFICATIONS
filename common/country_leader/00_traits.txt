@@ -1316,13 +1316,13 @@ leader_traits = {
 
 		equipment_bonus = {
 			small_plane_airframe = {
-				build_cost_ic = -0.15 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 			medium_plane_airframe = {
-				build_cost_ic = -0.15 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 			large_plane_airframe = {
-				build_cost_ic = -0.15 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 		}
 
@@ -1336,13 +1336,13 @@ leader_traits = {
 
 		equipment_bonus = {
 			small_plane_airframe = {
-				build_cost_ic = -0.2 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 			medium_plane_airframe = {
-				build_cost_ic = -0.2 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 			large_plane_airframe = {
-				build_cost_ic = -0.2 instant = yes
+				build_cost_ic = -0.10 instant = yes
 			}
 		}
 
