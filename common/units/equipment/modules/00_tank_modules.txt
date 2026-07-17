@@ -493,7 +493,7 @@ equipment_modules = {
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
-
+		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
@@ -528,7 +528,7 @@ equipment_modules = {
 		abbreviation = "h2m"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-
+		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
@@ -558,7 +558,7 @@ equipment_modules = {
 		abbreviation = "h3m"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-
+		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
@@ -619,7 +619,7 @@ equipment_modules = {
 		abbreviation = "s3m"
 		category = tank_super_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-
+		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament

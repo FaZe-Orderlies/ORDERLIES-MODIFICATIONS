@@ -1,0 +1,17 @@
+add_namespace = ORDL_events
+
+news_event = {
+    id = news.1000
+    title = news.1000.t
+    desc = news.1000.d
+    picture = GFX_report_event_operation_torch
+
+    major = yes
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = news.1000.a
+    }
+}

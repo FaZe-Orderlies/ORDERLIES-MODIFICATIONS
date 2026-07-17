@@ -1391,12 +1391,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 6
+			traits = { blockade_runner fleet_protector superior_tactician air_controller ironside}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id = 0
 			visible = {
 				NOT = {
@@ -1422,15 +1422,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { bold navy_career_officer gunnery_expert naval_lineage }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = -1
-		}
+		
 
 		scientist = {
 			traits = { scientist_trait_bright }
@@ -1453,15 +1445,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { bold navy_career_officer aviation_enthusiast air_controller }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 3
-			legacy_id = -1
-		}
+		
 
 	}
 
@@ -1477,15 +1461,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { navy_career_officer naval_lineage }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 3
-			legacy_id = -1
-		}
+		
 
 	}
 
@@ -1501,16 +1477,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { old_guard_navy superior_tactician lancer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = -1
-		}
-
+		
 	}
 
 	# Tamon Yamaguchi
@@ -1526,12 +1493,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { bold aviation_enthusiast cuts_corners }
-			skill = 4
-			attack_skill = 5
-			defense_skill = 2
-			maneuvering_skill = 4
-			coordination_skill = 3
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id = -1
 		}
 
@@ -1573,15 +1540,6 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { bold battleship_adherent superior_tactician spotter }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 2
-			maneuvering_skill = 4
-			coordination_skill = 3
-			legacy_id = 0
-		}
 
 	}
 
@@ -1596,15 +1554,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { gentlemanly }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 1
-			coordination_skill = 2
-			legacy_id = 0 
-		}
+		
 
 	}
 
@@ -1619,15 +1569,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { navy_career_officer aviation_enthusiast }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			maneuvering_skill = 1
-			coordination_skill = 3
-			legacy_id = 0
-		}
+	
 
 	}
 
@@ -1642,15 +1584,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { battleship_adherent naval_lineage fly_swatter }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		
 
 	}
 
@@ -1665,15 +1599,6 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { spotter }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 3
-			legacy_id = 0
-		}
 
 	}
 
@@ -1706,15 +1631,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { old_guard_navy bold ironside }
-			skill = 3
-			attack_skill = 5
-			defense_skill = 1
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		
 
 	}
 
@@ -1730,12 +1647,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 4
+			traits = { blockade_runner fleet_protector superior_tactician air_controller ironside}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id = 0
 		}
 
@@ -1752,15 +1669,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { old_guard_navy }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 1
-			coordination_skill = 2
-			legacy_id = 0
-		}
+	
 
 	}
 
@@ -1775,15 +1684,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { battleship_adherent }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 2
-			coordination_skill = 1
-			legacy_id = 0
-		}
+		
 
 	}
 
@@ -1798,15 +1699,6 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { navy_career_officer seawolf }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			maneuvering_skill = 1
-			coordination_skill = 1
-			legacy_id = 0
-		}
 
 	}
 
@@ -1821,15 +1713,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { gentlemanly }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		
 
 	}
 

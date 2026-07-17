@@ -909,16 +909,7 @@ characters = {
 				small=GFX_portrait_SOV_filipp_oktyabrsky_small
 			}
 		}
-		navy_leader = {
-			traits = { ironside ground_pounder }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 1
-			coordination_skill = 1
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
+		
 	}
 
 	SOV_sergey_gorshkov = {
@@ -954,12 +945,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { bold navy_career_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
 			legacy_id = 411
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1008,16 +999,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { green_water_expert }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 1
-			coordination_skill = 2
-			legacy_id = 406
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
+		
 	}
 
 	SOV_arseny_golovko = {
@@ -1064,12 +1046,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { spotter arctic_water_expert }
-			skill = 4
-			attack_skill = 3
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 4
 			defense_skill = 4
-			maneuvering_skill = 3
-			coordination_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
 			legacy_id = 409
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1119,12 +1101,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { seawolf }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
 			legacy_id = 403
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

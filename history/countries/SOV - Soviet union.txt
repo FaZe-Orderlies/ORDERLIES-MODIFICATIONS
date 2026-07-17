@@ -3,6 +3,20 @@
 #### NO STEP BACK
 ####
 
+set_collaboration = {
+    target = EST
+    value = 1.0
+}
+
+set_collaboration = {
+    target = LAT
+    value = 1.0
+}
+
+set_collaboration = {
+    target = LIT
+    value = 1.0
+}
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = {
@@ -879,7 +893,6 @@ set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 add_ideas = {	
 	home_of_revolution
-	trotskyite_plot_nsb
 	SOV_politicized_military
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)

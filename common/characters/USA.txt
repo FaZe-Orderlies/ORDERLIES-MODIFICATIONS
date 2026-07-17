@@ -734,12 +734,12 @@ characters={
 		}
 
 		navy_leader={
-			traits={ navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=5
+			traits = { blockade_runner fleet_protector superior_tactician air_controller ironside}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id=0
 		}
 	}
@@ -770,12 +770,12 @@ characters={
 		}
 
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
-			skill=4
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=4
-			coordination_skill=5
+			traits = { blockade_runner fleet_protector superior_tactician air_controller ironside}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id=0
 		}
 	}
@@ -792,15 +792,7 @@ characters={
 				small=GFX_portrait_USA_william_halsey_jr_small
 			}
 		}
-		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-		}
+		
 		advisor={
 			slot = navy_chief
 			idea_token = william_halsey
@@ -843,15 +835,7 @@ characters={
 			}
 		}
 
-		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-		}
+		
 	}
 
 	USA_raymond_a_spruance={
@@ -877,15 +861,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		navy_leader={
-			traits={ gentlemanly navy_career_officer superior_tactician }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=3
-			legacy_id=0
-		}
+	
 	}
 
 	USA_harold_rainsford_stark={
@@ -897,12 +873,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
 			legacy_id=0
 		}
 	}
@@ -915,15 +891,7 @@ characters={
 				small=GFX_portrait_USA_arleigh_burke_small
 			}
 		}
-		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=4
-			legacy_id=0
-		}
+	
 	}
 
 	USA_charles_m_cooke_jr={
@@ -934,15 +902,9 @@ characters={
 				small=GFX_portrait_USA_charles_m_cooke_jr_small
 			}
 		}
-		navy_leader={
-			traits={ navy_career_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
+	
+	
+		
 	}
 
 

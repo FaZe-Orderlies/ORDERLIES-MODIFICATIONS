@@ -555,12 +555,12 @@ characters={
 		}
 
 		navy_leader={
-			traits={ bold naval_lineage superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=102
 		}
 	}
@@ -574,12 +574,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ chief_engineer superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=2
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=0
 		}
 	}
@@ -593,12 +593,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ aviation_enthusiast }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=2
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=0
 		}
 	}
@@ -635,20 +635,7 @@ characters={
 			}
 		}
 		
-		navy_leader={
-			traits={ old_guard_navy gentlemanly battleship_adherent spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-			visible = {
-				NOT = {
-					has_country_flag = vichy_france
-				}
-			}
-		}
+		
 	}
 
 	FRA_jean_de_laborde={
@@ -677,15 +664,7 @@ characters={
 			}
 		}
 		
-		navy_leader={
-			traits={ aviation_enthusiast naval_lineage }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
+		
 	}
 
 

@@ -1,6 +1,52 @@
 ﻿
 capital = 64 # Berlin/Brandeburg
 
+
+set_collaboration = {
+    target = POL
+    value = 1.0
+}
+
+set_collaboration = {
+    target = HOL
+    value = 1.0
+}
+
+set_collaboration = {
+    target = BEL
+    value = 1.0
+}
+
+set_collaboration = {
+    target = LUX
+    value = 1.0
+}
+
+set_collaboration = {
+    target = DEN
+    value = 1.0
+}
+
+set_collaboration = {
+    target = NOR
+    value = 1.0
+}
+
+set_collaboration = {
+    target = CZE
+    value = 1.0
+}
+
+set_collaboration = {
+    target = YUG
+    value = 1.0
+}
+
+set_collaboration = {
+    target = FRA
+    value = 1.0
+}
+
 if = {
 	limit = {
 		NOT = {

@@ -1051,12 +1051,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { navy_career_officer seawolf }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 5
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id = 26
 		}
 	}
@@ -1096,12 +1096,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { battleship_adherent naval_lineage }
-			skill = 4
-			attack_skill = 3
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 4
 			defense_skill = 4
-			maneuvering_skill = 3
-			coordination_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
 			legacy_id = 27
 		}
 	}
@@ -1132,16 +1132,7 @@ characters = {
 				submarine_specialist
 			}
 		}
-		
-		navy_leader = {
-			traits = { old_guard_navy bold }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 4
-			legacy_id = 28
-		}
+	
 	}
 
 	GER_hermann_boehm = {
@@ -1152,15 +1143,7 @@ characters = {
 				small = GFX_portrait_GER_hermann_boehm_small
 			}
 		}
-		navy_leader = {
-			traits = { craven superior_tactician }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			maneuvering_skill = 4
-			coordination_skill = 2
-			legacy_id = 29
-		}
+	
 	}
 
 	GER_wilhelm_marschall = {
@@ -1171,15 +1154,7 @@ characters = {
 				small = GFX_portrait_GER_wilhelm_marschall_small
 			}
 		}
-		navy_leader = {
-			traits = { old_guard_navy bold }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 4
-			legacy_id = 30
-		}
+		
 	}
 
 	GER_gunther_lutjens = {
@@ -1210,11 +1185,11 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { gentlemanly navy_career_officer superior_tactician }
-			skill = 3
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
 			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 1
+			defense_skill = 4
+			maneuvering_skill = 4
 			coordination_skill = 4
 			legacy_id = 31
 		}
@@ -1477,15 +1452,7 @@ characters = {
 				base = 2
 			}
 		}
-		navy_leader = {
-			traits = { ironside naval_lineage superior_tactician }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 4
-			legacy_id = -1
-		}
+	
 	}
 
 

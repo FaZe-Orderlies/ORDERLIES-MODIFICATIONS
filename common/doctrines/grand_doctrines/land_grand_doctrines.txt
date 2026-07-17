@@ -7,7 +7,6 @@ new_mobile_warfare = {
     available = {
         always = yes
     }
-
     xp_cost = 0
     xp_type = army
 
@@ -31,6 +30,7 @@ new_mobile_warfare = {
 	planning_speed = 0.20
 	army_speed_factor = 0.10
 	enable_tactic = tactic_unexpected_thrust
+    
 	
 
     milestones = {
@@ -57,7 +57,6 @@ new_mobile_warfare = {
         {
             #Artillery/Support
 	        planning_speed = 0.1
-            org_loss_at_low_org_factor = -0.1
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -97,12 +96,12 @@ new_mobile_warfare = {
         {
             #Operations
 	        planning_speed = 0.2
+            enable_tactic = tactic_backhand_blow   
             category_regimental_support_battalions = {
                 max_organisation = 10
                 breakthrough = 0.1
             }
-            enable_tactic = tactic_backhand_blow   
-
+            
             effect = {
                 if = {
                     limit = {
@@ -166,6 +165,7 @@ superior_firepower = {
             category_line_artillery = {
                 soft_attack = 0.025
             }
+
             effect = {
                 if = {
                     limit = {
@@ -217,6 +217,7 @@ superior_firepower = {
             category_line_artillery = {
                 soft_attack = 0.025
             }
+            
 
             effect = {
                 if = {
@@ -289,18 +290,19 @@ grand_battleplan = {
     # EFFECTS
     enable_tactic = tactic_planned_attack
     
-   max_planning = 0.15
+    max_planning = 0.15
     command_power_gain = 0.25
     max_dig_in_factor = 0.05
 
     milestones = {
         {
             #Infantry 
-           additional_brigade_column_size = 1
+            additional_brigade_column_size = 1
             enable_tactic = tactic_elastic_defense
             max_dig_in_factor = 0.05
             special_forces_attack_factor = 0.05
             
+
             effect = {
                 if = {
                     limit = {
@@ -317,10 +319,9 @@ grand_battleplan = {
         }
         {
             #Artillery/Support
-             coordination_bonus = 0.1
+            coordination_bonus = 0.1
             enable_tactic = tactic_overwhelming_fire
             experience_loss_factor = -0.10
-
             effect = {
                 if = {
                     limit = {
@@ -362,7 +363,6 @@ grand_battleplan = {
             coordination_bonus = 0.1
             max_command_power = 30
             naval_invasion_capacity = 10
-
             effect = {
                 if = {
                     limit = {
@@ -474,7 +474,7 @@ mass_assault = {
         }
         {
             #Operations
-             enable_tactic = tactic_backhand_blow
+            enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
             minimum_training_level = -0.05
             dig_in_speed_factor = 0.05

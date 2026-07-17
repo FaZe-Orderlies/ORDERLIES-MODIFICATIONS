@@ -7301,6 +7301,7 @@ focus_tree = {
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
+			add_political_power = 150
 			add_stability = -0.05
 			add_war_support = -0.05
 
@@ -13421,6 +13422,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			date>1940.1.1
 		}
 
 		bypass = {
@@ -13449,46 +13451,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
-			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
-			hidden_effect = {
-				EST = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
-			hidden_effect = {
-				LAT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
-			hidden_effect = {
-				LIT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			#Activate targeted decisions
-			activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
 
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
@@ -13529,28 +13491,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			add_state_claim = 146 # Karjala
+			
 
-			if= {
-				limit = {
-					146 = {
-						controller = {
-							NOT = { has_war_with = ROOT }
-						}
-					}
-				}
-				146 = {
-					controller = {
-						set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
-						add_timed_idea = {
-							idea = communist_pressure
-							days = 365
-						}
-						country_event = { id = finland.1 hours = 16 random_hours = 8 }
-					}
-				}
-				custom_effect_tooltip = if_they_accept_tt
-				event_option_tooltip = soviet.12.a
+			SOV = {
+				transfer_state = 146
+				add_state_claim = 146 # Karjala
 			}
 		}
 	}
@@ -13623,62 +13568,13 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
-			if = {
-				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+			SOV = {
+				transfer_state = 78
 				add_state_claim = 78
-			}
-			if = {
-				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				transfer_state = 766
 				add_state_claim = 766
-			}
-			if = {
-				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				transfer_state = 80
 				add_state_claim = 80
-			}
-			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
-			random_other_country = {
-				limit = { owns_state = 78 }
-				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
-				set_country_flag = SOV_added_claimed_bessarabia
-				country_event = { id = romania.1 hours = 16 random_hours = 8 }
-			}
-			if = { #Done like this to prevent disgusting tooltip issues, but I hate it ok?
-				limit = {
-					any_other_country = {
-						owns_state = 78
-						NOT = {	owns_state = 80 }
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 80 
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						any_other_country = {
-							owns_state = 78
-							NOT = {	owns_state = 766 }
-						}
-						any_other_country = {
-							owns_state = 80
-							NOT = {	owns_state = 766 }
-						}
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 766
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
-				}
 			}
 		}
 	}

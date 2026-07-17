@@ -7903,7 +7903,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_sea_national_spiritual_mobliization_movement }
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -7930,13 +7930,7 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				add_ideas = JAP_tokko_idea_lar
-				IF = {
-					limit = {
-						has_intelligence_agency = no
-					}
-					custom_effect_tooltip = generic_skip_one_line_tt
-					create_intelligence_agency = yes
-				}
+				
 			}
 			ELSE = {
 				add_ideas = JAP_tokko_idea_no_lar
@@ -7997,9 +7991,7 @@ focus_tree = {
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
-				JAP_add_or_modify_showa_statism = yes
-
-				add_to_variable = { JAP_showa_statism_operative_slot = 1 tooltip = operative_slot_tt }
+				
 			}
 			
 			hidden_effect = {
@@ -11406,7 +11398,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			date>1937.6.1
 		}
 
 		bypass = {

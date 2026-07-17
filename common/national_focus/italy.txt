@@ -7705,6 +7705,10 @@ focus_tree = {
 		available = {
 		}
 
+		ALLOW_BRANCH = {
+			ALWAYS = NO
+		}
+
 		search_filters = {}
 
 		completion_reward = {
@@ -7913,7 +7917,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_devaluate_the_lire
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -7945,6 +7949,10 @@ focus_tree = {
 				has_subject = ETH
 			}
 		} 
+
+		ALLOW_BRANCH = {
+			ALWAYS = NO
+		}
 
 		available = {
 			custom_trigger_tooltip = {
@@ -7983,6 +7991,10 @@ focus_tree = {
 		id = ITA_topple_amhara_rulers
 		icon = GFX_focus_ITA_topple_amhara_rulers
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
+
+		ALLOW_BRANCH = {
+			ALWAYS = NO
+		}
 
 		x = 1
 		y = 1
@@ -8113,6 +8125,10 @@ focus_tree = {
 		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
+		ALLOW_BRANCH = {
+			ALWAYS = NO
+		}
+		
 		x = 3
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba

@@ -1,0 +1,182 @@
+ORDL_decisions2 = {
+    ENG_annex_SAF = {
+
+        icon = generic_operation
+        
+        allowed = { original_tag = ENG }
+        
+        available = {
+            date>1940.6.1
+            SAF = { is_ai = yes  }
+        }
+        
+        visible = { 
+            country_exists = SAF 
+            SAF = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = SAF
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                681 = {
+                    set_compliance = 100
+                }
+                893 = {
+                    set_compliance = 100 
+                } 
+                541 = {
+                    set_compliance = 100
+                }
+                895 = {
+                    set_compliance = 100
+                }
+                894 = {
+                    set_compliance = 100
+                }
+                719 = {
+                    set_compliance = 100
+                }
+                275 = {
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    
+    ENG_annex_australia = {
+
+      icon = generic_operation
+        
+        allowed = { original_tag = ENG }
+        
+        available = {
+            date>1940.6.1
+           AST = { is_ai = yes  }
+        }
+        
+        visible = { 
+            country_exists = AST
+            AST = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = AST
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                285 = {
+                    set_compliance = 100
+                }
+                517 = {
+                    set_compliance = 100 
+                } 
+                519 = {
+                    set_compliance = 100
+                }
+                871 = {
+                    set_compliance = 100
+                }
+                522 = {
+                    set_compliance = 100
+                }
+                870 = {
+                    set_compliance = 100
+                }
+                520 = {
+                    set_compliance = 100
+                }
+                872 = {
+                    set_compliance = 100
+                }
+                521 = {
+                    set_compliance = 100
+                }
+                518 = {
+                    set_compliance = 100
+                }
+                523 = {
+                    set_compliance = 100
+                }
+                979 = {
+                    set_compliance = 100
+                }
+                737 = {
+                    set_compliance = 100
+                }
+                634 = {
+                    set_compliance = 100
+                }
+                873 = {
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+
+    ENG_annex_NZL = {
+
+        icon = generic_operation
+        
+        allowed = { original_tag = ENG }
+        
+        available = {
+            date>1940.6.1
+            OR = {
+                NZL = { is_ai = yes  }
+                
+            }
+        }
+        
+        visible = { 
+            country_exists = NZL 
+            NZL = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = NZL
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                284 = {
+                    set_compliance = 100
+                }
+                723 = {
+                    set_compliance = 100 
+                } 
+                726 = {
+                    set_compliance = 100
+                }
+            }
+        }
+    }   
+
+}

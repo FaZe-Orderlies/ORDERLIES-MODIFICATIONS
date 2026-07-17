@@ -9156,80 +9156,8 @@ focus_tree = {
 			add_to_variable = { GER_military_mobilization_speed = 0.1 tooltip = mobilization_speed_tt }
 			add_to_variable = { GER_military_army_morale_factor = 0.1 tooltip = army_morale_factor_tt }
 
-			if = {
-				limit = {
-					has_character = GER_walter_model
-					GER_walter_model = {
-						is_field_marshal = no
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				GER_walter_model = {
-					promote_leader = yes
-				}
-				if = {
-					limit = {
-						GER_walter_model = {
-							NOT = { 
-								has_trait = offensive_doctrine
-							}
-						}
-					}
-					GER_walter_model = {
-						add_trait = { trait = offensive_doctrine }
-					}
-				}
-				else_if = {
-					limit = {
-						GER_walter_model = {
-							has_trait = defensive_doctrine
-							NOT = { 
-								has_trait = unyielding_defender
-							}
-						}
-					}
-					GER_walter_model = {
-						add_trait = { trait = unyielding_defender }
-					}
-				}
-			}
+			
 
-			if = {
-				limit = {
-					has_character = GER_alfred_jodl
-					
-				}
-				if = {
-					limit = {
-						GER_alfred_jodl = {
-							NOT = { 
-								has_trait = politically_connected
-							}
-						}
-					}
-					GER_alfred_jodl = {
-						add_trait = { trait = politically_connected }
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_character = GER_hermann_hoth
-					
-				}
-				if = {
-					limit = {
-						GER_hermann_hoth = {
-							NOT = { 
-								has_trait = politically_connected
-							}
-						}
-					}
-					GER_hermann_hoth = {
-						add_trait = { trait = politically_connected }
-					}
-				}
-			}
 		}
 	}
 
@@ -11307,7 +11235,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		available = {
-			date>1939.1.1
+			date>1939.8.25
 		}
 
 		ai_will_do = {
@@ -11606,6 +11534,9 @@ focus_tree = {
 		}
 
 		available = {
+			POL = {
+				has_capitulated = yes
+			}
 			is_subject = no
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
@@ -11615,7 +11546,7 @@ focus_tree = {
 		}
 
 		historical_ai = {
-			date > 1939.1.1
+			date > 1939.10.1
 			NOT = {
 				any_home_area_neighbor_country = {
 					NOT = { tag = FRA }
@@ -11732,6 +11663,7 @@ focus_tree = {
 		will_lead_to_war_with = NOR
 
 		available = {
+			date>1939.10.1
 			is_subject = no
 			hidden_trigger = {
 				OR = {
@@ -11783,7 +11715,9 @@ focus_tree = {
 		completion_reward = {
 			
 			declare_war_on = { target = DEN    type = take_state_focus } 
-			declare_war_on = { target = NOR    type = take_state_focus } 
+			declare_war_on = { target = NOR    type = take_state_focus }
+
+			
 			set_technology = { mtg_landing_craft = 1 }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }

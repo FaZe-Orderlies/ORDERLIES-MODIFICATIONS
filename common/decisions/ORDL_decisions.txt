@@ -1,0 +1,168 @@
+ORDL_decisions = {
+    GER_annex_hungary = {
+
+        icon = generic_operation
+        
+        allowed = { original_tag = GER }
+        
+        available = {
+            date>1939.1.1
+            HUN = { is_ai = yes  }
+        }
+        
+        visible = { 
+            country_exists = HUN 
+            HUN = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = HUN
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                43 = {
+                    set_compliance = 100
+                }
+                155 = {
+                    set_compliance = 100 
+                } 
+                974 = {
+                    set_compliance = 100
+                }
+                973 = {
+                    set_compliance = 100
+                }
+                154 = {
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    
+    GER_annex_romania = {
+
+        icon = generic_operation
+        
+        allowed = { original_tag = GER }
+        
+        available = {
+            date>1939.1.1
+            ROM = { is_ai = yes  }
+        }
+        
+        visible = { 
+            country_exists = ROM 
+            ROM = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = ROM
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                46 = {
+                    set_compliance = 100
+                }
+                81 = {
+                    set_compliance = 100 
+                } 
+                77 = {
+                    set_compliance = 100
+                }
+                971 = {
+                    set_compliance = 100
+                }
+                766 = {
+                    set_compliance = 100
+                }
+                78 = {
+                    set_compliance = 100
+                }
+                79 = {
+                    set_compliance = 100
+                }
+                80 = {
+                    set_compliance = 100
+                }
+                76 = {
+                    set_compliance = 100
+                }
+                84 = {
+                    set_compliance = 100
+                }
+                83 = {
+                    set_compliance = 100
+                }
+                82 = {
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+
+    GER_annex_bulgaria = {
+
+        icon = generic_operation
+        
+        allowed = { original_tag = GER }
+        
+        available = {
+            date>1939.1.1
+            BUL = { is_ai = yes  }
+        }
+        
+        visible = { 
+            country_exists = BUL
+            BUL = { 
+                is_ai = yes 
+            }    
+        }
+        
+        cost = 0
+        
+        fire_only_once = yes
+        
+        complete_effect = {
+            
+            annex_country = {
+                target = BUL
+                transfer_troops = yes
+            }
+
+            hidden_effect = {
+                48 = {
+                    set_compliance = 100
+                }
+                212 = {
+                    set_compliance = 100 
+                } 
+                801 = {
+                    set_compliance = 100
+                }
+                211 = {
+                    set_compliance = 100
+                }
+                
+            }
+        }
+    }   
+
+}

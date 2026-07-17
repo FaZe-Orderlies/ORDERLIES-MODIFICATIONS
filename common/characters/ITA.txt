@@ -786,12 +786,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { battleship_adherent superior_tactician spotter }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 3
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id = 0
 		}
 	}
@@ -822,12 +822,12 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { gentlemanly superior_tactician }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id = 0
 		}
 	}
@@ -844,15 +844,7 @@ characters = {
 			}
 		}
 		 
-		navy_leader = {
-			traits = { gentlemanly inshore_fighter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		
 	}
 
 	ITA_giuseppe_fioravanzo = {
@@ -878,12 +870,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 4
-			coordination_skill = 2
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id = 0
 		}
 	}
@@ -913,15 +905,7 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { gunnery_expert battleship_adherent ironside }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 2
-			coordination_skill = 1
-			legacy_id = 0
-		}
+		
 	}
 
 	ITA_angelo_iachino = {
@@ -947,16 +931,7 @@ characters = {
 			traits = { naval_theorist }
 		}
 
-		navy_leader = {
-			traits = { bold navy_career_officer superior_tactician spotter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 1
-			legacy_id = 0
-			visible = { has_government = fascism }
-		}
+		
 	}
 
 	ITA_giuseppe_di_bartolo = {
@@ -968,19 +943,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { old_guard_navy bold fleet_protector }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			maneuvering_skill = 1
-			coordination_skill = 1
-			legacy_id = 0
-			visible = {
-				#has_government = fascism
-				#has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
-			} 
-		}
+		
 	}
 
 	ITA_junio_valerio_borghese = {
@@ -992,16 +955,7 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
-			skill = 3
-			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
-			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
-		}
+		
 	}
 
 

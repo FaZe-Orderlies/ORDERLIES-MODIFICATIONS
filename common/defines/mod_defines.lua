@@ -109,7 +109,7 @@ NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5  ---скорость включения ждшки
 
 ---АГЕНСТВО
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0 ---цивки,необходимые на создание агенства
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 999 ---цивки,необходимые на создание агенства
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 10 ---дни на создание агенства
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 20 ---дни на апгрейд агенства
 

@@ -1,5 +1,16 @@
 ﻿capital = 2 # Rome
 
+
+set_collaboration = {
+    target = YUG
+    value = 1.0
+}
+
+set_collaboration = {
+    target = GRE
+    value = 1.0
+}
+
 ETH_set_up_lon_arms_resolution_effect = yes 
 
 if = {

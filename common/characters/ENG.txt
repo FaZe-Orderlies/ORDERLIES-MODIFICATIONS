@@ -725,12 +725,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ navy_career_officer aviation_enthusiast superior_tactician }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=4
-			coordination_skill=5
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=983
 		}
 	}
@@ -761,15 +761,7 @@ characters={
 			}
 		}
 		
-		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=984
-		}
+		
 	}
 
 	ENG_andrew_cunningham={
@@ -807,12 +799,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
-			skill=5
-			attack_skill=5
-			defense_skill=4
-			maneuvering_skill=3
-			coordination_skill=4
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=985
 		}
 	}
@@ -826,12 +818,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ aviation_enthusiast naval_lineage blockade_runner }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=4
-			coordination_skill=4
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
 			legacy_id=986
 		}
 	}
@@ -844,15 +836,7 @@ characters={
 				small=GFX_portrait_ENG_john_tovey_small
 			}
 		}
-		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=2
-			coordination_skill=5
-			legacy_id=987
-		}
+		
 	}
 
 	ENG_bernard_rawlings={
@@ -863,15 +847,7 @@ characters={
 				small=GFX_portrait_ENG_bernard_rawlings_small
 			}
 		}
-		navy_leader={
-			traits={ gentlemanly }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=988
-		}
+		
 	}
 
 	ENG_john_cunningham={
@@ -882,15 +858,7 @@ characters={
 				small=GFX_portrait_ENG_john_cunningham_small
 			}
 		}
-		navy_leader={
-			traits={ navy_career_officer green_water_expert }
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			maneuvering_skill=4
-			coordination_skill=3
-			legacy_id=989
-		}
+	
 	}
 
 	ENG_charles_forbes={
@@ -901,15 +869,7 @@ characters={
 				small=GFX_portrait_ENG_charles_forbes_small
 			}
 		}
-		navy_leader={
-			traits={ gunnery_expert fly_swatter }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=3
-			legacy_id=990
-		}
+		
 	}
 
 	ENG_algernon_willis={
@@ -920,15 +880,7 @@ characters={
 				small=GFX_portrait_ENG_algernon_willis_small
 			}
 		}
-		navy_leader={
-			traits={ battleship_adherent spotter }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=991
-		}
+		
 	}
 
 	ENG_arthur_power={
@@ -939,15 +891,7 @@ characters={
 				small=GFX_portrait_ENG_arthur_power_small
 			}
 		}
-		navy_leader={
-			traits={ gunnery_expert }
-			skill=2
-			attack_skill=3
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=2
-			legacy_id=992
-		}
+		
 	}
 
 
