@@ -7,7 +7,7 @@ state = {
 	
 	history = {
 		
-		owner = KUW
+		owner = ENG
 		victory_points = {
 			8085 1 # Kuwait City
 		}
