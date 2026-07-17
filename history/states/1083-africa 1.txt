@@ -9,6 +9,12 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
+			10061 = {
+				naval_base = 5
+			}
+			9989 = {
+				naval_base = 3
+			}
 		}
 
 		victory_points = {
