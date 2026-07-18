@@ -7296,11 +7296,6 @@ focus_tree = {
 		completion_reward = {
 
 			add_political_power = 75
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = JAP_east_asian_cooperative_society_tt
-				
 			
 		}
 	}
@@ -7332,6 +7327,10 @@ focus_tree = {
 
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -8387,7 +8386,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			
 		}
 
 		bypass = {
@@ -8564,7 +8563,7 @@ focus_tree = {
 		id = JAP_sea_tripartite_pact
 		icon = GFX_focus_JAP_sea_tripartite_pact
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = JAP_new_order_movement
 
@@ -9231,11 +9230,11 @@ focus_tree = {
 		id = JAP_sea_greater_east_asian_co_properity_sphere
 		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 8
+		x = 2
 		y = 1
-		relative_position_id = JAP_imperial_rule_assistance_association
+		relative_position_id = JAP_new_order_movement
 
-		prerequisite = { focus = JAP_imperial_rule_assistance_association }
+		prerequisite = { focus = JAP_new_order_movement }
 
 		cost = 5
 
@@ -9257,6 +9256,8 @@ focus_tree = {
 		bypass = {
 
 		}
+
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -9342,7 +9343,7 @@ focus_tree = {
 		id = JAP_expand_japan_manchukuo_economic_bloc
 		icon = GFX_focus_RAJ_special_economic_zones
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
 
@@ -9355,9 +9356,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_ally_with = ROOT
-			}
 			is_faction_leader = yes
 		}
 
@@ -9381,11 +9379,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			MAN = {
-				add_ideas = JAP_MAN_joint_economic_block_idea
-			}
-				
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			JAP_small_zaibatsu_faction_gain = yes
 
@@ -9414,6 +9407,10 @@ focus_tree = {
 
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -9488,6 +9485,10 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -9535,6 +9536,10 @@ focus_tree = {
 
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -9591,6 +9596,10 @@ focus_tree = {
 
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -10884,7 +10893,7 @@ focus_tree = {
 		id = JAP_revisit_the_thirteen_demands
 		icon = GFX_focus_generic_treaty
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -8
+		x = -5
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -11025,6 +11034,10 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		bypass = {
@@ -11385,7 +11398,7 @@ focus_tree = {
 		id = JAP_reinforce_the_beijing_garrison
 		icon = GFX_focus_JAP_reinforce_the_east_hebei_garrisons
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
 
@@ -11421,7 +11434,8 @@ focus_tree = {
 			hidden_effect = {
 				JAP = {
 					annex_country = { target = CHI
-					transfer_troops = yes 
+					transfer_troops = yes
+					transfer_fleet = yes 
 					}
 				}
 			}
@@ -11703,7 +11717,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = JAP_reinforce_the_beijing_garrison
 
 		prerequisite = { focus = JAP_reinforce_the_beijing_garrison }
@@ -12344,7 +12358,7 @@ focus_tree = {
 		id = JAP_nanshin_ron
 		icon = GFX_focus_JAP_nanshin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -15
+		x = -9
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -12465,6 +12479,10 @@ focus_tree = {
 			NOT = {
 				has_war_with = SOV
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		bypass = {
@@ -12983,7 +13001,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_nanshin_ron }
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -13120,60 +13138,7 @@ focus_tree = {
 
 		available = {
 			date>1937.9.1
-			is_subject = no
-			671 = { 
-				CONTROLLER = { 
-					NOT = {
-						has_war_with = ROOT
-						is_ally_with = ROOT
-					}
-				} 
-			}
-			OR = {
-				AND = {
-					custom_trigger_tooltip = {
-						tooltip = JAP_demand_tonkinese_bases_tt
-						671 = { 
-							CONTROLLER = { 
-								OR = { 
-									tag = FRA 
-									tag = VIC 
-									is_subject_of = FRA
-									is_subject_of = VIC
-								} 
-							}
-						}
-					}
-					OR = {
-						AND = {
-							has_army_manpower = { size > 799999 }
-							has_war_support > 0.9
-						}
-						16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = JAP_demand_tonkinese_bases_2_tt
-					671 = { 
-						CONTROLLER = { 
-							NOT = {
-								tag = FRA 
-								tag = VIC 
-								is_subject_of = FRA
-								is_subject_of = VIC
-							}
-						}
-					}
-				}
-			}
-			1033 = { 
-				CONTROLLER = { 
-					OR = {
-						has_war_with = ROOT
-						is_ally_with = ROOT
-					}
-				} 
-			}
+			
 		}
 
 		bypass = {
@@ -14084,7 +14049,7 @@ focus_tree = {
 		id = JAP_hokushin_ron
 		icon = GFX_focus_JAP_hokushin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -21
+		x = -13
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -14227,6 +14192,10 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		bypass = {
@@ -14598,6 +14567,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			MAN = {
 				exists = yes
@@ -14933,6 +14906,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			JAP_army_faction_is_at_least_influential = yes
 			IF = {
@@ -15079,8 +15056,8 @@ focus_tree = {
 	focus = {
 		id = JAP_the_persimmon_has_ripened
 		icon = GFX_focus_JAP_the_persimmon_has_ripened
-		mutually_exclusive = { focus = JAP_a_green_persimmon }
-		x = 1
+		
+		x = 0
 		y = 1
 		relative_position_id = JAP_kantokuen
 
@@ -15106,51 +15083,14 @@ focus_tree = {
 		}
 
 		available = {
-			JAP_army_faction_is_at_least_influential = yes
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				OR = {
-					has_completed_focus = JAP_imperial_rule_assistance_association
-					has_completed_focus = JAP_the_imperial_colors
-				}
+			JAP = {
+				controls_state = 439
+				controls_state = 285
+				controls_state = 629
+				controls_state = 1021
+				controls_state = 1058
 			}
-			ELSE = {
-				OR = {
-					has_completed_focus = JAP_imperial_rule_assistance_association
-					has_completed_focus = JAP_support_the_kodoha_faction
-				}
-			}
-			is_subject = no
-			SOV = {
-				exists = yes
-			}
-			NOT = {
-				has_war_with = SOV
-			}
-			OR = {
-				NOT = {
-					has_completed_focus = JAP_soviet_japanese_neutrality_pact
-				}
-				AND = {
-					has_country_flag = {
-					 	flag = JAP_soviet_japanese_neutrality_pact_flag
-					 	days > 365
-					} 
-					custom_trigger_tooltip = {
-						tooltip = JAG_neutality_pact_focus_days_tt
-						has_country_flag = {
-							flag = JAP_soviet_japanese_neutrality_pact_flag
-							days > 365
-						}
-					}
-				}
-			}
-			SOV = {
-				has_war = yes
-				surrender_progress > 0.5
-			}
+			
 		}
 
 		bypass = {
@@ -15215,22 +15155,7 @@ focus_tree = {
 				add_claim_by = ROOT
 			}
 
-			IF = {
-				limit = {
-					has_completed_focus = JAP_utilize_our_polish_friendship
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				POL = {
-					country_event = {
-						id = SEA_japan_foreign_policy.86
-						hours = 6
-					}	
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = JAP_peace_out_soviets_dec_tt
+			
 			
 		}
 	}
@@ -26124,19 +26049,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_subject = MAN
-				has_subject = KOR
-				has_subject = MEN
-				has_subject = FOR
-				has_subject = PLU
-				524 = {
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-				}
-				647 = {
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -26306,13 +26219,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_subject = MAN
-				any_controlled_state = {
-					is_core_of = MAN
-					is_fully_controlled_by = ROOT
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -26327,82 +26234,10 @@ focus_tree = {
 
 		completion_reward = {
 
-			IF = {
-				limit = {
-					has_subject = MAN
-				}
-				MAN = {				
-					add_stability = 0.1
-					add_war_support = 0.1
-					add_political_power = 100
-					add_timed_idea = {
-						idea = JAP_japanese_investments
-						days = 720
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = JAP_japanese_investments
+				days = 365
 			}
-
-			IF = {
-				limit = {
-					716 = { #Liaotung
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-						infrastructure < 5
-					}
-				}
-				716 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			IF = {
-				limit = {
-					has_subject = MAN
-				}
-				MAN  = {
-					every_core_state = {
-						limit = {
-							is_fully_controlled_by = PREV
-							free_building_slots = {
-								building = industrial_complex
-								size > 1
-								include_locked = yes
-							}
-						}
-						random_select_amount = 2
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}
-			ELSE = {
-				random_controlled_state = {
-					limit = {
-						is_core_of = MAN
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					prioritize = { 716 }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
 		}
 
 	}
@@ -26428,12 +26263,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_subject = MAN
-				any_controlled_state = {
-					is_core_of = MAN
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -26447,55 +26277,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_subject = MAN
-				}
-				MAN  = {
-					every_core_state = {
-						limit = {
-							is_fully_controlled_by = PREV
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-						}
-						random_select_amount = 2
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
-					add_breakthrough_progress = {
-						specialization = specialization_air
-						value = 0.15
-					}
-				}
-			}
-			else = {
-				random_controlled_state = {
-					limit = {
-						is_core_of = MAN
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_breakthrough_progress = {
-					specialization = specialization_air
-					value = 0.15
+			328 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -26515,29 +26302,14 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
 		}
 
 		available = {
-			328 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			OR = {
-				AND = {
-					527 = {
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					1028 = {
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				KOR = {
-					is_ally_with = ROOT
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -26690,9 +26462,7 @@ focus_tree = {
 		}
 
 		available = {
-			715 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
-			610 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
-			328 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
+			
 		}
 
 		bypass = {
@@ -26742,9 +26512,7 @@ focus_tree = {
 		}
 
 		available = {
-			716 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
+			
 		}
 
 		bypass = {
@@ -27128,20 +26896,14 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
 		}
 		
 		available = {
-			OR = {
-				has_subject = KOR
-				any_controlled_state = {
-					is_core_of = KOR
-					is_fully_controlled_by = ROOT
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -27155,67 +26917,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_subject = KOR
-				}
-				KOR = {				
-					add_stability = 0.1
-					add_war_support = 0.1
-					add_political_power = 100
-					add_timed_idea = {
-						idea = JAP_japanese_investments
-						days = 720
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			
-			IF = {
-				limit = {
-					has_subject = KOR
-				}
-				KOR  = {
-					every_core_state = {
-						limit = {
-							is_fully_controlled_by = PREV
-							free_building_slots = {
-								building = industrial_complex
-								size > 1
-								include_locked = yes
-							}
-						}
-						random_select_amount = 2
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}
-			ELSE = {
-				every_controlled_state = {
-					limit = {
-						is_core_of = KOR
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					random_select_amount = 2
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
+			527 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 
+			525 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		
 	}
@@ -27241,13 +26959,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_subject = KOR
-				any_controlled_state = {
-					is_core_of = KOR
-					is_fully_controlled_by = ROOT
-				}
-			}
+			
 		}
 
 		bypass = {

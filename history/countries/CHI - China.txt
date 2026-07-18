@@ -217,66 +217,7 @@ IF = {
 
 }
 
-600 = { #Jiangxi
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-749 = { #Huangshan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-606 = { #Anhui
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-607 = { #Henan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-620 = { #Hubei
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-602 = { #Hunan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-750 = { #Changde
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-744 = { #Xian
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-605 = { #Sichuan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-748 = { #Zunyi
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-603 = { #Guizhu
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-615 = { #Shanxi
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-622 = { #Shaanxi
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-325 = { #Yunnan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-747 = { #Dali
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-1032 = { #Yanan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-283 = { #Gansu
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-598 = { #Jiangsu
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-753 = { #Gannan
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-599 = { #Guangxi 
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
+
 IF = {
 	limit = {
 		has_dlc = "No Compromise, No Surrender"

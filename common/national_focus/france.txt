@@ -8746,6 +8746,9 @@
 				}
 			}		
 		}
+		allow_branch = {
+			always = no
+		}
 
 		completion_reward = {
 			navy_experience = 25
@@ -9259,6 +9262,10 @@
 					}
 				}
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		complete_tooltip = {

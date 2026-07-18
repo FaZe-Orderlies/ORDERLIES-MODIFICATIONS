@@ -228,25 +228,14 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			OR = {
-				any_owned_state = { is_on_continent = africa }
-				any_subject_country = { capital_scope = { is_on_continent = africa } }
-			}
+			
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
 			add_political_power = 75
-			custom_effect_tooltip = ITA_ministry_of_italian_africa_occupation_law_tt
-			show_ideas_tooltip = ITA_fake_colonial_police_law
-
-			unlock_decision_category_tooltip = ITA_colonial_management_dec_cat
-
-			hidden_effect = {
-				country_event = BBA_italy_colonial_management.1
-			}
+			
 		}
 	}
 
@@ -1200,7 +1189,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_roads
 		prerequisite = { focus = ITA_regional_development }
 
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = ITA_regional_development
 		cost = 5
@@ -1650,7 +1639,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ITA_regional_development }
 
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = ITA_regional_development
 		cost = 5
@@ -1757,6 +1746,10 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
+		allow_branch = {
+			always = no
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = ITA_polizia_dell_africa_italiana_occupation_law_tt
 			hidden_effect = {	
@@ -1819,6 +1812,10 @@ focus_tree = {
 				}
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
