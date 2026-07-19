@@ -8020,7 +8020,7 @@ focus = {
 		id = AST_public_works
 		icon = GFX_focus_generic_public_works
 
-		prerequisite = { focus = AST_australia_first focus = AST_war_is_coming }
+		prerequisite = {   focus = AST_war_is_coming }
 #		mutually_exclusive = { }
 		#relative_position_id = AST_australia_first
 
@@ -8978,46 +8978,11 @@ focus = {
 #		prerequisite = { }
 #		mutually_exclusive = { }
 #		relative_position_id = 
-		x = 92
+		x = 61
 		y = 0
 	
 		cost = 10
 
-		offset = {
-			x = -49
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_australia_first
-			}
-		}
-
-		offset = {
-			x = -75
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_war_is_coming
-			}
-		}
-
-		offset = {
-			x = -82
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_against_war_and_fascism
-			}
-		}
 
 		available = {
 		}
@@ -9391,46 +9356,12 @@ focus = {
 		icon = GFX_focus_AST_australian_military_forces
 		#mutually_exclusive = { }
 
-		x = 104
+		x = 72
 		y = 0
 	
 		cost = 5
 
-		offset = {
-			x = -49
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_australia_first
-			}
-		}
-
-		offset = {
-			x = -35
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_war_is_coming
-			}
-		}
-
-		offset = {
-			x = -58
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = AST_against_war_and_fascism
-			}
-		}
+		
 
 		available = {
 		}
@@ -10527,6 +10458,10 @@ focus = {
 		bypass = {
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available_if_capitulated = no
 	
 		completion_reward = {
@@ -11199,6 +11134,10 @@ focus = {
 		}
 
 		bypass = {
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available_if_capitulated = no

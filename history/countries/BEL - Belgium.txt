@@ -246,7 +246,16 @@ set_variable = { BEL_rexist_legion_army_infantry_defence_factor = 0 }
 set_variable = { BEL_rexist_legion_conscription_factor = 0 }
 set_variable = { BEL_rexist_legion_land_night_attack = 0 }
 
-
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	set_autonomy = {
+		target = COG
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+}
 
 
 

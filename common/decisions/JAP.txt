@@ -6196,7 +6196,7 @@ JAP_spiritual_mobilization_decisions = {
 		}
 	
 		available = {
-			has_war = yes
+			
 		}
 
 		#days_remove = 70
@@ -6267,7 +6267,7 @@ JAP_spiritual_mobilization_decisions = {
 		}
 	
 		available = {
-			has_war = yes
+			
 		}
 
 		#days_remove = 70
@@ -6328,7 +6328,7 @@ JAP_spiritual_mobilization_decisions = {
 		}
 	
 		available = {
-			has_war = yes
+			
 		}
 
 		#days_remove = 70

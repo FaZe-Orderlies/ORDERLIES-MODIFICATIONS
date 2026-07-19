@@ -99,7 +99,7 @@ if = {
 		has_dlc = "Poland: United and Ready"
 	}
 	add_ideas = {
-		armed_neutrality
+		armed_neutrality_for_annex
 		bot_no_play_economy
 	}
 }

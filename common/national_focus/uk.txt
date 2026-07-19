@@ -863,7 +863,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1117,7 +1117,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1994,8 +1994,8 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
-			has_tech = advanced_ship_hull_heavy
+			date > 1941.1.1
+			
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
 			#has_tech = dp_light_battery_3
@@ -2025,24 +2025,7 @@ focus_tree = {
 					rear_1_custom_slot = ship_heavy_battery_3
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_government = communism }
-				}
-				133 = {
-					custom_effect_tooltip = ENG_vanguard_tt_hms
-				}
-				hidden_effect = { load_oob = "ENG_vanguard_hms" }
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				133 = {
-					custom_effect_tooltip = ENG_vanguard_tt_communism
-				}
-				hidden_effect = { load_oob = "ENG_vanguard_communist" }
-			}
+			
 		}
 	}
 	
@@ -7875,9 +7858,9 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_construct_civilian
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -8032,6 +8015,10 @@ focus_tree = {
 					}
 				}
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -8197,7 +8184,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -8356,7 +8343,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -8506,7 +8493,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_british_investors
 
 		x = 1
-		y = 1
+		y = 1s
 		relative_position_id = uk_india_focus
 		cost = 10
 		ai_will_do = {
@@ -8530,7 +8517,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_new_zealand_focus }
+		prerequisite = { focus = uk_australia_focus }
 		prerequisite = { focus = uk_south_africa_focus }
 
 		allow_branch = {
@@ -8654,7 +8641,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_new_zealand_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			#modifier = {
@@ -8663,7 +8650,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}	
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
@@ -8685,10 +8672,6 @@ focus_tree = {
 							is_subject_of = ENG
 							tag = AST
 						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
 					}
 				}
 				country_event = { id = mtg_britain.82 hours = 6 }
@@ -8702,7 +8685,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_federation
 		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_new_zealand_focus }
+		prerequisite = { focus = uk_australia_focus }
 		prerequisite = { focus = uk_south_africa_focus }
 		available = {
 			date > 1940.01.01
@@ -8712,7 +8695,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		relative_position_id = uk_new_zealand_focus
+		relative_position_id = uk_australia_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8722,6 +8705,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_ANNEXATION}	
 		completion_reward = {
+			add_political_power = 150
 			every_country = {
 				limit = {
 					OR = {
@@ -9512,25 +9496,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_dlc = "Man the Guns"
-				has_completed_focus = ENG_home_defence
-			}
-		}
+		
 		relative_position_id = ENG_steady_as_she_goes
 
 		cost = 5

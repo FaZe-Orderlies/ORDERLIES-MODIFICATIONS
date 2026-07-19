@@ -164,12 +164,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 2098;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
-4210;7976;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-4210;5009;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-4210;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7400;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7909;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7909;10776;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains

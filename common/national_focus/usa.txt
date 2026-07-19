@@ -1346,6 +1346,10 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1449,8 +1453,8 @@ focus_tree = {
 		icon = GFX_focus_AST_war_japan
 		x = 0
 		y = 1
-		prerequisite = { focus = USA_asia_tvd }
-		relative_position_id = USA_asia_tvd
+		prerequisite = { focus = USA_war_plan_orange }
+		relative_position_id = USA_war_plan_orange
 
 		cost = 5
 
@@ -1594,6 +1598,10 @@ focus_tree = {
 			ENG = { exists = no }
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1610,8 +1618,8 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		x = 0
 		y = 1
-		prerequisite = { focus = USA_war_esm }
-		relative_position_id = USA_war_esm
+		prerequisite = { focus = USA_war_plan_black }
+		relative_position_id = USA_war_plan_black
 
 		cost = 5
 
@@ -5815,7 +5823,7 @@ focus_tree = {
 		x = 35
 		y = 0
 		
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -6022,6 +6030,10 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -6078,19 +6090,19 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -2
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_intervention_in_europe }
+		prerequisite = { focus = USA_war_plans_division }
 		mutually_exclusive = { }
-		relative_position_id = USA_intervention_in_europe
-		cost = 8.7
+		relative_position_id = USA_war_plans_division
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 	
 		available = {
-			
+			date>1941.9.1
 		}
 			
 		bypass = {
@@ -6109,21 +6121,39 @@ focus_tree = {
 				USA_create_joe_savoldi_operative = yes
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = USA_TORCH
+			
+			hidden_effect = {
+				USA = {
+					transfer_state = 461
+					transfer_state = 462
+				}
+				GER = {
+					annex_country = { target = D04
+						transfer_troops = yes 
+					}
+				}
+
+				
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			news_event = { id = news.1000 days = 0 }
 		}
 	}
 	focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_intervention_in_europe }
+		prerequisite = { focus = USA_war_plans_division }
 		available = {
 		}
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = USA_intervention_in_europe
+		relative_position_id = USA_war_plans_division
 		cost = 8.7
 		#ai_will_do = {
 		#	factor = 1
@@ -6312,6 +6342,10 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -6323,16 +6357,16 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_orange
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_intervention_in_asia }
+		prerequisite = { focus = USA_war_plans_division }
 		available = {
 			
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = USA_intervention_in_asia
+		relative_position_id = USA_war_plans_division
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1

@@ -13463,7 +13463,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 5
+		cost = 2
 		
 		ai_will_do = {
 			factor = 1
@@ -13495,7 +13495,7 @@ focus_tree = {
 
 			SOV = {
 				transfer_state = 146
-				add_state_claim = 146 # Karjala
+				add_state_core = 146 # Karjala
 			}
 		}
 	}
@@ -13507,7 +13507,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 2.5
@@ -13570,11 +13570,11 @@ focus_tree = {
 		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
 			SOV = {
 				transfer_state = 78
-				add_state_claim = 78
+				add_state_core = 78
 				transfer_state = 766
-				add_state_claim = 766
+				add_state_core = 766
 				transfer_state = 80
-				add_state_claim = 80
+				add_state_core = 80
 			}
 		}
 	}
@@ -13586,7 +13586,7 @@ focus_tree = {
 		x = 4
 		y = 0
 		relative_position_id = SOV_baltic_security
-		cost = 5
+		cost = 1
 		
 		ai_will_do = {
 			factor = 1

@@ -13611,7 +13611,7 @@ focus_tree = {
 			}
 		}
 
-		x = 17
+		x = 14
 		y = 1
 		
 		
@@ -13768,7 +13768,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_balkan_ambition }
 
-		x = -8
+		x = -6
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
@@ -13834,7 +13834,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ITA_albanian_occupation }
 
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = ITA_albanian_occupation
 		cost = 5
@@ -13883,6 +13883,10 @@ focus_tree = {
 		}
 
 		search_filters = {}
+
+		allow_branch = {
+			always = no
+		}
 
 		completion_reward = {
 			add_state_claim = 802 #KOSOVO

@@ -6660,7 +6660,7 @@ focus_tree = {
 		icon = GFX_focus_EST_national_pride_in_finland
 		prerequisite = { focus = FIN_finnish_neutrality  }
 
-		x = 3
+		x = 2
 		y = 0
 		relative_position_id = FIN_weapon_caches
 		cost = 5
@@ -6720,6 +6720,10 @@ focus_tree = {
 				has_war = no
 				surrender_progress < 0.05
 			}
+		}
+
+		Allow_branch = {
+			always = no
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }

@@ -13124,7 +13124,7 @@ focus_tree = {
 		id = JAP_demand_tonkinese_bases
 		icon = GFX_focus_generic_attack_indochina
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_nanshin_ron
 
@@ -13565,6 +13565,10 @@ focus_tree = {
 			SIA = {
 				has_war_with = ROOT
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		will_lead_to_war_with = SIA
@@ -26212,7 +26216,7 @@ focus_tree = {
 		x = -4
 		y = 1
 
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -27725,6 +27729,14 @@ focus_tree = {
 				remove_idea = JAP_japanese_armor_doctrine
 				add_idea = JAP_japanese_armor_doctrine_2
 			}
+
+			add_tech_bonus = {
+				name = GER_pto
+				bonus = 1
+				uses = 2
+				technology = antitank4
+				technology = antitank5
+			}
 		}
 	}
 
@@ -27749,8 +27761,6 @@ focus_tree = {
 		}
 
 		available = {
-			
-			has_tech = improved_medium_tank
 			
 		}
 

@@ -1174,42 +1174,39 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_construct_the_reichsautobahn
 		cost = 5
-		available = {
+	    available = {
 			is_subject = no
-			AND = {
-				country_exists = SWE
-				SWE = { is_subject = no }
-				NOT = { has_war_with = SWE }
-				SWE = {
-					custom_trigger_tooltip = {
-						tooltip = GER_alone_or_peace_faction_tt
-						is_alone_or_in_faction_at_peace_with_GER = yes
-					}
+			144 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
+			918 = { is_fully_controlled_by = SWE }
+
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
 				}
 			}
 		}
 
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_HISTORICAL}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			SWE = {
-				country_event = { id = wuw_GER_diplomacy.1 days = 2 }
-			}
-
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				SWE = {
-					add_ideas = GER_german_trade_ns
-					add_opinion_modifier = {
-						target = PREV
-						modifier = GER_trading_partners
-					}
+				give_resource_rights = {
+					receiver = ger 
+					state = 666 #Västerbotten 
 				}
-				custom_effect_tooltip = war_will_cancel_deal_tt
+				give_resource_rights = {
+					receiver = ger 
+					state = 918 #Västerbotten 
+				}					
 			}
 		}
 	}
-	
 	focus = {
 		id = GER_kdf_wagen_factories
 		icon = GFX_focus_GER_kdf_wagen
@@ -2003,7 +2000,7 @@ focus_tree = {
 				name = GER_coal_liquefaction
 				bonus = 1
 				uses = 1
-				category = synth_resources
+				technology = advanced_oil_processing
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2204,7 +2201,7 @@ focus_tree = {
 				name = GER_establish_buna_werke
 				bonus = 1
 				uses = 1
-				category = synth_resources
+				technology = modern_oil_processing
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2275,13 +2272,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = tungsten
-					amount > 74 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = tungsten
-						amount > 74 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2289,13 +2286,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = chromium
-					amount > 74 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 49 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = chromium
-						amount > 74 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 49 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -3679,7 +3676,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_instill_auftragstaktik
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3689,7 +3686,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_panzergrenadier
-				ahead_reduction = 1
+				ahead_reduction = 1,5
 				bonus = 1
 				uses = 1
 				category = cat_mechanized_equipment
@@ -4379,7 +4376,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_adopt_new_panzer_doctrine
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = radio
 		}
@@ -4874,10 +4871,16 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
+				bonus = 1
+				uses = 1
+				technology = improved_small_airframe
+			}
+			add_tech_bonus = {
+				name = GER_aeronautical_research_institute
 				bonus = 0.25
 				uses = 2
 				category = air_equipment
-			}
+				}
 			add_breakthrough_progress = {
 				specialization = specialization_air
 				value = 0.5
@@ -9745,7 +9748,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_demand_sudetenland
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -9764,10 +9767,6 @@ focus_tree = {
 			
 		}
 		
-		available = { 
-			is_subject = no
-			has_army_manpower = { size > 749999 }
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
@@ -9789,33 +9788,24 @@ focus_tree = {
 					}
 				}
 				
-				9 = {
-					set_compliance = 100
-				}
-				75 = {
-					set_compliance = 100
-				}
+				
 			
 				HUN = { 
 					transfer_state = 70 
 					70 = {
-						set_compliance = 100
-						set_resistance = 0
+						
 					}
 					transfer_state = 71 
 					71 = {
-						set_compliance = 100
-						set_resistance = 0
+						
 					}
 					transfer_state = 73
 					73 = {
-						set_compliance = 100
-						set_resistance = 0
+						
 					} 
 					transfer_state = 664 
 					664 = {
-						set_compliance = 100
-						set_resistance = 0
+						
 					}
 				}
 				
@@ -10113,26 +10103,12 @@ focus_tree = {
 		cost = 5
 	
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
-					}
-				}
-				OR = {
-					GER = { controls_state = 16 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
-				}
+			GER = {
+				controls_state = 16
+				controls_state = 10
+				controls_state = 110
 			}
-			64 = {
-				is_fully_controlled_by = ROOT
-			}
+			
 		}
 
 		cancel = {
@@ -11678,9 +11654,7 @@ focus_tree = {
 			POL = {
 				has_capitulated = yes
 			}
-			DEN = {
-				has_capitulated = yes
-			}
+			
 			FRA = {
 				has_capitulated = yes
 			}
