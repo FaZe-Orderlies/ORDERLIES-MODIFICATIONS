@@ -90,4 +90,67 @@ on_actions = {
 			}
 		}
 	}
+
+	
+    on_state_control_changed = {
+        effect = {
+           
+            FROM = {
+                if = {
+                    limit = {
+                       
+                        OR = {
+                            tag = GER 
+                            tag = ITA 
+                            tag = BUL 
+                            tag = ROM 
+                            tag = HUN 
+                        }
+                        
+                       
+                        OR = {
+                            owns_state = 907
+                            any_allied_country = { owns_state = 907 }
+                        }
+                        
+                       
+                        OR = {
+                            owns_state = 447
+                            any_allied_country = { owns_state = 477 }
+                        }
+                        
+                       
+                        OR = {
+                            owns_state = 446 
+                            any_allied_country = { owns_state = 453 }
+                        }
+                    }
+                    
+                    
+                    every_country = {
+                        limit = {
+                            OR = {
+                                tag = GER 
+                                tag = ITA 
+                                tag = BUL 
+                                tag = ROM 
+                                tag = HUN 
+                            }
+                            
+                            OR = {
+                                tag = PREV
+                                is_in_faction_with = PREV
+                            }
+                            NOT = { has_idea = egypt_conqueror_idea }
+                        }
+                        
+                        add_timed_idea = {
+                            idea = egypt_conqueror_idea
+                            days = 365
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

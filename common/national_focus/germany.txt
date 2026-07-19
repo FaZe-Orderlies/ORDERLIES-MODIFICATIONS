@@ -4871,7 +4871,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				technology = improved_small_airframe
 			}
@@ -9773,7 +9773,6 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = { country_event = { id = news.60 } }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = hun_get_cze
 			hidden_effect = {
 				add_to_variable = {
 					var = GER_mefo_bill_counter

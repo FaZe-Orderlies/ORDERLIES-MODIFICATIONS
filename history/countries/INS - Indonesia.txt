@@ -93,14 +93,9 @@ set_variable = { INS_realign_supply_chains_time = 120 } #Time decisions take whe
 
 
 # Great Depression
-set_variable = { INS_great_depression_min_export = -0.7 }
-set_variable = { INS_great_depression_production_speed_buildings_factor = 0 }
-set_variable = { INS_great_depression_production_speed_infrastructure_factor = 0 }
-set_variable = { INS_great_depression_production_speed_industrial_complex_factor = 0 }
-set_variable = { INS_great_depression_global_building_slots_factor = 0 }
-set_variable = { INS_great_depression_stability_factor = 0 }
-set_variable = { INS_great_depression_country_resource_cost_rubber = 0 }
-set_variable = { INS_great_depression_country_resource_cost_oil = 0 }
+
+
+
 
 # Revolution Vars
 set_variable = { INS_revolution_hq_count = 0 }
@@ -421,7 +416,6 @@ if = {
 	add_ideas = {
 		idea_INS_netherlands_most_precious_jewel
 		INS_andries_cornelis_dirk_de_graeff
-		armed_neutrality
 		#idea_INS_hidden_naval_raid_range
 	}
 

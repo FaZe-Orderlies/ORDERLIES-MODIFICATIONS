@@ -124,6 +124,22 @@ ideas = {
 				}
 			}
 		}
+
+			
+		egypt_conqueror_idea = {
+			picture = idea_ITA_new_roman_empire_ns
+					
+				
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1  
+				industrial_capacity_factory = 0.05              
+				production_factory_efficiency_gain_factor = 0.05 
+				fuel_gain_factor = 0.10                         
+				fuel_gain_factor_from_states = 0.25
+			}
+			
+		}
+		
 	}
 	
 }
