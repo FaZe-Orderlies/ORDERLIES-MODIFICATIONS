@@ -469,7 +469,7 @@ equipment_modules = {
 		abbreviation = "m3m"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
-
+		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
@@ -492,8 +492,6 @@ equipment_modules = {
 		abbreviation = "mfs"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament

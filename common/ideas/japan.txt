@@ -2953,14 +2953,25 @@ ideas = {
 			picture = ARG_public_works_investment
 
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = MAN
+					original_tag = MEN
+					original_tag = KOR
+					original_tag = FOR
+				}
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
 
-			
+			cancel = {
+				OR = {
+					JAP = { exists = no}
+					NOT = { is_subject_of = JAP }
+					has_war_with = JAP
+				}
+			}
 
 			removal_cost = -1
 			

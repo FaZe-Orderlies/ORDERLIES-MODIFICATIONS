@@ -4283,7 +4283,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			if = {
@@ -4450,7 +4450,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_superior_war_machines
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -4465,18 +4465,32 @@ focus_tree = {
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_default
 					bonus = 0.75
-					uses = 2
+					uses = 1
 					ahead_reduction = 2
-					category = artillery
+					technology = antitank4
+				}
+				add_tech_bonus = {
+					name = SOV_soviet_artillery_tech_bonus_name_default
+					bonus = 0.75
+					uses = 1
+					ahead_reduction = 2
+					technology = antitank5
 				}
 			}
 			else  ={
+				add_tech_bonus = {
+					name = SOV_soviet_artillery_tech_bonus_name_default
+					bonus = 0.75
+					uses = 1
+					ahead_reduction = 2
+					technology = antitank4
+				}
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_alt
 					bonus = 0.75
 					uses = 2
 					ahead_reduction = 2
-					category = artillery
+					technology = antitank5
 				}
 			}
 
@@ -6964,7 +6978,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 16
+		x = 15
 		y = 0
 		offset = {
 			x = -8
@@ -7021,18 +7035,18 @@ focus_tree = {
 		id = SOV_the_centre
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -8
+		x = 0
 		y = 1
 		offset = {
 			x = 8
 			y = 1
 			trigger = {
 				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
+				rule = obsolete_focus_branches_visibility
+				##	option = HIDE
 				}
 				has_completed_focus = SOV_beaten_but_not_defeated
-				NOT = { has_completed_focus = SOV_the_hands_do }
+			NOT = { has_completed_focus = SOV_the_hands_do }
 			}
 		}
 		relative_position_id = SOV_the_path_of_marxism_leninism
@@ -11605,7 +11619,7 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -2
+		x = -5
 		y = 1
 		offset = {
 			x = -7
@@ -11614,35 +11628,10 @@ focus_tree = {
 				NOT = { has_dlc = "No Step Back" }
 			}
 		}
+		
+		
 		offset = {
-			x = -19
-			y = 0
-			trigger = { #Trotskyist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -7
-			y = 0
-			trigger = { # Stalinist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				AND = {
-					has_completed_focus = SOV_left_opposition_coup
-					has_completed_focus = SOV_the_left_opposition
-				}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -26
+			x = 0
 			y = 0
 			trigger = {
 				has_dlc = "No Step Back"
@@ -11653,27 +11642,7 @@ focus_tree = {
 				}
 			}
 		}
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				OR = {
-					AND = {
-						has_completed_focus = SOV_the_left_opposition
-						has_completed_focus = SOV_left_opposition_coup
-					}
-					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						has_completed_focus = SOV_coup_detat
-					}
-				}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
@@ -11784,7 +11753,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 
@@ -12058,9 +12027,9 @@ focus_tree = {
 		id = SOV_the_comintern
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 9
-		y = 0
-		relative_position_id = SOV_addressing_internal_affairs
+		x = 6
+		y = 1
+		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
 
 		allow_branch = {
@@ -12094,7 +12063,7 @@ focus_tree = {
 		id = SOV_development_aid_for_eastern_allies
 		icon = GFX_SOV_development_aid_for_eastern_allies_ccp_2d_sov_compatibility
 		prerequisite = { focus = SOV_the_comintern }
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -12270,7 +12239,7 @@ focus_tree = {
 		id = SOV_policy_of_collective_security
 		icon = GFX_SOV_policy_of_collective_security_ccp_2d_sov_compatibility
 		prerequisite = { focus = SOV_the_comintern }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -13463,7 +13432,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 2
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -13495,7 +13464,7 @@ focus_tree = {
 
 			SOV = {
 				transfer_state = 146
-				add_state_core = 146 # Karjala
+				add_state_claim = 146 # Karjala
 			}
 		}
 	}
@@ -13507,7 +13476,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 2.5
@@ -13570,11 +13539,11 @@ focus_tree = {
 		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
 			SOV = {
 				transfer_state = 78
-				add_state_core = 78
+				add_state_claim = 78
 				transfer_state = 766
-				add_state_core = 766
+				add_state_claim = 766
 				transfer_state = 80
-				add_state_core = 80
+				add_state_claim = 80
 			}
 		}
 	}
@@ -13586,7 +13555,7 @@ focus_tree = {
 		x = 4
 		y = 0
 		relative_position_id = SOV_baltic_security
-		cost = 1
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
