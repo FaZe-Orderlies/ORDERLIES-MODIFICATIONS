@@ -139,6 +139,17 @@ ideas = {
 			}
 			
 		}
+
+		FRA_gain_eff = {
+			picture = ARG_civilian_economy_boost
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 1000.0
+			}
+		}
 		
 	}
 	

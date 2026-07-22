@@ -96,7 +96,7 @@ template_decisions = {
 		}
 		
 		available = {
-			date > 1937.1.1
+			date > 1937.6.1
 			hidden_trigger = {
 				command_power > 49
 				has_political_power > 99

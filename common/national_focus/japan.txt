@@ -11432,6 +11432,7 @@ focus_tree = {
 
 			custom_effect_tooltip = JAP_annex_CHI
 			hidden_effect = {
+				add_threat = 10
 				JAP = {
 					annex_country = { target = CHI
 					transfer_troops = yes

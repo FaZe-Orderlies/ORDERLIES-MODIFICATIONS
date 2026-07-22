@@ -12,15 +12,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-		buttonType = {
-			name = "rules_in_game"
-			quadTextureSprite ="GFX_button_transparent2"
-			text = "rules_in_game_text"
-			font = "hoi_16mbs"
-			position = { x= 1212 y = 0 }
-			Orientation = UPPER_LEFT
-			web_link = "https://docs.google.com/document/d/1miRhkOFIWTKnqd_1-LgRPHgrktQyXx0aGHQv4OAJVyU/edit?tab=t.0"
-		}
+		
 
 		buttonType = {
 			name = "reopen_ingame_lobby"

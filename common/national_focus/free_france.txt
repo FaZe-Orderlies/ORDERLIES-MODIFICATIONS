@@ -42,7 +42,15 @@
 			add_manpower = 250000
 			add_stability = 0.20
 			add_political_power = 150
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = FRA_gain_eff
+				days = 14
+			}
 		}
 	}
 	focus = {
