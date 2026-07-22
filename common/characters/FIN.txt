@@ -222,8 +222,7 @@ characters = {
 				large = GFX_portrait_FIN_woldemar_hagglund
 				small = GFX_portrait_FIN_woldemar_hagglund_small
 			}
-		}
-		
+		}	
 	}
 
 	FIN_aarne_juutilainen = {
@@ -234,7 +233,6 @@ characters = {
 				small = GFX_portrait_FIN_aarne_juutilainen_small
 			}
 		}
-		
 	}
 
 	FIN_juho_heiskanen = {
@@ -245,8 +243,6 @@ characters = {
 				small = GFX_portrait_FIN_juho_heiskanen_small
 			}
 		}
-		
-		
 	}
 
 	FIN_wiljo_einar_tuompo = {
@@ -257,7 +253,6 @@ characters = {
 				small = GFX_portrait_FIN_wiljo_einar_tuompo_small
 			}
 		}
-		
 	}
 
 	FIN_kurt_martti_wallenius = { #DLC
@@ -268,7 +263,6 @@ characters = {
 				small = GFX_portrait_FIN_kurt_martti_wallenius_small
 			}
 		}
-		
 	}
 
 	FIN_fanni_luukkonen = {
@@ -279,7 +273,6 @@ characters = {
 				small = GFX_portrait_FIN_fanni_luukkonen_small
 			}
 		}
-		
 	}
 
 	FIN_paavo_talvela = {
@@ -290,7 +283,6 @@ characters = {
 				small = GFX_portrait_FIN_paavo_talvela_small
 			}
 		}
-		
 	}
 
 	FIN_hannu_hannuksela = {
@@ -301,7 +293,6 @@ characters = {
 				small = GFX_portrait_FIN_hannu_hannuksela_small
 			}
 		}
-		
 	}
 
 	FIN_hjalmar_siilasvuo = {
@@ -312,7 +303,6 @@ characters = {
 				small = GFX_portrait_FIN_hjalmar_siilasvuo_small
 			}
 		}
-		
 	}
 
 	FIN_taavetti_laatikainen = {
@@ -323,7 +313,6 @@ characters = {
 				small = GFX_portrait_FIN_taavetti_laatikainen_small
 			}
 		}
-		
 	}
 
 	FIN_matti_aarnio = {
@@ -334,7 +323,6 @@ characters = {
 				small = GFX_portrait_FIN_matti_aarnio_small
 			}
 		}
-		
 	}
 
 	FIN_ruben_lagus = {
@@ -345,7 +333,6 @@ characters = {
 				small = GFX_portrait_FIN_ruben_lagus_small
 			}
 		}
-		
 	}
 
 	FIN_lauri_torni = {
@@ -356,7 +343,6 @@ characters = {
 				small = GFX_portrait_FIN_lauri_torni_small
 			}
 		}
-		
 	}
 
 	FIN_erkki_raappana = {
@@ -367,7 +353,6 @@ characters = {
 				small = GFX_portrait_FIN_erkki_raappana_small
 			}
 		}
-		
 	}
 
 	#Paavo Susitaival further down to keep order
@@ -380,7 +365,6 @@ characters = {
 				small = GFX_portrait_FIN_aarne_sihvo_small
 			}
 		}
-		
 	}
 
 	FIN_akseli_anttila = {
@@ -463,8 +447,7 @@ characters = {
 				large = GFX_portrait_FIN_eyolf_mattsson
 				small = GFX_portrait_FIN_eyolf_mattsson_small
 			}
-		}
-		
+		}	
 	}
 
 	FIN_toivo_antikainen = {
@@ -475,8 +458,7 @@ characters = {
 				small = GFX_portrait_FIN_toivo_antikainen_small
 			}
 		}
-		
-		}
+	
 		advisor = {			
 			slot = army_chief
 			idea_token = FIN_toivo_antikainen
@@ -825,7 +807,18 @@ characters = {
 			}
 		}
 
-		
+		corps_commander = {
+			traits = { jaeger inflexible_strategist career_officer organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = { has_government = communism }
+			}
+		}
 
 		advisor = {
 			slot = high_command
@@ -1480,7 +1473,19 @@ characters = {
 					small = GFX_portrait_FIN_paavo_susitaival_civilian_small
 				}
 			}
-			
+			corps_commander = {
+				traits = { infantry_officer politically_connected }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+				legacy_id = -1
+				visible = {
+					has_completed_focus = FIN_military_promotions
+					NOT = { has_government = communism }
+				}
+			}
 			advisor = {
 				slot = political_advisor
 				idea_token = FIN_paavo_susitaival

@@ -76,7 +76,7 @@ ideas = {
 			}
 			on_add = {
 				add_daily_mastery = {
-					amount = 0.4
+					amount = 0.5
 					days = 1095	
 					name = daily_doc
 				}

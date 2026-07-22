@@ -6095,7 +6095,7 @@ focus_tree = {
 		prerequisite = { focus = USA_war_plans_division }
 		mutually_exclusive = { }
 		relative_position_id = USA_war_plans_division
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1

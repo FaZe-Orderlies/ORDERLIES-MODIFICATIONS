@@ -3799,8 +3799,7 @@ focus_tree = {
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 2
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
+			
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -7780,15 +7779,11 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-			OR = {
-				has_country_flag = ITA_defeat_in_ethiopia_flag
-				ITA_has_peaced_out_eth_on_startup = yes
-			}
+			
 		}
 
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			NOT = { has_country_flag = ITA_defeat_in_ethiopia_flag }
+			
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
@@ -8239,10 +8234,7 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
-			has_country_leader = {
-				character = ITA_benito_mussolini
-				ruling_only = yes
-			}
+			
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
@@ -8932,13 +8924,7 @@ focus_tree = {
 		
 
 		bypass = {
-			458 = { is_claimed_by = ROOT }
-			665 = { is_claimed_by = ROOT }
-			103 = { is_claimed_by = ROOT }
-			105 = { is_claimed_by = ROOT }
-			44 = { is_claimed_by = ROOT }
-			805 = { is_claimed_by = ROOT }
-			934 = { is_claimed_by = ROOT }
+			
 		}
 
 		available = {
@@ -8948,8 +8934,22 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			custom_effect_tooltip = form_greater_italy_tt
+			ITA = {
+				add_state_core = 105
+				add_state_core = 934
+				add_state_core = 44
+				add_state_core = 805
+				add_state_core = 186
+				add_state_core = 182 
+				add_state_core = 187
+				add_state_core = 104
+				add_state_core = 804
+				add_state_core = 735
+				add_state_core = 1
+				add_state_core = 116
+				add_state_core = 846
 
+			}
 		}
 	}
 

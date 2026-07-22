@@ -6,7 +6,7 @@ ORDL_decisions = {
         allowed = { original_tag = GER }
         
         available = {
-            date>1939.1.1
+            date>1936.1.1
             HUN = { is_ai = yes  }
         }
         
@@ -55,7 +55,7 @@ ORDL_decisions = {
         allowed = { original_tag = GER }
         
         available = {
-            date>1939.1.1
+            date>1936.1.1
             ROM = { is_ai = yes  }
         }
         
@@ -125,7 +125,7 @@ ORDL_decisions = {
         allowed = { original_tag = GER }
         
         available = {
-            date>1939.1.1
+            date>1936.1.1
             BUL = { is_ai = yes  }
         }
         
@@ -163,6 +163,5 @@ ORDL_decisions = {
                 
             }
         }
-    }   
-
+    } 
 }

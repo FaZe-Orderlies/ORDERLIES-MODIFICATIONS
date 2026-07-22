@@ -421,7 +421,6 @@ if = {
 	add_ideas = {
 		idea_INS_netherlands_most_precious_jewel
 		INS_andries_cornelis_dirk_de_graeff
-		armed_neutrality
 		#idea_INS_hidden_naval_raid_range
 	}
 

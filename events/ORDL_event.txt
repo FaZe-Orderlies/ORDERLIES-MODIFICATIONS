@@ -1,0 +1,82 @@
+add_namespace = orderlies
+
+news_event = {
+   	id = orderlies.1
+	title = orderlies.1.t
+	desc = orderlies.1.d
+	picture = GFX_news_event_generic_panzer_attack
+
+    major = yes
+
+    fire_only_once = no
+
+    trigger = { 
+        NOT = {
+            has_global_flag = AXIS_win_africa
+        }
+       446 = {
+        is_controlled_by_axis = yes
+       }
+       907 = {
+        is_controlled_by_axis = yes
+       }
+       447 = {
+        is_controlled_by_axis = yes
+       }
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = AXIS_win_africa
+            every_country = {
+                limit = { 
+                    is_in_faction_with = GER
+                }
+                add_ideas = {
+                    idea = egypt_conqueror_idea
+                }
+            }
+        }   
+    }
+
+    option = {
+        name = orderlies.1.a
+    }
+}
+
+news_event = {
+   	id = orderlies.2
+	title = orderlies.2.t
+	desc = orderlies.2.d
+	picture = GFX_news_event_generic_anglo_iraqi_war_1
+
+    major = yes
+
+    fire_only_once = no
+
+    trigger = {
+        NOT = {
+            has_global_flag = ALLIES_win_africa
+        } 
+        north_africa_has_been_fallen = yes
+        has_global_flag = AXIS_win_africa
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = ALLIES_win_africa
+            every_country = {
+                limit = { 
+                    is_in_faction_with = GER
+                }
+                remove_ideas = {
+                    idea = egypt_conqueror_idea
+                }
+            }
+        }   
+    }
+
+    option = {
+        name = orderlies.2.a
+    }
+}

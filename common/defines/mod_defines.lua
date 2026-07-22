@@ -115,7 +115,7 @@ NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 20 ---дни на апгрейд аг
 
 ---чуток боевки
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 1000 -- Пополнение снаряги в дивках, объем пополнения
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 100000.0 --Модификатор скорости доставки подкрепления для армии (время в пути)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 25 --Модификатор скорости доставки подкрепления для армии (время в пути)
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
 
 ---лимит спецвойск
@@ -151,6 +151,8 @@ NDefines.NResistance.GARRISON_EQUIPMENT_LOST_BY_ATTACK = 0.015 ---потери �
     NDefines.NProject.BREAKTHROUGH_DAILY_SCIENTIST_SKILL_GAIN = 10
 
 ---NEW ORDL HISTORICAL
+
+---ARMY 
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
@@ -158,3 +160,12 @@ NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0 
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 
+
+---FLEET 
+NDefines.NAVAL_MINES_IN_REGION_MAX = 0
+NDefines.NAVAL_MINES_PLANTING_SPEED_MULT = 0
+NDefines.NAVAL_MINES_SWEEPING_SPEED_MULT = 0
+NDefines.NAVAL_MINES_DECAY_AT_PEACE_TIME = 0
+NDefines.NAVAL_MINES_SWEEPERS_REDUCTION_ON_PENALTY_EFFECT = 0
+NDefines.NAVAL_MINES_INTEL_DIFF_FACTOR = 0
+NDefines.NCountry.DEFAULT_COASTAL_PROTECTION_STABILITY = 0.0

@@ -170,16 +170,6 @@ if = {
 	recruit_character = SOV_anton_denikin
 }
 
-	set_autonomy = {
-		target = MON
-		autonomous_state = autonomy_puppet
-		freedom_level = 0.1
-	}
-	set_autonomy = {
-		target = TAN
-		autonomous_state = autonomy_puppet
-		freedom_level = 0.4
-	}
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {

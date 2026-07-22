@@ -127,7 +127,7 @@ ideas = {
 
 			
 		egypt_conqueror_idea = {
-			picture = idea_ITA_new_roman_empire_ns
+			picture = ITA_new_roman_empire_ns
 					
 				
 			modifier = {

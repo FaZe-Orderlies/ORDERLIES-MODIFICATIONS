@@ -16,26 +16,6 @@ template_decisions = {
         }
     }
 
-    garrison_template_decision = {
-        icon = GFX_decision_generic_army_support
-        allowed = { always = yes }
-        available = { is_ai = no }
-        visible = { }
-        fire_only_once = yes
-        complete_effect = {
-            division_template = {
-                name = "гарнизон"
-                regiments = {
-                    cavalry = { x = 0 y = 0 } cavalry = { x = 0 y = 1 } cavalry = { x = 0 y = 2 } cavalry = { x = 0 y = 3 } cavalry = { x = 0 y = 4 }
-                    cavalry = { x = 1 y = 0 } cavalry = { x = 1 y = 1 } cavalry = { x = 1 y = 2 } cavalry = { x = 1 y = 3 } cavalry = { x = 1 y = 4 }
-                    cavalry = { x = 2 y = 0 } cavalry = { x = 2 y = 1 } cavalry = { x = 2 y = 2 } cavalry = { x = 2 y = 3 } cavalry = { x = 2 y = 4 }
-                    cavalry = { x = 3 y = 0 } cavalry = { x = 3 y = 1 } cavalry = { x = 3 y = 2 } cavalry = { x = 3 y = 3 } cavalry = { x = 3 y = 4 }
-                    cavalry = { x = 4 y = 0 } cavalry = { x = 4 y = 1 } cavalry = { x = 4 y = 2 } cavalry = { x = 4 y = 3 } cavalry = { x = 4 y = 4 }
-                }
-            }
-        }
-    }
-
     convert_36w_decision = {
         icon = GFX_decision_generic_army_support
         allowed = { always = yes }
@@ -75,35 +55,7 @@ template_decisions = {
         }
     }
 
-    KITAI_attache = {
-		icon = generic_army_support
-		
-		custom_cost_trigger = {
-			command_power > 49
-			has_political_power > 99
-		}
-		custom_cost_text = decision_cost_CP_50_PP_100
-
-        visible = {
-			NOT = { tag = SOV }
-			NOT = { tag = JAP }
-		}
-		
-		available = {
-			date > 1937.1.1
-			hidden_trigger = {
-				command_power > 49
-				has_political_power > 99
-			}
-		}
-		
-		fire_only_once = yes
-		complete_effect = {
-			add_war_support = 0.1
-		}
-	}
-	
-	ispanka = {
+    ispanka = {
 		icon = generic_army_support
 		
 		custom_cost_trigger = {
@@ -120,11 +72,42 @@ template_decisions = {
 			}
 		}
 		visible = {
-			NOT = { tag = SOV }
+			
 		}
 		fire_only_once = yes
 		complete_effect = {
 			add_war_support = 0.1
+            add_command_power = -50
+			add_political_power = -100
+		}
+	}
+
+    KITAI_attache = {
+		icon = generic_army_support
+		
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+        visible = {
+			
+		}
+		
+		available = {
+			date > 1937.1.1
+			hidden_trigger = {
+				command_power > 49
+				has_political_power > 99
+			}
+		}
+		
+		fire_only_once = yes
+		complete_effect = {
+			add_war_support = 0.1
+            add_command_power = -50
+			add_political_power = -100
 		}
 	}
 }

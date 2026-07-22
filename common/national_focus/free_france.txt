@@ -904,18 +904,7 @@
 			factor = 1
 		}
 		available = {
-			OR = {
-				IF = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_legitimacy > 40
-				}
-				ELSE = {
-					num_of_factories > 14
-				}
-				has_war = no
-			}
+			
 			
 		}
 		

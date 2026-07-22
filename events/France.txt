@@ -249,6 +249,8 @@ country_event = {
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
+		add_ideas = FRA_defeatism
+		load_focus_tree = free_french_focus
 		hidden_effect = {
 			every_subject_country = {
 				limit = {

@@ -769,9 +769,7 @@ USA_izolation_army: "Реформирование Армии"
 USA_doctrine_defend: "Доктрина обороны Полушария"
 USA_doctrine_defend_improve: "Доктрина обороны Полушария"
 
-starting_production: "Разгон производства"
-starting_doc: "Разгон доки"
-daily_dock_tt: "Добавлять §H0.40§! £doctrine_mastery §Hочк. освоения§! ежедневно в течение §H1095§! дн. для всех действующих направлений доктрины"
+
 STATE_1048: "Седан"
 STATE_1047: "Нанси"
 STATE_1049: "Сувалки"
