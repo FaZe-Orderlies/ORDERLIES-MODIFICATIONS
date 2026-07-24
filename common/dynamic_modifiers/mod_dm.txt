@@ -1,45 +1,3 @@
-FRA_integralism_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_HABSBURG_cavalry
-
-	production_factory_max_efficiency_factor = FRA_production_factory_max_efficiency_factor_mod
-	political_power_gain = FRA_political_power_gain_mod
-	industrial_capacity_factory = FRA_industrial_capacity_factory_mod
-	production_factory_efficiency_gain_factor = FRA_production_factory_efficiency_gain_factor_mod
-	cas_damage_reduction = FRA_cas_damage_reduction_mod
-	political_advisor_cost_factor = FRA_political_advisor_cost_factor_mod
-	production_speed_buildings_factor = FRA_production_speed_buildings_factor_mod
-	consumer_goods_factor = FRA_consumer_goods_factor_mod
-}
-
-FRA_imperial_economic = { #NATIONAL SPIRIT
- 	enable = { always = yes }
-
- 	icon = GFX_idea_CHL_french_aristocracy
-
-	consumer_goods_factor = FRA_consumer_goods_factor_mod
-	political_power_gain = FRA_political_power_gain_mod
-	industrial_capacity_factory = FRA_industrial_capacity_factory_mod
-	production_factory_max_efficiency_factor = FRA_production_factory_max_efficiency_factor_mod
-	production_factory_efficiency_gain_factor = FRA_production_factory_efficiency_gain_factor_mod
-	production_speed_buildings_factor = FRA_production_speed_buildings_factor_mod	
-	GLOBAL_BUILDING_SLOTS_FACTOR = FRA_GLOBAL_BUILDING_SLOTS_FACTOR_MOD	
-	local_resources_factor = FRA_local_resources_factor_mod
-	production_speed_synthetic_refinery_factor = FRA_production_speed_synthetic_refinery_factor_mod
-}				
-
-USA_zastoy_v_regionax_state_modifier = {
-	enable = { always = yes }
-
-	icon = GFX_modifiers_PRC_urban_development
-
-	production_speed_buildings_factor = -0.4
-	production_speed_arms_factory_factor = -0.4
-	production_speed_dockyard_factor = -0.4
-	production_speed_synthetic_refinery_factor = -0.4
-	production_speed_fuel_silo_factor = -0.4
-}
 
 JAP_investments_from_tokyo_state_modifier = {
 	enable = { always = yes }
@@ -48,34 +6,6 @@ JAP_investments_from_tokyo_state_modifier = {
 
 	production_speed_buildings_factor = 0.05 
 }	
-
-USA_american_people_front = {
-	enable = { always = yes }
-
-	icon = GFX_idea_usa_us_air_force
-
-	drift_defence_factor = USA_drift_defence_factor_mod
-    stability_factor = USA_stability_factor_mod
-    war_support_factor = USA_war_support_factor_mod
-    industrial_capacity_factory = USA_industrial_capacity_factory_mod
-    recruitable_population_factor = USA_recruitable_population_factor_mod_peoples_front
-    research_speed_factor = USA_research_speed_factor_mod
-    operative_slot = USA_operative_slot_mod
-    intelligence_agency_defense = USA_intelligence_agency_defense_mod
-    political_advisor_cost_factor = USA_political_advisor_cost_factor_mod
-    navy_advisor_cost_factor  = USA_navy_advisor_cost_factor_mod
-    army_advisor_cost_factor = USA_army_advisor_cost_factor_mod
-    air_advisor_cost_factor = USA_air_advisor_cost_factor_mod
-    political_power_factor = USA_political_power_factor_mod
-    consumer_goods_factor = USA_consumer_goods_factor_mod
-    production_factory_max_efficiency_factor = USA_production_factory_max_efficiency_factor_mod
-    army_org_factor = USA_army_org_factor_mod
-    mobilization_speed = USA_mobilization_speed_mod
-	industrial_capacity_dockyard = USA_industrial_capacity_dockyard_mod
-	communism_drift = USA_communism_drift_mod
-	experience_gain_army = USA_experience_gain_army_mod
-	army_org_factor = USA_army_org_factor_mod
-}
 
 USA_isolation = {
 	enable = { always = yes }
@@ -103,19 +33,8 @@ USA_oil_problem = {
 	
 	fuel_gain_factor = USA_fuel_gain_factor_mod
 	production_speed_synthetic_refinery_factor = USA_production_speed_synthetic_refinery_factor_mod
-	
 }
 
-USA_navy_commisariat = {
-	enable = { always = yes }
-
-	icon = GFX_idea_USA_navy_strong_country
-	
-	
-	refit_speed = USA_refit_speed_mod
-	repair_speed_factor = USA_repair_speed_factor_mod
-	production_speed_dockyard_factor = USA_production_speed_dockyard_factor_mod
-}
 
 USA_national_resource_council_dm = {
 	enable = { always = yes }
@@ -131,7 +50,7 @@ USA_national_resource_council_dm = {
 USA_war_time_dm = {
 	enable = { always = yes }
 	
-	icon = GFX_idea_USA_statue_of_liberty
+	icon = GFX_idea_ARG_war_division
 	
 	production_factory_max_efficiency_factor = production_factory_max_efficiency_factor_war_time
 	line_change_production_efficiency_factor = line_change_production_efficiency_factor_war_time
@@ -145,86 +64,9 @@ USA_war_time_dm = {
 	research_speed_factor = USA_research_speed_factor_war_time
 }
 
-GER_reichsform = {
-	enable = { always = yes }
-
-	icon = GFX_idea_zoloto
-
-	production_factory_max_efficiency_factor = GER_production_factory_max_efficiency_factor_altger
-	production_speed_arms_factory_factor = GER_production_speed_arms_factory_factor_altger
-	research_speed_factor = GER_research_speed_factor_altger
-	production_speed_industrial_complex_factor = GER_production_speed_industrial_complex_factor_altger
-	industrial_capacity_factory = GER_industrial_capacity_factory_altger
-	production_speed_infrastructure_factor = GER_production_speed_infrastructure_factor_altger
-	political_power_gain = GER_political_power_gain_altger
-	production_speed_buildings_factor = GER_production_speed_buildings_factor_altger
-}
-
-FRA_STEAL_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_corruption_faze
-	
-	industrial_capacity_factory = USA_industrial_capacity_factory_mod_isolation_GOLD
-}
-FRA_get_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_corruption_faze
-	
-	consumer_goods_expected_value = USA_consumer_goods_expected_value_mod_golden
-}
-
-uk_STEAL_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_idea_mod_cool
-	
-	industrial_capacity_dockyard = industrial_capacity_dockyard_war_time_GOLD
-}
-uk_get_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_idea_mod_cool
-	
-	consumer_goods_expected_value = USA_consumer_goods_expected_value_mod_golden_uk
-}
-
-bel_STEAL_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_idea_BEL_steal_gold_faze_loxl
-	
-	production_factory_max_efficiency_factor = production_factory_max_efficiency_factor_gold_gui
-}
-
-bel_get_GOLD_dm = {
-	enable = { always = yes }
-	
-	icon = GFX_idea_BEL_steal_gold_faze_loxl
-	
-	consumer_goods_expected_value = USA_consumer_goods_expected_value_mod_golden_bel
-}
-
-USA_whiter_plan = {
-	enable = { always = yes }
-
-	icon = GFX_idea_SWE_hodgepodge_of_equipment
-
-	army_core_attack_factor = army_core_attack_factor_white
-	army_core_defence_factor = army_core_defence_factor_white
-	experience_gain_army = experience_gain_army_white
-	navy_max_range_factor = navy_max_range_factor_white
-	refit_speed = refit_speed_white
-	drift_defence_factor = drift_defence_factor_white
-	cas_damage_reduction = cas_damage_reduction_white
-	army_org_factor = army_org_factor_white
-	democratic_drift = democratic_drift_white
-}
-
 USA_pentagon = {
 	enable = { always = yes }
-	icon = GFX_us_officer
+	icon = GFX_idea_generic_navy_cruiser_warfare
 	
 	army_attack_factor = USA_army_attack_factor_PENTAGON
 	air_superiority_bonus_in_combat = air_superiority_bonus_in_comba_PENTAGON
@@ -248,7 +90,7 @@ USA_pentagon = {
 
 USA_army = {
 	enable = { always = yes }
-	icon = GFX_armiya_sha
+	icon = GFX_idea_SWE_land_air_warfare
 
 	mobilization_speed = USA_mobilization_speed_army_usa
 	coordination_bonus = USA_coordination_bonus_army_usa
@@ -273,7 +115,7 @@ USA_army = {
 
 USA_airforce = {
 	enable = { always = yes }
-	icon = GFX_aviaciya_USA
+	icon = GFX_idea_generic_air_interception
 
 	air_strategic_bomber_bombing_factor = USA_air_strategic_bomber_bombing_factor_airforce_usa
 	air_cas_efficiency = USA_air_cas_efficiency_airforce_usa

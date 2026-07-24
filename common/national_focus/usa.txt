@@ -506,7 +506,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_global_potential
-		icon = GFX_USA_domain_act
+		icon = GFX_focus_ARG_join_the_allies
 		x = 0
 		y = 5
 		prerequisite = { focus = USA_giant_gets_sexy }
@@ -609,7 +609,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_lend_lease_action
-		icon = GFX_goal_USA_lend_lease_act
+		icon = GFX_focus_BRA_ethical_internationalism
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_pay_and_get }
@@ -641,7 +641,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_national_cometee_of_defence
-		icon = GFX_goal_generic_committee_of_defence
+		icon = GFX_SOV_committee_in_exile_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_global_potential }
@@ -772,7 +772,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_NO_LIMIT_WAR
-		icon = GFX_goal_USA_war_powers_act
+		icon = GFX_focus_PER_limit_foreign_influence
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_national_cometee_of_defence }
@@ -844,7 +844,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_war_vets
-		icon = GFX_USA_huyna
+		icon = GFX_focus_generic_manpower
 		x = -1
 		y = 1
 		prerequisite = { focus = USA_price_controll }
@@ -1007,7 +1007,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_Arsenal_of_democrasy_mod
-		icon = GFX_goal_USA_arsenal_of_democracy
+		icon = GFX_SOV_funds_for_the_cause_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_chensay_military }
@@ -1167,6 +1167,10 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1218,11 +1222,11 @@ focus_tree = {
 
 	focus = {
 		id = USA_war_centers
-		icon = GFX_goal_the_allies
-		x = 0
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		x = -6
 		y = 1
-		prerequisite = { focus = USA_enter_alliance }
-		relative_position_id = USA_enter_alliance
+		prerequisite = { focus = USA_global_potential }
+		relative_position_id =  USA_global_potential
 		cost = 5
 
 		ai_will_do = {
@@ -1262,7 +1266,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_war_cabinet_operation
-		icon = GFX_USA_Form_the_OSS
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_war_centers }
@@ -3175,7 +3179,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_WPA
-		icon = GFX_goal_USA_progress_the_wpa
+		icon = GFX_SOV_restoration_and_development_ccp_2d_sov_compatibility
 		x = 3
 		y = 1
 
@@ -3249,7 +3253,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_confidence_building_company
-		icon = GFX_FRA_reform_the_labour_laws
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 
@@ -3540,7 +3544,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_national_resource_council
-		icon = GFX_ENG_kickstart_the_war_industry
+		icon = GFX_SOV_increase_state_reserves_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 
@@ -3879,7 +3883,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_mobilisation_industry
-		icon = GFX_goal_USA_office_of_war_mobilization
+		icon = GFX_SOV_national_unification_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 
@@ -6618,7 +6622,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_create_tank_force
-		icon = GFX_Tank_force
+		icon = GFX_goal_generic_army_tanks
 		x = 4
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
@@ -6660,7 +6664,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_heavy_tanks_doctrine
-		icon = GFX_USA_heavy_tanks
+		icon = GFX_focus_generic_heavy_tank
 		x = -1
 		y = 1
 		prerequisite = { focus = USA_create_tank_force }
@@ -6696,7 +6700,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_tanks_support_pehota
-		icon = GFX_USA_tank_support_pehota
+		icon = GFX_focus_generic_army_tanks2
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_heavy_tanks_doctrine }
@@ -6878,7 +6882,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_desegretia
-		icon = GFX_USA_desegretation1
+		icon = GFX_focus_generic_diverse_army
 		x = -2
 		y = 1
 		prerequisite = { focus = USA_army_of_the_united_states }
@@ -6912,7 +6916,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_desegretiatwo
-		icon = GFX_USA_desegregation2
+		icon = GFX_focus_CONGO_congo_army
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_desegretia }
@@ -6946,7 +6950,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_army_of_the_united_states
-		icon = GFX_army_of_usa
+		icon = GFX_focus_PHI_philippine_army_orchestra
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
@@ -7038,7 +7042,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_tank_experiments
-		icon = GFX_USA_tank_expirement
+		icon = GFX_focus_NZL_bob_semple_tank
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_tank_destroyer_doctrine }
@@ -7354,7 +7358,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_carpet_bombing
-		icon = GFX_USA_carpet_bomber
+		icon = GFX_goal_generic_air_bomber
 		x = 1
 		y = 1
 		prerequisite = { focus = USA_strategic_bombing }
@@ -7478,7 +7482,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_coordination_air_ground
-		icon = GFX_USA_shturmik
+		icon = GFX_focus_generic_cas_aircraft
 		x = -1
 		y = 1
 		prerequisite = { focus = USA_CAS }

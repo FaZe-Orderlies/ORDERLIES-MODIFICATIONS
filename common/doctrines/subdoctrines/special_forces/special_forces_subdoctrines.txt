@@ -55,10 +55,7 @@ mountaineers_1 = {
 			mastery = 60
 			special_forces_out_of_supply_factor = -0.1
 			acclimatization_cold_climate_gain_factor = 0.1
-			category_special_forces = {
-				max_organisation = 5
-				soft_attack = 0.05
-			}
+			
 		}
 		reward_2 = {
 			mastery = 60
@@ -68,22 +65,20 @@ mountaineers_1 = {
 		reward_3 = {
 			mastery = 60
 			category_mountaineers = {
-				defense = 0.10
+				defense = 0.05
 			}
-			mountaineers = {
-				combat_width = -0.2
-			}	  		
+				  		
 		}
 		reward_4 = {
 			mastery = 60
 			category_mountaineers = {
-				max_organisation = 10
+				max_organisation = 0.2
 			}	    	
 		}
 		reward_5 = {
 			mastery = 60
 	    	category_mountaineers = {
-	    		soft_attack = 0.1
+	    		soft_attack = 0.05
 	    	}
 		}
     }
@@ -195,7 +190,9 @@ mountaineers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
+			mountaineers = {
+				soft_attack = 0.10
+			}
 		}
     }
 }
@@ -287,13 +284,8 @@ marines_1 = {
 		}
 		reward_5 = {
 			mastery = 60
-			effect = {
-				add_ideas = GEN_cheaper_amphib
-			}
 
 			amphibious_mechanized = {
-				 soft_attack = 0.1
-				 breakthrough = 0.1
 				 max_organisation = 5
 			}
 			
@@ -301,7 +293,7 @@ marines_1 = {
 				battalion_mult = {
 					category = category_amphibious_tanks
 					armor = 0.15
-					breakthrough = 0.15
+					breakthrough = 0.10
 				}
 			}
 		}
@@ -415,7 +407,9 @@ marines_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.10
+			marine = {
+				soft_attack = 0.05
+			}
 		}
     }
 }
@@ -601,7 +595,9 @@ paratroopers_2 = {
 		}
 	reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.10
+			paratrooper = {
+				soft_attack = 0.10
+			}
 		}
     }
 }
@@ -670,10 +666,6 @@ rangers_1 = {
 		}
 		reward_2 = {
 			mastery = 60
-			category_special_forces = {
-				soft_attack = 0.05
-				max_organisation = 5
-			}
 	    	rangers_special_forces_contribution_factor = -0.25
 		}
 		reward_3 = {
@@ -790,7 +782,7 @@ rangers_2 = {
 		reward_2 = {
 		    mastery = 60
 		    category_rangers = {
-				soft_attack = 0.1
+				soft_attack = 0.05
 				defense = 0.1
 				max_organisation = 5
 			}
@@ -809,7 +801,9 @@ rangers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
+			category_rangers = {
+				soft_attack = 0.05
+			}
 		}
     }
 }

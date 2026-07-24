@@ -14569,6 +14569,17 @@ focus_tree = {
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
 			}
+
+			hidden_effect = {
+				SOV = {
+					transfer_state = 80
+					add_state_core = 80
+					transfer_state = 78
+					add_state_core = 78
+					transfer_state = 766
+					add_state_core = 766
+				}
+			}
 		}
 	}
 

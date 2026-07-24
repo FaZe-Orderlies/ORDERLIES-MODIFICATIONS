@@ -1164,7 +1164,7 @@ ideas = {
 
 		arsenal_of_democracy = { 
 
-			picture = ARG_public_works_investment
+			picture = INS_western_trade_idea
 			visible = {
 				original_tag = USA
 				OR = {

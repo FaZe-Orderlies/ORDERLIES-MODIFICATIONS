@@ -6437,7 +6437,7 @@ focus_tree = {
 				days = 730
 			}
 
-			custom_effect_tooltip = FIN_heimosodat_dec_tt
+			
 		}
 	}
 	

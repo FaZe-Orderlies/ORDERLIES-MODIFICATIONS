@@ -412,6 +412,7 @@ add_ideas = {
 	civilian_economy
 	limited_conscription
 	free_trade
+	armed_neutrality
 }
 
 if = {
@@ -422,6 +423,7 @@ if = {
 		idea_INS_netherlands_most_precious_jewel
 		INS_andries_cornelis_dirk_de_graeff
 		#idea_INS_hidden_naval_raid_range
+		armed_neutrality
 	}
 
 	add_dynamic_modifier = { modifier = INS_dutch_east_indies }

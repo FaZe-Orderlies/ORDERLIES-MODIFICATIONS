@@ -6026,7 +6026,7 @@ focus_tree = {
 				name = ITA_incrociatori_leggeri
 				bonus = 1
 				uses = 1
-				category = cl_tech
+				category = ca_tech
 			}
 
 			#Update NS icon

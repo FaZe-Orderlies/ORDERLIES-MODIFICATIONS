@@ -17205,71 +17205,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 	completion_reward = {
-		hidden_effect = {
-			set_temp_variable = { RAJ_pp_bonus_based_on_compliance = 0 }
-			
-			for_each_scope_loop = {
-				array = ROOT.owned_states_at_game_start			
-				
-				if = {
-					limit = {
-						is_controlled_by = ROOT
-						has_resistance = yes
-						compliance > 74 #Doesn't accept vars :') WARNING! If changing this value then update the tooltip RAJ_the_government_of_india_act_pp_bonus_tt
-					}
-					add_to_temp_variable = { ROOT.RAJ_pp_bonus_based_on_compliance = 1 }
-					#log = "[THIS.GetName] grants bonus"
-				}
-			}
-			log = "Total states granting bonus = [?ROOT.RAJ_pp_bonus_based_on_compliance]"
-
-			divide_temp_variable = { RAJ_pp_bonus_based_on_compliance = 100 } #Divide so 1 becomes 0.01 (1% PP factor)
-			multiply_temp_variable = { RAJ_pp_bonus_based_on_compliance = RAJ_the_government_of_india_act_pp_bonus_based_on_compliance } #Multiply by whatever value deemed good for balance
-		}
-
-		custom_effect_tooltip = RAJ_the_government_of_india_act_pp_bonus_tt
-		if = {
-			limit = {
-				NOT = { has_completed_focus = RAJ_the_government_of_india_act } #Stop showing dynamic list of states after completed
-				any_state_in = {
-					array = ROOT.owned_states_at_game_start
-
-					has_resistance = yes
-					compliance > 74 #Doesn't accept vars :') WARNING! If changing this value then update the tooltip RAJ_the_government_of_india_act_pp_bonus_tt
-				}
-			}
-			custom_effect_tooltip = current_states_granting_bonus_tt
-			every_controlled_state = { #For tooltip purposes
-				limit = {
-					is_in_array = {
-						array = ROOT.owned_states_at_game_start
-						value = THIS
-					}
-					has_resistance = yes
-					compliance > 74 #Doesn't accept vars :') WARNING! If changing this value then update the tooltip RAJ_the_government_of_india_act_pp_bonus_tt
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_completed_focus = RAJ_the_government_of_india_act } #Stop showing this after completed
-			}
-			custom_effect_tooltip = no_state_meet_requirements_tt
-		}
-		add_to_variable = { RAJ_a_loyal_government_political_power_factor = RAJ_pp_bonus_based_on_compliance }
-		clear_variable = RAJ_pp_bonus_based_on_compliance
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-		add_stability = 0.05
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = RAJ_famine_impact_reduction
-		add_to_variable = { RAJ_famine_shield = 8 tooltip = RAJ_famine_shield_tt  }
-		calculate_famine_shield_and_risk = yes
-
-		
-
-		
+        add_political_power = 70
 	}
 }
 
@@ -22635,20 +22571,11 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            every_controlled_state = {
-                random_select_amount = 2
-                limit = {
-                    is_in_array = {
-                        array = ROOT.owned_states_at_game_start
-                        value = THIS
-                    }
-
-                    has_resistance = yes
-                }
-                add_extra_state_shared_building_slots = 1
+            433 = {
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
-                    level = 1
+                    level = 2
                     instant_build = yes
                 }
             }
