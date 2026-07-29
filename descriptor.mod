@@ -11,7 +11,11 @@ tags={
 	"Translation"
 	"Sound"
 }
+replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
+replace_path="common/decisions"
+replace_path="common/decisions/categories"
+replace_path="common/scripted_triggers"
 replace_path="common/bookmarks"
 replace_path="map"
 replace_path="map/strategicregions"

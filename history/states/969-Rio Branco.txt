@@ -6,7 +6,7 @@ state={
 	resources = {
 	}
 	history={
-		owner = NEG
+		
 		victory_points = {
 			5214 1
 		}

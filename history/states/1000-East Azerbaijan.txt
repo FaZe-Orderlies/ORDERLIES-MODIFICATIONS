@@ -9,7 +9,7 @@ state={
 	
 	state_category = town
 	history={
-		owner = NEG
+		
 		buildings = {
 			infrastructure = 2
 			

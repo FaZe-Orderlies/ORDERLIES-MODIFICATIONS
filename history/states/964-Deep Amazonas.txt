@@ -6,7 +6,7 @@ state={
 	resources = {
 	}
 	history={
-		owner = NEG
+		
 	}
 	provinces={
 		2198 5216 8185 8254

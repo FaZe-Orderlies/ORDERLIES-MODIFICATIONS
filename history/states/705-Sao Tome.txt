@@ -6,7 +6,7 @@ state={
 	resources = {
 	}
 	history={
-		owner = NEG
+		
 		buildings = {
 			infrastructure = 1
 			13015 ={

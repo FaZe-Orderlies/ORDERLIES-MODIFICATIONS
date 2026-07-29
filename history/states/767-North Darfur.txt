@@ -8,9 +8,6 @@ state = {
 	force_link_ownership_to = 551 # Kharthoum
 	
 	history = {
-
-		owner = ENG
-		add_core_of = SUD
 		
 		buildings = {
 			infrastructure = 0

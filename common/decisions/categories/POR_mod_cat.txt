@@ -1,8 +1,0 @@
-POR_enter_spain = {
-	icon = GFX_decision_category_spr_civil_war_offensives
-	priority = 75
-	visible_when_empty = yes
-    allowed = { tag = POR }
-    visible = { tag = POR }
-    available = { tag = POR }
-}
