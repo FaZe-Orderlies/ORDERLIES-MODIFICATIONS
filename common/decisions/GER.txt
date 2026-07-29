@@ -641,9 +641,6 @@ GER_operational_planning_category = {
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_on_continent = europe
-					any_neighbor_state = {
-						is_controlled_by_ROOT_or_ally = yes
-					}
 				}
 			}
 		}
@@ -883,9 +880,6 @@ GER_operational_planning_category = {
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_on_continent = africa
-					any_neighbor_state = {
-						is_controlled_by_ROOT_or_ally = yes
-					}
 				}
 			}
 		}

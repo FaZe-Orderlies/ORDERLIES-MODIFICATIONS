@@ -9553,7 +9553,7 @@ focus_tree = {
 			custom_effect_tooltip = JAP_greater_east_asia_railroad_tt
 			every_state = {
 				limit = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 					infrastructure < 2
 				}
 				add_building_construction = {
@@ -10494,34 +10494,34 @@ focus_tree = {
 		available = {
 			surrender_progress < 0.05
 			282 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			613 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			1021 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			995 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			524 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			629 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			328 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			327 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			289 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			638 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 		}
 
@@ -18156,16 +18156,16 @@ focus_tree = {
 			has_war_support > 0.8
 			has_stability > 0.8
 			282 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			525 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			608 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			671 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 		}
 
@@ -19548,34 +19548,34 @@ focus_tree = {
 			is_subject = no
 			surrender_progress < 0.02
 			282 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			613 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			1021 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			995 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			524 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			328 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			327 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			289 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			523 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			408 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 		}
 
@@ -20395,22 +20395,22 @@ focus_tree = {
 			has_government = communism
 			is_subject = no
 			282 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			524 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			613 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			608 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			1037 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			592 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 		}
 
@@ -21076,34 +21076,34 @@ focus_tree = {
 		available = {
 			surrender_progress < 0.02
 			282 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			613 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			1021 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			995 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			524 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			629 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			328 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			327 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			289 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 			523 = {
-				is_controlled_by_ROOT_or_ally = yes
+				is_controlled_by = JAP
 			}
 		}
 

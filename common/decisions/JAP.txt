@@ -961,365 +961,6 @@ JAP_intervene_in_china = {
 
 foreign_politics = {
 
-	# Offer Surrender Terms to China
-	JAP_sue_for_peace_CHI = {
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		priority = 10
-
-		available = {
-			FROM = { 
-				surrender_progress < 0.2 # if they are losing, lets not allow it
-			}
-			custom_trigger_tooltip = {
-				tooltip = JAP_sue_for_peace_TT
-				# South Korea
-				525 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1029 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				NOT = {
-					any_of = {
-						array = CHI.core_states
-						var:v = {
-							NOT = {
-								state = 524
-							}
-							controller = {
-								OR = {
-									tag = JAP
-									AND = {
-										is_subject_of = JAP
-										OR = {
-											tag = MEN
-											tag = MAN
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				MAN = {
-					OR = {
-						exists = no
-						NOT = {
-							is_subject_of = JAP
-						}
-						has_capitulated = yes
-					}
-				}
-			}
-		}
-
-		target_array = enemies
-
-		target_root_trigger = {
-			NOT = { has_country_flag = JAP_offered_china_white_peace_flag }
-			is_subject = no
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-		}
-		
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-				tag = event_target:WTT_current_china_leader
-				has_war_with = ROOT
-			}
-		}
-
-		visible = {
-			FROM = { 
-				exists = yes 
-				is_subject = no
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			base = 500
-		}
-
-		complete_effect = {
-			set_country_flag = JAP_offered_china_white_peace_flag
-			event_target:WTT_current_china_leader = {
-				country_event = { 
-					id = wtt_japan.126 
-					days = 1 
-				}
-			}
-		}
-	}
-
-	JAP_sue_for_peace_MAN = {
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		priority = 15
-
-		available = {
-			FROM = { 
-				surrender_progress < 0.2 # if they are losing, lets not allow it
-			}
-			custom_trigger_tooltip = {
-				tooltip = JAP_sue_for_peace_TT
-				# South Korea
-				525 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1029 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				NOT = {
-					any_of = {
-						array = CHI.core_states
-						var:v = {
-							NOT = {
-								state = 524
-							}
-							controller = {
-								OR = {
-									tag = JAP
-									AND = {
-										is_subject_of = JAP
-										tag = MEN
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-				tag = MAN
-				has_war_with = ROOT
-			}
-		}
-
-		visible = {
-			FROM = { 
-				exists = yes 
-				is_subject = no
-			}
-			is_subject = no
-			has_war_with = FROM
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-		
-			base = 500
-
-			modifier = {
-				factor = 0
-				casualties_inflicted_by = {
-					opponent = MAN
-					thousands < 10
-				}
-			}
-
-			modifier = {
-				factor = 0
-				has_country_flag = JAP_dont_surrender_instantly_lock 
-			}
-		}
-
-		complete_effect = {
-			MAN = {
-				country_event = { id = wtt_japan.129 days = 1 }
-			}
-		}
-	}
-
-	# Sueing for peace from being nuked, only available for a non-hist Japan 
-	JAP_sue_for_peace_nuke = {
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		priority = 25
-
-		available = {
-			has_global_flag = JAP_nuke_1
-			has_global_flag = JAP_nuke_2
-			has_navy_size = { size < 40 }
-			NOT = {
-				controls_state = 526
-				controls_state = 645
-			}
-		}
-
-		visible = {
-			has_war = yes
-			has_global_flag = JAP_nuke_1
-			JAP = {
-				OR = {
-					has_completed_focus = JAP_the_crysanthemum_throne
-					NOT = {
-						has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					}
-				}
-			}
-		}
-
-		cost = 0
-
-		days_remove = -1
-
-		ai_will_do = {
-			base = 15
-			modifier = {
-				# South Korea
-				525 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1029 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				factor = 10
-			}
-			modifier = {
-				# Sakhalin
-				537 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				factor = 3
-			}
-			modifier = {
-				# Okinawa
-				526 = {
-					is_controlled_by_ROOT_or_ally = no
-				}
-				factor = 3
-			}
-		}
-
-		modifier = {
-			forced_surrender_limit = -1.0
-		}
-
-		remove_effect = {
-
-		}
-
-		fire_only_once = yes
-
-		remove_trigger = {
-			has_war = no
-		}
-		complete_effect = {
-			hidden_effect = {
-				clr_global_flag = JAP_nuke_1
-				clr_global_flag = JAP_nuke_2
-			}
-		}
-	}
-
-	JAP_sue_for_peace_nuke_mission = {
-		available = {
-			has_global_flag = JAP_nuke_1
-			has_global_flag = JAP_nuke_2
-		}
-
-		priority = 24
-
-		visible = {
-			NOT = {
-				OR = {
-					controls_state = 536
-					controls_state = 533
-					controls_state = 534
-					controls_state = 532
-					controls_state = 282
-					controls_state = 530
-					controls_state = 531
-					controls_state = 528
-					controls_state = 529
-				}
-			}
-		}
-
-		modifier = {
-			
-		}
-
-		days_mission_timeout = 720
-		fire_only_once = yes
-
-		activation = {
-			is_special_project_completed = sp:sp_nuclear_bomb
-			has_war_with = JAP
-		}
-
-		complete_effect = {
-			JAP = {
-				custom_effect_tooltip = JAP_unlock_surrender_broadcast_tt
-				unlock_decision_tooltip = JAP_sue_for_peace_nuke
-			}
-		}
-
-	} 
-
 	JAP_request_soviet_support = {
 
 		icon = generic_prepare_civil_war
@@ -1419,7 +1060,7 @@ foreign_politics = {
 				}
 				# Irkutsk
 				566 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1437,7 +1078,7 @@ foreign_politics = {
 				}
 				# Buryatia
 				564 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 			
@@ -1455,7 +1096,7 @@ foreign_politics = {
 				}
 				# Chita
 				563 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1473,7 +1114,7 @@ foreign_politics = {
 				}
 				# Vladivastok
 				408 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1491,7 +1132,7 @@ foreign_politics = {
 				}
 				# North Sakhalin
 				655 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1509,7 +1150,7 @@ foreign_politics = {
 				}
 				# Yakutsk
 				574 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1527,7 +1168,7 @@ foreign_politics = {
 				}
 				# Khakassia
 				569 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1545,7 +1186,7 @@ foreign_politics = {
 				}
 				# Oyrot Region
 				654 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -1563,7 +1204,7 @@ foreign_politics = {
 				}
 				# Khabarovsk
 				409 = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = JAP
 				}
 			}
 
@@ -5931,7 +5572,7 @@ JAP_kodoha_insurgency_decisions = {
 	        		has_war_with = ROOT
 	        	}
 	        	any_neighbor_state = {
-	        		is_controlled_by_ROOT_or_ally = yes
+	        		is_controlled_by = JAP
 	        	}
 	        }
 	    }
@@ -5982,7 +5623,7 @@ JAP_kodoha_insurgency_decisions = {
 					}
 					NOT = {
 						any_neighbor_state = {
-							is_controlled_by_ROOT_or_ally = yes
+							is_controlled_by = JAP
 						}
 					}
 				}
@@ -6016,9 +5657,6 @@ JAP_kodoha_insurgency_decisions = {
 		}
 
 	}
-
-
-}
 
 
 
@@ -9258,99 +8896,6 @@ JAP_the_propaganda_department_decisions = {
 				clr_country_flag = JAP_currently_investing_in_states_natural_resources_flag
 			}
 		}
-	}
-
-	# Infiltrate the lands of thr former Setsen Khanate
-	JAP_infiltrate_setsen_khanate_lands_decision  = {
-
-		priority = 30
-
-		icon = GFX_decision_infiltrate_state
-
-		ai_will_do = {
-			base = 50
-		}
-	
-		allowed = {  
-			original_tag = JAP 
-		}
-
-		visible = { 
-			has_completed_focus = JAP_a_mongol_volunteer_army
-			OR = {
-				has_government = neutrality
-				has_government = fascism
-			}
-			MON = {
-				exists = yes
-				is_subject = no
-				NOT = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-		}
-	
-		available = {
-			761 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-		}
-
-		#days_remove = 70
-
-		#days_re_enable = 180
-
-		cost = 50
-
-		cancel_trigger = {
-		}
-
-        cancel_effect = {
-        }
-
-		modifier = {
-		}
-
-		complete_effect = { 
-
-			MON = {
-				country_event = {
-					id = SEA_japan_foreign_policy.53
-					hours = 12
-					random_hours = 24
-				}	
-			}	
-			effect_tooltip = {
-				MON = {
-					add_stability = -0.05
-					
-					add_popularity = {
-						ideology = fascism
-						popularity = 0.05
-					}	
-
-					add_popularity = {
-						ideology = neutrality
-						popularity = 0.05
-					}	
-
-					add_manpower = -300
-				}
-			}
-
-			hidden_effect = {
-				set_country_flag = JAP_infiltrated_the_setsen_khanate_flag
-			}
-
-		}
-
-		fire_only_once = yes
-
-		remove_effect = {
-
-		}
-
 	}
 
 	# Arms Anti-Communist Dissidents in Mongolia
@@ -13357,7 +12902,7 @@ JAP_the_peoples_state_decisions = {
 	        		has_war_with = ROOT
 	        	}
 	        	any_neighbor_state = {
-	        		is_controlled_by_ROOT_or_ally = yes
+	        		is_controlled_by = JAP
 	        	}
 	        }
 	    }
@@ -13408,7 +12953,7 @@ JAP_the_peoples_state_decisions = {
 					}
 					NOT = {
 						any_neighbor_state = {
-							is_controlled_by_ROOT_or_ally = yes
+							is_controlled_by = JAP
 						}
 					}
 				}

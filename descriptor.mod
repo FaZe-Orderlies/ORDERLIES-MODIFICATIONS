@@ -13,8 +13,12 @@ tags={
 }
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
+replace_path="common/ai_faction_theaters"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
+replace_path="common/characters"
+replace_path="common/national_focus"
+replace_path="common/ideas"
 replace_path="common/scripted_triggers"
 replace_path="common/bookmarks"
 replace_path="map"
