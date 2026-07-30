@@ -1,8 +1,5 @@
 ﻿capital = 2 # Rome
 
-
-
-
 ETH_set_up_lon_arms_resolution_effect = yes 
 
 if = {

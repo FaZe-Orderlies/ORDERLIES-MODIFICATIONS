@@ -13416,38 +13416,19 @@ focus_tree = {
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-			date>1939.1.1
-		}
-
-		bypass = {
-			all_state = {
-				OR = {
-					is_core_of = EST
-					is_core_of = LAT
-					is_core_of = LIT
-				}
-				NOT = { state = 188 }
-				is_controlled_by = ROOT
-			}
+			date> 1939.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			annex_country = {
-				target = EST
+			hidden_effect = { 
+				annex_country = {
+					target = EST
+				}
+				
+				add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			}
-			annex_country = {
-				target = LAT
-			}
-			annex_country = {
-				target = LIT
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-
-			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}
 

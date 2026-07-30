@@ -1,70 +1,16 @@
 ﻿capital = 4 # Vienna
 
-IF = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-	}
-	set_oob = "AUS_ww_1936"
-	ELSE_IF = {
-		limit = {
-			NOT = {
-				has_dlc = "Gotterdammerung"
-			}
-		}
-		set_oob = "AUS_1936"
-	}
+add_ideas = {
+	armed_neutrality_for_annex
+	free_trade
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "AUS_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			engines_1 = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			interwar_antitank = 1
-		}
-	else = {
-		set_air_oob = "AUS_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
+recruit_character = AUS_kurt_schuschnigg
 
-		}
-	}
-}
+set_stability = 1
+set_war_support = 1
 
-
-
-
-IF = {
-	limit = { 
-		has_dlc = "Gotterdammerung"
-	}
-
-	
-
-	#National spirits are set here
-
-	add_ideas = {
-		armed_neutrality_for_annex
-		bot_no_play_economy
-	}
-
-
-	
-
-	#########################
-	##DLC-LOCKED CHARACTERS##
-	#########################
-
-	#Political
-	recruit_character = AUS_kurt_schuschnigg
-
-}
-
-
-set_research_slots = 3
+set_research_slots = 0
 
 set_technology = {
 	infantry_weapons = 1
@@ -78,27 +24,6 @@ set_technology = {
 	gw_artillery = 1
 }
 
-IF = {
-	limit = { has_dlc = "No Step Back" }
-	set_technology = {
-		gwtank_chassis = 1
-	}
-
-	ELSE = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
-
-IF = {
-	limit = { has_dlc = "La Resistance" }
-		set_technology = {
-			armored_car1 = 1
-		}
-}
-
-
 
 set_politics = {
 	ruling_party = neutrality
@@ -108,13 +33,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	neutrality = 100
 }
-
-set_stability = 0.50
 
 
 
