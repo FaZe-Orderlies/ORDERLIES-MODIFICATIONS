@@ -190,7 +190,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -215,10 +215,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -234,10 +234,10 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -251,10 +251,10 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -333,7 +333,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = limited_rearmament_focus
 
-		cost = 10
+		cost = 2
 
 		available_if_capitulated = no
 
@@ -695,7 +695,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = limited_rearmament_focus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -744,7 +744,8 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 2
-				category = industry
+		 technology = assembly_line_production
+		technology = dispersed_industry4
 			}
 		}
 	}
@@ -821,7 +822,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -833,29 +834,9 @@ focus_tree = {
 	focus = {
 		id = general_rearmament_focus
 		prerequisite = { focus = limited_rearmament_focus }
-		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.1 
-					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					threat > 0.1 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
-		}
+		 available = {
+            date > 1937.1.1  
+        }
 
 		continue_if_invalid = yes
 
@@ -886,7 +867,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost =10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -928,40 +909,7 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						num_of_factories > 30
-					}
-					GER = {
-						has_completed_focus = GER_remilitarize_the_rhineland
-					}
-					threat > 0.2
-					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						num_of_factories > 30
-					}
-					GER = {
-						has_completed_focus = GER_remilitarize_the_rhineland
-					}
-					threat > 0.2
-					NOT = { has_government = democratic }
-				}
-			}
-		} #at war with major or ger in rhineland or high threat
+            date > 1939.1.1} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
@@ -1383,8 +1331,8 @@ focus_tree = {
 					name = fighter_command_focus
 					bonus = 1.0
 					uses = 1
-					category = light_fighter
-					category = cat_heavy_fighter
+				technology = improved_small_airframe
+					
 				}
 				add_doctrine_cost_reduction = {
 					name = fighter_command_focus #land_doc_bonus
@@ -1481,8 +1429,7 @@ focus_tree = {
 					name = coastal_command_focus
 					bonus = 1.0
 					uses = 1
-					category = naval_bomber
-					category = cas_bomber
+					technology = engines_3
 				}
 				add_doctrine_cost_reduction = {
 					name = coastal_command_focus #land_doc_bonus
@@ -2144,12 +2091,13 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost =  2
+		
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 20
 			navy_experience = 25
 			air_experience = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -9513,7 +9461,7 @@ focus_tree = {
 		
 		relative_position_id = ENG_steady_as_she_goes
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

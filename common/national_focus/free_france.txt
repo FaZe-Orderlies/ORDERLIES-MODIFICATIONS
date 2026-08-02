@@ -250,22 +250,6 @@
 				add_state_core = 272
 				transfer_state = 557
 				add_state_core = 557
-				transfer_state = 538
-				add_state_core = 538
-				transfer_state = 295
-				add_state_core = 295
-				transfer_state = 888
-				add_state_core = 888
-				transfer_state = 718
-				add_state_core = 718
-				transfer_state = 890
-				add_state_core = 890
-				transfer_state = 889
-				add_state_core = 889
-				transfer_state = 769
-				add_state_core = 769
-				transfer_state = 768
-				add_state_core = 768
 				transfer_state = 777
 				add_state_core = 777
 			}

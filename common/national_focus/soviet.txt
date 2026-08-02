@@ -13422,6 +13422,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			custom_effect_tooltip = sov_annex_baltia
 			hidden_effect = { 
 				annex_country = {
 					target = EST

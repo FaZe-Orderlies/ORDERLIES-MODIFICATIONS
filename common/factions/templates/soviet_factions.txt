@@ -1,7 +1,7 @@
 # Comintern
 faction_template_comintern = {
 	name = Comintern
-	manifest = faction_manifest_security_through_expansion
+	manifest = faction_manifest_strategic_resource_control
 	icon = GFX_faction_logo_comintern
 	goals = {
 
@@ -25,7 +25,7 @@ faction_template_comintern = {
 # International
 faction_template_fourth_international = {
 	name = FOURTH_INTERNATIONAL_FACTION
-	manifest = faction_manifest_spread_of_communism
+	manifest = faction_manifest_strategic_resource_control
 	icon = GFX_faction_logo_4th_international
 
 	goals = {

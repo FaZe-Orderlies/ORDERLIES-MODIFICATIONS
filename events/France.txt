@@ -504,6 +504,7 @@ country_event = {
 							state = 554
 							state = 677
 							state = 680
+							state = 799
 						}
 					}
 					event_target:vichy_france = { transfer_state = PREV }

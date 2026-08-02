@@ -1,7 +1,7 @@
 faction_template_axis = {
 	name = Axis
 	icon = GFX_faction_logo_axis
-	manifest = faction_manifest_conquest_of_territory
+	manifest = faction_manifest_strategic_resource_control
 
 	goals = {
 
@@ -25,7 +25,7 @@ faction_template_axis = {
 faction_template_GER_mitteleuropa_alliance = {
 	name = GER_mitteleuropa_alliance
 	icon = GFX_faction_logo_eu 
-	manifest = faction_manifest_european_dominance
+	manifest = faction_manifest_strategic_resource_control
 
 	goals = {
 	

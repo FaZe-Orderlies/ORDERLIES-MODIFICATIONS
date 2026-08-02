@@ -6099,14 +6099,14 @@ focus_tree = {
 		prerequisite = { focus = USA_war_plans_division }
 		mutually_exclusive = { }
 		relative_position_id = USA_war_plans_division
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 	
 		available = {
-			date>1941.9.1
+			has_war_with = GER
 		}
 			
 		bypass = {

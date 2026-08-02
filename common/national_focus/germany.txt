@@ -1176,7 +1176,7 @@ focus_tree = {
 		cost = 5
 	    available = {
 			is_subject = no
-			144 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
+		
 			918 = { is_fully_controlled_by = SWE }
 
 		}
@@ -1196,13 +1196,10 @@ focus_tree = {
 
 		completion_reward = {
 			SWE = {
+			
 				give_resource_rights = {
 					receiver = ger 
 					state = 666 #Västerbotten 
-				}
-				give_resource_rights = {
-					receiver = ger 
-					state = 918 #Västerbotten 
 				}					
 			}
 		}
@@ -2000,7 +1997,8 @@ focus_tree = {
 				name = GER_coal_liquefaction
 				bonus = 1
 				uses = 1
-				technology = advanced_oil_processing
+				technology = advanced_rubber_processing
+
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2124,8 +2122,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_subsidize_hoesch_benzin
 				bonus = 1
-				uses = 1
-				category = synth_resources
+				uses = 2
+				technology = advanced_oil_processing
+				technology = fuel_refining4
+				
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			53 = {
@@ -2201,7 +2201,7 @@ focus_tree = {
 				name = GER_establish_buna_werke
 				bonus = 1
 				uses = 1
-				technology = modern_oil_processing
+				technology = modern_rubber_processing
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4871,7 +4871,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
-				bonus = 1
+				bonus = 0.7
 				uses = 1
 				technology = improved_small_airframe
 			}
@@ -7415,9 +7415,9 @@ focus_tree = {
 					933 = { #Shetlands
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					# 134 = { #Ireland
-					# 	state_is_fully_controlled_by_ROOT_or_subject = yes
-					# }
+					134 = { #Ireland
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
 					119 = { #North Ireland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
@@ -7463,6 +7463,7 @@ focus_tree = {
 						state = 100
 						state = 337
 						state = 933
+						state = 134
 						state = 119
 						state = 178
 						state = 698
@@ -7492,6 +7493,7 @@ focus_tree = {
 						state = 100
 						state = 337
 						state = 933
+						state = 134
 						state = 119
 						state = 178
 						state = 698
@@ -8818,7 +8820,8 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		available = {
-			date > 1937.7.1
+			date>1937.7.1
+			
 		}
 
 		ai_will_do = {
@@ -8831,26 +8834,135 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_STABILITY }
 
-		completion_reward = {
+		select_effect = {
 			AUS = {
 				country_event = {
-					id = germany.28
-					days = 1
+					id = AUS_political_events.77
+					hours = 12
 				}
-			}	
+				set_country_flag = AUS_anschluss_process_has_begun_flag
+			}
+		}
 
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				add_political_power = 75
-				add_war_support = 0.1
-				add_stability = 0.05
-				army_experience = 10
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				GER_add_or_modify_military_intelligence_service = yes
+				add_to_variable = { 
+					GER_military_intelligence_service_operative_slot = 1
+					tooltip = operative_slot_tt
+				}
+				GER_create_operative_otto_skorzeny = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
-				custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848
+							owns_state = 975
+							owns_state = 976
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Gotterdammerung" }
+						ITA = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+							has_guaranteed = AUS
+						}
+					}
+			
+					
+				}
+				else = { #ITA has not Guaranteed Austrian Independence
+					AUS = {
+						country_event = {
+							id = germany.28
+							days = 1
+						}
+					}		
+					effect_tooltip = {
+						custom_effect_tooltip = if_they_accept_tt
+						add_political_power = 75
+						add_war_support = 0.1
+						add_stability = 0.05
+						army_experience = 10
 
-				annex_country = { target = AUS transfer_troops = yes }
-										
-				GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
+						custom_effect_tooltip = generic_skip_one_line_tt
+
+						annex_country = { target = AUS transfer_troops = yes }
+												
+						GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
+
+						custom_effect_tooltip = if_they_refuse_tt
+						create_wargoal = {
+							type = take_state_focus
+							target = AUS
+							generator = { 4 152 153 848 975 976 }
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_other_country = {
+						original_tag = AUS
+						has_civil_war = yes
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848
+							owns_state = 975
+							owns_state = 976
+						}
+						
+					}
+					ITA = {
+						NOT = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+						}
+					}
+				}
+				custom_effect_tooltip = germany.126.warning
+				random_other_country = {
+					limit = {
+						original_tag = AUS
+						OR = {
+							has_government = fascism
+							AND = {
+								has_government = neutrality
+								NOT = {
+									any_other_country = {
+										original_tag = AUS
+										has_government = fascism
+									}
+								}
+							}
+							NOT = {
+								any_other_country = {
+									original_tag = AUS
+									OR = {
+										has_government = fascism
+										has_government = neutrality
+									}
+								}
+							}							
+						}
+						
+					}
+					country_event = { id = germany.126 days = 1 }
+				}
 			}
 
 			if = {
@@ -9674,12 +9786,26 @@ focus_tree = {
 						target = CZE 
 					}
 				}
+				
+				
 			
 				HUN = { 
 					transfer_state = 70 
+					70 = {
+						
+					}
 					transfer_state = 71 
+					71 = {
+						
+					}
 					transfer_state = 73
+					73 = {
+						
+					} 
 					transfer_state = 664 
+					664 = {
+						
+					}
 				}
 				
 				POL = { transfer_state = 72 }
@@ -9786,10 +9912,6 @@ focus_tree = {
 					add_mio_size = 2
 					add_mio_funds_gain_factor = 0.25
 				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				add_timed_idea = { idea = CZE_integrate_czech_manufacturers_GER_idea_aat days = 180 }
 			}
 			else = {
 				custom_effect_tooltip = GER_integrate_czech_manufacturers_no_aat_tt
@@ -9804,8 +9926,6 @@ focus_tree = {
 				# show_ideas_tooltip = CZE_zlin_aircraft
 				# custom_effect_tooltip = available_industrial_concern
 				# show_ideas_tooltip = CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer
-
-				add_timed_idea = { idea = CZE_integrate_czech_manufacturers_GER_idea_no_aat days = 180 }
 			}
 		}
 	}
@@ -14442,17 +14562,6 @@ focus_tree = {
 				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
-			}
-
-			hidden_effect = {
-				SOV = {
-					transfer_state = 80
-					add_state_core = 80
-					transfer_state = 78
-					add_state_core = 78
-					transfer_state = 766
-					add_state_core = 766
-				}
 			}
 		}
 	}

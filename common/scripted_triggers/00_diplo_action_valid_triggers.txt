@@ -12,3 +12,20 @@ is_diplomatic_action_valid_stage_coup = {
 is_diplomatic_action_valid_boost_party_popularity = {
 	NOT = { has_dlc = "La Resistance" } # we have operation for it
 }
+
+is_diplomatic_action_valid_military_access = { always = no }
+is_diplomatic_action_valid_offer_military_access = { always = no }
+
+is_diplomatic_action_valid_offer_docking_rights = { always = no }
+is_diplomatic_action_valid_docking_rights = { always = no }
+
+is_diplomatic_action_valid_peace_proposal = { always = no }
+is_diplomatic_action_valid_embargo = { always = no }
+
+is_diplomatic_action_valid_REQUEST_INTERNATIONAL_MARKET_ACCESS = { always = no } 
+is_diplomatic_action_valid_REQUEST_INTERNATIONAL_MARKET_ACCESS_RIGHTS = { always = no }
+
+is_diplomatic_action_valid_naval_blockade = { always = no }
+
+is_diplomatic_action_valid_AIR_BASE_ACCESS = { always = no }
+is_diplomatic_action_valid_OFFER_AIR_BASE_ACCESS = { always = no }

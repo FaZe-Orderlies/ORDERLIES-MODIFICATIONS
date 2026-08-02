@@ -7,7 +7,7 @@ state = {
 	state_category = metropolis
 
 	resources = {
-		
+		steel = 30
 		coal = 30 # was: 16
 	}
 

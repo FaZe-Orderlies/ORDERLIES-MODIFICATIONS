@@ -1,0 +1,156 @@
+ideas = {
+	country = {
+			ITA_Operazione_E_spirit = {
+			picture = ITA_impero_italiano
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = { }
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+
+		FRA_national_resistance_council = {
+			picture = idea_generic_resistance
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.10
+				army_org_factor = 0.05
+				army_experience_gain = 0.05
+			}
+    	}
+
+		FRA_french_internal_forces = {
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+				army_infantry_attack_factor = 0.10
+				army_infantry_defence_factor = 0.10
+				special_forces_cap = 0.05
+				training_time_army_factor = -0.15
+			}
+		}
+
+		FRA_national_uprising_mod = {
+			picture = FRA_scw_intervention_nationalists_focus
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				division_recovery_rate = 0.10
+				reinforce_rate = 0.10
+				max_planning = 0.10
+			}
+		}
+
+		FRA_industrial_expansion_mod = {
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+				max_factory_efficiency_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.08
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		FRA_allied_convoy_program = {
+
+			picture = idea_generic_convoys
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				convoy_1 = {
+					build_cost_ic = -0.10
+				}
+			}
+		}
+
+			
+		egypt_conqueror_idea = {
+			picture = ITA_new_roman_empire_ns
+					
+				
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1  
+				industrial_capacity_factory = 0.05              
+				production_factory_efficiency_gain_factor = 0.05 
+				fuel_gain_factor = 0.10                         
+				fuel_gain_factor_from_states = 0.25
+			}
+			
+		}
+
+		FRA_gain_eff = {
+			picture = ARG_civilian_economy_boost
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 1000.0
+			}
+		}
+		
+	}
+	
+}

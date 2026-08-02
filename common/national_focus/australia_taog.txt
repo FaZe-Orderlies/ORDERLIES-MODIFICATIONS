@@ -562,7 +562,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
+			
 		}
 
 		bypass = {
@@ -8027,7 +8027,7 @@ focus = {
 		x = 31
 		y = 1
 	
-		cost = 10
+		cost = 5
 
 		allow_branch = {
 			if = {
