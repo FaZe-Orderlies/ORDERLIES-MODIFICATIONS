@@ -3051,10 +3051,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			show_unit_leaders_tooltip = GER_friedrich_schulz
-			show_unit_leaders_tooltip = GER_ernsteberhard_hell
+			# show_unit_leaders_tooltip = GER_friedrich_schulz
+			# show_unit_leaders_tooltip = GER_ernsteberhard_hell
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			# custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER_modify_army_modifier = yes
 			add_to_variable = { 
@@ -7415,9 +7415,9 @@ focus_tree = {
 					933 = { #Shetlands
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					134 = { #Ireland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
+					# 134 = { #Ireland
+					# 	state_is_fully_controlled_by_ROOT_or_subject = yes
+					# }
 					119 = { #North Ireland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
@@ -9405,9 +9405,9 @@ focus_tree = {
 				modifier = GER_alfred_rosenberg_modifier
 			}	
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			# custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = GER_reichskommissariats_tt
+			# custom_effect_tooltip = GER_reichskommissariats_tt
 		}
 	}
 
@@ -9420,29 +9420,29 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_uplift_the_rosenberg_office
 		cost = 5
-		available = {
-			has_government = fascism
-			OR = {
-				any_controlled_state = {
-					NOT = {
-						is_core_of = ROOT
-					}
-					is_on_continent = europe
-				}
-				any_subject_country = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-			}
-		}
+		# available = {
+		# 	has_government = fascism
+		# 	OR = {
+		# 		any_controlled_state = {
+		# 			NOT = {
+		# 				is_core_of = ROOT
+		# 			}
+		# 			is_on_continent = europe
+		# 		}
+		# 		any_subject_country = {
+		# 			capital_scope = {
+		# 				is_on_continent = europe
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_SS_recruitment_tt
+			# custom_effect_tooltip = GER_SS_recruitment_tt
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			# custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
 				limit = {

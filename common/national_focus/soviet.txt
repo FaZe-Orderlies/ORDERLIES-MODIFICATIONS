@@ -7575,7 +7575,7 @@ focus_tree = {
 			add_to_variable = { SOV_the_politburo_max_surrender_limit_offset = 0.05 }
 			custom_effect_tooltip = SOV_the_workers_dictatorship_ns_tt
 
-			add_political_power = 50
+			# add_political_power = 50
 
 			SOV_paranoia_low_decrease_effect = yes
 		}

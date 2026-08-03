@@ -23,8 +23,8 @@ ideas = {
 				political_power_gain = -100
 				command_power_gain = -100
                 research_speed_factor = -1000
-				war_support_factor = -100
-				stability_factor = -100
+				# war_support_factor = -100
+				# stability_factor = -100
 				ai_get_ally_desire_factor  = -500
 				ai_join_ally_desire_factor = -500
 			}
@@ -51,8 +51,8 @@ ideas = {
 				political_power_gain = -100
 				command_power_gain = -100
                 research_speed_factor = -1000
-				war_support_factor = -100
-				stability_factor = -100
+				# war_support_factor = -100
+				# stability_factor = -100
 				
 			}
 		}

@@ -3066,7 +3066,7 @@
 				category = land_doctrine
 			}
 
-			add_ideas = { SAF_idea }
+			# add_ideas = { SAF_idea }
 		}
 	}
 
