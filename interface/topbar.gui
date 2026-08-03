@@ -12,8 +12,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-		
-
 		buttonType = {
 			name = "reopen_ingame_lobby"
 			quadTextureSprite ="GFX_reopen_lobby"
@@ -814,7 +812,7 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					clicksound = click_close
 					oversound = ui_menu_over
-					shortcut = "shift+w"
+					hide = yes
 				}
 
 				iconType = {
@@ -858,11 +856,12 @@ guiTypes = {
 				# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC required by "intel_agency_button".
 				containerWindowType = {
 					name = "after_intel_agency_button"
-					position = { x=55 y=0 }
+					position = { x=0 y=0 }
 
 					buttonType = {
 						name = "technology_button"
 						quadTextureSprite ="GFX_topbar_technology"
+	#					position = { x= -104 y = 0 }
 						position = { x= -49 y = 0 }
 						Orientation = "UPPER_LEFT"
 						shortcut = "w"
@@ -891,11 +890,12 @@ guiTypes = {
 					}
 
 					buttonType = {
+						hide = yes
 						name = "diplomacy_button"
 						quadTextureSprite ="GFX_topbar_diplomacy"
 						position = { x= 6 y = 0 }
 						Orientation = "UPPER_LEFT"
-						shortcut = "e"
+						
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
@@ -924,32 +924,32 @@ guiTypes = {
 					}
 
 					containerWindowType = {
-						name = "delivering_contracts"
-						position = { x=9 y=20 }
+					name = "delivering_contracts"
+					position = { x=9 y=20 }
 
-						iconType = {
-							name = "ongoing_contract_amount_bg"
-							spriteType = "GFX_topbar_alert_bg"
-							position = { x = 2 y = 0}
-							alwaystransparent = yes
-							frame = 1
-						}
-
-						instantTextBoxType = {
-							name ="ongoing_contract_amount"
-							position = { x= 0 y = 0 }
-							font = "hoi_16mbs"
-							text = "999"
-							format = center
-							maxWidth = 20
-							maxHeight = 24
-							fixedsize = yes
-						}
+					iconType = {
+						name = "ongoing_contract_amount_bg"
+						spriteType = "GFX_topbar_alert_bg"
+						position = { x = 2 y = 0}
+						alwaystransparent = yes
+						frame = 1
 					}
+
+					instantTextBoxType = {
+						name ="ongoing_contract_amount"
+						position = { x= 0 y = 0 }
+						font = "hoi_16mbs"
+						text = "999"
+						format = center
+						maxWidth = 20
+						maxHeight = 24
+						fixedsize = yes
+					}
+				}
 
 					buttonType = {
 						name = "trade_button"
-						position = { x= 61 y = 0 }
+						position = { x= 6 y = 0 }
 						quadTextureSprite ="GFX_topbar_trade_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "r"
@@ -959,7 +959,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "construction_button"
-						position = { x = 116 y = 0 }
+						position = { x = 62 y = 0 }
 						quadTextureSprite ="GFX_construction_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "t"
@@ -976,7 +976,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "production_button"
-						position = { x = 171 y = 0 }
+						position = { x = 170 y = 0 }
 						quadTextureSprite ="GFX_topbar_production"
 						Orientation = "UPPER_LEFT"
 						shortcut = "y"
