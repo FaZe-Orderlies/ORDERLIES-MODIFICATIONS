@@ -11681,6 +11681,7 @@ focus_tree = {
 
 		completion_reward = {
 			
+			
 			declare_war_on = { target = DEN    type = take_state_focus } 
 			declare_war_on = { target = NOR    type = take_state_focus }
 

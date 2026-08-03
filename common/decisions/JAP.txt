@@ -6047,7 +6047,6 @@ JAP_spiritual_mobilization_decisions = {
 		remove_effect = {
 
 		}
-
 	}
 
 	# Raise Military Morale
@@ -6101,7 +6100,6 @@ JAP_spiritual_mobilization_decisions = {
 			JAP_add_or_modify_imperial_army = yes
 
 			add_to_variable = { JAP_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }	
-
 		}
 
 		fire_only_once = yes
@@ -6109,7 +6107,6 @@ JAP_spiritual_mobilization_decisions = {
 		remove_effect = {
 
 		}
-
 	}
 
 	# Women in MIlitary Production
@@ -6168,20 +6165,8 @@ JAP_spiritual_mobilization_decisions = {
 		remove_effect = {
 
 		}
-
 	}
-
-
 }
-
-
-
-
-
-
-
-
-
 
 #### ##     ## ########  ######## ########  ####    ###    ##          #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ######## 
  ##  ###   ### ##     ## ##       ##     ##  ##    ## ##   ##           ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##       
@@ -6260,7 +6245,6 @@ JAP_imperial_influence_decision_cat = {
 		remove_effect = {
 
 		}
-
 	}
 
 	### MISSIONS ###
@@ -6302,9 +6286,7 @@ JAP_imperial_influence_decision_cat = {
 			country_event = {
 				id = SEA_japan_popup_events.3
 			}
-
 		}
-
 	}
 
 

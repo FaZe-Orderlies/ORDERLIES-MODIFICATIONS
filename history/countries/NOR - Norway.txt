@@ -5,7 +5,7 @@ recruit_character = NOR_johan_nygaardsvold
 set_research_slots = 0
 
 add_ideas = {
-	armed_neutrality
+	armed_neutrality_for_annex
 	bot_no_play_economy
 	KAP_NOR
 }
