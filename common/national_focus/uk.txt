@@ -787,32 +787,16 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			custom_effect_tooltip = ENG_vickers_experimental_facility_focus_tt
-			hidden_effect = {
-				IF = {
-					limit = { 
-						128 = {
-							is_fully_controlled_by = ROOT
-							air_facility < 1
-							land_facility < 1
-							naval_facility < 1
-							nuclear_facility < 1
-						}
-					}
 
-					128 = {
-						add_building_construction = {
-							type = air_facility
-							level = 1
-							instant_build = yes
-							province = 6301 # South London
-						}
-					}
+			130 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 6973 # North of Rome
 				}
 			}
-
-		}
+		}	
 	}
 
 	focus = {

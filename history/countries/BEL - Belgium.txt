@@ -40,7 +40,7 @@ set_popularities = {
 set_convoys = 80
 
 add_ideas = {
-	armed_neutrality
+	armed_neutrality_for_annex
 	bot_no_play_economy
 }
 

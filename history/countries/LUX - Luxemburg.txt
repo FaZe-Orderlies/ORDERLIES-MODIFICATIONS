@@ -29,3 +29,9 @@ set_popularities = {
 	democratic = 100
 }
 
+add_ideas = {
+	armed_neutrality_for_annex
+	bot_no_play_economy
+}
+
+
