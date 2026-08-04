@@ -320,15 +320,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "By Blood Alone" }
-					OR = {
-						NOT = { has_government = communism }
-						has_completed_focus = ITA_common_ground
-					}
-				}
-			}
 			traits = {
 				mobile_warfare_expert
 			}
@@ -1139,9 +1130,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
@@ -1414,30 +1402,9 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_completed_focus = ITA_foreign_affairs
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
-				}
-				ITA_government_is_somewhat_fascist = yes
-			}
 			cost = 75
 			traits = {
 				hierarch_minister_of_foreign_affairs
-			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
 			}
 			ai_will_do = {
 				base = 0.3
@@ -1471,35 +1438,11 @@ characters = {
 			}
 			available = {
 				has_completed_focus = ITA_believe_obey_fight
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_justice
-				}
-				ITA_government_is_somewhat_fascist = yes
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
 			}
 			
 			cost = 75
 			traits = {
 				hierarch_minister_of_justice 
-			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
 			}
 			ai_will_do = {
 				base = 0.3
@@ -1538,20 +1481,6 @@ characters = {
 			traits = {
 				hierarch_minister_of_education # Hierarch / Minister of Education
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
 			ai_will_do = {
 				base = 0.300
 				modifier = {
@@ -1589,20 +1518,6 @@ characters = {
 			cost = 75
 			traits = {
 				hierarch_minister_of_corporations # Leader of Blackshirts and Military Police
-			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
 			}
 			ai_will_do = {
 				base = 0.300
@@ -1694,9 +1609,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
 			traits = {
 				prince_of_terror
 			}
@@ -1761,9 +1673,6 @@ characters = {
 			idea_token = ITA_paolo_thaon_di_revel
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
 			}
 			traits = {
 				quartermaster_general 
@@ -1833,18 +1742,6 @@ characters = {
 			idea_token = ITA_alberto_beneduce
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-					if = {
-						limit = {
-							has_dlc = "By Blood Alone"
-						}
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
 			}
 			traits = {
 				captain_of_industry
@@ -1921,9 +1818,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
 			traits = {
 				silent_workhorse
 			}
@@ -1956,21 +1850,6 @@ characters = {
 			idea_token = ITA_curzio_malaparte
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					OR = {
-						has_government = fascism
-						has_completed_focus = ITA_utilize_the_blackshirts
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
-				else = {
-					has_government = fascism
-				}
 			}
 			traits = {
 				editor
@@ -2009,8 +1888,6 @@ characters = {
 			}
 			traits = {
 				ideological_crusader 
-			}
-			on_add = {
 			}
 			ai_will_do = {
 				base = 0.500
@@ -2322,8 +2199,6 @@ characters = {
 			traits = {
 				financial_expert 
 			}
-			on_add = {
-			}
 			ai_will_do = {
 				base = 3.000
 			}
@@ -2373,28 +2248,6 @@ characters = {
 				small = GFX_portrait_ITA_alberto_de_stefani_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_alberto_de_stefani
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_power_to_the_king
-					has_completed_focus = ITA_cooperate_with_moderates
-				}
-			}
-			traits = {
-				economist
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
 	}
 
 	### DEMOCRATIC ###
@@ -2404,46 +2257,6 @@ characters = {
 			army = {
 				small = GFX_idea_ivanoe_bonomi
 				large = GFX_portrait_ITA_ivanoe_bonomi
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ivanoe_bonomi
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				ITA_is_going_antifascist_in_bba = yes
-				NOT = { 
-					has_country_leader = {
-						character = ITA_ivanoe_bonomi
-						ruling_only = yes
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
-			}
-			ai_will_do = {
-				base = 0.000
-				modifier = {
-					factor = 0
-					ITA_is_socialist_ai = no
-				}
 			}
 		}
 
@@ -2469,42 +2282,6 @@ characters = {
 			traits = { master_of_politics }
 			expire = "1965.1.1.1"
 			id = -1
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_alcide_de_gasperi
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_revoke_the_acerbo_law
-					has_completed_focus = ITA_disband_the_blackshirts
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-				NOT = { 
-					has_country_leader = {
-						character = ITA_alcide_de_gasperi
-						ruling_only = yes
-					}
-				}
-			}
-			traits = {
-				voice_of_restraint
-			}
-
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 0.1
-					ITA_is_socialist_ai = yes
-				}
-			}
 		}
 	}
 
@@ -2553,36 +2330,6 @@ characters = {
 				small = GFX_portrait_ITA_guido_de_rugiero_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_guido_de_ruggiero
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_cooperate_with_moderates
-					has_completed_focus = ITA_italian_socialism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = communism
-					}
-				}
-			}
-			traits = {
-				liberal_professor # Liberal Philosophy professor and Minister of Education
-			}
-
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0
-					ITA_is_communist_ai = yes
-				}
-			}
-		}
 	}
 
 	ITA_alberto_tarchiani = {
@@ -2592,25 +2339,6 @@ characters = {
 				small = GFX_portrait_ITA_alberto_tarchiani_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_alberto_tarchiani
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				has_completed_focus = ITA_bring_back_exiled_intellectuals
-			}
-			traits = {
-				captain_of_industry # Ministry of Public Works and later Ambassador to USA
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
 	}
 
 	ITA_giuseppe_borea = {
@@ -2618,28 +2346,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_giuseppe_borea_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_giuseppe_borea
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-			}
-			traits = {
-				anti_fascist_chaplain
-			}
-
-			ai_will_do = {
-				base = 0.300
 			}
 		}		
 	}	
@@ -2675,10 +2381,6 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
 					has_government = communism
 					has_government = democratic
 				}
@@ -2704,10 +2406,6 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -2759,10 +2457,6 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -2816,10 +2510,6 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
 					has_government = communism
 					has_government = democratic
 				}
@@ -2834,36 +2524,6 @@ characters = {
 				small = GFX_idea_amadeo_bordiga
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = amadeo_bordiga
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_is_going_antifascist_in_bba = yes
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			do_effect = {
-				NOT = {
-					has_government = communism 
-				}
-			}
-			ai_will_do = {
-				base = 0.000
-			}
-		}
 	}
 
 	ITA_luigi_longo = {
@@ -2875,37 +2535,6 @@ characters = {
 			}
 			civilian = {
 				small = GFX_portrait_ITA_luigi_longo_political_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_luigi_longo
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = ITA_the_popular_front
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_common_ground
-					}
-				}
-			}
-
-			traits = {
-				gallo 
-			}
-
-			ai_will_do = {
-				base = 0.800
-				modifier = {
-					factor = 0.1
-					ITA_is_socialist_ai = yes
-				}
 			}
 		}
 
@@ -2938,53 +2567,6 @@ characters = {
 			expire = "1965.1.1.1"
 			id = -1
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_palmiro_togliatti
-			allowed = {
-				OR = {
-					original_tag = ITA
-					original_tag = SWE
-				}
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					AND = {
-						OR = {
-							has_completed_focus = ITA_unite_the_opposition
-							has_completed_focus = ITA_defy_the_duce
-						}
-						NOT = { has_completed_focus = ITA_culto_del_duce }
-						NOT = { has_completed_focus = ITA_convene_the_grand_council }
-						NOT = { 
-							has_country_leader = {
-								character = ITA_palmiro_togliatti
-								ruling_only = yes
-							}
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
-			}
-			
-			traits = {
-				marxist_fundamentalist
-			}
-			
-			ai_will_do = {
-				base = 0.100
-				modifier = {
-					factor = 10
-					has_stability < 0.3
-				}
-				modifier = {
-					factor = 0
-					ITA_is_socialist_ai = yes
-				}
-			}
-		}
 	}
 
 	ITA_sandro_pertini = {
@@ -3003,40 +2585,6 @@ characters = {
 			id = -1
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_sandro_pertini
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_the_abyssinian_fiasco
-					has_completed_focus = ITA_defy_the_duce
-				}
-				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_convene_the_grand_council }
-				NOT = { 
-					has_country_leader = {
-						character = ITA_sandro_pertini
-						ruling_only = yes
-					}
-				}
-			}
-			
-			traits = {
-				marxist_philosopher
-			}
-			
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0
-					ITA_is_socialist_ai = yes
-				}
-			}
-		}
 	}
 
 	ITA_antonio_pesenti = {
@@ -3044,31 +2592,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_antonio_pesenti_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_antonio_pesenti
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_the_popular_front
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_common_ground
-					}
-				}
-			}
-			traits = {
-				economist
-			}
-
-			ai_will_do = {
-				base = 0.300
 			}
 		}
 	}
@@ -3081,39 +2604,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_fausto_gullo
-			allowed = {
-				OR = {
-					original_tag = ITA
-					original_tag = SWE
-				}
-				has_dlc = "By Blood Alone"
-			
-			}
-			available = {
-				OR = {
-					AND = {
-						OR = {
-							has_completed_focus = ITA_the_popular_front
-							AND = {
-								has_government = democratic
-								has_completed_focus = ITA_common_ground
-							}
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
-			}
-			traits = {
-				minister_of_peasants #"Minister of Peasants" Agrarian Reforms
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
 	}
 
 	ITA_giulio_paggio = {
@@ -3123,25 +2613,6 @@ characters = {
 				small = GFX_portrait_ITA_giulio_paggio_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_giulio_paggio
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				has_completed_focus = ITA_the_popular_front
-			}
-			traits = {
-				partisans_organizer
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
 	}
 
 	ITA_ignazio_silone = {
@@ -3149,40 +2620,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_ignazio_silone_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_ignazio_silone
-			allowed = {
-				OR = {
-					original_tag = ITA
-					original_tag = SWE
-				}
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					AND = {
-						OR = {
-							has_completed_focus = ITA_the_path_to_progress
-							has_completed_focus = ITA_bring_back_exiled_intellectuals
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
-			}
-			traits = {
-				revolutionary_poet # Writer intelectual
-			}
-
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0
-					ITA_is_socialist_ai = yes
-				}
 			}
 		}
 	}

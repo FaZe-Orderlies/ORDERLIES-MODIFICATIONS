@@ -30,8 +30,8 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-
-JAP_INF_01 = {
+JAP_INF_01 = 
+{
 	name = "Infantry Division"
 
 	for_countries = { JAP }
@@ -47,7 +47,8 @@ JAP_INF_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		168 = { "Konoe Shidan" }
 		1 = { "%d 'Tama' Hohei Shidan" }
 		2 = { "%d 'Isamu' Hohei Shidan" }
@@ -219,7 +220,8 @@ JAP_INF_01 = {
 	}
 }
 
-JAP_CAV_01 = {
+JAP_CAV_01 = 
+{
 	name = "Cavalry Division"
 
 	for_countries = { JAP }
@@ -235,7 +237,8 @@ JAP_CAV_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Kihei Shidan" }
 		2 = { "%d Kihei Shidan" }
 		3 = { "%d Kihei Shidan" }
@@ -259,7 +262,8 @@ JAP_CAV_01 = {
 	}
 }
 
-JAP_MOT_01 = {
+JAP_MOT_01 = 
+{
 	name = "Motorized Division"
 
 	for_countries = { JAP }
@@ -275,7 +279,8 @@ JAP_MOT_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d 'Gyoku' Jidoushaka Shidan" }
 		2 = { "%d 'Isamu' Jidoushaka Shidan" }
 		3 = { "%d 'Ko' Jidoushaka Shidan" }
@@ -441,7 +446,8 @@ JAP_MOT_01 = {
 	}
 }
 
-JAP_MEC_01 = {
+JAP_MEC_01 = 
+{
 	name = "Mechanized Division"
 
 	for_countries = { JAP }
@@ -457,7 +463,8 @@ JAP_MEC_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d 'Gyoku' Kikaika Shidan" }
 		2 = { "%d 'Isamu' Kikaika Shidan" }
 		3 = { "%d 'Ko' Kikaika Shidan" }
@@ -623,7 +630,8 @@ JAP_MEC_01 = {
 	}
 }
 
-JAP_ARM_01 = {
+JAP_ARM_01 = 
+{
 	name = "Armored Division"
 
 	for_countries = { JAP }
@@ -639,7 +647,8 @@ JAP_ARM_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "Sensha Dai-%d 'Taku' Shidan" }
 		2 = { "Sensha Dai-%d 'Geki' Shidan" }
 		3 = { "Sensha Dai-%d 'Taki' Shidan" }
@@ -673,7 +682,8 @@ JAP_ARM_01 = {
 	}
 }
 
-JAP_PAR_01 = {
+JAP_PAR_01 = 
+{
 	name = "Paratrooper Division"
 
 	for_countries = { JAP }
@@ -714,7 +724,8 @@ JAP_PAR_01 = {
 	}
 }
 
-JAP_MAR_01 = {
+JAP_MAR_01 = 
+{
 	name = "Marine Division"
 
 	for_countries = { JAP }
@@ -730,7 +741,8 @@ JAP_MAR_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		21 = { "Sasebo Rikusentai" }
 		22 = { "Maizaru Rikusentai" }
 		23 = { "Yokohama Rikusentai" }
@@ -758,7 +770,8 @@ JAP_MAR_01 = {
 	}
 }
 
-JAP_MNT_01 = {
+JAP_MNT_01 = 
+{
 	name = "Mountain Division"
 
 	for_countries = { JAP }
@@ -774,7 +787,8 @@ JAP_MNT_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		6 = { "%d 'Kumamoto' Sangaku Shidan" }
 		7 = { "%d 'Asahigawa' Sangaku Shidan" }
 		9 = { "%d 'Kanazawa' Sangaku Shidan" }
@@ -801,7 +815,8 @@ JAP_MNT_01 = {
 	}
 }
 
-JAP_GAR_01 = {
+JAP_GAR_01 = 
+{
 	name = "Garrison Units"
 
 	for_countries = { JAP }
@@ -817,7 +832,8 @@ JAP_GAR_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		68 = { "%d Tokubetsu Keibitai" }
 		69 = { "%d Tokubetsu Keibitai" }
 		70 = { "%d Tokubetsu Keibitai" }
@@ -863,7 +879,8 @@ JAP_GAR_01 = {
 }
 
 
-JAP_IMB_01 = {
+JAP_IMB_01 = 
+{
 	name = "Mixed Brigade"
 
 	for_countries = { JAP }
@@ -879,7 +896,8 @@ JAP_IMB_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Dokuritsu Konsei Ryodan" }
 		11 = { "%d Dokuritsu Konsei Ryodan" }
 		201 = { "Karafuto Dokuritsu Konsei Ryodan" }
@@ -1011,130 +1029,3 @@ JAP_IMB_01 = {
 		136 = { "%d Dokuritsu Konsei Ryodan" }
 	}
 }
-
-JAP_MIL_01 = {
-	name = "Militia Units"
-
-	for_countries = { JAP }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { JAP_INF_01 }
-
-	fallback_name = "%d Minpei"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered = {
-		1 = { "%d Tokyo Minpei" }
-		2 = { "%d Osaka Minpei" }
-		3 = { "%d Hiroshima Minpei" }
-		4 = { "%d Sendai Minpei" }
-		5 = { "%d Sapporo Minpei" }
-		6 = { "%d Hakodate Minpei" }
-		7 = { "%d Yokohama Minpei" }
-		8 = { "%d Nagano Minpei" }
-		9 = { "%d Nagoya Minpei" }
-		10 = { "%d Okayama Minpei" }
-	}
-}
-
-JAP_MIL_02 = {
-	name = "Militia Units"
-
-	for_countries = { JAP }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { JAP_INF_01 }
-
-	fallback_name = "%d Sanson Kōsakutai"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered = {
-		1 = { "%d Nosaka Sanson Kōsakutai" }
-		2 = { "%d Tokuda Sanson Kōsakutai" }
-	}
-}
-
-JAP_RGR_01 = {
-	name = "Ranger Units"
-
-	for_countries = { JAP }
-
-	can_use = { always = yes }
-
-	division_types = { "ranger_battalion"  }
-
-	fallback_name = "%d Betsudotai"
-
-	# Names with numbers (only one number per entry)
-	ordered = {
-	1 = { "%d Betsudotai" }
-	2 = { "%d Betsudotai" }
-	3 = { "%d Betsudotai" }
-	4 = { "%d Betsudotai" }
-	5 = { "%d Betsudotai" }
-	6 = { "%d Betsudotai" }
-	7 = { "%d Betsudotai" }
-	8 = { "%d Betsudotai" }
-	9 = { "%d Betsudotai" }
-	10 = { "%d Betsudotai" }
-	11 = { "%d Betsudotai" }
-	12 = { "%d Betsudotai" }
-	13 = { "%d Betsudotai" }
-	14 = { "%d Betsudotai" }
-	15 = { "%d Betsudotai" }
-	16 = { "%d Betsudotai" }
-	17 = { "%d Betsudotai" }
-	18 = { "%d Betsudotai" }
-	19 = { "%d Betsudotai" }
-	20 = { "%d Betsudotai" }
-		
-	}
-}
-
-JAP_BIC_01 = {
-	name = "Bicycle Units"
-
-	for_countries = { JAP }
-
-	can_use = { always = yes }
-
-	division_types = { "bicycle_battalion"  }
-
-	fallback_name = "%d Ginrinbutai"
-
-	# Names with numbers (only one number per entry)
-	ordered = {
-	1 = { "%d Ginrinbutai" }
-	2 = { "%d Ginrinbutai" }
-	3 = { "%d Ginrinbutai" }
-	4 = { "%d Ginrinbutai" }
-	5 = { "%d Ginrinbutai" }
-	6 = { "%d Ginrinbutai" }
-	7 = { "%d Ginrinbutai" }
-	8 = { "%d Ginrinbutai" }
-	9 = { "%d Ginrinbutai" }
-	10 = { "%d Ginrinbutai" }
-	11 = { "%d Ginrinbutai" }
-	12 = { "%d Ginrinbutai" }
-	13 = { "%d Ginrinbutai" }
-	14 = { "%d Ginrinbutai" }
-	15 = { "%d Ginrinbutai" }
-	16 = { "%d Ginrinbutai" }
-	17 = { "%d Ginrinbutai" }
-	18 = { "%d Ginrinbutai" }
-	19 = { "%d Ginrinbutai" }
-	20 = { "%d Ginrinbutai" }
-		
-	}
-}
-

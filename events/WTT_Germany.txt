@@ -2420,53 +2420,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	# Demand continued support of Von Falkenhausen in return
-	option = {
-		name = wtt_germany.38.a
-		ai_chance = {
-			base = 85
-		}
-		trigger = {
-			event_target:WTT_current_china_leader = {
-				OR = {
-					has_idea = german_advisors 
-					has_completed_focus = CHI_give_falkenhausen_citizenship
-				}
-			}
-		}
-		GER = { country_event = { id = wtt_germany.39 days = 1 } }
-	}
-
 	# Accept
 	option = {
 		name = wtt_germany.38.b
-		ai_chance = {
-			base = 10
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
-		}
-		effect_tooltip = {
-			GER = { transfer_state = 743 }
-			743 = { set_state_name = "Tsingtao" }
-			set_province_name = { id = 10000 name = "Tsingtao" }
-		}
-		GER = { country_event = { id = wtt_germany.48 days = 1 } }
-		hidden_effect = { news_event = { id = wtt_news.16 hours = 30 } }
-	}
-
-	# No!
-	option = {
-		name = wtt_germany.38.c
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
-		}
-		GER = { country_event = { id = wtt_germany.40 days = 1 } }
 	}
 }
 
@@ -2563,49 +2519,6 @@ country_event = {
 	# Demand Germans withdraw support of Von Falkenhausen to China in return
 	option = {
 		name = wtt_germany.43.a
-		ai_chance = {
-			factor = 60
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = CHI }
-			}
-		}
-		trigger = {
-			CHI = { has_idea = german_advisors }
-		}
-		GER = { country_event = { id = wtt_germany.44 days = 1 } }
-	}
-
-	# Accept
-	option = {
-		name = wtt_germany.38.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_war_with = CHI
-			}
-		}
-		effect_tooltip = {
-			GER = { transfer_state = 743 }
-			743 = { set_state_name = "Tsingtao" }
-			set_province_name = { id = 10000 name = "Tsingtao" }
-		}
-		GER = { country_event = { id = wtt_germany.48 days = 1 } }
-		hidden_effect = { news_event = { id = wtt_news.17 hours = 30 } }
-	}
-
-	# No!
-	option = {
-		name = wtt_germany.43.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				has_war_with = CHI
-			}
-		}
-		GER = { country_event = { id = wtt_germany.45 days = 1 } }
 	}
 }
 

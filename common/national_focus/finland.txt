@@ -5897,7 +5897,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = FIN_mineral_wealth_development_states_tt
 
-			every_state = {
+			every_owned_state = {
 				limit = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_core_of = THIS.controller
@@ -6847,7 +6847,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = FIN_hilja_riipinen
 
-			show_unit_leaders_tooltip = FIN_fanni_luukkonen
+			# show_unit_leaders_tooltip = FIN_fanni_luukkonen
 		}
 	}
 
@@ -11241,9 +11241,9 @@ focus_tree = {
 			add_to_variable = { FIN_finnish_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 			add_to_variable = { FIN_finnish_army_special_forces_out_of_supply_factor = -0.1 tooltip = special_forces_out_of_supply_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			show_unit_leaders_tooltip = FIN_hannu_hannuksela
-			show_unit_leaders_tooltip = FIN_hjalmar_siilasvuo
-			show_unit_leaders_tooltip = FIN_taavetti_laatikainen
+			# show_unit_leaders_tooltip = FIN_hannu_hannuksela
+			# show_unit_leaders_tooltip = FIN_hjalmar_siilasvuo
+			# show_unit_leaders_tooltip = FIN_taavetti_laatikainen
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = FIN_johan_arajuuri
@@ -11429,7 +11429,7 @@ focus_tree = {
 			add_to_variable = { FIN_finnish_army_recon_factor_while_entrenched = 0.1 tooltip = recon_factor_while_entrenched_tt }
 			add_to_variable = { FIN_finnish_army_army_attack_speed_factor = 0.1 tooltip = army_attack_speed_factor_tt }
 
-			show_unit_leaders_tooltip = FIN_matti_aarnio
+			# show_unit_leaders_tooltip = FIN_matti_aarnio
 
 			unlock_decision_category_tooltip = FIN_motti_tactics_category
 		}
@@ -11946,7 +11946,7 @@ focus_tree = {
 			add_to_variable = { FIN_finnish_army_modifier_army_sub_unit_long_range_patrol_support_attack_factor = 0.1 tooltip = modifier_army_sub_unit_long_range_patrol_support_attack_factor_tt }
 			add_to_variable = { FIN_finnish_army_modifier_army_sub_unit_long_range_patrol_support_defence_factor = 0.1 tooltip = modifier_army_sub_unit_long_range_patrol_support_defence_factor_tt }		
 
-			show_unit_leaders_tooltip = FIN_erkki_raappana
+			# show_unit_leaders_tooltip = FIN_erkki_raappana
 		}
 	}
 	
@@ -11979,9 +11979,9 @@ focus_tree = {
 				category = armor
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			# custom_effect_tooltip = generic_skip_one_line_tt
 
-			show_unit_leaders_tooltip = FIN_ruben_lagus
+			# show_unit_leaders_tooltip = FIN_ruben_lagus
 
 			if = {
 				limit = {

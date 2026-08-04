@@ -84,12 +84,12 @@ ideas = {
 					}
 				}
 
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_had_volunteer_only_flag }
-				}
+				# if = {
+				# 	limit = {
+				# 		DEN_aat_is_subject = yes
+				# 	}
+				# 	NOT = { has_country_flag = DEN_had_volunteer_only_flag }
+				# }
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
 			}
@@ -211,21 +211,6 @@ ideas = {
 
 				if = {
 					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
@@ -242,27 +227,6 @@ ideas = {
 							has_idea = BUL_army_restrictions
 						}
 					}
-				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = AUS
-					}
-					NOT = {
-						has_idea = AUS_treaty_of_saint_germain_en_laye
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc	= "Graveyard of Empires"
-						original_tag = AFG
-					}
-					has_completed_focus = AFG_adopt_nufus
 				}
 			}
 
@@ -356,20 +320,6 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					SWE_rapid_mob_manpower_law_trigger = yes 
-					if = {
-						limit = {
-							original_tag = DEN
-							has_dlc = "Arms Against Tyranny"
-						}
-						has_country_leader = {
-							ruling_only = yes
-							character = DEN_christian_x
-						}
-					}
-					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
-					}
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
@@ -379,17 +329,6 @@ ideas = {
 						#		ratio > 0.5
 						#	}
 						#}
-					}
-
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-							has_autonomy_state = autonomy_aat_defense_council_member
-							is_subject_of = SWE
-						}
-					}
-					else = {
-						hidden_trigger = { always = no }  #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
 					}
 				}
 				has_war_support > 0.2
@@ -475,21 +414,6 @@ ideas = {
 
 				if = {
 					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
@@ -506,28 +430,7 @@ ideas = {
 							has_idea = BUL_army_restrictions
 						}
 					}
-				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = AUS
-					}
-					NOT = {
-						has_idea = AUS_treaty_of_saint_germain_en_laye
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc	= "Graveyard of Empires"
-						original_tag = AFG
-					}
-					has_completed_focus = AFG_adopt_nufus
-				}				
+				}			
 			}
 			ai_will_do = {
    				factor = 1
@@ -577,15 +480,6 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_idea = limited_conscription }
-				}
-
-				modifier = {
-					factor = 100
-					OR = {
-						original_tag = URG
-						original_tag = PAR
-					}
-					has_completed_focus = GUAY_coup_detat
 				}
 
 				modifier = {
@@ -640,7 +534,6 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					SWE_rapid_mob_manpower_law_trigger = yes
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.6
@@ -741,21 +634,6 @@ ideas = {
 
 				if = {
 					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
@@ -772,27 +650,6 @@ ideas = {
 							has_idea = BUL_army_restrictions
 						}
 					}
-				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = AUS
-					}
-					NOT = {
-						has_idea = AUS_treaty_of_saint_germain_en_laye
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc	= "Graveyard of Empires"
-						original_tag = AFG
-					}
-					has_completed_focus = AFG_adopt_nufus
 				}
 			}
 
@@ -848,15 +705,6 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_idea = extensive_conscription }
-				}
-
-				modifier = {
-					factor = 100
-					OR = {
-						original_tag = URG
-						original_tag = PAR
-					}
-					has_completed_focus = GUAY_coup_detat
 				}
 
 				modifier = {
@@ -1003,22 +851,6 @@ ideas = {
 						}
 					}
 				}
-
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
 				if = {
 					limit = {
 						original_tag = BUL
@@ -1037,27 +869,6 @@ ideas = {
 							has_idea = BUL_army_restrictions
 						}
 					}
-				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = AUS
-					}
-					NOT = {
-						has_idea = AUS_treaty_of_saint_germain_en_laye
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc	= "Graveyard of Empires"
-						original_tag = AFG
-					}
-					has_completed_focus = AFG_adopt_nufus
 				}
 			}
 
@@ -1255,21 +1066,6 @@ ideas = {
 				
 				if = {
 					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
@@ -1286,27 +1082,6 @@ ideas = {
 							has_idea = BUL_army_restrictions
 						}
 					}
-				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = AUS
-					}
-					NOT = {
-						has_idea = AUS_treaty_of_saint_germain_en_laye
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc	= "Graveyard of Empires"
-						original_tag = AFG
-					}
-					has_completed_focus = AFG_adopt_nufus
 				}	
 			}
 
@@ -1372,122 +1147,5 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-
-		### Ethiopian National Levy
-		ETH_chitet_law = {
-			picture = ETH_chitet_law
-			cost = 150
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-				always = no
-			}
-
-			ai_will_do = {
-   				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.045
-				custom_modifier_tooltip = ETH_chitet_law_tt
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_speed_buildings_factor = -0.05
-			}
-
-			default = yes
-
-			cancel_if_invalid = no
-		}
-		ETH_chitet_law_peace_time = {
-			picture = ETH_chitet_law
-
-			cost = 150
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-				always = no
-			}
-
-			ai_will_do = {
-   				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.005
-				custom_modifier_tooltip = ETH_chitet_law_tt
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_buildings_factor = 0.05
-			}
-
-			default = yes
-
-			cancel_if_invalid = no
-		}
-
-		### Swiss Citizen Militia ###
-
-		SWI_citizen_militia_1 = {
-			cost = 200
-			picture = citizen_militia_1
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-				has_completed_focus = SWI_professionalize_militias
-				has_completed_focus = SWI_join_the_allies
-				has_completed_focus = SWI_join_france
-				has_completed_focus = SWI_jump_into_action
-			}
-			ai_will_do = {
-				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.1
-				custom_modifier_tooltip = SWI_army_limitations_TT
-				ai_desired_divisions_factor = 1
-			}
-		}
-
-		SWI_citizen_militia_2 = {
-			picture = citizen_militia_2
-			cost = 200
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
- 				has_completed_focus = SWI_professionalize_militias
-				has_completed_focus = SWI_join_the_allies
-				has_completed_focus = SWI_join_france
-				has_completed_focus = SWI_jump_into_action
-			}
-			ai_will_do = {
-				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.2
-				custom_modifier_tooltip = SWI_army_limitations_TT
-				ai_desired_divisions_factor = 2
-			}
-		}
 	}
-
-
 }

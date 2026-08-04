@@ -7347,42 +7347,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = {
-				185 = { #Epirus
-					any_neighbor_state = { 
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-
-					}
-					is_owned_and_controlled_by = GRE
-				}
-			}
-			set_global_flag = GER_second_ljubljana_award_GER_185
-		}
-		if = {
-			limit = {
-				731 = { #Central Macedonia
-					any_neighbor_state = { 
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-
-					}
-					is_owned_and_controlled_by = GRE
-				}
-			}
-			set_global_flag = GER_second_ljubljana_award_GER_731
-		}
-		if = {
-			limit = {
-				184 = { #Thrace
-					any_neighbor_state = { 
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-
-					}
-					is_owned_and_controlled_by = GRE
-				}
-			}
-			set_global_flag = GER_second_ljubljana_award_GER_184
-		}
+		set_global_flag = GER_second_ljubljana_award_GER_185
+		set_global_flag = GER_second_ljubljana_award_GER_731
+		set_global_flag = GER_second_ljubljana_award_GER_184
 	}
 
 	option = {
