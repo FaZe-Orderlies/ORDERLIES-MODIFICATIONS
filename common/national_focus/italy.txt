@@ -3109,29 +3109,7 @@ focus_tree = {
 
 			army_experience = 25
 
-			if = {
-				limit = {
-					NOT = { has_government = communism }
-				}
-				show_unit_leaders_tooltip = ITA_annibale_bergonzoli
-				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = ITA_achille_starace	
-			}
-			if = {
-				limit = {
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
-				show_unit_leaders_tooltip = ITA_giovanni_duca
-			}
-			else_if = { #Communist
-				limit = {
-					has_government = communism
-				}
-				show_unit_leaders_tooltip = ITA_ada_gobetti
-			}
+			
 			
 			#NTH_Manu: Medals to Divsion Commanders
 		}
@@ -6923,9 +6901,6 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_stability = 0.02
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_giuseppe_bottai
 		}
 	}
 
@@ -6944,10 +6919,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
-
-			ITA_bop_very_low_decrease_effect = yes
-
-			custom_effect_tooltip = ITA_boost_the_grand_council_of_fascism_missiolinis_tt
 		}
 	}
 
@@ -6977,11 +6948,6 @@ focus_tree = {
 				add = lion_tamer_2
 			}
 
-			# ITA_bop_very_low_increase_effect = yes
-
-			#Reduce time for Missiolinis
-			set_variable = { ITA_missiolinis_default_days = 350 }
-			custom_effect_tooltip = ITA_to_live_as_a_lion_missiolinis_tt
 		}
 	}
 
@@ -7208,18 +7174,6 @@ focus_tree = {
 			add_to_variable = { ITA_re_conscription_factor = 0.1 }
 			custom_effect_tooltip = ITA_believe_obey_fight_re_tt
 
-			if = {
-				limit = {
-					NOT = { 
-							has_country_leader =  {
-								ruling_only = yes 
-								character = ITA_dino_grandi
-							}
-						}
-				}
-				custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = ITA_dino_grandi
-			}
 
 			add_political_power = 75
 			add_war_support = 0.02
@@ -7870,12 +7824,6 @@ focus_tree = {
 		
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 2
-		available = {
-			NOT = {
-				has_completed_focus = ITA_unite_the_opposition
-				has_completed_focus = ITA_defy_the_duce
-			}
-		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -7883,13 +7831,6 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_gian_galeazzo_ciano
-
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_foreign_affairs_focus_lock_tt
-			}
 		}
 	}
 
@@ -8165,9 +8106,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
-		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
-		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
