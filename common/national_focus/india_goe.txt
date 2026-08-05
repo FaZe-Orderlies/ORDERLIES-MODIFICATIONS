@@ -17692,11 +17692,6 @@ focus = {
 	relative_position_id = RAJ_the_punjab_accord 
 	cost = 10
 
-	available = {
-		is_subject_of = ENG
-		has_autonomy_state = autonomy_dominion
-	}
-
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_TFV_AUTONOMY }
 
 	completion_reward = {
@@ -17712,19 +17707,19 @@ focus = {
 			popularity = 0.1
 		}
 
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = RAJ_the_dominion_of_india_every_owned_state_compliance_tt
-		every_owned_state = {
-			limit = {
-				has_resistance = yes
-				compliance < 100
-			}
+		# custom_effect_tooltip = generic_skip_one_line_tt
+		# custom_effect_tooltip = RAJ_the_dominion_of_india_every_owned_state_compliance_tt
+		# every_owned_state = {
+		# 	limit = {
+		# 		has_resistance = yes
+		# 		compliance < 100
+		# 	}
 
-			add_compliance = 15
-		}
+		# 	add_compliance = 15
+		# }
 
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = RAJ_loyalist_branch_capstone_focuses_become_free_tt
+		# custom_effect_tooltip = generic_skip_one_line_tt
+		# custom_effect_tooltip = RAJ_loyalist_branch_capstone_focuses_become_free_tt
 	}
 }
 

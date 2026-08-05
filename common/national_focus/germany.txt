@@ -8208,30 +8208,6 @@ focus_tree = {
 					add_mio_size = 2
 					add_mio_funds_gain_factor = 0.25
 				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				unlock_military_industrial_organization_tooltip = mio:CZE_ceska_zbrojovka_uhersky_brod_organization
-				mio:CZE_ceska_zbrojovka_uhersky_brod_organization = {
-					add_mio_size = 2
-					add_mio_funds_gain_factor = 0.25
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				unlock_military_industrial_organization_tooltip = mio:CZE_bohmische_mahrische_maschinenfabrik_ag_german_organization
-				mio:CZE_bohmische_mahrische_maschinenfabrik_ag_german_organization = {
-					add_mio_size = 2
-					add_mio_funds_gain_factor = 0.25
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				unlock_military_industrial_organization_tooltip = mio:CZE_avia_german_organization
-				mio:CZE_avia_german_organization = {
-					add_mio_size = 2
-					add_mio_funds_gain_factor = 0.25
-				}
 			}
 			else = {
 				custom_effect_tooltip = GER_integrate_czech_manufacturers_no_aat_tt
