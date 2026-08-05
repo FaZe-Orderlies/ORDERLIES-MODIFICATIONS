@@ -30,9 +30,9 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+				USA_neutrality_act
+				USA_Arsenal_of_democrasy_mod
+				USA_global_potential
 			}
 		}
 		"ENG"={
@@ -60,8 +60,8 @@ bookmarks = {
 			}
 			focuses = {
 				GER_fuhrerprinzip
-				GER_the_peoples_victory
-				GER_glory_to_the_imperial_army
+				GER_danzig_or_war
+				GER_remilitarize_the_rhineland
 			}
 		}
 
@@ -74,9 +74,9 @@ bookmarks = {
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
+				ITA_triumph_in_africa_bba
+				ITA_culto_del_duce
+				ITA_flotta_d_evasione
 			}		
 		}
 
@@ -91,8 +91,8 @@ bookmarks = {
 			}
 			focuses = {
 				JAP_sea_purge_the_kodoha_faction
-				JAP_revere_the_emperor_destroy_the_traitors
-				JAP_okadas_military_purge_speech
+				JAP_the_eternal_kingdom
+				JAP_strike_the_southern_road
 			}
 		}
 
@@ -105,9 +105,9 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-				SOV_behead_the_snake
-				SOV_the_supreme_soviet
-				SOV_reconvene_the_zemsky_sobor
+				SOV_third_five_year_plan
+				SOV_strengthen_the_mobilization_plan
+				SOV_the_path_of_marxism_leninism
 			}	
 		}
 

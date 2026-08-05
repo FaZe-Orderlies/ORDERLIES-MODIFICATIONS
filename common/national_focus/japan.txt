@@ -9253,12 +9253,6 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-
-		}
-
-		
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -9275,19 +9269,12 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_add_or_modify_east_asia_co_prosperity_sphere = yes
-
-			add_to_variable = { JAP_east_asia_co_prosperity_sphere_autonomy_manpower_share_from_subjects = 0.05 tooltip = autonomy_manpower_share_from_subjects_tt }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			IF = {
 				limit = {
 					is_in_faction = no
 				}
 
-				create_faction_from_template = faction_template_geacps_faction
-				
+				create_faction_from_template = faction_template_geacps_faction	
 			}
 			ELSE_IF = {
 				limit = {
@@ -9323,12 +9310,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			country_event = {
-				id = SEA_japan_foreign_policy.40
-			}	
-
-			
-
 			hidden_effect = {
 				news_event = { 
 					id = SEA_japan_news_events.02 
@@ -9357,14 +9338,6 @@ focus_tree = {
 
 		available = {
 			is_faction_leader = yes
-		}
-
-		bypass = {
-			NOT = {
-				MAN = {
-					is_ally_with = ROOT
-				}
-			}
 		}
 
 		cancel_if_invalid = yes

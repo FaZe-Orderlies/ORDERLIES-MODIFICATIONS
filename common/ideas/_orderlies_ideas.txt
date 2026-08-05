@@ -150,6 +150,26 @@ ideas = {
 				production_factory_efficiency_gain_factor = 1000.0
 			}
 		}
+
+		peace_training = {
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			picture = BRA_dasp
+			modifier = {
+				army_fuel_consumption_factor = -1.0
+				air_fuel_consumption_factor = -1.0
+				mobilization_speed = 5.0
+				air_accidents_factor = -2
+				training_time_army_factor = -0.7
+			}
+		}
 		
 	}
 	
