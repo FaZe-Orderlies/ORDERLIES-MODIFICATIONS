@@ -1,4 +1,4 @@
-﻿focus_tree = {
+﻿`focus_tree = {
 	id = french_focus
 	
 	country = {
@@ -3186,7 +3186,7 @@
 			focus = FRA_protect_the_rights_of_man
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		cost = 8
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3196,49 +3196,11 @@
 			
 		}
 		
-		bypass = {
-			NOT = {
-				459 = {
-					OWNER = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-				460 = {
-					OWNER = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-				513 = {
-					OWNER = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			add_state_core = 459
-			add_state_core = 460
-			add_state_core = 513
-			if = {
-				limit = {
-					country_exists = ALG
-				}
-				annex_country = { target = ALG }
-			}
 			FRA_right_wing_riot_effect = yes
 		}
 	}
@@ -3252,7 +3214,7 @@
 			focus = FRA_the_blum_viollette_proposal
 		}
 		relative_position_id = FRA_the_blum_viollette_proposal
-		cost = 8
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3379,7 +3341,7 @@
 		}
 		mutually_exclusive = { focus = FRA_france_undividable }
 		relative_position_id = FRA_expand_the_citizenship
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
