@@ -1373,72 +1373,6 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		uncontrolled_exports = {
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			picture = isolation
-
-			rule = {
-				can_access_market = no
-			}
-
-			modifier = {
-				min_export = 0.25
-				consumer_goods_expected_value = 0.05
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0
-				agency_upgrade_time = 0.15
-				cic_construction_boost = 0.15
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_war = yes
-					has_completed_focus = POL_integrate_gdansk_industries
-					has_completed_focus = POL_expand_gdynia_seaport
-					NOT = {
-						owns_state = 85
-						owns_state = 807
-					}
-					any_owned_state = {
-						NOT = {
-							state = 85
-							state = 807
-						}
-						is_coastal = yes
-					}
-				}
-			}
-
-			on_remove = {
-				effect_tooltip =  {
-					remove_dynamic_modifier = { modifier = international_city }
-				}
-				hidden_effect = {
-					if = {
-						limit = {
-							tag = POL
-							85 = { is_demilitarized_zone = no }
-							has_civil_war = no 
-						}
-						85 = {
-							if = {
-								limit = {
-									has_dynamic_modifier = { modifier = international_city }
-								}
-								remove_dynamic_modifier = { modifier = international_city }
-							}
-						}
-					}
-				}
-			}
-			
-			cancel_if_invalid = no
-		}
-
 		free_trade = {
 
 			available = {
@@ -1474,9 +1408,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
-				cic_construction_boost_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -1521,24 +1452,9 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = GER
 					}
 					NOT = { has_completed_focus = GER_autarky_efforts }
-				}
-
-				if = {
-					limit = {
-						original_tag = PRC
-						has_dlc = "No Compromise, No Surrender"
-					}
-					NOT = { has_completed_focus = PRC_promote_paper_bills }
 				}
 			}
 
@@ -1552,9 +1468,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
-				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
-				cic_construction_boost_factor = 0.1
 			}
 
 			default = yes
@@ -1579,10 +1492,6 @@ ideas = {
 						tag = PER
 						tag = IRQ
 					}
-				}
-				modifier = {
-					factor = 1000
-					has_idea = uncontrolled_exports #Poland should try and escape this as soon as they can
 				}
    			}
 		}
@@ -1628,14 +1537,6 @@ ideas = {
 						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
 					}
 				}
-
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
 			}
 
 			cost = 150
@@ -1647,10 +1548,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.01
-				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
 				lend_lease_tension = 0.20
-				cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -1686,14 +1584,6 @@ ideas = {
 					# revert from closed_economy if we have large allies
 					has_idea = closed_economy
 					has_large_ally_not_pick_closed_economy = yes
-				}
-				modifier = { #Germany should keep its Autarkic Economy
-					factor = 0.5
-					original_tag = GER
-					OR = {
-						has_idea = autarkic_economy
-						has_idea = autarkic_economy_improved
-					}
 				}
    			}
 		}
@@ -1787,33 +1677,7 @@ ideas = {
 
 
 			available = {
-
 				has_war = yes
-
-				IF = {
-					limit = {
-						NOT = {
-							original_tag = JAP
-						}
-					}
-					OR = {
-						has_government = fascism
-						has_government = communism
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						original_tag = JAP
-					}
-					OR = {
-						has_government = fascism
-						has_government = communism
-						AND = {
-							has_completed_focus = JAP_sea_state_general_mobilization_law
-							has_government = neutrality
-						}
-					}
-				}
 				
 				OR = {
 					has_idea = war_economy
@@ -1842,11 +1706,6 @@ ideas = {
 
 			}
 
-			rule = {
-				can_access_market = no
-				desc = can_not_access_market_closed_economy
-			}
-
 			cost = 150
 			removal_cost = -1
 
@@ -1854,7 +1713,6 @@ ideas = {
 				min_export = 0
 				#civilian_intel_to_others = 0.0
 				lend_lease_tension = 0.40
-				cic_construction_boost = -0.1
 			}
 
 			cancel_if_invalid = no
@@ -1945,8 +1803,6 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				industrial_capacity_dockyard = 0.2
 				production_speed_buildings_factor = 0.2
-				civilian_intel_to_others = 80
-				navy_intel_to_others = 30.0
 				resource_trade_cost_bonus_per_factory = 1
 			}
 
@@ -1975,9 +1831,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.20
 				production_speed_buildings_factor = 0.25
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 20.0
-				cic_construction_boost_factor = 0.10
 			}
 
 			cancel_if_invalid = no
@@ -1985,8 +1838,8 @@ ideas = {
 		}
 
 		SOV_economy = {
-			available = {
-				always = yes
+			allowed_to_remove = {
+				always = no
 			}
 			visible = {
 				original_tag = SOV
@@ -1999,12 +1852,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0.1
+				min_export = 0
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				cic_construction_boost_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -2012,9 +1864,6 @@ ideas = {
 		}
 
 		JAP_economy = {
-			available = {
-				always = yes
-			}
 			visible = {
 				original_tag = JAP
 			}
@@ -2026,7 +1875,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0.1
+				min_export = 0
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
@@ -2035,6 +1884,10 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
+
+			allowed_to_remove = {
+				always = no
+			}
 
 		}
 	}
