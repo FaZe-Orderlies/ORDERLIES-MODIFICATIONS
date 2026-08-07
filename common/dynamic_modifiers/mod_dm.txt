@@ -233,3 +233,11 @@ ROM_malenki_paris = {
 
 	local_factories = 0.25
 }
+
+FRA_magino = {
+	enable = { always = yes }
+	icon = GFX_modifier_generic_guerilla_base
+
+	army_attack_factor = -3
+
+}

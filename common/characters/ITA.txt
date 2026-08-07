@@ -469,24 +469,6 @@ characters = {
 				large = GFX_portrait_ITA_vittorio_ambrosio
 			}
 		}
-
-		advisor = {
-			slot = high_command
-			idea_token = vittorio_ambrosio
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				army_cavalry_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		
-		
 	}
 
 
@@ -532,8 +514,6 @@ characters = {
 				large = GFX_portrait_ITA_pietro_pintor
 			}
 		}
-		
-		
 	}
 
 	ITA_mario_berti = {
@@ -556,8 +536,6 @@ characters = {
 				large = GFX_portrait_ITA_carlo_geloso
 			}
 		}
-		
-		
 	}
 
 	ITA_giuseppe_tellera = {
@@ -663,8 +641,6 @@ characters = {
 				large = GFX_portrait_ITA_carlo_vecchiarelli
 			}
 		}
-		
-		
 	}
 
 	ITA_mario_robotti = {
@@ -1395,28 +1371,6 @@ characters = {
 				small = GFX_portrait_ITA_gian_galeazzo_ciano_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_gian_galeazzo_ciano
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			cost = 75
-			traits = {
-				hierarch_minister_of_foreign_affairs
-			}
-			ai_will_do = {
-				base = 0.3
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
-		}
 	}
 
 	ITA_dino_grandi = {
@@ -1510,10 +1464,6 @@ characters = {
 			}
 			available = {
 				has_completed_focus = ITA_security_militias
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_corporations
-				}
-				ITA_government_is_really_fascist = yes
 			}
 			cost = 75
 			traits = {
@@ -1564,35 +1514,6 @@ characters = {
 				base = 1.000
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = mario_roatta_political_advisor
-			allowed = {
-				original_tag = ITA
-				has_dlc = "La Resistance"
-			}
-			available = {
-				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
-			}
-			traits = {
-				head_of_intelligence 
-			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
-				}
-			}
-		}
-
-		
 	}
 
 	ITA_giovanni_marinelli = {
@@ -1602,27 +1523,6 @@ characters = {
 				small = GFX_portrait_ITA_giovanni_marinelli_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_giovanni_marinelli
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				prince_of_terror
-			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
-		}		
 	}
 
 	ITA_giacomo_acerbo = {
@@ -1638,9 +1538,6 @@ characters = {
 			idea_token = ITA_giacomo_acerbo
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
 			}
 			traits = {
 				war_industrialist 
@@ -1706,9 +1603,6 @@ characters = {
 			idea_token = ITA_carlo_favagrossa
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
 			}
 			traits = {
 				armaments_organizer
@@ -1777,12 +1671,6 @@ characters = {
 			available = {
 				has_government = fascism
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
-				}
 			}
 			traits = {
 				financial_expert
@@ -1883,9 +1771,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
 			traits = {
 				ideological_crusader 
 			}
@@ -1910,32 +1795,6 @@ characters = {
 				small = GFX_portrait_ITA_roberto_farinacci_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_roberto_farinacci
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
-			traits = {
-				backroom_backstabber 
-			}
-			ai_will_do = {
-				base = 0.000
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
-				}
-			}
-		}
 	}
 
 	ITA_carlo_scorza = {
@@ -1945,45 +1804,6 @@ characters = {
 				small = GFX_idea_carlo_scorza
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = carlo_scorza
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				fascist_demagogue 
-			}
-			do_effect = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
-			ai_will_do = {
-				base = 0.000
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
-				}
-			}
-		}		
 	}
 
 
@@ -2140,39 +1960,6 @@ characters = {
 				small = GFX_portrait_ITA_vittorio_emanuele_orlando_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_vittorio_emanuele_orlando
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_monarchia_d_italia
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-			}
-			traits = {
-				old_figurehead
-			}
-
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0.5
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
-		}
 	}
 
 	ITA_luigi_einaudi = {
@@ -2180,27 +1967,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_luigi_einaudi_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_luigi_einaudi
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_revoke_the_acerbo_law
-					has_completed_focus = ITA_common_ground
-				}
-			}
-			traits = {
-				financial_expert 
-			}
-			ai_will_do = {
-				base = 3.000
 			}
 		}
 	}
@@ -2211,32 +1977,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_pietro_d_acquarone_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_pietro_d_acquarone
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				has_completed_focus = ITA_convene_the_grand_council
-			}
-			traits = {
-				staunch_monarchist
-			}
-
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 100
-					OR = {
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
-				}
 			}
 		}
 	}
@@ -2290,35 +2030,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_mario_scelba_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_mario_scelba
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					has_completed_focus = ITA_christian_democracy
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-			}
-			traits = {
-				minister_of_posts_and_telegraphs # Christian Democracy guy
-			}
-
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0
-					ITA_is_communist_ai = yes
-				}
 			}
 		}
 	}

@@ -80,3 +80,72 @@ news_event = {
         name = orderlies.2.a
     }
 }
+
+news_event = { # удалялка складов франции, прокает перед непосредственно капитуляцией (компьен)
+	id = orderlies.3
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	   	FRA = {	set_equipment_fraction = 0.0 }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+}
+
+news_event = {
+   	id = orderlies.4
+	title = orderlies.4.t
+	desc = orderlies.4.d
+	picture = GFX_news_event_generic_anglo_iraqi_war_1
+
+    major = yes
+
+    hidden = yes
+
+    fire_only_once = no
+
+    trigger = {
+        FRA = {
+            surrender_progress >0.41
+        }
+        NOT = {
+            has_global_flag = FRA_cap
+        }
+    }
+
+    immediate = {
+        set_global_flag = FRA_cap
+        every_country = { limit = { OR = { original_tag = FRA original_tag = GER original_tag = ITA original_tag = BUL original_tag = HUN original_tag = ROM } } add_ideas = FRA_cap_idea }
+        FRA = {
+            country_event = {
+                id = orderlies.3
+                days = 1
+            }
+        }
+        FRA = {
+            country_event = {
+                id = orderlies.3
+                days = 2
+            }
+        }
+        FRA = {
+            country_event = {
+                id = orderlies.3
+                days = 3
+            }
+        }
+        FRA = {
+            country_event = {
+                id = orderlies.3
+                days = 4
+            }
+        }
+        country_event = {
+            id = news.34
+            days = 5
+        }
+    }
+}
+
+

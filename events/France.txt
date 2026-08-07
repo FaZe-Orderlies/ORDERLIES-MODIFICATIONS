@@ -165,77 +165,6 @@ country_event = {
 ### The Fall of France
 
 #hidden pre-event to check before capitulation
-country_event = {
-	id = france.101
-	hidden = yes
-	trigger = {
-		tag = FRA
-		has_war_with = GER
-		has_government = democratic
-		16 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
-		ENG = { has_war_with = GER }
-		surrender_progress > 0.7
-		GER = {
-			OR = {
-				is_faction_leader = yes
-				has_government = neutrality
-			}
-		}
-		has_civil_war = no
-		#Don't fire if France has pushed pretty far into ITA or GER
-		NOT = {
-			any_state = {
-				is_on_continent = europe
-				NOT = { state = 158 }
-				NOT = { state = 114 }
-				NOT = { state = 50 }
-				NOT = { state = 978 } #BADEN
-				NOT = { state = 42 }
-				is_controlled_by = ROOT
-				OR = {
-					is_owned_by = GER
-					AND = {
-						FRA = { has_War_with = ITA }
-						is_owned_by = ITA
-					}
-				}
-			}
-		}		
-
-		#Don't fire if any states in France are controlled by a different human player
-		NOT = {
-			any_country = {
-				is_ai = no
-				NOT = { tag = GER }
-				NOT = { is_in_faction_with = GER }
-				has_war_with = ROOT
-				any_state = {
-					is_on_continent = europe
-					NOT = { state = 1 }
-					NOT = { state = 735 }
-					NOT = { state = 21 }
-					NOT = { state = 851 }
-					NOT = { state = 31 }
-					is_owned_by = ROOT
-					is_controlled_by = PREV
-				}
-			}
-		}
-		# PLEASE Don't fire if this will end the war (No other ally is a major)
-		FRA = {
-			any_allied_country = {
-				is_major = yes 
-				has_capitulated = no 
-				has_war_with = GER 
-			}
-		}
-	}
-	mean_time_to_happen = { days = 2 }
-	immediate = {
-		country_event = france.10
-	}
-}
 # The Battle is Lost
 country_event = {
 	id = france.10
@@ -279,8 +208,6 @@ country_event = {
 		custom_effect_tooltip = france.10.b_tt
 		set_country_flag = GER_dont_seize_gold_reserves_flag #Can't allow Germany to seize out gold reserves just yet
 	}
-	
-	
 }
 
 # France suggests a Union (Britain)
@@ -415,7 +342,6 @@ country_event = {
 		trigger = {
 			has_government = fascism
 			has_dlc = "La Resistance"
-			
 		}
 		
 		hidden_effect = { 
@@ -439,31 +365,15 @@ country_event = {
 							state = 554
 						}
 					}
-					controls_state = 295
+					controls_state = 772
 				}
-				set_capital = { state = 295 }
+				set_capital = { state = 772 }
 			}
-			country_event = france.20
-			every_owned_state = {
-				limit = { 
-					is_controlled_by = ITA 
-					is_core_of = FRA
-				}
-				set_state_flag = vichy_italian_conquest
-			}
-			
-			FRA = {
-			
-				transfer_units_fraction = {
-					target = event_target:vichy_france
-					size = 1
-					stockpile_ratio = 0
-					army_ratio = 0
-					navy_ratio = 0
-					air_ratio = 0
-				}
-				
-			}				
+			add_ideas = FRA_defeatism
+			load_focus_tree = free_french_focus
+			set_global_flag = fall_of_france
+			save_global_event_target_as = free_france
+			country_event = france.20			
 		}
 		custom_effect_tooltip = establishing_vichy_tt
 		hidden_effect = {
@@ -522,59 +432,11 @@ country_event = {
 							state = 25
 							state = 33
 						}
-						CONTROLLER = { 
-							OR = {
-								original_tag = FRA
-								has_war_with = FRA
-							} 
-						} #failsafe for weird shit (tm)
 					}
 					add_core_of = PREV
 					event_target:vichy_france = { transfer_state = PREV }
 				}
-				every_state = { #set up cores for French cores
-					limit = {
-						is_core_of = FRA
-						NOT = {
-							is_controlled_by = event_target:vichy_france
-						}
-					}
-					add_core_of = PREV
-				}
-				if = { 
-					limit = { ITA = { has_war_with = FRA } }
-					every_owned_state = {
-						limit = {
-							OR = {
-								state = 21
-								state = 1
-								state = 735
-								state = 851
-							}
-							has_state_flag = vichy_italian_conquest
-						}
-						ITA = { transfer_state = PREV }
-					}
-					
-					if = {
-						limit = {
-							21 = { is_controlled_by = ITA }
-							851 = { is_controlled_by = ITA }
-							735 = { is_controlled_by = ITA } 
-						}
-						ITA = { transfer_state = 32 }
-					}
-					
-				}
-				every_owned_state = {
-					limit = {
-						NOT = {
-							is_core_of = FRA
-						}
-					}
-					FRA = { add_state_claim = PREV } #Free France gets claims on all of Vichy, primarily so they can demand that shit back in a peacedeal
-				}
-				ITA = { transfer_state = 1 }
+				ITA = { transfer_state = 1 transfer_state = 735 transfer_state = 458 transfer_state = 665 }
 				set_rule = { 
 					can_join_factions = no 
 					can_create_factions = no
@@ -586,10 +448,7 @@ country_event = {
 					elections_allowed = no
 				}
 				set_popularities = {
-					democratic = 22
-					fascism = 46
-					neutrality = 30
-					communism = 2
+					fascism = 100
 				}
 				set_cosmetic_tag = FRA_VICHY
 				FRA = {
@@ -609,23 +468,11 @@ country_event = {
 						promote_leader = yes
 					}
 				}
-				
-				add_ideas = FRA_occupation_costs_4
-				load_focus_tree = vichy_french_focus
-				inherit_technology = FRA
-			
-				if = {
-					limit = { FRA = { has_country_flag = become_vichy } }
-					change_tag_from = FRA
-				}
 			}
 		}
 		random_country = {
 			limit = {
 				has_focus_tree = vichy_french_focus
-			}
-			GER = {
-				give_guarantee = PREV
 			}
 			every_unit_leader = {
 				limit = {
@@ -634,27 +481,37 @@ country_event = {
 				set_nationality = FRA
 			}
 			every_army_leader = {
-				limit = {
-					NOT = { has_trait = old_guard }
-				}
 				set_nationality = FRA
 			}
 			FRA = {
 				every_unit_leader = {
-					limit = {
-						OR = {
-							has_trait = old_guard
-							has_trait = old_guard_navy
-						}
-					}
 					set_nationality = PREV.PREV
 				}
 				every_navy_leader = {
-					limit = {
-						has_id = 102 #Darlan
-					}
 					set_nationality = PREV.PREV
 				}
+			}
+		}
+		26 = {
+			remove_dynamic_modifier = {
+				modifier = FRA_magino
+				scope = GER
+			}
+			remove_dynamic_modifier = {
+				modifier = FRA_magino
+				scope = ITA
+			}
+			remove_dynamic_modifier = {
+				modifier = FRA_magino
+				scope = HUN
+			}
+			remove_dynamic_modifier = {
+				modifier = FRA_magino
+				scope = ROM
+			}
+			remove_dynamic_modifier = {
+				modifier = FRA_magino
+				scope = BUL
 			}
 		}
 	}
@@ -787,6 +644,7 @@ country_event = {
 				promote_leader = yes				
 			}		
 		}
+		
 		name = france.20.a
 	}
 }
