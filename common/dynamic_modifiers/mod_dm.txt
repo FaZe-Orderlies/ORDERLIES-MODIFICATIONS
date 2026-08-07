@@ -239,5 +239,4 @@ FRA_magino = {
 	icon = GFX_modifier_generic_guerilla_base
 
 	army_attack_factor = -3
-
 }

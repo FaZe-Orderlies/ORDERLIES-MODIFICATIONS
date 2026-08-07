@@ -3880,7 +3880,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = GER_expanding_the_luftwaffe
-		cost = 5
+		cost = 10
 		available = {
 		}
 
@@ -8069,7 +8069,7 @@ focus_tree = {
 				HUN = { transfer_state = 664 }
 				
 				add_named_threat = {
-					threat = 3
+					threat = 10
 					name = GER_cze_shavali
 				}
 			}
@@ -8147,7 +8147,7 @@ focus_tree = {
 				POL = { transfer_state = 72 }
 				
 				add_named_threat = {
-					threat = 5
+					threat = 15
 					name = GER_cze_razebalo
 				}
 
@@ -8162,70 +8162,6 @@ focus_tree = {
 			
 		}
 	}
-
-	#Peace For Our Time#
-	focus = { #All related content and local will be in Czech related files and local locations
-		id = GER_integrate_czech_manufacturers
-		icon = GFX_focus_PER_czech_tanks
-		prerequisite = {  focus = GER_fate_of_czechoslovakia }
-
-		x = -2
-		y = 1
-		relative_position_id = GER_fate_of_czechoslovakia
-		cost = 5
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				is_historical_focus_on = no
-				add = 1
-			}
-		}
-
-		available = {
-			9 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_equipment_conversion_speed = 0.05
-				tooltip = equipment_conversion_speed_tt
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				unlock_military_industrial_organization_tooltip = mio:CZE_skoda_works_german_organization
-				mio:CZE_skoda_works_german_organization = {
-					add_mio_size = 2
-					add_mio_funds_gain_factor = 0.25
-				}
-			}
-			else = {
-				custom_effect_tooltip = GER_integrate_czech_manufacturers_no_aat_tt
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				# custom_effect_tooltip = available_industrial_concern
-				# show_ideas_tooltip = CZE_skoda_works_german_manufacturer
-				# custom_effect_tooltip = available_industrial_concern
-				# show_ideas_tooltip = CZE_ceska_zbrojovka_uhersky_brod
-				# custom_effect_tooltip = available_industrial_concern
-				# show_ideas_tooltip = CZE_zlin_aircraft
-				# custom_effect_tooltip = available_industrial_concern
-				# show_ideas_tooltip = CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer
-			}
-		}
-	}
-	#End Peace For Our Time#
 
 	focus = {
 		id = GER_demonstration_of_military_achievements
@@ -8503,33 +8439,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			country_event = {
-				id = news.19
+			transfer_state = 188
+			add_state_core = 188
+			add_named_threat = {
+				threat = 5
+				name = GER_reassert_eastern_claims
 			}
-			hidden_effect = {
-				transfer_state = 188
-				add_state_core = 188
-				188 = {
-					add_claim_by = GER
-				}
-				85 = {
-					add_claim_by = GER
-				}
-				807 = {
-					add_claim_by = GER
-				}
-				86 = {
-					add_claim_by = GER
-				}
-				762 = {
-					add_claim_by = GER
-				}
-				add_named_threat = {
-					threat = 3
-					name = GER_reassert_eastern_claims
-				}
-			}
-
 		}
 	}
 	
@@ -8599,7 +8514,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			add_named_threat = { threat = 20 name = GER_danzig_or_war }
 			if = {
 				limit = {
 					85 = {

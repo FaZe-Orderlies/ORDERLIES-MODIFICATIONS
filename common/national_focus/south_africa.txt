@@ -2478,11 +2478,13 @@
 				SAF_production_factory_max_efficiency_factor_mod = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
+			893 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

@@ -7628,7 +7628,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_first_fighters
-		icon = GFX_perfect_fighter
+		icon = GFX_goal_generic_air_fighter2
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_superiority_in_air }
@@ -7662,7 +7662,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_up_reactive_tech
-		icon = GFX_reactive_dvigatel
+		icon = GFX_SOV_found_the_jet_institute_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_first_fighters }
@@ -7942,7 +7942,7 @@ focus_tree = {
 	focus = {
 		id = USA_bureau_of_ships
 		icon = GFX_goal_generic_build_navy
-		x = 2
+		x = 0
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -7967,7 +7967,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = USA_bureau_of_ships }
 		mutually_exclusive = { focus = USA_carrier_primacy }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
 		cost = 8.7
@@ -8076,7 +8076,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = USA_bureau_of_ships }
 		mutually_exclusive = { focus = USA_battleship_primacy }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
 		cost = 8.7
@@ -8175,131 +8175,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_escort_effort
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = USA_bureau_of_ships }
-		x = 1
-		y = 1
-		relative_position_id = USA_bureau_of_ships
-		cost = 8.7
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = escort_effort_focus
-			
-		}
-	}
-
-	focus = {
-		id = USA_convoy_tactics
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = USA_escort_effort }
-		x = 0
-		y = 1
-		relative_position_id = USA_escort_effort
-		cost = 8.7
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = USA_convoy_tactics
-				cost_reduction = 0.35
-				uses = 2
-				category = convoy_defense_tree
-			}
-		}
-	}
-	focus = {
-		id = USA_fleet_submarines
-		icon = GFX_goal_generic_navy_submarine
-		x = 3
-		y = 1
-		prerequisite = { focus = USA_bureau_of_ships }
-		relative_position_id = USA_bureau_of_ships
-		cost = 8.7
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_special_project_completed = sp:sp_naval_cruiser_submarine
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = USA_fleet_submarines
-				bonus = 1.0
-				uses = 2
-				category = ss_tech
-			}
-
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
-
-			IF = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_ideas = fleet_submarine_specialization_mtg
-			}
-			ELSE = {
-				add_ideas = fleet_submarine_specialization
-			}	
-		}
-	}
-
-	focus = {
-		id = USA_unrestricted_submarine_warfare
-		icon = GFX_goal_generic_wolf_pack
-		x = 3
-		y = 2
-		prerequisite = { focus = USA_fleet_submarines }
-		relative_position_id = USA_bureau_of_ships
-		cost = 8.7
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_unrestricted_submarine_warfare
-		}
-	}
-
-	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
+		x = 3
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5

@@ -4645,7 +4645,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_country_leader_trait = tenacious_negotiator
-
+			add_war_support = 0.05
 			hidden_effect = {
 				if = {
 					limit = {

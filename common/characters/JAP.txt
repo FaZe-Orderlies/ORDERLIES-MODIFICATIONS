@@ -1097,8 +1097,23 @@ characters = {
 			}
 		}
 
-		
+		corps_commander={
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 6
 
+			traits = {
+				organizer
+				panzer_leader
+				ranger
+				urban_assault_specialist
+				hill_fighter
+				trickster
+			}
+			legacy_id=0
+		}
 	}
 
 	# Takaji Muranaka
@@ -1398,13 +1413,7 @@ characters = {
 			maneuvering_skill = 8
 			coordination_skill = 8
 			legacy_id = 0
-			visible = {
-				NOT = {
-					has_country_flag = JAP_yamamoto_shot_down_flag
-				}
-			}
 		}
-
 	}
 
 	# Yuzuru Hiraga
@@ -1988,6 +1997,7 @@ characters = {
                 ranger
                 urban_assault_specialist
                 trickster
+				organizer
             }
 			legacy_id = -1
 		}
