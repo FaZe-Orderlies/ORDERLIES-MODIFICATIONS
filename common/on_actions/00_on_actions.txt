@@ -1044,47 +1044,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					NOT = { has_dlc = "Arms Against Tyranny"} # AAT uses separate system
-					original_tag = DEN
-					any_country = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-						100 = { is_controlled_by = PREV }
-					}
-
-				}
-				country_event = { id = wtt_denmark.1 days = 1 }
-			}
-			if = {
-				limit = {
-					original_tag = FRA
-					has_government = democratic
-					NOT = { has_global_flag = achievement_france_surrender } #might as well use the achievement flag to check if france.10 fired
-					16 = { is_controlled_by = GER } # Don't fire if someone else is the occupier of Paris
-					16 = { is_owned_by = FRA }
-					is_subject = no
-					is_in_faction_with = ENG
-					has_war_with = GER
-				}
-				# Revoke all guarantees
-				every_other_country = {
-					limit = {
-						is_guaranteed_by = ROOT
-					}
-					ROOT = {
-						diplomatic_relation = {
-							country = PREV
-							relation = guarantee
-							active = no
-						}
-					}
-				}
-				country_event = france.10
-			}
-			if = {
-				limit = {
 					original_tag = GER
 					has_government = fascism
 				}
