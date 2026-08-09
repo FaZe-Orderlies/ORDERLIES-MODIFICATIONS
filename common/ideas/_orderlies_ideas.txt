@@ -1,6 +1,16 @@
 ideas = {
 	country = {
-			ITA_Operazione_E_spirit = {
+		orderlies_defeatism = {
+			picture = BEL_the_kings_surrender
+			
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = { surrender_limit = -0.3 }
+		}
+
+		ITA_Operazione_E_spirit = {
 			picture = ITA_impero_italiano
 			allowed = {
 				original_tag = ITA

@@ -8596,25 +8596,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10			
-			modifier = {
-				factor = 0.05
-				date < 1939.1.1
-			}			
-			modifier = {
-				factor = 0.2
-				any_home_area_neighbor_country = {
-					NOT = { tag = FRA }
-					has_war_with = ROOT
-					surrender_progress < 0.5
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
@@ -8622,7 +8603,9 @@ focus_tree = {
 		completion_reward = {
 			declare_war_on = { target = HOL type = take_state_focus } 
 			declare_war_on = { target = BEL type = take_state_focus }
-			declare_war_on = { target = LUX type = take_state_focus } 
+			declare_war_on = { target = LUX type = take_state_focus }
+			
+			hidden_effect = { declare_war_on = { target = INS type = take_state_focus } }
 		}
 	}
 
@@ -8673,146 +8656,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = {
-			
-			
-			declare_war_on = { target = DEN    type = take_state_focus } 
-			declare_war_on = { target = NOR    type = take_state_focus }
+		completion_reward = {	
+			declare_war_on = { target = DEN type = take_state_focus } 
+			declare_war_on = { target = NOR type = take_state_focus }
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
-				division_template = {
-					name = "Штурмовые дивизии" 	
-					division_names_group = FRA_ARM_01
-
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 1 }
-						engineer = { x = 0 y = 0 }
-						anti_tank = { x = 0 y = 2 }
-					}
-				}
-				110 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 6115
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					}
-				}
-				143 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 3022
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				144 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 192
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				142 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 122
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				142 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 53
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				922 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 9296
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				911 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						#prioritize_location = 3335
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				909 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				921 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				920 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				923 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				924 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
-				925 = {
-					create_unit = {
-						division = "name = \"Штурмовые дивизии\" division_template = \"Штурмовые дивизии\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						allow_spawning_on_enemy_provs = yes  
-						count = 2
-					} 
-				}
 			}
 		}
 	}
@@ -9677,9 +9526,11 @@ focus_tree = {
 	
 		completion_reward = {
 			SOV = {
-				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
+			}
+			hidden_effect = {
+				country_event = { id = news.32 }
 			}
 		}
 	}

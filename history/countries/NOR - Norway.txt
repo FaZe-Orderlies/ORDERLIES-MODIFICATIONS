@@ -6,8 +6,8 @@ set_research_slots = 0
 
 add_ideas = {
 	armed_neutrality_for_annex
-	bot_no_play_economy
-	KAP_NOR
+	orderlies_defeatism
+	free_trade
 }
 
 set_stability = 1
