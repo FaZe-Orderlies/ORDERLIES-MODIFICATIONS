@@ -11587,30 +11587,8 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 2
+		x = -5
 		y = 1
-		offset = {
-			x = -7
-			y = 0
-			trigger = { #Basic offset to compensate for missing Bukharinist branch
-				NOT = { has_dlc = "No Step Back" }
-			}
-		}
-		
-		
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
