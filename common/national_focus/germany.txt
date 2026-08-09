@@ -8515,66 +8515,16 @@ focus_tree = {
 		
 		completion_reward = {
 			add_named_threat = { threat = 20 name = GER_danzig_or_war }
-			if = {
-				limit = {
-					85 = {
-						controller = {
-							tag = POL
-							has_civil_war = no
-						}
-					}
-				}
-				
-				POL = {
-					country_event = { id = germany.86 }
-					if = {
-						limit = { NOT = { is_in_faction_with = ROOT } }
-						custom_effect_tooltip = needs_approval
-					}
-					if = {
-						limit = { 
-							is_in_faction_with = ROOT 
-							ROOT = { is_faction_leader = yes }
-						}
-						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_leader
-					}
-					if = {
-						limit = {
-							is_in_faction_with = ROOT 
-							NOT = { ROOT = { is_faction_leader = yes } }
-						}
-						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_noleader
-					}
-				}
-			}
-			if = {
-				limit = {
-					85 = {
-						owner = {
-							OR = {
-								original_tag = POL
-								tag = POL
-							}
-							has_civil_war = yes
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						original_tag = POL
-						has_civil_war = yes
-						OR = {
-							is_in_faction_with = GER
-							has_volunteers_amount_from = {
-								tag = GER
-								count > 0
-							}
-						}
-					}
-					country_event = { id = germany.113 days = 1 }
-				}
-				custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
-			}
+			declare_war_on = { target = POL type = take_state_focus }
+			hidden_effect = {
+				declare_war_on = { target = FRA type = take_state_focus }
+				declare_war_on = { target = ENG type = take_state_focus }
+				declare_war_on = { target = CAN type = take_state_focus }
+				declare_war_on = { target = RAJ type = take_state_focus }
+				declare_war_on = { target = AST type = take_state_focus }
+				declare_war_on = { target = SAF type = take_state_focus }
+			} 
+			
 		}
 	}
 	
@@ -8670,67 +8620,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			if = { 
-				limit = {
-					country_exists = BEL
-					NOT = { BEL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = BEL }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = BEL
-					expire = 0
-					generator = { 6 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = HOL
-					expire = 0
-					generator = { 7 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					HOL = { has_completed_focus = HOL_cave_to_the_germans } 
-					NOT = { HOL = { has_completed_focus = HOL_the_netherlands_first } }
-				}
-				HOL = {
-					country_event = { id = mtg_germany.1 hours = 6 }
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LUX
-					NOT = { LUX = { is_in_faction_with = GER } }
-					NOT = { has_war_with = LUX }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = LUX
-					expire = 0
-					generator = { 8 }
-				}		
-				add_ai_strategy = { 
-					type = conquer
-					id = LUX
-					value = 100
-				}		
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.234 }
-			}
+			declare_war_on = { target = HOL type = take_state_focus } 
+			declare_war_on = { target = BEL type = take_state_focus }
+			declare_war_on = { target = LUX type = take_state_focus } 
 		}
 	}
 
@@ -8750,23 +8642,7 @@ focus_tree = {
 		will_lead_to_war_with = NOR
 
 		available = {
-			date>1939.10.1
-			is_subject = no
-			hidden_trigger = {
-				OR = {
-					AND = {
-						is_ai = yes
-						NOT = { has_country_flag = SWE_GER_avoid_dow_nordics }
-					}
-
-					is_ai = no
-				}
-			}
 			POL = {
-				has_capitulated = yes
-			}
-			
-			FRA = {
 				has_capitulated = yes
 			}
 		}
@@ -8803,8 +8679,6 @@ focus_tree = {
 			declare_war_on = { target = DEN    type = take_state_focus } 
 			declare_war_on = { target = NOR    type = take_state_focus }
 
-			
-			set_technology = { mtg_landing_craft = 1 }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
 				division_template = {

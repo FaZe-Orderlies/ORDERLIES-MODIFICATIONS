@@ -164,12 +164,16 @@ NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
-NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0 
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 
-NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0 -- Скорость перевода генерала в другую армию  - origion
+NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0
 
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 --- Стоимость трейтов
 
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0 -- атташе --- origion
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0 -- Скорость перевода генерала в другую армию
+
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0 -- Избавляемся от безумного штрафа на армию
+
+---DIPLOMACY
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0 -- атташе
 
 ---FLEET 
 NDefines.NAVAL_MINES_IN_REGION_MAX = 0

@@ -286,7 +286,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 12723 
+		location = 4014
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	}
@@ -295,7 +295,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 12723 
+		location = 955
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	}
@@ -339,7 +339,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 13250 
+		location = 6606
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	}
@@ -359,7 +359,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} 
-		location = 13250 
+		location = 6606 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	}
@@ -414,7 +414,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}#  "3a Divisione Alpina 'Julia'" 
-		location = 13250 
+		location = 6606 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	}
@@ -438,7 +438,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}#  "1a Divisione Celere 'Eugenio di Savoia'" 
-		location = 1964 
+		location = 925 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	}
@@ -447,7 +447,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}#  "2a Divisione Celere 'Emanuele Filiberto'" 
-		location = 1964 
+		location = 925 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	}
@@ -456,7 +456,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}#  "3a Divisione Celere 'Principe Amedeo'" 
-		location = 1964 
+		location = 925 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	}
@@ -510,7 +510,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}#  "30a Divisione di Fanteria 'Sabauda'" 
-		location = 13251 
+		location = 11846 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	}
@@ -519,7 +519,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 26
 		}#  "26a Divisione di Fanteria 'Assietta'" 
-		location = 13251 
+		location = 11846
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3 
 	}
@@ -528,13 +528,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}#  "5a Divisione Alpina 'Pusteria'" 
-		location = 12723 
+		location = 3780
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	}
 	division = { # 
 		name = "4a Divisione CC.NN. '3 Gennaio'" 
-		location = 12723 
+		location = 3780
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
@@ -545,7 +545,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}#  "19a Divisione di Fanteria 'Venezia'" 
-		location = 12766 
+		location = 11584
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	}
@@ -554,13 +554,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 24
 		}#  "24a Divisione di Fanteria 'Pinerolo'" 
-		location = 13250 
+		location = 6606 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	}
 	division = { # 
 		name = "3a Divisione CC.NN. '21 Aprile'" 
-		location = 13250
+		location = 6606
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
@@ -571,13 +571,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 27
 		}#  "27a Divisione Autotrasportabile 'Brescia'" 
-		location = 12766 
+		location = 11584
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3 
 	}
 	division = { # 
 		name = "1a Divisione CC.NN. '23 Marzo'" 
-		location = 12766 
+		location = 11584
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
@@ -588,19 +588,19 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}#  "5a Divisione di Fanteria 'Cosseria'" 
-		location = 8043
+		location = 9907
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	}
 	division = { # 
 		name = "2a Divisione CC.NN. '28 Ottobre'" 
-		location = 8043 
+		location = 9907 
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 	division = { # 
 		name = "5a Divisione CC.NN. '1 Febbraio'" 
-		location = 8043 
+		location = 9907 
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
@@ -611,7 +611,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 31
 		}#  "1a Divisione Fanteria Coloniale Eritrea" 
-		location = 13250
+		location = 6606
 		division_template = "Divisione Ascari Eritrea" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
 	}
@@ -620,7 +620,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 32
 		}#  "2a Divisione Fanteria Coloniale Eritrea" 
-		location = 12766 
+		location = 11951
 		division_template = "Divisione Ascari Eritrea" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
 	}
@@ -631,7 +631,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 29
 		}#  "29a Divisione di Fanteria 'Piemonte'" 
-		location = 11014 
+		location = 11837
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	}
@@ -640,7 +640,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}#  "1a Divisione Fanteria Coloniale Libica" 
-		location = 2063 
+		location = 11837 
 		division_template = "Divisione Ascari Libica" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
 	}
@@ -650,13 +650,13 @@ units = {
 		#	is_name_ordered = yes
 		#	name_order = 101
 		#}#  "101a Divisione Fanteria Coloniale Somala" 
-		location = 2020 
+		location = 603 
 		division_template = "Divisione Ascari Somala" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
 	}
 	division = { # 
 		name = "6a Divisione CC.NN. 'Tevere'" 
-		location = 2063 
+		location = 11837 
 		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
@@ -671,7 +671,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 8043 
+		location = 1149
 		division_template = "Banda Irregolare Libica"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -683,7 +683,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 13251 
+		location = 11846 
 		division_template = "Truppe Irregolari a Cavallo"
 		start_experience_factor = 0.1 
 		start_equipment_factor = 0.7
@@ -696,7 +696,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 8043 
+		location = 1149
 		division_template = "Banda Irregolare Eritrea"
 		start_experience_factor = 0.05 
 		start_equipment_factor = 0.7
@@ -708,7 +708,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 12766 
+		location = 11951 
 		division_template = "Banda Irregolare Eritrea"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.7
@@ -721,7 +721,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 2020 
+		location = 603 
 		division_template = "Truppe Irregolari a Cavallo"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -733,7 +733,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 1964 
+		location = 925 
 		division_template = "Banda Irregolare Somala"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -745,7 +745,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} 
-		location = 1964 
+		location = 925 
 		division_template = "Banda Irregolare Somala"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
