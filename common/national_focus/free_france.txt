@@ -355,6 +355,8 @@
 					add_state_core = 677
 					transfer_state = 680
 					add_state_core = 680
+					transfer_state = 799
+					add_state_core = 799
 				}
 			
 			}

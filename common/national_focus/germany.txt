@@ -522,6 +522,21 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+				65 = { #Lower Austria
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				65 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
 					63 = { #Hinterpommern
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
