@@ -196,7 +196,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = SOV_finish_five_year_plan_2IC
@@ -325,7 +325,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -342,7 +342,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -444,8 +444,8 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.10 }
+				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.1}
+				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
 			}
 			if = {
 				limit = {
@@ -460,9 +460,10 @@ focus_tree = {
 
 				add_tech_bonus = {
 					name = SOV_third_five_year_plan_default
-					bonus = 0.75
+					bonus = 1
 					uses = 2
-					category = construction_tech
+					technology = construction4
+					technology = construction3
 				}
 			}
 			else = {
@@ -475,9 +476,10 @@ focus_tree = {
 
 				add_tech_bonus = {
 					name = SOV_third_five_year_plan_alt
-					bonus = 0.75
+					bonus = 1
 					uses = 2
-					category = construction_tech
+					technology = construction_tech3
+					technology = construction_tech4
 				}
 			}
 		}
@@ -531,8 +533,7 @@ focus_tree = {
 						name = SOV_reorganize_the_pc_of_heavy_industry_name_default
 						bonus = 1.0
 						uses = 2
-						technology = improved_machine_tools
-						technology = advanced_machine_tools
+					
 						technology = assembly_line_production
 						technology = concentrated_industry4
 						technology = dispersed_industry4
@@ -643,16 +644,12 @@ focus_tree = {
 		relative_position_id = SOV_third_five_year_plan
 		cost = 5
 
-		available = {
-			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-		}
-		
+	
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
 			#Modify Third Year Plan NS
-			set_variable = { SOV_fyp_local_resources_factor = 0.1 }
+			set_variable = { SOV_fyp_local_resources_factor = 0.15}
 			custom_effect_tooltip = SOV_increase_state_reserves_ns_tt
 
 			custom_effect_tooltip = SOV_increase_state_reserves_silo_tt
@@ -2430,9 +2427,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.2 }
-			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
-			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.3 }
+			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
+			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.15 }
 			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
 
 			custom_effect_tooltip = SOV_night_witches_nsb_tt
@@ -4221,7 +4218,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -4306,8 +4303,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = armor
 			}
 			if = {
@@ -4422,8 +4419,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 5
-
+		cost = 2
 		available = {
 
 		}
@@ -4778,7 +4774,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_means_to_wage_war
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -4799,7 +4795,7 @@ focus_tree = {
 				every_owned_state = {
 					limit = {
 						is_on_continent = asia
-						arms_factory > 2
+						arms_factory > 1
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -4963,7 +4959,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_the_means_to_wage_war
-		cost = 10
+		cost = 5
 		dynamic = yes 
 		available = {
 
@@ -7311,14 +7307,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
-			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
+			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.03 }
+			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.1 } 
+			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.2 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
 			add_political_power = 75
-			add_stability = -0.05
-
+		
 			if = { #Target a rural state with no civs
 				limit = {
 					any_owned_state = {
@@ -11592,7 +11587,7 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -5
+		x = 2
 		y = 1
 		offset = {
 			x = -7
@@ -11738,7 +11733,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 
 		available = {
 
