@@ -12,8 +12,7 @@ state = {
 
 	history = {
 
-		owner = MAL
-		add_core_of = MAL
+		owner = ENG
 
 		victory_points = {
 			7399 1 # Kuantan 

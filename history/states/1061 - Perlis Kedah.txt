@@ -11,8 +11,7 @@ state = {
 
 	history = {
 
-		owner = MAL
-		add_core_of = MAL
+		owner = ENG
 
 		victory_points = {
 			1291 1 # Alor Setar
