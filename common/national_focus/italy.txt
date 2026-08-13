@@ -2420,7 +2420,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_brescia_small_arms_industry
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 159
 		}
@@ -6182,7 +6182,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_ispettorato_dei_mezzi_antisommergibili
-		cost = 10
+		cost = 5
 		available = {
 			if = {
 				limit = {
