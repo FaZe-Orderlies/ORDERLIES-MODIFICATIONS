@@ -231,7 +231,7 @@ ROM_malenki_paris = {
 	enable = { always = yes }
 	icon = GFX_modifiers_generic_city_construction
 
-	local_factories = 0.25
+	local_building_slots_factor = 0.25
 }
 
 FRA_magino = {
