@@ -5898,10 +5898,6 @@ focus_tree = {
 		id = uk_burma_focus
 		prerequisite = { focus = uk_asia_focus } 
 		available = {
-			CHI = { 
-				has_war_with = JAP 
-				NOT = { has_war_with = ENG }
-			}
 			JAP = { NOT = { is_in_faction_with = ENG } }
 		}
 
@@ -5974,29 +5970,6 @@ focus_tree = {
 					}
 				}
 			}
-			325 = {
-				if = {
-					limit = { 
-					OR = { 
-							CHI = { controls_state = 325 }
-							any_other_country = {
-								is_in_faction_with = CHI
-								controls_state = 640
-							} 
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 			601 = {
 				if = {
 					limit = { 
@@ -6028,23 +6001,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				unlock_decision_tooltip = CHI_expand_the_burma_road
-			}
-			CHI = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
-				country_event = britain.4
-			}
-			YUN = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
-				country_event = britain.5
-			}
-			JAP = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_bad } 
-			} 
 		}
 	}
 
@@ -6365,189 +6321,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_royal_malay_regiment_focus
-
-		prerequisite = { focus = singapore_focus }
-
-		icon = GFX_focus_generic_manpower
-
-		x = -1
-		y = 1
-		relative_position_id = singapore_focus
-
-		mutually_exclusive = { focus = ENG_territorial_army_of_malaysia_focus }
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}	
-
-		available = {
-			MAL = {
-				any_core_state = {
-					is_controlled_by = ROOT
-				}
-			}
-		}
-
-		available_if_capitulated = no
-
-		bypass = {
-			NOT = {
-				MAL = {
-					any_core_state = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				has_subject = MAL 
-			}
-		}
-
-		completion_reward = {
-
-			army_experience = 15
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			hidden_effect = {
-
-				delete_unit_template_and_units = {
-					division_template = "Royal Malay Regiment"
-					disband = yes #if yes, will refund equipment/manpower.
-				}
-
-				division_template = {
-					name = "Royal Malay Regiment"
-					division_names_group = ENG_INF_01
-					role = garrison
-					is_locked = no
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-					}
-				}
-
-			}
-
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = MAL
-					is_fully_controlled_by = ROOT
-				}
-				create_unit = {
-				    division = "name = \"1st Royal Malay Regiment\" division_template = \"Royal Malay Regiment\" start_experience_factor = 0.3 start_equipment_factor = 0.95"
-				    owner = ROOT
-				}
-				create_unit = {
-				    division = "name = \"2nd Royal Malay Regiment\" division_template = \"Royal Malay Regiment\" start_experience_factor = 0.3 start_equipment_factor = 0.95"
-				    owner = ROOT
-				}
-			}
-
-		}
-
-	}
-
-	focus = {
-		id = ENG_territorial_army_of_malaysia_focus
-
-		prerequisite = { focus = singapore_focus }
-
-		icon = GFX_focus_RAJ_indian_gurkhas
-
-		x = 1
-		y = 1
-		relative_position_id = singapore_focus
-
-		mutually_exclusive = { focus = ENG_royal_malay_regiment_focus }
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}	
-
-		available = {
-			has_subject = MAL
-		}
-
-		available_if_capitulated = no
-
-		bypass = {
-			NOT = {
-				has_subject = MAL 
-			}
-		}
-
-		completion_reward = {
-
-			MAL = {
-				add_autonomy_score = { 
-					value = 150
-					localization = ENG_territorial_army_of_malaysia_focus
-				}	
-				army_experience = 50 
-				add_manpower = 10000
-			}
-
-			IF = {
-				limit = {
-					MAL = {
-						has_idea = MAL_ketuanan_melayu
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				MAL = {
-					remove_ideas = MAL_ketuanan_melayu
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					MAL = {
-						has_idea = MAL_ketuanan_melayu_2
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				MAL = {
-					remove_ideas = MAL_ketuanan_melayu_2
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					MAL = {
-						has_idea = MAL_ketuanan_melayu_3
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				MAL = {
-					remove_ideas = MAL_ketuanan_melayu_3
-				}
-			}
-
-		}
-
-	}
-
-	focus = {
 		id = peninsular_focus
-		prerequisite = { focus = ENG_royal_malay_regiment_focus focus = ENG_territorial_army_of_malaysia_focus }
+		prerequisite = { focus = singapore_focus }
 		icon = GFX_goal_generic_construction2
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = ENG_royal_malay_regiment_focus
+		relative_position_id = singapore_focus
 		cost = 2
 		ai_will_do = {
 			factor = 1
@@ -7005,7 +6784,7 @@ focus_tree = {
 		icon = GFX_focus_generic_air_bases
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = hongkong_focus
 
 		cost = 2

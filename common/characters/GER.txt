@@ -667,7 +667,20 @@ characters = {
 				small = GFX_portrait_GER_georghans_reinhardt_small
 			}
 		}
-		
+		advisor={
+			slot = high_command
+			idea_token = georghans_reinhardt
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 	GER_kurt_student = {

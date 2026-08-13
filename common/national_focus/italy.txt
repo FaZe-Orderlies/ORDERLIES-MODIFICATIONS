@@ -3362,14 +3362,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_superesercito
 		cost = 10
-		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = basic_medium_tank_chassis
-			}
-		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
@@ -5525,21 +5517,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 5
-		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_tech = improved_ship_hull_light
-				has_tech = sonar
-				#has_tech = improved_ship_torpedo_launcher #Granting it anyways
-				#has_tech = improved_depth_charges #Granting it anyways
-			}
-			else = {
-				has_tech = improved_destroyer
-			}
-			has_tech = cavity_magnatron
-		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
@@ -7190,7 +7167,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = ITA_culto_del_duce }
 
-		x = 6
+		x = 5
 		y = 2
 		relative_position_id = ITA_culto_del_duce
 
@@ -7665,7 +7642,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 14
+		x = 12
 		y = 1
 		
 		
@@ -7823,15 +7800,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_balkan_ambition
 		cost = 5
-
-		bypass = {
-			is_in_faction = yes
-			is_in_faction_with = GER
-		}
-
-		available = {
-			
-		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 

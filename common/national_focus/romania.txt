@@ -973,7 +973,12 @@ focus_tree = {
 				name = ROM_civil_works
 				bonus = 1.0
 				uses = 3
-				category = industry
+				technology = dispersed_industry2
+				technology = concentrated_industry2
+				technology = dispersed_industry3
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry4
 			}
 		}
 	}

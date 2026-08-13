@@ -15846,12 +15846,6 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
-				}
-				FRA = { country_event = DOD_hungary.140 }
-			}
-			IF = {
-				limit = {
 					NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } }
 				}
 				ROM = { country_event = DOD_hungary.140 }
