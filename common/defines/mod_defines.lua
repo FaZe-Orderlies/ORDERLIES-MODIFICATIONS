@@ -28,12 +28,11 @@ NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1.0
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 
 ---дропы
-NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 25 ---старые дропы
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 ---стартовое кол дивизией,доступные для дропа
-
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 25 -- старые дропы
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- стартовое кол дивизией,доступные для дропа
 
 ---Фокусы 70 дней
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35 ---засол фокуса
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35 -- засол фокуса
 
 ---Общее
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 9999999
@@ -42,11 +41,17 @@ NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1 
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 100---лимит на фильда
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 500---лимит на гена
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 999 -- лимит на фильда
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 999 -- лимит на гена
+
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.175 -- Маленькая река [feels.]
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.225 -- Большая река
+
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.125 -- Скорость пересечения маленькой реки
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.2 -- Скорость пересечения большой реки
 
 ---Макс военнок на 1 линию продакшена
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 500
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 999
 
 ---Кол. верфей,которые можно поставить на производство корабля
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150
@@ -106,7 +111,8 @@ NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0
 
 ---Саплай
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5  ---скорость включения ждшки
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 1 --скорость включения ждшки
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 1;
 
 ---АГЕНСТВО
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 999 ---цивки,необходимые на создание агенства

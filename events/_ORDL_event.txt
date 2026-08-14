@@ -160,10 +160,12 @@ news_event = {
 
     trigger = {
         date > 1940.7.2
+		NOT = { has_global_flag = bessarabia_transfered_flag }
     }
 
     immediate = {
         hidden_effect = {
+			set_global_flag = bessarabia_transfered_flag
             SOV = {
                 transfer_state = 78
                 transfer_state = 766
@@ -198,6 +200,8 @@ news_event = {
 		}
 		NOT = { has_global_flag = sov_cap_flag }
 	}
+
+	fire_only_once = no
 	
 	immediate = {	
 		hidden_effect = {
