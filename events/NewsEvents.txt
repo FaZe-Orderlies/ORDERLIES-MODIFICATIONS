@@ -1091,7 +1091,29 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-				FRA = { 
+			28 = {
+				remove_dynamic_modifier = {
+					modifier = FRA_magino
+					scope = GER
+				}
+				remove_dynamic_modifier = {
+					modifier = FRA_magino
+					scope = ITA
+				}
+				remove_dynamic_modifier = {
+					modifier = FRA_magino
+					scope = HUN
+				}
+				remove_dynamic_modifier = {
+					modifier = FRA_magino
+					scope = ROM
+				}
+				remove_dynamic_modifier = {
+					modifier = FRA_magino
+					scope = BUL
+				}
+			}
+			FRA = { 
 				set_cosmetic_tag = FRA_FREE 
 				if = {
 					limit = {
@@ -1226,28 +1248,6 @@ news_event = {
 					every_navy_leader = {
 						set_nationality = PREV.PREV
 					}
-				}
-			}
-			26 = {
-				remove_dynamic_modifier = {
-					modifier = FRA_magino
-					scope = GER
-				}
-				remove_dynamic_modifier = {
-					modifier = FRA_magino
-					scope = ITA
-				}
-				remove_dynamic_modifier = {
-					modifier = FRA_magino
-					scope = HUN
-				}
-				remove_dynamic_modifier = {
-					modifier = FRA_magino
-					scope = ROM
-				}
-				remove_dynamic_modifier = {
-					modifier = FRA_magino
-					scope = BUL
 				}
 			}
 			every_state = {

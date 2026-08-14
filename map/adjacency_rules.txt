@@ -11,6 +11,319 @@
 #
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
+
+adjacency_rule =
+{
+	name = "SOUTH_JAPAN"
+	
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 10092 7046 }
+	
+	icon = 7046
+}
+
+adjacency_rule =
+{
+	name = "EAST_JAPAN"
+	
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 9859 3962 }
+	
+	icon = 3962
+}
+
+adjacency_rule =
+{
+	name = "EAST_NORTH_JAPAN"
+	
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 13037 1515 1399 }
+	
+	icon = 1515
+}
+
+adjacency_rule =
+{
+	name = "WEST_JAPAN"
+	
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 1025 4056 10011 }
+	
+	icon = 10011
+}
+
+
+adjacency_rule =
+{
+	name = "BAB_EL_MANDEB"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 4985 5074 }
+	
+	icon = 2776
+	offset = { -17 0 15 }
+}
+
+adjacency_rule =
+{
+	name = "TOBRUK_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 1130 9992 }
+	
+	icon = 1130	
+	offset = { -30.0 0.0 55.0 }
+}
+
+adjacency_rule =
+{
+	name = "TUNIS_SICILIA"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 11969 }
+	
+	icon = 11969	
+	offset = { 25.0 0.0 10.0 }
+}
+
+adjacency_rule =
+{
+	name = "MESSINA"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 4159 9990 }
+	
+	icon = 4159	
+	offset = { 6.0 -2.0 2.0 }
+}
+
 #Suez Canal
 adjacency_rule =
 {
@@ -105,11 +418,16 @@ adjacency_rule =
 {
 	name = "DANISH_BELTS_STRAIT"
 
+	is_friend = {
+		original_tag = SOV
+		has_war = no
+	}
+
 	contested =
 	{
 		army = no
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = no
 	}
 	enemy =
@@ -128,15 +446,15 @@ adjacency_rule =
 	}
 	neutral =
 	{
-		army = yes
-		navy = yes
-		submarine = yes
+		army = no
+		navy = no
+		submarine = no
 		trade = yes
 	}
 	
-	required_provinces = { 6287 3277 3325 3260 394 }
+	required_provinces = { 394 }
 	
-	icon = 2431
+	icon = 394
 	offset = { -2 0 -7 }
 }
 

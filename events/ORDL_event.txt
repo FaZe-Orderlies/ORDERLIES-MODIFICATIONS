@@ -177,76 +177,10 @@ news_event = {
     }
 }
 
-news_event = {
-    id = orderlies.6
-    hidden = yes
-	is_triggered_only = yes
-	
-	immediate = {
-	   	SOV = {	set_equipment_fraction = 0.0 }
-	}
-	
-	mean_time_to_happen = { days = 1 }
-}
-
-news_event = {
-   	id = orderlies.7
-	title = orderlies.7.t
-	desc = orderlies.7.d
-	picture = GFX_news_event_generic_anglo_iraqi_war_1
-
-    major = yes
-
-    hidden = yes
-
-    fire_only_once = no
-
-    trigger = {
-        FRA = {
-            surrender_progress >0.80
-        }
-        NOT = {
-            has_global_flag = sov_cap_flag
-        }
-    }
-
-    immediate = {
-        set_global_flag = sov_cap_flag
-        SOV = {
-            country_event = {
-                id = orderlies.7
-                days = 1
-            }
-        }
-        SOV = {
-            country_event = {
-                id = orderlies.7
-                days = 2
-            }
-        }
-        SOV = {
-            country_event = {
-                id = orderlies.7
-                days = 3
-            }
-        }
-        SOV = {
-            country_event = {
-                id = orderlies.7
-                days = 4
-            }
-        }
-        country_event = {
-            id =  orderlies.8
-            days = 5
-        }
-    }
-}
-
 news_event = { 
-	id = orderlies.8
-	title = orderlies.8.t
-	desc = orderlies.8.d
+	id = orderlies.6
+	title = orderlies.6.t
+	desc = orderlies.6.d
 	picture = GFX_news_event_GER_bombers
 	major = yes
 	
@@ -407,7 +341,7 @@ news_event = {
 	}
 	
 	option = {
-		name = orderlies.8.a
+		name = orderlies.6.a
 	}
 	
 	mean_time_to_happen = { days = 2 }
