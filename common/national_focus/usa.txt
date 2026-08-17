@@ -6134,12 +6134,10 @@ focus_tree = {
 					transfer_state = 462
 				}
 				GER = {
-					annex_country = { target = D04
+					annex_country = { target = D01
 						transfer_troops = yes 
 					}
-				}
-
-				
+				}				
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			news_event = { id = news.1000 days = 0 }

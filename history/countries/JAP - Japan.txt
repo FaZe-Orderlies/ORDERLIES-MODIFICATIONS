@@ -314,7 +314,6 @@ add_ideas = {
 
 	#Hidden Ideas
 	JAP_separate_air_services
-	JAP_japanese_armor_doctrine
 }
 
 IF = {

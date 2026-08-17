@@ -1763,7 +1763,7 @@ characters = {
 				}
 
 				traits = {
-					army_armored_1
+					army_armored_2
 				}
 
 				cost =  50
@@ -1808,7 +1808,7 @@ characters = {
 				}
 
 				traits = {
-					army_armored_1
+					army_armored_2
 				}
 
 				cost =  50

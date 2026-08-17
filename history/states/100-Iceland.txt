@@ -15,8 +15,6 @@ state = {
 				naval_base = 1
 			}
 		}
-		# add_core_of = DEN
-		add_core_of = DEN
 	}
 	provinces = {
 		4861 12674 12689 13266 13267 13268 13271

@@ -8,7 +8,7 @@ template_decisions = {
         fire_only_once = yes
         complete_effect = {
             division_template = {
-                name = "2шф"
+                name = "2W"
                 regiments = {
                     infantry = { x = 0 y = 0 }
                 }
@@ -16,7 +16,7 @@ template_decisions = {
         }
     }
 
-    convert_36w_decision = {
+    convert_40w_decision = {
         icon = GFX_decision_generic_army_support
         allowed = { always = yes }
         available = { is_ai = no }
@@ -24,12 +24,12 @@ template_decisions = {
         fire_only_once = yes
         complete_effect = {
             division_template = {
-                name = "конверт"
+                name = "Convert"
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 0 y = 3 } infantry = { x = 0 y = 4 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 1 y = 3 } infantry = { x = 1 y = 4 }
                     infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } infantry = { x = 2 y = 3 } infantry = { x = 2 y = 4 }
-                    infantry = { x = 3 y = 0 } infantry = { x = 3 y = 1 } infantry = { x = 3 y = 2 }
+                    infantry = { x = 3 y = 0 } infantry = { x = 3 y = 1 } infantry = { x = 3 y = 2 } infantry = { x = 3 y = 3 } infantry = { x = 3 y = 4 }
                 }
             }
         }
@@ -43,7 +43,7 @@ template_decisions = {
         fire_only_once = yes
         complete_effect = {
             division_template = {
-                name = "50шф"
+                name = "50W"
                regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 0 y = 3 } infantry = { x = 0 y = 4 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 1 y = 3 } infantry = { x = 1 y = 4 }
@@ -55,8 +55,64 @@ template_decisions = {
         }
     }
 
+    40w_decision = {
+        icon = GFX_decision_generic_tank
+        allowed = { always = yes }
+        available = { is_ai = no }
+        visible = { }
+        fire_only_once = yes
+        complete_effect = {
+            division_template = {
+                name = "Tank «Default» 40W"
+                regiments = {
+					medium_armor = { x = 0 y = 0 }  medium_tank_destroyer_brigade = { x = 1 y = 0 } medium_tank_destroyer_brigade = { x = 2 y = 0 } mechanized = { x = 3 y = 0 } mechanized = { x = 4 y = 0 }
+					medium_armor = { x = 0 y = 1 }  medium_tank_destroyer_brigade = { x = 1 y = 1 } medium_tank_destroyer_brigade = { x = 2 y = 1 } mechanized = { x = 3 y = 1 } mechanized = { x = 4 y = 1 }
+					medium_armor = { x = 0 y = 2 }  medium_tank_destroyer_brigade = { x = 1 y = 2 } medium_tank_destroyer_brigade = { x = 2 y = 2 } mechanized = { x = 3 y = 2 } mechanized = { x = 4 y = 2 }
+					medium_armor = { x = 0 y = 3 }  medium_tank_destroyer_brigade = { x = 1 y = 3 } medium_tank_destroyer_brigade = { x = 2 y = 3 } mechanized = { x = 3 y = 3 } mechanized = { x = 4 y = 3 }																								
+				}
+                support = {
+                    assault_engineer = { x = 0 y = 0 }
+					light_tank_recon = { x = 0 y = 1 }		
+					medium_flame_tank = { x = 0 y = 2 }
+					field_hospital = { x = 0 y = 3 }
+					armored_signal = { x = 0 y = 4 }
+                }
+                regimental_support = {
+                    medium_tank_destroyer_support = { x = 0 y = 0 }
+                    medium_tank_destroyer_support = { x = 0 y = 1 }
+                    medium_tank_destroyer_support = { x = 0 y = 2 }
+                    anti_air_battery = { x = 0 y = 3 }
+                    anti_air_battery = { x = 0 y = 4 }
+                }		
+            }
+            division_template = {
+                name = "Tank «Amphibious» 40W"
+                regiments = {
+					amphibious_medium_armor = { x = 0 y = 0 }  amphibious_medium_armor = { x = 1 y = 0 } amphibious_medium_armor = { x = 2 y = 0 } amphibious_mechanized = { x = 3 y = 0 } amphibious_mechanized = { x = 4 y = 0 }
+					amphibious_medium_armor = { x = 0 y = 1 }  amphibious_medium_armor = { x = 1 y = 1 } amphibious_medium_armor = { x = 2 y = 1 } amphibious_mechanized = { x = 3 y = 1 } amphibious_mechanized = { x = 4 y = 1 }
+					amphibious_medium_armor = { x = 0 y = 2 }  amphibious_medium_armor = { x = 1 y = 2 } amphibious_medium_armor = { x = 2 y = 2 } amphibious_mechanized = { x = 3 y = 2 } amphibious_mechanized = { x = 4 y = 2 }
+					amphibious_medium_armor = { x = 0 y = 3 }  amphibious_medium_armor = { x = 1 y = 3 } amphibious_medium_armor = { x = 2 y = 3 } amphibious_mechanized = { x = 3 y = 3 } amphibious_mechanized = { x = 4 y = 3 }																								
+				}
+                support = {
+                    pioneer_support = { x = 0 y = 0 }
+					light_tank_recon = { x = 0 y = 1 }		
+					medium_flame_tank = { x = 0 y = 2 }
+					field_hospital = { x = 0 y = 3 }
+					anti_air = { x = 0 y = 4 }
+                }
+                regimental_support = {
+                    medium_tank_destroyer_support = { x = 0 y = 0 }
+                    medium_tank_destroyer_support = { x = 0 y = 1 }
+                    medium_tank_destroyer_support = { x = 0 y = 2 }
+                    anti_air_battery = { x = 0 y = 3 }
+                    anti_air_battery = { x = 0 y = 4 }
+                }		
+            }
+        }
+    }
+
     ispanka = {
-		icon = generic_army_support
+		icon = GFX_decision_revolt
 		
 		custom_cost_trigger = {
 			command_power > 49
@@ -83,7 +139,7 @@ template_decisions = {
 	}
 
     KITAI_attache = {
-		icon = generic_army_support
+		icon = GFX_decision_revolt
 		
 		custom_cost_trigger = {
 			command_power > 49
