@@ -19,7 +19,7 @@ state={
 			9262 = {
 				naval_base = 1
 			}
-			industrial_complex = 4
+			industrial_complex = 1
 			dockyard = 1
 		}
 	}
@@ -31,5 +31,5 @@ state={
 	local_supplies=5.0 
 	manpower=315500
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }
