@@ -5,7 +5,7 @@ state = {
 	resources = {
 		#oil = 3 # was: 4 - The only oil on Sakhalin seem to have been in the northern part, held by Soviet
 		coal = 2 #initial distribution
-		oil = 63
+		oil = 115
 	}
 	
 	state_category = rural

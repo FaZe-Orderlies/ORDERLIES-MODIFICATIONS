@@ -1041,8 +1041,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_dockyard_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
 				war_support_weekly = 0.001
 			}
 		}
@@ -2928,8 +2928,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = -0.2
-				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -2948,8 +2946,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = -0.2
-				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.05
 				production_speed_rail_way_factor = 0.15
 				production_speed_supply_node_factor = 0.15
@@ -2970,8 +2966,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = -0.2
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.05
 				production_speed_rail_way_factor = 0.15
 				production_speed_supply_node_factor = 0.15
@@ -3026,8 +3021,8 @@ ideas = {
 				production_speed_facility_factor = 0.15
 				special_project_speed_factor = 0.1
 
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 

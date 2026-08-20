@@ -7668,6 +7668,86 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ITA_balkan_ambition_custom
 			hidden_effect = {
+			104 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 104
+					}
+				}
+			}
+			804 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 804
+					}
+				}
+			}
+			105 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 105
+					}
+				}
+			}
+			970 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 970
+					}
+				}
+			}
+			106 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 106
+					}
+				}
+			}
+			185 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 185
+					}
+				}
+			}
+			47 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 47
+					}
+				}
+			}
+			186 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 186
+					}
+				}
+			}
+			187 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 187
+					}
+				}
+			}
+			184 = {
+				owner = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 184
+					}
+				}
+			}
 				ITA = {
 					transfer_state = 853
 					transfer_state = 103

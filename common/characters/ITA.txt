@@ -177,6 +177,20 @@ characters = {
 			}
 		}
 
+		advisor = {
+			slot = high_command
+			cost = 150
+			idea_token = ITA_rodolfo_graziani
+			ledger = army
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_armored_3
+			}
+
+		}
+
 		corps_commander = {
 			skill = 6
             attack_skill = 6
@@ -1023,9 +1037,6 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_completed_focus = ITA_a_bandits_war
-			}
 			traits = {
 				army_chief_maneuver_2
 			}
@@ -1331,30 +1342,6 @@ characters = {
 				small = GFX_portrait_ITA_achille_starace_small
 			}
 		}
-
-		advisor = {
-			slot = high_command
-			idea_token = ITA_achille_starace
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-				NOT = { has_completed_focus = ITA_disband_the_blackshirts }
-				has_completed_focus = ITA_army_leaders
-			}
-			traits = {
-				army_logistics_1 # Blackshirt related trait instead?
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 	}
 
 
@@ -1503,11 +1490,8 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
 			traits = {
-				army_regrouping_1
+				army_regrouping_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -1853,31 +1837,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = army_chief
-			idea_token = ITA_giovanni_duca
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
-				}
-			}
-			traits = {
-				army_chief_drill_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		
 		corps_commander = {
 			traits = { militias_officer infantry_officer hill_fighter } #Regno del Sud
 			skill = 2
@@ -2184,33 +2143,7 @@ characters = {
 				large = GFX_portrait_ITA_randolfo_pacciardi
 			}
 		}
-		
-		advisor = {
-			slot = high_command
-			idea_token = ITA_randolfo_pacciardi
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				OR = {
-					has_government = communism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-			}
-			cost = 50
-			traits = {
-				army_regrouping_2 
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
-		}
-
+	
 		corps_commander = {
 			traits = { politically_connected skilled_staffer infantry_officer } #SCW + Partisan Commander
 			skill = 1

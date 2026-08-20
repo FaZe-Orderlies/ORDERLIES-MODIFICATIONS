@@ -320,7 +320,7 @@ IF = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	
 }
 
 
@@ -922,7 +922,7 @@ JAP_isoroku_yamamoto = {
 		limit = {
 			has_dlc = "Man the Guns"
 		}
-		remove_ideas = MTG_naval_treaty_adherent
+		
 	}
 
 	complete_national_focus = JAP_sea_purge_the_kodoha_faction

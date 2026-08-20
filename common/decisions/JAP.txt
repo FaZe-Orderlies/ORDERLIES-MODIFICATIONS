@@ -2770,44 +2770,6 @@ political_actions = {
 
 operations = {
 	
-	# Tora! Tora! Tora!
-	JAP_tora_tora_tora = {
-		
-		allowed = {
-			original_tag = JAP
-		}
-
-		icon = decision_generic_naval
-
-		available = {
-			OR = {
-				has_war_with = HOL
-				has_war_with = ENG
-				has_war_with = USA
-				has_war_with = FRA
-			}
-		}
-
-		is_good = no
-	
-		fire_only_once = yes
-	
-		days_mission_timeout = 180
-	
-		activation = {
-			has_completed_focus = JAP_strike_the_southern_road 
-		}
-		
-		visible = {
-			has_completed_focus = JAP_strike_the_southern_road
-		}
-	
-		complete_effect = {
-			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
-		}
-	}
-
-
 	# First border incident
 	JAP_test_the_soviets = {
 		icon = border_war

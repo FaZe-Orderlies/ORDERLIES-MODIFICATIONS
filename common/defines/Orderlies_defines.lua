@@ -178,6 +178,10 @@ NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0 -- Скор
 
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0 -- Избавляемся от безумного штрафа на армию
 
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.375 -- было 0.5, -25%
+NDefines.NAir.FUEL_COST_MULT = 0.2625 -- было 0.35, -25%
+NDefines.NNavy.FUEL_COST_MULT = 0.05 -- было 0.1, -50%
+
 ---DIPLOMACY
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0 -- атташе
 

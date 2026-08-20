@@ -660,7 +660,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				army_armored_2
+				army_armored_3
 			}
 			cost = 100
 			ai_will_do = {

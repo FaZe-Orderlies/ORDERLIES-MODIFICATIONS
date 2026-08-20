@@ -1323,6 +1323,12 @@ ideas = {
 				naval_strike_attack_factor = 0.12
 				naval_strike_targetting_factor = 0.12
 				naval_strike_agility_factor = 0.12
+				army_attack_factor = 0.10
+				naval_torpedo_cooldown_factor = -0.40
+				navy_screen_attack_factor = 0.20
+				navy_capital_ship_attack_factor = 0.20
+				naval_speed_factor = 0.20
+				navy_visibility = -0.25
 			}
 		}
 

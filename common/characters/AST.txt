@@ -778,14 +778,14 @@ characters={
 
 			advisor = {
 				slot = high_command
-				cost = 50
+				cost = 100
 				idea_token = AST_john_northcott
 				ledger = army
 				allowed = {
 					original_tag = AST
 				}
 				traits = {
-					army_armored_1
+					army_armored_3
 				}
 
 				ai_will_do = {

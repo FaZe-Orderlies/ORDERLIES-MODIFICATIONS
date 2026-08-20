@@ -59,7 +59,6 @@ news_event = {
             has_global_flag = ALLIES_win_africa
         } 
         north_africa_has_been_fallen = yes
-        has_global_flag = AXIS_win_africa
     }
 
     immediate = {

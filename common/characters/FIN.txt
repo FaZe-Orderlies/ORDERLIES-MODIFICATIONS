@@ -133,6 +133,20 @@ characters = {
 				base = 1.000
 			}
 		}
+
+		advisor = {
+			slot = high_command
+			cost = 150
+			idea_token = FIN_carl_mannerheim
+			ledger = army
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				army_armored_3
+			}
+		}
+		
 	}
 
 	FIN_erik_heinrichs = {
@@ -804,19 +818,6 @@ characters = {
 			army = {
 				large = GFX_portrait_FIN_karl_lennart_oesch
 				small = GFX_portrait_FIN_karl_oesch_small
-			}
-		}
-
-		corps_commander = {
-			traits = { jaeger inflexible_strategist career_officer organizer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id = -1
-			visible = {
-				NOT = { has_government = communism }
 			}
 		}
 

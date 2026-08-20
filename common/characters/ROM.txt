@@ -127,6 +127,22 @@ characters={
             }
 			legacy_id=-1
 		}
+		advisor = {
+			slot = high_command
+			cost = 100
+			idea_token = ROM_petre_dumitrescu
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_armored_2
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	ROM_ioan_mihail_racovita={

@@ -181,7 +181,8 @@ if = {
 		basic_dp_light_battery = 1
 		#cruiser_submarines = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	
+	
 }
 
 
@@ -371,8 +372,6 @@ add_mastery = {
 			basic_heavy_battery = 1
 			improved_ship_torpedo_launcher = 1
 		}
-		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 	if = {
 		limit = {

@@ -293,6 +293,19 @@ characters = {
             }
 			legacy_id = 1205
 		}
+		advisor = {
+			slot = high_command
+			cost = 100
+			idea_token = BUL_ivan_markov
+			ledger = army
+			allowed = {
+					original_tag = BUL
+			}
+			traits = {
+				army_armored_2
+			}
+		}	
+			
 	}
 
 	BUL_georgi_markov = {
