@@ -244,7 +244,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event =  USA_conngress_war.1
+			swap_ideas = {
+				remove_idea = undisturbed_isolation_TWO
+				add_idea = undisturbed_isolation_three
+			}
 		}
 	}
 	
@@ -5848,7 +5851,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walter_krueger
-			unlock_decision_category_tooltip = USA_war_plans
 		}
 	}
 	focus = {
@@ -6118,12 +6120,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				USA_create_joe_savoldi_operative = yes
-			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = USA_TORCH
@@ -6147,8 +6143,6 @@ focus_tree = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = USA_war_plans_division }
-		available = {
-		}
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -6156,7 +6150,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_war_plans_division
-		cost = 8.7
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -6561,19 +6555,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			if = {
-				limit = {
-					threat < 0.5
-					has_war = no
-				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
-		}
 		
 		bypass = {
 
@@ -6584,6 +6565,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_war_support = 0.10
 			if = {
 				limit = {
 					OR = {
@@ -6994,10 +6976,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			congress_medium_support_trigger = yes
 		}
 		
 		bypass = {
@@ -7783,21 +7761,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			if = {
-				limit = {
-					threat < 0.5
-					has_war = no
-				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
-			controls_state = 378
-			controls_state = 358
 		}
 		
 		bypass = {

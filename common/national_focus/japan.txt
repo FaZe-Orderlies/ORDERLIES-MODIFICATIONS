@@ -13610,7 +13610,10 @@ focus_tree = {
 				declare_war_on = { target = USA type = take_state_focus }
 				declare_war_on = { target = INS type = take_state_focus }
 				declare_war_on = { target = MAL type = take_state_focus }
-				add_ideas = JAP_tora_tora_tora_idea
+				add_timed_idea = {
+					idea = JAP_tora_tora_tora_idea
+					days = 180
+				}
 			}
 			
 		}

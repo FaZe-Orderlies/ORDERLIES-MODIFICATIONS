@@ -295,44 +295,6 @@ country_event = {
 
 add_namespace = USA_conngress_war
 
-country_event = {
-    id = USA_conngress_war.1
-    title = USA_conngress_war.1t
-    desc = USA_conngress_war.1d
-    picture = GFX_report_event_china_politicians_captured
-
-    is_triggered_only = yes
-
-    option = {
-        name = USA_conngress_war.a
-		USA_congress_medium_opposition = yes
-		custom_effect_tooltip = generic_skip_one_line_tt
-		
-		custom_effect_tooltip = USA_more_effective_isolation_tt
-		custom_effect_tooltip = generic_skip_one_line_tt
-		swap_ideas = {
-			remove_idea = undisturbed_isolation_TWO
-			add_idea = undisturbed_isolation_three
-		}
-		hidden_effect = {
-			country_event = {
-				id = USA_conngress_war_effective.1
-				days = 180
-			}
-		}
-    }
-	
-	option = {
-        name = USA_conngress_war.b
-        add_stability = 0.15
-		custom_effect_tooltip = generic_skip_one_line_tt
-		swap_ideas = {
-			remove_idea = undisturbed_isolation_TWO
-			add_idea = undisturbed_isolation_three
-		}
-    }
-}
-
 add_namespace = my_news_event_USA
 news_event = {
     id = my_news_event_USA.1
