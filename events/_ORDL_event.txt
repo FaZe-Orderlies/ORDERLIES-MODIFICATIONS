@@ -338,6 +338,7 @@ news_event = {
 				transfer_state = 215
 				transfer_state = 213
 				transfer_state = 146
+				transfer_state = 147
 			}
 		}
 	}
