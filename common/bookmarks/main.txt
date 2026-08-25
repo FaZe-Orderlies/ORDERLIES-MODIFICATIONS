@@ -16,9 +16,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_invite_communist_ministers
-				FRA_utilize_the_leagues
-				FRA_je_suis_la_deluge
+				FRA_french_union
+				FRA_army_reform
+				FRA_devalue_the_franc
 			}
 		}
 		"USA"={
@@ -45,8 +45,8 @@ bookmarks = {
 			}
 			focuses = {
 				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
+				ENG_military_training_act
+				ENG_chiefs_of_staff_committee
 			}
 		}
 
