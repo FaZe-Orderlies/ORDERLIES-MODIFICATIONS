@@ -1,4 +1,6 @@
 ﻿l_english:
+ construction_speed_open_tt:0 "§HConstruction Speed Overview§!\nShows per-building construction speed bonuses on the vanilla construction panel."
+
 TPT_WAR_TT:0 "§HDeclaration of war§!\nThe selected countries will start a war.\n\n"
 TPT_WAR_DELAYED:0 ""
 remove_FIX_XP_TT:0 "§HRemove 25 Army Experience§!"

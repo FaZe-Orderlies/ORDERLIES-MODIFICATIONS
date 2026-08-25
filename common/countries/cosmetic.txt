@@ -1283,8 +1283,8 @@ COG_belgian_congo = {
 }
 
 HUN_GREATER = {
-	color = rgb { 204 102 0 }
-	color_ui = rgb { 128 64 0 }
+	color = rgb { 152  85  92 }
+	color_ui = rgb { 152  85  92 }
 }
 
 HUN_GREATER_COMMUNIST_STATE = {
