@@ -630,7 +630,7 @@ GER_army_modifier = { #Army NS
 	#army_armor_attack_factor = GER_military_army_armor_attack_factor
 	#army_armor_speed_factor = GER_military_army_armor_speed_factor
 	#org_loss_when_moving = GER_military_org_loss_when_moving
-	#breakthrough_factor = GER_military_breakthrough_factor
+	breakthrough_factor = GER_military_breakthrough_factor
 	#motorized_attack_factor = GER_military_motorized_attack_factor
 	#mechanized_attack_factor = GER_military_mechanized_attack_factor
 }
@@ -961,95 +961,6 @@ GER_motor_and_mech_attack_modifier = { #Attack bonuses for Germany in enemy stat
 
 	motorized_attack_factor = 0.05
 	mechanized_attack_factor = 0.05
-}
-
-GER_blitzkrieg_modifier = { #Attack bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.05
-	army_armor_attack_factor = 0.05
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt
-}
-GER_blitzkrieg_modifier_lvl_2 = { #Attack bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.075
-	army_armor_attack_factor = 0.1
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-GER_blitzkrieg_modifier_lvl_3 = { #Attack bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.1
-	army_armor_attack_factor = 0.15
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-
-GER_bewegungskrieg_modifier = { #Attack Bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.05
-	army_infantry_attack_factor = 0.05
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-GER_bewegungskrieg_modifier_lvl_2 = { #Attack Bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.05
-	army_infantry_attack_factor = 0.1
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-GER_bewegungskrieg_modifier_lvl_3 = { #Attack Bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.05
-	army_infantry_attack_factor = 0.1
-	army_artillery_attack_factor = 0.1
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-GER_bewegungskrieg_modifier_lvl_4 = { #Attack Bonuses for Germany in enemy states
-	enable = { always = yes } 
-	icon = GFX_modifiers_GER_blitzkrieg
-
-	breakthrough_factor = 0.1
-	army_infantry_attack_factor = 0.15
-	army_artillery_attack_factor = 0.1
-	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
-	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
-	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
-}
-
-GER_overburdened_state_modifier = {
-	enable = { always = yes }
-	icon = GFX_modifiers_BRA_neglected_state
-
-	remove_trigger = {
-		NOT = { controller = { original_tag = GER } }
-	}
-
-	state_production_speed_buildings_factor = -0.25
-	state_resources_factor = -0.25
-	local_factories = -0.25
-	compliance_growth = -0.1
-	resistance_growth = 0.1
 }
 
 GER_nationalized_industries_modifier = { 

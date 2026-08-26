@@ -2882,37 +2882,8 @@ focus_tree = {
 
 		completion_reward = {
 
-			every_state = {
-				limit = {
-					OR = {
-						state = 76
-						state = 83
-						state = 84
-						state = 82
-					}
-					NOT = {
-						OR = {
-							is_claimed_by = ROOT
-							is_core_of = ROOT
-							is_owned_by = ROOT
-						}
-					}
-				}
-				add_claim_by = ROOT
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = HUN_demands_tt
-			random_country = {
-				limit = {
-					owns_state = 76
-				}
-				country_event = {
-					id = WW_hungary.4
-					days = 2
-					random_days = 3
-				}
+			HUN = {
+				transfer_state = 76
 			}
 
 		}
@@ -9960,39 +9931,8 @@ focus_tree = {
 
 		completion_reward = {
 
-			IF = {
-				limit = {
-					76 = {
-						is_owned_by = ROM
-					}
-				}
-				custom_effect_tooltip = HUN_demands_tt
-				ROM = { 
-					country_event = { 
-						id = DOD_hungary.50 
-						hours = 6
-						random_hours = 12
-					} 
-				}
-				hidden_effect = {
-					news_event = { 
-						id = news.300 
-						hours = 4
-					}
-				}
-			}
-
-			ELSE = {
-				random_country = {
-					limit = {
-						owns_state = 76
-					}
-					country_event = {
-						id = WW_hungary.4
-						days = 2
-						random_days = 3
-					}
-				}
+			HUN = {
+				transfer_state = 76
 			}
 
 		}
@@ -10455,16 +10395,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			#custom_effect_tooltip = HUN_GREATER_tt
-			set_cosmetic_tag = HUN_GREATER
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			add_ideas = HUN_old_hungary_reclaimed
-
-			hidden_effect = {
-				news_event = { id = news.299 }
-			}
 
 		}
 	}

@@ -12781,6 +12781,8 @@ leader_traits = {
 		random = no
 		production_speed_buildings_factor = 0.05
 		fascism_drift = 0.01
+		production_factory_max_efficiency_factor = 0.05	
+		industrial_capacity_factory = 0.05
 		#global_building_slots = 1
 		#Cost reduction to industrial concerns?
 	}
@@ -13334,6 +13336,7 @@ leader_traits = {
 		special_project_speed_factor = 0.05
 		max_command_power_mult = 0.25
 		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
 	}
 
 	GER_todt_fuhrer = { # Todt Fuhrer - Shoud match idea GER_todt_reich_minister_of_armaments
@@ -18122,7 +18125,5 @@ leader_traits = {
 		sprite = 10
 		industrial_capacity_factory = 0.025
 		industrial_capacity_dockyard = 0.025
-		
 	}
-
 }

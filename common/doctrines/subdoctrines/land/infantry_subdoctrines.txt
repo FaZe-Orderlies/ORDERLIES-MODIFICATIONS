@@ -168,14 +168,11 @@ large_unit_tactics = {
 
     rewards = {
         wide_trench_networks = {
-            dig_in_speed_factor = 0.10
+            dig_in_speed_factor = 0.05
         }
         flexible_division_structures = {
         #2
-           unit_infantry_design_cost_factor = -1
-           infantry = {
-                combat_width = -0.3
-            }
+           dig_in_speed_factor = 0.05
         }
         unit_knowledge_sharing = {
         #3

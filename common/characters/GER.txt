@@ -2013,10 +2013,7 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				has_country_flag = GER_reinstated_nazi_leadership
-			}
-			visible = {
-				has_country_flag = GER_reinstated_nazi_leadership
+				has_completed_focus = GER_speer_eastern_armaments
 			}
 			traits = {
 				GER_reich_architect
