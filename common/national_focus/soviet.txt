@@ -1081,189 +1081,14 @@ focus_tree = {
 		}
 	}
 
-	focus = { #unlock this focus once the war with a major is over
-		id = SOV_restoration_and_development
-
-		icon = GFX_SOV_restoration_and_development_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_industrial_modernization focus = SOV_optimize_production_lines }
-		x = 2
-		y = 1
-		relative_position_id = SOV_industrial_modernization
-		cost = 5
-
-		cancel_if_invalid = no
-
-		available = {
-			SOV_fourth_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PROPAGANDA}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_restoration_and_development_idea
-				days = 365
-			}
-
-			if = {
-				limit = {
-					has_government = communism
-				}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				unlock_decision_tooltip = SOV_propaganda_rebuild_to_glory
-				unlock_decision_tooltip = SOV_propaganda_peace
-				unlock_decision_tooltip = SOV_propaganda_happy_life
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_fourth_five_year_plan
-
-		icon = GFX_SOV_fourth_five_year_plan_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_restoration_and_development }
-		x = 0
-		y = 1
-		relative_position_id = SOV_restoration_and_development
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_5_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_5 }
-			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 } #Bonus to CG
-				add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 } #Bonus to max efficicency
-				if = {
-					limit = {
-						has_government = communism
-					}
-					#Swap dynamic modifier to change icon
-					if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier }
-					}
-					else_if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-					}
-					else_if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					}
-					add_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_dynamic_modifier }
-				}
-				else = {
-					#Swap dynamic modifier to change icon
-					if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
-					}
-					else_if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
-					}
-					else_if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-					}
-					add_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_dynamic_modifier_alt }
-				}
-			}
-			custom_effect_tooltip = SOV_fourth_five_year_plan_ns_tt
-		}
-	}
-
-	focus = {
-		id = SOV_found_the_comecon
-
-		icon = GFX_focus_SOV_the_comecon
-		prerequisite = { focus = SOV_fourth_five_year_plan }
-		x = 0
-		y = 1
-		relative_position_id = SOV_fourth_five_year_plan
-		cost = 10
-
-		allow_branch = {
-			has_government = communism
-		}
-
-		available = {
-			num_subjects > 0
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			if = {
-				limit = {
-					num_subjects > 0
-				}
-				add_ideas = SOV_comecon_sov_default
-				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
-				every_other_country = {
-					limit = {
-						is_subject_of = ROOT
-					}
-					add_ideas = SOV_comecon_puppet_default
-				}
-
-				custom_effect_tooltip = SOV_found_the_comecon_program_tt
-				hidden_effect = {
-					add_to_tech_sharing_group = SOV_comecon
-					every_country = {
-						limit = {
-							is_subject_of = ROOT
-						}
-						add_to_tech_sharing_group = SOV_comecon
-					}
-				}
-			}
-			else = { #Early tooltip for when Soviets have no subjects
-				effect_tooltip = {
-					add_ideas = SOV_comecon_sov_default
-				}
-				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
-				effect_tooltip = {
-					add_ideas = SOV_comecon_puppet_default
-				}
-				custom_effect_tooltip = SOV_found_the_comecon_program_tt
-			}
-
-			unlock_decision_category_tooltip = SOV_comecon_dec_cat
-		}
-	}
-
 	focus = {
 		id = SOV_the_common_economic_space_initiative
 
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = SOV_fourth_five_year_plan }
-		x = 0
-		y = 1
-		relative_position_id = SOV_fourth_five_year_plan
+		prerequisite = { focus = SOV_industrial_modernization }
+		x = 2
+		y = 3
+		relative_position_id = SOV_industrial_modernization
 		cost = 10
 
 		allow_branch = {
@@ -1311,65 +1136,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = SOV_found_the_comecon_program_tt
 			}
-
-			unlock_decision_category_tooltip = SOV_comecon_dec_cat
-		}
-	}
-
-	focus = {
-		id = SOV_no_time_for_peace
-
-		icon = GFX_SOV_no_time_for_peace_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_fourth_five_year_plan }
-		prerequisite = { focus = SOV_national_academies_of_sciences }
-		x = 3
-		y = 1
-		relative_position_id = SOV_fourth_five_year_plan
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-
-
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.75
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
-				add_tech_bonus = {
-					name = SOV_no_time_for_peace
-					bonus = 0.5
-					uses = 1 # was 2
-					category = nuclear
-				}
-			}
-			add_tech_bonus = {
-				name = SOV_no_time_for_peace
-				bonus = 0.5
-				uses = 1 # was 2
-				category = rocketry
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ideas = SOV_no_time_for_peace_idea
 		}
 	}
 
@@ -1906,162 +1672,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_transformation_of_nature
-
-		icon = GFX_SOV_transformation_of_nature_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_fourth_five_year_plan }
-		prerequisite = { focus = SOV_national_academies_of_sciences }
-		x = 2
-		y = 0
-		relative_position_id = SOV_no_time_for_peace
-		cost = 12
-
-		allow_branch = {
-			has_government = communism
-		}
-
-		available = {
-			196 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			251 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			217 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			245 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-
-			hidden_effect = {
-				IF = {
-					limit = {
-						has_country_leader = {
-							ruling_only = yes
-							character = SOV_iosif_stalin
-						}	
-					}
-					set_province_name = {
-						id = 3555
-						name = SOV_stalingrad_hydro_station
-					}
-				}
-				ELSE = {
-					set_province_name = {
-						id = 3555
-						name = SOV_volgograd_hydro_station
-					}
-				}
-				set_province_name = {
-					id = 6275
-					name = SOV_kuybyshev_hydro_station
-				}
-				set_province_name = {
-					id = 737
-					name = SOV_kakhovka_dam
-				}
-				set_province_name = {
-					id = 3478
-					name = SOV_tsimlyanskoye_hydroelectric_station
-				}
-			}
-
-			add_ideas = SOV_transformation_of_nature
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			217 = {	
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 3555
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-			}
-			196 = {	
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 737
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-			}
-			245 = {	
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 3478
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-			}
-			251 = {	
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 6275
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_transformation_of_nature_alt
-
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = SOV_fourth_five_year_plan }
-		prerequisite = { focus = SOV_national_academies_of_sciences }
-		x = 2
-		y = 0
-		relative_position_id = SOV_no_time_for_peace
-		cost = 10
-
-		allow_branch = {
-			NOT = { has_government = communism }
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_ideas = SOV_transformation_of_nature
-		}
-	}
-
-
    ###    #### ########   ######  ########     ###    ######## ######## 
   ## ##    ##  ##     ## ##    ## ##     ##   ## ##   ##          ##    
  ##   ##   ##  ##     ## ##       ##     ##  ##   ##  ##          ##    
@@ -2398,6 +2008,8 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
+			#Частичное снятие стартового дебаффа ВВС (по 1/2 за фокус)
+			add_to_variable = { SOV_soviet_airforce_air_superiority_efficiency = 0.075 }
 			custom_effect_tooltip = SOV_women_in_aviation_ns_tt
 
 			air_experience = 25
@@ -2418,6 +2030,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			has_completed_focus = SOV_lessons_of_war
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
@@ -2430,6 +2043,8 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.3 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
 			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.15 }
+			#Частичное снятие стартового дебаффа ВВС (по 1/2 за фокус)
+			add_to_variable = { SOV_soviet_airforce_air_superiority_efficiency = 0.075 }
 			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
 
 			custom_effect_tooltip = SOV_night_witches_nsb_tt
@@ -6365,10 +5980,6 @@ focus_tree = {
 		relative_position_id = SOV_rehabilitated_military
 		cost = 2
 
-		select_effect = {
-			add_ideas = SOV_military_reorganization_ns
-		}
-
 		available = {
 
 		}
@@ -6376,23 +5987,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			#Tooltip purposes (Select Effect)
-			custom_effect_tooltip = SOV_focus_select_effect_tt
-			effect_tooltip = {
-				add_ideas = SOV_military_reorganization_ns
-			}
-
-			#(Complete Effect)
-			custom_effect_tooltip = SOV_focus_complete_effect_tt
-			hidden_effect = {
-				remove_ideas = SOV_military_reorganization_ns
-			}
-
 			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
 			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
+			#Частичное снятие стартовых дебаффов Красной Армии
 			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.05 }
+			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.04 }
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.04 }
+			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.04 }
 			custom_effect_tooltip = SOV_military_reorganization_ns_tt
 
 			army_experience = 50
@@ -6451,9 +6052,11 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_acclimatization_cold_climate_gain_factor = 0.15 }
 			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
 			add_to_variable = { SOV_the_red_army_terrain_trait_xp_gain_factor = 0.15 }
+			#Частичное снятие стартовых дебаффов Красной Армии
 			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.05 }
+			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.03 }
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.03 }
+			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.03 }
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 		}
 	}
@@ -6478,9 +6081,10 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
+			#Частичное снятие стартовых дебаффов Красной Армии (+5% организации уже идёт строкой выше)
 			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.05 }
+			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.03 }
+			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.03 }
 
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
@@ -6644,16 +6248,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_ideas = SOV_smersh
-			}
-			else = {
-				add_ideas = SOV_smersh_no_lar
-			}
-
 			if = {
 				limit = {
 					has_government = communism

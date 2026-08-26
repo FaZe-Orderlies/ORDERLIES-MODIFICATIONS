@@ -61,8 +61,8 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
 
 ---зсу/пво
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.45 ---СЗУ режет пво
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.2 ---дамаг зсу 
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.05 ---шанс попадания зсу
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.2 ---дамаг пво по самолетам (ванила 0.8)
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.03 ---шанс попадания пво по самолетам (ванила 0.1)
 
 ---Аир
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
@@ -70,7 +70,7 @@ NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 80000
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.3 ---размены в воздухе(ванила-1.0)
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15 ---размены в воздухе(ванила-1.0)
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00 ---самолетики не могут получить ранение на тренировке
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.03 ---касы по снаряге
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03 ---касы по орге

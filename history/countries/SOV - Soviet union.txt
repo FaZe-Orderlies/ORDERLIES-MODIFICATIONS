@@ -541,6 +541,9 @@ set_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = 0.3 }
 set_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.1 }
 set_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = -0.1 }
 
+#Стартовый дебафф ВВС (снимается фокусами SOV_women_in_aviation / SOV_raskovas_aviation_group)
+set_variable = { SOV_soviet_airforce_air_superiority_efficiency = -0.15 } #-15% эффективности истребителей
+
 set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = 0 } #-> Expand the Aircraft Industry
 set_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = 0 } #-> Modernize Aircraft Factories / Intensify Pilot Training Program
 set_variable = { SOV_soviet_airforce_air_range_factor = 0 } #-> Modernize Aircraft Factories
@@ -590,6 +593,11 @@ set_variable = { SOV_the_red_army_army_org_factor = -0.15 } # -> Restore Cossack
 set_variable = { SOV_the_red_army_experience_gain_army_factor = -0.1 }
 set_variable = { SOV_the_red_army_experience_loss_factor = 0.25 }
 
+#Стартовые дебаффы Красной Армии (снимаются по частям фокусами SOV_military_reorganization / SOV_an_adaptable_army / SOV_lessons_of_war)
+set_variable = { SOV_the_red_army_army_attack_factor = -0.15 } #-15% атаки всех дивизий (-5% за фокус)
+set_variable = { SOV_the_red_army_breakthrough_factor = -0.10 } #-10% прорыва (-4%/-3%/-3%)
+set_variable = { SOV_the_red_army_army_morale_factor = -0.10 } #-10% боевого духа армии (-4%/-3%/-3%)
+
 set_variable = { SOV_the_red_army_mobilization_speed = 0 } #-> Strengthen the Mobilization Plan
 set_variable = { SOV_the_red_army_conscription_factor = 0 } #-> Strengthen the Mobilization Plan
 set_variable = { SOV_the_red_army_modifier_army_sub_unit_cavalry_speed_factor = 0 } #-> Restore Cossack Units
@@ -602,7 +610,6 @@ set_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0 } 
 set_variable = { SOV_the_red_army_terrain_trait_xp_gain_factor = 0 } # -> An Adaptable Army
 set_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = 0 } # -> Military Reorganization
 set_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = 0 } # -> Military Reorganization
-set_variable = { SOV_the_red_army_army_org_regain = 0 } # -> Barrier Troops
 set_variable = { SOV_the_red_army_special_forces_cap = 0 } # -> The Glory of the Red Army
 set_variable = { SOV_the_red_army_land_doctrine_cost_factor = 0 } # -> The Glory of the Red Army
 set_variable = { SOV_the_red_army_cas_damage_reduction = 0 } # -> Experts in Camouflage

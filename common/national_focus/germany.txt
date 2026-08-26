@@ -9441,6 +9441,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			add_timed_idea = { idea = GER_barbarossa days = 90 }
 			custom_effect_tooltip = GER_barbarossa_fate_of_the_reich_tooltip
 			hidden_effect = {
 					GER = {

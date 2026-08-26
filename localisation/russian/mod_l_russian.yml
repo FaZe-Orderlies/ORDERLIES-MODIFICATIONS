@@ -1,4 +1,5 @@
 ﻿l_russian:
+ GER_war_with_the_ussr: "Операция Барбаросса"
 GER_prom_new_focus_state_modifier: "Завершающая стадия строительства автобанов"
 GER_great: "Инфраструтура центра страны"
 GER_great_desc: "Центр страны связывает юг и восток Германии.В него нужно вложить столько же денег,сколько было вложено во все предыдущие регионы вместе взятые"
@@ -337,3 +338,21 @@ MESSINA: "Мессинский пролив"
 
 STRATEGICREGION_307: "Восточная Украина"
 STRATEGICREGION_308: "Московская область"
+
+## ПРИВЫЧНЫЕ НАЗВАНИЯ ГОРОДОВ
+DEN_VICTORY_POINTS_6287: "Копенгаген"
+SWE_VICTORY_POINTS_6287: "Копенгаген"
+ITA_VICTORY_POINTS_9904: "Рим"
+PAP_VICTORY_POINTS_9904: "Рим"
+ITA_VICTORY_POINTS_665: "Марибор"
+ITA_VICTORY_POINTS_3780: "Милан"
+ITA_VICTORY_POINTS_3924: "Сплит"
+ITA_VICTORY_POINTS_3943: "Задар"
+ITA_VICTORY_POINTS_6727: "Белгород-Днестровский"
+ITA_VICTORY_POINTS_6788: "Генуя"
+ITA_VICTORY_POINTS_6889: "Дубровник"
+ITA_VICTORY_POINTS_9809: "Подгорица"
+ITA_VICTORY_POINTS_9821: "Котор"
+ITA_VICTORY_POINTS_9907: "Флоренция"
+ITA_VICTORY_POINTS_10007: "Родос"
+ITA_VICTORY_POINTS_11564: "Риека"

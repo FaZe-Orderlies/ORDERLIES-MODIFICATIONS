@@ -328,21 +328,6 @@ SOV_infiltrate_foreign_atomic_programs_dec_cat = {
 	}
 }
 
-SOV_comecon_dec_cat = {
-	priority = 13
-
-	icon = SOV_civil_puppet_interaction
-	picture = GFX_decision_cat_picture_soviet_comecon
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_found_the_comecon
-	}
-}
-
 SOV_soviet_civil_war_dec_cat = {  
 	priority = 105
 
