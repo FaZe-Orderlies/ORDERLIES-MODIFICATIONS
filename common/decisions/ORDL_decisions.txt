@@ -1,4 +1,4 @@
-﻿ORDL_decisions = {
+ORDL_decisions = {
     GER_annex_hungary = {
 
         icon = generic_operation
