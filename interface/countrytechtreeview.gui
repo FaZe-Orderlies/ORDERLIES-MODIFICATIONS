@@ -3316,6 +3316,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			
+			gridboxtype = {
+				name = "orderlies_swaptech_tree"
+				position = { x = 1145 y = 172 }
+				size = { width =72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 
 			gridboxtype = {
 				name = "construction1_tree"

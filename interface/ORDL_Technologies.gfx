@@ -12,4 +12,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_faze_cannon_1.dds"
 		legacy_lazy_load = no
 	}
+}spriteTypes = {
+	SpriteType = {
+		name = " GFX_orderlies_swaptech_medium\
+ texturefile = \gfx/interface/technologies/basic_encryption.dds\
+ }
 }

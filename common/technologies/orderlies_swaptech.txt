@@ -1,0 +1,15 @@
+technologies = {
+	orderlies_swaptech = { 
+		research_cost = 0
+		
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = { orderlies_swaptech = 0 }
+		}
+		ai_will_do = { factor = -15 }
+	}
+}
