@@ -13007,6 +13007,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			date>1940.1.1
+			date<1940.3.1
 		}
 
 		will_lead_to_war_with = FIN

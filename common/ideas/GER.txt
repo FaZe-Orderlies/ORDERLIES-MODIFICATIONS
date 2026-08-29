@@ -1164,7 +1164,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SWE_let_fly_all_guns
+			picture = generic_acquire_tanks
 
 			targeted_modifier = {
 				tag = FRA
@@ -1196,7 +1196,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_monarchist_uprising
+			picture = generic_acquire_tanks
 
 			targeted_modifier = {
 				tag = CAN
@@ -1219,7 +1219,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_rebuild_the_nation
+			picture = generic_acquire_tanks
 
 			targeted_modifier = {
 				tag = SOV
@@ -1239,7 +1239,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_rebuild_the_nation
+			picture = generic_acquire_tanks
 
 			targeted_modifier = {
 				tag = SOV
@@ -1277,7 +1277,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SWE_let_fly_all_guns
+			picture = generic_acquire_tanks
 
 			targeted_modifier = {
 				tag = USA

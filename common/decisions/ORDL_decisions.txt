@@ -227,7 +227,7 @@ ORDL_decisions = {
         fire_only_once = yes
 
         complete_effect = {
-            add_timed_idea = { idea = GER_op_fall_barbarossa days = 90 }
+            add_timed_idea = { idea = GER_op_fall_barbarossa days = 120 }
         }
         ai_will_do = { factor = 10 }
     }

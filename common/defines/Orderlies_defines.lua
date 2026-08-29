@@ -70,14 +70,24 @@ NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 80000
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15 ---размены в воздухе(ванила-1.0)
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.12 ---размены в воздухе(ванила-1.0)
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00 ---самолетики не могут получить ранение на тренировке
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.03 ---касы по снаряге
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03 ---касы по орге
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.08 ---касы по снаряге
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.13 ---касы по орге
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5 ---касы ночью
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.4 ---фикс баф от касов
-
+NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 170
+NDefines.NAir.DISRUPTION_FACTOR = 6  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
+NDefines.NAir.ESCORT_FACTOR = 3 -- (2 -> 3) to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 5.0 ---скорость перелета между филдами
+
+---АСЫ200
+
+NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
+NDefines.NAir.ACE_DEATH_BY_OTHER_ACE_CHANCE = 0
+NDefines.NAir.ACE_DEATH_CHANCE_PLANES_MULT = 0
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0
+NDefines.NAir.ACE_EARN_CHANCE_PLANES_MULT = 0
 
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  --- 1000 cp для удара по логистике и снабжения по воздуху
     0.0, -- AIR_SUPERIORITY
@@ -123,6 +133,7 @@ NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 20 ---дни на апгрейд аг
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 1000 -- Пополнение снаряги в дивках, объем пополнения
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 25 --Модификатор скорости доставки подкрепления для армии (время в пути)
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.525 -- потери в боях
 
 ---лимит спецвойск
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000 --24

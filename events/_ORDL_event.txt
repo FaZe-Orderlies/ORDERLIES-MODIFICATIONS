@@ -349,3 +349,145 @@ news_event = {
 	
 	mean_time_to_happen = { days = 2 }
 }
+
+news_event = { #автокап япы
+	id = orderlies.7
+	title = orderlies.7t
+	desc = orderlies.7d
+	picture = GFX_news_event_asia
+	
+	major = yes
+	
+	trigger = {
+		JAP = { surrender_progress > 0.71 }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = { limit = { JAP = { has_war_with = SOV } }
+				SOV = {
+					white_peace  = {
+						tag = JAP
+					}
+					transfer_state = 555
+				}
+			}
+			
+            JAP = {
+				white_peace = ENG
+				white_peace = USA
+				white_peace = INS
+				white_peace = AST
+				white_peace = SAF
+				white_peace = RAJ
+				white_peace = CAN
+				white_peace = FRA
+				add_ideas = armed_neutrality
+			}
+			CHI = {
+				transfer_state = 599
+				transfer_state = 594
+				transfer_state = 591
+				transfer_state = 592
+				transfer_state = 728
+				transfer_state = 729
+				transfer_state = 326
+				transfer_state = 602
+				transfer_state = 593
+				transfer_state = 600
+				transfer_state = 595
+				transfer_state = 606
+				transfer_state = 749
+				transfer_state = 596
+				transfer_state = 613
+				transfer_state = 598
+				transfer_state = 597
+				transfer_state = 743
+				transfer_state = 614
+				transfer_state = 608
+				transfer_state = 611
+				transfer_state = 612
+				transfer_state = 610
+				transfer_state = 609
+				transfer_state = 745
+				transfer_state = 716
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 714
+				transfer_state = 717
+				transfer_state = 328
+				transfer_state = 524
+				transfer_state = 761
+				transfer_state = 1035
+				transfer_state = 1034
+				transfer_state = 1038
+				transfer_state = 607
+				transfer_state = 620
+				transfer_state = 1036
+				transfer_state = 750
+				transfer_state = 603
+				transfer_state = 325
+				transfer_state = 751
+				transfer_state = 752
+				transfer_state = 753
+				transfer_state = 1041
+				transfer_state = 1037
+				transfer_state = 748
+				transfer_state = 605
+				transfer_state = 744
+				transfer_state = 283
+				transfer_state = 1032
+				transfer_state = 615
+				transfer_state = 622
+				transfer_state = 1046
+				transfer_state = 746
+				transfer_state = 621
+				transfer_state = 1043
+				transfer_state = 1039
+				transfer_state = 1033
+				transfer_state = 747
+			}
+			KOR = {
+				transfer_state = 527
+				transfer_state = 525
+				transfer_state = 1028
+				transfer_state = 1029
+				transfer_state = 1031
+				transfer_state = 1030
+				add_ideas = armed_neutrality
+			}
+			SIA = {
+				transfer_state = 869
+				transfer_state = 868
+				transfer_state = 1078
+				transfer_state = 1077
+				transfer_state = 1076
+				transfer_state = 1069
+				transfer_state = 868
+				transfer_state = 289
+				transfer_state = 724
+				add_ideas = armed_neutrality
+			}
+			FRA = {
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 741
+				transfer_state = 286
+				transfer_state = 1066
+				transfer_state = 1067
+				transfer_state = 1068
+				transfer_state = 1017
+			}
+			SOV = {
+				transfer_state = 537
+				transfer_state = 555
+			}
+		}
+	}
+
+	option = {
+		name = orderlies.7.a
+	}
+	
+	mean_time_to_happen = { days = 2 }
+}

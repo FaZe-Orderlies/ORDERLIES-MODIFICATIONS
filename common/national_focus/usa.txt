@@ -1268,68 +1268,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_war_cabinet_operation
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_war_centers }
-		relative_position_id = USA_war_centers
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			set_faction_research_unlocked = yes
-			custom_effect_tooltip = generic_skip_one_line_tt
-			set_faction_military_unlocked = yes
-		}
-	}
-
-	focus = {
-		id = USA_war_cabinet_operations
-		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_war_cabinet_operation }
-		relative_position_id = USA_war_cabinet_operation
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_black_chamber
-		}
-	}
-	
-	focus = {
 		id = USA_asia_tvd
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 0
@@ -3725,16 +3663,6 @@ focus_tree = {
 					type = industrial_complex
 					level = 2
 				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			USA_isolation = yes
-			add_to_variable = {
-				USA_production_factory_max_efficiency_factor_isolation = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt
-			}
-			add_to_variable = {
-				USA_industrial_capacity_factory_mod_isolation = 0.05
-				tooltip = industrial_capacity_factory_tt
 			}
 		}
 	}

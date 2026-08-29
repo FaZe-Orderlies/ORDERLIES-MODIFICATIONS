@@ -11653,7 +11653,6 @@ SOV_comecon_dec_cat = {
 
 
 SOV_great_patriotic_war = {
-
 	SOV_raise_penal_units = {
 		priority = 21
 
@@ -13101,6 +13100,9 @@ SOV_great_patriotic_war = {
 		ai_will_do = { factor = 10 }
 	}
 }
+}
+
+	
 
 ################################################################################
 
