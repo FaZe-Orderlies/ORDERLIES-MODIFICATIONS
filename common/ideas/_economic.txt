@@ -1027,15 +1027,9 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		arsenal_of_democracy = { 
+		arsenal_of_democracy_mod = { 
 
-			picture = INS_western_trade_idea
-			visible = {
-				original_tag = USA
-				OR = {
-					has_completed_focus = USA_Arsenal_of_democrasy_mod
-				}
-			}
+			picture = ARG_american_allyship
 
 			available = {
 				OR = {
@@ -1057,14 +1051,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.15
-				conscription = -0.02
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.2
+				consumer_goods_expected_value = 0.25
+				production_speed_arms_factory_factor = 0.35
+				production_speed_dockyard_factor = 0.30
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 				factory_energy_consumption = 0.25
 			}
 			cancel_if_invalid = no

@@ -1498,28 +1498,6 @@ if = {
 	}
 }
 
-mio:USA_general_motors_organization = {
-	add_mio_size = 9
-	add_mio_funds_gain_factor = 0.25
-	add_mio_research_bonus = 0.05
-}
-
-mio:USA_bell_organization = {
-	add_mio_funds_gain_factor = 0.15
-	add_mio_research_bonus = 0.05
-}
-
-
-###USA GOLD GUI###
-set_variable = {
-	USA_industrial_capacity_factory_mod_isolation_GOLD = 0.05 #дм от фра
-}
-set_variable = {
-	industrial_capacity_dockyard_war_time_GOLD = 0.05 #дм от вб
-}
-set_variable = {
-	production_factory_max_efficiency_factor_gold_gui = 0.05 #дм от бельгии
-}
 
 add_dynamic_modifier = {
 	modifier = USA_isolation
@@ -1533,15 +1511,24 @@ set_variable = {
 set_variable = {
 	USA_recruitable_population_factor_mod_isolation = -0.5
 }
-####НКО####
-set_variable = {
-	air_superiority_bonus_in_comba_PENTAGON = 0.05
+add_dynamic_modifier = {
+	modifier = USA_pentagon
+}
+
+add_dynamic_modifier = {
+	modifier = USA_national_resource_council_dm
+}
+add_to_variable = {
+	USA_fuel_gain_factor_mod_council = 0.2
+}
+add_to_variable = {
+	USA_production_speed_synthetic_refinery_factor_mod = -1
 }
 set_variable = {
-	army_defence_factor_PENTAGON = 0.025
+	USA_local_building_slots_factor_mod_council = 0.10
 }
 set_variable = {
-	USA_army_attack_factor_PENTAGON = 0.025
+	USA_min_export_mod = -1
 }
 
 ##АРМИЯ##
@@ -1557,11 +1544,6 @@ set_variable = {
 set_variable = {
 	USA_training_time_factor_army_usa = 0.15
 }
-
-##ВВС###
-add_dynamic_modifier = {
-	modifier = USA_airforce
-}
 set_variable = {
 	USA_experience_gain_air_factor_airforce_usa = -0.15
 
@@ -1572,18 +1554,11 @@ set_variable = {
 }
 set_variable = {
 	USA_air_fuel_consumption_factor_airforce_usa = 0.10
-	
 }
 set_variable = {
 	USA_production_speed_dockyard_factor_mod = 0.15
 }
-###WAR TIME DM###
-set_variable = {
-	cic_construction_boost_war_time = 0.1
-}
-set_variable = {
-	production_speed_arms_factory_factor_factor_war_time
-}
+
 ###Не может создавать новые алики сама по себе
 set_rule = {
 	desc = USA_my_rule_description
@@ -1594,12 +1569,7 @@ set_rule = {
 	can_send_volunteers = no
 }
 ### ВПА ресы ###
-set_variable = {
-	USA_local_resources_factor_mod_council = 0.15
-}
-set_variable = {
-	USA_local_building_slots_factor_mod_council = 0.15
-}
+
 
 
 

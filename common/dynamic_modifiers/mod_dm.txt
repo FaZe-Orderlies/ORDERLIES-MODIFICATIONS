@@ -45,6 +45,8 @@ USA_national_resource_council_dm = {
 	production_lack_of_resource_penalty_factor = USA_production_lack_of_resource_penalty_factor_mod
 	fuel_gain_factor = USA_fuel_gain_factor_mod_council
 	local_building_slots_factor = USA_local_building_slots_factor_mod_council
+	production_speed_synthetic_refinery_factor = USA_production_speed_synthetic_refinery_factor_mod
+	min_export = USA_min_export_mod
 }
 
 USA_war_time_dm = {
@@ -57,20 +59,12 @@ USA_war_time_dm = {
 	production_factory_efficiency_gain_factor = production_factory_efficiency_gain_factor_war_time
 	production_speed_arms_factory_factor = production_speed_arms_factory_factor_factor_war_time
 	industrial_capacity_dockyard = industrial_capacity_dockyard_war_time
-	supply_node_range = supply_node_range_war_time
-	cic_construction_boost = cic_construction_boost_war_time
-	naval_accidents_chance = usa_naval_accidents_chance_mod
-	naval_damage_factor = usa_naval_damage_factor_mod_war_time
-	research_speed_factor = USA_research_speed_factor_war_time
 }
 
 USA_pentagon = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_navy_cruiser_warfare
 	
-	army_attack_factor = USA_army_attack_factor_PENTAGON
-	air_superiority_bonus_in_combat = air_superiority_bonus_in_comba_PENTAGON
-	army_defence_factor = army_defence_factor_PENTAGON
 	army_morale_factor = army_morale_factor_PENTAGON
 	planning_speed = planning_speed_PENTAGON
 	production_factory_max_efficiency_factor = production_factory_max_efficiency_factor_PETAGON
@@ -79,13 +73,10 @@ USA_pentagon = {
 	refit_speed = refit_speed_white_pentagon
 	fuel_gain_factor = USA_fuel_gain_factor_mod_council_pentagon
 	consumer_goods_factor = USA_consumer_goods_value_PENTAGON
-	research_speed_factor = USA_research_speed_factor_PENTAGON
-	recruitable_population_factor = USA_recruitable_population_factor_mod_PENTAGON
-	encryption_factor = USA_encryption_factor_PENTAGON
-	army_intel_to_others = USA_army_intel_to_others_PENTAGON
-	propaganda_mission_factor = USA_propaganda_mission_mission_factor_PENTAGON
-	operation_outcome = USA_operation_outcome_PENTAGON
-	operative_slot = USA_operative_slot_pentagon
+	production_factory_max_efficiency_factor = production_factory_max_efficiency_factor_war_time
+	line_change_production_efficiency_factor = line_change_production_efficiency_factor_war_time
+	production_factory_efficiency_gain_factor = production_factory_efficiency_gain_factor_war_time
+	production_speed_arms_factory_factor = production_speed_arms_factory_factor_factor_war_time
 }
 
 USA_army = {
@@ -111,12 +102,6 @@ USA_army = {
 	supply_consumption_factor = USA_supply_consumption_factor_army_usa
 	training_time_factor = USA_training_time_factor_army_usa
 	planning_speed = USA_planning_speed_army_usa
-}
-
-USA_airforce = {
-	enable = { always = yes }
-	icon = GFX_idea_generic_air_interception
-
 	air_strategic_bomber_bombing_factor = USA_air_strategic_bomber_bombing_factor_airforce_usa
 	air_cas_efficiency = USA_air_cas_efficiency_airforce_usa
 	air_superiority_bonus_in_combat = USA_air_superiority_bonus_in_combat_airforce_usa
