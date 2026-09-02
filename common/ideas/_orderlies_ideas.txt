@@ -138,7 +138,10 @@ ideas = {
 			
 		egypt_conqueror_idea = {
 			picture = ITA_new_roman_empire_ns
-					
+
+			allowed = {
+				always = yes
+			}
 				
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1  
@@ -151,13 +154,43 @@ ideas = {
 
 		africa_is_over_idea = {
 			picture = ITA_new_roman_empire_ns
-					
+
+			allowed = {
+				always = yes
+			}
 				
 			modifier = {
 				production_factory_max_efficiency_factor = -0.1  
 				industrial_capacity_factory = -0.05              
 				production_factory_efficiency_gain_factor = -0.05 
 				fuel_gain_factor = -0.10                         
+				fuel_gain_factor_from_states = -0.25
+			}
+		}
+
+		asia_resource_monetka = {
+			picture = INS_dutch_east_indies
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.15               
+				fuel_gain_factor = 0.20
+			}
+		}
+
+		asia_resource_collapse_idea = {
+			picture = INS_dutch_east_indies
+						
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.15      
+				fuel_gain_factor = -0.15           
 				fuel_gain_factor_from_states = -0.25
 			}
 		}

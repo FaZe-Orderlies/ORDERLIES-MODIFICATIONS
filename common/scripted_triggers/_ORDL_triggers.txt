@@ -7,6 +7,7 @@ is_controlled_by_allies = {
 		is_controlled_by = RAJ
 		is_controlled_by = AST
 		is_controlled_by = FRA
+		is_controlled_by = INS
 	}
 }
 

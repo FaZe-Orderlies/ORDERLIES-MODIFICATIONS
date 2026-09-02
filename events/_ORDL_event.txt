@@ -79,6 +79,137 @@ news_event = {
     }
 }
 
+news_event = { ## японская монетка
+   	id = orderlies.8
+	title = orderlies.8.t
+	desc = orderlies.8.d
+	picture = GFX_news_event_generic_hong_kong_air_raid
+
+    major = yes
+
+    fire_only_once = no
+
+    trigger = { 
+        NOT = {
+            has_global_flag = JAP_win_asia
+        }
+       	1021 = {
+        	is_controlled_by_axis = yes
+       	}
+       	336 = {
+        	is_controlled_by_axis = yes
+       	}
+    	1064 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	333 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1059 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1023 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1062 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1024 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1060 = {
+        	is_controlled_by_axis = yes
+    	}
+	   	1061 = {
+        	is_controlled_by_axis = yes
+       	}
+	   	1065 = {
+       		is_controlled_by_axis = yes
+       	}
+	    1050 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1049 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1048 = {
+        	is_controlled_by_axis = yes
+       	}
+	    672 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1047 = {
+        	is_controlled_by_axis = yes
+       	}
+	    335 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1058 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1051 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1052 = {
+    		is_controlled_by_axis = yes
+       	}
+	    667 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1053 = {
+        	is_controlled_by_axis = yes
+       	}
+	    334 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1055 = {
+        	is_controlled_by_axis = yes
+       	}
+	    673 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1056 = {
+        	is_controlled_by_axis = yes
+       	}
+	    668 = {
+        	is_controlled_by_axis = yes
+       	}
+	    669 = {
+        	is_controlled_by_axis = yes
+       	}
+	    1057 = {
+        	is_controlled_by_axis = yes
+       	}
+	    979 = {
+        	is_controlled_by_axis = yes
+       	}
+		523 = {
+        	is_controlled_by_axis = yes
+       	}
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = JAP_win_asia
+			JAP = {
+				add_ideas = asia_resource_monetka
+			}
+            every_country = {
+                limit = { 
+                    is_in_faction_with = USA
+                }
+                add_ideas = {
+                    idea = asia_resource_collapse_idea
+                }
+            }
+        }   
+    }
+
+    option = {
+        name = orderlies.8.a
+    }
+}
+
 news_event = { # удалялка складов франции, прокает перед непосредственно капитуляцией (компьен)
 	id = orderlies.3
 	hidden = yes
