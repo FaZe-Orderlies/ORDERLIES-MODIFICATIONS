@@ -287,6 +287,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6134;6175;impassable;-1;-1;-1;-1;-1;;
 7;6098;impassable;-1;-1;-1;-1;-1;;
 7;80;impassable;-1;-1;-1;-1;-1;;
+6175;7;impassable;-1;-1;-1;-1;-1;;
 3185;80;impassable;-1;-1;-1;-1;-1;;
 6210;80;impassable;-1;-1;-1;-1;-1;;
 6210;2998;impassable;-1;-1;-1;-1;-1;;
@@ -305,6 +306,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11094;3;impassable;-1;-1;-1;-1;-1;;
 6159;11038;impassable;-1;-1;-1;-1;-1;;
 9055;11038;impassable;-1;-1;-1;-1;-1;;
+
 -1;-1;;-1;-1;-1;-1;-1;-1 
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 

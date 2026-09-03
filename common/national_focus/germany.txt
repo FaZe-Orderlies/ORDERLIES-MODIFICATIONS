@@ -7910,6 +7910,8 @@ focus_tree = {
 			custom_effect_tooltip = GER_op_weiss_tt
 			add_named_threat = { threat = 20 name = GER_danzig_or_war }
 			declare_war_on = { target = POL type = take_state_focus }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = { idea = GER_op_fall_weiss days = 30 }
 			hidden_effect = {
 				declare_war_on = { target = FRA type = take_state_focus }
 				declare_war_on = { target = ENG type = take_state_focus }
@@ -8001,6 +8003,8 @@ focus_tree = {
 			declare_war_on = { target = LUX type = take_state_focus }
 			
 			hidden_effect = { declare_war_on = { target = INS type = take_state_focus } }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = { idea = GER_op_fall_gelb days = 90 }
 		}
 	}
 
@@ -8542,6 +8546,8 @@ focus_tree = {
 					}
 					
 				}
+
+				add_timed_idea = { idea = GER_op_fall_barbarossa days = 120 }
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
