@@ -706,13 +706,13 @@ leader_traits = {
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					has_completed_focus = ITA_comandante_diavolo
+					always = no
 				}
 			}
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					has_completed_focus = ITA_proclaim_the_italian_empire
+					always = no
 				}
 			}
 		}
@@ -769,13 +769,13 @@ leader_traits = {
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					has_completed_focus = ITA_strengthen_ascari_corps
+					always = no
 				}
 			}
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					has_completed_focus = ITA_novus_ordo
+					always = no
 				}
 			}
 		}
@@ -856,8 +856,8 @@ leader_traits = {
 				factor = 2
 				FROM = {
 					OR = {
-						has_completed_focus = ITA_divino_duce
-						has_completed_focus = ITA_a_greater_purpose
+						always = no
+						always = no
 					}
 				}
 			}

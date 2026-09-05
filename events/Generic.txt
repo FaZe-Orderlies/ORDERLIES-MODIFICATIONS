@@ -233,7 +233,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				original_tag = SOV
-				FROM = { has_completed_focus = NOR_join_the_comintern }
+				FROM = { always = no }
 			}
 			modifier = {
 				factor = 5
@@ -248,7 +248,7 @@ country_event = {
 			modifier = {
 				factor = 10
 				original_tag = SOV 
-				FROM = { has_completed_focus = PER_soviet_alignment }
+				FROM = { always = no }
 			}
 		}
 		add_to_faction = FROM
@@ -261,7 +261,7 @@ country_event = {
 				}
 				FROM = {
 					original_tag = SIK
-					has_completed_focus = SIK_reaffirm_soviet_connections
+					always = no
 				}
 			}
 			SIK = {
@@ -440,8 +440,8 @@ country_event = {
 				FROM = {
 					original_tag = SIA
 					OR = {
-						has_completed_focus = SIA_join_the_allies
-						has_completed_focus = SIA_unseat_the_government
+						always = no
+						always = no
 					}
 				}
 			}
@@ -499,7 +499,7 @@ country_event = {
 				ROOT = {
 					original_tag = GER
 					has_government = neutrality
-					has_completed_focus = GER_ally_the_shade
+					always = no
 				}
 			}
 			set_global_flag = ENG_accepted_GER_diplomatic_overtures
@@ -524,7 +524,7 @@ country_event = {
 				ROOT = {
 					original_tag = GER
 					has_government = neutrality
-					has_completed_focus = GER_ally_the_shade
+					always = no
 				}
 			}
 			set_global_flag = ENG_accepted_GER_diplomatic_overtures
@@ -550,7 +550,7 @@ country_event = {
 				ROOT = {
 					original_tag = GER
 					has_government = neutrality
-					has_completed_focus = GER_ally_the_shade
+					always = no
 				}
 			}
 			set_global_flag = ENG_accepted_GER_diplomatic_overtures
@@ -589,7 +589,7 @@ country_event = {
 				ROOT = {
 					original_tag = GER
 					has_government = neutrality
-					has_completed_focus = GER_ally_the_shade
+					always = no
 				}
 			}
 			set_global_flag = ENG_accepted_GER_diplomatic_overtures
@@ -633,10 +633,10 @@ country_event = {
 			limit = {
 				original_tag = LAT
 				FROM = { original_tag = GER }
-				has_completed_focus = LAT_alignment_with_germany
+				always = no
 			}
 			uncomplete_national_focus = {
-				focus = LAT_alignment_with_germany
+				# focus = LAT_alignment_with_germany
 				uncomplete_children = yes
 			}
 			complete_national_focus = LAT_the_thunder_strikes_alone
@@ -681,10 +681,10 @@ country_event = {
 			limit = {
 				original_tag = LAT
 				FROM = { original_tag = GER }
-				has_completed_focus = LAT_alignment_with_germany
+				always = no
 			}
 			uncomplete_national_focus = {
-				focus = LAT_alignment_with_germany
+				# focus = LAT_alignment_with_germany
 				uncomplete_children = yes
 			}
 			complete_national_focus = LAT_the_thunder_strikes_alone
@@ -791,7 +791,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
+				POL = { always = no }
 			}
 		}
 		FROM = {
@@ -866,7 +866,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
+				POL = { always = no }
 			}
 		}
 		FROM = { 
@@ -942,7 +942,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
+				POL = { always = no }
 			}
 		}
 		FROM = { 

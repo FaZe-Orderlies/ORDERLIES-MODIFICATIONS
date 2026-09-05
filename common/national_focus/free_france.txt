@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = free_french_focus
 	
 	country = {
@@ -85,13 +85,13 @@
 		completion_reward = {
 			custom_effect_tooltip = FRA_appeal_to_overseas_territories_resources_cust
 			hidden_effect = {
-					add_offsite_building = {
+				add_offsite_building = {
 					type = industrial_complex
 					level = 2
-					add_offsite_building = {
+				}
+				add_offsite_building = {
 					type = dockyard
 					level = 5
-					}
 				}
 				FRA = {
 					add_state_core = 539
@@ -142,51 +142,6 @@
 			}
 			
 			
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_north_africa
-		icon = GFX_focus_generic_camel_corps
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_form_the_national_committee
-		}
-		relative_position_id = FRA_form_the_national_committee
-		
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			USA = {
-				has_completed_focus = USA_war_plan_silver
-			}
-		}
-
-		will_lead_to_war_with = D04
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			773 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-				}
-			}
-
-				
 		}
 	}
 	focus = {
@@ -540,6 +495,51 @@
 		}
 	}
 	focus = {
+		id = FRA_intervention_in_north_africa
+		icon = GFX_focus_generic_camel_corps
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_form_the_national_committee
+		}
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				always = no
+			}
+		}
+
+		will_lead_to_war_with = D04
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			773 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+				}
+			}
+
+				
+		}
+	}
+	focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
@@ -679,7 +679,7 @@
 
 					front_1_custom_slot = ship_heavy_battery_3
 					front_2_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_secondaries_dp_2
+					mid_1_custom_slot = dp_light_battery_2
 					rear_1_custom_slot = ship_anti_air_3
 
 					ship_fire_control_system_slot = ship_fire_control_system_3
@@ -713,7 +713,7 @@
 
 					front_1_custom_slot = ship_heavy_battery_3
 					front_2_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_secondaries_dp_2
+					mid_1_custom_slot = dp_light_battery_2
 					rear_1_custom_slot = ship_anti_air_3
 
 					ship_fire_control_system_slot = ship_fire_control_system_3
@@ -747,7 +747,7 @@
 
 					front_1_custom_slot = ship_heavy_battery_3
 					front_2_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_secondaries_dp_2
+					mid_1_custom_slot = dp_light_battery_2
 					rear_1_custom_slot = ship_anti_air_3
 
 					ship_fire_control_system_slot = ship_fire_control_system_3
@@ -781,7 +781,7 @@
 
 					front_1_custom_slot = ship_heavy_battery_3
 					front_2_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_secondaries_dp_2
+					mid_1_custom_slot = dp_light_battery_2
 					rear_1_custom_slot = ship_anti_air_3
 
 					ship_fire_control_system_slot = ship_fire_control_system_3
@@ -952,6 +952,44 @@
 		}
 	}
 	focus = {
+		id = FRA_connections_to_industrialists
+		icon = GFX_focus_generic_industrial_experts
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_refus_absurde
+		}
+		relative_position_id = FRA_refus_absurde
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = concentrated_industry5_bonus
+				bonus = 1.0
+				uses = 1
+				technology = concentrated_industry5
+			}
+		}
+	}
+	focus = {
 		id = FRA_reach_out_to_trade_unions
 		icon = GFX_focus_generic_industrialists
 		x = 0
@@ -1047,44 +1085,6 @@
 				technology = excavation4
 			}
 
-		}
-	}
-	focus = {
-		id = FRA_connections_to_industrialists
-		icon = GFX_focus_generic_industrial_experts
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_tech_bonus = {
-				name = concentrated_industry5_bonus
-				bonus = 1.0
-				uses = 1
-				technology = concentrated_industry5
-			}
 		}
 	}
 	focus = {

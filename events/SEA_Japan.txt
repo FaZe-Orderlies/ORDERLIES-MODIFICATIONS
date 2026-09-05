@@ -366,11 +366,11 @@ country_event = {
 			limit = {
 				has_dlc = "Thunder at Our Gates"
 				NOT = { 
-					has_completed_focus = SIA_standing_our_ground 
-					has_completed_focus = SIA_reluctant_submission
+					always = no 
+					always = no
 				}
 			} 
-			complete_national_focus = SIA_reluctant_submission
+			# complete_national_focus = SIA_reluctant_submission
 		}
 
 	}
@@ -10370,8 +10370,8 @@ country_event = {
 						is_subject_of = ROOT
 						NOT = {
 							OR = {
-								has_completed_focus = MAN_assertiveness
-								has_completed_focus = MAN_tsr_assertiveness
+								always = no
+								always = no
 							}
 						}
 					}

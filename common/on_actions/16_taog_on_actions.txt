@@ -255,16 +255,22 @@
 
 				SIA = { #Anandas bday Sep 20
 					set_variable = { SIA_anandas_age = 10 }
-					country_event = {
-						id = siam.26
-						days = 264
-					}
+					# country_event = {
+					# 	id = siam.26
+					# 	days = 264
+					# }
 
-					SIA_phraya_songsuradet = {
-						set_unit_leader_flag = dont_move_in_cw
+					if = {
+						limit = { has_character = SIA_phraya_songsuradet }
+						SIA_phraya_songsuradet = {
+							set_unit_leader_flag = dont_move_in_cw
+						}
 					}
-					SIA_adul_aduldejajaras = {
-						set_unit_leader_flag = dont_move_in_cw
+					if = {
+						limit = { has_character = SIA_adul_aduldejajaras }
+						SIA_adul_aduldejajaras = {
+							set_unit_leader_flag = dont_move_in_cw
+						}
 					}
 				}
 			}
@@ -1288,7 +1294,7 @@
 				limit = {
 					ROOT = {
 						original_tag = SIA
-						has_completed_focus = SIA_asian_democratic_compact
+						always = no
 					}
 				}
 				
@@ -1472,7 +1478,7 @@
 				limit = {
 					FROM = {
 						original_tag = SIA
-						has_completed_focus = SIA_asian_democratic_compact
+						always = no
 					}
 				}
 

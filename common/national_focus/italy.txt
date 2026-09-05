@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3013,47 +3013,12 @@ focus_tree = {
 					limit = {
 						is_ai = yes
 					}
-					set_technology = {
-						trench_warfare = 0
-						mobile_warfare = 1
-					}
 					if = {
 						limit = {
-							has_tech = grand_battle_plan
+							has_doctrine = grand_battleplan
 						}
-						set_technology = {
-							grand_battle_plan = 0
-							delay = 1
-						}
-					}
-					if = {
-						limit = {
-							has_tech = prepared_defense
-						}
-						set_technology = {
-							prepared_defense = 0
-							elastic_defence = 1
-						}
-					}
-					if = {
-						limit = {
-							has_tech = grand_assault
-						}
-						set_technology = {
-							grand_assault = 0
-							infantry_offensive = 0
-							armored_operations = 0
-							infiltration_assault = 0
-							night_assault_tactics = 0
-							attritional_containment = 0
-							infiltration_in_depth = 0
-							grand_mechanized_offensive = 0
-							assault_concentration = 0
-							branch_interoperation = 0
-							assault_breakthrough = 0
-							central_planning = 0
-							c3i_theory = 0
-						}
+
+						set_grand_doctrine = new_mobile_warfare
 					}
 				}
 			}
@@ -5142,7 +5107,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					NOT = { has_completed_focus = ITA_strengthen_ascari_corps }
+					NOT = { always = no }
 					NOT = { has_completed_focus = ITA_forza_navale_especiale }
 				}
 				custom_effect_tooltip = ITA_strengthen_ascari_corps_ibrahim_farag_mohammed_tt
@@ -6780,7 +6745,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_culto_del_duce
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		mutually_exclusive = { focus = ITA_convene_the_grand_council focus = ITA_defy_the_duce }
+		# mutually_exclusive = { focus = ITA_convene_the_grand_council focus = ITA_defy_the_duce }
 
 		x = 0
 		y = 2
@@ -7097,7 +7062,7 @@ focus_tree = {
 	focus = {
 		id = ITA_ministero_della_cultura_popolare #Alt name would be Ministry of Popular Culture (1937-1943)
 		icon = GFX_focus_generic_italy_propaganda
-		prerequisite = { focus = ITA_culto_del_duce focus = ITA_convene_the_grand_council }
+		prerequisite = { focus = ITA_culto_del_duce } # focus = ITA_convene_the_grand_council
 
 		x = 3
 		y = 1
@@ -7183,7 +7148,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_completed_focus = ITA_disband_the_blackshirts }
+					NOT = { always = no }
 				}
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = ITA_renato_ricci
@@ -7317,8 +7282,8 @@ focus_tree = {
 	focus = {
 		id = ITA_towards_a_greater_italy
 		icon = GFX_focus_ITA_greater_italy
-		prerequisite = { focus = ITA_strengthen_the_regime focus = ITA_blackshirt_loyalty focus = ITA_setting_course }
-		mutually_exclusive = { focus = ITA_mare_nostrum_bba }
+		prerequisite = { focus = ITA_strengthen_the_regime } # focus = ITA_blackshirt_loyalty focus = ITA_setting_course
+		# mutually_exclusive = { focus = ITA_mare_nostrum_bba }
 
 		x = 0
 		y = 1

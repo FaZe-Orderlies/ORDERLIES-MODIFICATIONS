@@ -181,7 +181,11 @@ spriteTypes = {
 		name = "GFX_portrait_BRA_mascarenhas_de_morais_1"
 		texturefile = "gfx/leaders/NEG/portrait_BRA_mascarenhas_de_morais_1.dds"
 	}
-	###Старый новый лидер неигровой страны NEG###
+	###Land Cruiser###
+	spriteType = {
+		name = "GFX_JAP_land_cruiser_armor_medium"
+		texturefile = "gfx/interface/archetypes/archetype_super_heavy_tank_equipment.dds"
+	}
 }
 
 #####КАСТОМ ШРИФТ НЕ ТРОГАТЬ !!!#####

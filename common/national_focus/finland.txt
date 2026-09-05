@@ -1711,7 +1711,7 @@ focus_tree = {
 				any_other_country = {
 					original_tag = SOV
 					is_ai = no
-					has_completed_focus = SOV_baltic_security
+					always = no
 				}
 			}
 		}
@@ -5846,160 +5846,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FIN_mineral_wealth_development
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = FIN_tornio_steel_factory }
-
-		x = -1
-		y = 1
-		relative_position_id = FIN_tornio_steel_factory
-		cost = 5
-		available = {
-			any_core_state = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-				controller = {
-					NORDIC_is_nordic = yes
-				}
-				OR = {
-					has_resources_amount = {
-						resource = steel
-						amount > 0
-					}
-					has_resources_amount = {
-						resource = chromium
-						amount > 0
-					}
-					has_resources_amount = {
-						resource = tungsten
-						amount > 0
-					}
-					has_resources_amount = {
-						resource = aluminium
-						amount > 0
-					}
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		select_effect = {
-			if = {
-				limit = {
-					is_in_faction = yes
-					is_faction_leader = no
-				}
-				set_variable = { FIN_faction_leader_recieving_resource_rights = THIS.faction_leader }
-				country_event = { id = AAT_finland_misc_events.03 hours = 6 random_hours = 3 }
-			}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = FIN_mineral_wealth_development_states_tt
-
-			every_owned_state = {
-				limit = {
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-					is_core_of = THIS.controller
-					controller = {
-						NORDIC_is_nordic = yes
-					}
-					OR = {
-						has_resources_amount = {
-							resource = steel
-							amount > 0
-						}
-						has_resources_amount = {
-							resource = chromium
-							amount > 0
-						}
-						has_resources_amount = {
-							resource = tungsten
-							amount > 0
-						}
-						has_resources_amount = {
-							resource = aluminium
-							amount > 0
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-							resource = steel
-							amount > 0
-						}
-					}
-					add_resource = {
-						type = steel
-						amount = ROOT.FIN_mineral_wealth_development_resource_amount
-						show_state_in_tooltip = no
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-							resource = chromium
-							amount > 0
-						}
-					}
-					add_resource = {
-						type = chromium
-						amount = ROOT.FIN_mineral_wealth_development_resource_amount
-						show_state_in_tooltip = no
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-							resource = tungsten
-							amount > 0
-						}
-					}
-					add_resource = {
-						type = tungsten
-						amount = ROOT.FIN_mineral_wealth_development_resource_amount
-						show_state_in_tooltip = no
-					}
-				}
-				if = {
-					limit = {
-						has_resources_amount = {
-							resource = aluminium
-							amount > 0
-						}
-					}
-					add_resource = {
-						type = aluminium
-						amount = ROOT.FIN_mineral_wealth_development_resource_amount
-						show_state_in_tooltip = no
-					}
-				}
-			}
-
-			#Some Aluminium in Helsinki
-			111 = {
-				add_resource = {
-					type = aluminium
-					amount = ROOT.FIN_mineral_wealth_development_aluminium_amount
-					show_state_in_tooltip = no
-				}
-			}
-
-			if = {
-				limit = {
-					check_variable = { FIN_faction_leader_recieving_resource_rights = 0 compare = not_equals }
-					var:FIN_faction_leader_recieving_resource_rights = {
-						has_capitulated = no
-						is_in_faction_with = ROOT
-					}
-				}
-				country_event = AAT_finland_misc_events.04
-			}
-		}
-	}
-	
-	focus = {
 		id = FIN_industrialize_the_region
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = FIN_northern_defense_front }
@@ -6402,44 +6248,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FIN_finnish_march_of_conquest
-		icon = GFX_focus_generic_attack_finland
-		prerequisite = { focus = FIN_joint_scientific_program }
-		
-
-		x = 0
-		y = 2
-		relative_position_id = FIN_joint_scientific_program
-		cost = 10
-		available = {
-			is_subject = no
-			has_dynamic_modifier = { modifier = FIN_finnish_army }
-			all_core_state = {
-				is_controlled_by = ROOT
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			FIN_bop_low_increase_effect = yes
-
-			custom_effect_tooltip = FIN_modify_finnish_army_ns_intro
-			add_to_variable = {
-				FIN_finnish_army_conscription_factor = 0.1
-				tooltip = conscription_factor_tt
-			}
-			
-			add_timed_idea = {
-				idea = FIN_finnish_march_of_conquest
-				days = 730
-			}
-
-			
-		}
-	}
-	
-	focus = {
 		id = FIN_joint_scientific_program
 		icon = GFX_focus_research
 		prerequisite = { focus = FIN_german_military_advisors  }
@@ -6490,6 +6298,44 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = FIN_finnish_march_of_conquest
+		icon = GFX_focus_generic_attack_finland
+		prerequisite = { focus = FIN_joint_scientific_program }
+		
+
+		x = 0
+		y = 2
+		relative_position_id = FIN_joint_scientific_program
+		cost = 10
+		available = {
+			is_subject = no
+			has_dynamic_modifier = { modifier = FIN_finnish_army }
+			all_core_state = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			FIN_bop_low_increase_effect = yes
+
+			custom_effect_tooltip = FIN_modify_finnish_army_ns_intro
+			add_to_variable = {
+				FIN_finnish_army_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
+			}
+			
+			add_timed_idea = {
+				idea = FIN_finnish_march_of_conquest
+				days = 730
+			}
+
+			
 		}
 	}
 	
@@ -10738,6 +10584,160 @@ focus_tree = {
 					type = chromium
 					amount = 4
 				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_mineral_wealth_development
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = FIN_tornio_steel_factory }
+
+		x = -1
+		y = 1
+		relative_position_id = FIN_tornio_steel_factory
+		cost = 5
+		available = {
+			any_core_state = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+				controller = {
+					NORDIC_is_nordic = yes
+				}
+				OR = {
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+					}
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		select_effect = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+				set_variable = { FIN_faction_leader_recieving_resource_rights = THIS.faction_leader }
+				country_event = { id = AAT_finland_misc_events.03 hours = 6 random_hours = 3 }
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = FIN_mineral_wealth_development_states_tt
+
+			every_owned_state = {
+				limit = {
+					state_is_fully_controlled_by_ROOT_or_subject = yes
+					is_core_of = THIS.controller
+					controller = {
+						NORDIC_is_nordic = yes
+					}
+					OR = {
+						has_resources_amount = {
+							resource = steel
+							amount > 0
+						}
+						has_resources_amount = {
+							resource = chromium
+							amount > 0
+						}
+						has_resources_amount = {
+							resource = tungsten
+							amount > 0
+						}
+						has_resources_amount = {
+							resource = aluminium
+							amount > 0
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = steel
+							amount > 0
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = ROOT.FIN_mineral_wealth_development_resource_amount
+						show_state_in_tooltip = no
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = chromium
+							amount > 0
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = ROOT.FIN_mineral_wealth_development_resource_amount
+						show_state_in_tooltip = no
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = tungsten
+							amount > 0
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = ROOT.FIN_mineral_wealth_development_resource_amount
+						show_state_in_tooltip = no
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = aluminium
+							amount > 0
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = ROOT.FIN_mineral_wealth_development_resource_amount
+						show_state_in_tooltip = no
+					}
+				}
+			}
+
+			#Some Aluminium in Helsinki
+			111 = {
+				add_resource = {
+					type = aluminium
+					amount = ROOT.FIN_mineral_wealth_development_aluminium_amount
+					show_state_in_tooltip = no
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = { FIN_faction_leader_recieving_resource_rights = 0 compare = not_equals }
+					var:FIN_faction_leader_recieving_resource_rights = {
+						has_capitulated = no
+						is_in_faction_with = ROOT
+					}
+				}
+				country_event = AAT_finland_misc_events.04
 			}
 		}
 	}

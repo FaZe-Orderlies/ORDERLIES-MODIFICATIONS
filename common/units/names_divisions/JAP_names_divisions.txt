@@ -1,4 +1,4 @@
-﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
 # If we run out of all historical names, the names will be assigned in the old way.
 #
 # Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
@@ -1027,5 +1027,27 @@ JAP_IMB_01 =
 		134 = { "%d Dokuritsu Konsei Ryodan" }
 		135 = { "%d Dokuritsu Konsei Ryodan" }
 		136 = { "%d Dokuritsu Konsei Ryodan" }
+	}
+}
+
+JAP_MIL_01 = {
+	name = "Kokumin Giyu Sentotai"
+	for_countries = { JAP }
+	can_use = { always = yes }
+	division_types = { militia infantry }
+	fallback_name = "%d Kokumin Giyu Sentotai"
+	ordered = {
+		1 = { "%d Kokumin Giyu Sentotai" }
+	}
+}
+
+JAP_MIL_02 = {
+	name = "Militia"
+	for_countries = { JAP }
+	can_use = { always = yes }
+	division_types = { militia infantry }
+	fallback_name = "%d Militia"
+	ordered = {
+		1 = { "%d Militia" }
 	}
 }

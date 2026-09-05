@@ -1,4 +1,4 @@
-﻿capital = 16 # Paris/Ile de France
+capital = 16 # Paris/Ile de France
 
 if = {
 	limit = {
@@ -320,11 +320,11 @@ if = {
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
 set_grand_doctrine = new_operational_integrity
-set_sub_doctrine = great_war_infantry
-add_mastery = {
-    amount = 100
-    sub_doctrine = great_war_infantry
-}
+#set_sub_doctrine = great_war_infantry
+#add_mastery = {
+#    amount = 100
+#    sub_doctrine = great_war_infantry
+#}
 
 	complete_special_project = {
 		project = sp:sp_air_radar

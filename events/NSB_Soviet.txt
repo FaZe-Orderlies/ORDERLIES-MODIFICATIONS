@@ -6534,18 +6534,18 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				has_completed_focus = GER_alliance_with_the_ussr
+				always = no
 			}
 			modifier = {
 				factor = 0.1
-				has_completed_focus = GER_anti_comintern_pact
+				always = no
 			}
 			modifier = {
 				factor = 0
 				OR = {
 					has_war_with = FROM
 					is_justifying_wargoal_against = FROM
-					has_completed_focus = GER_anti_soviet_pact
+					always = no
 					has_completed_focus = GER_war_with_the_ussr
 				}
 			}
@@ -7271,9 +7271,9 @@ country_event = {
 					has_wargoal_against = POL
 					is_justifying_wargoal_against = POL
 					has_opinion_modifier = MR_pact
-					has_completed_focus = SOV_claims_on_poland
+					always = no
 					focus_progress = {
-						focus = SOV_claims_on_poland
+						# focus = SOV_claims_on_poland
 						progress > 0
 					}
 				}
@@ -7434,7 +7434,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = POL_organize_the_peasants_strike
+				always = no
 			}
 			modifier = {
 				factor = 2
@@ -7447,14 +7447,14 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				OR = {
-					SOV = { has_completed_focus = SOV_claims_on_poland }
+					SOV = { always = no }
 				}
 			}
 			modifier = {
 				factor = 0
 				OR = {
-					has_completed_focus = POL_assemble_the_regency_council
-					has_completed_focus = POL_nationalist_constitution
+					always = no
+					always = no
 				}
 			}
 		}
@@ -7482,7 +7482,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = POL_complete_april_constitution
+				always = no
 			}
 			modifier = {
 				factor = 2

@@ -368,3 +368,7 @@ BRM_burmah_oils_oil_fields = {
 		}
 	}	
 }
+
+JAP_kwantung_army_decisions = {
+	icon = generic_propaganda
+}

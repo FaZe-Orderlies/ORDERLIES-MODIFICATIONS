@@ -1879,132 +1879,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
-	focus = {
-		id = AST_seven_million_britishers
-		icon = GFX_focus_generic_immigration
-
-		prerequisite = { focus = AST_its_fight_work_or_perish }
-		
-		relative_position_id = 	AST_its_fight_work_or_perish
-		x = -2
-		y = 1
-	
-		cost = 10
-
-		available = {
-			
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = no
-
-		allow_branch = {
-			always = no
-		}
-	
-		completion_reward = {
-			remove_dynamic_modifier = { 
-				modifier = AST_war_angst_spirit
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			remove_mission = AST_deteriorating_prime_minister_nerves_mission
-
-			IF = {
-				limit = {
-					NOT = {
-						has_completed_focus = AST_reinforcements
-					}
-				}
-				custom_effect_tooltip = AST_seven_million_britishers_reinforcements_tt
-				random_owned_state = {
-					limit = {
-						is_coastal = yes
-						is_fully_controlled_by = ROOT
-					}
-					prioritize = { 523 872 } #Papua, NQ
-
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-
-					add_building_construction = { 
-						type = coastal_bunker 
-						level = 1 
-						province = {
-				  			all_provinces = yes
-				  			limit_to_victory_point > 0
-				  			limit_to_coastal = yes
-				  		}
-					}
-				}
-			}
-
-			IF = {
-				limit = {
-					NOT = {
-						has_completed_focus = AST_ending_overseas_conscription
-					}
-				}
-				custom_effect_tooltip = AST_seven_million_britishers_conscription_tt
-				AST_add_or_modify_AST_australian_military_forces_spirit = yes
-				add_to_variable = { AST_australian_military_forces_spirit_army_non_core_attack_factor = 0.025 tooltip = army_non_core_attack_factor_tt }
-				add_to_variable = { AST_australian_military_forces_spirit_army_non_core_defence_factor = 0.025 tooltip = army_non_core_defence_factor_tt }
-				}
-
-			IF = {
-				
-
-
-				IF = {
-					limit = {
-						NOT = { has_tech = basic_ship_hull_carrier }
-					}
-					set_technology = { basic_ship_hull_carrier = 1 }
-				}
-		
-				create_equipment_variant = {
-					name = "HMAS Melbourne"
-					type = ship_hull_carrier_1
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = carrier_ship_engine_2
-						fixed_ship_secondaries_slot = dp_ship_secondaries_2
-						front_1_custom_slot = empty
-					}
-				}
-
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "AST" 
-						version_name = "HMAS Melbourne"
-					}
-					requested_factories = 1
-					progress = 0.50
-					amount = 1
-				  
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
-	}
 
 	focus = {
 		id = AST_we_endured
@@ -2303,6 +2177,134 @@ focus_tree = {
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+	}
+
+	focus = {
+		id = AST_seven_million_britishers
+		icon = GFX_focus_generic_immigration
+
+		prerequisite = { focus = AST_its_fight_work_or_perish }
+		mutually_exclusive = { focus = AST_we_endured }
+		
+		relative_position_id = 	AST_its_fight_work_or_perish
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = no
+
+		allow_branch = {
+			always = no
+		}
+	
+		completion_reward = {
+			remove_dynamic_modifier = { 
+				modifier = AST_war_angst_spirit
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_mission = AST_deteriorating_prime_minister_nerves_mission
+
+			IF = {
+				limit = {
+					NOT = {
+						has_completed_focus = AST_reinforcements
+					}
+				}
+				custom_effect_tooltip = AST_seven_million_britishers_reinforcements_tt
+				random_owned_state = {
+					limit = {
+						is_coastal = yes
+						is_fully_controlled_by = ROOT
+					}
+					prioritize = { 523 872 } #Papua, NQ
+
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+
+					add_building_construction = { 
+						type = coastal_bunker 
+						level = 1 
+						province = {
+				  			all_provinces = yes
+				  			limit_to_victory_point > 0
+				  			limit_to_coastal = yes
+				  		}
+					}
+				}
+			}
+
+			IF = {
+				limit = {
+					NOT = {
+						has_completed_focus = AST_ending_overseas_conscription
+					}
+				}
+				custom_effect_tooltip = AST_seven_million_britishers_conscription_tt
+				AST_add_or_modify_AST_australian_military_forces_spirit = yes
+				add_to_variable = { AST_australian_military_forces_spirit_army_non_core_attack_factor = 0.025 tooltip = army_non_core_attack_factor_tt }
+				add_to_variable = { AST_australian_military_forces_spirit_army_non_core_defence_factor = 0.025 tooltip = army_non_core_defence_factor_tt }
+				}
+
+			IF = {
+				
+
+
+				IF = {
+					limit = {
+						NOT = { has_tech = basic_ship_hull_carrier }
+					}
+					set_technology = { basic_ship_hull_carrier = 1 }
+				}
+		
+				create_equipment_variant = {
+					name = "HMAS Melbourne"
+					type = ship_hull_carrier_1
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_2
+						front_1_custom_slot = empty
+					}
+				}
+
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "AST" 
+						version_name = "HMAS Melbourne"
+					}
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				  
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {

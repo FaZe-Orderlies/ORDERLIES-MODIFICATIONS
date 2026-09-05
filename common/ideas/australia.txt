@@ -2043,7 +2043,7 @@ ideas = {
 
 
 			visible = {
-				#has_completed_focus = ETH_soviet-ethiopian_trade_agreement
+				# always = no
 			}
 
 			research_bonus = {

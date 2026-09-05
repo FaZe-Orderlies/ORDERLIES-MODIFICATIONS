@@ -203,7 +203,7 @@ intelligence_agency = {
 	default = { 
 		tag = PRC 
 		NOT = {
-			has_completed_focus = PRC_leadership_of_mao
+			always = no
 		}
 	}
 	available = { original_tag = PRC }
@@ -216,7 +216,7 @@ intelligence_agency = {
 	
 	default = { 
 		tag = PRC 
-		has_completed_focus = PRC_leadership_of_mao
+		always = no
 	}
 	available = { original_tag = PRC }
 }
@@ -459,7 +459,7 @@ intelligence_agency = {
 		NOT = {
 			has_government = fascism
 		}
-		has_completed_focus = SWI_buero_ha
+		always = no
 	}
 	
 	default = { 		
@@ -467,7 +467,7 @@ intelligence_agency = {
 		NOT = {
 			has_government = fascism
 		}
-		has_completed_focus = SWI_buero_ha
+		always = no
 	} 
 }
 
@@ -478,13 +478,13 @@ intelligence_agency = {
 	
 	available = { 
 		tag = SWI
-		has_completed_focus = SWI_federal_police
+		always = no
 
 	}
 	
 	default = { 		
 		tag = SWI
-		has_completed_focus = SWI_federal_police
+		always = no
 	} 
 }
 

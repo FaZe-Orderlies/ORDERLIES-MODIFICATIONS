@@ -1,0 +1,1099 @@
+# Safe dummy characters to resolve character scope and recruitment errors
+characters = {
+	AUS_alfred_jansa = {
+		name = AUS_alfred_jansa
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_alois_of_liechtenstein = {
+		name = AUS_alois_of_liechtenstein
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_anton_kienbauer = {
+		name = AUS_anton_kienbauer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_arthur_seyss = {
+		name = AUS_arthur_seyss
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_arthur_seyss-inquart = {
+		name = AUS_arthur_seyss-inquart
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_edmund_glaise_horstenau = {
+		name = AUS_edmund_glaise_horstenau
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_eduard_barger = {
+		name = AUS_eduard_barger
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_ernst_rudiger_starhemberg = {
+		name = AUS_ernst_rudiger_starhemberg
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_eugen_beyer = {
+		name = AUS_eugen_beyer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_franz_bohme = {
+		name = AUS_franz_bohme
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_johannes_of_liechtenstein = {
+		name = AUS_johannes_of_liechtenstein
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_karl_eglseer = {
+		name = AUS_karl_eglseer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_lothar_rendulic = {
+		name = AUS_lothar_rendulic
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_ludwig_von_eimannsberger = {
+		name = AUS_ludwig_von_eimannsberger
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_valentin_feuerstein = {
+		name = AUS_valentin_feuerstein
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	AUS_wilhelm_gebauer = {
+		name = AUS_wilhelm_gebauer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BEL_leon_degrelle = {
+		name = BEL_leon_degrelle
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BLR_radislau_astrouski = {
+		name = BLR_radislau_astrouski
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BOL_indigenous_council = {
+		name = BOL_indigenous_council
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BRA_indigenous_council = {
+		name = BRA_indigenous_council
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BRA_plinio_salgado = {
+		name = BRA_plinio_salgado
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BRM_ba_maw = {
+		name = BRM_ba_maw
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	BRM_myat_phaya_lat = {
+		name = BRM_myat_phaya_lat
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_fu_zuoyi = {
+		name = CHI_fu_zuoyi
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_gu_zhutong = {
+		name = CHI_gu_zhutong
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_song_zheyuan = {
+		name = CHI_song_zheyuan
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_sun_tongxuan = {
+		name = CHI_sun_tongxuan
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_wan_fulin = {
+		name = CHI_wan_fulin
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHI_wang_jingwei = {
+		name = CHI_wang_jingwei
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHL_jorge_gonz = {
+		name = CHL_jorge_gonz
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CHL_jorge_gonzález_von_marées = {
+		name = CHL_jorge_gonzález_von_marées
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CRO_ante_pavelic = {
+		name = CRO_ante_pavelic
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CRO_duro_jakcin = {
+		name = CRO_duro_jakcin
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CZE_jaroslav_krejchi = {
+		name = CZE_jaroslav_krejchi
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CZE_josef_shnejdarek = {
+		name = CZE_josef_shnejdarek
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CZE_richard_tesarzhik = {
+		name = CZE_richard_tesarzhik
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CZE_sergej_vojcechovsky = {
+		name = CZE_sergej_vojcechovsky
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	CZE_vojtyech_luzha = {
+		name = CZE_vojtyech_luzha
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	DON_vladimir_sidorin = {
+		name = DON_vladimir_sidorin
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ENG_robert_menzies = {
+		name = ENG_robert_menzies
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ETH_abba_jofir = {
+		name = ETH_abba_jofir
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ETH_feodor_konovalov = {
+		name = ETH_feodor_konovalov
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ETH_haile_selassie_gugsa = {
+		name = ETH_haile_selassie_gugsa
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ETH_hailu_tekle_haymanot = {
+		name = ETH_hailu_tekle_haymanot
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ETH_seyoum_mengesha = {
+		name = ETH_seyoum_mengesha
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GEO_ioseb_jughashvili = {
+		name = GEO_ioseb_jughashvili
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GEO_shalva_maglakelidze = {
+		name = GEO_shalva_maglakelidze
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_adolf_friedrich_von_mecklenburg = {
+		name = GER_adolf_friedrich_von_mecklenburg
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_alfred_hugenberg = {
+		name = GER_alfred_hugenberg
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_andreas_hermes = {
+		name = GER_andreas_hermes
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_august_thalheimer = {
+		name = GER_august_thalheimer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_bernhard_bastlein = {
+		name = GER_bernhard_bastlein
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_carl_friedrich_goerdeler = {
+		name = GER_carl_friedrich_goerdeler
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_dietrich_bonhoeffer = {
+		name = GER_dietrich_bonhoeffer
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_ernst_thalmann = {
+		name = GER_ernst_thalmann
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_hans_luther = {
+		name = GER_hans_luther
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_hans_oster = {
+		name = GER_hans_oster
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_hans_von_luck = {
+		name = GER_hans_von_luck
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_hermann_duncker = {
+		name = GER_hermann_duncker
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_hermann_erhardt = {
+		name = GER_hermann_erhardt
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_julius_leber = {
+		name = GER_julius_leber
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_konstantin_von_neurath = {
+		name = GER_konstantin_von_neurath
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_kurt_schumacher = {
+		name = GER_kurt_schumacher
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_otto_ruhle = {
+		name = GER_otto_ruhle
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_otto_von_habsburg = {
+		name = GER_otto_von_habsburg
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_theodor_heuss = {
+		name = GER_theodor_heuss
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_walter_ulbricht = {
+		name = GER_walter_ulbricht
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_wilhelm_canaris = {
+		name = GER_wilhelm_canaris
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_wilhelm_ritter_von_thoma = {
+		name = GER_wilhelm_ritter_von_thoma
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_wilhelm_von_gayl = {
+		name = GER_wilhelm_von_gayl
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GER_wilhelm_zaisser = {
+		name = GER_wilhelm_zaisser
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GND_yu_hanmou = {
+		name = GND_yu_hanmou
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GXC_bai_chongxi = {
+		name = GXC_bai_chongxi
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GXC_chen_jitang = {
+		name = GXC_chen_jitang
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	GXC_li_zongren = {
+		name = GXC_li_zongren
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	HES_philipp_of_hesse = {
+		name = HES_philipp_of_hesse
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	HOL_anton_mussert = {
+		name = HOL_anton_mussert
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	IA_sakutaro_iwasa = {
+		name = IA_sakutaro_iwasa
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	IA_sanshiro_ishikawa = {
+		name = IA_sanshiro_ishikawa
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	IRQ_rashid_ali_algaylani = {
+		name = IRQ_rashid_ali_algaylani
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	ITA_ferdinando_umberto_filippo_adalberto = {
+		name = ITA_ferdinando_umberto_filippo_adalberto
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KAR_jalmari_takkinen = {
+		name = KAR_jalmari_takkinen
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KAR_ukki_vainamoinen = {
+		name = KAR_ukki_vainamoinen
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KHM_ma_hushan = {
+		name = KHM_ma_hushan
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KHM_ma_zhancang = {
+		name = KHM_ma_zhancang
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KOR_pak_hon_yong = {
+		name = KOR_pak_hon_yong
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KUB_ivanis_vasily_nikolaevich = {
+		name = KUB_ivanis_vasily_nikolaevich
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	KUM_yulbars_khan = {
+		name = KUM_yulbars_khan
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MAN_jonjurjab = {
+		name = MAN_jonjurjab
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MAN_urzhin_garmaev = {
+		name = MAN_urzhin_garmaev
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEK_christian_louis = {
+		name = MEK_christian_louis
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEN_altanochir = {
+		name = MEN_altanochir
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEN_jodbajab = {
+		name = MEN_jodbajab
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEN_li_shouxin = {
+		name = MEN_li_shouxin
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEN_prince_demchugdongrub = {
+		name = MEN_prince_demchugdongrub
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEX_indigenous_council = {
+		name = MEX_indigenous_council
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MEX_salvador_abascal = {
+		name = MEX_salvador_abascal
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	MNT_blazo_dukanovic = {
+		name = MNT_blazo_dukanovic
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	NOR_josef_terboven = {
+		name = NOR_josef_terboven
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	NOR_vidkun_quisling = {
+		name = NOR_vidkun_quisling
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	PAR_ivan_belyaev = {
+		name = PAR_ivan_belyaev
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	PHI_jose_laurel = {
+		name = PHI_jose_laurel
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	POL_boleslaw_piasecki = {
+		name = POL_boleslaw_piasecki
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	POL_pavel_bermondt_avalov = {
+		name = POL_pavel_bermondt_avalov
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	POL_rudinger_von_der_goltz = {
+		name = POL_rudinger_von_der_goltz
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	PRU_ = {
+		name = PRU_
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	PRU_Óscar_benavides = {
+		name = PRU_Óscar_benavides
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SAX_george_of_saxony = {
+		name = SAX_george_of_saxony
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SHX_wang_jingguo = {
+		name = SHX_wang_jingguo
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SIA_adul_aduldejajaras = {
+		name = SIA_adul_aduldejajaras
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SIA_phraya_songsuradet = {
+		name = SIA_phraya_songsuradet
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SIC_liu_wenhui = {
+		name = SIC_liu_wenhui
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SIC_yang_sen = {
+		name = SIC_yang_sen
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SND_han_fuju = {
+		name = SND_han_fuju
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SOV_boris_shteifon = {
+		name = SOV_boris_shteifon
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SOV_vasily_flug = {
+		name = SOV_vasily_flug
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SPA_emilio_mola = {
+		name = SPA_emilio_mola
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SPR_enrique_lister = {
+		name = SPR_enrique_lister
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SPR_jose_rovira = {
+		name = SPR_jose_rovira
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SPR_valentin_gonzalez = {
+		name = SPR_valentin_gonzalez
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SUR_guianan_indigenous_council = {
+		name = SUR_guianan_indigenous_council
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SWE_sven_linderot = {
+		name = SWE_sven_linderot
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	SWI_robert_tobler = {
+		name = SWI_robert_tobler
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	TIB_thubten_kunpela = {
+		name = TIB_thubten_kunpela
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	UDM_boris = {
+		name = UDM_boris
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	UKR_mykhailo_omelianovych_pavlenko = {
+		name = UKR_mykhailo_omelianovych_pavlenko
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	USA_charles_coughlin = {
+		name = USA_charles_coughlin
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	USA_clarence_huebner = {
+		name = USA_clarence_huebner
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	USA_earl_browder = {
+		name = USA_earl_browder
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	USA_joseph_mccarthy = {
+		name = USA_joseph_mccarthy
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	USA_joseph_patterson = {
+		name = USA_joseph_patterson
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	WUR_philipp_albrecht = {
+		name = WUR_philipp_albrecht
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	XSM_ma_bufang = {
+		name = XSM_ma_bufang
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	XSM_ma_buqing = {
+		name = XSM_ma_buqing
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	XSM_ma_hongkui = {
+		name = XSM_ma_hongkui
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	YUN_hu_ruoyu = {
+		name = YUN_hu_ruoyu
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+	YUN_lu_han = {
+		name = YUN_lu_han
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+			}
+		}
+	}
+}

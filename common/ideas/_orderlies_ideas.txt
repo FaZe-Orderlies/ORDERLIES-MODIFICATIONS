@@ -68,7 +68,7 @@ ideas = {
 				planning_speed = 0.15
 				max_planning = 0.10
 				army_org_factor = 0.05
-				army_experience_gain = 0.05
+				experience_gain_army = 0.05
 			}
     	}
 
@@ -97,8 +97,8 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
-				division_recovery_rate = 0.10
-				reinforce_rate = 0.10
+				recovery_rate_factor = 0.10
+				army_reinforce_rate = 0.10
 				max_planning = 0.10
 			}
 		}
@@ -111,7 +111,6 @@ ideas = {
 			}
 
 			modifier = {
-				max_factory_efficiency_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.08
 				industrial_capacity_factory = 0.05
@@ -288,6 +287,66 @@ ideas = {
 				breakthrough_bonus_against = 0.15
 			}
 		}
+
+		CZE_skoda_weapon_sales_dummy_idea = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		SPA_recovering_from_civil_war = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+		}
+
+		synarchist_support_surge = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+		}
+
+		ETH_purge_ideology_boost_idea = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_purge
+		}
+
+		ETH_aid_SPC = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+		}
+
+		CZE_sokolov_raid_pfot_limited_success_ns = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_aircraft_support
+		}
+
+		CZE_sokolov_raid_pfot_success_ns = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_aircraft_support
+		}
+
+		CZE_sokolov_raid_pfot_critical_success_ns = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_aircraft_support
+		}
+
+		HOL_shared_intelligence_eng_fra = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_eng_ger = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_fra_eng = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_fra_ger = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_ger_fra = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_ger_eng = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_hol_fra = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_hol_eng = { allowed = { always = no } removal_cost = -1 }
+		HOL_shared_intelligence_hol_ger = { allowed = { always = no } removal_cost = -1 }
+		HOL_staff_plan_eng = { allowed = { always = no } removal_cost = -1 }
+		HOL_staff_plan_fra = { allowed = { always = no } removal_cost = -1 }
+		HOL_staff_plan_ger = { allowed = { always = no } removal_cost = -1 }
 	}
 	
 	hidden_ideas = {
@@ -295,7 +354,7 @@ ideas = {
 		FRA_cap_idea = {
 			allowed = { always = no }
 
-			removal_cost = -1|
+			removal_cost = -1
 			
 			modifier = {
 				army_attack_factor = -3

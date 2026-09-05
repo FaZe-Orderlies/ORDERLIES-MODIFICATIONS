@@ -1,4 +1,6 @@
 add_namespace = USA_revolution
+add_namespace = USA_need_military_bases
+add_namespace = USA_against_jap
 
 country_event = {
 	id = USA_revolution.1
@@ -314,8 +316,6 @@ news_event = {
     }
 }
 
-add_namespace = USA_need_military_bases
-
 country_event = {
 	id = USA_need_military_bases.1
 	title = USA_need_military_bases.1t
@@ -341,10 +341,10 @@ country_event = {
 	}
 	option = {
 		name = USA_need_military_bases.b
+		ai_chance = {
+			base = 8
+		}
 		USA = {
-			ai_chance = {
-				base = 8
-			}
 			create_wargoal = {
 				target = ROOT
 				type = liberate_wargoal
@@ -358,8 +358,6 @@ country_event = {
 	}
 	
 }
-
-add_namespace = USA_against_jap
 
 country_event = {
 	id = USA_against_jap.1

@@ -1371,12 +1371,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1408,12 +1408,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1421,11 +1421,11 @@ ideas = {
 					limit = {
 						original_tag = USA
 					}
-					has_completed_focus = USA_main_battle_tanks
+					always = no
 				}
 				else = {
 					USA = {
-						has_completed_focus = USA_main_battle_tanks
+						always = no
 					}
 				}
 			}
@@ -1457,7 +1457,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_tank_destroyer_doctrine
+				always = no
 			}
 
 			
@@ -1551,12 +1551,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1633,12 +1633,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1691,12 +1691,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1812,12 +1812,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1852,12 +1852,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}
@@ -1893,12 +1893,12 @@ ideas = {
 					if = {
 						limit = {
 							NOT = {
-								has_completed_focus = PHI_declare_military_emergency
+								always = no
 							}
 						}
-						has_completed_focus = PHI_align_with_the_usa
+						always = no
 						else = {
-							has_completed_focus = PHI_declare_military_emergency
+							always = no
 						}
 					}
 				}

@@ -1,4 +1,4 @@
-﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
 # If we run out of all historical names, the names will be assigned in the old way.
 #
 # Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
@@ -1026,7 +1026,7 @@ ENG_MNT_02 = {
 			tag = ENG
 			AND = {
 				tag = RAJ
-				has_completed_focus = RAJ_indian_gurkhas
+				always = no
 			}
 		}
 	}
@@ -1395,5 +1395,16 @@ ENG_FAS_01 =
 		28 = { "%dth Blackshirt Brigade" }
 		29 = { "%dth Blackshirt Brigade" }
 		30 = { "%dth Blackshirt Brigade" }
+	}
+}
+
+ENG_CAR_01 = {
+	name = "Armoured Car Companies"
+	for_countries = { ENG }
+	can_use = { always = yes }
+	division_types = { armored_car }
+	fallback_name = "%d Armoured Car Company"
+	ordered = {
+		1 = { "%d Armoured Car Company" }
 	}
 }

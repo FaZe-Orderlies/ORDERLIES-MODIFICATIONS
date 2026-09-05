@@ -912,3 +912,64 @@ puppet_controlled_border_states = {
 		}
 	}
 }
+
+faction_states_on_my_continent = {
+	input = collection:states_on_my_continent
+	name = COLLECTION_FACTION_STATES_ON_MY_CONTINENT
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+
+faction_controlled_between_the_seas_states = {
+	input = collection:POL_between_the_seas_states
+	name = COLLECTION_FACTION_BETWEEN_THE_SEAS_STATES
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+
+faction_controlled_balkan_states = {
+	input = collection:controllable_balkan_states
+	name = COLLECTION_FACTION_BALKAN_STATES
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+
+faction_controlled_mare_nostrum_states = {
+	input = collection:controllable_mare_nostrum_states
+	name = COLLECTION_FACTION_MARE_NOSTRUM_STATES
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+
+faction_controlled_pax_romana_states = {
+	input = collection:controllable_pax_romana_states
+	name = COLLECTION_FACTION_PAX_ROMANA_STATES
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+
+comintern_controlled_border_states = {
+	input = collection:comintern_controllable_border_states
+	name = COLLECTION_COMINTERN_BORDER_STATES
+	operators = {
+		limit = {
+			controller = { is_in_faction_with = ROOT }
+		}
+	}
+}
+

@@ -818,11 +818,11 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = PHI_encourage_japanese_investment
+				always = no
 			}
 
 			visible = {
-				#has_completed_focus = PHI_encourage_japanese_investment
+				#always = no
 			}
 
 			cost = 50
@@ -854,7 +854,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = PHI_san_miguel }
+				NOT = { always = no }
 			}
 
 			cost = 150
@@ -879,7 +879,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = PHI_san_miguel 
+				always = no 
 			}
 
 			cost = 150
@@ -963,7 +963,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = PHI_mineral_prospecting }
+				NOT = { always = no }
 			}
 
 			cost = 150
@@ -988,7 +988,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = PHI_mineral_prospecting
+				always = no
 			}
 
 			cost = 150
@@ -1014,7 +1014,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = PHI_encourage_gold_exports }
+				NOT = { always = no }
 			}
 
 			cost = 150
@@ -1039,7 +1039,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = PHI_encourage_gold_exports
+				always = no
 			}
 
 			cost = 150

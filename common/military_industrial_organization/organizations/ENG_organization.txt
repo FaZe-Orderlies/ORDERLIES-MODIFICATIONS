@@ -33,7 +33,7 @@ ENG_vickers_armstrong_eng_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	}
 	
@@ -168,7 +168,7 @@ ENG_vauxhall_organization = {
 		}
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	
 	}
@@ -212,7 +212,7 @@ ENG_vauxhall_organization = {
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
+					always = no
 					has_country_flag = has_vauxhall_mio_flag
 				}
 			}
@@ -323,7 +323,7 @@ ENG_cammell_laird_organization = {
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
+					always = no
 					has_country_flag = has_cammell_laird_mio_flag
 				}
 			}
@@ -440,7 +440,7 @@ ENG_john_brown_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	}
 	
@@ -609,7 +609,7 @@ ENG_de_havilland_organization = {
 				FROM = { tag = NOR }
 			}
 			FROM = {
-				has_completed_focus = NOR_invite_transnational_manufacturers
+				always = no
 			}
 		}
 	}
@@ -636,7 +636,7 @@ ENG_fairey_aviation_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	}
 	
@@ -704,7 +704,7 @@ ENG_avro_organization = {
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
+					always = no
 					has_country_flag = has_avro_mio_flag
 				}
 			}
@@ -765,7 +765,7 @@ ENG_rsaf_enfield_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_british_designers
+				always = no
 			}
 		}
 	}
@@ -837,7 +837,7 @@ ENG_vauxhall_automotive_organization = {
 		}
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}	
 	}
 	
@@ -925,7 +925,7 @@ ENG_royal_arsenal_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_british_designers
+				always = no
 			}
 		}
 	}
@@ -995,7 +995,7 @@ ENG_crossley_motors_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_crossley_motors
+				always = no
 			}
 		}
 

@@ -35,7 +35,7 @@ template_decisions = {
         }
     }
 
-    50w_decision = {
+    template_50w_decision = {
         icon = GFX_decision_generic_army_support
         allowed = { always = yes }
         available = { is_ai = no }
@@ -55,7 +55,7 @@ template_decisions = {
         }
     }
 
-    40w_decision = {
+    template_40w_decision = {
         icon = GFX_decision_generic_tank
         allowed = { always = yes }
         available = { is_ai = no }

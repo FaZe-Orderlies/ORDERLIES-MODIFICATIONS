@@ -10,7 +10,7 @@ ideas = {
 			}
 			visible = {
 				NOT = {
-					has_completed_focus = CZE_revive_the_czechoslovak_legion_dynamic
+					always = no
 				}
 			}
 			modifier = {
@@ -200,7 +200,7 @@ ideas = {
 					has_doctrine = siege_artillery
 					has_doctrine = defensive_postures
 					has_doctrine = fire_concentration
-					has_doctrine = field_engineering
+					# has_doctrine = field_engineering
 					}
 				}
 			}
@@ -215,28 +215,26 @@ ideas = {
 						has_dlc = "Graveyard of Empires"
 					}
 					OR = {
-						has_completed_focus = AFG_reintroduce_war_elephants
+						always = no
 					}
 				}
 			}
 
 			modifier = {
-				
 				out_of_supply_factor = -0.10
 				supply_combat_penalties_on_core_factor = -0.2
-				
 				army_artillery_attack_factor = 0.05
-			equipment_bonus = {
-				light_tank_artillery_chassis = {
-					soft_attack = 0.05
+				equipment_bonus = {
+					light_tank_artillery_chassis = {
+						soft_attack = 0.05
+					}
+					medium_tank_artillery_chassis = {
+						soft_attack = 0.05
+					}
+					heavy_tank_artillery_chassis = {
+						soft_attack = 0.05
+					}
 				}
-				medium_tank_artillery_chassis = {
-					soft_attack = 0.05
-				}
-				heavy_tank_artillery_chassis = {
-					soft_attack = 0.05
-				}
-			}
 			}
 			ai_will_do = {
 				factor = 1
@@ -252,8 +250,8 @@ ideas = {
 				modifier = {
 					factor = 2
 					OR = {
-					has_doctrine = mounted_infantry
-					has_doctrine = great_war_infantry
+					# has_doctrine = mounted_infantry
+					# has_doctrine = great_war_infantry
 					has_doctrine = armored_infantry_support
 					}
 				}
@@ -401,7 +399,7 @@ ideas = {
 				modifier = {
 					factor = 2
 					OR = {
-					has_doctrine = great_war_infantry
+					# has_doctrine = great_war_infantry
 					has_doctrine = anti_tank_frontline
 					has_doctrine = last_stand
 					}
@@ -435,7 +433,7 @@ ideas = {
 					factor = 2
 					OR = {
 					has_doctrine = mobile_infantry
-					has_doctrine = infiltration_tactics
+					# has_doctrine = infiltration_tactics
 					has_doctrine = armored_spearhead
 					}
 				}
@@ -462,7 +460,7 @@ ideas = {
 					factor = 2
 					OR = {
 					has_doctrine = mobile_infantry
-					has_doctrine = air_cavalry
+					# has_doctrine = air_cavalry
 					has_doctrine = mission_type_tactics
 					has_doctrine = self_propelled_support
 					}

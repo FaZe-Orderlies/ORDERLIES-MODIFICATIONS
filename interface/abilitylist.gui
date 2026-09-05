@@ -1,0 +1,56 @@
+guiTypes = {
+
+	iconType = {
+		position = {x=-10000 y=-10000}
+		name = "abilitylist_bg_mid"
+		spriteType = "GFX_ability_list_mid"
+	}
+
+	containerWindowType = {
+		name = "abilitylist_button_container"
+		position = { x=-10000 y=-10000 }
+		size = { width=0 height=0 }
+		hide = yes
+		
+		iconType = {
+			position = {x=-10000 y=-10000}
+			name = "abilitylist_active_bg"
+			spriteType = "GFX_ability_active_bg"
+		}
+		
+		iconType = {
+			position = {x=-10000 y=-10000}
+			name = "abilitylist_cooldown_bg"
+			spriteType = "GFX_ability_cooldown_bg"
+		}
+		
+		buttonType = {
+			position = {x=-10000 y=-10000}
+			name = "abilitylist_button"
+			spriteType = "GFX_ability_icon_default"
+			oversound = command_power_ability_over
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "abilitylist_window"
+		position = {x=-10000 y=-10000}
+		size = { width=0 height=0 }
+		Orientation = center_down
+		clipping = yes
+		hide = yes
+		
+		iconType = {
+			position = {x=-10000 y=-10000}
+			name = "bg_begin"
+			spriteType = "GFX_ability_list_begin"
+		}
+		
+		iconType = {
+			position = {x=-10000 y=-10000}
+			name = "bg_end"
+			spriteType = "GFX_ability_list_end"
+		}
+	}
+}

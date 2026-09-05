@@ -1,4 +1,4 @@
-﻿l_russian:
+l_russian:
  GER_war_with_the_ussr: "Операция Барбаросса"
 GER_prom_new_focus_state_modifier: "Завершающая стадия строительства автобанов"
 GER_great: "Инфраструтура центра страны"
@@ -164,9 +164,9 @@ ROM_army_of_balkans_tanks2: "Тактика мобильной обороны"
 ROM_army_of_balkans_dirkhota: "Традиционные методы"
 ROM_army_of_balkans_dirkhota2: "Усовершенствованные методы ведения войны"
 decision_2w_template: "Шаблон 2W"
-50w_decision: "Шаблон 50W"
+template_50w_decision: "Шаблон 50W"
 convert_40w_decision: "40W шаблон конверта"
-40w_decision: "Танковые шаблоны"
+template_40w_decision: "Танковые шаблоны"
 template_decisions: "Orderlies Decisions"
 
 startup.institut.1.title: "Институты на Выбор"

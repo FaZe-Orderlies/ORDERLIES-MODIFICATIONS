@@ -2228,7 +2228,7 @@ ideas = {
 			picture = fiat
 
 			available = {
-				has_completed_focus = wuw_HUN_license_fiat_tankettes
+				always = no
 			}
 
 			ai_will_do = {

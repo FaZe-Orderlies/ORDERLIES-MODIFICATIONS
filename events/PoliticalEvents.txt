@@ -32,7 +32,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -269,7 +269,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -379,7 +379,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -573,7 +573,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -903,7 +903,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1065,7 +1065,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1176,7 +1176,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1266,7 +1266,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1578,7 +1578,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1761,7 +1761,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -1940,7 +1940,7 @@ country_event = {
 					original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 				}
 			}
@@ -2250,7 +2250,7 @@ country_event = {
 					original_tag = ROM
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						EST = { always = no }
 					}
 					original_tag = BLR #Baltic Belarus civil war
 				}

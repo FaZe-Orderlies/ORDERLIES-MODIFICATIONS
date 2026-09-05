@@ -4651,11 +4651,11 @@ country_event = {
 					original_tag = NZL
 					OR = {
 						AND = {
-							has_completed_focus = NZL_in_the_darkness
+							always = no
 							ENG = { has_government = fascism }
 						}
 						AND = {
-							has_completed_focus = NZL_the_lee_affair
+							always = no
 							ENG = { has_government = communism }
 						}
 					}
@@ -4738,11 +4738,11 @@ country_event = {
 					original_tag = NZL
 					OR = {
 						AND = {
-							has_completed_focus = NZL_in_the_darkness
+							always = no
 							ENG = { has_government = fascism }
 						}
 						AND = {
-							has_completed_focus = NZL_the_lee_affair
+							always = no
 							ENG = { has_government = communism }
 						}
 					}
@@ -4910,11 +4910,11 @@ country_event = {
 					original_tag = NZL
 					OR = {
 						AND = {
-							has_completed_focus = NZL_in_the_darkness
+							always = no
 							ENG = { has_government = fascism }
 						}
 						AND = {
-							has_completed_focus = NZL_the_lee_affair
+							always = no
 							ENG = { has_government = communism }
 						}
 					}
@@ -5185,7 +5185,7 @@ country_event = {
 				ENG = { has_completed_focus = ENG_the_three_nation_solution }
 				AND = {
 					has_dlc = "Together for Victory"
-					has_completed_focus = RAJ_two_nation_theory
+					always = no
 				}
 			}
 		}

@@ -17,6 +17,6 @@ GER_integrate_conquered_territories = {
 	}
 	
 	visible = {
-		has_completed_focus = GER_restore_two_empiresC
+		always = no
 	}
 }

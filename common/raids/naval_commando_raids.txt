@@ -153,7 +153,7 @@ types = {
 				has_country_flag = {
 					flag = INS_revolution_has_started
 				}
-				has_completed_focus = INS_just_a_fisherman
+				always = no
 			}
 			has_event_target = INS_dutch_indonesia
 
@@ -940,7 +940,7 @@ types = {
 
 		visible = {
 			SIA = {
-				has_completed_focus = SIA_pacific_war
+				always = no
 			}
 		}
 

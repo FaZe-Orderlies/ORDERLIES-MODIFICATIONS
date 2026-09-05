@@ -2427,7 +2427,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = armor
-				technology = maintenance_company2
+				technology = tech_maintenance_company2
 			}
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank

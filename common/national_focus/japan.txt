@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -5650,8 +5650,8 @@ focus_tree = {
 						hidden_trigger = {
 							NOT = {
 								OR = {
-									has_completed_focus = MAN_assertiveness
-									has_completed_focus = MAN_tsr_assertiveness
+									always = no
+									always = no
 								}
 							}
 						}
@@ -5659,8 +5659,8 @@ focus_tree = {
 							tooltip = MAN_not_assertiveness_tt
 							NOT = {
 								OR = {
-									has_completed_focus = MAN_assertiveness
-									has_completed_focus = MAN_tsr_assertiveness
+									always = no
+									always = no
 								}
 							}
 						}
@@ -9294,8 +9294,8 @@ focus_tree = {
 						category  = long_term 
 						value = 1 
 					}
-					add_faction_goal = faction_goal_secure_the_oil_supply
-					add_faction_goal = faction_goal_war_on_communism_in_asia
+					add_faction_goal = faction_goal_orderlies_medium
+					add_faction_goal = faction_goal_orderlies_long
 					set_faction_rule = joining_rule_asia_pacific_ocenania_only
 					set_faction_rule = faction_peace_rule_puppeting_focus
 				}
@@ -11398,10 +11398,15 @@ focus_tree = {
 			custom_effect_tooltip = JAP_annex_CHI
 			hidden_effect = {
 				add_threat = 10
+				CHI = {
+					transfer_navy = {
+						target = JAP
+					}
+				}
 				JAP = {
-					annex_country = { target = CHI
-					transfer_troops = yes
-					transfer_fleet = yes 
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
 					}
 				}
 			}
@@ -13504,7 +13509,7 @@ focus_tree = {
 	focus = {
 		id = JAP_occupy_siam
 		icon = GFX_focus_generic_attack_siam
-		
+		mutually_exclusive = { focus = JAP_sea_pressure_siam }
 		x = 1
 		y = 3
 		relative_position_id = JAP_demand_tonkinese_bases
@@ -14725,7 +14730,7 @@ focus_tree = {
 	focus = {
 		id = JAP_the_persimmon_has_ripened
 		icon = GFX_focus_JAP_the_persimmon_has_ripened
-		
+		mutually_exclusive = { focus = JAP_a_green_persimmon }
 		x = 0
 		y = 1
 		relative_position_id = JAP_kantokuen
@@ -17200,7 +17205,7 @@ focus_tree = {
 				limit = {
 					ETH = {
 						NOT = {
-							has_completed_focus = ETH_support_from_the_japanese_communists
+							always = no
 						}
 					}
 				}
@@ -22417,8 +22422,8 @@ focus_tree = {
 								is_subject_of = ROOT
 								NOT = {
 									OR = {
-										has_completed_focus = MAN_assertiveness
-										has_completed_focus = MAN_tsr_assertiveness
+										always = no
+										always = no
 									}
 								}
 							}
@@ -29762,23 +29767,6 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			add_tech_bonus = {
-				name = JAP_amphibious_operations
-				bonus = 1.0
-				uses = 2
-				category = tp_tech 
-			}
-			add_tech_bonus = {
-				name = JAP_amphibious_operations
-				bonus = 1.0
-				uses = 1
-				ahead_reduction = 1
-				category = tp_tech 
-			}
-
-
 			else = {
 				random_core_state = {
 					limit = {
@@ -29800,6 +29788,21 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_tech_bonus = {
+				name = JAP_amphibious_operations
+				bonus = 1.0
+				uses = 2
+				category = tp_tech 
+			}
+			add_tech_bonus = {
+				name = JAP_amphibious_operations
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 1
+				category = tp_tech 
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt

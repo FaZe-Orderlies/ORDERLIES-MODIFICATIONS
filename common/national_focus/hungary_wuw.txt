@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -1101,8 +1101,6 @@ focus_tree = {
 		relative_position_id = wuw_HUN_the_old_habsburg_king
 
 		cost = 5
-
-		s
 
 		ai_will_do = {
 			factor = 15
@@ -4919,7 +4917,7 @@ focus_tree = {
 						has_dlc = "By Blood Alone"
 						ITA = {
 							exists = yes
-							has_completed_focus = ITA_seek_papal_support
+							always = no
 						}
 					}
 				}
@@ -4936,7 +4934,7 @@ focus_tree = {
 					AND = {
 						has_dlc = "La Resistance"
 						POR = {
-							has_completed_focus = POR_concordat_with_the_holy_see
+							always = no
 						}
 					}
 				}
@@ -4953,7 +4951,7 @@ focus_tree = {
 					AND = {
 						has_dlc = "La Resistance"
 						SPR = {
-							has_completed_focus = SPA_defenders_of_catholicism
+							always = no
 						}
 					}
 				}
@@ -4971,8 +4969,8 @@ focus_tree = {
 						has_dlc = "Trial of Allegiance"
 						CHL = {
 							OR = {
-								has_completed_focus = CHL_repeal_the_separation_of_church_an_state
-								has_completed_focus = CHL_state_catholicism
+								always = no
+								always = no
 							}
 						}
 					}
@@ -19475,7 +19473,6 @@ focus_tree = {
 				name = wuw_HUN_cruiser_investments
 				bonus = 1.0
 				uses = 2
-				category = cl_tech
 				category = ca_tech
 			}
 

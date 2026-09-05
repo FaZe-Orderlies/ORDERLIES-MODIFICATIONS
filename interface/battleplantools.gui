@@ -22,7 +22,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "ability_list_container"
-			position = {x=250 y=61}
+			position = {x=-10000 y=-10000}
+			hide = yes
 		}
 		
 		editBoxType = {
@@ -115,6 +116,15 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_draw_naval_inv_with_harbor_btn"
 				clicksound = click_battleplan
 				oversound = ui_menu_over
+			}
+
+			buttonType = {
+				name = "btn_order_draw_paradrop"
+				position = {x=-1000 y=-1000}
+				spriteType = "GFX_BPT_order_draw_paradrop_btn"
+				clicksound = click_battleplan
+				oversound = ui_menu_over
+				hide = yes
 			}
 
 			buttonType = {

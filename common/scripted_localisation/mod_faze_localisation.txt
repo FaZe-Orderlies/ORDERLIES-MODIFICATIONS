@@ -4,7 +4,7 @@ defined_text = {
 	text = {
 		trigger = {
 			USA = {
-				has_completed_focus = USA_tax_for_riches
+				always = no
 			}
 		}
 		localization_key = USA_plan_economy_focus

@@ -66,6 +66,7 @@ guiTypes = {
 			#pdx_tooltip_delayed = "CHANGE_HOST_NATION_TT_DELAYED"
 		}
 		containerWindowType = {
+			name = "Debuffing_window"
 			buttonType = {
 				name = "Debuffing_open" 
 				quadTextureSprite = "GFX_generic_box_96"
@@ -117,6 +118,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
+			name = "event_translet_window"
 			buttonType = { 
 				name = "event_translet_horst_open" 
 				quadTextureSprite = "GFX_generic_box_96"

@@ -1,4 +1,4 @@
-﻿
+
 capital = 64 # Berlin/Brandeburg
 
 
@@ -552,7 +552,7 @@ set_war_support = 0.3
 
 	# ONES THAT HAVE TO BE HANDELED MANUALLY
 	unlock_national_focus = GER_remilitarize_the_rhineland
-	unlock_national_focus = GER_anti_comintern_pact
+	# unlock_national_focus = GER_anti_comintern_pact
 	unlock_national_focus = GER_fortify_the_vaterland
 	unlock_national_focus = GER_anschluss
 	unlock_national_focus = GER_demand_sudetenland
@@ -732,11 +732,11 @@ set_war_support = 0.3
 		amount = 100
 		sub_doctrine = mission_type_tactics
 	}
-	set_sub_doctrine = mobile_recon_and_assault
-	add_mastery = {
-		amount = 150
-		sub_doctrine = mobile_recon_and_assault
-	}
+#	set_sub_doctrine = mobile_recon_and_assault
+#	add_mastery = {
+#		amount = 150
+#		sub_doctrine = mobile_recon_and_assault
+#	}
 	set_sub_doctrine = air_subdoctrine_tactical_flexibility
 	add_mastery = {
 		amount = 100

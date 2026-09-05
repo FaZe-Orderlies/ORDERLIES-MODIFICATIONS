@@ -87,6 +87,53 @@ focus_tree = {
 	# ==> GFX for icon on toggle button : GFX_FOCUS_ALTERNATE_ICONS
 
 	focus = {
+		id = GER_the_four_year_plan
+
+		icon = GFX_focus_GER_the_four_year_plan
+		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
+
+		x = 4
+		y = 0
+		cost = 5
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			
+			50 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_tech_bonus = {
+				name = GER_the_four_year_plan
+				bonus = 1
+				uses = 3
+				technology = dispersed_industry2
+				technology = concentrated_industry2
+				technology = dispersed_industry3
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry4
+			}
+		}
+	}
+	
+	focus = {
 		id = GER_construct_the_reichsautobahn
 		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = GER_the_four_year_plan }
@@ -646,53 +693,6 @@ focus_tree = {
 				category = electronics
 			}
 
-		}
-	}
-	
-	focus = {
-		id = GER_the_four_year_plan
-
-		icon = GFX_focus_GER_the_four_year_plan
-		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
-
-		x = 4
-		y = 0
-		cost = 5
-		
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			
-			50 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			52 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_tech_bonus = {
-				name = GER_the_four_year_plan
-				bonus = 1
-				uses = 3
-				technology = dispersed_industry2
-				technology = concentrated_industry2
-				technology = dispersed_industry3
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry4
-			}
 		}
 	}
 	
@@ -1774,38 +1774,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_totaler_krieg
-		icon = GFX_focus_generic_total_war
-		prerequisite = { focus = GER_war_with_the_ussr }
-
-		x = 0
-		y = 1
-		relative_position_id = GER_war_with_the_ussr
-		cost = 5
-		available = {
-			date>1942.12.1
-		}
-
-		continue_if_invalid = yes
-
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_war_support = 0.05
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = totaler_krieg_economy
-			custom_effect_tooltip = generic_skip_one_line_tt
-			set_cosmetic_tag = GER_greater_german_reich
-
-		}
-
-
-	}
-
-
-
-	focus = {
 		id = GER_develop_modern_maneuver_warfare
 		icon = GFX_focus_GER_army
 		#prerequisite = { focus = }
@@ -2111,32 +2079,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_establish_the_afrikakorps
-		icon = GFX_focus_GER_afrikakorps
-		prerequisite = { focus = GER_fate_of_greece }
-
-		x = 2
-		y = 1
-		relative_position_id = GER_fate_of_greece
-		cost = 5
-		available = {
-		
-		}
-
-		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_op_sonnenblume_tt
-
-			GER_modify_army_modifier = yes
-			add_to_variable = { 
-				GER_military_acclimatization_hot_climate_gain_factor = 0.1
-				tooltip = acclimatization_hot_climate_gain_factor_tt
-			}
-		}
-	}
-
-	focus = {
 		id = GER_establish_the_skijager
 		icon = GFX_focus_GER_gebirgsjager
 		prerequisite = { focus = GER_instill_auftragstaktik }
@@ -2215,7 +2157,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_panzergrenadier
-				ahead_reduction = 1,5
+				ahead_reduction = 1.5
 				bonus = 1
 				uses = 1
 				category = cat_mechanized_equipment
@@ -4314,29 +4256,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_defense_of_the_reich
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = GER_operation_western_operations }
-
-		x = -1
-		y = 1
-		relative_position_id = GER_operation_western_operations
-		cost = 10
-		available = {
-			has_war_with_major = yes
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_defense_of_the_reich_ns
-				days = 730
-			}
-		}
-	}
-	
-	focus = {
 		id = GER_construct_the_kammhuber_line
 		icon = GFX_focus_generic_energy
 		prerequisite = { focus = GER_experimental_rotorcrafts }
@@ -4468,45 +4387,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_establish_night_fighter_squadrons
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_operation_western_operations }
-
-		x = 1
-		y = 1
-		relative_position_id = GER_operation_western_operations
-		cost = 5
-		available = {
-			has_tech = centimetric_radar
-			has_war_with_major = yes
-		}
-
-		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_nachtjagdgeschwader
-				days = 365
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ace = {
-				name = Heinz
-				surname = Schnaufer
-				callsign = "The Spook" #actually "The Spook of St. Trond"
-				type = fighter_unique
-			}
-			add_ace = {
-				name = Helmut
-				surname = Lent
-				callsign = "The Moonlight Hunter" #made-up
-				type = fighter_unique
 			}
 		}
 	}
@@ -6635,7 +6515,6 @@ focus_tree = {
 
 		x = 18
 		y = 0
-		relative_position_id = GER_prioritize_economic_growth
 
 		cost = 5
 		
@@ -6679,277 +6558,6 @@ focus_tree = {
 				}
 			}
 
-		}
-	}
-
-	focus = {
-		id = GER_anschluss
-
-		icon = GFX_focus_GER_anschluss
-		alternate_icon = GFX_focus_GER_anschluss_historical
-
-		prerequisite = { focus = GER_reorganize_the_wehrmacht  }
-
-		x = 0
-		y = 1
-		relative_position_id = GER_reorganize_the_wehrmacht
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-		}
-
-		bypass = {
-			
-		}
-
-		continue_if_invalid = yes
-		
-		available_if_capitulated = no
-		
-		available = {
-			date>1937.7.1
-			
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1938.1.1
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_STABILITY }
-
-		select_effect = {
-			AUS = {
-				country_event = {
-					id = AUS_political_events.77
-					hours = 12
-				}
-				set_country_flag = AUS_anschluss_process_has_begun_flag
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				GER_add_or_modify_military_intelligence_service = yes
-				add_to_variable = { 
-					GER_military_intelligence_service_operative_slot = 1
-					tooltip = operative_slot_tt
-				}
-				GER_create_operative_otto_skorzeny = yes
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					country_exists = AUS
-					AUS = {
-						has_civil_war = no
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_dlc = "Gotterdammerung" }
-						ITA = {
-							has_completed_focus = ITA_guarantee_austrian_independence
-							has_guaranteed = AUS
-						}
-					}
-			
-					
-				}
-				else = { #ITA has not Guaranteed Austrian Independence
-					AUS = {
-						country_event = {
-							id = germany.28
-							days = 1
-						}
-					}		
-					effect_tooltip = {
-						custom_effect_tooltip = if_they_accept_tt
-						add_political_power = 75
-						add_war_support = 0.1
-						add_stability = 0.05
-						army_experience = 10
-
-						custom_effect_tooltip = generic_skip_one_line_tt
-
-						annex_country = { target = AUS transfer_troops = yes }
-												
-						GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
-
-						custom_effect_tooltip = if_they_refuse_tt
-						create_wargoal = {
-							type = take_state_focus
-							target = AUS
-							generator = { 4 152 153 848 975 976 }
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_other_country = {
-						original_tag = AUS
-						has_civil_war = yes
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
-						}
-						
-					}
-					ITA = {
-						NOT = {
-							has_completed_focus = ITA_guarantee_austrian_independence
-						}
-					}
-				}
-				custom_effect_tooltip = germany.126.warning
-				random_other_country = {
-					limit = {
-						original_tag = AUS
-						OR = {
-							has_government = fascism
-							AND = {
-								has_government = neutrality
-								NOT = {
-									any_other_country = {
-										original_tag = AUS
-										has_government = fascism
-									}
-								}
-							}
-							NOT = {
-								any_other_country = {
-									original_tag = AUS
-									OR = {
-										has_government = fascism
-										has_government = neutrality
-									}
-								}
-							}							
-						}
-						
-					}
-					country_event = { id = germany.126 days = 1 }
-				}
-			}
-
-			if = {
-				limit = {
-					4 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 4
-			}
-			if = {
-				limit = {
-					152 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 152
-			}
-			if = {
-				limit = {
-					153 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 153
-			}
-			if = {
-				limit = {
-					848 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 848
-			}
-			IF = {
-				limit = {
-					975 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 975
-			}
-			IF = {
-				limit = {
-					976 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 976
-			}
 		}
 	}
 
@@ -7279,6 +6887,377 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_reorganize_the_wehrmacht #von Ribbentrop
+
+		icon = GFX_focus_GER_reorganize_the_wehrmacht
+		alternate_icon = GFX_focus_GER_reorganize_the_wehrmacht_historical
+
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		x = 0
+		y = 1
+		relative_position_id = GER_remilitarize_the_rhineland
+		cost = 5
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_WAR_SUPPORT }
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = joachim_von_ribbentrop
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = {
+				localization_key = remove_character_as_tt
+				CHARACTER = GER_konstantin_von_neurath
+				ROLE = political_advisor
+			}
+
+			#This is bad (too long)
+			#custom_effect_tooltip = remove_political_advisor
+			#show_ideas_tooltip = konstantin_von_neurath
+
+			#This is even worse (errors, no need to retire anyone)
+			#retire_character = GER_konstantin_von_neurath
+			
+			custom_effect_tooltip = {
+				localization_key = remove_character_as_tt
+				CHARACTER = GER_werner_von_blomberg
+				ROLE = fm_leader
+			}
+
+			custom_effect_tooltip = {
+				localization_key = remove_character_as_tt
+				CHARACTER = GER_werner_von_fritsch
+				ROLE = cc_leader
+			}
+
+			custom_effect_tooltip = {
+				localization_key = remove_character_as_tt
+				CHARACTER = GER_oswald_lutz
+				ROLE = cc_leader
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_country_leader_with_trait = GER_der_fuhrer
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_der_fuhrer
+						add = GER_der_fuhrer_wehrmacht
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = GER_der_fuhrer_fuhrerprinzip
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_der_fuhrer_fuhrerprinzip
+						add = GER_der_fuhrer_fuhrerprinzip_wehrmacht
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = GER_fuhrerprinzip
+				}
+				add_country_leader_trait = GER_der_fuhrer_fuhrerprinzip_wehrmacht
+			}
+			else = {
+				add_country_leader_trait = GER_der_fuhrer_wehrmacht
+			}
+		}
+	}
+
+	focus = {
+		id = GER_anschluss
+
+		icon = GFX_focus_GER_anschluss
+		alternate_icon = GFX_focus_GER_anschluss_historical
+
+		prerequisite = { focus = GER_reorganize_the_wehrmacht  }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_reorganize_the_wehrmacht
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		continue_if_invalid = yes
+		
+		available_if_capitulated = no
+		
+		available = {
+			date>1937.7.1
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_STABILITY }
+
+		select_effect = {
+			AUS = {
+				country_event = {
+					id = AUS_political_events.77
+					hours = 12
+				}
+				set_country_flag = AUS_anschluss_process_has_begun_flag
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				GER_add_or_modify_military_intelligence_service = yes
+				add_to_variable = { 
+					GER_military_intelligence_service_operative_slot = 1
+					tooltip = operative_slot_tt
+				}
+				GER_create_operative_otto_skorzeny = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848
+							owns_state = 975
+							owns_state = 976
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Gotterdammerung" }
+						ITA = {
+							always = no
+							has_guaranteed = AUS
+						}
+					}
+			
+					
+				}
+				else = { #ITA has not Guaranteed Austrian Independence
+					AUS = {
+						country_event = {
+							id = germany.28
+							days = 1
+						}
+					}		
+					effect_tooltip = {
+						custom_effect_tooltip = if_they_accept_tt
+						add_political_power = 75
+						add_war_support = 0.1
+						add_stability = 0.05
+						army_experience = 10
+
+						custom_effect_tooltip = generic_skip_one_line_tt
+
+						annex_country = { target = AUS transfer_troops = yes }
+												
+						GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
+
+						custom_effect_tooltip = if_they_refuse_tt
+						create_wargoal = {
+							type = take_state_focus
+							target = AUS
+							generator = { 4 152 153 848 975 976 }
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_other_country = {
+						original_tag = AUS
+						has_civil_war = yes
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848
+							owns_state = 975
+							owns_state = 976
+						}
+						
+					}
+					ITA = {
+						NOT = {
+							always = no
+						}
+					}
+				}
+				custom_effect_tooltip = germany.126.warning
+				random_other_country = {
+					limit = {
+						original_tag = AUS
+						OR = {
+							has_government = fascism
+							AND = {
+								has_government = neutrality
+								NOT = {
+									any_other_country = {
+										original_tag = AUS
+										has_government = fascism
+									}
+								}
+							}
+							NOT = {
+								any_other_country = {
+									original_tag = AUS
+									OR = {
+										has_government = fascism
+										has_government = neutrality
+									}
+								}
+							}							
+						}
+						
+					}
+					country_event = { id = germany.126 days = 1 }
+				}
+			}
+
+			if = {
+				limit = {
+					4 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 4
+			}
+			if = {
+				limit = {
+					152 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 152
+			}
+			if = {
+				limit = {
+					153 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 153
+			}
+			if = {
+				limit = {
+					848 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848
+			}
+			IF = {
+				limit = {
+					975 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 975
+			}
+			IF = {
+				limit = {
+					976 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 976
+			}
+		}
+	}
+
+	focus = {
 		id = GER_uplift_the_rosenberg_office
 		icon = GFX_focus_ger_reichskommisariats
 		alternate_icon = GFX_focus_ger_reichskommisariats_historical
@@ -7469,8 +7448,6 @@ focus_tree = {
 
 		prerequisite = { focus = GER_anschluss }
 
-		mutually_exclusive = { focus = GER_befriend_czechoslovakia }
-
 		x = -1
 		y = 1
 		relative_position_id = GER_anschluss
@@ -7641,158 +7618,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_demonstration_of_military_achievements
-		icon = GFX_focus_GER_demonstration_of_military_achievements
-		prerequisite = { focus = GER_the_triumphant_will }
-
-		x = -3
-		y = 1
-		relative_position_id = GER_the_triumphant_will
-		cost = 5
-		available = {
-			surrender_progress < 0.1
-			custom_trigger_tooltip = { 
-				tooltip = GER_demonstration_of_military_achievements_trigger
-				OR = {
-					num_subjects > 2
-					check_variable = { GER_occupied_states_europe > 19 }
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_country_leader_trait = GER_loyalty_of_wehrmacht
-		}
-	}
-
-	focus = {
-		id = GER_an_invincible_army
-		icon = GFX_focus_GER_german_army_invincible
-		prerequisite = { focus = GER_fate_of_greece }
-
-		x = 0
-		y = 1
-		relative_position_id =  GER_fate_of_greece
-		cost = 5
-		available = {
-			surrender_progress < 0.05
-			custom_trigger_tooltip = {
-				tooltip = GER_an_invincible_army_trigger
-				OR = {
-					num_subjects > 5
-					check_variable = { GER_occupied_states_europe > 49 }
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_country_leader_with_trait = GER_loyalty_of_wehrmacht
-				}
-				random_character = {
-					limit = {
-						is_country_leader = yes
-					}
-					swap_country_leader_traits = {
-						remove = GER_loyalty_of_wehrmacht
-						add = GER_supreme_commander_armed_forces
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = GER_demonstration_of_military_achievements }
-				}
-				effect_tooltip = {
-					random_character = {
-						limit = {
-							is_country_leader = yes
-						}
-						swap_country_leader_traits = {
-							remove = GER_loyalty_of_wehrmacht
-							add = GER_supreme_commander_armed_forces
-						}
-					}
-				}
-			}
-			else = {
-				add_country_leader_trait = GER_supreme_commander_armed_forces
-			}
-		}
-	}
-
-	focus = {
-		id = GER_the_triumphant_will
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_around_maginot focus = GER_operation_weserubung }
-		#mutually_exclusive = { focus = GER_integration_of_puppet_economies focus = GER_specialized_ss_commandos }
-
-		x = 1
-		y = 1
-		relative_position_id = GER_around_maginot
-		cost = 5
-	
-		available = {
-			GER = {
-				controls_state = 16
-				controls_state = 10
-				controls_state = 110
-			}
-			
-		}
-
-		cancel = {
-			AND = {
-				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-				16 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-
-			swap_ideas = {
-				remove_idea = sour_loser
-				add_idea = triumphant_will
-			}	
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-				add_state_core = 8
-				add_state_core = 87
-				add_state_core = 86
-            	add_state_core = 807
-				add_state_core = 762
-				add_state_core = 28
-				add_state_core = 912
-				add_state_core = 98
-				add_state_core = 85
-		}
-	}
-
-	focus = {
 		id = GER_reassert_eastern_claims
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
@@ -7841,6 +7666,36 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = GER_molotov_ribbentrop_pact
+
+		icon = GFX_goal_molotov_ribbentrop_pact
+		alternate_icon = GFX_focus_GER_molotov_ribbentrop_pact
+
+		prerequisite = { focus = GER_fate_of_czechoslovakia }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_fate_of_czechoslovakia
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			SOV = {
+				custom_effect_tooltip = GER_mol_rib_pact_tt
+				custom_effect_tooltip = needs_approval
+			}
+			hidden_effect = {
+				country_event = { id = news.32 }
+			}
+		}
+	}
+
 	focus = {
 		id = GER_danzig_or_war
 
@@ -7931,7 +7786,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_around_maginot_historical
 
 		prerequisite = {  focus = GER_danzig_or_war }
-		mutually_exclusive = { focus = GER_influence_the_benelux }
+		# mutually_exclusive = { focus = GER_influence_the_benelux }
 		x = -1
 		y = 1
 		relative_position_id = GER_danzig_or_war
@@ -8009,6 +7864,99 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_the_triumphant_will
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_around_maginot focus = GER_operation_weserubung }
+		#mutually_exclusive = { focus = GER_integration_of_puppet_economies focus = GER_specialized_ss_commandos }
+
+		x = 1
+		y = 1
+		relative_position_id = GER_around_maginot
+		cost = 5
+	
+		available = {
+			GER = {
+				controls_state = 16
+				controls_state = 10
+				controls_state = 110
+			}
+			
+		}
+
+		cancel = {
+			AND = {
+				has_war = no
+				126 = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { is_in_faction_with = GER }
+					}
+				}
+				16 = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { is_in_faction_with = GER }
+					}
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+			swap_ideas = {
+				remove_idea = sour_loser
+				add_idea = triumphant_will
+			}	
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+				add_state_core = 8
+				add_state_core = 87
+				add_state_core = 86
+            	add_state_core = 807
+				add_state_core = 762
+				add_state_core = 28
+				add_state_core = 912
+				add_state_core = 98
+				add_state_core = 85
+		}
+	}
+
+	focus = {
+		id = GER_demonstration_of_military_achievements
+		icon = GFX_focus_GER_demonstration_of_military_achievements
+		prerequisite = { focus = GER_the_triumphant_will }
+
+		x = -3
+		y = 1
+		relative_position_id = GER_the_triumphant_will
+		cost = 5
+		available = {
+			surrender_progress < 0.1
+			custom_trigger_tooltip = { 
+				tooltip = GER_demonstration_of_military_achievements_trigger
+				OR = {
+					num_subjects > 2
+					check_variable = { GER_occupied_states_europe > 19 }
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_country_leader_trait = GER_loyalty_of_wehrmacht
+		}
+	}
+
+	focus = {
 		id = GER_operation_weserubung
 
 		icon = GFX_focus_GER_operation_wesserubung
@@ -8069,7 +8017,6 @@ focus_tree = {
 		id = GER_the_swiss_gold
 		icon = GFX_focus_GER_the_swiss_gold
 		prerequisite = { focus = GER_the_triumphant_will }
-		mutually_exclusive = { focus = GER_operation_tannenbaum }
 		x = 3
 		y = 1
 		relative_position_id = GER_the_triumphant_will
@@ -8319,101 +8266,86 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_reorganize_the_wehrmacht #von Ribbentrop
+		id = GER_establish_the_afrikakorps
+		icon = GFX_focus_GER_afrikakorps
+		prerequisite = { focus = GER_fate_of_greece }
 
-		icon = GFX_focus_GER_reorganize_the_wehrmacht
-		alternate_icon = GFX_focus_GER_reorganize_the_wehrmacht_historical
-
-		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = GER_remilitarize_the_rhineland
+		relative_position_id = GER_fate_of_greece
 		cost = 5
 		available = {
+		
 		}
 
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
+			custom_effect_tooltip = GER_op_sonnenblume_tt
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = joachim_von_ribbentrop
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = {
-				localization_key = remove_character_as_tt
-				CHARACTER = GER_konstantin_von_neurath
-				ROLE = political_advisor
+			GER_modify_army_modifier = yes
+			add_to_variable = { 
+				GER_military_acclimatization_hot_climate_gain_factor = 0.1
+				tooltip = acclimatization_hot_climate_gain_factor_tt
 			}
+		}
+	}
 
-			#This is bad (too long)
-			#custom_effect_tooltip = remove_political_advisor
-			#show_ideas_tooltip = konstantin_von_neurath
+	focus = {
+		id = GER_an_invincible_army
+		icon = GFX_focus_GER_german_army_invincible
+		prerequisite = { focus = GER_fate_of_greece }
 
-			#This is even worse (errors, no need to retire anyone)
-			#retire_character = GER_konstantin_von_neurath
-			
-			custom_effect_tooltip = {
-				localization_key = remove_character_as_tt
-				CHARACTER = GER_werner_von_blomberg
-				ROLE = fm_leader
+		x = 0
+		y = 1
+		relative_position_id =  GER_fate_of_greece
+		cost = 5
+		available = {
+			surrender_progress < 0.05
+			custom_trigger_tooltip = {
+				tooltip = GER_an_invincible_army_trigger
+				OR = {
+					num_subjects > 5
+					check_variable = { GER_occupied_states_europe > 49 }
+				}
 			}
+		}
 
-			custom_effect_tooltip = {
-				localization_key = remove_character_as_tt
-				CHARACTER = GER_werner_von_fritsch
-				ROLE = cc_leader
-			}
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER }
 
-			custom_effect_tooltip = {
-				localization_key = remove_character_as_tt
-				CHARACTER = GER_oswald_lutz
-				ROLE = cc_leader
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
+		completion_reward = {
 			if = {
 				limit = {
-					has_country_leader_with_trait = GER_der_fuhrer
+					has_country_leader_with_trait = GER_loyalty_of_wehrmacht
 				}
 				random_character = {
 					limit = {
 						is_country_leader = yes
 					}
 					swap_country_leader_traits = {
-						remove = GER_der_fuhrer
-						add = GER_der_fuhrer_wehrmacht
+						remove = GER_loyalty_of_wehrmacht
+						add = GER_supreme_commander_armed_forces
 					}
 				}
 			}
 			else_if = {
 				limit = {
-					has_country_leader_with_trait = GER_der_fuhrer_fuhrerprinzip
+					NOT = { has_completed_focus = GER_demonstration_of_military_achievements }
 				}
-				random_character = {
-					limit = {
-						is_country_leader = yes
+				effect_tooltip = {
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						swap_country_leader_traits = {
+							remove = GER_loyalty_of_wehrmacht
+							add = GER_supreme_commander_armed_forces
+						}
 					}
-					swap_country_leader_traits = {
-						remove = GER_der_fuhrer_fuhrerprinzip
-						add = GER_der_fuhrer_fuhrerprinzip_wehrmacht
-					}
 				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GER_fuhrerprinzip
-				}
-				add_country_leader_trait = GER_der_fuhrer_fuhrerprinzip_wehrmacht
 			}
 			else = {
-				add_country_leader_trait = GER_der_fuhrer_wehrmacht
+				add_country_leader_trait = GER_supreme_commander_armed_forces
 			}
 		}
 	}
@@ -8560,6 +8492,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_totaler_krieg
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = GER_war_with_the_ussr }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_war_with_the_ussr
+		cost = 5
+		available = {
+			date>1942.12.1
+		}
+
+		continue_if_invalid = yes
+
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = totaler_krieg_economy
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_cosmetic_tag = GER_greater_german_reich
+
+		}
+
+
+	}
+
+
+
+	focus = {
 		id = GER_speer_eastern_armaments
 		icon = GFX_focus_GER_the_eastern_border
 		prerequisite = { focus = GER_totaler_krieg }
@@ -8623,36 +8587,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_molotov_ribbentrop_pact
-
-		icon = GFX_goal_molotov_ribbentrop_pact
-		alternate_icon = GFX_focus_GER_molotov_ribbentrop_pact
-
-		prerequisite = { focus = GER_fate_of_czechoslovakia }
-		
-		x = 0
-		y = 1
-		relative_position_id = GER_fate_of_czechoslovakia
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
-	
-		completion_reward = {
-			SOV = {
-				custom_effect_tooltip = GER_mol_rib_pact_tt
-				custom_effect_tooltip = needs_approval
-			}
-			hidden_effect = {
-				country_event = { id = news.32 }
-			}
-		}
-	}
-
-	focus = {
 		id = GER_operation_western_operations
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		prerequisite = { focus = GER_fate_of_greece }
@@ -8684,6 +8618,68 @@ focus_tree = {
 
 
 
+	focus = {
+		id = GER_defense_of_the_reich
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_operation_western_operations }
+
+		x = -1
+		y = 1
+		relative_position_id = GER_operation_western_operations
+		cost = 10
+		available = {
+			has_war_with_major = yes
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_defense_of_the_reich_ns
+				days = 730
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_establish_night_fighter_squadrons
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = GER_operation_western_operations }
+
+		x = 1
+		y = 1
+		relative_position_id = GER_operation_western_operations
+		cost = 5
+		available = {
+			has_tech = centimetric_radar
+			has_war_with_major = yes
+		}
+
+		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_nachtjagdgeschwader
+				days = 365
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ace = {
+				name = Heinz
+				surname = Schnaufer
+				callsign = "The Spook" #actually "The Spook of St. Trond"
+				type = fighter_unique
+			}
+			add_ace = {
+				name = Helmut
+				surname = Lent
+				callsign = "The Moonlight Hunter" #made-up
+				type = fighter_unique
+			}
+		}
+	}
+	
 	focus = {
 		id = GER_fuhrerprinzip
 

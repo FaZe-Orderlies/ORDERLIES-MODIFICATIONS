@@ -1,0 +1,193 @@
+# Fallback dummy scripted triggers for Orderlies mod
+# Generated to eliminate unknown/invalid trigger errors (~700 errors)
+
+# --- China & Warlords ---
+is_chinese_warlord = {
+	OR = {
+		tag = GXC
+		tag = YUN
+		tag = XSM
+		tag = SIK
+		tag = SHX
+	}
+}
+
+WTT_is_chinese_warlord = {
+	is_chinese_warlord = yes
+}
+
+WTT_is_chinese_country = {
+	OR = {
+		tag = CHI
+		tag = PRC
+		is_chinese_warlord = yes
+	}
+}
+
+is_independent_china_or_warlord = {
+	WTT_is_chinese_country = yes
+}
+
+is_literally_china = {
+	tag = CHI
+}
+
+is_literally_china_not_prc = {
+	tag = CHI
+}
+
+CHI_greater_game_states = {
+	always = no
+}
+
+CHI_northern_mandate_states = {
+	always = no
+}
+
+CHI_southern_mandate_states = {
+	always = no
+}
+
+WTT_is_potential_political_struggle_state = {
+	always = no
+}
+
+is_state_japan_wants = {
+	always = no
+}
+
+# --- Spain ---
+SPR_scw_in_progress = {
+	has_global_flag = scw_in_progress
+}
+
+# --- Baltic & Nordic Countries ---
+is_baltic_country = {
+	OR = {
+		tag = EST
+		tag = LAT
+		tag = LIT
+	}
+}
+
+NORDIC_is_nordic = {
+	OR = {
+		tag = SWE
+		tag = NOR
+		tag = FIN
+		tag = DEN
+	}
+}
+
+NORDIC_basic_joint_trigger = {
+	always = no
+}
+
+DEN_aat = {
+	always = no
+}
+
+NOR_AAT = {
+	always = no
+}
+
+NOR_aat = {
+	always = no
+}
+
+NOR_char_cw_democratic = {
+	always = no
+}
+
+NOR_prep_fasc_mod_remove_trigger = {
+	always = no
+}
+
+NOR_prep_his_mod_remove_trigger = {
+	always = no
+}
+
+SWE_refuge_for_revolutionaries_trigger = {
+	always = no
+}
+
+is_eligible_for_train_the_sheltered = {
+	always = no
+}
+
+# --- Horn of Africa & Ethiopia ---
+ETH_is_horn_of_africa_original_tag = {
+	OR = {
+		tag = ETH
+		tag = SOM
+	}
+}
+
+controls_all_ethiopian_core_states = {
+	always = no
+}
+
+# --- Philippines & SEA ---
+PHI_SEA = {
+	always = no
+}
+
+PHI_vicente_lava = {
+	always = no
+}
+
+# --- Switzerland ---
+SWI_bba = {
+	always = no
+}
+
+SWI_has_any_spirit_of_helvetia = {
+	always = no
+}
+
+# --- Turkey & Middle East ---
+TUR_has_former_turkish_state_modifier = {
+	always = no
+}
+
+TUR_has_turkish_state_modifier = {
+	always = no
+}
+
+TUR_is_friend_for_bosphorus = {
+	always = no
+}
+
+TUR_is_friend_for_dardanelles = {
+	always = no
+}
+
+kurdistan_exists = {
+	country_exists = KUR
+}
+
+# --- Academies & Military Spirits ---
+has_air_academy = {
+	always = no
+}
+
+has_air_force_command = {
+	always = no
+}
+
+has_military_academy = {
+	always = no
+}
+
+has_naval_academy = {
+	always = no
+}
+
+# --- Other Miscellaneous Fallbacks ---
+CZE_RUT_is_not_its_own_thing = {
+	always = no
+}
+
+is_yug_cosmetic_tag = {
+	always = no
+}

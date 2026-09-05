@@ -212,13 +212,13 @@ JAP_mitsubishi_heavy_industries_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -646,13 +646,13 @@ JAP_yokosuka_naval_arsenal_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -1094,7 +1094,7 @@ JAP_maizuru_naval_arsenal_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	}
 	
@@ -1469,13 +1469,13 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -1711,7 +1711,7 @@ JAP_mitsubishi_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 	}
 	
@@ -1743,13 +1743,13 @@ JAP_mitsubishi_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -2484,13 +2484,13 @@ JAP_kokura_arsenal_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -2647,13 +2647,13 @@ JAP_nissan_organization = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			FROM = { always = no }
 		}
 		IF = {
 			limit = {
 				FROM = { original_tag = MAN }
 			}
-			FROM = { has_completed_focus = MAN_tsr_strengthen_ties_with_nissan }
+			FROM = { always = no }
 		}
 	}
 	
@@ -2685,13 +2685,13 @@ JAP_nissan_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}
@@ -2905,13 +2905,13 @@ JAP_tokyo_automobile_industries_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_align_with_japan
+				always = no
 				if = {
 					limit = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
+						always = no
 					}
 				}
 			}

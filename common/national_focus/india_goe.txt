@@ -214,7 +214,7 @@ focus_tree = {
         available = {
             AFG = {
                 NOT = {
-                    has_completed_focus = AFG_invite_the_mughal_prince
+                    always = no
                 }
             }
         }
@@ -15516,26 +15516,15 @@ focus_tree = {
 
     focus = {
         id = RAJ_tryst_with_destiny
+        dynamic = yes
         icon = {
-            trigger = {
+            GFX_focus_RAJ_tryst_with_destiny_BAN = {
                 tag = BAN
             }
-            value = GFX_focus_RAJ_tryst_with_destiny_BAN
-        }
-        icon = {
-            trigger = {
+            GFX_focus_RAJ_tryst_with_destiny_PAK = {
                 tag = PAK
             }
-            value = GFX_focus_RAJ_tryst_with_destiny_PAK
-        }
-        icon = {
-            trigger = {
-                NOT = {
-                    tag = PAK
-                    tag = BAN
-                }
-            }
-            value = GFX_focus_RAJ_tryst_with_destiny
+            GFX_focus_RAJ_tryst_with_destiny = yes
         } 
         prerequisite = { focus = RAJ_united_bengal focus = RAJ_eastern_pakistan focus = RAJ_a_secular_state }
         x = 2
@@ -20969,9 +20958,6 @@ focus = {
         y = 1
         relative_position_id = RAJ_forming_an_indian_doctrine
 
-        mutually_exclusive = { focus = RAJ_model_after_germany }
-        mutually_exclusive = { focus = RAJ_model_after_soviet }
-
         cost = 10
 
         available = {
@@ -21001,7 +20987,7 @@ focus = {
     focus = {
         id = RAJ_automating_the_army
         icon = GFX_goal_generic_army_tanks
-        prerequisite = { focus = RAJ_model_after_usa focus = RAJ_model_after_germany }
+        prerequisite = { focus = RAJ_model_after_usa }
 
 
         x = -1
@@ -21043,7 +21029,7 @@ focus = {
     focus = {
         id = RAJ_for_the_people_by_the_people
         icon = GFX_focus_ETH_freedom_at_gunpoint
-        prerequisite = { focus = RAJ_model_after_usa focus = RAJ_model_after_soviet }
+        prerequisite = { focus = RAJ_model_after_usa }
 
         x = 1
         y = 2
@@ -21889,7 +21875,6 @@ focus = {
         x = -5
         y = 1
         relative_position_id = RAJ_military_pensions
-        mutually_exclusive = { focus = RAJ_specialized_dietary_requirement }
         cost = 10
 
         ai_will_do = {

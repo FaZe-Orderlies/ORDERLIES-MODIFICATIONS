@@ -9882,7 +9882,7 @@ operations = {
 			modifier = {
 				factor = 200 
 				ICE = {
-					has_completed_focus = ICE_declare_absolute_neutrality
+					always = no
 				}	
 			}
 		}
@@ -9893,7 +9893,7 @@ operations = {
 			ICE = { exists = yes }
 			NOT = { ICE = { is_in_faction_with = ROOT } }
 			ICE = {
-				NOT = { has_completed_focus = ICE_united_we_stand }
+				NOT = { always = no }
 			}
 		}
 		
@@ -9943,7 +9943,7 @@ operations = {
 				# Iceland has gone their own path, so we can consolidate the North Sea
 				factor = 2 	
 				ICE = {
-					has_completed_focus = ICE_declare_absolute_neutrality
+					always = no
 				}
 			}
 			modifier = {

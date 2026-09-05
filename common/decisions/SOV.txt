@@ -4066,7 +4066,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_restoration_and_development
+				always = no
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4141,7 +4141,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_restoration_and_development
+				always = no
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 			NOT = { has_country_flag = SOV_punished_for_breaking_flag }
@@ -4233,7 +4233,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_restoration_and_development
+				always = no
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4823,7 +4823,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+			SPC = { always = no }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4889,7 +4889,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+			SPC = { always = no }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4966,7 +4966,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+			SPC = { always = no }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -5058,7 +5058,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+			SPC = { always = no }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -5122,7 +5122,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		}
 
 		available = {
-			has_completed_focus = SOV_send_military_advisors_to_spain
+			always = no
 			NOT = { has_completed_focus = SOV_coup_detat }
 			has_country_flag = SOV_send_elite_commandos_poum_flag
 		}
@@ -5132,7 +5132,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 			country_exists = SPC
 			country_exists = SPD
 			NOT = { has_completed_focus = SOV_coup_detat }
-			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+			SPC = { always = no }
 			NOT = { has_war_with = SPC }
 			NOT = { is_in_faction_with = SPD }
 		}
@@ -5216,7 +5216,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_respect_baltic_self_determination
+			always = no
 			is_subject = no
 		}
 
@@ -5285,7 +5285,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_respect_baltic_self_determination
+			always = no
 			is_subject = no
 		}
 
@@ -5461,7 +5461,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_baltic_security
+			always = no
 			is_subject = no
 		}
 
@@ -5547,7 +5547,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
+			always = no
 			is_subject = no
 		}
 
@@ -5623,7 +5623,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
+			always = no
 			is_subject = no
 		}
 
@@ -5702,7 +5702,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
+			always = no
 			is_subject = no
 		}
 
@@ -5788,7 +5788,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
+			always = no
 			is_subject = no
 		}
 
@@ -5857,7 +5857,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
+			always = no
 		}
 
 		allowed = {
@@ -5924,7 +5924,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_demand_balkan_submission
+			always = no
 			is_Subject = no
 		}
 
@@ -5995,7 +5995,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
+			always = no
 			is_subject = no
 		}
 
@@ -11465,7 +11465,7 @@ SOV_comecon_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_found_the_comecon
+			always = no
 			FROM = { is_puppet_of = ROOT }
 		}
 
@@ -11560,7 +11560,7 @@ SOV_comecon_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_found_the_comecon
+			always = no
 			num_subjects > 0
 		}
 
@@ -13100,7 +13100,7 @@ SOV_great_patriotic_war = {
 		ai_will_do = { factor = 10 }
 	}
 }
-}
+
 
 	
 
@@ -18212,7 +18212,7 @@ SOV_polish_territory = {
 			POL = {
 				exists = yes
 				is_subject_of = ROOT
-				NOT = { has_completed_focus = POL_surrender_the_east }
+				NOT = { always = no }
 			}
 			any_owned_state = {
 				is_core_of = POL

@@ -1,0 +1,511 @@
+# Safe dummy scripted effects to prevent unknown effect errors
+AFG_create_puppet_army = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_alfred_jansa = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_alois_of_liechtenstein = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_anton_kienbauer = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_arthur_seyss-inquart = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_eduard_barger = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_ernst_rudiger_starhemberg = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_eugen_beyer = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_franz_bohme = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_johannes_of_liechtenstein = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_karl_eglseer = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_lothar_rendulic = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_ludwig_von_eimannsberger = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+AUS_valentin_feuerstein = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+BEL_leon_degrelle = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+BLR_radislau_astrouski = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+BOL_indigenous_council = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+BRA_indigenous_council = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+BRA_plinio_salgado = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_fu_zuoyi = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_gu_zhutong = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_is_corruption_in_government_on_balance_good = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_reduce_nine_power_malus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_set_ally_strat_on_current_leader = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_song_zheyuan = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_sun_tongxuan = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_unity_level_down = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_unity_level_up = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_update_claimed_and_core_states = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHI_wan_fulin = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHL_jorge_gonz = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CHL_jorge_gonzález_von_marées = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CRO_ante_pavelic = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CRO_duro_jakcin = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_get_rid_of_the_auto_blok = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_jaroslav_krejchi = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_josef_shnejdarek = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_richard_tesarzhik = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_sergej_vojcechovsky = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_show_current_skoda_prioty_idea_stats_infantry_focus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_show_current_skoda_prioty_idea_stats_naval_focus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_show_current_skoda_prioty_idea_stats_no_focus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_show_current_skoda_prioty_idea_stats_plane_focus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_show_current_skoda_prioty_idea_stats_tank_focus = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_update_skoda_tier = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+CZE_vojtyech_luzha = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+DEN_puppet_on_action_effects = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_BOP_decentralization_large_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_escalate_the_war_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_get_ships_from_country = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_set_up_lon_arms_resolution_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_transfer_promised_states = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ETH_upgrade_state_category = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GEO_shalva_maglakelidze = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GER_adolf_friedrich_von_mecklenburg = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GER_hans_von_luck = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GER_konstantin_von_neurath = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GER_wilhelm_canaris = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GER_wilhelm_ritter_von_thoma = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GND_yu_hanmou = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GRE_political_instability_update_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GRE_set_appropriate_cosmetic_tag = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GXC_bai_chongxi = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GXC_chen_jitang = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+GXC_li_zongren = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+HES_philipp_of_hesse = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+HOL_anton_mussert = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+IA_sakutaro_iwasa = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+IA_sanshiro_ishikawa = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+IRQ_rashid_ali_algaylani = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ITA_ferdinando_umberto_filippo_adalberto = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KAR_jalmari_takkinen = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KAR_ukki_vainamoinen = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KHM_ma_hushan = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KHM_ma_zhancang = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KOR_pak_hon_yong = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+KUM_yulbars_khan = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MAN_jonjurjab = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MAN_urzhin_garmaev = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEK_christian_louis = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEN_altanochir = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEN_jodbajab = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEN_li_shouxin = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEX_indigenous_council = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MEX_salvador_abascal = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+MNT_blazo_dukanovic = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NORDIC_add_to_nordic_alliance = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NORDIC_add_to_war_array = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NORDIC_cooperation_initial_setup = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NOR_josef_terboven = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NOR_reset_prep_system = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+NOR_vidkun_quisling = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PHI_check_japanese_ideology_and_adapt = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PHI_cobalt_sea_achievement = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PHI_recall_macarthur_for_leadership = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PHI_refresh_ruling_ideology_drift = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PHI_update_war_flag = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_boleslaw_piasecki = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_pavel_bermondt_avalov = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_remove_danzig_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_rudinger_von_der_goltz = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_sanation_left_opposition_remove = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+POL_sanation_right_opposition_remove = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRC_USA_lend_lease_strategy = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRC_decrease_asian_democratic_union_modfier_strength = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRC_increase_asian_democratic_union_modfier_strength = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRC_soviet_tribute_clear_all = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRU_ = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+PRU_Óscar_benavides = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SAF_economy = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SAX_george_of_saxony = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SHX_wang_jingguo = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_adul_aduldejajaras = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_decrease_civilian_approval = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_decrease_military_approval = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_increase_civilian_approval = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_increase_military_approval = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_phraya_songsuradet = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_refresh_indochina_controllers = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIA_update_adc = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIC_liu_wenhui = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SIC_yang_sen = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SMB_get_dreadnoughts_from_country = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SND_han_fuju = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SOV_boris_shteifon = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SOV_vasily_flug = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SPA_emilio_mola = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SUR_guianan_indigenous_council = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_calc_communist_folkhemmet = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_calc_refugee_from_war = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_is_denmark_mostly_occupied = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_is_finland_mostly_occupied = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_is_ice_mostly_occupied = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_is_norway_mostly_occupied = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_on_freed_cross_we_bear = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_reduce_or_remove_ball_bearing_food_trade_modifier = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWE_sven_linderot = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_find_best_democratic_ally = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_find_biggest_fascist_neighbor = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_find_democratic_planes_seller = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_make_helvetia_peace = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_make_helvetia_war = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_on_action_puppet_selection = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_robert_tobler = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_seize_gold = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+SWI_update_neighbor_opinion_balance = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+TIB_thubten_kunpela = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+TUR_remove_state_modifier_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+TUR_restore_dynamic_modifiers_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+TUR_set_appropriate_cosmetic_tag = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+UKR_mykhailo_omelianovych_pavlenko = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+USA_add_monroe_doctrine_to_target = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+USA_get_gold_uk_tt = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+WTT_make_ROOT_majority_1_point_over_next = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+WTT_political_struggle_recalculate_support = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+WTT_political_struggle_remove_current_country = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+WTT_restart_political_struggle = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+WUR_philipp_albrecht = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+XSM_ma_bufang = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+XSM_ma_buqing = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+XSM_ma_hongkui = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+YUN_hu_ruoyu = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+YUN_lu_han = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+add_temporary_buff_to_units = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+ai_chance = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+indonesia_increase_escalation_1_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+remove_perkonkrust_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+remove_vaps_effect = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+update_operation_ai = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}
+warlord_rule_all_parties = {
+	custom_effect_tooltip = dummy_effect_tooltip
+}

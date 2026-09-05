@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -224,14 +224,12 @@ country_event = {
 			}
 		}		
 		add_ideas = new_deal
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 }
@@ -261,8 +259,8 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
+					always = no
+					always = no
 				}
 			}
 			country_event = usa.32
@@ -302,8 +300,8 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
+					always = no
+					always = no
 				}
 			}
 			country_event = usa.32
@@ -346,8 +344,8 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
+					always = no
+					always = no
 				}
 			}
 			country_event = usa.32
@@ -387,8 +385,8 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
+					always = no
+					always = no
 				}
 			}
 			country_event = usa.32
@@ -435,8 +433,8 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
+					always = no
+					always = no
 				}
 			}
 			country_event = usa.32

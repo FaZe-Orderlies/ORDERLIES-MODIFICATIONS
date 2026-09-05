@@ -460,9 +460,6 @@ USA_chi_supp = {
 		icon = GFX_decision_jap_conquer_china
 		allowed = {
 			original_tag = USA
-			CHI = {
-				has_war_with = JAP
-			}
 		}
 		available = {
 			hidden_trigger = {
@@ -506,9 +503,6 @@ USA_chi_supp = {
 		icon = GFX_decision_jap_conquer_china
 		allowed = {
 			original_tag = USA
-			CHI = {
-				has_war_with = JAP
-			}
 		}
 		available = {
 			command_power > 29
@@ -563,9 +557,6 @@ USA_chi_supp = {
 		icon = GFX_decision_jap_conquer_china
 		allowed = {
 			original_tag = USA
-			CHI = {
-				has_war_with = JAP
-			}
 		}
 		available = {
 			has_equipment = {
@@ -617,9 +608,6 @@ USA_chi_supp = {
 		icon = GFX_decision_jap_conquer_china
 		allowed = {
 			original_tag = USA
-			CHI = {
-				has_war_with = JAP
-			}
 		}
 		available = {
 			has_equipment = {
@@ -631,7 +619,7 @@ USA_chi_supp = {
 			CHI = {
 				has_war_with = JAP
 			}
-			has_completed_focus = USA_get_air_to_china
+			always = no
 		}
 		custom_cost_trigger = {
 	    	has_equipment = {
@@ -667,9 +655,6 @@ USA_pay_and_go_cat = {
 	ENG_pay_and_go = {
 		allowed = {
 			original_tag = USA
-			ENG = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -722,9 +707,6 @@ USA_pay_and_go_cat = {
 	ENG_pay_and_go_DOPP = {
 		allowed = {
 			original_tag = USA
-			ENG = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -777,9 +759,6 @@ USA_pay_and_go_cat = {
 	ENG_pay_and_go_ARTA = {
 		allowed = {
 			original_tag = USA
-			ENG = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -832,9 +811,6 @@ USA_pay_and_go_cat = {
 	FRA_pay_and_go_ARTA = {
 		allowed = {
 			original_tag = USA
-			FRA = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -849,7 +825,7 @@ USA_pay_and_go_cat = {
 				exists = yes
 			}
 			USA = {
-				has_completed_focus = USA_lend_lease_action
+				always = no
 			}
 		}
 		days_remove = 50
@@ -890,9 +866,6 @@ USA_pay_and_go_cat = {
 	FRA_pay_and_go_DOPP = {
 		allowed = {
 			original_tag = USA
-			FRA = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -907,7 +880,7 @@ USA_pay_and_go_cat = {
 				exists = yes
 			}
 			USA = {
-				has_completed_focus = USA_lend_lease_action
+				always = no
 			}
 		}
 		days_remove = 50
@@ -948,9 +921,6 @@ USA_pay_and_go_cat = {
 	FRA_pay_and_go = {
 		allowed = {
 			original_tag = USA
-			FRA = {
-				exists = yes
-			}
 		}
 		available = {
 			has_equipment = {
@@ -965,7 +935,7 @@ USA_pay_and_go_cat = {
 				exists = yes
 			}
 			USA = {
-				has_completed_focus = USA_lend_lease_action
+				always = no
 			}
 		}
 		days_remove = 50
@@ -1012,10 +982,10 @@ USA_form_defens_decision_cat = {
             original_tag = USA
 		}
 		visible = {
-			has_completed_focus = USA_form_defens
+			always = no
         }
         available = {
-            has_completed_focus = USA_form_defens
+            always = no
             FROM = {
                 has_opinion = {
                     target = ROOT
@@ -1071,10 +1041,10 @@ USA_com_polux_decision_cat = {
         allowed = { always = yes }
         available = {
             MEX = { is_subject_of = USA }
-			has_completed_focus = USA_union_of_north_america
+			always = no
         }
         visible = { 
-			has_completed_focus = USA_union_of_north_america
+			always = no
 		}
 		cost = 75
         fire_only_once = yes
@@ -1101,10 +1071,10 @@ USA_com_polux_decision_cat = {
 			NIC = { is_subject_of = USA }
 			COS = { is_subject_of = USA }
 			PAN = { is_subject_of = USA }
-			has_completed_focus = USA_union_of_north_america
+			always = no
         }
         visible = { 
-			has_completed_focus = USA_union_of_north_america
+			always = no
 		}
 		cost = 100	
 
@@ -1174,10 +1144,10 @@ USA_com_polux_decision_cat = {
             CUB = { is_subject_of = USA }
 			HAI = { is_subject_of = USA }
 			DOM = { is_subject_of = USA }
-			has_completed_focus = USA_union_of_north_america
+			always = no
         }
         visible = { 
-			has_completed_focus = USA_union_of_north_america
+			always = no
 		}
 		cost = 100	
 
@@ -1220,10 +1190,10 @@ USA_com_polux_decision_cat = {
             CUB = { is_subject_of = USA }
 			HAI = { is_subject_of = USA }
 			DOM = { is_subject_of = USA }
-			has_completed_focus = USA_union_of_north_america
+			always = no
         }
         visible = { 
-			has_completed_focus = USA_union_of_north_america
+			always = no
 		}
 		cost = 100	
 
@@ -1286,10 +1256,10 @@ USA_com_polux_decision_cat = {
 			controls_state = 864
 			controls_state = 472
 			controls_state = 865
-			has_completed_focus = USA_union_of_north_america
+			always = no
         }
         visible = { 
-			has_completed_focus = USA_union_of_north_america
+			always = no
 		}
 		cost = 100	
 

@@ -81,7 +81,7 @@ characters={
 						limit = {
 							has_dlc = "Together for Victory"
 						}
-						has_completed_focus = RAJ_all_india_forward_bloc 
+						always = no 
 					}
 					if = {
 						limit = {
@@ -340,7 +340,7 @@ characters={
 					}
 					AND = {
 						has_completed_focus = RAJ_royal_indian_navy_mutiny
-						has_completed_focus = RAJ_keep_british_generals
+						always = no
 					}
 				}
 			}
@@ -377,7 +377,7 @@ characters={
 					}
 					AND = {
 						has_completed_focus = RAJ_royal_indian_navy_mutiny
-						has_completed_focus = RAJ_keep_british_generals
+						always = no
 					}
 				}
 			}
@@ -605,13 +605,13 @@ characters={
 			allowed = {
 				original_tag = RAJ
 			}
-			available = { has_completed_focus = RAJ_chindits_dlc }
+			available = { always = no }
 			traits = {
 				special_operations_specialist 
 			}
 
 			visible = {
-				has_completed_focus = RAJ_chindits_dlc
+				always = no
 			}
 
 			ai_will_do = {
@@ -1489,7 +1489,7 @@ characters={
 							has_dlc = "Graveyard of Empires"
 						}
 					}
-					has_completed_focus = RAJ_indian_national_congress 
+					always = no 
 				}
 				else = {
 					has_completed_focus = RAJ_a_congress_resurgent
@@ -1535,7 +1535,7 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = RAJ_all_india_forward_bloc 
+					always = no 
 				}
 				if = {
 					limit = {

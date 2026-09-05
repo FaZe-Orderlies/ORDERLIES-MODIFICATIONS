@@ -1,4 +1,4 @@
-﻿
+
 ####
 #### NO STEP BACK
 ####
@@ -1163,7 +1163,7 @@ add_ideas = {
 	complete_national_focus = SOV_support_the_kuomintang #35
 	complete_national_focus = SOV_develop_the_urals #35
 	complete_national_focus = SOV_the_ussr_academy_of_sciences
-	complete_national_focus = SOV_baltic_security #35 -> 1939
+	# complete_national_focus = SOV_baltic_security #35 -> 1939
 
 	#FYP NS
 	add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
@@ -1250,11 +1250,11 @@ add_mastery = {
     amount = 100
     sub_doctrine = fire_concentration
 }
-set_sub_doctrine = deep_battle
-add_mastery = {
-    amount = 100
-    sub_doctrine = deep_battle
-}
+#set_sub_doctrine = deep_battle
+#add_mastery = {
+#    amount = 100
+#    sub_doctrine = deep_battle
+#}
 set_sub_doctrine = air_subdoctrine_dogfighting_mastery
 add_mastery = {
     amount = 75

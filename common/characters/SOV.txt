@@ -1715,7 +1715,7 @@ characters = {
 				ROOT = { 
 					OR = {
 						has_completed_focus = SOV_beaten_but_not_defeated 
-						has_completed_focus = GER_ally_white_russian_forces 
+						always = no 
 						has_completed_focus = GER_war_with_the_ussr 
 					}
 				}
@@ -1811,7 +1811,7 @@ characters = {
 				ROOT = { 
 					OR = {
 						has_completed_focus = SOV_beaten_but_not_defeated 
-						has_completed_focus = GER_ally_white_russian_forces 
+						always = no 
 						has_completed_focus = GER_war_with_the_ussr
 					}
 				}

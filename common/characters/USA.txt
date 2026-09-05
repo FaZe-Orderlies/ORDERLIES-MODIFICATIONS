@@ -99,7 +99,7 @@ characters={
 			legacy_id=0
 			visible = {
 				NOT = {
-					has_completed_focus = USA_revolution
+					always = no
 				}
 			}
 		}
@@ -145,7 +145,7 @@ characters={
 			legacy_id=0
 			visible = {
 				NOT = {
-					has_completed_focus = USA_revolution
+					always = no
 				}
 			}
 		}
@@ -221,7 +221,7 @@ characters={
 						
 					}
 					OR = {
-						has_completed_focus = USA_union_of_north_america
+						always = no
 						has_completed_focus = USA_selective_training_act
 					}
 				}
@@ -303,7 +303,7 @@ characters={
 			legacy_id=0
 			visible = {
 				NOT = {
-					has_completed_focus = USA_revolution
+					always = no
 				}
 			}
 		}
@@ -338,7 +338,7 @@ characters={
 						
 						NOT = {
 							OR = {
-								has_completed_focus = USA_revolution
+								always = no
 								has_country_flag = douglas_macarthur_sent_to_china
 								has_country_leader = {
 									ruling_only = yes
@@ -376,7 +376,7 @@ characters={
 				legacy_id=57
 				visible = {
 					NOT = {
-						has_completed_focus = USA_revolution
+						always = no
 					}
 				}
 			}
@@ -450,7 +450,7 @@ characters={
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_war_plans_division
+				always = no
 			}
 			traits = {
 				army_chief_planning_2
@@ -1325,7 +1325,7 @@ characters={
 				original_tag = USA
 			}
 			available  = {
-				has_completed_focus = USA_american_international
+				always = no
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1363,7 +1363,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_continue_of_neutrality
+					always = no
 				}
 			}
 			visible  = {
@@ -1494,7 +1494,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				has_completed_focus = USA_soviet_style
+				always = no
 			}
 			traits  = {
 				financial_expert
