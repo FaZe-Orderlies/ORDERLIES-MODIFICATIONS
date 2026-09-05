@@ -12,6 +12,8 @@ tags={
 	"Sound"
 }
 replace_path="events"
+replace_path="common/aces"
+replace_path="common/abilities"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/ai_equipment"

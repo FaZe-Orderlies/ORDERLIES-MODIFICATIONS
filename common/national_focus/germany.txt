@@ -2821,8 +2821,8 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			show_unit_leaders_tooltip = GER_hasso_von_manteuffel
-			show_unit_leaders_tooltip = GER_walther_nehring
+			# show_unit_leaders_tooltip = GER_hasso_von_manteuffel
+			# show_unit_leaders_tooltip = GER_walther_nehring
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3935,9 +3935,9 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			show_unit_leaders_tooltip = GER_kurt_student
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = kurt_student
+			# show_unit_leaders_tooltip = GER_kurt_student
+			# custom_effect_tooltip = available_military_high_command
+			# show_ideas_tooltip = kurt_student
 		}
 	}
 	
@@ -4267,74 +4267,6 @@ focus_tree = {
 		available = {
 			has_war_with_major = yes
 			is_special_project_completed = sp:sp_air_radar
-			custom_trigger_tooltip = {
-				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
-				OR = {
-					925 = { #Finnmark
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					924 = { #Troms
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					144 = { #Nordland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					923 = { #Helgeland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					143 = { #Trondelag
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					142 = { #Vestlandet
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					922 = { #Agder
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					921 = { #Telemark
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					110 = { #Oslo
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					915 = { #Halland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					140 = { #Västergötland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					99 = { #Jylland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					912 = { #Sonderjylland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					36 = { #Friesland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					7 = { #Holland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					35 = { #Brabant
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					6 = { #Vlaanderen
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					29 = { #Nord-Pas-de_calais
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					785 = { #Picardy
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					15 = { #Normandy
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					14 = { #Brittany
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
@@ -4343,50 +4275,6 @@ focus_tree = {
 			add_timed_idea = {
 				idea = GER_the_kammhuber_line
 				days = 365
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = GER_controls_atlantic_coast_brittany_finnmark_effects_tt
-			every_state = {
-				limit = { 
-					anti_air_building < 5
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-					is_coastal = yes 
-					OR = {
-						state = 925
-						state = 924
-						state = 144
-						state = 923
-						state = 143
-						state = 142
-						state = 922
-						state = 921
-						state = 110
-						state = 915
-						state = 140
-						state = 99
-						state = 912
-						state = 909
-						state = 58 
-						state = 59
-						state = 56
-						state = 36
-						state = 7
-						state = 35
-						state = 6
-						state = 977
-						state = 29
-						state = 785
-						state = 15
-						state = 14
-					}
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -5725,7 +5613,7 @@ focus_tree = {
 			
 			custom_effect_tooltip = GER_naval_bases_along_atlantic_coast_tt
 	
-			every_state = {
+			every_owned_state = {
 				limit = { 
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_coastal = yes 
@@ -5738,10 +5626,7 @@ focus_tree = {
 						state = 806
 						state = 792
 						state = 790
-						state = 171
-						# state = 180
-						# state = 112
-						# state = 179
+						# state = 171
 						state = 169
 					}
 				}
@@ -5755,7 +5640,7 @@ focus_tree = {
 				    }
 				}
 			}
-			every_state = {
+			every_owned_state = {
 				limit = { 
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_coastal = yes 
@@ -5768,10 +5653,7 @@ focus_tree = {
 						state = 806
 						state = 792
 						state = 790
-						state = 171
-						# state = 180
-						# state = 112
-						# state = 179
+						# state = 171
 						state = 169
 					}
 				}
@@ -5797,49 +5679,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_marinestosstrupp
 		cost = 10
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_controls_an_atantic_island_tt
-				OR = {
-					914 = { #Jan Mayen
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					100 = { #Iceland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					101 = { #Greenland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					337 = { #Faroes
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					933 = { #Shetlands
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					# 134 = { #Ireland
-					# 	state_is_fully_controlled_by_ROOT_or_subject = yes
-					# }
-					119 = { #North Ireland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					178 = { #The Canaries
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					698 = { #The Azores
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					696 = { #Bermuda
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					697 = { #Madeira
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					702 = { #Cape Verde
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-			}
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -5848,78 +5687,7 @@ focus_tree = {
 			add_to_variable = { 
 				GER_military_navy_max_range_factor = 0.1
 				tooltip = navy_max_range_factor_tt
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = GER_naval_bases_on_atlantic_islands_tt
-			every_state = {
-				limit = { 
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-					is_coastal = yes 
-					naval_base < 10
-					OR = { #Atlantic Islands from Greenland to Cape Verde
-						state = 914
-						state = 101
-						state = 100
-						state = 337
-						state = 933
-						state = 134
-						state = 119
-						state = 178
-						state = 698
-						state = 696
-						state = 697
-						state = 702
-					}
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-				    }
-				}
-			}
-			every_state = {
-				limit = { 
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-					is_coastal = yes 
-					coastal_bunker < 10
-					OR = { #Atlantic Islands from Greenland to the Falklands
-						state = 101
-						#state = 914 #Not you Jan Mayen
-						state = 100
-						state = 337
-						state = 933
-						# state = 134
-						state = 119
-						state = 178
-						state = 698
-						state = 696
-						state = 697
-						state = 702
-						state = 703
-						state = 704
-						state = 297
-						state = 705
-						state = 697
-						state = 720
-						state = 299
-					}
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-				    }
-				}
-			}
+			}	
 		}
 	}
 	
@@ -10559,11 +10327,11 @@ focus_tree = {
 			#	trait = GER_reichsfuhrer_ss
 			#}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-			show_unit_leaders_tooltip = GER_felix_steiner
-			show_unit_leaders_tooltip = GER_walter_kruger
-			show_unit_leaders_tooltip = GER_sepp_dietrich
-			show_unit_leaders_tooltip = GER_paul_hausser
+			# custom_effect_tooltip = generic_skip_one_line_tt
+			# show_unit_leaders_tooltip = GER_felix_steiner
+			# show_unit_leaders_tooltip = GER_walter_kruger
+			# show_unit_leaders_tooltip = GER_sepp_dietrich
+			# show_unit_leaders_tooltip = GER_paul_hausser
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
