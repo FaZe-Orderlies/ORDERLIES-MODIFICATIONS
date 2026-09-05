@@ -715,6 +715,27 @@ ideas = {
 			}
 		}
 
+		CHI_low_supp_from_usa = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		CHI_great_supp_from_usa = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				army_morale_factor = 0.10
+			}
+		}
 
 	}
 }

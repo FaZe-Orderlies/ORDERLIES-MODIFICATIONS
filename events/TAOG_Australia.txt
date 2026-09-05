@@ -370,7 +370,7 @@ country_event = { #USA: Australia asks for convoys
 			modifier = {
 				ROOT = {
 					has_government = democratic
-					has_completed_focus = USA_lend_lease_act
+					always = no
 				}
 				factor = 0
 			}

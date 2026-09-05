@@ -450,9 +450,9 @@ RAJ_enforce_loyalty = {
 	set_country_flag = britain_enforced_our_loyalty
 	if = {
 		limit = {
-			has_completed_focus = RAJ_swaraj
+			always = no
 		}
-		complete_national_focus = RAJ_indian_national_congress
+		# complete_national_focus = RAJ_indian_national_congress
 	}
 	if = {
 		limit = {
@@ -574,9 +574,9 @@ NZL_enforce_loyalty = {
 	set_country_flag = britain_enforced_our_loyalty
 	if = {
 		limit = {
-			has_completed_focus = NZL_statute_of_westminster
+			always = no
 		}
-		complete_national_focus = NZL_strengthen_the_commonwealth
+		# complete_national_focus = NZL_strengthen_the_commonwealth
 	}
 	if = {
 		limit = {

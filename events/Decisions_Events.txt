@@ -1,4 +1,4 @@
-﻿add_namespace = decisions
+add_namespace = decisions
 
 # Recruit general for civil war event
 country_event = {
@@ -442,7 +442,7 @@ country_event = {
 
 # FROM wants to purcahse old ships
 country_event = {
-	id = generic_purchase_ships_events.01
+	id = generic_purchase_ships_events.1
 	title = generic_purchase_ships_events.01.t
 	desc = generic_purchase_ships_events.01.desc
 	is_triggered_only = yes
@@ -497,7 +497,7 @@ country_event = {
 		add_offsite_building = { type = industrial_complex  level = 1 }
 		FROM = {
 			country_event = {
-				id = generic_purchase_ships_events.02
+				id = generic_purchase_ships_events.2
 				days = 1
 			}
 		}
@@ -510,7 +510,7 @@ country_event = {
 		}
 		FROM = {
 			country_event = {
-				id = generic_purchase_ships_events.03
+				id = generic_purchase_ships_events.3
 				days = 1
 			}
 		}
@@ -519,7 +519,7 @@ country_event = {
 
 # FROM agrees to sell ships
 country_event = {
-	id = generic_purchase_ships_events.02
+	id = generic_purchase_ships_events.2
 	title = generic_purchase_ships_events.02.t
 	desc = generic_purchase_ships_events.02.desc
 	is_triggered_only = yes
@@ -535,7 +535,7 @@ country_event = {
 
 # FROM refuses to sell ships
 country_event = {
-	id = generic_purchase_ships_events.03
+	id = generic_purchase_ships_events.3
 	title = generic_purchase_ships_events.03.t
 	desc = generic_purchase_ships_events.03.desc
 	is_triggered_only = yes
@@ -553,7 +553,7 @@ country_event = {
 
 # FROM wants to purcahse old dreadnoughts
 country_event = {
-	id = generic_purchase_ships_events.04
+	id = generic_purchase_ships_events.4
 	title = generic_purchase_ships_events.04.t
 	desc = { 
 		text = generic_purchase_ships_events.04.desc.a 
@@ -629,7 +629,7 @@ country_event = {
 		add_offsite_building = { type = industrial_complex  level = 1 }
 		FROM = {
 			country_event = {
-				id = generic_purchase_ships_events.05
+				id = generic_purchase_ships_events.5
 				days = 1
 			}
 		}
@@ -642,7 +642,7 @@ country_event = {
 		}
 		FROM = {
 			country_event = {
-				id = generic_purchase_ships_events.06
+				id = generic_purchase_ships_events.6
 				days = 1
 			}
 		}
@@ -651,7 +651,7 @@ country_event = {
 
 # FROM agrees to sell dreadnoughts
 country_event = {
-	id = generic_purchase_ships_events.05
+	id = generic_purchase_ships_events.5
 	title = generic_purchase_ships_events.05.t
 	desc = generic_purchase_ships_events.05.desc
 	is_triggered_only = yes
@@ -667,7 +667,7 @@ country_event = {
 
 # FROM refuses to sell dreadnoughts
 country_event = {
-	id = generic_purchase_ships_events.06
+	id = generic_purchase_ships_events.6
 	title = generic_purchase_ships_events.06.t
 	desc = generic_purchase_ships_events.06.desc
 	is_triggered_only = yes

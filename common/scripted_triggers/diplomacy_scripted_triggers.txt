@@ -193,7 +193,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			has_dlc = "Death or Dishonor"
 			original_tag = YUG
-			NOT = { has_completed_focus = YUG_reunite_the_kingdom }
+			NOT = { always = no }
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_YUGOSLAVIA_TOOLTIP
@@ -253,8 +253,8 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			original_tag = CHL
 			NOT = { 
 				OR = {
-					has_completed_focus = CHL_crusade_against_imperialism 
-					has_completed_focus = CHL_endorse_the_constitution
+					always = no 
+					always = no
 				}
 			}
 		}
@@ -627,7 +627,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			has_dlc = "By Blood Alone"
 			original_tag = ITA
 			FROM = { tag = PAP }
-			has_completed_focus = ITA_seek_papal_support
+			always = no
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ITALY_PAP_TOOLTIP
@@ -656,9 +656,9 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
-			has_completed_focus = SPR_masters_of_our_own_fate
+			always = no
 			NOT = {
-				has_completed_focus = SPR_the_anti_fascist_workers_revolution
+				always = no
 			}
 		}
 		custom_trigger_tooltip = {

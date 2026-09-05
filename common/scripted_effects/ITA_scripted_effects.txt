@@ -47,9 +47,9 @@ ITA_manage_italian_defeat_in_ethiopia_effect = {
 	#First missiolini focus (Struggle in ETH, AByssinian Fiasco and Solid Progress) are handled before this effect
 	if = {
 		limit = {
-			NOT = { has_completed_focus = ITA_servizio_informazione_militare }
+			NOT = { always = no }
 		}
-		unlock_national_focus = ITA_servizio_informazione_militare
+		# unlock_national_focus = ITA_servizio_informazione_militare
 	}
 	unlock_national_focus = ITA_triumph_in_africa_bba
 	set_power_balance = {
@@ -186,10 +186,10 @@ ITA_missiolini_progress_in_ethiopia_success_effect = {
 	}
 	else_if = { #Second mission to succeed
 		limit = {
-			NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
-			NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+			NOT = { always = no }
+			NOT = { always = no }
 		}
-		complete_national_focus = ITA_solid_progress
+		# complete_national_focus = ITA_solid_progress
 	}
 }
 
@@ -1819,10 +1819,10 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 			if = { #ALT-FASCIST/MONARCHIST BRANCH
 				limit = {
-					has_completed_focus = ITA_convene_the_grand_council
+					always = no
 				}
 				uncomplete_national_focus = {
-					focus = ITA_convene_the_grand_council
+					# focus = ITA_convene_the_grand_council
 					uncomplete_children = yes
 				}
 			}
@@ -1837,17 +1837,17 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 			if = { #ETH-ITA war focus
 				limit = {
-					has_completed_focus = ITA_struggle_in_ethiopia
+					always = no
 				}
 				uncomplete_national_focus = {
-					focus = ITA_struggle_in_ethiopia
+					# focus = ITA_struggle_in_ethiopia
 				}
-				unlock_national_focus = ITA_the_abyssinian_fiasco
+				# unlock_national_focus = ITA_the_abyssinian_fiasco
 			}
 
 			#COMPLETE FOCUS
-			unlock_national_focus = ITA_unite_the_opposition
-			unlock_national_focus = ITA_defy_the_duce
+			# unlock_national_focus = ITA_unite_the_opposition
+			# unlock_national_focus = ITA_defy_the_duce
 			hidden_effect = { #Just doing the key thing we're missing from the unlocked focus above
 				set_politics = {
 					ruling_party = neutrality
@@ -1857,19 +1857,19 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 		else = { #Going MONARCHIST
 			if = { #BALBO BRANCH
 				limit = {
-					has_completed_focus = ITA_italo_balbo_focus
+					always = no
 				}
 				uncomplete_national_focus = {
-					focus = ITA_italo_balbo_focus
+					# focus = ITA_italo_balbo_focus
 					uncomplete_children = yes
 				}
 			}
 			else_if = { #GRANDI BRANCH
 				limit = {
-					has_completed_focus = ITA_dino_grandi_focus
+					always = no
 				}
 				uncomplete_national_focus = {
-					focus = ITA_dino_grandi_focus
+					# focus = ITA_dino_grandi_focus
 					uncomplete_children = yes
 				}
 			}
@@ -1884,12 +1884,12 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 			if = { #ETH-ITA war focus
 				limit = {
-					has_completed_focus = ITA_the_abyssinian_fiasco
+					always = no
 				}
 				uncomplete_national_focus = {
-					focus = ITA_the_abyssinian_fiasco
+					# focus = ITA_the_abyssinian_fiasco
 				}
-				unlock_national_focus = ITA_struggle_in_ethiopia
+				# unlock_national_focus = ITA_struggle_in_ethiopia
 			}
 			#COMPLETE FOCUS
 			if = {
@@ -1899,9 +1899,9 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 				unlock_national_focus = ITA_undermine_the_duce
 				unlock_national_focus = ITA_conspiracies_in_the_shadows
 			}
-			unlock_national_focus = ITA_convene_the_grand_council
+			# unlock_national_focus = ITA_convene_the_grand_council
 			unlock_national_focus = ITA_depose_mussolini
-			unlock_national_focus = ITA_monarchia_d_italia
+			# unlock_national_focus = ITA_monarchia_d_italia
 		}
 
 		ITA_manage_national_spirits_in_civil_war = yes
@@ -2686,13 +2686,13 @@ ITA_set_special_characters_as_fascist_effect = {
 	#Promote appropriate Duce
 	if = {
 		limit = {
-			has_completed_focus = ITA_italo_balbo_focus
+			always = no
 		}
 		ITA_italo_balbo = { promote_character = yes }
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = ITA_dino_grandi_focus
+			always = no
 		}
 		ITA_dino_grandi = { promote_character = yes }
 	}
@@ -2702,7 +2702,7 @@ ITA_set_special_characters_as_fascist_effect = {
 
 	if = {
 		limit = {
-			NOT = { has_completed_focus = ITA_italo_balbo_focus }
+			NOT = { always = no }
 		}
 		ITA_italo_balbo = {
 			if = {
@@ -2725,7 +2725,7 @@ ITA_set_special_characters_as_fascist_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { has_completed_focus = ITA_dino_grandi_focus }
+			NOT = { always = no }
 		}
 		ITA_dino_grandi = {
 			if = {
@@ -2792,7 +2792,7 @@ ITA_set_special_characters_as_monarchist_effect = {
 
 	if = {
 		limit = {
-			NOT = { has_completed_focus = ITA_italo_balbo_focus }
+			NOT = { always = no }
 		}
 		ITA_italo_balbo = {
 			if = {
@@ -2815,7 +2815,7 @@ ITA_set_special_characters_as_monarchist_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { has_completed_focus = ITA_dino_grandi_focus }
+			NOT = { always = no }
 		}
 		ITA_dino_grandi = {
 			if = {
@@ -2888,8 +2888,8 @@ ITA_civil_war_deal_with_militias = {
 	if = {
 		limit = {
 			OR = {
-				has_completed_focus = ITA_organize_strikes_in_the_north
-				has_completed_focus = ITA_the_southern_farmlands
+				always = no
+				always = no
 			}
 		}
 		capital_scope = {
@@ -2918,7 +2918,7 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 
 	if = {
 		limit = {
-			has_completed_focus = ITA_organize_strikes_in_the_north
+			always = no
 		}
 		every_owned_state = {
 			limit = {
@@ -2937,7 +2937,7 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = ITA_the_southern_farmlands
+			always = no
 		}
 		every_owned_state = {
 			limit = {
@@ -2995,7 +2995,7 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 
 	if = {
 		limit = {
-			has_completed_focus = ITA_unite_the_opposition
+			always = no
 		}
 		start_civil_war = {
 			ideology = fascism
@@ -3098,7 +3098,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 		#DAMAGE FROM ANTIFA FOCUSES
 		if = {
 			limit = {
-				ROOT = { has_completed_focus = ITA_organize_strikes_in_the_north }
+				ROOT = { always = no }
 			}
 			set_temp_variable = { temp_targets_index = 0 }
 			while_loop_effect = {
@@ -3168,7 +3168,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 		}
 		else_if = {
 			limit = {
-				ROOT = { has_completed_focus = ITA_the_southern_farmlands }
+				ROOT = { always = no }
 			}
 			set_temp_variable = { temp_targets_index = 0 }
 			while_loop_effect = {
@@ -3656,7 +3656,7 @@ ITA_remove_king_vittorio_emanuele_as_idea = {
 ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 	if = {
 		limit = {
-			has_completed_focus = ITA_the_new_emperor_of_ethiopia
+			always = no
 			ITA_vittorio_emanuele_iii = { has_character_flag = ITA_king_of_albania_flag }
 		}
 		add_ideas = vittorio_emanuele_albania_ethiopia
@@ -3670,7 +3670,7 @@ ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = ITA_the_new_emperor_of_ethiopia
+			always = no
 		}
 		add_ideas = vittorio_emanuele_emperor_of_ethiopia
 	}
@@ -4565,7 +4565,7 @@ ITA_promote_umberto_to_country_leader = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = ITA_democratic_king
+			always = no
 		}
 		add_country_leader_role = {
 			character =  ITA_prince_umberto
@@ -4873,7 +4873,7 @@ ITA_peace_out_eth_on_startup_effect = {
 		white_peace = {
 			tag = ETH
 		}
-		unlock_national_focus = ITA_solid_progress
+		# unlock_national_focus = ITA_solid_progress
 	}
 	set_global_flag = ITA_peace_with_eth_on_startup_flag
 }

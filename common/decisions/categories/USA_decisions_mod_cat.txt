@@ -6,7 +6,7 @@ USA_steel_gold_dec_cat = {
 	}
 	
 	visible = {
-		has_completed_focus = USA_gold
+		always = no
 	}
 	scripted_gui = usa_steel_gold_ui
 	priority = 1000
@@ -20,7 +20,7 @@ USA_chi_supp = {
 		tag = USA
 	}
 	visible = {
-		has_completed_focus = USA_supp_china
+		always = no
 		CHI = {
 			has_war_with = JAP
 		}
@@ -35,7 +35,7 @@ USA_pay_and_go_cat = {
 	picture = GFX_decision_cat_picture_SWI_federal_council
 	priority = 350
 	visible = {
-		has_completed_focus = USA_pay_and_get
+		always = no
 		ENG = {
 			exists = yes
 		}

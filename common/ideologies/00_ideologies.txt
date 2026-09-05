@@ -56,7 +56,6 @@ ideologies = {
 			army_intel_to_others = 150
 			navy_intel_to_others = 150
 			airforce_intel_to_others = 150
-			airforce_intel_to_others = 150
 			embargo_cost_factor = -0.5
 			embargo_threshold_factor = -0.5
 		}
@@ -122,7 +121,6 @@ ideologies = {
 
 		modifiers = {
 			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 10.0
 			civilian_intel_to_others = 150
 			army_intel_to_others = 150
 			navy_intel_to_others = 150

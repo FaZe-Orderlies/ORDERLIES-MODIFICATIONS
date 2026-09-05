@@ -1,4 +1,4 @@
-﻿capital = 282 # Tokyo/Kanto
+capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
@@ -1013,16 +1013,16 @@ add_mastery = {
     amount = 200
     sub_doctrine = defensive_postures
 }
-set_sub_doctrine = infiltration_tactics
-add_mastery = {
-    amount = 200
-    sub_doctrine = infiltration_tactics
-}
-set_sub_doctrine = field_engineering
-add_mastery = {
-    amount = 150
-    sub_doctrine = field_engineering
-}
+#set_sub_doctrine = infiltration_tactics
+#add_mastery = {
+#    amount = 200
+#    sub_doctrine = infiltration_tactics
+#}
+#set_sub_doctrine = field_engineering
+#add_mastery = {
+#    amount = 150
+#    sub_doctrine = field_engineering
+#}
 
 
 

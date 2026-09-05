@@ -115,7 +115,7 @@ SOV_morozov_design_bureau_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = PHI_comitern
+				always = no
 			}
 		}
 
@@ -138,7 +138,7 @@ SOV_morozov_design_bureau_organization = {
 					}
 				} 
 			}
-			FROM = { has_completed_focus = CHI_hire_soviet_designer }
+			FROM = { always = no }
 		}
 		ELSE_IF = {
 			limit = {
@@ -156,7 +156,7 @@ SOV_morozov_design_bureau_organization = {
 			FROM = {
 				OR = {
 					has_country_flag = SOV_accepted_Morozov
-					has_completed_focus = CHI_sea_hire_soviet_designer
+					always = no
 				}
 			} 
 		}
@@ -200,7 +200,7 @@ SOV_morozov_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { always = no }
 		}
 	}
 	visible = {
@@ -211,8 +211,8 @@ SOV_morozov_design_bureau_organization = {
 			}
 			FROM = { 
 				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
+					always = no
+					always = no
 				} 
 				NOT = {
 					has_country_flag = SOV_accepted_Astrov
@@ -370,8 +370,8 @@ SOV_astrov_design_bureau_organization = {
 			}
 			FROM = { 
 				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
+					always = no
+					always = no
 				} 
 				NOT = {
 					has_country_flag = SOV_accepted_Morozov
@@ -552,8 +552,8 @@ SOV_okmo_organization = {
 			}
 			FROM = { 
 				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
+					always = no
+					always = no
 				} 
 				NOT = {
 					has_country_flag = SOV_accepted_Morozov
@@ -697,7 +697,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_mytishchi-ababa_plant }
+			FROM = { always = no }
 		}
 	}
 
@@ -856,7 +856,7 @@ SOV_kirov_organization = {
 				} 
 			}
 
-			FROM = { has_completed_focus = BEL_invite_soviet_tank_makers }
+			FROM = { always = no }
 		}
 
 		if = {
@@ -1184,7 +1184,7 @@ SOV_rubin_design_bureau_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no }
 		}
 	}
 
@@ -1201,21 +1201,21 @@ SOV_rubin_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { always = no }
 		}
 
 		IF = {
 			limit = {
 				FROM = { original_tag = ARG }
 			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
+			FROM = { always = no }
 		}
 
 		IF = {
 			limit = {
 				FROM = { original_tag = BRA }
 			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
+			FROM = { always = no }
 		}
 	}
 
@@ -1759,7 +1759,7 @@ SOV_mig_design_bureau_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no }
 		}
 		IF = { 
 			limit = {
@@ -1787,13 +1787,13 @@ SOV_mig_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = ARG }
 			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
+			FROM = { always = no }
 		}
 		IF = {
 			limit = {
 				FROM = { original_tag = BRA }
 			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
+			FROM = { always = no }
 		}
 	}
 
@@ -2493,7 +2493,7 @@ SOV_grabin_design_bureau_organization = {
 		IF = {
 			limit = { FROM = { original_tag = GRE } }
 			FROM = {
-				has_completed_focus = GRE_appeal_to_the_soviet_union 
+				always = no 
 			}
 		}
 	}
@@ -2777,7 +2777,7 @@ SOV_gaz_organization = {
 	visible = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+			FROM = { always = no }
 		}
 	}
 	
@@ -2811,27 +2811,27 @@ SOV_gaz_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { always = no }
 		}
 
 		IF = {
 			limit = {
 				FROM = { original_tag = ARG }
 			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
+			FROM = { always = no }
 		}
 
 		IF = {
 			limit = {
 				FROM = { original_tag = BRA }
 			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
+			FROM = { always = no }
 		}
 		IF = {
 			limit = {
 				FROM = { original_tag = AFG }
 			}
-			FROM = { has_completed_focus = AFG_truck_factory }
+			FROM = { always = no }
 		}
 	}
 

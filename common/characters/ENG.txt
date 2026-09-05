@@ -322,7 +322,7 @@ characters={
                 desert_fox
                 urban_assault_specialist
                 trickster
-            }     танковик лис пустыни
+            }     # танковик лис пустыни
 			legacy_id=996
 		}
 	}
@@ -391,7 +391,7 @@ characters={
                 hill_fighter
                 urban_assault_specialist
                 trickster
-            }     танковик лесник
+            }     # танковик лесник
 			legacy_id=0
 		}
 	}

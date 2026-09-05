@@ -95,7 +95,7 @@ on_actions = {
 					}
 					FROM = {
 						original_tag = POL
-						has_completed_focus = POL_sabotage_polish_industry
+						always = no
 						NOT = { 
 							has_country_flag = GER_sent_annex_proposal_flag # To solve GER European Confederation
 						}
@@ -504,7 +504,7 @@ on_actions = {
 				limit = {
 					original_tag = POL
 					NOT = {
-						has_completed_focus = POL_ban_the_nazi_party
+						always = no
 					}
 				}
 				85 = {
@@ -514,7 +514,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = POL_clamp_down_on_danzig
+						always = no
 					}
 					85 = {
 						remove_dynamic_modifier = {
@@ -538,7 +538,7 @@ on_actions = {
 				limit = {
 					has_DLC = "No Step Back"
 					is_baltic_country = yes
-					NOT = { has_completed_focus = BALTIC_purge_of_our_own }
+					NOT = { always = no }
 				}
 				add_ideas = BALTIC_popular_resistance
 			}
@@ -587,7 +587,7 @@ on_actions = {
 				}
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
-				complete_national_focus = POL_complete_april_constitution
+				# complete_national_focus = POL_complete_april_constitution
 				POL_sanation_left_opposition_remove = yes
 				POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
@@ -609,7 +609,7 @@ on_actions = {
 				}
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
-				complete_national_focus = POL_complete_april_constitution
+				# complete_national_focus = POL_complete_april_constitution
 				POL_sanation_left_opposition_remove = yes
 				POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
@@ -635,7 +635,7 @@ on_actions = {
 				}
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
-				complete_national_focus = POL_complete_april_constitution
+				# complete_national_focus = POL_complete_april_constitution
 				POL_sanation_left_opposition_remove = yes
 				POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
@@ -759,16 +759,16 @@ on_actions = {
 				if = { #Give Lithuania their focus tree back if the Iron Wolf win the civil war.
 					limit = { has_government = fascism }
 					if = {
-						limit = { has_completed_focus = LIT_exile_voldemares }
+						limit = { always = no }
 						uncomplete_national_focus = { #Voldemares shouldn't exile himself
-							focus = LIT_exile_voldemares
+							# focus = LIT_exile_voldemares
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
@@ -780,9 +780,9 @@ on_actions = {
 				if = { #In case the old government defeats the Communists
 					limit = { has_government = neutrality }
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
@@ -799,57 +799,57 @@ on_actions = {
 				if = { #Give Estonia their focus tree back if the Vapsid win the civil war.
 					limit = { has_government = fascism }
 					if = {
-						limit = { has_completed_focus = EST_era_of_silence }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = EST_era_of_silence
+							# focus = EST_era_of_silence
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
-					unlock_national_focus = EST_rally_the_nation
+					# unlock_national_focus = EST_rally_the_nation
 					unlock_national_focus = EST_march_on_talinn
 				}
 				if = { #In case the old government defeats the Communists
 					limit = { has_government = neutrality }
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = EST_rally_the_nation }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = EST_rally_the_nation
+							# focus = EST_rally_the_nation
 							uncomplete_children = yes
 						}
 					}
-					complete_national_focus = EST_era_of_silence
+					# complete_national_focus = EST_era_of_silence
 				}
 				if = { #In case of communist uprising
 					limit = { has_government = communism }
 					if = {
-						limit = { has_completed_focus = EST_era_of_silence }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = EST_era_of_silence
+							# focus = EST_era_of_silence
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = EST_rally_the_nation }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = EST_rally_the_nation
+							# focus = EST_rally_the_nation
 							uncomplete_children = yes
 						}
 					}
-					complete_national_focus = BALTIC_restore_workers_republic
+					# complete_national_focus = BALTIC_restore_workers_republic
 				}
 			}
 			if = {
@@ -862,23 +862,23 @@ on_actions = {
 				if = { #Give Latvia their focus tree back if the Perkonkrust win the civil war.
 					limit = { has_government = fascism }
 					if = {
-						limit = { has_completed_focus = LAT_banish_clemens }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = LAT_banish_clemens
+							# focus = LAT_banish_clemens
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = LAT_anti_german_propaganda }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = LAT_anti_german_propaganda
+							# focus = LAT_anti_german_propaganda
 							uncomplete_children = yes
 						}
 					}
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
@@ -888,7 +888,7 @@ on_actions = {
 					complete_national_focus = LAT_the_old_ways
 					random_list = {
 						75 = {
-							complete_national_focus = LAT_alignment_with_germany
+							# complete_national_focus = LAT_alignment_with_germany
 						}
 						25 = {
 							complete_national_focus = LAT_the_thunder_strikes_alone
@@ -898,9 +898,9 @@ on_actions = {
 				if = { #In case the old government defeats the Communists
 					limit = { has_government = neutrality }
 					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
+						limit = { always = no }
 						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
+							# focus = BALTIC_restore_workers_republic
 							uncomplete_children = yes
 						}
 					}
@@ -909,7 +909,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = BALTIC_soviet_volunteer_forces
+					always = no
 				}
 				delete_unit_template_and_units = {
 					division_template = "Soviet Volunteers"
@@ -1232,7 +1232,7 @@ on_actions = {
 				limit = {
 					ROOT = { original_tag = POL }
 					FROM = { original_tag = HUN }
-					POL = { has_completed_focus = POL_press_the_habsburg_claim }
+					POL = { always = no }
 					HUN = { has_government = neutrality }
 				}
 				HUN = {
@@ -1316,13 +1316,13 @@ on_actions = {
 							has_dlc = "Gotterdammerung"
 						}
 						uncomplete_national_focus = {
-							focus = GER_oppose_hitler_ww
+							# focus = GER_oppose_hitler_ww
 							uncomplete_children = yes
 						}
 					}
 					else = {
 						uncomplete_national_focus = {
-							focus = GER_oppose_hitler
+							# focus = GER_oppose_hitler
 							uncomplete_children = yes
 						}
 					}

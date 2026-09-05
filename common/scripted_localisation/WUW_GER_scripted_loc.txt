@@ -359,7 +359,7 @@ defined_text = {
 	name = GetKDFFactoriesText
 	text = {
 		trigger = {
-			has_completed_focus = GER_prioritize_economic_growth
+			always = no
 		}
 		localization_key = GER_kdf_wagen_factories_economic_growth_text
 	}

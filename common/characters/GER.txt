@@ -67,7 +67,7 @@ characters = {
 			}
 			# He is meant to be quite hidden since he is an easter-egg for the most part
 			visible = {
-				has_completed_focus = GER_expatriate_the_communists_ww
+				always = no
 				has_country_flag = GER_strasserism_relevant_in_germany_flag
 			}
 			available = {
@@ -410,13 +410,13 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = GER_remilitarize_the_rhineland
-					has_completed_focus = GER_the_monarchy_compromise_ww
-					has_completed_focus = GER_start_the_proletarian_revolution
+					always = no
+					always = no
 				}
 			}
 			available = {
 				not_already_hired_except_as = army_chief
-				has_completed_focus = GER_prussian_artillery
+				always = no
 			}
 			traits = {
 				army_chief_army_high_command
@@ -478,9 +478,9 @@ characters = {
 				base = 8
 				modifier = {
 					factor = 0
-					has_completed_focus = GER_start_the_proletarian_revolution
+					always = no
 					NOT = {
-						has_completed_focus = GER_the_peoples_victory
+						always = no
 					}
 				}
 			}
@@ -1506,7 +1506,7 @@ characters = {
 				always = no #MM: Part of Inner Circle.
 				has_government = fascism
 				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
+					always = no
 				}
 			}
 			traits = {
@@ -1532,7 +1532,7 @@ characters = {
 			visible = {
 				has_government = fascism
 				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
+					always = no
 				}
 			}
 			traits = {
@@ -1868,7 +1868,7 @@ characters = {
 				OR = {
 					has_completed_focus = GER_rocketry_innovations
 					has_completed_focus = GER_wunderwaffe
-					has_completed_focus = GER_glorious_mechanical_machinations
+					always = no
 				}
 			}
 			traits = {
@@ -1941,8 +1941,8 @@ characters = {
 					has_country_flag = GER_reinstated_nazi_leadership
 					NOT = {
 						OR = {
-							has_completed_focus = GER_heed_von_neuraths_concerns
-							has_completed_focus = GER_oppose_hitler_ww
+							always = no
+							always = no
 						}
 					}
 				}
@@ -2096,8 +2096,8 @@ characters = {
 				has_government = fascism
 				NOT = {
 					OR = {
-						has_completed_focus = GER_oppose_hitler
-						has_completed_focus = GER_oppose_hitler_ww
+						always = no
+						always = no
 					}
 				}
 			}
@@ -2188,7 +2188,7 @@ characters = {
 				always = no #MM: Part of Inner Circle.
 				has_government = fascism
 				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
+					always = no
 				}
 			}
 			traits = {
@@ -2228,7 +2228,7 @@ characters = {
 				always = no #MM: Part of Inner Circle.
 				has_government = fascism
 				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
+					always = no
 				}
 			}
 			on_add = {
@@ -2270,7 +2270,7 @@ characters = {
 				always = no #MM: Part of Inner Circle.
 				has_government = fascism
 				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
+					always = no
 				}
 			}
 			ai_will_do = {
@@ -2448,7 +2448,7 @@ characters = {
 				}
 				visible = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler_ww
+						always = no
 					}
 				}
 				available = {
@@ -2491,7 +2491,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = GER_prioritize_economic_growth
+				always = no
 				GER_walther_funk = {
 					is_hired_as_advisor = no
 				}

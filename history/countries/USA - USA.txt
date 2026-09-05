@@ -221,7 +221,7 @@ if = {
 	unlock_national_focus = USA_wpa
 	complete_national_focus = USA_war_department
 	complete_national_focus = USA_air_war_plans_division
-	complete_national_focus = USA_war_plans_division
+	# complete_national_focus = USA_war_plans_division
 	complete_national_focus = USA_agricultural_adjustment_act
 	unlock_national_focus = USA_neutrality_act
 	#Dont want neutrality act event to fire
@@ -242,9 +242,9 @@ if = {
 		}
 	}
 	complete_national_focus = USA_intervention_in_asia	
-	complete_national_focus = USA_war_plan_orange
+	# complete_national_focus = USA_war_plan_orange
 	complete_national_focus = USA_intervention_in_europe		
-	complete_national_focus = USA_war_plan_black
+	# complete_national_focus = USA_war_plan_black
 	complete_national_focus = USA_strategic_bombing
  	complete_national_focus = USA_fair_labour_standards_act
 

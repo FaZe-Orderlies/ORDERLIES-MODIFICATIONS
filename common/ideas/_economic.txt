@@ -47,8 +47,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -96,8 +96,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -145,8 +145,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -194,8 +194,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -243,8 +243,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -292,8 +292,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -341,8 +341,8 @@ ideas = {
 						has_war = yes
 					}
 				}
-				has_completed_focus = USA_mode_of_socialistic_mobilization
-				has_completed_focus = USA_politic_defend_hemisphere
+				always = no
+				always = no
 				has_completed_focus = USA_giant_gets_sexy
 			}
 
@@ -381,7 +381,7 @@ ideas = {
 					OR = {
 						has_war_support > 0.75
 						has_war = yes
-						has_completed_focus = USA_limited_intervention
+						always = no
 					}
 				}
 				ELSE = {
@@ -479,7 +479,7 @@ ideas = {
 
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
@@ -490,7 +490,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -584,7 +584,7 @@ ideas = {
 
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
@@ -608,7 +608,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -655,7 +655,7 @@ ideas = {
 					NOT = {
 						has_idea = war_economy
 					}
-					has_completed_focus = GUAY_coup_detat
+					always = no
 				}
    			}
 		}
@@ -737,7 +737,7 @@ ideas = {
 
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
@@ -761,7 +761,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -908,7 +908,7 @@ ideas = {
 				
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
@@ -919,7 +919,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
+						always = no
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -1067,13 +1067,13 @@ ideas = {
 			visible = {
 				original_tag = USA
 				OR = {
-					has_completed_focus = USA_mode_of_socialistic_mobilization
+					always = no
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = USA_mode_of_socialistic_mobilization
+					always = no
 				}
 				OR = {
 					has_war_with_major = yes
@@ -1152,13 +1152,13 @@ ideas = {
 			visible = {
 				original_tag = USA
 				OR = {
-					has_completed_focus = USA_economic_of_world
+					always = no
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = USA_economic_of_world
+					always = no
 				}
 				OR = {
 					has_war_with_major = yes
@@ -1372,7 +1372,7 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+					NOT = { always = no }
 				}
 				if = {
 					limit = {
@@ -1386,7 +1386,7 @@ ideas = {
 						original_tag = PRC
 						has_dlc = "No Compromise, No Surrender"
 					}
-					NOT = { has_completed_focus = PRC_promote_paper_bills }
+					NOT = { always = no }
 				}
 			}
 
@@ -1807,7 +1807,7 @@ ideas = {
 			}
 			visible = {
 				original_tag = ENG
-				has_completed_focus = imperial_economic
+				always = no
 			}
 			available = {
 

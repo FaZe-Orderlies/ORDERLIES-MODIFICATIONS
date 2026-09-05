@@ -33,7 +33,7 @@ faction_template_USA_american_international = {
     }
     available = {
 		USA = {
-			has_completed_focus = USA_american_international
+			always = no
 		}
 		original_tag = USA
     }

@@ -2891,7 +2891,7 @@ country_event = {
 						factor = 100
 						has_dlc = "Trial of Allegiance"
 						ARG = {
-							has_completed_focus = ARG_work_with_the_nationalists
+							always = no
 						}
 					}
 
@@ -2930,7 +2930,7 @@ country_event = {
 					modifier = { 
 						has_dlc = "Trial of Allegiance"
 						tag = ARG
-						has_completed_focus = ARG_guardia_nacional
+						always = no
 						factor = 0
 					}
 				}
@@ -2938,7 +2938,7 @@ country_event = {
 					modifier = { 
 						has_dlc = "Trial of Allegiance"
 						tag = ARG
-						has_completed_focus = ARG_guardia_nacional
+						always = no
 						factor = 0
 					}
 					if = { 
@@ -2950,7 +2950,7 @@ country_event = {
 					modifier = {
 						has_dlc = "Gotterdammerung"
 						tag = AUS
-						has_completed_focus = AUS_repeal_the_may_constitution
+						always = no
 						factor = 0
 					}
 
@@ -2964,7 +2964,7 @@ country_event = {
 									has_government = neutrality
 								}
 								NOT = {
-									has_completed_focus = AUS_repeal_the_may_constitution
+									always = no
 								}
 							}
 						}
@@ -3125,12 +3125,12 @@ country_event = {
 			OR = {
 				NOT = {
 					focus_progress = {
-						focus = GER_brothers_in_arms
+						# focus = GER_brothers_in_arms
 						progress > 0
 					}
 				}
 				NOT = {
-					has_completed_focus = GER_brothers_in_arms
+					always = no
 				}
 			}
 		}
@@ -3577,7 +3577,7 @@ country_event = {
 		IF = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine
+					always = no
 				}
 			}
 			effect_tooltip = {

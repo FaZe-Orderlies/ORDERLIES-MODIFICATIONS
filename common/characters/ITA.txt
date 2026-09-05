@@ -1820,9 +1820,9 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					has_completed_focus = ITA_the_carabinieri
-					has_completed_focus = ITA_empower_the_carabinieri
-					has_completed_focus = ITA_expand_the_royal_guard
+					always = no
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1854,7 +1854,7 @@ characters = {
 						}
 						has_completed_focus = ITA_army_leaders
 					}
-					has_completed_focus = ITA_meritocracy
+					always = no
 				}
 			}
 		}
@@ -1879,8 +1879,8 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					has_completed_focus = ITA_italian_socialism
-					has_completed_focus = ITA_monarchia_d_italia
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1905,8 +1905,8 @@ characters = {
 			legacy_id = 0
 			visible = { 
 				OR = {
-					has_completed_focus = ITA_the_carabinieri
-					has_completed_focus = ITA_empower_the_carabinieri
+					always = no
+					always = no
 				}
 			}
 		}
@@ -2104,7 +2104,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_gruppi_di_difesa_della_donna
+				always = no
 			}
 		}
 	}
@@ -2387,9 +2387,9 @@ characters = {
 			visible = {
 				owner = {
 					OR = {
-						has_completed_focus = ITA_meritocracy
-						has_completed_focus = ITA_bring_back_exiled_intellectuals
-						has_completed_focus = ITA_new_forms_of_weaponry
+						always = no
+						always = no
+						always = no
 					}
 				}
 			}

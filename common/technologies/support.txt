@@ -184,7 +184,7 @@ technologies = {
 				limit = {
 					original_tag = AFG
 					has_dlc = "Graveyard of Empires"
-					has_completed_focus = AFG_expand_quami_template
+					always = no
 				}
 				add_units_to_division_template = {
 					template_name = "Pashtun Levy" 
@@ -765,7 +765,7 @@ technologies = {
 				limit = {
 					original_tag = AFG
 					has_dlc = "Graveyard of Empires"
-					has_completed_focus = AFG_expand_quami_template
+					always = no
 				}
 				add_units_to_division_template = {
 					template_name = "Pashtun Levy" 
@@ -1205,7 +1205,7 @@ technologies = {
 				limit = {
 					original_tag = AFG
 					has_dlc = "Graveyard of Empires"
-					has_completed_focus = AFG_expand_quami_template
+					always = no
 				}
 				add_units_to_division_template = {
 					template_name = "Pashtun Levy" 

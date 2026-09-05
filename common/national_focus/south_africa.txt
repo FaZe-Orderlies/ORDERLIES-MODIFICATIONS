@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = south_african_focus
 	
 	country = {
@@ -2845,6 +2845,45 @@
 	############################
 
 	focus = {
+		id = SAF_army_airforce_fleet
+		icon = GFX_goal_generic_army_doctrines
+		X = 24
+		y = 0
+
+		Cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = SAF_army
+			}
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+				name = SAF_special_service_battalion
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_focus_eng_special_air_service
 		X = 0
@@ -2895,45 +2934,6 @@
 					cost_reduction = 0.5
 					uses = 2
 					category = special_forces_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = SAF_army_airforce_fleet
-		icon = GFX_goal_generic_army_doctrines
-		X = 24
-		y = 0
-
-		Cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-        search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = SAF_army
-			}
-			army_experience = 10
-			add_doctrine_cost_reduction = {
-				name = SAF_special_service_battalion
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
 			}
 		}
 	}
@@ -3763,7 +3763,6 @@
 		id = SAF_protect_the_trade
 		icon = GFX_focus_SWE_coastal_support
 		prerequisite = { focus = SAF_seaward_defence_force }
-		mutually_exclusive = { focus = SAF_disrupt_the_trade }
 		x = -1
 		y = 1
 		relative_position_id = SAF_seaward_defence_force

@@ -3704,7 +3704,7 @@ prospect_for_resources = {
 					}
 					has_dlc = "Gotterdammerung"
 				}
-				has_completed_focus = CONGO_heat_resistant_cobalt
+				always = no
 			}
 		}
 		highlight_states = {
@@ -8163,7 +8163,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_oil_in_tripoli
+			always = no
 			448 = {
 				NOT = {
 					has_state_flag = {
@@ -8255,7 +8255,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_steel_in_tripoli
+			always = no
 			448 = {
 				NOT = {
 					has_state_flag = {
@@ -8682,7 +8682,7 @@ prospect_for_resources = {
 				}
 			}
 
-			has_completed_focus = SWE_deep_mining_complexes
+			always = no
 		}
 
 		fire_only_once = yes
@@ -8743,7 +8743,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = DEN_prospecting_new_sites
+			always = no
 			101 = {
 				NOT = {
 					has_state_flag = {
@@ -8847,7 +8847,7 @@ prospect_for_resources = {
 				limit = {
 					original_tag = PAR
 				}
-				has_completed_focus = GUAY_exploit_mineral_wealth
+				always = no
 			}
 			else = {
 				hidden_trigger = {
@@ -9083,7 +9083,7 @@ prospect_for_resources = {
 					has_state_flag = CHI_develop_hunan_tungsten_mines
 				}
 			}
-			has_completed_focus = CHI_tungsten_and_antimony_extraction
+			always = no
 		}
 
 		available = {
@@ -9154,7 +9154,7 @@ prospect_for_resources = {
 					has_state_flag = CHI_develop_jiangxi_tungsten_mines
 				}
 			}
-			has_completed_focus = CHI_tungsten_and_antimony_extraction
+			always = no
 		}
 
 		available = {
@@ -9299,7 +9299,7 @@ prospect_for_resources = {
 					original_tag = BRA
 					has_dlc = "Trial of Allegiance"
 				}
-				has_completed_focus = BRA_federal_development
+				always = no
 			}
 			ELSE = {
 				has_tech = excavation4
@@ -10511,7 +10511,7 @@ prospect_for_resources = {
 					has_dlc = "Thunder at Our Gates"
 					original_tag = SIA
 				}
-				has_completed_focus = SIA_domestic_tin_smelters
+				always = no
 			}
 		}
 		highlight_states = {

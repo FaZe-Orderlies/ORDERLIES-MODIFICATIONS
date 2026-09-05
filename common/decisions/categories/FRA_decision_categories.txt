@@ -32,7 +32,7 @@ VIC_concessions_to_the_germans = {
 	}
 	visible = {
 		OR = {
-			has_completed_focus = VIC_concessions_to_the_germans
+			always = no
 			controls_state = 16
 		}
 	}

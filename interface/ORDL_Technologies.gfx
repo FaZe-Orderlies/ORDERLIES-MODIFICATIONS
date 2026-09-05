@@ -14,7 +14,7 @@ spriteTypes = {
 	}
 }spriteTypes = {
 	SpriteType = {
-		name = " GFX_orderlies_swaptech_medium\
- texturefile = \gfx/interface/technologies/basic_encryption.dds\
- }
+		name = "GFX_orderlies_swaptech_medium"
+		texturefile = "gfx/interface/technologies/basic_encryption.dds"
+	}
 }

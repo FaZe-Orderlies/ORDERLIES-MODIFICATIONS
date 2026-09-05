@@ -608,7 +608,7 @@ RAJ_GOE_famine_cat = {
 		
 		available = {
 			OR = {
-				has_completed_focus = RAJ_quinine
+				always = no
 				has_tech = tech_field_hospital
 			}
 		}
