@@ -8027,6 +8027,7 @@ focus_tree = {
 				BUL = {
 					transfer_state = 731
 					transfer_state = 184
+					transfer_state = 77
 				}
 			}
 			
@@ -8269,7 +8270,13 @@ focus_tree = {
 		relative_position_id = GER_war_with_the_ussr
 		cost = 5
 		available = {
-			date>1942.12.1
+			OR = {
+				date>1942.12.1
+				NOT = {
+					controls_state = 16
+				}
+			}
+			
 		}
 
 		continue_if_invalid = yes

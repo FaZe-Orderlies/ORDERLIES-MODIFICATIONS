@@ -712,15 +712,16 @@ focus_tree = {
 
 		available = {
 			OR = {
-				date>1943.1.1
+				date>1942.7.1
 				JAP = {
 					controls_state = 629
 				}
+				NOT = {
+					ENG {
+						controls_state = 126
+					}
+				}
 			}
-		}
-		
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -3075,7 +3076,12 @@ focus_tree = {
 					annex_country = { target = D01
 						transfer_troops = yes 
 					}
-				}				
+				}
+				ITA = {
+					transfer_state = 460
+					transfer_state = 513
+					transfer_state = 459
+				}			
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			news_event = { id = news.1000 days = 0 }

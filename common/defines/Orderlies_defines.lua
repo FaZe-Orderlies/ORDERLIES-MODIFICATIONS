@@ -37,10 +37,13 @@ NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35 -- засол фокуса
 ---Общее
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 9999999
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0
+
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1 
+
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 999 -- лимит на фильда
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 999 -- лимит на гена
 
@@ -70,15 +73,19 @@ NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 10000
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 80000
+
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.12 ---размены в воздухе(ванила-1.0)
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00 ---самолетики не могут получить ранение на тренировке
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.06 ---касы по снаряге
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.1 ---касы по орге
-NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.4 ---касы ночью
+NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0 ---касы ночью
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15 ---фикс баф от касов
+
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 170
+
 NDefines.NAir.DISRUPTION_FACTOR = 6  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
 NDefines.NAir.ESCORT_FACTOR = 3 -- (2 -> 3) to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
+
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 5.0 ---скорость перелета между филдами
 
 ---АСЫ200
@@ -182,6 +189,8 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0
+
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03
 
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 --- Стоимость трейтов
 

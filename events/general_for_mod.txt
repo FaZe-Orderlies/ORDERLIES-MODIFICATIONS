@@ -57,20 +57,4 @@ country_event = {
 			}	
 		}
 	}
-	option = {
-		name = startup.institut.1.d
-		IF = {
-			random_owned_controlled_state = {
-				limit = {
-					can_construct_building = nuclear_facility
-					#is_capital = yes
-					is_core_of = ROOT
-				}
-				prioritize = { 276 360 277 295 539 275 2 6 55 7 4 43 46 48 219 111 439 289 285 282 126 }
-				construct_building_in_random_province = {
-					nuclear_facility = 1
-				}
-			}	
-		}
-	}
 }

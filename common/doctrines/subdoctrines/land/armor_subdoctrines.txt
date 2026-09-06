@@ -321,23 +321,9 @@ streamlined_deployment = {
                 soft_attack = 0.1
                 hard_attack = 0.1
             }
-            amphibious_heavy_armor = {
-                soft_attack = 0.1
-                hard_attack = 0.1
-            }
         }
         full_front_deployment = {
-            category_all_armor = {
-                reliability = 0.05
-                supply_consumption = -0.02
-            }
             amphibious_medium_armor = {
-                reliability = 0.15
-                hard_attack = 0.05
-                breakthrough = 0.1
-            }
-            amphibious_heavy_armor = {
-                reliability = 0.15
                 hard_attack = 0.05
                 breakthrough = 0.1
             }
@@ -349,10 +335,6 @@ streamlined_deployment = {
                 max_organisation = 2
             }
             amphibious_medium_armor = {
-                soft_attack = 0.05
-                hard_attack = 0.10
-            }
-            amphibious_heavy_armor = {
                 soft_attack = 0.05
                 hard_attack = 0.10
             }

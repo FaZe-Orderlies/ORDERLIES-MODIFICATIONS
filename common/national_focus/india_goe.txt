@@ -23148,8 +23148,6 @@ focus = {
             else = {
                 upgrade_ordance_factories_art_no_aat = yes
             }
-
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
         }
     }
     
@@ -23196,9 +23194,6 @@ focus = {
             else = {
                 upgrade_ordance_factories_no_aat = yes
             }
-
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
-            
         }
     }
 
@@ -23255,8 +23250,6 @@ focus = {
                 upgrade_ordance_factories_no_aat = yes
                 upgrade_ordance_factories_art_no_aat = yes
             }
-
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
         }
     }
 
@@ -23311,8 +23304,6 @@ focus = {
                 }
 
             }
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
-
         }
     }
 
@@ -23387,8 +23378,6 @@ focus = {
                     }
                 }
             }
-
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
         }
     }
     
@@ -23480,8 +23469,6 @@ focus = {
             else = {
                 upgrade_ordance_factories_art_no_aat = yes
             }
-
-             try_build_mil_in_core_otherwise_build_in_controlled = yes
         }
     }
 
@@ -24035,8 +24022,6 @@ focus = {
                 try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
         }
     }
     
