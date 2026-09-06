@@ -1,35 +1,8 @@
 ideas = {
-	academy_spirit = {
-
-		CZE_legacy_of_the_czechoslovak_legion_army_spirit = { #Pfot
-			ledger = army
-			picture = tur_sub_zero_survival_training
-			allowed = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
-			visible = {
-				NOT = {
-					always = no
-				}
-			}
-			modifier = {
-				trait_winter_specialist_xp_gain_factor = 0.10
-				acclimatization_cold_climate_gain_factor = 0.05
-				army_retreat_speed_factor = 0.05
-				winter_attrition_factor = -0.05
-				army_experience_from_volunteers = 0.05
-				#tactic_delay_preferred_weight_factor = 0.25
-			}
-
-			ai_will_do = {
-				base = 0
-			}
-		}				
-		
+	academy_spirit = {				
 		bold_attack_spirit = {
 			ledger = army
-			available = { has_military_academy = yes }
+			
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -44,7 +17,7 @@ ideas = {
 		}
 		meticulous_preparation_spirit = {
 			ledger = army
-			available = { has_military_academy = yes }
+			
 			modifier = {
 				training_time_factor = -0.15
 				minimum_training_level = -0.1
@@ -160,7 +133,7 @@ ideas = {
 		}
 		inventive_leadership_spirit = {
 			ledger = army
-			available = { has_military_academy = yes }
+			
 			modifier = {
 				initiative_factor = 0.05	
 				max_dig_in = 5
