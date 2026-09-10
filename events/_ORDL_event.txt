@@ -192,14 +192,18 @@ news_event = { ## японская монетка
         hidden_effect = {
             set_global_flag = JAP_win_asia
 			JAP = {
-				add_ideas = asia_resource_monetka
+				add_timed_idea = {
+					idea = asia_resource_monetka
+					days = 365
+				}
 			}
             every_country = {
                 limit = { 
                     is_in_faction_with = USA
                 }
-                add_ideas = {
+                add_timed_idea = {
                     idea = asia_resource_collapse_idea
+					days = 365
                 }
             }
         }   

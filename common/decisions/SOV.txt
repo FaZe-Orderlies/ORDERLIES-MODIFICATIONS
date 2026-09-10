@@ -10614,7 +10614,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 79 } #20 trains per factory
+			has_equipment = { train_equipment > 19 } #20 trains per factory
 		}
 
 		visible = {
@@ -10766,7 +10766,7 @@ SOV_industry_relocation = {
 					add_to_temp_variable = { SOV_factories_counter = 1 }
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
+			#custom_effect_tooltip = SOV_relocate_industry_repair_tt
 			custom_effect_tooltip = SOV_relocate_industry_lose_control_tt
 		}
 	}
