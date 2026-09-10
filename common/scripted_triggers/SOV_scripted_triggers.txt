@@ -841,13 +841,21 @@ SOV_is_military_offensive_main_objective = {
 
 SOV_is_industrial_relocation_destiny_state = {
 	OR = {
-		state = 573 #Zlatoust
-		state = 653 #Sverdlovsk
 		state = 651 #Ufa
+		state = 652 #Orenburg
+		state = 398 #Perm
+		state = 399 #Izhevsk
+		state = 653 #Sverdlovsk
+		state = 573 #Zlatoust
 		state = 572 #Chelyabinsk
 		state = 582 #Magnitogorsk
-		state = 398 #Perm
-		state = 652 #Orenburg
+		state = 574 #Tyumen
+		state = 575 #Kurgan
+		state = 571 #Omsk
+		state = 570 #Novosibirsk
+		state = 569 #Kemerovo
+		state = 578 #Tomsk
+		state = 40  #Altai Krai
 	}
 }
 

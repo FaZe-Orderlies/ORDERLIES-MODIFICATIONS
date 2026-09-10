@@ -4066,7 +4066,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				always = no
+				has_completed_focus = SOV_restoration_and_development
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4141,7 +4141,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				always = no
+				has_completed_focus = SOV_restoration_and_development
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 			NOT = { has_country_flag = SOV_punished_for_breaking_flag }
@@ -4233,7 +4233,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				always = no
+				has_completed_focus = SOV_restoration_and_development
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4405,7 +4405,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { always = no }
+			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4471,7 +4471,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { always = no }
+			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4548,7 +4548,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { always = no }
+			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4640,7 +4640,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		visible = {
 			SPR_scw_in_progress = yes
 			country_exists = SPC
-			SPC = { always = no }
+			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			NOT = { has_war_with = SPC }
 		}
 
@@ -4704,7 +4704,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 		}
 
 		available = {
-			always = no
+			has_completed_focus = SOV_send_military_advisors_to_spain
 			NOT = { has_completed_focus = SOV_coup_detat }
 			has_country_flag = SOV_send_elite_commandos_poum_flag
 		}
@@ -4714,7 +4714,7 @@ SOV_soviet_aid_to_poum_decision_category = {
 			country_exists = SPC
 			country_exists = SPD
 			NOT = { has_completed_focus = SOV_coup_detat }
-			SPC = { always = no }
+			SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			NOT = { has_war_with = SPC }
 			NOT = { is_in_faction_with = SPD }
 		}
@@ -4798,7 +4798,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_respect_baltic_self_determination
 			is_subject = no
 		}
 
@@ -4867,7 +4867,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_respect_baltic_self_determination
 			is_subject = no
 		}
 
@@ -5043,7 +5043,7 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_baltic_security
 			is_subject = no
 		}
 
@@ -5129,7 +5129,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5205,7 +5205,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5284,7 +5284,7 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5370,7 +5370,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_seek_balkan_cooperation
 			is_subject = no
 		}
 
@@ -5439,7 +5439,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_seek_balkan_cooperation
 		}
 
 		allowed = {
@@ -5506,7 +5506,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_demand_balkan_submission
 			is_Subject = no
 		}
 
@@ -5577,7 +5577,7 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			always = no
+			has_completed_focus = SOV_seek_balkan_cooperation
 			is_subject = no
 		}
 
@@ -10580,10 +10580,13 @@ SOV_industry_relocation = {
 			}
 		}
 
-		state_target = any_owned_state
+		state_target = yes
+
+		#targets = { core_states }
 
 		target_trigger = {
 			FROM = {
+				is_owned_by = ROOT
 				is_core_of = ROOT
 				is_fully_controlled_by = ROOT
 				is_on_continent = europe
@@ -10614,130 +10617,64 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 19 } #20 trains per factory
+			has_equipment = { train_equipment > 14 }
 		}
 
 		visible = {
 			FROM = {
-				OR = { #Has at least 2 factories
-					arms_factory > 1
-					industrial_complex > 1
-					AND = {
-						arms_factory > 0
-						industrial_complex > 0
-					}
+				OR = {
+					arms_factory > 0
+					industrial_complex > 0
 				}
 			}
 		}
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 15
 
-		days_remove = SOV_industrial_relocation_days
+		days_remove = 30
 
-		complete_effect = {  #Attempt to remove 2 CIVS & 2 MILS
+		complete_effect = {  #Attempt to remove all CIVS & MILS from state
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = SOV_industrial_relocation_trains_decision_negative
+					amount = -15
 					producer = SOV
 				}
 			}
 			custom_effect_tooltip = SOV_industry_relocation_trains_tt
 			custom_effect_tooltip = SOV_industry_relocation_complete_effect_tt
-			#REMOVE factories
+			#REMOVE all factories
 			FROM = {
 				hidden_effect = {
-					set_temp_variable = { SOV_factories_counter = 0 }
-
-					#Attempt to relocate 50%-50% of mils-civs
-					set_temp_variable = { SOV_half_the_factories_to_relocate = SOV.SOV_industrial_relocation_max_factories }
-					divide_temp_variable = { SOV_half_the_factories_to_relocate = 2 }
 					while_loop_effect = {
-						limit = {
-							check_variable = { SOV_factories_counter = SOV.SOV_industrial_relocation_max_factories compare = less_than }
+						limit = { arms_factory > 0 }
+						remove_building = {
+							type = arms_factory
+							level = 1
 						}
-						if = { #GO MILS (if possible)
-							limit = {
-								check_variable = { SOV_factories_counter = SOV_half_the_factories_to_relocate compare = less_than }
-							}
-							if = {
-								limit = {
-									arms_factory > 0
-								}
-								remove_building = {
-									type = arms_factory
-									level = 1
-								}
-								if = {
-									limit = {
-										has_state_flag = SOV_mils_removed_flag
-									}
-									modify_state_flag = { flag = SOV_mils_removed_flag value = 1 }
-								}
-								else = {
-									set_state_flag = SOV_mils_removed_flag
-								}
-							}
-							else_if = {
-								limit = {
-									industrial_complex > 0
-								}
-								remove_building = {
-									type = industrial_complex
-									level = 1
-								}
-								if = {
-									limit = {
-										has_state_flag = SOV_civs_removed_flag
-									}
-									modify_state_flag = { flag = SOV_civs_removed_flag value = 1 }
-								}
-								else = {
-									set_state_flag = SOV_civs_removed_flag
-								}
-							}
+						if = {
+							limit = { has_state_flag = SOV_mils_removed_flag }
+							modify_state_flag = { flag = SOV_mils_removed_flag value = 1 }
 						}
-						else = { #GO CIVS (if possible)
-							if = {
-								limit = {
-									industrial_complex > 0
-								}
-								remove_building = {
-									type = industrial_complex
-									level = 1
-								}
-								if = {
-									limit = {
-										has_state_flag = SOV_civs_removed_flag
-									}
-									modify_state_flag = { flag = SOV_civs_removed_flag value = 1 }
-								}
-								else = {
-									set_state_flag = SOV_civs_removed_flag
-								}
-							}
-							else_if = {
-								limit = {
-									arms_factory > 0
-								}
-								remove_building = {
-									type = arms_factory
-									level = 1
-								}
-								if = {
-									limit = {
-										has_state_flag = SOV_mils_removed_flag
-									}
-									modify_state_flag = { flag = SOV_mils_removed_flag value = 1 }
-								}
-								else = {
-									set_state_flag = SOV_mils_removed_flag
-								}
-							}
+						else = {
+							set_state_flag = SOV_mils_removed_flag
 						}
-						add_to_temp_variable = { SOV_factories_counter = 1 }
+					}
+					while_loop_effect = {
+						limit = { industrial_complex > 0 }
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+						if = {
+							limit = { has_state_flag = SOV_civs_removed_flag }
+							modify_state_flag = { flag = SOV_civs_removed_flag value = 1 }
+						}
+						else = {
+							set_state_flag = SOV_civs_removed_flag
+						}
 					}
 				}
 			}
@@ -10747,26 +10684,23 @@ SOV_industry_relocation = {
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = SOV_industrial_relocation_trains_decision
+					amount = 15
 					producer = SOV
 				}
 			}
 			custom_effect_tooltip = SOV_industry_relocation_remove_effect_tt
 			#RELOCATE FACTORIES
 			FROM = {
-				set_temp_variable = { SOV_factories_counter = 0 }
-				#Factories attempt to get relocated in 2 different states
-				set_temp_variable = { SOV_half_the_factories_to_relocate = SOV.SOV_industrial_relocation_max_factories }
-				divide_temp_variable = { SOV_half_the_factories_to_relocate = 2 }
-				while_loop_effect = { #NOTE: Due to the seed not changing during the execution of this effect, the same state will always be chosen, UNLESS it runs out of slots -> That's the reason for this
+				while_loop_effect = {
 					limit = {
-						check_variable = { SOV_factories_counter = SOV_half_the_factories_to_relocate compare = less_than }
+						OR = {
+							has_state_flag = SOV_mils_removed_flag
+							has_state_flag = SOV_civs_removed_flag
+						}
 					}
 					SOV_relocate_industry_in_appropriate_state_effect = yes
-					add_to_temp_variable = { SOV_factories_counter = 1 }
 				}
 			}
-			#custom_effect_tooltip = SOV_relocate_industry_repair_tt
 			custom_effect_tooltip = SOV_relocate_industry_lose_control_tt
 		}
 	}
@@ -10788,7 +10722,7 @@ SOV_industry_relocation = {
 		available = {
 			has_full_control_of_state = 195
 			has_full_control_of_state = 569
-			has_equipment = { train_equipment > 19 } #20 trains per factory
+			has_equipment = { train_equipment > 9 } #20 trains per factory
 		}
 
 		visible = {
@@ -10802,7 +10736,7 @@ SOV_industry_relocation = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 30
+		days_remove = SOV_industrial_relocation_days
 
 		modifier = {
 
@@ -11047,7 +10981,7 @@ SOV_comecon_dec_cat = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = SOV_found_the_comecon
 			FROM = { is_puppet_of = ROOT }
 		}
 
@@ -11142,7 +11076,7 @@ SOV_comecon_dec_cat = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = SOV_found_the_comecon
 			num_subjects > 0
 		}
 
@@ -11235,6 +11169,7 @@ SOV_comecon_dec_cat = {
 
 
 SOV_great_patriotic_war = {
+
 	SOV_raise_penal_units = {
 		priority = 21
 
@@ -11505,7 +11440,7 @@ SOV_great_patriotic_war = {
 		}
 
 		available = {
-			surrender_progress > 0.15
+			surrender_progress > 0.10
 		}
 
 		visible = {
@@ -11536,8 +11471,8 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			army_speed_factor = -0.1
-			army_defence_factor = 0.05
-			org_loss_when_moving = -0.1
+			army_defence_factor = 0.10
+			org_loss_when_moving = -0.15
 		}
 	}
 
@@ -12609,82 +12544,7 @@ SOV_great_patriotic_war = {
 			base = 1
 		}
 	}
-
-	SOV_op_november_41 = {
-		icon = generic_operation
-
-		available = {
-			date > 1941.11.15
-			date < 1941.12.10
-			has_completed_focus = SOV_desperate_measures
-			has_war_with = GER
-		}
-		cost = 0
-		fire_only_once = yes
-
-		complete_effect = {
-			add_timed_idea = { idea = SOV_op_november_41 days = 60 }
-		}
-		ai_will_do = { factor = 10 }
-	}
-
-	SOV_op_july_42 = {
-		icon = generic_operation
-
-		available = {
-			date > 1942.7.1
-			date < 1942.7.25
-			has_completed_focus = SOV_an_adaptable_army
-			has_war_with = GER
-		}
-		cost = 0
-		fire_only_once = yes
-
-		complete_effect = {
-			add_timed_idea = { idea = SOV_op_july_42 days = 45 }
-		}
-		ai_will_do = { factor = 10 }
-	}
-
-	SOV_op_july_43 = {
-		icon = generic_operation
-
-		available = {
-			date > 1943.7.1
-			date < 1943.7.25
-			has_completed_focus = SOV_keep_commissars_organization
-			has_war_with = GER
-		}
-		cost = 0
-		fire_only_once = yes
-
-		complete_effect = {
-			add_timed_idea = { idea = SOV_op_july_43 days = 50 }
-		}
-		ai_will_do = { factor = 10 }
-	}
-
-	SOV_op_july_44 = {
-		icon = generic_operation
-
-		available = {
-			date > 1944.6.20
-			date < 1944.7.15
-			has_completed_focus = SOV_the_glory_of_the_red_army
-			has_war_with = GER
-		}
-		cost = 0
-		fire_only_once = yes
-
-		complete_effect = {
-			add_timed_idea = { idea = SOV_op_july_44 days = 75 }
-		}
-		ai_will_do = { factor = 10 }
-	}
 }
-
-
-	
 
 ################################################################################
 
@@ -17794,7 +17654,7 @@ SOV_polish_territory = {
 			POL = {
 				exists = yes
 				is_subject_of = ROOT
-				NOT = { always = no }
+				NOT = { has_completed_focus = POL_surrender_the_east }
 			}
 			any_owned_state = {
 				is_core_of = POL
