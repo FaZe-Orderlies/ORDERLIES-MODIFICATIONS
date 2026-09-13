@@ -190,6 +190,9 @@ NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0
 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.25 ---дебафф от красного аира
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1 ---дебафф от красного аира на скорость
+
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03
 
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 --- Стоимость трейтов

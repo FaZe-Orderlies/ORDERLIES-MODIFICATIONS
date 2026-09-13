@@ -273,8 +273,6 @@ streamlined_deployment = {
     rewards = {
         flexible_armored_battalions = {
 
-            unit_medium_armor_design_cost_factor = -0.5
-            unit_light_armor_design_cost_factor  = -0.5
             light_tank_recon = {
                 battalion_mult = {
                     category = category_all_armor
@@ -318,14 +316,12 @@ streamlined_deployment = {
                 }
             }
             amphibious_medium_armor = {
-                soft_attack = 0.1
-                hard_attack = 0.1
+                hard_attack = 0.05
             }
         }
         full_front_deployment = {
             amphibious_medium_armor = {
-                hard_attack = 0.05
-                breakthrough = 0.1
+                breakthrough = 0.05
             }
 
         }
@@ -335,8 +331,8 @@ streamlined_deployment = {
                 max_organisation = 2
             }
             amphibious_medium_armor = {
-                soft_attack = 0.05
-                hard_attack = 0.10
+                soft_attack = 0.02
+                hard_attack = 0.05
             }
         }
     }

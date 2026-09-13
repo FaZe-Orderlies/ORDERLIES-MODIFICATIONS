@@ -351,6 +351,7 @@ MESSINA: "Мессинский пролив"
 
 STRATEGICREGION_307: "Восточная Украина"
 STRATEGICREGION_308: "Московская область"
+STRATEGICREGION_309: "Гибралтар"
 
 DEN_VICTORY_POINTS_6287: "Копенгаген"
 SWE_VICTORY_POINTS_6287: "Копенгаген"
@@ -367,6 +368,15 @@ ITA_VICTORY_POINTS_9821: "Котор"
 ITA_VICTORY_POINTS_9907: "Флоренция"
 ITA_VICTORY_POINTS_10007: "Родос"
 ITA_VICTORY_POINTS_11564: "Риека"
+
+VICTORY_POINTS_13455: "Дзержинский район"
+VICTORY_POINTS_13454: "Сокольнический район"
+VICTORY_POINTS_13453: "Пролетарский район"
+VICTORY_POINTS_13452: "Замоскворечье"
+VICTORY_POINTS_13456: "Краснопресненский район"
+VICTORY_POINTS_13451: "Ильичёвский район"
+VICTORY_POINTS_13449: "Подольский район"
+VICTORY_POINTS_13450: "Дарницкий район"
 
 ## ЛЕЙТ-ФОКУСЫ ТОТАЛЬНОЙ ВОЙНЫ ГЕРМАНИИ
 GER_total_war_propaganda: "Тотальная война"
