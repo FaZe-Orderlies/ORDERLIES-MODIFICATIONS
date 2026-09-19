@@ -4715,14 +4715,17 @@ focus_tree = {
 					level = 1
 				}
 			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
+			hidden_effect = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
+			
 			if = {
 				limit = {
 					has_full_control_of_state = 195
@@ -4737,14 +4740,17 @@ focus_tree = {
 						level = 1
 					}
 				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
+				hidden_effect = {
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
 				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = 1
-				}
+				
 			}
 			if = {
 				limit = {
@@ -4760,14 +4766,17 @@ focus_tree = {
 						level = 1
 					}
 				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
+				hidden_effect = {
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
 				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = 1
-				}
+				
 			}
 		}
 		
@@ -4853,14 +4862,17 @@ focus_tree = {
 				}
 			
 			}
-			add_offsite_building = {
-				type = arms_factory
-				level = -1
+			hidden_effect = {
+				add_offsite_building = {
+					type = arms_factory
+					level = -1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = -1
-			}
+			
 			if = {
 				limit = {
 					ROOT = { has_full_control_of_state = 195 } #Leningrad
@@ -4883,14 +4895,17 @@ focus_tree = {
 					}
 				
 				}
-				add_offsite_building = {
-					type = arms_factory
-					level = -1
+				hidden_effect = {
+					add_offsite_building = {
+						type = arms_factory
+						level = -1
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = -1
+					}
 				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = -1
-				}
+				
 			}
 			if = {
 				limit = {
@@ -4914,14 +4929,17 @@ focus_tree = {
 					}
 				
 				}
-				add_offsite_building = {
-					type = arms_factory
-					level = -1
+				hidden_effect = {
+					add_offsite_building = {
+						type = arms_factory
+						level = -1
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = -1
+					}
 				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = -1
-				}
+				
 			}
 			
 		}
