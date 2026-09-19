@@ -659,10 +659,11 @@ set_variable = { SOV_industrial_relocation_max_factories = 99 } #Max amount of f
 set_variable = { SOV_industrial_relocation_days = 30 } #Decision duration (can be halved by focus)
 set_variable = { SOV_industrial_relocation_trains_focus = 120 } #Trains to be used by the focus (20 trains / factory)
 set_variable = { SOV_industrial_relocation_trains_focus_negative = -120 } #Trains to be used by the focus (20 trains / factory)
-set_variable = { SOV_industrial_relocation_trains_decision = 15 } #Trains to be used by the generic decision
-set_variable = { SOV_industrial_relocation_trains_decision_negative = -15 } #Trains to be used by the generic decision
+set_variable = { SOV_industrial_relocation_trains_decision = 10 } #Trains to be used by the generic decision
+set_variable = { SOV_industrial_relocation_trains_decision_negative = -10 } #Trains to be used by the generic decision
 set_variable = { SOV_industrial_relocation_trains_decision_aluminium = 20 } #Trains to be used by the aluminium decision (20 trains / factory)
 set_variable = { SOV_industrial_relocation_trains_decision_aluminium_negative = -20 } #Trains to be used by the aluminium decision (20 trains / factory)
+set_variable = { SOV_relocation_carousel_index = 0 } #Round-robin index for factory relocation to Ural/Siberian states
 
 #DECISIONS COST - For cost reductions
 set_variable = { SOV_pressure_country_government_cost = 50 }

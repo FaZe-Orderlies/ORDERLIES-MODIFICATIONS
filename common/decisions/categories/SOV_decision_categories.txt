@@ -86,6 +86,14 @@ SOV_industry_relocation = {
 	visible = {
 		has_completed_focus = SOV_move_industry_to_the_urals
 	}
+
+	on_map_mode = {
+		every_controlled_state = {
+			set_variable = { SOV_calculated_trains = arms_factory_level }
+			add_to_variable = { SOV_calculated_trains = industrial_complex_level }
+			multiply_variable = { SOV_calculated_trains = 2 }
+		}
+	}
 }
 
 SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM

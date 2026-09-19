@@ -420,3 +420,6 @@ SOV_op_november_41_open_tt: "§YОткрывает «Операция Москв
 SOV_op_july_42_open_tt: "§YОткрывает «Операция Воронеж»§!"
 SOV_op_july_43_open_tt: "§YОткрывает «Операция Кутузов»§!"
 SOV_op_july_44_open_tt: "§YОткрывает «Операция Багратион»§!"
+SOV_industry_relocation_trains_tt:0 "§R-[?FROM.SOV_calculated_trains]§! $train_equipment$ — будут использоваться, пока действует это решение."
+SOV_industry_relocation_complete_effect_tt:0 "Все военные заводы и фабрики будут эвакуированы из региона §Y[FROM.GetName]§!.\n"
+SOV_generic_industry_relocation:0 "Эвакуация промышленности: [FROM.GetName] (§Y[?FROM.SOV_calculated_trains]§! поездов)"

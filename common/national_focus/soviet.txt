@@ -4695,17 +4695,7 @@ focus_tree = {
 		cost = 2
 
 		available = {
-			has_full_control_of_state = 219 #MOSCOW
-			has_equipment = { train_equipment > 119 } #20 trains per factory
-			OR = {
-				threat > 0.85
-				any_enemy_country = {
-					SOV_is_major_not_original_sov = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-			}
+			has_war_with = GER
 		}
 
 		select_effect = {
@@ -4725,6 +4715,14 @@ focus_tree = {
 					level = 1
 				}
 			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
 			if = {
 				limit = {
 					has_full_control_of_state = 195
@@ -4738,6 +4736,14 @@ focus_tree = {
 						type = industrial_complex
 						level = 1
 					}
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
 				}
 			}
 			if = {
@@ -4753,6 +4759,14 @@ focus_tree = {
 						type = industrial_complex
 						level = 1
 					}
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
 				}
 			}
 		}
@@ -4814,6 +4828,13 @@ focus_tree = {
 
 			custom_effect_tooltip = SOV_focus_complete_effect_tt
 			unlock_decision_category_tooltip = SOV_industry_relocation
+			hidden_effect = {
+				every_controlled_state = {
+					set_variable = { SOV_calculated_trains = arms_factory_level }
+					add_to_variable = { SOV_calculated_trains = industrial_complex_level }
+					multiply_variable = { SOV_calculated_trains = 2 }
+				}
+			}
 
 			random_controlled_state = {
 				limit = {
@@ -4831,6 +4852,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = -1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = -1
 			}
 			if = {
 				limit = {
@@ -4854,6 +4883,14 @@ focus_tree = {
 					}
 				
 				}
+				add_offsite_building = {
+					type = arms_factory
+					level = -1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
 			}
 			if = {
 				limit = {
@@ -4876,6 +4913,14 @@ focus_tree = {
 						instant_build = yes
 					}
 				
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = -1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
 				}
 			}
 			

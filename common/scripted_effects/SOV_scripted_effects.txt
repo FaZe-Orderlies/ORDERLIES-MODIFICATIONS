@@ -3941,6 +3941,65 @@ SOV_damage_relocated_military_factories_effect = {
 SOV_damage_relocated_civilian_factories_effect = {
 }
 
+# Sub-effect to apply one evacuated factory to a selected target state (THIS)
+SOV_apply_evacuated_factory_to_state_effect = {
+	add_extra_state_shared_building_slots = 1
+	if = {
+		limit = {
+			FROM = {
+				has_state_flag = SOV_mils_removed_flag
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+		ROOT = {
+			add_offsite_building = {
+				type = arms_factory
+				level = -1
+			}
+		}
+		FROM = {
+			modify_state_flag = { flag = SOV_mils_removed_flag value = -1 }
+			if = {
+				limit = {
+					has_state_flag = { flag = SOV_mils_removed_flag value = 0 }
+				}
+				clr_state_flag = SOV_mils_removed_flag
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				has_state_flag = SOV_civs_removed_flag
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+		ROOT = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = -1
+			}
+		}
+		FROM = {
+			modify_state_flag = { flag = SOV_civs_removed_flag value = -1 }
+			if = {
+				limit = {
+					has_state_flag = { flag = SOV_civs_removed_flag value = 0 }
+				}
+				clr_state_flag = SOV_civs_removed_flag
+			}
+		}
+	}
+}
+
 #RELOCATE INDUSTRY - ROOT = TAG // FROM = TARGETED STATE (to remove industry) // THIS = TARGETED STATE (to remove industry) [Effect assumed to be called inside FROM scope]
 SOV_relocate_industry_in_appropriate_state_effect = {
 	if = {
@@ -3951,195 +4010,227 @@ SOV_relocate_industry_in_appropriate_state_effect = {
 			}
 		}
 		ROOT = {
-			if = { #Prio the Urals & West Siberia (Ufa to Tomsk)
+			if = {
 				limit = {
-					any_controlled_state = {
-						SOV_is_industrial_relocation_destiny_state = yes
-					}
+					NOT = { check_variable = { SOV_relocation_carousel_index > -1 } }
 				}
-				random_controlled_state = {
-					limit = {
-						SOV_is_industrial_relocation_destiny_state = yes
-					}
-					#FIRST FACTORY - Prio Mil
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
-					}
-					#SECOND FACTORY - Prio Civ
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
+				set_variable = { SOV_relocation_carousel_index = 0 }
+			}
+			# Carousel state selection (0: Ufa -> 14: Altai Krai)
+			if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 0 } }
+				if = {
+					limit = { controls_state = 651 }
+					651 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
 					}
 				}
 			}
-			else_if = { #A bunch of historical fallbacks
-				limit = {
-					any_controlled_state = {
-						SOV_is_industrial_relocation_destiny_fallback_state = yes
-					}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 1 } }
+				if = {
+					limit = { controls_state = 652 }
+					652 = { SOV_apply_evacuated_factory_to_state_effect = yes }
 				}
-				random_controlled_state = {
-					limit = {
-						SOV_is_industrial_relocation_destiny_fallback_state = yes
-					}
-					#FIRST FACTORY
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
-					}
-					#SECOND FACTORY
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
 					}
 				}
 			}
-			else_if = { #what the hell man? Your country is in flames you know?
-				limit = {
-					any_controlled_state = {
-						SOV_is_industrial_relocation_destiny_state = no
-						SOV_is_industrial_relocation_destiny_fallback_state = no
-						is_on_continent = asia
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 2 } }
+				if = {
+					limit = { controls_state = 398 }
+					398 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
 					}
 				}
-				random_controlled_state = {
-					limit = {
-						SOV_is_industrial_relocation_destiny_state = no
-						SOV_is_industrial_relocation_destiny_fallback_state = no
-						is_on_continent = asia
-					}
-					#FIRST FACTORY
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
-					}
-					#SECOND FACTORY
-					if = {
-						limit = {
-							FROM = { has_state_flag = SOV_mils_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
-					}
-					else_if = {
-						limit = {
-							FROM = { has_state_flag = SOV_civs_removed_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-						FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 3 } }
+				if = {
+					limit = { controls_state = 399 }
+					399 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
 					}
 				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 4 } }
+				if = {
+					limit = { controls_state = 653 }
+					653 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 5 } }
+				if = {
+					limit = { controls_state = 573 }
+					573 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 6 } }
+				if = {
+					limit = { controls_state = 572 }
+					572 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 7 } }
+				if = {
+					limit = { controls_state = 582 }
+					582 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 8 } }
+				if = {
+					limit = { controls_state = 574 }
+					574 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 9 } }
+				if = {
+					limit = { controls_state = 575 }
+					575 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 10 } }
+				if = {
+					limit = { controls_state = 571 }
+					571 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 11 } }
+				if = {
+					limit = { controls_state = 570 }
+					570 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 12 } }
+				if = {
+					limit = { controls_state = 569 }
+					569 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 13 } }
+				if = {
+					limit = { controls_state = 578 }
+					578 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { check_variable = { SOV_relocation_carousel_index = 14 } }
+				if = {
+					limit = { controls_state = 40 }
+					40 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+			else = {
+				set_variable = { SOV_relocation_carousel_index = 0 }
+				if = {
+					limit = { controls_state = 651 }
+					651 = { SOV_apply_evacuated_factory_to_state_effect = yes }
+				}
+				else = {
+					random_controlled_state = {
+						limit = { SOV_is_industrial_relocation_destiny_state = yes }
+						SOV_apply_evacuated_factory_to_state_effect = yes
+					}
+				}
+			}
+
+			# Advance carousel to next state (0 -> 14 -> 0)
+			add_to_variable = { SOV_relocation_carousel_index = 1 }
+			if = {
+				limit = { check_variable = { SOV_relocation_carousel_index > 14 } }
+				set_variable = { SOV_relocation_carousel_index = 0 }
 			}
 		}
 	}
@@ -8256,12 +8347,12 @@ SOV_start_civil_war = {
 	# Anti Comintern Pact 
 	IF = {
 		limit = {
-			GER = { has_completed_focus = GER_anti_comintern_pact }
+			GER = { always = no }
 		}
 		# Add effects to SOS
 		IF = {
 			limit = {
-				GER = { has_completed_focus = GER_anti_soviet_pact }
+				GER = { always = no }
 			}
 			SOS = { add_opinion_modifier = { target = GER modifier = worse_pact_against_us } }
 		}

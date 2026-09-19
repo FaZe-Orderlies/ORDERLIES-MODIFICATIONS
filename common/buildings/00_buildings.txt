@@ -91,7 +91,7 @@ buildings = {
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 10
+			state_max = 100
 		}
 	}
 

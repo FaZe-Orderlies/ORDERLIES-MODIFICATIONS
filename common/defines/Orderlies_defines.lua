@@ -78,7 +78,6 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.12 ---размены в воздухе(в�
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00 ---самолетики не могут получить ранение на тренировке
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.06 ---касы по снаряге
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.1 ---касы по орге
-NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0 ---касы ночью
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15 ---фикс баф от касов
 
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 170
