@@ -981,7 +981,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				consumer_goods_expected_value = 0.10
 				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
@@ -1015,10 +1015,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				consumer_goods_expected_value = 0.10
 				conscription = 0.01
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
+				army_core_defence_factor = 0.10
 				production_speed_arms_factory_factor = 0.3
 				production_speed_dockyard_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3

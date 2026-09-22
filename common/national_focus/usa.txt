@@ -385,6 +385,8 @@ focus_tree = {
 
 		available = {
 			date>1939.3.1
+			has_completed_focus = USA_focus_on_asia_mod
+			has_completed_focus = USA_confidence_building_company
 		}
 		
 		bypass = {

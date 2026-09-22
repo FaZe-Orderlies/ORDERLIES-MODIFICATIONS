@@ -7542,6 +7542,19 @@ focus_tree = {
 				declare_war_on = { target = RAJ type = take_state_focus }
 				declare_war_on = { target = AST type = take_state_focus }
 				declare_war_on = { target = SAF type = take_state_focus }
+
+				every_allied_country = {
+					limit = {
+						NOT = { tag = ITA }
+					}
+					declare_war_on = { target = POL type = take_state_focus }
+					declare_war_on = { target = FRA type = take_state_focus }
+					declare_war_on = { target = ENG type = take_state_focus }
+					declare_war_on = { target = CAN type = take_state_focus }
+					declare_war_on = { target = RAJ type = take_state_focus }
+					declare_war_on = { target = AST type = take_state_focus }
+					declare_war_on = { target = SAF type = take_state_focus }
+				}
 			} 
 			
 		}
@@ -7651,24 +7664,6 @@ focus_tree = {
 			
 		}
 
-		cancel = {
-			AND = {
-				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-				16 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-			}
-		}
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -7680,6 +7675,8 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
+			custom_effect_tooltip = GER_return_territories
+			hidden_effect = {
 				add_state_core = 8
 				add_state_core = 87
 				add_state_core = 86
@@ -7689,6 +7686,7 @@ focus_tree = {
 				add_state_core = 912
 				add_state_core = 98
 				add_state_core = 85
+			}
 		}
 	}
 
@@ -8141,7 +8139,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			date>1941.6.1
+			date>1941.6.15
 		}
 
 		cancel = {
@@ -8251,10 +8249,6 @@ focus_tree = {
 				add_timed_idea = { idea = GER_op_fall_barbarossa days = 120 }
 
 				custom_effect_tooltip = generic_skip_one_line_tt
-
-				
-
-				set_cosmetic_tag = GER_greater_german_reich
 			}
 			
 		}
@@ -8270,10 +8264,50 @@ focus_tree = {
 		relative_position_id = GER_war_with_the_ussr
 		cost = 5
 		available = {
-			OR = {
-				date>1942.12.1
-				NOT = {
-					controls_state = 16
+			custom_trigger_tooltip = {
+				tooltip = GER_totaler_krieg_r
+				OR = {
+					date > 1942.12.1
+					has_global_flag = JAP_capitulated
+					
+					any_allied_country = {
+						capital_scope = {
+							NOT = { is_controlled_by = PREV }
+						}
+					}
+					
+					any_core_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+					
+					OR = {
+						NOT = { controls_state = 15 }
+						NOT = { controls_state = 14 }
+						NOT = { controls_state = 785 }
+						NOT = { controls_state = 29 }
+						NOT = { controls_state = 6 }
+						NOT = { controls_state = 977 }
+						NOT = { controls_state = 35 }
+						NOT = { controls_state = 7 }
+						NOT = { controls_state = 36 }
+						NOT = { controls_state = 56 }
+						NOT = { controls_state = 59 }
+						NOT = { controls_state = 58 }
+						NOT = { controls_state = 909 }
+						NOT = { controls_state = 912 }
+						NOT = { controls_state = 99 }
+						NOT = { controls_state = 30 }
+						NOT = { controls_state = 23 }
+						NOT = { controls_state = 19 }
+						NOT = { controls_state = 806 }
+					}
+
+					ITA = {
+						OR = {
+							NOT = { controls_state = 115 }
+							NOT = { controls_state = 114 }
+						}
+					}
 				}
 			}
 			

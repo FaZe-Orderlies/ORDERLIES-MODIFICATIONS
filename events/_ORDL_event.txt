@@ -499,6 +499,7 @@ news_event = { #автокап япы
 	
 	immediate = {
 		hidden_effect = {
+			set_global_flag = JAP_capitulated
 			if = { limit = { JAP = { has_war_with = SOV } }
 				SOV = {
 					white_peace  = {
