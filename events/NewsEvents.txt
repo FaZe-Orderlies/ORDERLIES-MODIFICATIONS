@@ -1113,6 +1113,18 @@ news_event = {
 					scope = BUL
 				}
 			}
+			42 = {
+				remove_dynamic_modifier = {
+					modifier = GER_saarbruken
+					scope = FRA
+				}
+			}
+			978 = {
+				remove_dynamic_modifier = {
+					modifier = GER_saarbruken
+					scope = FRA
+				}
+			}
 			FRA = { 
 				set_cosmetic_tag = FRA_FREE 
 				if = {

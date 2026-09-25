@@ -176,6 +176,7 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.10
 				local_resources_factor = 0.15               
 				fuel_gain_factor = 0.20
 			}
@@ -185,7 +186,8 @@ ideas = {
 			picture = INS_dutch_east_indies
 						
 			modifier = {
-				production_factory_max_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.10
 				local_resources_factor = -0.15     
 				fuel_gain_factor = -0.15           
 				fuel_gain_factor_from_states = -0.25

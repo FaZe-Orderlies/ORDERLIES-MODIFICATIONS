@@ -225,3 +225,10 @@ FRA_magino = {
 
 	army_attack_factor = -3
 }
+
+GER_saarbruken = {
+	enable = { always = yes }
+	icon = GFX_modifier_generic_guerilla_base
+
+	army_attack_factor = -3
+}
