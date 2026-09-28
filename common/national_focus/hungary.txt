@@ -2928,14 +2928,6 @@ focus_tree = {
 			factor = 90
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

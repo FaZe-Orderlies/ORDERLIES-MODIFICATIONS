@@ -5,8 +5,8 @@ state = {
 	state_category = pastoral
 	manpower =10000 #PreTAOG 30000
 
-	#impassable = yes
-	#force_link_ownership_to = 519 # South Australia
+	impassable = yes
+	force_link_ownership_to = 519 # South Australia
 
 	history = {
 

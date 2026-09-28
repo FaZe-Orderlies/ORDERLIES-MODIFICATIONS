@@ -193,7 +193,7 @@ NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.25 ---дебафф от красного аира
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1 ---дебафф от красного аира на скорость
 
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.015
 
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0 --- Стоимость трейтов
 
