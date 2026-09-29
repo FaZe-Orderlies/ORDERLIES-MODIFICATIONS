@@ -608,18 +608,10 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
-			ai_will_do = {
-				base = 2.5
-			}
 			traits = {
-				grand_battle_plan_expert
+				military_theorist
 			}
-			on_add = {
-				JAP_small_army_faction_gain = yes
-			}
-			on_remove = {
-				JAP_small_army_faction_loss = yes
-			}
+			can_be_fired = no
 		}
 
 		corps_commander = {
@@ -891,6 +883,12 @@ characters = {
 			idea_token = kenji_doihara
 			allowed = {
 				original_tag = JAP
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_chief_all_weather_1
@@ -1176,10 +1174,10 @@ characters = {
 				original_tag = JAP
 			}
 			visible = {
-				has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+				always = no
 			}
 			available = {
-				has_completed_focus = JAP_grand_army_purge
+				always = no
 			}
 			traits = {
 				army_chief_organizational_1
@@ -1353,10 +1351,10 @@ characters = {
 				original_tag = JAP
 			}
 			visible = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 			available = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 			traits = {
 				army_chief_planning_1
@@ -1392,18 +1390,10 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
-			ai_will_do = {
-				base = 1
-			}
 			traits = {
-				naval_aviation_pioneer
+				naval_theorist
 			}
-			on_add = {
-				JAP_small_naval_faction_gain = yes
-			}
-			on_remove = {
-				JAP_small_naval_faction_loss = yes
-			}
+			can_be_fired = no
 		}
 		
 		navy_leader = {
@@ -1745,27 +1735,6 @@ characters = {
 				small = GFX_idea_minoru_genda
 			}
 		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = minoru_genda
-			ledger = navy
-			allowed = {
-				original_tag = JAP
-			}
-			ai_will_do = {
-				base = 1
-			}
-			traits = { naval_theorist }
-			on_add = {
-				JAP_small_naval_faction_gain = yes
-			}
-			on_remove = {
-				JAP_small_naval_faction_loss = yes
-			}
-		}
-
 	}
 
 	# Yoshitoshi Tokugawa
@@ -1804,12 +1773,10 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
-			ai_will_do = {
-				base = 0.2
-			}
 			traits = {
-				assault_avaition
+				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 
 	}
@@ -1823,21 +1790,6 @@ characters = {
 				small = GFX_portrait_JAP_hino_kumazo_small
 			}
 		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = hino_kumazo
-			ledger = air
-			allowed = {
-				original_tag = JAP
-			}
-			ai_will_do = {
-				base = 1
-			}
-			traits = { air_warfare_theorist }
-		}
-
 	}
 
 	### ARMY CHIEFS ###
@@ -1863,9 +1815,9 @@ characters = {
 				}
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_defensive_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				base = 5
 				modifier = {
@@ -1889,34 +1841,6 @@ characters = {
 				small = GFX_portrait_JAP_nashimoto_morimasa_small
 			}
 		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = JAP_nashimoto_morimasa
-			ledger = army
-			allowed = {
-				OR = {
-					original_tag = JAP
-					original_tag = MAN
-				}
-			}
-			ai_will_do = {
-				base = 1
-			}
-			traits = {
-				military_theorist
-			}
-			on_add = {
-				JAP_small_army_faction_gain = yes
-			}
-			on_remove = {
-				JAP_small_army_faction_loss = yes
-			}
-		}
-
-		
-
 	}
 
 	# Hajime Sugiyama
@@ -1935,8 +1859,11 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_completed_focus = JAP_enact_the_national_conscription_law
+				always = no
 			}
 			traits = {
 				army_chief_drill_3
@@ -1974,9 +1901,9 @@ characters = {
 				}
 			}
 			traits = {
-				army_chief_morale_2
+				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 5
 				modifier = {
@@ -2031,9 +1958,9 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				navy_chief_naval_aviation_2
+				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 0.5
 				modifier = {
@@ -2062,9 +1989,9 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				navy_chief_commerce_raiding_1
+				navy_chief_decisive_battle_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				base = 0.5
 				modifier = {
@@ -2091,6 +2018,12 @@ characters = {
 			idea_token = shigetaro_shimada
 			allowed = {
 				original_tag = JAP
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_chief_decisive_battle_2
@@ -2129,9 +2062,9 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				air_chief_night_operations_1
+				air_chief_night_operations_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				base = 10
 			}
@@ -2156,9 +2089,9 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				air_chief_ground_support_1
+				air_chief_all_weather_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				base = 2
 			}

@@ -125,14 +125,12 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
 				available = {
-					has_completed_focus = wuw_HUN_reinstate_the_navy
-					NOT = {
-						OR = {
-							has_government = communism
-							has_government = fascism
-						}
-					}
+					always = no
 				}
 
 				traits = {
@@ -716,6 +714,21 @@ characters = {
 
 		
 
+			advisor = {
+				slot = army_chief
+				idea_token = HUN_karoly_beregfy
+				allowed = {
+					original_tag = HUN
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 150
+				ai_will_do = {
+					base = 1
+				}
+			}
+
 		}
 		instance = {
 			allowed = {
@@ -730,7 +743,6 @@ characters = {
 					small = "GFX_idea_HUN_karoly_beregfy"
 				}
 			}
-			
 
 			advisor = {
 				slot = army_chief
@@ -738,19 +750,10 @@ characters = {
 				allowed = {
 					original_tag = HUN
 				}
-				available = {
-					has_completed_focus = wuw_HUN_invest_in_ludovica_academy
-					NOT = {
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-				}
 				traits = {
-					army_chief_drill_2
+					army_chief_offensive_2
 				}
-				cost =  100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -890,8 +893,12 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
 				available = {
-					has_completed_focus = wuw_HUN_make_the_magyar_legiero_known
+					always = no
 				}
 
 				traits = {
@@ -1199,80 +1206,24 @@ characters = {
 	### THEORISTS ###
 
 	HUN_shvoy_kalman = {
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Gotterdammerung"
-				}
+		name = HUN_shvoy_kalman
+		portraits = {
+			army = {
+				small = "GFX_idea_HUN_shvoy_kalman"
 			}
-
-			name = HUN_shvoy_kalman
-
-			portraits = {
-				army = {
-					small = "GFX_idea_HUN_shvoy_kalman"
-				}
-			}
-
-			advisor = {
-				cost = 100
-				slot = theorist
-				idea_token = HUN_shvoy_kalman
-				ledger = army
-				allowed = {
-					original_tag = HUN
-				}
-				
-				traits = {
-					military_theorist
-				}
-			}
-
 		}
-		instance = {
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = HUN_shvoy_kalman
+			ledger = army
 			allowed = {
-				has_dlc = "Gotterdammerung"
+				original_tag = HUN
 			}
-
-			name = HUN_shvoy_kalman
-
-			portraits = {
-				army = {
-					small = "GFX_idea_HUN_shvoy_kalman"
-				}
+			traits = {
+				military_theorist
 			}
-
-			advisor = {
-
-				cost = 100
-
-				slot = theorist
-
-				idea_token = HUN_shvoy_kalman
-
-				ledger = army
-
-				allowed = {
-					original_tag = HUN
-				}
-
-				available = {
-					OR = {
-						has_completed_focus = wuw_HUN_hold_war_games
-						wuw_HUN_does_not_have_trianon = yes
-					}
-				}
-				
-				traits = {
-					military_theorist
-				}
-
-				ai_will_do = {
-					base = 3
-				}
-
-			}
-
+			can_be_fired = no
 		}
 	}
 
@@ -1294,30 +1245,17 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = HUN_gyorgy_jendrassik
 			ledger = air
 			allowed = {
 				original_tag = HUN
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Gotterdammerung"
-					}
-					OR = {
-						has_completed_focus = wuw_HUN_undercover_air_maneuvers
-						wuw_HUN_does_not_have_trianon = yes
-					}
-				}
-			}
 			traits = {
 				air_warfare_theorist
 			}
-			ai_will_do = {
-				base = 1
-			}
+			can_be_fired = no
 		}
 	}
 
@@ -1346,6 +1284,12 @@ characters = {
 				allowed = {
 					original_tag = HUN
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					army_chief_defensive_2
 				}
@@ -1370,9 +1314,6 @@ characters = {
 				}
 			}
 
-			# Can become a general through the military promotions focus
-			
-
 			advisor = {
 
 				slot = army_chief
@@ -1383,8 +1324,12 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
 				available = {
-					has_completed_focus = wuw_HUN_invest_in_ludovica_academy
+					always = no
 				}
 
 				traits = {
@@ -1429,10 +1374,10 @@ characters = {
 				}
 
 				traits = {
-					army_chief_offensive_2
+					army_chief_defensive_2
 				}
 
-				cost = 100
+				cost = 150
 
 				ai_will_do = {
 					factor = 1.000
@@ -1467,15 +1412,11 @@ characters = {
 					original_tag = HUN
 				}
 
-				available = {
-					wuw_HUN_does_not_have_trianon = yes
-				}
-
 				traits = {
-					army_chief_offensive_2
+					army_chief_defensive_2
 				}
 
-				cost = 100
+				cost = 150
 
 				ai_will_do = {
 					base = 3
@@ -1510,15 +1451,11 @@ characters = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = wuw_HUN_sailing_the_danube
-			}
-
 			traits = {
-				navy_chief_commerce_raiding_2
+				navy_chief_decisive_battle_2
 			}
 
-			cost = 100
+			cost = 150
 
 			ai_will_do = {
 				base = 1
@@ -1528,7 +1465,6 @@ characters = {
 
 	}
 
-	# Should not be recruited with the dlc wuw
 	HUN_francois_deak = {
 
 		name = HUN_francois_deak
@@ -1546,9 +1482,9 @@ characters = {
 				original_tag = HUN
 			}
 			traits = {
-				navy_chief_reform_2
+				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1556,7 +1492,6 @@ characters = {
 
 	}
 
-	# Should not be recruited with the dlc wuw
 	HUN_reszo_kastner = {
 
 		name = HUN_reszo_kastner
@@ -1573,6 +1508,12 @@ characters = {
 			allowed = {
 				original_tag = HUN
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_chief_maneuver_2
 			}
@@ -1587,7 +1528,6 @@ characters = {
 
 	### AIR CHIEFS ###
 
-	# Should not be recruited with the dlc wuw
 	HUN_bela_rakosi = {
 
 		name = HUN_bela_rakosi
@@ -1605,9 +1545,9 @@ characters = {
 				original_tag = HUN
 			}
 			traits = {
-				air_chief_ground_support_2
+				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1635,15 +1575,11 @@ characters = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = wuw_HUN_make_the_magyar_legiero_known
-			}
-
 			traits = {
-				air_chief_reform_2
+				air_chief_all_weather_2
 			}
 
-			cost = 100
+			cost = 150
 
 			ai_will_do = {
 				base = 2
@@ -1658,79 +1594,24 @@ characters = {
 	### MILITARY HIGH COMMAND ###
 
 	HUN_sandor_magyarossy = {
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Gotterdammerung"
-				}
+		name = HUN_sandor_magyarossy
+		portraits = {
+			army = {
+				small = "GFX_idea_HUN_sandor_magyarossy"
 			}
-
-			name = HUN_sandor_magyarossy
-
-			portraits = {
-				army = {
-					small = "GFX_idea_HUN_sandor_magyarossy"
-				}
-			}
-
-			advisor = {
-				slot = high_command
-				idea_token = HUN_sandor_magyarossy
-				allowed = {
-					original_tag = HUN
-				}
-				traits = {
-					air_air_combat_training_1
-				}
-				cost =  50
-				ai_will_do = {
-					base = 1
-				}
-			}
-
 		}
-		instance = {
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = HUN_sandor_magyarossy
+			ledger = navy
 			allowed = {
-				has_dlc = "Gotterdammerung"
+				original_tag = HUN
 			}
-
-			name = HUN_sandor_magyarossy
-
-			portraits = {
-				army = {
-					small = "GFX_idea_HUN_sandor_magyarossy"
-				}
+			traits = {
+				naval_theorist
 			}
-			
-			advisor = {
-
-				slot = high_command
-
-				idea_token = HUN_sandor_magyarossy
-
-				allowed = {
-					original_tag = HUN
-				}
-
-				available = {
-					OR = {
-						has_completed_focus = wuw_HUN_undercover_air_maneuvers
-						wuw_HUN_does_not_have_trianon = yes
-					}
-				}
-
-				traits = {
-					air_air_combat_training_2
-				}
-
-				cost =  100
-
-				ai_will_do = {
-					base = 1
-				}
-
-			}
-
+			can_be_fired = no
 		}
 	}
 
@@ -2348,8 +2229,12 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
 				available = {
-					has_completed_focus = wuw_HUN_invest_in_ludovica_academy
+					always = no
 				}
 
 				traits = {

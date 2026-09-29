@@ -1,4 +1,4 @@
-﻿capital = 46
+capital = 46
 
 if = {
 	limit = {
@@ -57,6 +57,7 @@ recruit_character = ROM_ioan_mihail_racovita
 recruit_character = ROM_gheorghe_avramescu
 recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_horia_macellariu
+recruit_character = ROM_gheorghe_koslinski
 recruit_character = ROM_gheorghe_potopeanu
 recruit_character = ROM_emanoil_ionescu
 recruit_character = ROM_gheorghe_mihail

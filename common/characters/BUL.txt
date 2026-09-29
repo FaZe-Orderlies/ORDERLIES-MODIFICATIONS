@@ -140,10 +140,12 @@ characters = {
 					}
 					original_tag = BUL
 				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					army_chief_defensive_2
 				}
-			cost = 100
+				cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -346,6 +348,8 @@ characters = {
 					}
 					original_tag = BUL
 				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					air_chief_safety_2
 				}
@@ -438,26 +442,17 @@ characters = {
 
 	BUL_theodosi_daskalov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_theodosi_daskalov
 			ledger = army
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				NOT = {
-					has_completed_focus = BUL_oppose_the_royal_dictatorship
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-			
 			traits = {
 				military_theorist
 			}
+			can_be_fired = no
 		}
 		name = BUL_theodosi_daskalov
 		portraits = {
@@ -468,74 +463,27 @@ characters = {
 	}
 
 	BUL_georgi_petsov = {
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			advisor = {
-				cost = 100
-				slot = theorist
-				idea_token = BUL_georgi_petsov
-				ledger = navy
-				allowed = {
-					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
-				}
-				
-				traits = {
-					naval_theorist
-				}
-			}
-			name = BUL_georgi_petsov
-			portraits = {
-				army = {
-					small = "GFX_idea_bul_georgi_petsov"
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			advisor = {
-				cost = 100
-				slot = theorist
-				idea_token = BUL_georgi_petsov
-				ledger = navy
-				allowed = {
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-					original_tag = BUL
-				}
-				
-				traits = {
-					naval_theorist
-				}
-			}
-			name = BUL_georgi_petsov
-			portraits = {
-				army = {
-					small = "GFX_idea_generic_navy_europe_1"
-				}
+		name = BUL_georgi_petsov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_georgi_petsov"
 			}
 		}
 	}
 
 	BUL_sava_ivanov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_sava_ivanov
 			ledger = navy
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			
 			traits = {
-				naval_aviation_pioneer
+				naval_theorist
 			}
+			can_be_fired = no
 		}
 		name = BUL_sava_ivanov
 		portraits = {
@@ -547,18 +495,17 @@ characters = {
 
 	BUL_georgi_drenikov = {
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = BUL_georgi_drenikov
 			ledger = air
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			
 			traits = {
 				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 		name = BUL_georgi_drenikov
 		portraits = {
@@ -577,24 +524,14 @@ characters = {
 			slot = army_chief
 			idea_token = BUL_konstantin_lukash
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			traits = {
-				army_chief_organizational_2
+				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
 			}
 		}
 		name = BUL_konstantin_lukash
@@ -608,72 +545,25 @@ characters = {
 	}
 
 	BUL_nikola_hadzipetkov = {
-		instance = {
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_nikola_hadzipetkov
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
 			}
-			advisor = {
-				slot = army_chief
-				idea_token = BUL_nikola_hadzipetkov
-				allowed = {
-					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
-				}
-				available = {
-					NOT = {
-						has_completed_focus = BUL_join_the_tripartite_pact
-					}
-					NOT = {
-						has_government = fascism
-					}
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-					modifier = {
-						factor = 0.100
-						BUL_save_money_for_decisions = yes
-					}
-				}
+			traits = {
+				army_chief_defensive_2
 			}
-			name = BUL_nikola_hadzipetkov
-			
-			portraits = {
-				army = {
-					small = "GFX_idea_bul_nikola_hadzipetkov"
-					large = "GFX_portrait_bul_nikola_hadzipetkov"
-				}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			advisor = {
-				slot = army_chief
-				idea_token = BUL_nikola_hadzipetkov
-				allowed = {
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-					original_tag = BUL
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-			name = BUL_nikola_hadzipetkov
-			portraits = {
-				army = {
-					small = "GFX_idea_generic_army_europe_3"
-				}
+		name = BUL_nikola_hadzipetkov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_nikola_hadzipetkov"
+				large = "GFX_portrait_bul_nikola_hadzipetkov"
 			}
 		}
 	}
@@ -690,11 +580,8 @@ characters = {
 					has_dlc = "Battle for the Bosporus"
 					original_tag = BUL
 				}
-				available = {
-					NOT = {
-						has_government = communism
-					}
-				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					army_chief_defensive_2
 				}
@@ -757,11 +644,8 @@ characters = {
 					has_dlc = "Battle for the Bosporus"
 					original_tag = BUL
 				}
-				available = {
-					NOT = {
-						has_government = communism
-					}
-				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					army_chief_maneuver_2
 				}
@@ -796,6 +680,8 @@ characters = {
 					}
 					original_tag = BUL
 				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					air_chief_ground_support_2
 				}
@@ -827,9 +713,8 @@ characters = {
 					has_dlc = "Battle for the Bosporus"
 					original_tag = BUL
 				}
-				available = {
-					has_country_flag = BUL_zveno_bolstered_flag
-				}
+				visible = { always = no }
+				available = { always = no }
 				traits = {
 					army_chief_offensive_2
 				}
@@ -853,22 +738,6 @@ characters = {
 			allowed = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
-			advisor = {
-				cost = 100
-				slot = theorist
-				idea_token = BUL_kiril_stanchev
-				ledger = army
-				allowed = {
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-					original_tag = BUL
-				}
-				
-				traits = {
-					military_theorist
-				}
-			}
 			name = BUL_kiril_stanchev
 			portraits = {
 				army = {
@@ -887,24 +756,14 @@ characters = {
 			slot = navy_chief
 			idea_token = BUL_asen_toshev
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			traits = {
-				navy_chief_reform_1
+				navy_chief_decisive_battle_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
 			}
 		}
 		name = BUL_asen_toshev
@@ -920,27 +779,14 @@ characters = {
 			slot = navy_chief
 			idea_token = BUL_ivan_variklechkov
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
-			}
-			available = {
-				NOT = {
-					has_completed_focus = BUL_approach_germany
-				}
-				NOT = {
-					has_government = fascism
-				}
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
 			}
 		}
 		name = BUL_ivan_variklechkov
@@ -960,24 +806,14 @@ characters = {
 			slot = air_chief
 			idea_token = BUL_dimitr_ayryanov
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			traits = {
-				air_chief_reform_1
+				air_chief_night_operations_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
 			}
 		}
 		name = BUL_dimitr_ayryanov
@@ -993,22 +829,14 @@ characters = {
 			slot = air_chief
 			idea_token = BUL_gancho_manchev
 			allowed = {
-				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
-			}
 			traits = {
-				air_chief_safety_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
 			}
 		}
 		name = BUL_gancho_manchev
@@ -1027,10 +855,8 @@ characters = {
 				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				has_government = communism
-				has_country_flag = BUL_back_from_the_scw_flag
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				air_chief_ground_support_3
 			}
@@ -2165,23 +1991,6 @@ characters = {
                                                                                                                                                               
 
 	BUL_ivan_gaidimitriv = {
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = BUL_ivan_gaidimitriv
-			ledger = air
-			allowed = {
-				NOT = {
-					has_dlc = "Battle for the Bosporus"
-				}
-				original_tag = BUL
-			}
-			
-			traits = {
-				air_warfare_theorist
-			}
-		}
-
 		name = BUL_ivan_gaidimitriv
 		portraits = {
 			army = {
@@ -2200,6 +2009,8 @@ characters = {
 				}
 				original_tag = BUL
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				navy_naval_air_defense_2
 			}
@@ -2226,6 +2037,8 @@ characters = {
 				}
 				original_tag = BUL
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				navy_chief_decisive_battle_1
 			}

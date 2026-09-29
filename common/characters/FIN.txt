@@ -126,9 +126,9 @@ characters = {
 				NOT = { has_government = communism }
 			}
 			traits = {
-				army_chief_defensive_3
+				army_chief_offensive_2
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -170,21 +170,6 @@ characters = {
                 urban_assault_specialist
                 trickster
             }
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = FIN_erik_heinrichs
-			ledger = army
-			allowed = {
-				original_tag = FIN
-			}
-			available = {
-				NOT = { has_government = communism }
-			}			
-			traits = {
-				military_theorist
-			}
 		}
 	}
 
@@ -246,6 +231,19 @@ characters = {
 				large = GFX_portrait_FIN_aarne_juutilainen
 				small = GFX_portrait_FIN_aarne_juutilainen_small
 			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = FIN_aarne_juutilainen
+			ledger = army
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				military_theorist
+			}
+			can_be_fired = no
 		}
 	}
 
@@ -389,24 +387,6 @@ characters = {
 				large = GFX_portrait_FIN_akseli_anttila
 			}
 		}
-		
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = FIN_akseli_anttila
-			ledger = army
-			allowed = {
-				original_tag = FIN
-			}
-
-			available = {
-				has_completed_focus = FIN_the_second_finnish_civil_war
-			}
-			
-			traits = {
-				military_theorist
-			}
-		}
 	}
 
 	FIN_aksel_airo = {
@@ -424,15 +404,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
-			available = {
-				NOT = { has_government = communism }
-				if = {
-					limit = {
-						has_character_flag = FIN_anti_fascist_character_flag
-					}
-					NOT = { has_government = fascism }
-				}
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_chief_planning_2
 			}
@@ -479,14 +452,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
-			available = {
-				has_government = communism
-				OR = {
-					has_completed_focus = FIN_approach_the_soviets
-					has_completed_focus = FIN_confederated_finno_russian_republics
-				}
-				has_completed_focus = FIN_the_second_finnish_civil_war #So the character is available once the Civil War starts
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_chief_planning_1
 			}
@@ -567,7 +534,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = FIN_vaino_valve
 			ledger = navy
@@ -577,6 +544,7 @@ characters = {
 			traits = {
 				naval_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -588,16 +556,17 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = FIN_gustaf_magnusson
-			ledger = navy
+			ledger = air
 			allowed = {
 				original_tag = FIN
 			}
 			traits = {
-				close_air_support_proponent
+				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -606,18 +575,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_FIN_torsti_verkkola_small
-			}
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = FIN_torsti_verkkola
-			ledger = navy
-			allowed = {
-				original_tag = FIN
-			}
-			traits = {
-				air_warfare_theorist
 			}
 		}
 	}
@@ -648,9 +605,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
-			available = {
-				NOT = { has_government = communism }
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_chief_drill_2
 			}
@@ -678,9 +634,9 @@ characters = {
 				NOT = { has_government = communism }
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -714,9 +670,9 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				navy_chief_commerce_raiding_2
+				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -737,9 +693,9 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				navy_chief_decisive_battle_2
+				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -770,9 +726,9 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				air_chief_all_weather_2
+				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -793,9 +749,9 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				air_chief_ground_support_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}

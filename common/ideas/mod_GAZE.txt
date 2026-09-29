@@ -68,23 +68,6 @@ ideas = {
             }
         }
 		
-		starting_doc = {
-            allowed = {
-                always = no
-            }
-            picture = generic_guerilla_warfare
-            removal_cost = -1
-            modifier = {
-				custom_modifier_tooltip = daily_dock_tt
-			}
-			on_add = {
-				add_daily_mastery = {
-					amount = 0.5
-					days = 1095	
-					name = daily_doc
-				}
-			}
-        }
 		
 		###ИТА РЕЗИНА
 		ITA_rubber_ger_coop = {

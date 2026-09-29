@@ -247,29 +247,6 @@ characters = {
 		}
 
 		
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = GER_werner_von_blomberg
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			visible = {
-				NOT = {
-					has_completed_focus = GER_reorganize_the_wehrmacht
-				}
-			}
-			available = {
-				NOT = {
-					has_completed_focus = GER_reorganize_the_wehrmacht
-				}
-			}
-			traits = {
-				grand_battle_plan_expert
-			}
-		}
 	}
 
 	GER_gerd_von_rundstedt = {
@@ -408,14 +385,9 @@ characters = {
 				has_dlc = "Gotterdammerung"
 			}
 			visible = {
-				NOT = {
-					has_completed_focus = GER_remilitarize_the_rhineland
-					always = no
-					always = no
-				}
+				always = no
 			}
 			available = {
-				not_already_hired_except_as = army_chief
 				always = no
 			}
 			traits = {
@@ -523,8 +495,9 @@ characters = {
 				original_tag = GER
 			}
 			traits = {
-				mobile_warfare_expert
+				military_theorist
 			}
+			can_be_fired = no
 		}
 		
 		corps_commander = {
@@ -551,21 +524,6 @@ characters = {
 			army = {
 				large = GFX_portrait_GER_heinz_guderian
 				small = GFX_idea_heinz_guderian
-			}
-		}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = heinz_guderian
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_adopt_new_panzer_doctrine
-			}
-			traits = {
-				blitzkrieg_theorist
 			}
 		}
 		
@@ -784,6 +742,12 @@ characters = {
 			idea_token = albert_kesselring
 			allowed = {
 				original_tag = GER
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_chief_reform_2
@@ -1051,13 +1015,10 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_trade_interdiction
-			}
 			traits = {
-				navy_chief_commerce_raiding_3
+				navy_chief_commerce_raiding_2
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 2
 			}
@@ -1102,7 +1063,7 @@ characters = {
 					}	
 				}
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1
 			}
@@ -1130,22 +1091,6 @@ characters = {
 				small = GFX_idea_alfred_saalwachter
 			}
 		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = alfred_saalwachter
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_wolfpack_tactics
-			}
-			traits = {
-				submarine_specialist
-			}
-		}
-	
 	}
 
 	GER_hermann_boehm = {
@@ -1231,18 +1176,6 @@ characters = {
 				small = GFX_idea_wolfram_von_richthofen
 			}
 		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = wolfram_von_richthofen
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				close_air_support_proponent
-			}
-		}
 	}
 
 	GER_walther_wever = { #MM: Died in June 1936, probably remove him
@@ -1251,16 +1184,6 @@ characters = {
 			army = {
 				small = GFX_idea_walther_wever
 			}
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = walther_wever
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = { air_warfare_theorist }
 		}
 	}
 
@@ -1272,19 +1195,17 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ernst_udet
 			ledger = air
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_dive_bombers
-			}
 			traits = {
-				dive_bomber
+				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -1296,14 +1217,17 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = otto_ciliax
 			ledger = navy
 			allowed = {
 				original_tag = GER
 			}
-			traits = { naval_theorist }
+			traits = {
+				naval_theorist
+			}
+			can_be_fired = no
 		}
 	}
 
@@ -1331,6 +1255,12 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_organizational_2
 			}
@@ -1355,10 +1285,10 @@ characters = {
 				original_tag = GER
 			}
 			visible = {
-				has_government = fascism
+				always = no
 			}
 			available = {
-				has_government = fascism
+				always = no
 			}
 			traits = {
 				army_chief_drill_2
@@ -1383,13 +1313,10 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_instill_auftragstaktik
-			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1411,13 +1338,10 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_develop_modern_maneuver_warfare
-			}
 			traits = {
-				army_chief_maneuver_2
+				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1454,8 +1378,11 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_completed_focus = GER_re_establish_the_seekriegsleitung
+				always = no
 			}
 			traits = {
 				navy_chief_maneuver_2
@@ -1523,17 +1450,11 @@ characters = {
 					original_tag = HUN
 				}
 			}
-			available = {
-				or = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
-			}
 			visible = {
-				has_government = fascism
-				NOT = {
-					always = no
-				}
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				GER_reich_marshal
@@ -1583,13 +1504,10 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_expanding_the_luftwaffe
-			}
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.250
 			}
@@ -1609,9 +1527,11 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				NOT = { has_government = fascism }
-				has_completed_focus = GER_reorganize_the_luftwaffe
+				always = no
 			}
 			traits = {
 				air_chief_ground_support_3
@@ -1726,19 +1646,16 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = high_command
+			slot = air_chief
 			idea_token = hugo_sperrle
 			ledger = air
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_dive_bombers
-			}
 			traits = {
-				air_close_air_support_2
+				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}

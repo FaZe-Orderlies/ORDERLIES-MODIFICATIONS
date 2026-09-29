@@ -125,8 +125,9 @@ characters={
 			}
 
 			traits = {
-				superior_firepower_expert
+				military_theorist
 			}
+			can_be_fired = no
 		}
 
 		corps_commander={
@@ -214,18 +215,11 @@ characters={
 					is_literally_china = yes
 				}
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				USA = {
-					NOT = {
-						has_country_flag = dwight_d_eisenhower_sent_to_china
-						
-					}
-					OR = {
-						always = no
-						has_completed_focus = USA_selective_training_act
-					}
-				}
-				
+				always = no
 			}
 			traits = {
 				army_chief_offensive_2
@@ -309,7 +303,7 @@ characters={
 		}
 	}
 
-	USA_douglas_macarthur={ #SEA version
+	USA_douglas_macarthur={
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -335,10 +329,8 @@ characters={
 				}
 				available = {
 					USA = {
-						
 						NOT = {
 							OR = {
-								always = no
 								has_country_flag = douglas_macarthur_sent_to_china
 								has_country_leader = {
 									ruling_only = yes
@@ -349,9 +341,9 @@ characters={
 					}
 				}
 				traits = {
-					army_chief_morale_2 
+					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -383,7 +375,7 @@ characters={
 		}
 
 
-		instance = { #Non-SEA
+		instance = {
 			allowed = {
 				NOT = {
 					has_dlc = "No Compromise, No Surrender"
@@ -421,9 +413,9 @@ characters={
 					}
 				}
 				traits = {
-					army_chief_morale_2
+					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -448,6 +440,9 @@ characters={
 			idea_token = walter_krueger
 			allowed = {
 				original_tag = USA
+			}
+			visible = {
+				always = no
 			}
 			available = {
 				always = no
@@ -725,9 +720,9 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_reform_2
+				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -755,18 +750,17 @@ characters={
 			}
 		}
 		advisor={
-			slot = navy_chief
+			cost = 150
+			slot = theorist
 			idea_token = chester_nimitz
+			ledger = navy
 			allowed = {
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_commerce_raiding_2
+				naval_theorist
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			can_be_fired = no
 		}
 
 		navy_leader={
@@ -800,9 +794,9 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_naval_aviation_2
+				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -922,16 +916,6 @@ characters={
 				small="GFX_idea_dewitt_clinton_ramsey"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = dewitt_clinton_ramsey
-			ledger = navy
-			allowed = {
-				original_tag = USA
-			}
-			traits = { naval_theorist }
-		}
 	}
 
 	USA_marc_mitscher={
@@ -939,18 +923,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_marc_mitscher"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = marc_mitscher
-			ledger = navy
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				naval_aviation_pioneer
 			}
 		}
 	}
@@ -971,8 +943,9 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				victory_through_airpower
+				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -982,16 +955,6 @@ characters={
 			army={
 				small="GFX_idea_harold_mcclelland"
 			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = harold_mcclelland
-			ledger = air
-			allowed = {
-				original_tag = USA
-			}
-			traits = { air_warfare_theorist }
 		}
 	}
 
@@ -1018,14 +981,13 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				army_chief_drill_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1
 				modifier = {
 					factor = 10
-					# I don't care that it's earlier than historical, the US needs army XP earlier...
 					date > 1938.6.1
 				}
 			}
@@ -1056,9 +1018,9 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				air_chief_reform_3
+				air_chief_night_operations_2
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1079,9 +1041,9 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				air_chief_night_operations_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1100,6 +1062,12 @@ characters={
 			idea_token = george_kenney
 			allowed = {
 				original_tag = USA
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_chief_safety_2

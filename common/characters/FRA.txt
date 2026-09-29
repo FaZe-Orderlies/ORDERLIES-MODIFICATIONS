@@ -197,19 +197,10 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_aggressive_focus
-			}
-			visible = {
-				NOT = {
-					has_country_flag = vichy_france
-				}
-			}
-			cost = 100.000
 			traits = {
-				army_chief_offensive_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 7
 			}
@@ -234,44 +225,14 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				OR = {
-					has_completed_focus = FRA_defensive_focus
-					has_country_flag = vichy_france
-				}
-			}
-			cost = 100.000
 			traits = {
-				army_chief_defensive_2
+				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 7
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = maxime_weygand
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				OR = {
-					has_completed_focus = FRA_defensive_focus
-					has_country_flag = vichy_france
-				}
-			}
-			traits = {
-				military_theorist
-			}
-			ai_will_do = {
-				base = 0.5
-			}
-		}
-		
-		
 	}
 
 	FRA_alphonse_georges={
@@ -290,17 +251,18 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_maneuver_1
 			}
-			cost =  50
+			cost = 50
 			ai_will_do = {
 				factor = 1.000
-			}
-			visible = {
-				NOT = {
-					has_country_flag = vichy_france
-				}
 			}
 		}
 		
@@ -329,30 +291,17 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = charles_de_gaulle
 			ledger = army
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_battle_of_maneuver
-			}
-			
 			traits = {
-				blitzkrieg_theorist
+				military_theorist
 			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					GER = {
-						is_ai = yes
-					}
-					date < 1939.08.01
-				}
-			}
+			can_be_fired = no
 		}
 		
 		corps_commander={
@@ -426,28 +375,6 @@ characters={
 			}
 			army={
 				large=GFX_portrait_FRA_henri_giraud
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = henri_giraud
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					GER = {
-						is_ai = yes
-					}
-					date < 1939.08.01
-				}
-			}
-			traits = {
-				military_theorist
 			}
 		}
 		
@@ -548,7 +475,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -683,17 +610,16 @@ characters={
 		}
 		advisor={
 			cost = 150
-			
 			slot = theorist
 			idea_token = victor_denain
 			ledger = air
 			allowed = {
 				original_tag = FRA
 			}
-			
 			traits = {
-				assault_avaition
+				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -705,14 +631,17 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = jean_decoux
 			ledger = navy
 			allowed = {
 				original_tag = FRA
 			}
-			traits = { naval_theorist }
+			traits = {
+				naval_theorist
+			}
+			can_be_fired = no
 		}		
 	}
 
@@ -723,16 +652,6 @@ characters={
 				small="GFX_idea_jean_marie_bergeret"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = jean_marie_bergeret
-			ledger = air
-			allowed = {
-				original_tag = FRA
-			}
-			traits = { air_warfare_theorist }
-		}
 	}
 
 	FRA_louis_kahn={
@@ -742,29 +661,8 @@ characters={
 				small="GFX_idea_louis_kahn"
 			}
 		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = louis_kahn
-			ledger = navy
-			allowed = {
-				original_tag = FRA
-			}
-			
-			traits = {
-				grand_fleet_proponent
-			}
-		}
 	}
 
-
-	### ARMY CHIEFS ###
-
-	# Gamelin up there
-
-	# Weygand up there
-
-	# Georges up there
 
 	FRA_henri_marie_auguste_bineau={
 		name=FRA_henri_marie_auguste_bineau
@@ -779,10 +677,16 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_offensive_1
 			}
-			cost =  50
+			cost = 50
 			ai_will_do = {
 				factor = 1.000
 				modifier = {
@@ -806,20 +710,21 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_defensive_1
 			}
-			cost =  50
+			cost = 50
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 	}
-
-
-	### NAVY CHIEFS ###
-
-	# Darlan Up there
 
 	FRA_marcel_gensoul={
 		name=FRA_marcel_gensoul
@@ -835,9 +740,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				navy_chief_naval_aviation_1
+				navy_chief_commerce_raiding_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -857,6 +762,12 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
@@ -867,8 +778,6 @@ characters={
 		}
 	}
 
-
-	### AIR CHIEFS ###
 
 	FRA_joseph_vuillemin={
 		name=FRA_joseph_vuillemin
@@ -884,9 +793,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_chief_ground_support_1
+				air_chief_night_operations_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				factor = 2
 			}
@@ -906,10 +815,16 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_all_weather_1
 			}
-			cost =  50
+			cost = 50
 			ai_will_do = {
 				factor = 0.5
 			}
@@ -929,6 +844,12 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_reform_2
 			}
@@ -938,7 +859,6 @@ characters={
 			}
 		}
 	}
-
 
 	FRA_jean_romatet = {
 		name=FRA_jean_romatet
@@ -953,13 +873,10 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			visible = {
-				has_country_flag = vichy_france
-			}
 			traits = {
-				air_chief_old_guard
+				air_chief_all_weather_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				factor = 2
 			}

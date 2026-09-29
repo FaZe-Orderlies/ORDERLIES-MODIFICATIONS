@@ -181,7 +181,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ROM_gheorghe_potopeanu
 			ledger = army
@@ -191,6 +191,7 @@ characters={
 			traits = {
 				military_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -202,17 +203,17 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ROM_emanoil_ionescu
 			ledger = air
 			allowed = {
 				original_tag = ROM
 			}
-			
 			traits = {
 				air_warfare_theorist
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -236,7 +237,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -280,7 +281,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -315,18 +316,17 @@ characters={
 			}
 		}
 		advisor={
-			slot = navy_chief
-			idea_token = ROM_nicolae_sova
+			cost = 150
+			slot = theorist
+			idea_token = nicolae_sova
+			ledger = navy
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				navy_chief_commerce_raiding_2
+				naval_theorist
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			can_be_fired = no
 		}
 	}
 
@@ -345,9 +345,9 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				navy_chief_maneuver_2
+				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -361,6 +361,29 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=1
 			legacy_id=-1
+		}
+	}
+
+	ROM_gheorghe_koslinski = {
+		name = ROM_gheorghe_koslinski
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_1
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ROM_gheorghe_koslinski
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -381,9 +404,9 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_chief_ground_support_2
+				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -404,9 +427,9 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_chief_reform_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

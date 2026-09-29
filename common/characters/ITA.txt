@@ -166,15 +166,10 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_government = fascism
-			}
 			traits = {
-				grand_battle_plan_expert
+				military_theorist
 			}
-			ai_will_do = {
-				base = 3.000
-			}
+			can_be_fired = no
 		}
 
 		advisor = {
@@ -226,9 +221,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_morale_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -266,6 +261,12 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_defensive_1
 			}
@@ -278,7 +279,7 @@ characters = {
 		
 	}
 
-	ITA_italo_balbo = { #Can become Country Leader later
+	ITA_italo_balbo = {
 		name = ITA_italo_balbo
 		portraits = {
 			army = {
@@ -296,15 +297,12 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
+			visible = {
+				always = no
 			}
-			
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_all_weather_2
 			}
@@ -323,19 +321,6 @@ characters = {
 			army = {
 				small = GFX_idea_giovanni_messe
 				large = GFX_portrait_ITA_giovanni_messe
-			}
-		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = giovanni_messe
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				mobile_warfare_expert
 			}
 		}
 		
@@ -373,9 +358,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
+				army_chief_offensive_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -760,7 +745,7 @@ characters = {
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -837,19 +822,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = guiseppe_fioravanzo
-			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				grand_fleet_proponent
-			}
-		}
-
 		navy_leader = {
 			traits = { blockade_runner seawolf spotter }
 			skill = 6
@@ -899,20 +871,18 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = angelo_iachino
 			ledger = navy
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_government = fascism
+			traits = {
+				naval_theorist
 			}
-			traits = { naval_theorist }
+			can_be_fired = no
 		}
-
-		
 	}
 
 	ITA_giuseppe_di_bartolo = {
@@ -957,19 +927,6 @@ characters = {
 				small = GFX_idea_amedeo_mecozzi
 			}
 		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = amedeo_mecozzi
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				assault_avaition
-			}
-		}
 	}
 
 	ITA_renato_sandalli = {
@@ -981,14 +938,17 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = renato_sandalli
 			ledger = air
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			traits = { air_warfare_theorist }
+			traits = {
+				air_warfare_theorist
+			}
+			can_be_fired = no
 		}		
 	}
 	
@@ -997,19 +957,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_romeo_bernotti_small
-			}
-		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = ITA_romeo_bernotti
-			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				naval_aviation_pioneer
 			}
 		}
 	}
@@ -1036,6 +983,12 @@ characters = {
 			idea_token = ITA_alberto_pariani
 			allowed = {
 				ITA_is_italian_tag = yes
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -1067,9 +1020,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				navy_chief_commerce_raiding_1
+				navy_chief_commerce_raiding_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1090,8 +1043,11 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_government = fascism
+				always = no
 			}
 			traits = {
 				navy_chief_naval_aviation_1
@@ -1116,6 +1072,12 @@ characters = {
 			idea_token = ITA_raffaele_de_courten
 			allowed = {
 				ITA_is_italian_tag = yes
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
@@ -1147,9 +1109,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				air_chief_safety_1
+				air_chief_night_operations_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1170,6 +1132,12 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_reform_2
 			}
@@ -1177,7 +1145,7 @@ characters = {
 			ai_will_do = {
 				base = 1.000
 			}
-		}		
+		}
 	}
 
 	ITA_aldo_pellegrini = {
@@ -1195,9 +1163,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				air_chief_ground_support_1
+				air_chief_all_weather_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}

@@ -234,9 +234,9 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_maneuver_3
+				army_chief_offensive_2
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 0.5
 			}
@@ -289,24 +289,10 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
-			
 			traits = {
-				grand_battle_plan_expert
+				military_theorist
 			}
-
-			ai_will_do = {
-				base = 2
-				modifier = {
-					has_idea_with_trait = industrial_concern
-					has_idea_with_trait = silent_workhorse
-					factor = 5
-				}
-			}
+			can_be_fired = no
 		}
 		
 		corps_commander={
@@ -475,28 +461,6 @@ characters={
 				large=GFX_portrait_ENG_harold_alexander
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = harold_alexander
-			ledger = army
-			allowed = {
-				original_tag = ENG
-			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
-			traits = {
-				military_theorist
-			}
-			ai_will_do = {
-				base = 2
-			}
-		}
-		
-		
 	}
 
 	ENG_jackie_smyth={
@@ -574,9 +538,9 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 3
 				modifier = {
@@ -781,14 +745,13 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				navy_chief_naval_aviation_2
+				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 0.5
 
 				modifier = {
-					# Increase weight of navy chief after army chief is hired
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
@@ -908,24 +871,6 @@ characters={
 				small="GFX_idea_generic_army_europe_2"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ENG_raymond_briggs
-			ledger = army
-			visible = {
-				has_completed_focus = ENG_eliminate_the_upper_class
-			}
-			available = {
-				has_completed_focus = ENG_eliminate_the_upper_class
-			}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				military_theorist
-			}
-		}
 	}
 
 	ENG_james_somerville={
@@ -943,19 +888,10 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
-			
 			traits = {
-				grand_fleet_proponent
+				naval_theorist
 			}
-
-			ai_will_do  = {
-				base = 1
-			}
+			can_be_fired = no
 		}
 	}
 
@@ -966,19 +902,6 @@ characters={
 				small="GFX_idea_tom_phillips"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = tom_phillips
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = { naval_theorist }
-			ai_will_do  = {
-				base = 0.5
-			}
-		}
 	}
 
 	ENG_hugh_dowding={
@@ -986,22 +909,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_hugh_dowding"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = hugh_dowding
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_warfare_theorist
-			}
-
-			ai_will_do  = {
-				base = 0.5
 			}
 		}
 	}
@@ -1021,14 +928,10 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			
 			traits = {
-				victory_through_airpower
+				air_warfare_theorist
 			}
-
-			ai_will_do  = {
-				base = 0.25
-			}
+			can_be_fired = no
 		}
 	}
 
@@ -1039,51 +942,12 @@ characters={
 				small="GFX_idea_ENG_jfc_fuller"
 			}
 		}
-		advisor={
-			cost = 200
-			slot = theorist
-			idea_token = ENG_jfc_fuller
-			ledger = army
-			available = {
-				has_government = fascism
-			}
-			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
-			}
-			
-			traits = {
-				blitzkrieg_theorist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
 	}
 
-# Communist ministers, intentionally without loc so they are 'randomized'
 	ENG_random_communist_minister_14={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_5"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ENG_random_communist_minister_14
-			ledger = air
-			visible = {
-				has_country_flag = ENG_trade_unions_demand_minister_appointment_14
-			}
-			allowed = {
-				original_tag = ENG
-			}
-			research_bonus = {
-				rocketry = 0.050
-			}
-			traits = {
-				little_rocket_man
 			}
 		}
 	}
@@ -1094,32 +958,8 @@ characters={
 				small="GFX_idea_generic_army_europe_6"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ENG_random_communist_minister_15
-			ledger = army
-			visible = {
-				has_country_flag = ENG_trade_unions_demand_minister_appointment_15
-			}
-			allowed = {
-				original_tag = ENG
-			}
-			research_bonus = {
-				nuclear = 0.2
-			}
-			traits = {
-				nuclear_enthusiast
-			}
-		}
 	}
 
-
-	### ARMY CHIEFS ###
-
-	# Brooke up there
-
-	# Vereker up there
 
 	ENG_edmund_ironside={
 		name=ENG_edmund_ironside
@@ -1134,6 +974,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_defensive_2
 			}
@@ -1144,10 +990,6 @@ characters={
 		}
 	}
 
-
-	### NAVY CHIEFS ###
-
-	# Andrew Cunningham up there
 
 	ENG_ernle_chatfield={
 		name=ENG_ernle_chatfield
@@ -1162,6 +1004,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_chief_maneuver_2
 			}
@@ -1170,7 +1018,6 @@ characters={
 				base = 3
 
 				modifier = {
-					# Increase weight of navy chief after army chief is hired
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
@@ -1195,14 +1042,13 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_commerce_raiding_2
 			}
-			cost =  50
+			cost = 150
 			ai_will_do = {
 				base = 1
 
 				modifier = {
-					# Increase weight of navy chief after army chief is hired
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
@@ -1213,8 +1059,6 @@ characters={
 		}
 	}
 
-
-	### AIR CHIEFS ###
 
 	ENG_cyril_newall={
 		name=ENG_cyril_newall
@@ -1230,14 +1074,13 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				air_chief_reform_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 2
 
 				modifier = {
-					# Increase weight of air chief after navy chief is hired
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0
@@ -1264,12 +1107,11 @@ characters={
 			traits = {
 				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 3
 
 				modifier = {
-					# Increase weight of air chief after navy chief is hired
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0
@@ -1293,6 +1135,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_safety_2
 			}
@@ -1301,7 +1149,6 @@ characters={
 				base = 1
 
 				modifier = {
-					# Increase weight of air chief after navy chief is hired
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0

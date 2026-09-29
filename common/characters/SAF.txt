@@ -168,7 +168,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				cost = 150
 				slot = theorist
 				idea_token = SAF_j_f_van_rensburg
 				ledger = army
@@ -178,6 +178,7 @@ characters={
 				traits = {
 					military_theorist
 				}
+				can_be_fired = no
 			}
 
 			advisor={
@@ -224,7 +225,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				cost = 150
 				slot = theorist
 				idea_token = SAF_s_p_le_roux
 				ledger = air
@@ -234,6 +235,7 @@ characters={
 				traits = {
 					air_warfare_theorist
 				}
+				can_be_fired = no
 			}		
 		}
 
@@ -244,7 +246,7 @@ characters={
 			name=SAF_james_mitchell_baker
 			portraits={
 				army={
-					small="GFX_idea_SAF_james_mitchell_baker" #small="GFX_idea_generic_army_europe_3"
+					small="GFX_idea_SAF_james_mitchell_baker"
 				}
 			}
 			advisor={
@@ -254,9 +256,9 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					army_chief_maneuver_2
+					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -267,7 +269,7 @@ characters={
 			name=SAF_leonard_beyers
 			portraits={
 				army={
-					small="GFX_idea_SAF_leonard_beyers" #small="GFX_idea_generic_army_europe_4"
+					small="GFX_idea_SAF_leonard_beyers"
 				}
 			}
 			advisor={
@@ -279,7 +281,7 @@ characters={
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -293,7 +295,7 @@ characters={
 			name=SAF_pierre_oliver_knoll
 			portraits={
 				army={
-					small="GFX_idea_SAF_pierre_oliver_knoll" #small="GFX_idea_generic_navy_europe_2"
+					small="GFX_idea_SAF_pierre_oliver_knoll"
 				}
 			}
 			advisor={
@@ -303,9 +305,9 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					navy_chief_maneuver_2
+					navy_chief_decisive_battle_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -328,7 +330,7 @@ characters={
 				traits = {
 					navy_chief_commerce_raiding_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -342,7 +344,7 @@ characters={
 			name=SAF_adolf_malan
 			portraits={
 				army={
-					small="GFX_idea_SAF_adolf_malan" #small="GFX_idea_generic_air_europe_3"
+					small="GFX_idea_SAF_adolf_malan"
 				}
 			}
 			advisor={	
@@ -354,7 +356,7 @@ characters={
 				traits = {
 					air_chief_all_weather_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -365,7 +367,7 @@ characters={
 			name=SAF_pierre_van_ryneveld
 			portraits={
 				army={
-					small="GFX_idea_SAF_pierre_van_ryneveld" #small="GFX_idea_generic_air_europe_2"
+					small="GFX_idea_SAF_pierre_van_ryneveld"
 				}
 			}
 			advisor={
@@ -375,9 +377,9 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					air_chief_ground_support_2
+					air_chief_night_operations_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -467,19 +469,17 @@ characters={
 				}
 			}
 			advisor={
-				slot = high_command
-				idea_token = SAF_jeannot_de_la_tourier
+				cost = 150
+				slot = theorist
+				idea_token = jeannot_de_la_tourier
 				ledger = navy
 				allowed = {
 					original_tag = SAF
 				}
 				traits = {
-					navy_screen_2
+					naval_theorist
 				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
+				can_be_fired = no
 			}		
 		}
 
