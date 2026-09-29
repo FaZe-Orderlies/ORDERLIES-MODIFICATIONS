@@ -218,3 +218,21 @@ NDefines.NAVAL_MINES_INTEL_DIFF_FACTOR = 0
 NDefines.NCountry.DEFAULT_COASTAL_PROTECTION_STABILITY = 0.0
 
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 25 -- выженная земля
+
+---HQ
+NDefines.NMilitary.PLANNING_CAP_COMMS_SCALING = { 1.0, 1.0, 1.0, 1.0, 1.0 } -- Масштабирование предела планирования в зависимости от того на сколько провинций позади линии фронта находится штаб (HQ)
+NDefines.NMilitary.PLANNING_CAP_NO_HQ_SCALING = 1.0 -- Коэффициент предела планирования при отсутствии штаба (нет лидера лидер не назначен или находится вне структуры главного приказа)
+NDefines.NMilitary.PLANNING_SPEED_COMMS_SCALING = { 1.0, 1.0, 1.0, 1.0, 1.0 } -- Аналогично PLANNING_CAP_COMMS_SCALING но для скорости планирования
+NDefines.NMilitary.PLANNING_SPEED_NO_HQ_SCALING = 1.0 -- Аналогично PLANNING_CAP_NO_HQ_SCALING но для скорости планирования
+NDefines.NMilitary.LEADER_MOD_COMMS_SCALING = { 1.0, 1.0, 1.0, 1.0, 1.0 } -- Аналогично PLANNING_CAP_COMMS_SCALING но для модификаторов лидера
+NDefines.NMilitary.LEADER_MOD_NO_HQ_SCALING = 1.0 -- Аналогично PLANNING_CAP_NO_HQ_SCALING но для модификаторов лидера
+NDefines.NMilitary.ABILITY_COMMS_SCALING = { 1.0, 1.0, 1.0, 1.0, 1.0 } -- Аналогично PLANNING_CAP_COMMS_SCALING но для активных способностей
+NDefines.NMilitary.ABILITY_NO_HQ_SCALING = 1.0 -- Аналогично PLANNING_CAP_NO_HQ_SCALING но для активных способностей
+
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_DEPLOY = 0 -- Базовое время на восстановление при назначении лидера подразделения если он ранее не был развернут. Мгновенно при 0. Масштабируется людскими ресурсами шаблона штаба (HQ)
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_DEPLOY_MIN = 0 -- Минимальное время восстановления при развертывании командира даже для очень малых штабных шаблонов
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_REDEPLOY = 0 -- Время на передислокацию лидера в другое подразделение. Мгновенно при 0
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW = 0 -- Базовое время на отзыв назначенного командира подразделения. Мгновенно при 0. Масштабируется людскими ресурсами шаблона штаба
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW_MIN = 0 -- Минимальное время восстановления при отзыве командира даже для очень малых штабных шаблонов
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_REFERENCE_MANPOWER = 0 -- Опорное значение численности личного состава для масштабирования задержки развертывания/отзыва. При этом значении задержка равна базовой
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_MANPOWER_EXPONENT = 0 -- Экспонента для масштабирования численности личного состава (значение > 1 сильнее наказывает крупные дивизии увеличенным временем восстановления)
