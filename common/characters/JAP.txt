@@ -646,12 +646,13 @@ characters = {
 			slot = high_command
 			idea_token = JAP_hisaichi_terauchi
 			ledger = army
-		
+			allowed = {
+				original_tag = JAP
+			}
 			traits = {
 				army_armored_3
 			}
 			cost = 150
-			
 		}
 		# Will be promoted to Field Marshal (Gensui) through focus
 		corps_commander = {
@@ -698,7 +699,7 @@ characters = {
 				}
 			}
 			traits = {
-				army_concealment_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1289,6 +1290,12 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_logistics_2
 			}
@@ -1665,6 +1672,12 @@ characters = {
 			ledger = navy
 			allowed = {
 				original_tag = JAP
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_capital_ship_1
@@ -2121,7 +2134,7 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				air_tactical_bombing_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -2147,6 +2160,12 @@ characters = {
 			ledger = navy
 			allowed = {
 				original_tag = JAP
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_naval_strike_1
@@ -2177,9 +2196,9 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				air_air_combat_training_3
+				air_superiority_land_2
 			}
-			cost = 200
+			cost = 100
 			ai_will_do = {
 				base = 0.8
 			}
@@ -2203,6 +2222,12 @@ characters = {
 			ledger = navy
 			allowed = {
 				original_tag = JAP
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_naval_air_defense_2
@@ -2228,7 +2253,7 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = chuichi_nagumo
-			ledger = air
+			ledger = navy
 			allowed = {
 				original_tag = JAP
 			}
@@ -5004,15 +5029,11 @@ characters = {
 			}
 
 			visible = {
-				NOT = {
-					has_country_flag = JAP_jotaro_watanabe_was_killed
-				}
+				always = no
 			}
 
 			available = {
-				NOT = {
-					has_country_flag = JAP_jotaro_watanabe_was_killed
-				}
+				always = no
 			}
 
 			traits = {
@@ -5043,14 +5064,6 @@ characters = {
 
 			allowed = {
 				original_tag = JAP
-			}
-
-			visible = {
-				
-			}
-
-			available = {
-				has_completed_focus = JAP_prepare_the_southern_front	
 			}
 
 			traits = {

@@ -172,20 +172,6 @@ characters = {
 			can_be_fired = no
 		}
 
-		advisor = {
-			slot = high_command
-			cost = 150
-			idea_token = ITA_rodolfo_graziani
-			ledger = army
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				army_armored_3
-			}
-
-		}
-
 		corps_commander = {
 			skill = 6
             attack_skill = 6
@@ -358,6 +344,16 @@ characters = {
 				large = GFX_portrait_ITA_giovanni_messe
 			}
 		}
+
+		advisor = {
+			slot = high_command
+			idea_token = giovanni_messe
+			ledger = army
+			allowed = { original_tag = ITA }
+			traits = { army_armored_3 }
+			cost = 150
+			ai_will_do = { factor = 1.000 }
+		}
 		
 		corps_commander = {
 			skill = 6
@@ -483,9 +479,6 @@ characters = {
 			ledger = army
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
 			}
 			traits = {
 				army_infantry_2
@@ -772,6 +765,12 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_screen_2
 			}
@@ -842,6 +841,12 @@ characters = {
 			ledger = navy
 			allowed = {
 				ITA_is_italian_tag = yes
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_capital_ship_2
@@ -1201,11 +1206,8 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_government = fascism
-			}
 			traits = {
-				air_tactical_bombing_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1229,8 +1231,11 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_government = fascism
+				always = no
 			}
 			traits = {
 				air_air_combat_training_2
@@ -1257,11 +1262,8 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				has_government = fascism
-			}
 			traits = {
-				air_bomber_interception_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1285,8 +1287,11 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_government = fascism
+				always = no
 			}
 			traits = {
 				navy_naval_air_defense_1
@@ -1456,7 +1461,7 @@ characters = {
 			traits = {
 				army_regrouping_2
 			}
-			cost = 50
+			cost = 100
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1832,6 +1837,16 @@ characters = {
 			}
 		}
 		
+		advisor = {
+			slot = high_command
+			idea_token = giuseppe_de_stefanis
+			ledger = army
+			allowed = { original_tag = ITA }
+			traits = { army_CombinedArms_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+
 		corps_commander = {
 			traits = { infantry_officer armor_officer }
 			skill = 2

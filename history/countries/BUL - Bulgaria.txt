@@ -35,6 +35,14 @@ recruit_character = BUL_theorist_1_theodosi_daskalov
 recruit_character = BUL_theorist_2_georgi_drenikov
 recruit_character = BUL_theorist_3_sava_ivanov
 
+# Military High Command (always recruited)
+recruit_character = BUL_kiril_dimitrov_yanchulev
+recruit_character = BUL_atanas_zhilkov
+recruit_character = BUL_blagoi_ivanov
+recruit_character = BUL_ivan_markov
+recruit_character = BUL_zachari_zachariev
+recruit_character = BUL_stoyan_stoyanov
+
 if = { #DLC
 	limit = {
 		has_dlc = "Battle for the Bosporus"

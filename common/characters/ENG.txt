@@ -330,6 +330,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_logistics_2
 			}
@@ -426,7 +432,15 @@ characters={
 				small=GFX_portrait_ENG_richard_oconnor_small
 			}
 		}
-		
+		advisor = {
+			slot = high_command
+			idea_token = richard_oconnor
+			ledger = army
+			allowed = { original_tag = ENG }
+			traits = { army_armored_3 }
+			cost = 150
+			ai_will_do = { factor = 1.000 }
+		}
 	}
 
 	ENG_william_platt={
@@ -460,6 +474,15 @@ characters={
 			army={
 				large=GFX_portrait_ENG_harold_alexander
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = harold_alexander
+			ledger = army
+			allowed = { original_tag = ENG }
+			traits = { army_CombinedArms_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
 		}
 	}
 
@@ -716,6 +739,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_screen_2
 			}
@@ -854,7 +883,15 @@ characters={
 				small=GFX_portrait_ENG_arthur_power_small
 			}
 		}
-		
+		advisor = {
+			slot = high_command
+			idea_token = arthur_power
+			ledger = navy
+			allowed = { original_tag = ENG }
+			traits = { navy_carrier_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
 	}
 
 
@@ -1225,7 +1262,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				air_bomber_interception_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1247,6 +1284,12 @@ characters={
 			ledger = navy
 			allowed = {
 				original_tag = ENG
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_naval_strike_2
@@ -1301,6 +1344,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_submarine_2
 			}
@@ -1322,9 +1371,8 @@ characters={
 			slot = high_command
 			idea_token = ENG_david_stirling
 			ledger = army
-			available = {
-				has_completed_focus = ENG_special_air_service
-			}
+			visible = { always = no }
+			available = { always = no }
 			allowed = {
 				original_tag = ENG
 			}

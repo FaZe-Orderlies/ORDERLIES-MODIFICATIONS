@@ -12848,6 +12848,7 @@ leader_traits = {
 	GER_reich_marshal = { #Göring - as Chief of Air
 		random = no
 		sprite = 2
+		custom_modifier_tooltip = air_chief_doctrine_tt
 		#air_chief_ground_support_1
 		army_bonus_air_superiority_factor = 0.05
 		experience_gain_air = @chief_experience_gain_low
@@ -15895,6 +15896,24 @@ leader_traits = {
 		}
 	}
 
+	air_superiority_land_2 = {
+		sprite = 1
+		custom_modifier_tooltip = air_high_command_doctrine_tt
+		army_bonus_air_superiority_factor = 0.1
+		#experience_gain_air = @experience_gain_medium
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_command_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
+			}
+		}
+	}
+
 	air_air_superiority_3 = {
 		sprite = 1
 		custom_modifier_tooltip = air_high_command_doctrine_tt
@@ -18466,10 +18485,6 @@ leader_traits = {
 				instant = yes
 				lg_attack = 0.10
 			}
-			heavy_cruiser = {
-				instant = yes
-				hg_attack = 0.10
-			}
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -18482,10 +18497,6 @@ leader_traits = {
 		army_strength_factor = 0.10
 		equipment_bonus = {
 			amphibious_tank_chassis = {
-				instant = yes
-				soft_attack = 0.05
-			}
-			amphibious_armor = {
 				instant = yes
 				soft_attack = 0.05
 			}
@@ -18545,10 +18556,6 @@ leader_traits = {
 				instant = yes
 				lg_attack = 0.10
 			}
-			heavy_cruiser = {
-				instant = yes
-				hg_attack = 0.10
-			}
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -18585,16 +18592,6 @@ leader_traits = {
 		navy_capital_ship_attack_factor = 0.10
 		navy_capital_ship_defence_factor = 0.10
 		equipment_bonus = {
-			battleship = {
-				instant = yes
-				hg_attack = 0.10
-				armor_value = 0.10
-			}
-			battle_cruiser = {
-				instant = yes
-				hg_attack = 0.10
-				armor_value = 0.10
-			}
 			ship_hull_heavy = {
 				instant = yes
 				hg_attack = 0.10
@@ -18675,16 +18672,6 @@ leader_traits = {
 		navy_capital_ship_attack_factor = 0.10
 		navy_capital_ship_defence_factor = 0.10
 		equipment_bonus = {
-			battleship = {
-				instant = yes
-				hg_attack = 0.10
-				armor_value = 0.10
-			}
-			battle_cruiser = {
-				instant = yes
-				hg_attack = 0.10
-				armor_value = 0.10
-			}
 			ship_hull_heavy = {
 				instant = yes
 				hg_attack = 0.10
@@ -18699,11 +18686,6 @@ leader_traits = {
 			light_cruiser = {
 				instant = yes
 				lg_attack = 0.10
-				armor_value = 0.10
-			}
-			heavy_cruiser = {
-				instant = yes
-				hg_attack = 0.10
 				armor_value = 0.10
 			}
 			screen_ship = {

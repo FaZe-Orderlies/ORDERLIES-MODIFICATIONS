@@ -164,6 +164,15 @@ characters={
 				small=GFX_portrait_FRA_alphonse_juin_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = alphonse_juin
+			ledger = army
+			allowed = { original_tag = FRA }
+			traits = { army_infantry_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
 		corps_commander={
 			skill = 6
             attack_skill = 4
@@ -342,7 +351,7 @@ characters={
 			traits = {
 				army_armored_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -412,6 +421,12 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = FRA
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				army_logistics_1
@@ -548,17 +563,18 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_screen_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
-			}
-			visible = {
-				NOT = {
-					has_country_flag = vichy_france
-				}
 			}
 		}
 		
@@ -581,6 +597,12 @@ characters={
 			ledger = navy
 			allowed = {
 				original_tag = FRA
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_capital_ship_1
@@ -887,15 +909,12 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = FRA_joseph_doumenc
-			ledger = air
+			ledger = army
 			allowed = {
 				original_tag = FRA
 			}
-			visible = {
-				has_country_flag = vichy_france
-			}
 			traits = {
-				army_regrouping_1
+				army_regrouping_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -919,7 +938,10 @@ characters={
 				original_tag = FRA
 			}
 			visible = {
-				has_country_flag = vichy_france
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				army_cavalry_1
@@ -959,7 +981,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_air_superiority_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -983,7 +1005,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_tactical_bombing_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1005,6 +1027,12 @@ characters={
 			ledger = navy
 			allowed = {
 				original_tag = FRA
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_fleet_logistics_2
@@ -1029,6 +1057,12 @@ characters={
 			ledger = air
 			allowed = {
 				original_tag = FRA
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_air_combat_training_2
@@ -1055,7 +1089,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				army_cavalry_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {

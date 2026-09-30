@@ -537,12 +537,8 @@ characters={
 			allowed = {
 				original_tag = RAJ
 			}
-			visible = { has_completed_focus = RAJ_azad_hind_dlc } 
-			available = {
-
-				has_completed_focus = RAJ_azad_hind_dlc
-				
-			}
+			visible = { always = no } 
+			available = { always = no }
 			traits = {
 				army_logistics_2 
 			}
@@ -626,6 +622,15 @@ characters={
 				large="GFX_RAJ_jayanto_nath_chaudhuri"
 				small=GFX_portrait_RAJ_jayanto_nath_chaudhuri_small
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = jayanto_nath_chaudhuri
+			ledger = army
+			allowed = { original_tag = RAJ }
+			traits = { army_armored_3 }
+			cost = 150
+			ai_will_do = { factor = 1.000 }
 		}
 	}
 
@@ -734,25 +739,15 @@ characters={
 			}
 		}
 
-		#advisor={
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = RAJ_homi_j_bhabha
-		#	ledger = army
-		#	available = {
-		#		has_completed_focus = RAJ_institute_of_fundamental_research
-		#	}
-		#	allowed = {
-		#		original_tag = RAJ
-		#		has_dlc = "Together for Victory"
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.150
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
+		advisor = {
+			slot = theorist
+			idea_token = homi_j_bhabha
+			ledger = civilian
+			allowed = { original_tag = RAJ }
+			traits = { nuclear_scientist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
 	}
 
 
@@ -948,7 +943,7 @@ characters={
 			traits = {
 				army_entrenchment_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -974,7 +969,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				army_logistics_2
+				army_regrouping_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1415,9 +1410,9 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				air_air_combat_training_3
+				air_superiority_land_2
 			}
-			cost = 200
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1438,6 +1433,8 @@ characters={
 			allowed = {
 				original_tag = RAJ
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				air_naval_strike_2
 			}
@@ -1463,7 +1460,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				air_close_air_support_3
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1486,6 +1483,8 @@ characters={
 			allowed = {
 				original_tag = RAJ
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				navy_anti_submarine_2
 			}
@@ -2625,9 +2624,8 @@ RAJ_GOE_william_rhodes_davis= {
 			allowed = {
 				original_tag = RAJ
 			}
-			visible = {
-				has_completed_focus = RAJ_the_mughal_uprising
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_commando_2
 			}

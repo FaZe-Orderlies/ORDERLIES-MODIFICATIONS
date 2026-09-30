@@ -476,6 +476,22 @@ characters={
 				}
 			}
 
+			advisor = {
+				slot = high_command
+				idea_token = AST_leslie_morshead
+				ledger = army
+				allowed = {
+					original_tag = AST
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+
 			corps_commander={
 				skill = 6
             attack_skill = 4
@@ -504,6 +520,21 @@ characters={
 				army={
 					large="GFX_AST_leslie_morshead"
 					small=GFX_portrait_AST_leslie_morshead_small
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = AST_leslie_morshead
+				ledger = army
+				allowed = {
+					original_tag = AST
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
 				}
 			}
 	
@@ -657,9 +688,9 @@ characters={
 					original_tag = AST
 				}
 				traits = {
-					army_infantry_1
+					army_infantry_2
 				}
-				cost = 50
+				cost = 100
 
 				ai_will_do = {
 					factor = 1
@@ -687,9 +718,9 @@ characters={
 					original_tag = AST
 				}
 				traits = {
-					army_infantry_3
+					army_infantry_2
 				}
-				cost = 200
+				cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -748,7 +779,21 @@ characters={
 				}
 			}
 
-		
+			advisor = {
+				slot = high_command
+				idea_token = AST_horace_robertson
+				ledger = army
+				allowed = {
+					original_tag = AST
+				}
+				traits = {
+					army_CombinedArms_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
 
 		}
 
@@ -763,6 +808,21 @@ characters={
 				army={
 					large="GFX_AST_horace_robertson"
 					small=GFX_portrait_AST_horace_robertson_small
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = AST_horace_robertson
+				ledger = army
+				allowed = {
+					original_tag = AST
+				}
+				traits = {
+					army_CombinedArms_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
 				}
 			}
 	
@@ -803,7 +863,7 @@ characters={
 
 			advisor = {
 				slot = high_command
-				cost = 100
+				cost = 150
 				idea_token = AST_john_northcott
 				ledger = army
 				allowed = {
@@ -833,6 +893,22 @@ characters={
 					small=GFX_portrait_AST_john_northcott_small
 				}
 			}
+			advisor = {
+				slot = high_command
+				cost = 150
+				idea_token = AST_john_northcott
+				ledger = army
+				allowed = {
+					original_tag = AST
+				}
+				traits = {
+					army_armored_3
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
 	
 		}
 	
@@ -857,6 +933,12 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = AST
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				army_artillery_2
@@ -997,6 +1079,12 @@ characters={
 				allowed = {
 					original_tag = AST
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					army_artillery_1
 				}
@@ -1026,6 +1114,12 @@ characters={
 				ledger = army
 				allowed = {
 					original_tag = AST
+				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
 				}
 				traits = {
 					army_artillery_2
@@ -1142,6 +1236,12 @@ characters={
 				allowed = {
 					original_tag = AST
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					navy_fleet_logistics_2
 				}
@@ -1171,6 +1271,12 @@ characters={
 				ledger = navy
 				allowed = {
 					original_tag = AST
+				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
 				}
 				traits = {
 					navy_fleet_logistics_2
@@ -1728,6 +1834,12 @@ characters={
 			allowed = {
 				original_tag = AST
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_naval_strike_2
 			}
@@ -1792,8 +1904,11 @@ characters={
 				allowed = {
 					original_tag = AST
 				}
+				visible = {
+					always = no
+				}
 				available = {
-					has_completed_focus = AST_australian_command
+					always = no
 				}
 				traits = {
 					air_air_superiority_2
@@ -1860,6 +1975,12 @@ characters={
 			allowed = {
 				original_tag = AST
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_logistics_2
 			}
@@ -1886,7 +2007,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				air_pilot_training_2
+				air_close_air_support_2
 			}
 			cost = 100
 
@@ -1911,9 +2032,9 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				air_air_superiority_3
+				air_superiority_land_2
 			}
-			cost = 200
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1934,6 +2055,12 @@ characters={
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_air_combat_training_2
@@ -1958,8 +2085,11 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			cost = 150.000
+			visible = {
+				always = no
+			}
 			available = {
-				has_completed_focus = AST_australian_army_catering_corps
+				always = no
 			}
 			traits = {
 				army_logistics_2

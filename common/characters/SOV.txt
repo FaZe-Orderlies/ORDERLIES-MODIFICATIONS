@@ -245,7 +245,7 @@ characters = {
 			traits = {
 				army_armored_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 2
 			}
@@ -358,6 +358,22 @@ characters = {
             }
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = nikolay_vatutin
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -949,22 +965,11 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 406
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				always = no
 			}
 			traits = {
 				navy_capital_ship_2
@@ -995,22 +1000,11 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 409.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				always = no
 			}
 			traits = {
 				navy_amphibious_assault_2
@@ -1050,22 +1044,11 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				always = no
 			}
 			traits = {
 				navy_submarine_2
@@ -1104,9 +1087,9 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				air_air_combat_training_2
+				air_superiority_land_2
 			}
-				cost = 100
+			cost = 100
 			ai_will_do = {
 				base = 1
 			}
@@ -1357,6 +1340,12 @@ characters = {
 			ledger = air
 			allowed = {
 				original_tag = SOV
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				air_airborne_1

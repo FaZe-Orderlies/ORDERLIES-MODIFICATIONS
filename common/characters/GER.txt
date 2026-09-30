@@ -352,20 +352,10 @@ characters = {
 				original_tag = GER
 			}
 			visible = {
-				NOT = {
-					has_completed_focus = GER_reorganize_the_wehrmacht
-				}
+				always = no
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Gotterdammerung"
-					}
-					not_already_hired_except_as = high_command
-					NOT = {
-						has_completed_focus = GER_reorganize_the_wehrmacht
-					}
-				}
+				always = no
 			}
 			traits = {
 				army_logistics_2
@@ -439,13 +429,10 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_adopt_new_panzer_doctrine
-			}
 			traits = {
 				army_armored_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 8
 				modifier = {
@@ -634,7 +621,7 @@ characters = {
 			traits = {
 				army_CombinedArms_2
 			}
-			cost = 50
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -656,16 +643,18 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_airborne_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
-			}
-
-			available = {
-				has_completed_focus = GER_fallschirmjager
 			}
 		}
 		
@@ -927,11 +916,10 @@ characters = {
 				original_tag = GER
 			}
 			visible = {
-				has_government = neutrality
-				has_global_flag = von_lettow_is_in_a_country
+				always = no
 			}
 			available = {
-				has_government = neutrality
+				always = no
 			}
 			traits = {
 				army_concealment_2
@@ -1157,6 +1145,12 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_fleet_logistics_2
 			}
@@ -1198,6 +1192,21 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_idea_wolfram_von_richthofen
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wolfram_von_richthofen
+			ledger = air
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
@@ -1511,6 +1520,12 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				navy_naval_air_defense_2
 			}
@@ -1535,6 +1550,12 @@ characters = {
 			ledger = navy
 			allowed = {
 				original_tag = GER
+			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				navy_submarine_1
@@ -1662,8 +1683,11 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_completed_focus = GER_tactical_bombers
+				always = no
 			}
 			traits = {
 				air_tactical_bombing_2
@@ -1689,8 +1713,11 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				always = no
+			}
 			available = {
-				has_completed_focus = GER_uralbomber_program
+				always = no
 			}
 			traits = {
 				air_strategic_bombing_2
@@ -1717,7 +1744,7 @@ characters = {
 				original_tag = GER
 			}
 			traits = {
-				air_bomber_interception_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {

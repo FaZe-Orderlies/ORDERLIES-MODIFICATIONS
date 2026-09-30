@@ -105,6 +105,21 @@ characters={
 				small=GFX_portrait_CAN_charles_foulkes_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = CAN_charles_foulkes
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander ={
 			skill = 6
             attack_skill = 6
@@ -384,15 +399,14 @@ characters={
 			}
 		}
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = CAN_george_pearkes
+			ledger = army
 			allowed = {
 				original_tag = CAN
 			}
-			visible = { always = no }
-			available = { always = no }
 			traits = {
-				army_chief_defensive_2
+				army_infantry_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -497,6 +511,8 @@ characters={
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				navy_anti_submarine_2
 			}
@@ -524,7 +540,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				air_air_superiority_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -587,16 +603,14 @@ characters={
 			}
 		}
 		advisor = {
-			slot = air_chief
+			slot = high_command
 			idea_token = CAN_raymond_collishaw
+			ledger = air
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
-			visible = { always = no }
-			available = { always = no }
 			traits = {
-				air_chief_ground_support_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -623,7 +637,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				army_artillery_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -646,6 +660,8 @@ characters={
 			allowed = {
 				original_tag = CAN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				air_bomber_interception_2
 			}
@@ -670,6 +686,8 @@ characters={
 			allowed = {
 				original_tag = CAN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				air_air_combat_training_2
 			}
@@ -697,7 +715,7 @@ characters={
 			traits = {
 				army_armored_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -718,6 +736,8 @@ characters={
 			allowed = {
 				original_tag = CAN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_commando_2
 			}

@@ -377,6 +377,7 @@ IF = {
 	recruit_character = HUN_otto_von_habsburg
 	recruit_character = HUN_franz_friedrich
 	recruit_character = HUN_franz_anton_bach
+	recruit_character = HUN_vilmos_nagy
 }
 IF = {
 	limit = {
@@ -470,6 +471,10 @@ recruit_character = HUN_air_chief_2_bela_rakosi
 recruit_character = HUN_theorist_1_shvoy_kalman
 recruit_character = HUN_theorist_2_gyorgy_jendrassik
 recruit_character = HUN_theorist_3_sandor_magyarossy
+
+# Military High Command (always recruited)
+recruit_character = HUN_gyorgy_ujszaszy
+recruit_character = HUN_aladar_heppes
 
 
 # HIRES THE STARTING PM

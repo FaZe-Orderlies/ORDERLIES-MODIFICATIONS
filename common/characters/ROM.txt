@@ -129,14 +129,14 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			cost = 100
+			cost = 150
 			idea_token = ROM_petre_dumitrescu
 			ledger = army
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				army_armored_2
+				army_armored_3
 			}
 
 			ai_will_do = {
@@ -152,6 +152,15 @@ characters={
 				large="GFX_Portrait_romania_ioan_mihail_racovita"
 				small="GFX_idea_ROM_ioan_mihail_racovita"
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ioan_mihail_racovita
+			ledger = army
+			allowed = { original_tag = ROM }
+			traits = { army_CombinedArms_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
 		}
 		corps_commander={
 			skill = 6
@@ -504,7 +513,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				army_commando_2
+				army_regrouping_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -528,7 +537,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_strategic_bombing_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -552,7 +561,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_airborne_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {

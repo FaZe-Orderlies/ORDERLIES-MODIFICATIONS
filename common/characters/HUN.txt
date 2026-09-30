@@ -680,8 +680,11 @@ characters = {
 				allowed = {
 					original_tag = HUN
 				}
+				visible = {
+					always = no
+				}
 				available = {
-					has_completed_focus = wuw_HUN_award_military_promotions
+					always = no
 				}
 				traits = {
 					army_logistics_2
@@ -951,16 +954,14 @@ characters = {
 
 			idea_token = HUN_vilmos_nagy
 
+			ledger = army
+
 			allowed = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = wuw_HUN_form_the_gyorshadtest
-			}
-
 			traits = {
-				army_cavalry_2
+				army_CombinedArms_2
 			}
 
 			cost = 100
@@ -1640,10 +1641,10 @@ characters = {
 				}
 
 				traits = {
-					army_armored_2
+					army_armored_3
 				}
 
-				cost =  50
+				cost = 150
 
 				ai_will_do = {
 					factor = 1.000
@@ -1685,10 +1686,10 @@ characters = {
 				}
 
 				traits = {
-					army_armored_2
+					army_armored_3
 				}
 
-				cost =  50
+				cost = 150
 
 				ai_will_do = {
 					base = 2
@@ -1809,14 +1810,14 @@ characters = {
 
 				idea_token = HUN_jeno_ratz
 
-				ledger = air
+				ledger = army
 
 				allowed = {
 					original_tag = HUN
 				}
 
 				traits = {
-					air_air_combat_training_2
+					army_infantry_2
 				}
 
 				cost = 100
@@ -1861,10 +1862,10 @@ characters = {
 				}
 
 				traits = {
-					army_infantry_1
+					army_infantry_2
 				}
 
-				cost = 50
+				cost = 100
 
 				ai_will_do = {
 					base = 2
@@ -1900,6 +1901,14 @@ characters = {
 
 				allowed = {
 					original_tag = HUN
+				}
+
+				visible = {
+					always = no
+				}
+
+				available = {
+					always = no
 				}
 
 				traits = {
@@ -1942,8 +1951,12 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
 				available = {
-					has_completed_focus = wuw_HUN_doctrinal_studies
+					always = no
 				}
 
 				traits = {
@@ -1958,6 +1971,54 @@ characters = {
 				
 			}
 
+		}
+	}
+
+	HUN_gyorgy_ujszaszy = {
+		name = HUN_gyorgy_ujszaszy
+		portraits = {
+			army = {
+				small = GFX_idea_generic_air_europe_2
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_gyorgy_ujszaszy
+			ledger = air
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HUN_aladar_heppes = {
+		name = HUN_aladar_heppes
+		portraits = {
+			army = {
+				small = GFX_idea_generic_air_europe_1
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_aladar_heppes
+			ledger = air
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				air_superiority_land_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 

@@ -142,6 +142,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_armored_3
 			}
@@ -207,7 +209,7 @@ characters = {
 			traits = {
 				army_artillery_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -345,6 +347,21 @@ characters = {
 				small = GFX_portrait_FIN_ruben_lagus_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = FIN_ruben_lagus
+			ledger = army
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 	FIN_lauri_torni = {
@@ -399,19 +416,18 @@ characters = {
 		}
 		
 		advisor = {			
-			slot = army_chief
+			slot = high_command
 			idea_token = FIN_aksel_airo
+			ledger = army
 			allowed = {
 				original_tag = FIN
 			}
-			visible = { always = no }
-			available = { always = no }
 			traits = {
-				army_chief_planning_2
+				army_CombinedArms_2
 			}
 			cost = 100
 			ai_will_do = {
-				base = 1.000
+				factor = 1.000
 			}
 		}
 	}
@@ -803,9 +819,9 @@ characters = {
 				NOT = { has_government = communism }
 			}
 			traits = {
-				army_regrouping_3
+				army_regrouping_2
 			}
-			cost = 200
+			cost = 100
 			ai_will_do = {
 				base = 1.000
 			}
@@ -827,7 +843,7 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				air_air_superiority_2
+				air_superiority_land_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -850,6 +866,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_commando_2
 			}
@@ -874,6 +892,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_entrenchment_2
 			}
@@ -894,7 +914,7 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = FIN_frans_helminen
-			ledger = army
+			ledger = air
 			allowed = {
 				original_tag = FIN
 			}
@@ -902,7 +922,7 @@ characters = {
 				NOT = { has_government = communism }
 			}
 			traits = {
-				army_concealment_2
+				air_close_air_support_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -925,9 +945,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
-			available = {
-				NOT = { has_government = communism }
-			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_logistics_2
 			}
@@ -952,6 +971,8 @@ characters = {
 			allowed = {
 				original_tag = FIN
 			}
+			visible = { always = no }
+			available = { always = no }
 			traits = {
 				army_artillery_1
 			}
@@ -1006,9 +1027,6 @@ characters = {
 			ledger = army
 			allowed = {
 				original_tag = FIN
-			}
-			available = {
-				has_completed_focus = FIN_jaeger_movement
 			}
 			traits = {
 				army_infantry_2

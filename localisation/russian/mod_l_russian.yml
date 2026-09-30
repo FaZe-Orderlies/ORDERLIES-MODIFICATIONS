@@ -1,4 +1,6 @@
 ﻿l_russian:
+ air_superiority_land_2: "Превосходство в воздухе\n(специалист)"
+ air_superiority_land_2_desc: "Бонус превосходства в воздухе в наземном бою."
  ROM_gheorghe_koslinski: "Георге Кослинский"
 
 GER_war_with_the_ussr: "Операция Барбаросса"
@@ -458,3 +460,5 @@ SOV_generic_industry_relocation:0 "Эвакуация промышленност
  navy_chief_screen_3: "Гений в области охранения"
  ROM_vasile_scodrea: "Василе Скодря"
  SAF_guy_hallifax: "Гай Халлифакс"
+ SAF_evered_poole: "Эверед Пул"
+ SAF_marmaduke_pattle: "Мармадьюк Пэттл"
