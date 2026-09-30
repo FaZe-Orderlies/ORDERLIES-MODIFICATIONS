@@ -478,7 +478,7 @@ characters = {
 		}
 	}
 
-	GER_erich_von_manstein = {
+	GER_theorist_1_erich_von_manstein = {
 		name = GER_erich_von_manstein
 		portraits = {
 			army = {
@@ -495,7 +495,7 @@ characters = {
 				original_tag = GER
 			}
 			traits = {
-				military_theorist
+				theorist_ger_manstein
 			}
 			can_be_fired = no
 		}
@@ -998,7 +998,76 @@ characters = {
 ##     ## ########  ##     ## #### ##     ## ##     ## ########  ######  
 
 
-	GER_karl_donitz = {
+	GER_navy_chief_1_erich_raeder = {
+		name = GER_erich_raeder
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = raeder
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = GER_navy_chief_1_erich_raeder
+					}	
+				}
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+			}
+		}
+		
+		navy_leader = {
+			traits = { blockade_runner fleet_protector superior_tactician  ironside}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id = 27
+		}
+	}
+
+	GER_navy_chief_2_rolf_carls = {
+		name = GER_rolf_carls
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_rolf_carls
+				small = GFX_portrait_GER_rolf_carls_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = GER_rolf_carls
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+
+	GER_navy_chief_3_karl_donitz = {
 		name = GER_karl_donitz
 		portraits = {
 			army = {
@@ -1032,51 +1101,6 @@ characters = {
 			maneuvering_skill = 6
 			coordination_skill = 6
 			legacy_id = 26
-		}
-	}
-
-	GER_erich_raeder = {
-		name = GER_erich_raeder
-		portraits = {
-			army = {
-				large = GFX_portrait_GER_erich_raeder
-				small = GFX_portrait_GER_erich_raeder_small
-			}
-			army = {
-				small = GFX_idea_raeder
-			}
-		}
-		advisor = {
-			slot = navy_chief
-			idea_token = raeder
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_chief_decisive_battle_2
-			}
-			available = {
-				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = GER_erich_raeder
-					}	
-				}
-			}
-			cost = 150
-			ai_will_do = {
-				base = 1
-			}
-		}
-		
-		navy_leader = {
-			traits = { blockade_runner fleet_protector superior_tactician  ironside}
-			skill = 6
-			attack_skill = 4
-			defense_skill = 4
-			maneuvering_skill = 4
-			coordination_skill = 4
-			legacy_id = 27
 		}
 	}
 
@@ -1187,7 +1211,7 @@ characters = {
 		}
 	}
 
-	GER_ernst_udet = {
+	GER_theorist_2_ernst_udet = {
 		name = GER_ernst_udet
 		portraits = {
 			army = {
@@ -1203,13 +1227,13 @@ characters = {
 				original_tag = GER
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_ger_udet
 			}
 			can_be_fired = no
 		}
 	}
 
-	GER_otto_ciliax = {
+	GER_theorist_3_otto_ciliax = {
 		name = GER_otto_ciliax
 		portraits = {
 			army = {
@@ -1225,7 +1249,7 @@ characters = {
 				original_tag = GER
 			}
 			traits = {
-				naval_theorist
+				theorist_ger_ciliax
 			}
 			can_be_fired = no
 		}
@@ -1300,32 +1324,7 @@ characters = {
 		}		
 	}
 
-	GER_franz_halder = {
-		name = GER_franz_halder
-		portraits = {
-			army = {
-				small = GFX_idea_franz_halder
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = franz_halder
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
-		
-	}
-
-	GER_walther_von_brauchitsch = {
+	GER_army_chief_1_walther_von_brauchitsch = {
 		name = GER_walther_von_brauchitsch
 		portraits = {
 			army = {
@@ -1348,6 +1347,29 @@ characters = {
 		}
 	}
 
+	GER_army_chief_2_franz_halder = {
+		name = GER_franz_halder
+		portraits = {
+			army = {
+				small = GFX_idea_franz_halder
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = franz_halder
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 
 
 ##    ##    ###    ##     ## ##    ##     ######  ##     ## #### ######## ########  ######  
@@ -1359,41 +1381,11 @@ characters = {
 ##    ## ##     ##    ###       ##        ######  ##     ## #### ######## ##        ######  
 
 
-	# Dönitz up there
-
 	# Raeder up there
 
+	# Carls up there
 
-	GER_rolf_carls = {
-		name = GER_rolf_carls
-		portraits = {
-			army = {
-				large = GFX_portrait_GER_rolf_carls
-				small = GFX_portrait_GER_rolf_carls_small
-			}
-		}
-		advisor = {
-			slot = navy_chief
-			idea_token = GER_rolf_carls
-			allowed = {
-				original_tag = GER
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 2
-			}
-		}
-	
-	}
+	# Dönitz up there
 
 
    ###    #### ########      ######  ##     ## #### ######## ########  ######  
@@ -1405,93 +1397,9 @@ characters = {
 ##     ## #### ##     ##     ######  ##     ## #### ######## ##        ######  
 
 
-	# Kesselring up there
+	# Göring moved after Sperrle
 
-	GER_hermann_goring = {
-		name = GER_hermann_goring
-		portraits = {
-			army = {
-				small = GFX_idea_goering
-			}
-			civilian = {
-				large = GFX_portrait_GER_hermann_goring
-				small = GFX_portrait_GER_hermann_goring_small #GFX_portrait_GER_hermann_goring_civilian_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = GER_hermann_goring
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_government = fascism
-				NOT = { has_completed_focus = GER_ascension_of_goring }
-			}
-			visible = {
-				always = no #MM: Part of Inner Circle.
-				has_government = fascism
-				NOT = {
-					always = no
-				}
-			}
-			traits = {
-				GER_overseer_four_year_plan
-			}
-		}
-		
-		advisor = {
-			slot = air_chief
-			idea_token = goering
-			allowed = {
-				OR = {
-					original_tag = GER
-					original_tag = HUN
-				}
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				GER_reich_marshal
-			}
-			cost = 100
-			ai_will_do = {
-				base = 2
-				modifier = {
-					factor = 0
-					OR = {
-						has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
-						has_game_rule = {
-							rule = GER_ai_behavior
-							option = GER_COMMUNIST_STALINIST
-						}
-						has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
-						has_game_rule = {
-							rule = GER_ai_behavior
-							option = GER_COMMUNIST_SPARTACUS
-						}
-						has_country_flag = GER_AI_RANDOM_KAISER
-						has_game_rule = {
-							rule = GER_ai_behavior
-							option = KAISER
-						}
-						has_country_flag = GER_AI_RANDOM_DEMOCRATIC
-						has_game_rule = {
-							rule = GER_ai_behavior
-							option = DEMOCRATIC
-						}
-					}
-				}
-			}
-		}
-	}
-
-	GER_ritter_von_greim = {
+	GER_air_chief_1_ritter_von_greim = {
 		name = GER_ritter_von_greim
 		portraits = {
 			army = {
@@ -1638,7 +1546,7 @@ characters = {
 		}
 	}
 
-	GER_hugo_sperrle = {
+	GER_air_chief_2_hugo_sperrle = {
 		name = GER_hugo_sperrle
 		portraits = {
 			army = {
@@ -1658,6 +1566,84 @@ characters = {
 			cost = 150
 			ai_will_do = {
 				base = 1.000
+			}
+		}
+	}
+
+	GER_air_chief_3_hermann_goring = {
+		name = GER_hermann_goring
+		portraits = {
+			army = {
+				small = GFX_idea_goering
+			}
+			civilian = {
+				large = GFX_portrait_GER_hermann_goring
+				small = GFX_portrait_GER_hermann_goring_small #GFX_portrait_GER_hermann_goring_civilian_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = GER_hermann_goring
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = fascism
+				NOT = { has_completed_focus = GER_ascension_of_goring }
+			}
+			visible = {
+				always = no #MM: Part of Inner Circle.
+				has_government = fascism
+				NOT = {
+					always = no
+				}
+			}
+			traits = {
+				GER_overseer_four_year_plan
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = goering
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = HUN
+				}
+			}
+			traits = {
+				GER_reich_marshal
+			}
+			cost = 150
+			ai_will_do = {
+				base = 2
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = GER_COMMUNIST_STALINIST
+						}
+						has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = GER_COMMUNIST_SPARTACUS
+						}
+						has_country_flag = GER_AI_RANDOM_KAISER
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = KAISER
+						}
+						has_country_flag = GER_AI_RANDOM_DEMOCRATIC
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = DEMOCRATIC
+						}
+					}
+				}
 			}
 		}
 	}

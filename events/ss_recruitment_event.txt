@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 #ss recruitment events
 ###########################
 
@@ -1556,7 +1556,7 @@ country_event = {
 			30 = { 
 				if = {
 					limit = {
-						has_country_leader = { ruling_only = yes character = GER_hermann_goring }
+						has_country_leader = { ruling_only = yes character = GER_air_chief_3_hermann_goring }
 					}
 					set_country_flag = GER_SS_Goering_dead #no zombie Görings!
 				}
@@ -1675,7 +1675,7 @@ country_event = {
 			}
 			remove_ideas = heinrich_himmler
 		}
-		GER_hermann_goring = {
+		GER_air_chief_3_hermann_goring = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {

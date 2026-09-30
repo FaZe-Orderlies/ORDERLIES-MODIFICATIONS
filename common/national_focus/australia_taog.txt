@@ -1,4 +1,4 @@
-﻿#############################################
+#############################################
 ### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1454,7 +1454,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_chief_of_navy
-			show_ideas_tooltip = AST_guy_royle
+			show_ideas_tooltip = AST_navy_chief_3_guy_royle
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			AST_victor_crutchley = { 
@@ -2703,7 +2703,7 @@ focus_tree = {
 
 			hidden_effect =  {
 				remove_trait = {
-					character = AST_henry_wynter
+					character = AST_theorist_1_henry_wynter
 					slot = theorist
 					trait = military_theorist
 				}
@@ -2712,7 +2712,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = add_trait_to_theorist_tt
 			add_trait = {
-				character = AST_henry_wynter
+				character = AST_theorist_1_henry_wynter
 				slot = theorist
 				trait = AST_vindicated_realist
 			}

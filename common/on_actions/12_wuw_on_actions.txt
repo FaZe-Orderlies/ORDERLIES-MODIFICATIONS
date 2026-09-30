@@ -1534,7 +1534,7 @@ on_actions = {
 							GER = {
 								has_country_leader = {
 									ruling_only = yes
-									character = GER_erich_raeder
+									character = GER_navy_chief_1_erich_raeder
 								}
 							}
 							OR = {

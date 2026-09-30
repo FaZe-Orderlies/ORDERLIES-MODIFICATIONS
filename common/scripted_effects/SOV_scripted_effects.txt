@@ -2387,10 +2387,10 @@ SOV_trigger_great_purge_airforce_chiefs_effect = {
 			}
 			if = {
 				limit = {
-					has_character = SOV_pavel_rychagov
-					SOV_pavel_rychagov = { SOV_character_can_be_purged = yes }
+					has_character = SOV_air_chief_1_pavel_rychagov
+					SOV_air_chief_1_pavel_rychagov = { SOV_character_can_be_purged = yes }
 				}
-				SOV_pavel_rychagov = { #Chief
+				SOV_air_chief_1_pavel_rychagov = { #Chief
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 				add_to_temp_variable = { temp_targets_index = 1 }

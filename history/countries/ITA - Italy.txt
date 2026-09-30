@@ -1,4 +1,4 @@
-﻿capital = 2 # Rome
+capital = 2 # Rome
 
 ETH_set_up_lon_arms_resolution_effect = yes 
 
@@ -498,14 +498,14 @@ recruit_character = ITA_grand_council
 recruit_character = ITA_vittorio_emanuele_iii
 recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_palmiro_togliatti
-recruit_character = ITA_rodolfo_graziani
-recruit_character = ITA_pietro_badoglio
+recruit_character = ITA_theorist_1_rodolfo_graziani
+recruit_character = ITA_army_chief_2_pietro_badoglio
 recruit_character = ITA_emilio_de_bono
-recruit_character = ITA_ugo_cavallero
+recruit_character = ITA_army_chief_1_ugo_cavallero
 recruit_character = ITA_giovanni_messe
 recruit_character = ITA_sebastiano_visconti_prasca
 recruit_character = ITA_ubaldo_soddu
-recruit_character = ITA_italo_balbo
+recruit_character = ITA_air_chief_1_italo_balbo
 
 recruit_character = ITA_ettore_bastico
 recruit_character = ITA_italo_gariboldi
@@ -537,16 +537,16 @@ recruit_character = ITA_giovanni_duca
 recruit_character = ITA_giuseppe_de_stefanis
 recruit_character = ITA_prince_aimone
 
-recruit_character = ITA_inigo_campioni
+recruit_character = ITA_navy_chief_1_inigo_campioni
 recruit_character = ITA_alberto_da_zara
 recruit_character = ITA_giuseppe_fioravanzo
 recruit_character = ITA_carlo_bergamini
-recruit_character = ITA_angelo_iachino
+recruit_character = ITA_theorist_3_angelo_iachino
 recruit_character = ITA_giuseppe_di_bartolo
 recruit_character = ITA_junio_valerio_borghese
 
 recruit_character = ITA_alfredo_guzzoni
-recruit_character = ITA_renato_sandalli
+recruit_character = ITA_theorist_2_renato_sandalli
 recruit_character = ITA_francesco_pricolo
 recruit_character = ITA_silvio_scaroni
 recruit_character = ITA_vittorio_ambrosio
@@ -556,9 +556,9 @@ recruit_character = ITA_marziale_cerutti
 recruit_character = ITA_ettore_muti
 recruit_character = ITA_gaetano_crocco
 recruit_character = ITA_luigi_mascherpa
-recruit_character = ITA_domenico_cavagnari
+recruit_character = ITA_navy_chief_3_domenico_cavagnari
 recruit_character = ITA_amedeo_mecozzi
-recruit_character = ITA_rino_corso_fougier
+recruit_character = ITA_air_chief_2_rino_corso_fougier
 recruit_character = ITA_giacomo_acerbo
 recruit_character = ITA_giovanni_marinelli
 recruit_character = ITA_serafino_mazzolini
@@ -592,7 +592,7 @@ recruit_character = ITA_guido_de_ruggiero
 recruit_character = ITA_enrico_fermi
 recruit_character = ITA_alberto_tarchiani
 recruit_character = ITA_giuseppe_borea
-recruit_character = ITA_raffaele_de_courten
+recruit_character = ITA_navy_chief_2_raffaele_de_courten
 
 recruit_character = ITA_sandro_pertini
 recruit_character = ITA_pietro_d_acquarone
@@ -651,14 +651,14 @@ ITA_carlo_favagrossa = { set_character_flag = ITA_character_can_be_purged }
 ITA_giacomo_acerbo = { set_character_flag = ITA_character_can_be_purged }
 ITA_guido_jung = { set_character_flag = ITA_character_can_be_purged }
 ITA_serafino_mazzolini = { set_character_flag = ITA_character_can_be_purged }
-ITA_rodolfo_graziani = { set_character_flag = ITA_character_can_be_purged }
+ITA_theorist_1_rodolfo_graziani = { set_character_flag = ITA_character_can_be_purged }
 ITA_ubaldo_soddu = { set_character_flag = ITA_character_can_be_purged }
-ITA_ugo_cavallero = { set_character_flag = ITA_character_can_be_purged }
+ITA_army_chief_1_ugo_cavallero = { set_character_flag = ITA_character_can_be_purged }
 ITA_francesco_zingales = { set_character_flag = ITA_character_can_be_purged }
 ITA_alessandro_pirzio_biroli = { set_character_flag = ITA_character_can_be_purged }
 ITA_ettore_baldassarre = { set_character_flag = ITA_character_can_be_purged }
 ITA_annibale_bergonzoli = { set_character_flag = ITA_character_can_be_purged }
-ITA_pietro_badoglio = { set_character_flag = ITA_character_can_be_purged } 
+ITA_army_chief_2_pietro_badoglio = { set_character_flag = ITA_character_can_be_purged } 
 ITA_emilio_de_bono = { set_character_flag = ITA_character_can_be_purged }
 
 

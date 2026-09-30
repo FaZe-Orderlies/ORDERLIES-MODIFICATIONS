@@ -173,7 +173,7 @@ characters={
 
 	### THEORISTS ###
 
-	ROM_gheorghe_potopeanu={
+	ROM_theorist_1_gheorghe_potopeanu={
 		name=ROM_gheorghe_potopeanu
 		portraits={
 			army={
@@ -189,13 +189,13 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				military_theorist
+				theorist_minor_infantry_expert
 			}
 			can_be_fired = no
 		}
 	}
 
-	ROM_emanoil_ionescu={
+	ROM_theorist_2_emanoil_ionescu={
 		name=ROM_emanoil_ionescu
 		portraits={
 			army={
@@ -211,7 +211,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
 			}
 			can_be_fired = no
 		}
@@ -220,48 +220,7 @@ characters={
 
 	### ARMY CHIEFS ###
 
-	ROM_constantin_sanatescu={
-		name=ROM_constantin_sanatescu
-		portraits={
-			army={
-				small="GFX_idea_ROM_constantin_sanatescu"
-				large="GFX_Portrait_romania_constantin_sanatescu"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = ROM_constantin_sanatescu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
-		corps_commander={
-			skill = 6
-            attack_skill = 4
-            defense_skill = 6
-            planning_skill = 6
-            logistics_skill = 4
-
-            traits = {
-                infantry_leader
-                hill_fighter
-                urban_assault_specialist
-                trickster
-            }
-			legacy_id=-1
-		}
-		
-	}
-
-	ROM_ion_antonescu={
+	ROM_army_chief_1_ion_antonescu={
 		name=ROM_ion_antonescu
 		portraits={
 			army={
@@ -305,10 +264,51 @@ characters={
 		}
 	}
 
+	ROM_army_chief_2_constantin_sanatescu={
+		name=ROM_constantin_sanatescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_constantin_sanatescu"
+				large="GFX_Portrait_romania_constantin_sanatescu"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ROM_constantin_sanatescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			skill = 6
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 6
+            logistics_skill = 4
+
+            traits = {
+                infantry_leader
+                hill_fighter
+                urban_assault_specialist
+                trickster
+            }
+			legacy_id=-1
+		}
+		
+	}
+
 
 	### NAVY CHIEFS ###
 
-	ROM_nicolae_sova={
+	ROM_theorist_3_nicolae_sova={
 		name=ROM_nicolae_sova
 		portraits={
 			army={
@@ -324,13 +324,59 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				naval_theorist
+				theorist_minor_shore_bombardment
 			}
 			can_be_fired = no
 		}
 	}
 
-	ROM_horia_macellariu={
+	ROM_navy_chief_1_gheorghe_koslinski = {
+		name = ROM_gheorghe_koslinski
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_1
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ROM_gheorghe_koslinski
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ROM_navy_chief_2_vasile_scodrea = {
+		name = ROM_vasile_scodrea
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ROM_vasile_scodrea
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ROM_navy_chief_3_horia_macellariu={
 		name=ROM_horia_macellariu
 		portraits={
 			army={
@@ -364,56 +410,10 @@ characters={
 		}
 	}
 
-	ROM_gheorghe_koslinski = {
-		name = ROM_gheorghe_koslinski
-		portraits = {
-			army = {
-				small = GFX_idea_generic_navy_europe_1
-			}
-		}
-		advisor = {
-			slot = navy_chief
-			idea_token = ROM_gheorghe_koslinski
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				navy_chief_decisive_battle_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 
 	### AIR CHIEFS ###
 
-	ROM_ermil_gheorghiu={
-		name=ROM_ermil_gheorghiu
-		portraits={
-			army={
-				small="GFX_idea_ROM_ermil_gheorghiu"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = ROM_ermil_gheorghiu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	ROM_gheorghe_jienescu={
+	ROM_air_chief_1_gheorghe_jienescu={
 		name=ROM_gheorghe_jienescu
 		portraits={
 			army={
@@ -428,6 +428,29 @@ characters={
 			}
 			traits = {
 				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ROM_air_chief_2_ermil_gheorghiu={
+		name=ROM_ermil_gheorghiu
+		portraits={
+			army={
+				small="GFX_idea_ROM_ermil_gheorghiu"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ROM_ermil_gheorghiu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				air_chief_night_operations_2
 			}
 			cost = 150
 			ai_will_do = {

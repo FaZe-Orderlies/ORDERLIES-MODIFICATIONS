@@ -11074,7 +11074,7 @@ focus_tree = {
 				                set_nationality = PREV.PREV
 				                # Transfers to breakaway
 				            }
-				            HUN_karoly_beregfy = { # Character
+				            HUN_army_chief_1_karoly_beregfy = { # Character
 				                set_nationality = PREV.PREV
 				                # Transfers to breakaway
 				            }
@@ -15123,12 +15123,12 @@ focus_tree = {
 					wuw_HUN_does_not_have_trianon = no
 				}
 				custom_effect_tooltip = available_theorist
-				show_ideas_tooltip = HUN_gyorgy_jendrassik
+				show_ideas_tooltip = HUN_theorist_2_gyorgy_jendrassik
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
 				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = HUN_sandor_magyarossy
+				show_ideas_tooltip = HUN_theorist_3_sandor_magyarossy
 			}
 
 		}
@@ -15224,7 +15224,7 @@ focus_tree = {
 					wuw_HUN_does_not_have_trianon = no
 				}
 				custom_effect_tooltip = available_theorist
-				show_ideas_tooltip = HUN_shvoy_kalman
+				show_ideas_tooltip = HUN_theorist_1_shvoy_kalman
 			}
 
 		}
@@ -15385,7 +15385,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = HUN_ferenc_szombathelyi
+			show_ideas_tooltip = HUN_army_chief_2_ferenc_szombathelyi
 			show_ideas_tooltip = HUN_vilmos_roder
 			IF = {
 				limit = {
@@ -15396,7 +15396,7 @@ focus_tree = {
 						}
 					}
 				}
-				show_ideas_tooltip = HUN_karoly_beregfy
+				show_ideas_tooltip = HUN_army_chief_1_karoly_beregfy
 			}
 
 		}

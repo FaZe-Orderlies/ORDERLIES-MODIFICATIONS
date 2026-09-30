@@ -5794,7 +5794,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_country_leader = {
-							character = BUL_hristo_lukov
+							character = BUL_army_chief_2_hristo_lukov
 							ruling_only = yes
 						}
 					}

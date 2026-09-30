@@ -802,11 +802,11 @@ FIN_paasikivi_becomes_country_leader = {
 		limit = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_carl_mannerheim
+				character = FIN_army_chief_1_carl_mannerheim
 			}
 		}
 		remove_country_leader_role = { #Removing country role on Mannerheim (instead of retiring) since he should still be a military guy.
-			character = FIN_carl_mannerheim
+			character = FIN_army_chief_1_carl_mannerheim
 			ideology = oligarchism
 		}
 	}
@@ -825,7 +825,7 @@ FIN_paasikivi_becomes_country_leader = {
 
 FIN_mannerheim_becomes_country_leader = {
 	#In this case we do want to keep the political leaders (Ryti or Paasikivi)
-	promote_character = FIN_carl_mannerheim
+	promote_character = FIN_army_chief_1_carl_mannerheim
 	#Set National Progressive Party as Non-Aligned party
 	set_party_name = {
 		ideology = neutrality
@@ -953,7 +953,7 @@ FIN_clean_all_obsolete_bop_modifiers_effect = {
 			NOT = {
 				has_country_leader = {
 					ruling_only = yes
-					character = FIN_carl_mannerheim
+					character = FIN_army_chief_1_carl_mannerheim
 				}
 			}
 		}
@@ -1078,7 +1078,7 @@ FIN_clean_all_obsolete_bop_modifiers_effect = {
 			}
 			has_country_leader = { #Everyone can have this modifier except Mannerheim
 				ruling_only = yes
-				character = FIN_carl_mannerheim
+				character = FIN_army_chief_1_carl_mannerheim
 			}
 		}
 		remove_power_balance_modifier = {
@@ -1147,7 +1147,7 @@ FIN_clean_all_obsolete_bop_modifiers_effect = {
 			NOT = {
 				has_country_leader = {
 					ruling_only = yes
-					character = FIN_carl_mannerheim
+					character = FIN_army_chief_1_carl_mannerheim
 				}
 			}
 		}

@@ -35,14 +35,14 @@ debug_decisions = {
 		}
 		available = {
 			FRA = {
-				FRA_charles_de_gaulle = {
+				FRA_theorist_1_charles_de_gaulle = {
 					is_general_captured = no
 				}
 			}
 		}
 		complete_effect = {
 			FRA = {
-				FRA_charles_de_gaulle = {
+				FRA_theorist_1_charles_de_gaulle = {
 					capture_by = GER
 				}
 			}

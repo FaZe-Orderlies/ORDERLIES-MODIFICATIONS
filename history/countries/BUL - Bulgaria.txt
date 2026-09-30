@@ -1,4 +1,4 @@
-﻿capital = 48
+capital = 48
 
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
@@ -22,6 +22,18 @@ set_party_name = { # DLC
 	name = BUL_fascism_party_bulgarian
 	long_name = BUL_fascism_party_bulgarian_long
 }
+
+# Military Chiefs & Theorists (always recruited)
+recruit_character = BUL_army_chief_1_kiril_stanchev
+recruit_character = BUL_army_chief_2_hristo_lukov
+recruit_character = BUL_navy_chief_1_asen_toshev
+recruit_character = BUL_navy_chief_2_bonyu_stoev_pironkov
+recruit_character = BUL_navy_chief_3_ivan_variklechkov
+recruit_character = BUL_air_chief_1_gancho_manchev
+recruit_character = BUL_air_chief_2_dimitr_ayryanov
+recruit_character = BUL_theorist_1_theodosi_daskalov
+recruit_character = BUL_theorist_2_georgi_drenikov
+recruit_character = BUL_theorist_3_sava_ivanov
 
 if = { #DLC
 	limit = {
@@ -198,7 +210,6 @@ if = { #DLC
 	recruit_character = BUL_boris_iii
 	recruit_character = BUL_georgi_dimitrov
 	recruit_character = BUL_nikola_mushanov
-	recruit_character = BUL_hristo_lukov
 	recruit_character = BUL_atanas_shalapatov
 	recruit_character = BUL_nikola_mihov
 	recruit_character = BUL_georgi_popov
@@ -210,9 +221,7 @@ if = { #DLC
 	recruit_character = BUL_nikola_stoychev
 	recruit_character = BUL_damian_velchev
 	recruit_character = BUL_angel_dotsev
-	recruit_character = BUL_theodosi_daskalov
 	recruit_character = BUL_trifon_trifonov
-	recruit_character = BUL_sava_ivanov
 	recruit_character = BUL_vladimir_stoychev
 	recruit_character = BUL_stoyan_stoyanov
 	recruit_character = BUL_zachari_zachariev
@@ -221,15 +230,9 @@ if = { #DLC
 	recruit_character = BUL_georgi_petsov
 	recruit_character = BUL_ivan_sapundzhiev
 	recruit_character = BUL_atanas_zhilkov
-	recruit_character = BUL_kiril_stanchev
 	recruit_character = BUL_ferdinand_kozovski
-	recruit_character = BUL_georgi_drenikov
 	recruit_character = BUL_stoyan_trendafilov
-	recruit_character = BUL_ivan_variklechkov
-	recruit_character = BUL_gancho_manchev
-	recruit_character = BUL_dimitr_ayryanov
 	recruit_character = BUL_nikola_hadzipetkov
-	recruit_character = BUL_asen_toshev
 	recruit_character = BUL_bogdan_filov_fascism
 	recruit_character = BUL_dobri_bozhilov
 	recruit_character = BUL_dimitrana_ivanova
@@ -301,15 +304,12 @@ if = { #DLC
 		recruit_character = BUL_boris_iii
 		recruit_character = BUL_georgi_dimitrov
 		recruit_character = BUL_nikola_petkov
-		recruit_character = BUL_hristo_lukov
 		recruit_character = BUL_georgi_popov
 		recruit_character = BUL_vasil_boydev
 		recruit_character = BUL_asen_nikolov
 		recruit_character = BUL_georgi_petsov
 		recruit_character = BUL_atanas_zhilkov
-		recruit_character = BUL_bonyu_stoev_pironkov
 		recruit_character = BUL_ivan_gaidimitriv
-		recruit_character = BUL_kiril_stanchev
 		recruit_character = BUL_blagoi_ivanov
 		recruit_character = BUL_stoyan_stoyanov
 		recruit_character = BUL_nikola_hadzipetkov

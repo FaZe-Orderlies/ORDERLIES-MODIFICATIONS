@@ -212,7 +212,7 @@ characters={
 		}
 	}
 
-	ENG_alan_brooke={
+	ENG_army_chief_1_alan_brooke={
 		name=ENG_alan_brooke
 		portraits={
 			army={
@@ -271,7 +271,7 @@ characters={
 		
 	}
 
-	ENG_bernard_montgomery={
+	ENG_theorist_1_bernard_montgomery={
 		name=ENG_bernard_montgomery
 		portraits={
 			army={
@@ -290,7 +290,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				military_theorist
+				theorist_eng_montgomery
 			}
 			can_be_fired = no
 		}
@@ -518,7 +518,7 @@ characters={
 		
 	}
 
-	ENG_john_vereker={
+	ENG_army_chief_2_john_vereker={
 		name=ENG_john_vereker
 		portraits={
 			army={
@@ -728,7 +728,7 @@ characters={
 		
 	}
 
-	ENG_andrew_cunningham={
+	ENG_navy_chief_1_andrew_cunningham={
 		name=ENG_andrew_cunningham
 		portraits={
 			navy={
@@ -873,7 +873,29 @@ characters={
 		}
 	}
 
-	ENG_james_somerville={
+	ENG_theorist_2_arthur_harris={
+		name=ENG_arthur_harris
+		portraits={
+			army={
+				small="GFX_idea_arthur_harris"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = arthur_harris
+			ledger = air
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				theorist_eng_harris
+			}
+			can_be_fired = no
+		}
+	}
+
+	ENG_theorist_3_james_somerville={
 		name=ENG_james_somerville
 		portraits={
 			army={
@@ -889,7 +911,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				naval_theorist
+				theorist_eng_somerville
 			}
 			can_be_fired = no
 		}
@@ -913,27 +935,6 @@ characters={
 		}
 	}
 
-	ENG_arthur_harris={
-		name=ENG_arthur_harris
-		portraits={
-			army={
-				small="GFX_idea_arthur_harris"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = arthur_harris
-			ledger = air
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			can_be_fired = no
-		}
-	}
 
 	ENG_jfc_fuller={
 		name=ENG_jfc_fuller
@@ -991,7 +992,7 @@ characters={
 	}
 
 
-	ENG_ernle_chatfield={
+	ENG_navy_chief_2_ernle_chatfield={
 		name=ENG_ernle_chatfield
 		portraits={
 			army={
@@ -1004,16 +1005,10 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
 			traits = {
-				navy_chief_maneuver_2
+				navy_chief_screen_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 3
 
@@ -1028,7 +1023,7 @@ characters={
 		}
 	}
 
-	ENG_dudley_pound={
+	ENG_navy_chief_3_dudley_pound={
 		name=ENG_dudley_pound
 		portraits={
 			army={
@@ -1060,7 +1055,7 @@ characters={
 	}
 
 
-	ENG_cyril_newall={
+	ENG_air_chief_1_cyril_newall={
 		name=ENG_cyril_newall
 		portraits={
 			army={
@@ -1091,7 +1086,7 @@ characters={
 		}
 	}
 
-	ENG_charles_portal={
+	ENG_air_chief_2_charles_portal={
 		name=ENG_charles_portal
 		portraits={
 			army={

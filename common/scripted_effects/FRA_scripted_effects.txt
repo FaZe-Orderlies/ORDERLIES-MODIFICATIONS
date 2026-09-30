@@ -19,7 +19,7 @@
 transfer_advisors_to_vichy = {
 
 	FRA = {
-		FRA_jean_romatet = {
+		FRA_air_chief_1_jean_romatet = {
 			set_nationality = event_target:vichy_france	
 		}
 

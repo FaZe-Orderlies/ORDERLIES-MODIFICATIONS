@@ -4067,7 +4067,7 @@ focus_tree = {
 		relative_position_id = GER_form_the_jagdwaffe
 		cost = 10
 		available = {
-			GER_hermann_goring = {
+			GER_air_chief_3_hermann_goring = {
 				is_air_chief = no
 			}
 			NOT = {
@@ -4114,7 +4114,7 @@ focus_tree = {
 		relative_position_id = GER_reorganize_the_luftwaffe
 		cost = 10
 		available = {
-			GER_hermann_goring = {
+			GER_air_chief_3_hermann_goring = {
 				is_air_chief = no
 			}
 			NOT = {
@@ -5064,8 +5064,8 @@ focus_tree = {
 			random_navy_leader = {
 				limit = {
 					NOT = {
-						is_character = GER_erich_raeder
-						is_character = GER_karl_donitz
+						is_character = GER_navy_chief_1_erich_raeder
+						is_character = GER_navy_chief_3_karl_donitz
 					}
 					OR = {
 						NOT = { has_trait = air_controller }
@@ -5290,8 +5290,8 @@ focus_tree = {
 			random_navy_leader = {
 				limit = {
 					NOT = {
-						is_character = GER_erich_raeder
-						is_character = GER_karl_donitz
+						is_character = GER_navy_chief_1_erich_raeder
+						is_character = GER_navy_chief_3_karl_donitz
 					}
 					NOT = { has_trait = battleship_adherent }
 				}
@@ -5518,7 +5518,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_chief_of_navy
-			show_ideas_tooltip = GER_rolf_carls
+			show_ideas_tooltip = GER_navy_chief_2_rolf_carls
 		}
 	}
 	
@@ -5737,7 +5737,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					GER_karl_donitz = {
+					GER_navy_chief_3_karl_donitz = {
 						is_unit_leader = yes
 					}
 				}
@@ -5795,30 +5795,30 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_character = GER_erich_raeder
-					GER_erich_raeder = {
+					has_character = GER_navy_chief_1_erich_raeder
+					GER_navy_chief_1_erich_raeder = {
 						is_unit_leader = yes
 					}
 				}
 				if = {
 					limit = {
-						GER_erich_raeder = {
+						GER_navy_chief_1_erich_raeder = {
 							NOT = { has_trait = superior_tactician }
 						}
 					}
 					add_trait = {
-					    character = GER_erich_raeder
+					    character = GER_navy_chief_1_erich_raeder
 					    trait = superior_tactician
 					}
 				}
 				else_if = {
 					limit = {
-						GER_erich_raeder = {
+						GER_navy_chief_1_erich_raeder = {
 							NOT = { has_trait = cruiser_captain }
 						}
 					}
 					add_trait = { 
-					    character = GER_erich_raeder
+					    character = GER_navy_chief_1_erich_raeder
 					    trait = cruiser_captain
 					}
 				}
@@ -5997,31 +5997,31 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_character = GER_karl_donitz
-					GER_karl_donitz = {
+					has_character = GER_navy_chief_3_karl_donitz
+					GER_navy_chief_3_karl_donitz = {
 						is_unit_leader = yes
 					}
 
 				}
 				if = {
 					limit = {
-						GER_karl_donitz = {
+						GER_navy_chief_3_karl_donitz = {
 							NOT = { has_trait = bold }
 						}
 					}
 					add_trait = {
-					    character = GER_karl_donitz
+					    character = GER_navy_chief_3_karl_donitz
 					    trait = bold
 					}
 				}
 				else_if = {
 					limit = {
-						GER_karl_donitz = {
+						GER_navy_chief_3_karl_donitz = {
 							NOT = { has_trait = spotter }
 						}
 					}
 					add_trait = {
-					    character = GER_karl_donitz
+					    character = GER_navy_chief_3_karl_donitz
 					    trait = spotter
 					}
 				}
@@ -8512,7 +8512,7 @@ focus_tree = {
 			GFX_focus_GER_fuhrerprinzip_goring = {
 				has_country_leader = {
 					ruling_only = yes
-					character = GER_hermann_goring
+					character = GER_air_chief_3_hermann_goring
 				}
 			}
 			GFX_focus_GER_fuhrerprinzip_himmler = {
@@ -8921,7 +8921,7 @@ focus_tree = {
 					custom_override_tooltip = {
 						tooltip = {
 							localization_key = GER_industrialists_intrigue_prevailed_tt
-							PREVAILED_CHARACTER = GER_hermann_goring
+							PREVAILED_CHARACTER = GER_air_chief_3_hermann_goring
 						}
 						always = no
 					}
@@ -9263,7 +9263,7 @@ focus_tree = {
 					custom_override_tooltip = {
 						tooltip = {
 							localization_key = GER_industrialists_intrigue_prevailed_tt
-							PREVAILED_CHARACTER = GER_hermann_goring
+							PREVAILED_CHARACTER = GER_air_chief_3_hermann_goring
 						}
 						always = no
 					}
@@ -9488,7 +9488,7 @@ focus_tree = {
 			NOT = {
 				has_country_leader = {
 					ruling_only = yes
-					character = GER_hermann_goring
+					character = GER_air_chief_3_hermann_goring
 				}
 			}
 			has_completed_focus = GER_the_four_year_plan
@@ -9524,7 +9524,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = {
 				localization_key = GER_ascension_of_character_tt
-				CHARACTER = GER_hermann_goring
+				CHARACTER = GER_air_chief_3_hermann_goring
 			}
 			show_ideas_tooltip = GER_goring_overseer_four_year_plan
 
@@ -9532,7 +9532,7 @@ focus_tree = {
 
 			custom_effect_tooltip = {
 				localization_key = GER_ascension_of_character_focus_tt
-				CHARACTER = GER_hermann_goring
+				CHARACTER = GER_air_chief_3_hermann_goring
 			}
 
 			if = { #Just to make it easy to debug stuff for development
@@ -9560,7 +9560,7 @@ focus_tree = {
 				custom_effect_tooltip = {
 					localization_key = GER_event_to_replace_ascended_advisor_tt
 					EVENT = GER_inner_circle.01.t
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = {
@@ -9624,7 +9624,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_inner_circle_focus_in_progress_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FLAG_DAYS = [?GER_prioritize_the_four_year_plan_in_progress_flag:days]
 					}
 					always = no 
@@ -9634,7 +9634,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FOCUS = GER_ascension_of_goring
 					}
 					always = no
@@ -9794,7 +9794,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_inner_circle_focus_in_progress_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FLAG_DAYS = [?GER_plenipotentiary_of_the_four_year_plan_in_progress_flag:days]
 					}
 					always = no 
@@ -9804,7 +9804,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FOCUS = GER_ascension_of_goring
 					}
 					always = no
@@ -9846,7 +9846,7 @@ focus_tree = {
 					custom_override_tooltip = {
 						tooltip = {
 							localization_key = GER_industrialists_intrigue_prevailed_tt
-							PREVAILED_CHARACTER = GER_hermann_goring
+							PREVAILED_CHARACTER = GER_air_chief_3_hermann_goring
 						}
 						always = yes
 					}
@@ -9859,7 +9859,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = {
 				localization_key = GER_ascended_character_trait_swap_tt
-				CHARACTER = GER_hermann_goring
+				CHARACTER = GER_air_chief_3_hermann_goring
 			}
 			swap_ideas = {
 				remove_idea = GER_goring_overseer_four_year_plan
@@ -9923,7 +9923,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_inner_circle_focus_in_progress_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FLAG_DAYS = [?GER_integration_of_puppet_economies_in_progress_flag:days]
 					}
 					always = no 
@@ -9933,7 +9933,7 @@ focus_tree = {
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
-						CHARACTER = GER_hermann_goring
+						CHARACTER = GER_air_chief_3_hermann_goring
 						FOCUS = GER_ascension_of_goring
 					}
 					always = no

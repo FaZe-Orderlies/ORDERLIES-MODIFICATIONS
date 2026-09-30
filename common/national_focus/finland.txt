@@ -400,9 +400,9 @@ focus_tree = {
 					# SET UP COUNTRY LEADERS
 					if = {
 						limit = {
-							has_character = FIN_carl_mannerheim
+							has_character = FIN_army_chief_1_carl_mannerheim
 						}
-						promote_character = FIN_carl_mannerheim
+						promote_character = FIN_army_chief_1_carl_mannerheim
 					}
 
 					if = {
@@ -5189,7 +5189,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_carl_mannerheim
+				character = FIN_army_chief_1_carl_mannerheim
 			}
 		}
 
@@ -5219,7 +5219,7 @@ focus_tree = {
 				}
 			}
 
-			FIN_carl_mannerheim = {
+			FIN_army_chief_1_carl_mannerheim = {
 				swap_country_leader_traits = {
 					remove = sotamarsalkka
 					add = sotamarsalkka_improved

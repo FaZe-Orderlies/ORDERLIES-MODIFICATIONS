@@ -1125,7 +1125,7 @@ JAP_trigger_democratic_civil_war = {
 
 	    # Tranfers the Imperial Army Loyalists to the Imperial Army Side 
     	PREV = {  # Original country
-    		JAP_hideki_tojo = { # Character
+    		JAP_army_chief_1_hideki_tojo = { # Character
     		    set_nationality = PREV.PREV
     		    # Transfers to breakaway
     		}
@@ -1144,7 +1144,7 @@ JAP_trigger_democratic_civil_war = {
     				NOT = {
     					has_country_leader = {
     						ruling_only = yes
-    						character = JAP_hideki_tojo
+    						character = JAP_army_chief_1_hideki_tojo
     					}
     				}
     				has_civil_war = yes
@@ -1152,7 +1152,7 @@ JAP_trigger_democratic_civil_war = {
     		}
     		PREV.PREV = {
     			add_country_leader_role = {
-    				character = JAP_hideki_tojo
+    				character = JAP_army_chief_1_hideki_tojo
     				promote_leader = yes
     				country_leader = {
     					ideology = emperor_fascism
@@ -1905,7 +1905,7 @@ JAP_trigger_communist_civil_war = {
 
 	    # Tranfers the Imperial Army Loyalists to the Imperial Army Side 
     	PREV = {  # Original country
-    		JAP_hideki_tojo = { # Character
+    		JAP_army_chief_1_hideki_tojo = { # Character
     		    set_nationality = PREV.PREV
     		    # Transfers to breakaway
     		}
@@ -1924,7 +1924,7 @@ JAP_trigger_communist_civil_war = {
     				NOT = {
     					has_country_leader = {
     						ruling_only = yes
-    						character = JAP_hideki_tojo
+    						character = JAP_army_chief_1_hideki_tojo
     					}
     				}
     				has_civil_war = yes
@@ -1932,7 +1932,7 @@ JAP_trigger_communist_civil_war = {
     		}
     		PREV.PREV = {
     			add_country_leader_role = {
-    				character = JAP_hideki_tojo
+    				character = JAP_army_chief_1_hideki_tojo
     				promote_leader = yes
     				country_leader = {
     					ideology = emperor_fascism

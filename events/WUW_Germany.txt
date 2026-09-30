@@ -11667,7 +11667,7 @@ country_event = {
 				GER = {
 					set_nationality = {
 					    target_country = RAN
-					    character = GER_rolf_carls
+					    character = GER_navy_chief_2_rolf_carls
 					}
 				}
 			}
@@ -11732,7 +11732,7 @@ country_event = {
 				}
 			}
 			ELSE = {
-				GER_rolf_carls = {
+				GER_navy_chief_2_rolf_carls = {
 					remove_country_leader_role = {
 						ideology = nazism
 					}	
@@ -11860,7 +11860,7 @@ country_event = {
 				RAN = {
 					set_nationality = {
 					    target_country = GER
-					    character = GER_rolf_carls
+					    character = GER_navy_chief_2_rolf_carls
 					}
 				}
 			}
@@ -14009,13 +14009,13 @@ country_event = {
 			days = 430
 		}	
 		custom_effect_tooltip = generic_skip_one_line_tt
-		GER_karl_donitz = {
+		GER_navy_chief_3_karl_donitz = {
 			remove_unit_leader_role = yes
 			remove_advisor_role = {
 				slot = navy_chief 
 			}	
 		}
-		GER_erich_raeder = {
+		GER_navy_chief_1_erich_raeder = {
 			remove_unit_leader_role = yes
 			remove_advisor_role = {
 				slot = navy_chief 
@@ -14058,7 +14058,7 @@ country_event = {
 			}	
 		}
 		
-		GER_erich_raeder = {
+		GER_navy_chief_1_erich_raeder = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
@@ -21998,7 +21998,7 @@ country_event = {
 				check_variable = { GER_ascended_advisor_1 = 3 }
 			}
 			add_country_leader_role = {
-				character =  GER_hermann_goring
+				character =  GER_air_chief_3_hermann_goring
 				country_leader = {
 					ideology = nazism
 					expire = 1965.1.1
@@ -22174,7 +22174,7 @@ country_event = {
 				check_variable = { GER_ascended_advisor_2 = 3 }
 			}
 			add_country_leader_role = {
-				character =  GER_hermann_goring
+				character =  GER_air_chief_3_hermann_goring
 				country_leader = {
 					ideology = nazism
 					expire = 1965.1.1
@@ -22350,7 +22350,7 @@ country_event = {
 				check_variable = { GER_ascended_advisor_3 = 3 }
 			}
 			add_country_leader_role = {
-				character =  GER_hermann_goring
+				character =  GER_air_chief_3_hermann_goring
 				country_leader = {
 					ideology = nazism
 					expire = 1965.1.1
@@ -22602,7 +22602,7 @@ country_event = {
 			}
 			custom_effect_tooltip = {
 				localization_key = GER_advisor_will_continue_focus_tt
-				CHARACTER = GER_hermann_goring
+				CHARACTER = GER_air_chief_3_hermann_goring
 				FOCUS = GER_plenipotentiary_of_the_four_year_plan
 			}
 		}
@@ -22650,7 +22650,7 @@ country_event = {
 			}
 			custom_effect_tooltip = {
 				localization_key = GER_stop_progress_on_advisor_focus_tt
-				CHARACTER = GER_hermann_goring
+				CHARACTER = GER_air_chief_3_hermann_goring
 				FOCUS = GER_plenipotentiary_of_the_four_year_plan
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -22704,7 +22704,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Todt is not ascended (search for an open slot or replace Intrigue Character)
@@ -22746,7 +22746,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_todt
 					IDEA = idea_desc|GER_todt_reich_engineer
 				}
@@ -22780,7 +22780,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Todt is not ascended (search for an open slot or replace Intrigue Character)
@@ -22822,7 +22822,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_todt
 					IDEA = idea_desc|GER_todt_reich_engineer
 				}
@@ -22856,7 +22856,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Todt is not ascended (search for an open slot or replace Intrigue Character)
@@ -22898,7 +22898,7 @@ country_event = {
 					CHARACTER = GER_fritz_todt
 					FOCUS = GER_autonomous_organization_todt
 					CHARACTER_2 = GER_albert_speer
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_todt
 					IDEA = idea_desc|GER_todt_reich_engineer
 				}
@@ -22983,7 +22983,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Speer is not ascended (search for an open slot or replace Intrigue Character)
@@ -23025,7 +23025,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_speer
 					IDEA = idea_desc|GER_speer_reich_architect
 				}
@@ -23059,7 +23059,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Speer is not ascended (search for an open slot or replace Intrigue Character)
@@ -23101,7 +23101,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_speer
 					IDEA = idea_desc|GER_speer_reich_architect
 				}
@@ -23135,7 +23135,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 				}
 			}
 			else = { #Speer is not ascended (search for an open slot or replace Intrigue Character)
@@ -23177,7 +23177,7 @@ country_event = {
 					CHARACTER = GER_albert_speer
 					FOCUS = GER_plenipotentiary_of_armaments
 					CHARACTER_2 = GER_fritz_todt
-					CHARACTER_3 = GER_hermann_goring
+					CHARACTER_3 = GER_air_chief_3_hermann_goring
 					FOCUS_COMPLETED = GER_ascension_of_speer
 					IDEA = idea_desc|GER_speer_reich_architect
 				}
@@ -23256,7 +23256,7 @@ country_event = {
 				}
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_already_ascended_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer
@@ -23298,7 +23298,7 @@ country_event = {
 				
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_new_ascending_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer
@@ -23332,7 +23332,7 @@ country_event = {
 				}
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_already_ascended_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer
@@ -23374,7 +23374,7 @@ country_event = {
 				
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_new_ascending_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer
@@ -23408,7 +23408,7 @@ country_event = {
 				}
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_already_ascended_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer
@@ -23450,7 +23450,7 @@ country_event = {
 				
 				custom_effect_tooltip = {
 					localization_key = GER_intrigue_replacing_advisor_new_ascending_tt
-					CHARACTER = GER_hermann_goring
+					CHARACTER = GER_air_chief_3_hermann_goring
 					FOCUS = GER_plenipotentiary_of_the_four_year_plan
 					CHARACTER_2 = GER_fritz_todt
 					CHARACTER_3 = GER_albert_speer

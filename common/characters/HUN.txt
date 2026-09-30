@@ -695,7 +695,7 @@ characters = {
 		}
 	}
 
-	HUN_karoly_beregfy = {
+	HUN_army_chief_1_karoly_beregfy = {
 		instance = {
 			allowed = {
 				NOT = {
@@ -1205,7 +1205,7 @@ characters = {
 
 	### THEORISTS ###
 
-	HUN_shvoy_kalman = {
+	HUN_theorist_1_shvoy_kalman = {
 		name = HUN_shvoy_kalman
 		portraits = {
 			army = {
@@ -1221,13 +1221,13 @@ characters = {
 				original_tag = HUN
 			}
 			traits = {
-				military_theorist
+				theorist_minor_tank_expert
 			}
 			can_be_fired = no
 		}
 	}
 
-	HUN_gyorgy_jendrassik = {
+	HUN_theorist_2_gyorgy_jendrassik = {
 		name = HUN_gyorgy_jendrassik
 
 		portraits = {
@@ -1253,7 +1253,7 @@ characters = {
 				original_tag = HUN
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
 			}
 			can_be_fired = no
 		}
@@ -1262,7 +1262,7 @@ characters = {
 
 	### ARMY CHIEFS ###
 
-	HUN_ferenc_szombathelyi = {
+	HUN_army_chief_2_ferenc_szombathelyi = {
 		instance = {
 			allowed = {
 				NOT = {
@@ -1284,16 +1284,10 @@ characters = {
 				allowed = {
 					original_tag = HUN
 				}
-				visible = {
-					always = no
-				}
-				available = {
-					always = no
-				}
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1324,19 +1318,11 @@ characters = {
 					original_tag = HUN
 				}
 
-				visible = {
-					always = no
-				}
-
-				available = {
-					always = no
-				}
-
 				traits = {
 					army_chief_defensive_2
 				}
 
-				cost = 100
+				cost = 150
 
 				ai_will_do = {
 					base = 1
@@ -1373,11 +1359,19 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
+				available = {
+					always = no
+				}
+
 				traits = {
 					army_chief_defensive_2
 				}
 
-				cost = 150
+				cost = 100
 
 				ai_will_do = {
 					factor = 1.000
@@ -1412,11 +1406,19 @@ characters = {
 					original_tag = HUN
 				}
 
+				visible = {
+					always = no
+				}
+
+				available = {
+					always = no
+				}
+
 				traits = {
 					army_chief_defensive_2
 				}
 
-				cost = 150
+				cost = 100
 
 				ai_will_do = {
 					base = 3
@@ -1431,7 +1433,7 @@ characters = {
 
 	### NAVY CHIEFS ###
 
-	HUN_kalman_hardy = {
+	HUN_navy_chief_1_kalman_hardy = {
 
 		name = HUN_kalman_hardy
 
@@ -1465,7 +1467,34 @@ characters = {
 
 	}
 
-	HUN_francois_deak = {
+	HUN_navy_chief_2_reszo_kastner = {
+
+		name = HUN_reszo_kastner
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_2"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = HUN_reszo_kastner
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+	}
+
+	HUN_navy_chief_3_francois_deak = {
 
 		name = HUN_francois_deak
 
@@ -1492,70 +1521,10 @@ characters = {
 
 	}
 
-	HUN_reszo_kastner = {
-
-		name = HUN_reszo_kastner
-
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_navy_europe_2"
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = HUN_reszo_kastner
-			allowed = {
-				original_tag = HUN
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
-	}
-
 
 	### AIR CHIEFS ###
 
-	HUN_bela_rakosi = {
-
-		name = HUN_bela_rakosi
-
-		portraits = {
-			army = {
-				small = "GFX_idea_HUN_bela_rakosi"
-			}
-		}
-
-		advisor = {
-			slot = air_chief
-			idea_token = HUN_bela_rakosi
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
-	}
-
-	HUN_laszlo_hary = {
+	HUN_air_chief_1_laszlo_hary = {
 
 		name = HUN_laszlo_hary
 
@@ -1589,11 +1558,38 @@ characters = {
 
 	}
 
+	HUN_air_chief_2_bela_rakosi = {
+
+		name = HUN_bela_rakosi
+
+		portraits = {
+			army = {
+				small = "GFX_idea_HUN_bela_rakosi"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = HUN_bela_rakosi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+	}
+
 
 
 	### MILITARY HIGH COMMAND ###
 
-	HUN_sandor_magyarossy = {
+	HUN_theorist_3_sandor_magyarossy = {
 		name = HUN_sandor_magyarossy
 		portraits = {
 			army = {
@@ -1609,7 +1605,7 @@ characters = {
 				original_tag = HUN
 			}
 			traits = {
-				naval_theorist
+				theorist_minor_shore_bombardment
 			}
 			can_be_fired = no
 		}

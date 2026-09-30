@@ -1370,7 +1370,7 @@ FIN_balance_of_power_category = {
 					}
 					has_country_leader = {
 						ruling_only = yes
-						character = FIN_carl_mannerheim
+						character = FIN_army_chief_1_carl_mannerheim
 					}
 				}
 			}
@@ -1405,7 +1405,7 @@ FIN_balance_of_power_category = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_carl_mannerheim
+				character = FIN_army_chief_1_carl_mannerheim
 			}
 			has_war = no
 		}
@@ -1413,7 +1413,7 @@ FIN_balance_of_power_category = {
 		visible = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_carl_mannerheim
+				character = FIN_army_chief_1_carl_mannerheim
 			}
 			has_country_flag = FIN_resignation_of_mannerheim_available_flag
 		}
@@ -1806,7 +1806,7 @@ FIN_the_path_to_socialism = {
 			retire_character = FIN_erik_heinrichs
 			retire_character = FIN_juho_heiskanen
 			retire_character = FIN_lauri_malmberg
-			retire_character = FIN_hugo_osterman
+			retire_character = FIN_army_chief_2_hugo_osterman
 			retire_character = FIN_alpo_marttinen
 
 			custom_effect_tooltip = when_civil_war_starts_tt
@@ -3473,7 +3473,7 @@ FIN_coup_preparations = {
 		complete_effect = {
 			set_country_flag = FIN_cw_military_secured_flag
 			hidden_effect = {
-				FIN_carl_mannerheim = {
+				FIN_army_chief_1_carl_mannerheim = {
 					clr_character_flag = FIN_anti_fascist_character_flag
 				}
 				FIN_aksel_airo = {

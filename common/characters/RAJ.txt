@@ -447,40 +447,6 @@ characters={
 		
 	}
 
-	RAJ_herbert_fitzherbert={
-		name=RAJ_herbert_fitzherbert
-		portraits={
-			army={
-				large="GFX_RAJ_herbert_fitzherbert"
-				small=GFX_portrait_RAJ_herbert_fitzherbert_small
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = erbert_fitzherbert
-			ledger = navy
-			allowed = {
-				original_tag = RAJ
-			}
-			traits = {
-				naval_theorist
-			}
-			can_be_fired = no
-		}
-
-		navy_leader={
-			traits={ old_guard_navy }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
-			legacy_id=-1
-		}
-	}
-
-
 	#Sikh
 	RAJ_GOE_ishar_singh = {
 		name = RAJ_GOE_ishar_singh
@@ -666,7 +632,7 @@ characters={
 
 	### THEORISTS ###
 
-	RAJ_rajendra_prasad={
+	RAJ_theorist_1_rajendra_prasad={
 		name=RAJ_rajendra_prasad
 		portraits={
 			army={
@@ -682,13 +648,13 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				military_theorist
+				theorist_minor_infantry_expert
 			}
 			can_be_fired = no
 		}
 	}
 
-	RAJ_anyang_bhula={
+	RAJ_theorist_2_anyang_bhula={
 		name=RAJ_anyang_bhula
 		portraits={
 			army={
@@ -704,9 +670,42 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
 			}
 			can_be_fired = no
+		}
+	}
+
+	RAJ_theorist_3_herbert_fitzherbert={
+		name=RAJ_herbert_fitzherbert
+		portraits={
+			army={
+				large="GFX_RAJ_herbert_fitzherbert"
+				small=GFX_portrait_RAJ_herbert_fitzherbert_small
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = erbert_fitzherbert
+			ledger = navy
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				theorist_minor_shore_bombardment
+			}
+			can_be_fired = no
+		}
+
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
 		}
 	}
 
@@ -759,36 +758,7 @@ characters={
 
 	### ARMY CHIEFS ###
 
-	RAJ_arthur_a_barrett={
-		name=RAJ_arthur_a_barrett
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = RAJ_arthur_a_barrett
-			allowed = {
-				original_tag = RAJ
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	RAJ_archibald_wavell={
+	RAJ_army_chief_1_archibald_wavell={
 		name=RAJ_archibald_wavell
 		portraits={
 			army={
@@ -810,6 +780,30 @@ characters={
 			}
 		}
 	}
+
+	RAJ_army_chief_2_arthur_a_barrett={
+		name=RAJ_arthur_a_barrett
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RAJ_arthur_a_barrett
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 
 	RAJ_reginald_savory={
 		name=RAJ_reginald_savory
@@ -1035,10 +1029,16 @@ characters={
 				allowed = {
 					original_tag = RAJ
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 150
+				cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1063,10 +1063,16 @@ characters={
 				allowed = {
 					original_tag = RAJ
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 150
+				cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1223,7 +1229,7 @@ characters={
 		}
 	}
 
-	RAJ_william_e_parry={
+	RAJ_navy_chief_1_william_e_parry={
 		name=RAJ_william_e_parry
 		portraits={
 			army={
@@ -1246,7 +1252,30 @@ characters={
 		}
 	}
 
-	RAJ_bhaskar_soman={
+	RAJ_navy_chief_2_ram_dass_katari={
+		name=RAJ_ram_dass_katari
+		portraits={
+			army={
+				small="GFX_idea_RAJ_ram_dass_katari"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = RAJ_ram_dass_katari
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RAJ_navy_chief_3_bhaskar_soman={
 		name=RAJ_bhaskar_soman
 		portraits={
 			army={
@@ -1269,36 +1298,7 @@ characters={
 		}
 	}
 
-	RAJ_ram_dass_katari={
-		name=RAJ_ram_dass_katari
-		portraits={
-			army={
-				small="GFX_idea_RAJ_ram_dass_katari"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = RAJ_ram_dass_katari
-			allowed = {
-				original_tag = RAJ
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				navy_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	RAJ_bruce_w_mcpherson={
+	RAJ_air_chief_1_bruce_w_mcpherson={
 		name=RAJ_bruce_w_mcpherson
 		portraits={
 			army={
@@ -1321,7 +1321,7 @@ characters={
 		}
 	}
 
-	RAJ_subroto_mukherjee={
+	RAJ_air_chief_2_subroto_mukherjee={
 		name=RAJ_subroto_mukherjee
 		portraits={
 			army={

@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # ENG Events
 ###########################
 
@@ -2404,10 +2404,10 @@ country_event = {
 	option = {
 		name = mtg_britain.45.a
 		
-		retire_character = ENG_alan_brooke
-		retire_character = ENG_bernard_montgomery
+		retire_character = ENG_army_chief_1_alan_brooke
+		retire_character = ENG_theorist_1_bernard_montgomery
 		retire_character = ENG_harold_alexander
-		retire_character = ENG_john_vereker
+		retire_character = ENG_army_chief_2_john_vereker
 		retire_character = ENG_oliver_leese
 		retire_character = ENG_archibald_wavell
 		retire_character = ENG_james_fownes_somerville

@@ -135,29 +135,12 @@ characters={
 				legacy_id=-1
 			}
 		}	
-		SAF_guy_hallifax={
-			name=SAF_guy_hallifax
-			portraits={
-				army={
-					large="GFX_SAF_guy_halifax"
-					small=GFX_portrait_SAF_guy_hallifax_small
-				}
-			}
-			navy_leader={
-				traits={ battleship_adherent }
-				skill=3
-				attack_skill=4
-				defense_skill=2
-				maneuvering_skill=2
-				coordination_skill=2
-				legacy_id=-1
-			}
-		}
+
 
 
 		### THEORISTS ###
 
-		SAF_j_f_van_rensburg={
+		SAF_theorist_1_j_f_van_rensburg={
 			name=SAF_j_f_van_rensburg
 			portraits={
 				army={
@@ -176,8 +159,8 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					military_theorist
-				}
+				theorist_minor_infantry_expert
+			}
 				can_be_fired = no
 			}
 
@@ -217,7 +200,7 @@ characters={
 			}
 		}
 
-		SAF_s_p_le_roux={
+		SAF_theorist_2_s_p_le_roux={
 			name=SAF_s_p_le_roux
 			portraits={
 				army={
@@ -233,8 +216,8 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					air_warfare_theorist
-				}
+				theorist_minor_air_superiority
+			}
 				can_be_fired = no
 			}		
 		}
@@ -242,7 +225,7 @@ characters={
 
 		### ARMY CHIEFS ###
 
-		SAF_james_mitchell_baker={
+		SAF_army_chief_1_james_mitchell_baker={
 			name=SAF_james_mitchell_baker
 			portraits={
 				army={
@@ -265,7 +248,7 @@ characters={
 			}		
 		}
 
-		SAF_leonard_beyers={
+		SAF_army_chief_2_leonard_beyers={
 			name=SAF_leonard_beyers
 			portraits={
 				army={
@@ -291,7 +274,7 @@ characters={
 
 		### NAVY CHIEFS ###
 
-		SAF_pierre_oliver_knoll={
+		SAF_navy_chief_1_pierre_oliver_knoll={
 			name=SAF_pierre_oliver_knoll
 			portraits={
 				army={
@@ -314,7 +297,40 @@ characters={
 			}
 		}
 
-		SAF_cornelis_van_zuigenbrogge={
+		SAF_navy_chief_2_guy_hallifax={
+			name=SAF_guy_hallifax
+			portraits={
+				army={
+					large="GFX_SAF_guy_halifax"
+					small=GFX_idea_generic_navy_europe_2
+				}
+			}
+			advisor={
+				slot = navy_chief
+				idea_token = SAF_guy_hallifax
+				allowed = {
+					original_tag = SAF
+				}
+				traits = {
+					navy_chief_screen_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			navy_leader={
+				traits={ battleship_adherent }
+				skill=3
+				attack_skill=4
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=2
+				legacy_id=-1
+			}
+		}
+
+		SAF_navy_chief_3_cornelis_van_zuigenbrogge={
 			name=SAF_cornelis_van_zuigenbrogge
 			portraits={
 				army={
@@ -340,7 +356,7 @@ characters={
 
 		### AIR CHIEFS ###
 
-		SAF_adolf_malan={
+		SAF_air_chief_1_adolf_malan={
 			name=SAF_adolf_malan
 			portraits={
 				army={
@@ -363,7 +379,7 @@ characters={
 			}		
 		}
 
-		SAF_pierre_van_ryneveld={
+		SAF_air_chief_2_pierre_van_ryneveld={
 			name=SAF_pierre_van_ryneveld
 			portraits={
 				army={
@@ -461,7 +477,7 @@ characters={
 			}		
 		}
 
-		SAF_jeannot_de_la_tourier={
+		SAF_theorist_3_jeannot_de_la_tourier={
 			name=SAF_jeannot_de_la_tourier
 			portraits={
 				army={
@@ -477,8 +493,8 @@ characters={
 					original_tag = SAF
 				}
 				traits = {
-					naval_theorist
-				}
+				theorist_minor_shore_bombardment
+			}
 				can_be_fired = no
 			}		
 		}

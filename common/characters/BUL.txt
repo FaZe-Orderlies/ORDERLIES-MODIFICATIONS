@@ -108,64 +108,6 @@ characters = {
 			id=-1
 		}
 	}
-	
-	BUL_hristo_lukov = {
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name = BUL_hristo_lukov
-			portraits = {
-				civilian = {
-					large = "GFX_Portrait_bulgaria_hristo_lukov"
-				}
-			}
-			country_leader = {
-				ideology = fascism_ideology
-				traits = { hardened_officer }
-				expire = "1966.1.1.1"
-				id = -1
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			advisor = {
-				slot = army_chief
-				idea_token = BUL_hristo_lukov
-				allowed = {
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-					original_tag = BUL
-				}
-				visible = { always = no }
-				available = { always = no }
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-			name = BUL_hristo_lukov
-			portraits = {
-				army = {
-					small = "GFX_idea_generic_army_europe_2"
-				}
-				civilian = {
-					large = "GFX_Portrait_bulgaria_hristo_lukov"
-				}
-			}
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "1965.1.1.1"
-				id = -1
-			}
-		}
-	}
 
 
 ##     ## ##    ## #### ########    ##       ########    ###    ########  ######## ########   ######  
@@ -440,7 +382,7 @@ characters = {
 ### THEORISTS ###
 #################
 
-	BUL_theodosi_daskalov = {
+	BUL_theorist_1_theodosi_daskalov = {
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -450,7 +392,7 @@ characters = {
 				original_tag = BUL
 			}
 			traits = {
-				military_theorist
+				theorist_minor_tank_expert
 			}
 			can_be_fired = no
 		}
@@ -471,29 +413,7 @@ characters = {
 		}
 	}
 
-	BUL_sava_ivanov = {
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = BUL_sava_ivanov
-			ledger = navy
-			allowed = {
-				original_tag = BUL
-			}
-			traits = {
-				naval_theorist
-			}
-			can_be_fired = no
-		}
-		name = BUL_sava_ivanov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_sava_ivanov"
-			}
-		}
-	}
-
-	BUL_georgi_drenikov = {
+	BUL_theorist_2_georgi_drenikov = {
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -503,7 +423,7 @@ characters = {
 				original_tag = BUL
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
 			}
 			can_be_fired = no
 		}
@@ -515,9 +435,124 @@ characters = {
 		}
 	}
 
+	BUL_theorist_3_sava_ivanov = {
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = BUL_sava_ivanov
+			ledger = navy
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				theorist_minor_shore_bombardment
+			}
+			can_be_fired = no
+		}
+		name = BUL_sava_ivanov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_sava_ivanov"
+			}
+		}
+	}
+
 ###################
 ### CHIEFS ARMY ###
 ###################
+
+	BUL_army_chief_1_kiril_stanchev = {
+		name = BUL_kiril_stanchev
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_kiril_stanchev"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_kiril_stanchev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BUL_army_chief_2_hristo_lukov = {
+		instance = {
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			name = BUL_hristo_lukov
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_bulgaria_hristo_lukov"
+				}
+				army = {
+					small = "GFX_idea_generic_army_europe_2"
+				}
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = BUL_hristo_lukov
+				allowed = {
+					original_tag = BUL
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			country_leader = {
+				ideology = fascism_ideology
+				traits = { hardened_officer }
+				expire = "1966.1.1.1"
+				id = -1
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = BUL_hristo_lukov
+				allowed = {
+					original_tag = BUL
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name = BUL_hristo_lukov
+			portraits = {
+				army = {
+					small = "GFX_idea_generic_army_europe_2"
+				}
+				civilian = {
+					large = "GFX_Portrait_bulgaria_hristo_lukov"
+				}
+			}
+			country_leader = {
+				ideology = fascism_ideology
+				expire = "1965.1.1.1"
+				id = -1
+			}
+		}
+	}
 
 	BUL_konstantin_lukash = {
 		advisor = {
@@ -526,10 +561,16 @@ characters = {
 			allowed = {
 				original_tag = BUL
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -551,10 +592,16 @@ characters = {
 			allowed = {
 				original_tag = BUL
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -701,57 +748,11 @@ characters = {
 		}
 	}
 
-	BUL_kiril_stanchev = {
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			advisor = {
-				slot = army_chief
-				idea_token = BUL_kiril_stanchev
-				allowed = {
-					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
-				}
-				visible = { always = no }
-				available = { always = no }
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-					modifier = {
-						factor = 0.100
-						BUL_save_money_for_decisions = yes
-					}
-				}
-			}
-			name = BUL_kiril_stanchev
-			portraits = {
-				army = {
-					small = "GFX_idea_bul_kiril_stanchev"
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			name = BUL_kiril_stanchev
-			portraits = {
-				army = {
-					small = "GFX_idea_bul_kiril_stanchev"
-				}
-			}
-		}
-	}
-
 ###################
 ### CHIEFS NAVY ###
 ###################
 
-	BUL_asen_toshev = {
+	BUL_navy_chief_1_asen_toshev = {
 		advisor = {
 			slot = navy_chief
 			idea_token = BUL_asen_toshev
@@ -774,7 +775,30 @@ characters = {
 		}
 	}
 
-	BUL_ivan_variklechkov = {
+	BUL_navy_chief_2_bonyu_stoev_pironkov = {
+		advisor = {
+			slot = navy_chief
+			idea_token = BUL_bonyu_stoev_pironkov
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = BUL_bonyu_stoev_pironkov
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+
+	BUL_navy_chief_3_ivan_variklechkov = {
 		advisor = {
 			slot = navy_chief
 			idea_token = BUL_ivan_variklechkov
@@ -801,30 +825,7 @@ characters = {
 ### CHIEFS AIRFORCE ###
 #######################
 
-	BUL_dimitr_ayryanov = {
-		advisor = {
-			slot = air_chief
-			idea_token = BUL_dimitr_ayryanov
-			allowed = {
-				original_tag = BUL
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		name = BUL_dimitr_ayryanov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_dimitar_ayryanov"
-			}
-		}
-	}
-
-	BUL_gancho_manchev = {
+	BUL_air_chief_1_gancho_manchev = {
 		advisor = {
 			slot = air_chief
 			idea_token = BUL_gancho_manchev
@@ -843,6 +844,29 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_bul_gancho_manchev"
+			}
+		}
+	}
+
+	BUL_air_chief_2_dimitr_ayryanov = {
+		advisor = {
+			slot = air_chief
+			idea_token = BUL_dimitr_ayryanov
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = BUL_dimitr_ayryanov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_dimitar_ayryanov"
 			}
 		}
 	}
@@ -1995,34 +2019,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_air_europe_1"
-			}
-		}
-	}
-
-	BUL_bonyu_stoev_pironkov = {
-		advisor = {
-			slot = navy_chief
-			idea_token = BUL_bonyu_stoev_pironkov
-			allowed = {
-				NOT = {
-					has_dlc = "Battle for the Bosporus"
-				}
-				original_tag = BUL
-			}
-			visible = { always = no }
-			available = { always = no }
-			traits = {
-				navy_naval_air_defense_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		name = BUL_bonyu_stoev_pironkov
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_navy_europe_2"
 			}
 		}
 	}

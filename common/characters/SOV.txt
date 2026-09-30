@@ -310,7 +310,7 @@ characters = {
 		}	
 	}
 
-	SOV_boris_shaposhnikov = {
+	SOV_theorist_1_boris_shaposhnikov = {
 		name = SOV_boris_shaposhnikov
 		portraits = {
 			army = {
@@ -327,7 +327,7 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				military_theorist
+				theorist_sov_shaposhnikov
 			}
 			can_be_fired = no
 		}
@@ -421,7 +421,7 @@ characters = {
 		}
 	}
 
-	SOV_semyon_timoshenko = {
+	SOV_army_chief_1_semyon_timoshenko = {
 		name = SOV_semyon_timoshenko
 		portraits = {
 			army = {
@@ -479,7 +479,7 @@ characters = {
 		}
 	}
 
-	SOV_kliment_voroshilov = {
+	SOV_army_chief_2_kliment_voroshilov = {
 		name = SOV_kliment_voroshilov
 
 		portraits = {
@@ -519,7 +519,7 @@ characters = {
 				base = 1
 				modifier = {
 					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
+					NOT = { has_character = SOV_army_chief_1_semyon_timoshenko }
 				}
 			}
 		}
@@ -873,7 +873,30 @@ characters = {
 		
 	}
 
-	SOV_sergey_gorshkov = {
+	SOV_theorist_2_aleksandr_golovanov = {
+		name = SOV_aleksandr_golovanov
+		portraits = {
+			army = {
+				small = "GFX_idea_alexander_golovanov"
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = alexander_golovanov
+			ledger = air
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				theorist_sov_golovanov
+			}
+			can_be_fired = no
+		}		
+	}
+
+	SOV_theorist_3_sergey_gorshkov = {
 		name = SOV_sergey_gorshkov
 		portraits = {
 			navy = {
@@ -892,7 +915,7 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				naval_theorist
+				theorist_sov_gorshkov
 			}
 			can_be_fired = no
 		}
@@ -1163,7 +1186,7 @@ characters = {
 		}
 	}
 
-	SOV_ivan_yumashev = {
+	SOV_navy_chief_1_ivan_yumashev = {
 		name = SOV_ivan_yumashev
 		portraits = {
 			army = {
@@ -1187,7 +1210,31 @@ characters = {
 		}
 	}
 
-	SOV_nikolay_kuznetsov = {
+	SOV_navy_chief_2_pyotr_smirnov = {
+		name = SOV_pyotr_smirnov
+		portraits = {
+			army = {
+				small = "GFX_idea_pyotr_smirnov"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = pyotr_smirnov
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 0.200
+			}
+		}		
+	}
+
+	SOV_navy_chief_3_nikolay_kuznetsov = {
 		name = SOV_nikolay_kuznetsov
 		portraits = {
 			army = {
@@ -1241,7 +1288,7 @@ characters = {
 		}	
 	}
 
-	SOV_pavel_rychagov = {
+	SOV_air_chief_1_pavel_rychagov = {
 		name = SOV_pavel_rychagov
 		portraits = {
 			army = {
@@ -1265,28 +1312,6 @@ characters = {
 		}		
 	}
 
-	SOV_aleksandr_golovanov = {
-		name = SOV_aleksandr_golovanov
-		portraits = {
-			army = {
-				small = "GFX_idea_alexander_golovanov"
-			}
-		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = alexander_golovanov
-			ledger = air
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			can_be_fired = no
-		}		
-	}
 
 	SOV_mikhail_frinovsky = {
 		name = SOV_mikhail_frinovsky
@@ -1343,35 +1368,6 @@ characters = {
 		}
 	}
 
-	SOV_pyotr_smirnov = {
-		name = SOV_pyotr_smirnov
-		portraits = {
-			army = {
-				small = "GFX_idea_pyotr_smirnov"
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = pyotr_smirnov
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				navy_chief_naval_aviation_1
-			}
-			cost = 50
-			ai_will_do = {
-				base = 0.200
-			}
-		}		
-	}
 
 	SOV_aleksandr_yegorov = {
 		name = SOV_aleksandr_yegorov
@@ -1401,7 +1397,7 @@ characters = {
 				base = 0.5
 				modifier = {
 					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
+					NOT = { has_character = SOV_army_chief_1_semyon_timoshenko }
 				}
 			}
 		}
@@ -1436,7 +1432,7 @@ characters = {
 				base = 1
 				modifier = {
 					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
+					NOT = { has_character = SOV_army_chief_1_semyon_timoshenko }
 				}
 			}
 		}
@@ -1444,7 +1440,7 @@ characters = {
 		
 	}
 
-	SOV_aleksandr_novikov = {
+	SOV_air_chief_2_aleksandr_novikov = {
 		name = SOV_aleksandr_novikov
 		portraits = {
 			army = {

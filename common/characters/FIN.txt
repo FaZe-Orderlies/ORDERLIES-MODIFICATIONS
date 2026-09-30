@@ -86,7 +86,7 @@ characters = {
                                                                                            
 
 
-	FIN_carl_mannerheim = {
+	FIN_army_chief_1_carl_mannerheim = {
 		name = FIN_carl_mannerheim
 		portraits = {
 			army = {
@@ -224,7 +224,7 @@ characters = {
 		}	
 	}
 
-	FIN_aarne_juutilainen = {
+	FIN_theorist_1_aarne_juutilainen = {
 		name = FIN_aarne_juutilainen
 		portraits = {
 			army = {
@@ -241,7 +241,7 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				military_theorist
+				theorist_minor_tank_expert
 			}
 			can_be_fired = no
 		}
@@ -494,25 +494,6 @@ characters = {
 		}
 	}
 
-	FIN_svante_sundman = {
-		name = FIN_svante_sundman
-		portraits = {
-			army = {
-				large = GFX_portrait_FIN_svante_sundman
-				small = GFX_portrait_FIN_svante_sundman_small
-			}
-		}
-		navy_leader = {
-			traits = { navy_career_officer gunnery_expert arctic_water_expert }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 3
-			maneuvering_skill = 1
-			coordination_skill = 2
-			legacy_id = 0
-			visible = { has_completed_focus = FIN_coastal_defense }
-		}
-	}
 
 
                                                          
@@ -526,29 +507,7 @@ characters = {
 
    #Akseli Anttila up as a general
 
-	FIN_vaino_valve = {
-		name = FIN_vaino_valve
-		portraits = {
-			army = {
-				small = GFX_portrait_FIN_vaino_valve_small
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = FIN_vaino_valve
-			ledger = navy
-			allowed = {
-				original_tag = FIN
-			}
-			traits = {
-				naval_theorist
-			}
-			can_be_fired = no
-		}
-	}
-
-	FIN_gustaf_magnusson = {
+	FIN_theorist_2_gustaf_magnusson = {
 		name = FIN_gustaf_magnusson
 		portraits = {
 			army = {
@@ -564,7 +523,29 @@ characters = {
 				original_tag = FIN
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
+			}
+			can_be_fired = no
+		}
+	}
+
+	FIN_theorist_3_vaino_valve = {
+		name = FIN_vaino_valve
+		portraits = {
+			army = {
+				small = GFX_portrait_FIN_vaino_valve_small
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = FIN_vaino_valve
+			ledger = navy
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				theorist_minor_shore_bombardment
 			}
 			can_be_fired = no
 		}
@@ -617,7 +598,7 @@ characters = {
 		}
 	}
 
-	FIN_hugo_osterman = {
+	FIN_army_chief_2_hugo_osterman = {
 		name = FIN_hugo_osterman
 		portraits = {
 			army = {
@@ -656,7 +637,7 @@ characters = {
                                                                        
 
 
-	FIN_olavi_arho = {
+	FIN_navy_chief_1_olavi_arho = {
 		name = FIN_olavi_arho
 		portraits = {
 			army = {
@@ -679,7 +660,41 @@ characters = {
 		}
 	}
 
-	FIN_eero_rahola = {
+	FIN_navy_chief_2_svante_sundman = {
+		name = FIN_svante_sundman
+		portraits = {
+			army = {
+				large = GFX_portrait_FIN_svante_sundman
+				small = GFX_portrait_FIN_svante_sundman_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = FIN_svante_sundman
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer gunnery_expert arctic_water_expert }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id = 0
+			visible = { has_completed_focus = FIN_coastal_defense }
+		}
+	}
+
+	FIN_navy_chief_3_eero_rahola = {
 		name = FIN_eero_rahola
 		portraits = {
 			army = {
@@ -712,30 +727,7 @@ characters = {
  #     #  #  #    #       ####   #    #  #  ######  #      
                                                            
 
-	FIN_jarl_lundqvist = {
-		name = FIN_jarl_lundqvist
-		portraits = {
-			army = {
-				small = GFX_portrait_FIN_jarl_lundqvist_small
-			}
-		}
-		advisor = {
-			slot = air_chief
-			idea_token = FIN_jarl_lundqvist
-			allowed = {
-				original_tag = FIN
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-	}
-	
-	FIN_olavi_sarko = {
+	FIN_air_chief_1_olavi_sarko = {
 		name = FIN_olavi_sarko
 		portraits = {
 			army = {
@@ -750,6 +742,29 @@ characters = {
 			}
 			traits = {
 				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	FIN_air_chief_2_jarl_lundqvist = {
+		name = FIN_jarl_lundqvist
+		portraits = {
+			army = {
+				small = GFX_portrait_FIN_jarl_lundqvist_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = FIN_jarl_lundqvist
+			allowed = {
+				original_tag = FIN
+			}
+			traits = {
+				air_chief_night_operations_2
 			}
 			cost = 150
 			ai_will_do = {

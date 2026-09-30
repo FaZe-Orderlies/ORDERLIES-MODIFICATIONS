@@ -5102,7 +5102,7 @@ political_actions = {
 						NOT = {
 							has_country_leader = {
 								ruling_only = yes
-								character = GER_hermann_goring
+								character = GER_air_chief_3_hermann_goring
 							}	
 						}
 					}

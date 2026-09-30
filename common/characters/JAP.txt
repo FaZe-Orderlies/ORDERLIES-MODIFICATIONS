@@ -590,7 +590,7 @@ characters = {
 	}
 
 	# Tomoyuki Yamashita
-	JAP_tomoyuki_yamashita = {
+	JAP_theorist_1_tomoyuki_yamashita = {
 		name = JAP_tomoyuki_yamashita
 
 		portraits = {
@@ -609,7 +609,7 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				military_theorist
+				theorist_jap_yamashita
 			}
 			can_be_fired = no
 		}
@@ -1367,8 +1367,52 @@ characters = {
 
 	}
 
+	# Yoshitoshi Tokugawa
+	JAP_theorist_2_yoshitoshi_tokugawa = {
+		name = JAP_yoshitoshi_tokugawa
+
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_yoshitoshi_tokugawa
+				small = GFX_portrait_JAP_yoshitoshi_tokugawa_small
+			}
+			civilian = {
+				large = GFX_portrait_JAP_yoshitoshi_tokugawa_scientist
+			}
+		}
+
+		scientist = {
+
+			traits = { scientist_trait_aircraft_specialist }
+
+			skills = {
+				specialization_air = 2
+			}
+
+			visible = {
+			}
+		}
+
+		
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = yoshitoshi_tokugawa
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				theorist_jap_tokugawa
+			}
+			can_be_fired = no
+		}
+
+	}
+
 	# Isoroku Yamamoto
-	JAP_isoroku_yamamoto = {
+	JAP_theorist_3_isoroku_yamamoto = {
 
 		name = JAP_isoroku_yamamoto
 
@@ -1391,7 +1435,7 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				naval_theorist
+				theorist_jap_yamamoto
 			}
 			can_be_fired = no
 		}
@@ -1737,49 +1781,6 @@ characters = {
 		}
 	}
 
-	# Yoshitoshi Tokugawa
-	JAP_yoshitoshi_tokugawa = {
-		name = JAP_yoshitoshi_tokugawa
-
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_yoshitoshi_tokugawa
-				small = GFX_portrait_JAP_yoshitoshi_tokugawa_small
-			}
-			civilian = {
-				large = GFX_portrait_JAP_yoshitoshi_tokugawa_scientist
-			}
-		}
-
-		scientist = {
-
-			traits = { scientist_trait_aircraft_specialist }
-
-			skills = {
-				specialization_air = 2
-			}
-
-			visible = {
-			}
-		}
-
-		
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = yoshitoshi_tokugawa
-			ledger = air
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			can_be_fired = no
-		}
-
-	}
 
 	# Hino Kumazō
 	JAP_hino_kumazo = {
@@ -1794,8 +1795,67 @@ characters = {
 
 	### ARMY CHIEFS ###
 
+	# Hideki Tōjō
+	JAP_army_chief_1_hideki_tojo = {
+		name = JAP_hideki_tojo
+
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_hideki_tojo
+				small = GFX_portrait_JAP_hideki_tojo_small
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = hideki_tojo
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 15
+					has_active_mission = JAP_army_faction_demands_military_factories
+				}
+			}
+		}
+
+		corps_commander = {
+			skill = 6
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 6
+            logistics_skill = 4
+
+            traits = {
+                infantry_leader
+                ranger
+                urban_assault_specialist
+                trickster
+				organizer
+            }
+			legacy_id = -1
+		}
+
+		#country_leader = {
+		#	ideology = emperor_fascism # was fascism_ideology
+		#	traits = {  }
+		#	expire = "1948.1.1.1"
+		#	id = -1
+		#}
+
+	}
+
 	# Prince Kan'in Kotohito
-	JAP_kanin_kotohito = {
+	JAP_army_chief_2_kanin_kotohito = {
 		name = JAP_kanin_kotohito
 
 		portraits = {
@@ -1880,100 +1940,10 @@ characters = {
 
 	}
 
-	# Hideki Tōjō
-	JAP_hideki_tojo = {
-		name = JAP_hideki_tojo
-
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_hideki_tojo
-				small = GFX_portrait_JAP_hideki_tojo_small
-			}
-		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = hideki_tojo
-			allowed = {
-				OR = {
-					original_tag = JAP
-					original_tag = MAN
-				}
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 150
-			ai_will_do = {
-				base = 5
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_army_faction_demands_military_factories
-				}
-			}
-		}
-
-		corps_commander = {
-			skill = 6
-            attack_skill = 4
-            defense_skill = 6
-            planning_skill = 6
-            logistics_skill = 4
-
-            traits = {
-                infantry_leader
-                ranger
-                urban_assault_specialist
-                trickster
-				organizer
-            }
-			legacy_id = -1
-		}
-
-		#country_leader = {
-		#	ideology = emperor_fascism # was fascism_ideology
-		#	traits = {  }
-		#	expire = "1948.1.1.1"
-		#	id = -1
-		#}
-
-	}
-
 	### NAVY CHIEFS ###
 
-	# Fushimi Hioyasu
-	JAP_fushimi_hiroyasu = {
-		name = JAP_fushimi_hiroyasu
-
-		portraits = {
-			army = {
-				small = GFX_idea_fushimi_hiroyasu
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = fushimi_hiroyasu
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 150
-			ai_will_do = {
-				base = 0.5
-				modifier = {
-					factor = 15
-					has_active_mission = JAP_naval_faction_demands_political_appointment
-				}
-			}
-		}
-
-	}
-
 	# Osami Nagano
-	JAP_osami_nagano = {
+	JAP_navy_chief_1_osami_nagano = {
 		name = JAP_osami_nagano
 
 		portraits = {
@@ -2004,7 +1974,7 @@ characters = {
 	}
 
 	# Shigetarō Shimada
-	JAP_shigetaro_shimada = {
+	JAP_navy_chief_2_shigetaro_shimada = {
 		name = JAP_shigetaro_shimada
 
 		portraits = {
@@ -2019,16 +1989,10 @@ characters = {
 			allowed = {
 				original_tag = JAP
 			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
 			traits = {
-				navy_chief_decisive_battle_2
+				navy_chief_screen_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1
 				modifier = {
@@ -2040,13 +2004,69 @@ characters = {
 
 	}
 
+	# Fushimi Hioyasu
+	JAP_navy_chief_3_fushimi_hiroyasu = {
+		name = JAP_fushimi_hiroyasu
+
+		portraits = {
+			army = {
+				small = GFX_idea_fushimi_hiroyasu
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = fushimi_hiroyasu
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 15
+					has_active_mission = JAP_naval_faction_demands_political_appointment
+				}
+			}
+		}
+
+	}
 
 	### AIR CHIEFS ###
 
 	# Doihara up there
 
+	# Korechika Anami
+	JAP_air_chief_1_korechika_anami = {
+		name = JAP_korechika_anami
+
+		portraits = {
+			army = {
+				small = GFX_idea_korechika_anami
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = korechika_anami
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+
 	# Torashirō Kawabe
-	JAP_torashiro_kawabe = {
+	JAP_air_chief_2_torashiro_kawabe = {
 		name = JAP_torashiro_kawabe
 
 		portraits = {
@@ -2070,32 +2090,6 @@ characters = {
 			}
 		}
 
-	}
-
-	# Korechika Anami
-	JAP_korechika_anami = {
-		name = JAP_korechika_anami
-
-		portraits = {
-			army = {
-				small = GFX_idea_korechika_anami
-			}
-		}
-
-		advisor = {
-			slot = air_chief
-			idea_token = korechika_anami
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				air_chief_all_weather_2
-			}
-			cost = 150
-			ai_will_do = {
-				base = 2
-			}
-		}
 	}
 
 

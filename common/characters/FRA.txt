@@ -181,7 +181,33 @@ characters={
 		}
 	}
 
-	FRA_maurice_gamelin={
+	FRA_army_chief_1_maxime_weygand={
+		name=FRA_maxime_weygand
+		portraits={
+			army={
+				small="GFX_idea_maxime_weygand"
+			}
+			army={
+				large=GFX_portrait_FRA_maxime_weygand
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maxime_weygand
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 7
+			}
+		}
+	}
+
+	FRA_army_chief_2_maurice_gamelin={
 		name=FRA_maurice_gamelin
 		portraits={
 			army={
@@ -207,32 +233,6 @@ characters={
 		}
 
 		
-	}
-
-	FRA_maxime_weygand={
-		name=FRA_maxime_weygand
-		portraits={
-			army={
-				small="GFX_idea_maxime_weygand"
-			}
-			army={
-				large=GFX_portrait_FRA_maxime_weygand
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = maxime_weygand
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 7
-			}
-		}
 	}
 
 	FRA_alphonse_georges={
@@ -280,7 +280,7 @@ characters={
 		
 	}
 
-	FRA_charles_de_gaulle={
+	FRA_theorist_1_charles_de_gaulle={
 		name=FRA_charles_de_gaulle
 		portraits={
 			army={
@@ -299,7 +299,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				military_theorist
+				theorist_fra_de_gaulle
 			}
 			can_be_fired = no
 		}
@@ -458,7 +458,7 @@ characters={
 		
 	}
 
-	FRA_francois_darlan={
+	FRA_navy_chief_1_francois_darlan={
 		name=FRA_francois_darlan
 		portraits={
 			army={
@@ -601,7 +601,7 @@ characters={
 
 	# Giraud up there
 
-	FRA_victor_denain={
+	FRA_theorist_2_victor_denain={
 		name=FRA_victor_denain
 		portraits={
 			army={
@@ -617,13 +617,13 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_fra_denain
 			}
 			can_be_fired = no
 		}
 	}
 
-	FRA_jean_decoux={
+	FRA_theorist_3_jean_decoux={
 		name=FRA_jean_decoux
 		portraits={
 			army={
@@ -639,7 +639,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				naval_theorist
+				theorist_fra_decoux
 			}
 			can_be_fired = no
 		}		
@@ -726,7 +726,30 @@ characters={
 		}
 	}
 
-	FRA_marcel_gensoul={
+	FRA_navy_chief_2_jean_marie_abrial={
+		name=FRA_jean_marie_abrial
+		portraits={
+			army={
+				small="GFX_idea_jean_marie_abrial"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = jean_marie_abrial
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	FRA_navy_chief_3_marcel_gensoul={
 		name=FRA_marcel_gensoul
 		portraits={
 			army={
@@ -748,38 +771,32 @@ characters={
 			}
 		}
 	}
-	
-	FRA_jean_marie_abrial={
-		name=FRA_jean_marie_abrial
+
+
+	FRA_air_chief_1_jean_romatet = {
+		name=FRA_jean_romatet
 		portraits={
 			army={
-				small="GFX_idea_jean_marie_abrial"
+				small="GFX_Portrait_France_Generic_land_9_small" 
 			}
 		}
 		advisor={
-			slot = navy_chief
-			idea_token = jean_marie_abrial
+			slot = air_chief
+			idea_token = FRA_jean_romatet 
 			allowed = {
 				original_tag = FRA
 			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
 			traits = {
-				navy_chief_commerce_raiding_2
+				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
-				factor = 1.000
+				factor = 2
 			}
 		}
 	}
 
-
-	FRA_joseph_vuillemin={
+	FRA_air_chief_2_joseph_vuillemin={
 		name=FRA_joseph_vuillemin
 		portraits={
 			army={
@@ -856,29 +873,6 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 1
-			}
-		}
-	}
-
-	FRA_jean_romatet = {
-		name=FRA_jean_romatet
-		portraits={
-			army={
-				small="GFX_Portrait_France_Generic_land_9_small" 
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = FRA_jean_romatet 
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				air_chief_all_weather_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 2
 			}
 		}
 	}

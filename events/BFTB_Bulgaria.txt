@@ -2350,7 +2350,7 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = BUL_hristo_lukov
+						character = BUL_army_chief_2_hristo_lukov
 						ruling_only = yes
 					}
 				}
@@ -2658,7 +2658,7 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = BUL_hristo_lukov
+						character = BUL_army_chief_2_hristo_lukov
 						ruling_only = yes
 					}
 				}
@@ -9051,7 +9051,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Battle for the Bosporus"
 		original_tag = BUL
-		has_country_leader = { character = BUL_hristo_lukov ruling_only = no }
+		has_country_leader = { character = BUL_army_chief_2_hristo_lukov ruling_only = no }
 		date > 1943.02.10
 	}
 

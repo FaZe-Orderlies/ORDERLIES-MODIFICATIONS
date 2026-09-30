@@ -175,38 +175,6 @@ characters={
 		}
 	}
 
-	CAN_leonard_w_murray={
-		name=CAN_leonard_w_murray
-		portraits={
-			army={
-				large="GFX_CAN_leonard_warren_murray"
-				small=GFX_portrait_CAN_leonard_w_murray_small
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = leonard_w_murray
-			ledger = navy
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				naval_theorist
-			}
-			can_be_fired = no
-		}
-
-		navy_leader={
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=-1
-		}
-	}
-
 	CAN_ht_bailliegrohman={
 		name=CAN_ht_bailliegrohman
 		portraits={
@@ -245,29 +213,11 @@ characters={
 		}
 	}
 
-	CAN_harry_dewolf={
-		name=CAN_harry_dewolf
-		portraits={
-			army={
-				large="GFX_CAN_harry_dewolf"
-				small=GFX_portrait_CAN_harry_dewolf_small
-			}
-		}
-		navy_leader={
-			traits={ bold superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=5
-			legacy_id=-1
-		}
-	}
 
 
 	### THEORISTS ###
 
-	CAN_kenneth_stuart={
+	CAN_theorist_1_kenneth_stuart={
 		name=CAN_kenneth_stuart
 		portraits={
 			army={
@@ -283,7 +233,7 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				military_theorist
+				theorist_minor_tank_expert
 			}
 			can_be_fired = no
 		}
@@ -323,7 +273,7 @@ characters={
 		#}
 	}
 
-	CAN_robert_leckie={
+	CAN_theorist_2_robert_leckie={
 		name=CAN_robert_leckie
 		portraits={
 			army={
@@ -339,16 +289,48 @@ characters={
 				original_tag = CAN
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
 			}
 			can_be_fired = no
+		}
+	}
+
+	CAN_theorist_3_leonard_w_murray={
+		name=CAN_leonard_w_murray
+		portraits={
+			army={
+				large="GFX_CAN_leonard_warren_murray"
+				small=GFX_portrait_CAN_leonard_w_murray_small
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = leonard_w_murray
+			ledger = navy
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				theorist_minor_shore_bombardment
+			}
+			can_be_fired = no
+		}
+
+		navy_leader={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=-1
 		}
 	}
 
 
 	### ARMY CHIEFS ###
 
-	CAN_harry_crerar={
+	CAN_army_chief_1_harry_crerar={
 		name=CAN_harry_crerar
 		portraits={
 			army={
@@ -371,7 +353,7 @@ characters={
 		}
 	}
 
-	CAN_andrew_mcnaughton={
+	CAN_army_chief_2_andrew_mcnaughton={
 		name=CAN_andrew_mcnaughton
 		portraits={
 			army={
@@ -422,7 +404,7 @@ characters={
 
 	### NAVY CHIEFS ###
 
-	CAN_percy_nelles={
+	CAN_navy_chief_1_percy_nelles={
 		name=CAN_percy_nelles
 		portraits={
 			army={
@@ -445,7 +427,40 @@ characters={
 		}
 	}
 
-	CAN_alasdair_murray={
+	CAN_navy_chief_2_harry_dewolf={
+		name=CAN_harry_dewolf
+		portraits={
+			army={
+				large="GFX_CAN_harry_dewolf"
+				small=GFX_portrait_CAN_harry_dewolf_small
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = CAN_harry_dewolf
+			cost = 150
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits={ bold superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=-1
+		}
+	}
+
+	CAN_navy_chief_3_alasdair_murray={
 		name=CAN_alasdair_murray
 		portraits={
 			army={
@@ -518,30 +533,7 @@ characters={
 		}
 	}
 
-	CAN_george_croil={
-		name=CAN_george_croil
-		portraits={
-			army={
-				small="GFX_idea_CAN_george_croil"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = CAN_george_croil
-			cost = 150
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	CAN_harold_edwards={
+	CAN_air_chief_1_harold_edwards={
 		name=CAN_harold_edwards
 		portraits={
 			army={
@@ -557,6 +549,29 @@ characters={
 			}
 			traits = {
 				air_chief_all_weather_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CAN_air_chief_2_george_croil={
+		name=CAN_george_croil
+		portraits={
+			army={
+				small="GFX_idea_CAN_george_croil"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CAN_george_croil
+			cost = 150
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				air_chief_night_operations_2
 			}
 			ai_will_do = {
 				factor = 1.000

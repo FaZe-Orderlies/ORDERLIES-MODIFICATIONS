@@ -4412,7 +4412,7 @@ country_event = {
 	trigger = {
 		has_country_leader = {
 			ruling_only = yes
-			character = FIN_carl_mannerheim
+			character = FIN_army_chief_1_carl_mannerheim
 		}
 		has_war = no
 	}

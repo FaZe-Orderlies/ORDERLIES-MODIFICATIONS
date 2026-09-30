@@ -1,4 +1,4 @@
-﻿capital = 111
+capital = 111
 
 set_oob = "FIN_1936"
 
@@ -199,13 +199,13 @@ if = {
 }
 
 ### ARMY LEADERS
-recruit_character = FIN_carl_mannerheim
+recruit_character = FIN_army_chief_1_carl_mannerheim
 recruit_character = FIN_erik_heinrichs
 recruit_character = FIN_vilho_petter_nenonen
 recruit_character = FIN_woldemar_hagglund
 recruit_character = FIN_juho_heiskanen
 recruit_character = FIN_wiljo_einar_tuompo
-recruit_character = FIN_aarne_juutilainen
+recruit_character = FIN_theorist_1_aarne_juutilainen
 recruit_character = FIN_fanni_luukkonen
 recruit_character = FIN_paavo_talvela
 recruit_character = FIN_hannu_hannuksela
@@ -235,11 +235,11 @@ if = {
 
 ### NAVY LEADERS
 recruit_character = FIN_ragnar_hakola
-recruit_character = FIN_svante_sundman
+recruit_character = FIN_navy_chief_2_svante_sundman
 
 ### THEORISTS ###
-recruit_character = FIN_vaino_valve
-recruit_character = FIN_gustaf_magnusson
+recruit_character = FIN_theorist_3_vaino_valve
+recruit_character = FIN_theorist_2_gustaf_magnusson
 recruit_character = FIN_torsti_verkkola
 if = {
 	limit = {
@@ -251,15 +251,15 @@ if = {
 
 ###ARMY CHIEFS ###
 recruit_character = FIN_lauri_malmberg
-recruit_character = FIN_hugo_osterman
+recruit_character = FIN_army_chief_2_hugo_osterman
 
 ### NAVY CHIEFS ###
-recruit_character = FIN_olavi_arho
-recruit_character = FIN_eero_rahola
+recruit_character = FIN_navy_chief_1_olavi_arho
+recruit_character = FIN_navy_chief_3_eero_rahola
 
 ### AIR CHIEFS ###
-recruit_character = FIN_jarl_lundqvist
-recruit_character = FIN_olavi_sarko
+recruit_character = FIN_air_chief_2_jarl_lundqvist
+recruit_character = FIN_air_chief_1_olavi_sarko
 
 ### MILITARY HIGH COMMAND ###
 recruit_character = FIN_karl_oesch
@@ -336,7 +336,7 @@ if = {
 	FIN_lauri_malmberg = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-	FIN_hugo_osterman = {
+	FIN_army_chief_2_hugo_osterman = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_alpo_marttinen = {
@@ -350,7 +350,7 @@ if = {
 	FIN_kyosti_kallio = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
-	FIN_carl_mannerheim = {
+	FIN_army_chief_1_carl_mannerheim = {
 		set_character_flag = FIN_anti_communist_character_flag
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
@@ -365,7 +365,7 @@ if = {
 	FIN_woldemar_hagglund = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-	FIN_aarne_juutilainen = {
+	FIN_theorist_1_aarne_juutilainen = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_wiljo_einar_tuompo = {

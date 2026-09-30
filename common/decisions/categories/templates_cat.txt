@@ -1,4 +1,4 @@
-﻿templates_category = {
+templates_category = {
 }
     template_decisions = {
     icon = GFX_decision_category_army_reform

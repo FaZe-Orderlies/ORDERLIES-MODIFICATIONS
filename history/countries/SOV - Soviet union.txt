@@ -63,16 +63,31 @@ recruit_character = SOV_aleksandr_kerensky
 recruit_character = SOV_konstantin_rodzayevsky
 
 
+# --- Theorists (Army -> Air -> Navy) ---
+recruit_character = SOV_theorist_1_boris_shaposhnikov
+recruit_character = SOV_theorist_2_aleksandr_golovanov
+recruit_character = SOV_theorist_3_sergey_gorshkov
+
+# --- Army Chiefs (Offensive -> Defensive) ---
+recruit_character = SOV_army_chief_1_semyon_timoshenko
+recruit_character = SOV_army_chief_2_kliment_voroshilov
+
+# --- Navy Chiefs (Decisive -> Screens -> Commerce Raiding) ---
+recruit_character = SOV_navy_chief_1_ivan_yumashev
+recruit_character = SOV_navy_chief_2_pyotr_smirnov
+recruit_character = SOV_navy_chief_3_nikolay_kuznetsov
+
+# --- Air Chiefs (All-weather -> Night-ops) ---
+recruit_character = SOV_air_chief_1_pavel_rychagov
+recruit_character = SOV_air_chief_2_aleksandr_novikov
+
 recruit_character = SOV_aleksandr_vasilevsky
-recruit_character = SOV_aleksandr_golovanov
 recruit_character = SOV_aleksandr_gorbatov
-recruit_character = SOV_aleksandr_novikov
 recruit_character = SOV_aleksandr_yegorov
 recruit_character = SOV_andrey_grechko
 recruit_character = SOV_andrey_vlasov
 recruit_character = SOV_andrey_yeryomenko
 recruit_character = SOV_arseny_golovko
-recruit_character = SOV_boris_shaposhnikov
 recruit_character = SOV_dmitry_lelyushenko
 recruit_character = SOV_filipp_golikov
 recruit_character = SOV_filipp_oktyabrsky
@@ -86,10 +101,8 @@ recruit_character = SOV_issa_pliyev
 recruit_character = SOV_ivan_chernyakhovsky
 recruit_character = SOV_ivan_fedyuninsky
 recruit_character = SOV_ivan_konev
-recruit_character = SOV_ivan_yumashev
 recruit_character = SOV_kirill_meretskov
 recruit_character = SOV_kirill_moskalenko
-recruit_character = SOV_kliment_voroshilov
 recruit_character = SOV_konstantin_rokossovsky
 recruit_character = SOV_konstantin_vershinin
 recruit_character = SOV_kuzma_galitsky
@@ -105,18 +118,12 @@ recruit_character = SOV_nikandr_chibisov
 recruit_character = SOV_nikolay_berzarin
 recruit_character = SOV_nikolay_vatutin
 
-recruit_character = SOV_nikolay_kuznetsov
-
-recruit_character = SOV_pavel_rychagov
 recruit_character = SOV_pavel_zhigarev
-recruit_character = SOV_pyotr_smirnov
 recruit_character = SOV_rodion_malinovsky
 recruit_character = SOV_semyon_budyonny
-recruit_character = SOV_semyon_timoshenko
 recruit_character = SOV_sergey_khudyakov
 recruit_character = SOV_sergey_korolyov
 recruit_character = SOV_sergey_rudenko
-recruit_character = SOV_sergey_gorshkov
 recruit_character = SOV_stepan_krasovsky
 recruit_character = SOV_vasily_blyukher
 recruit_character = SOV_vasily_chuykov
@@ -1001,7 +1008,7 @@ add_ideas = {
 	SOV_nikolay_yezhov = { SOV_purge_character_effect = yes }
 	SOV_sergey_khudyakov = { SOV_purge_character_effect = yes }
 	SOV_yakov_smushkevich = { SOV_purge_character_effect = yes }
-	SOV_pavel_rychagov = { SOV_purge_character_effect = yes }
+	SOV_air_chief_1_pavel_rychagov = { SOV_purge_character_effect = yes }
 
 	#COWED GENERALS
 	set_temp_variable = { army_leader_counter = 0 }

@@ -1,4 +1,4 @@
-﻿##############################
+##############################
 #### Japanese Country Events ####
 #################################
 
@@ -11934,11 +11934,11 @@ country_event = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = JAP_hideki_tojo
+					character = JAP_army_chief_1_hideki_tojo
 				}	
 				has_country_leader = {
 					ruling_only = yes
-					character = JAP_isoroku_yamamoto
+					character = JAP_theorist_3_isoroku_yamamoto
 				}	
 				has_country_leader = {
 					ruling_only = yes
@@ -12051,7 +12051,7 @@ country_event = {
 			}
 			remove_ideas = korechika_anami
 		}
-		retire_character = JAP_korechika_anami
+		retire_character = JAP_air_chief_1_korechika_anami
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -14136,7 +14136,7 @@ country_event = {
 
 	trigger = {
 		original_tag = JAP
-		has_character = JAP_isoroku_yamamoto
+		has_character = JAP_theorist_3_isoroku_yamamoto
 		NOT = {
 			has_completed_focus = JAP_yamamotos_premiership
 			focus_progress = {
@@ -14145,7 +14145,7 @@ country_event = {
 			}
 			has_country_leader = {
 				ruling_only = yes
-				character = JAP_isoroku_yamamoto
+				character = JAP_theorist_3_isoroku_yamamoto
 			}	
 		}
 		USA = {
@@ -14207,7 +14207,7 @@ country_event = {
 	}
 
 	trigger = {
-		has_character = JAP_isoroku_yamamoto
+		has_character = JAP_theorist_3_isoroku_yamamoto
 		NOT = { has_completed_focus = JAP_yamamotos_premiership }
 	}
 
@@ -14221,11 +14221,11 @@ country_event = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		effect_tooltip = {
-			retire_character = JAP_isoroku_yamamoto
+			retire_character = JAP_theorist_3_isoroku_yamamoto
 		}
 		
 		hidden_effect = {
-			JAP_isoroku_yamamoto = {
+			JAP_theorist_3_isoroku_yamamoto = {
 				remove_advisor_role = {
 					character = isoroku_yamamoto
 					slot = theorist 
@@ -14254,14 +14254,14 @@ country_event = {
 	}
 
 	trigger = {
-		has_character = JAP_isoroku_yamamoto
+		has_character = JAP_theorist_3_isoroku_yamamoto
 	}
 
 	# Lucky bois
 	option = { 
 		name = SEA_japan_air_accidents_events.02.a
 		
-		JAP_isoroku_yamamoto = {
+		JAP_theorist_3_isoroku_yamamoto = {
 			add_coordination = 1
 			add_maneuver = 1
 		}

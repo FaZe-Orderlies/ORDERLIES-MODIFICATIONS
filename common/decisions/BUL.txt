@@ -744,11 +744,11 @@ BUL_internal_factions = {
 			unlock_decision_tooltip = BUL_cooperation_appoint_zveno_members
 			BUL_zveno_low_loyalty_increase_effect = yes
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = BUL_kiril_stanchev
+			show_ideas_tooltip = BUL_army_chief_1_kiril_stanchev
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = BUL_stoyan_trendafilov
 			show_ideas_tooltip = BUL_vladimir_stoychev
-			show_ideas_tooltip = BUL_gancho_manchev
+			show_ideas_tooltip = BUL_air_chief_1_gancho_manchev
 			set_country_flag = BUL_zveno_bolstered_flag
 			clr_country_flag = BUL_internal_affairs_ongoing_flag
 

@@ -2882,7 +2882,7 @@ defined_text = {
 		trigger = {
 			has_country_leader = {
 				ruling_only = yes
-				character = GER_hermann_goring
+				character = GER_air_chief_3_hermann_goring
 			}
 		}
 		localization_key = GER_hermann_goring
@@ -2967,7 +2967,7 @@ defined_text = { #FUHRER PORTRAIT FOR EVENT PIC (STRONG SUCCESSOR)
 		trigger = {
 			has_country_leader = {
 				ruling_only = yes
-				character = GER_hermann_goring
+				character = GER_air_chief_3_hermann_goring
 			}
 		}
 		localization_key = GFX_report_event_GER_goring

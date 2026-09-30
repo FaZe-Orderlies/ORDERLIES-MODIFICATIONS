@@ -1,4 +1,4 @@
-﻿################################
+################################
 ### Hungarian Country Events ###
 ################################
 
@@ -5733,7 +5733,7 @@ country_event = {
 #
 #	immediate = {
 #		add_advisor_role = {
-#			character = GER_hermann_goring
+#			character = GER_air_chief_3_hermann_goring
 #			advisor = {
 #				slot = political_advisor
 #				cost = 150

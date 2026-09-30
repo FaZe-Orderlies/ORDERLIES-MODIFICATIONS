@@ -291,11 +291,11 @@ on_actions = {
 						limit = {
 							NOT = {
 								has_country_leader = {
-									character = ITA_italo_balbo
+									character = ITA_air_chief_1_italo_balbo
 								}
 							}
 						}
-						promote_character = ITA_italo_balbo
+						promote_character = ITA_air_chief_1_italo_balbo
 					}
 				}
 				else_if = { #GRANDI

@@ -3481,7 +3481,7 @@ country_event = {
 
 		add_stability = 0.1
 
-		GER_hermann_goring = {
+		GER_air_chief_3_hermann_goring = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
@@ -3858,11 +3858,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -3971,11 +3971,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4068,7 +4068,7 @@ country_event = {
 		# Göring becomes the new Fascist leader of Germany
 		kill_country_leader = yes
 
-		GER_hermann_goring = {
+		GER_air_chief_3_hermann_goring = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
@@ -4114,11 +4114,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4227,11 +4227,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4364,11 +4364,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4477,11 +4477,11 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_franz_halder = { # Character
+					GER_army_chief_2_franz_halder = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_walther_von_brauchitsch = { # Character
+					GER_army_chief_1_walther_von_brauchitsch = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}

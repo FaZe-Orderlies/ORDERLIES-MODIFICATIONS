@@ -4112,11 +4112,11 @@ focus_tree = {
 					}
 				}
 				effect_tooltip = {
-					retire_character = JAP_hideki_tojo
-					retire_character = JAP_fushimi_hiroyasu
+					retire_character = JAP_army_chief_1_hideki_tojo
+					retire_character = JAP_navy_chief_3_fushimi_hiroyasu
 					retire_character = JAP_shunroku_hata
 					retire_character = JAP_hisaichi_terauchi
-					retire_character = JAP_kanin_kotohito
+					retire_character = JAP_army_chief_2_kanin_kotohito
 					retire_character = JAP_nashimoto_morimasa
 				}
 			}
@@ -4129,11 +4129,11 @@ focus_tree = {
 			}	
 
 			hidden_effect = {
-				retire_character = JAP_hideki_tojo
-				retire_character = JAP_fushimi_hiroyasu
+				retire_character = JAP_army_chief_1_hideki_tojo
+				retire_character = JAP_navy_chief_3_fushimi_hiroyasu
 				retire_character = JAP_shunroku_hata
 				retire_character = JAP_hisaichi_terauchi
-				retire_character = JAP_kanin_kotohito
+				retire_character = JAP_army_chief_2_kanin_kotohito
 				retire_character = JAP_nashimoto_morimasa
 				#retire_character = JAP_kuniaki_koiso
 				retire_character = JAP_hatazo_adachi
@@ -9765,7 +9765,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_country_leader_role = {
-				character = JAP_hideki_tojo
+				character = JAP_army_chief_1_hideki_tojo
 				promote_leader = yes
 				country_leader = {
 					ideology = emperor_fascism
@@ -9836,7 +9836,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_country_leader_role = {
-				character = JAP_isoroku_yamamoto
+				character = JAP_theorist_3_isoroku_yamamoto
 				promote_leader = yes
 				country_leader = {
 					ideology = emperor_fascism
@@ -16848,16 +16848,16 @@ focus_tree = {
 					}
 				}
 				effect_tooltip = {
-					retire_character = JAP_fushimi_hiroyasu
-					retire_character = JAP_torashiro_kawabe
+					retire_character = JAP_navy_chief_3_fushimi_hiroyasu
+					retire_character = JAP_air_chief_2_torashiro_kawabe
 					retire_character = JAP_nishizo_tsukahara
 					retire_character = JAP_heisuke_yanagawa
 				}
 			}
 
 			hidden_effect = {
-				retire_character = JAP_fushimi_hiroyasu
-				retire_character = JAP_torashiro_kawabe
+				retire_character = JAP_navy_chief_3_fushimi_hiroyasu
+				retire_character = JAP_air_chief_2_torashiro_kawabe
 				retire_character = JAP_nishizo_tsukahara
 				retire_character = JAP_heisuke_yanagawa
 			}

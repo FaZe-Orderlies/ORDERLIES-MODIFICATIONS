@@ -105,7 +105,7 @@ characters={
 		}
 	}
 
-	USA_omar_bradley={
+	USA_theorist_1_omar_bradley={
 		name=USA_omar_bradley
 		portraits={
 			army={
@@ -125,7 +125,7 @@ characters={
 			}
 
 			traits = {
-				military_theorist
+				theorist_usa_bradley
 			}
 			can_be_fired = no
 		}
@@ -196,7 +196,7 @@ characters={
 		
 	}
 
-	USA_dwight_d_eisenhower={
+	USA_army_chief_1_dwight_d_eisenhower={
 		name=USA_dwight_d_eisenhower
 		portraits={
 			army={
@@ -215,16 +215,10 @@ characters={
 					is_literally_china = yes
 				}
 			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -327,18 +321,11 @@ characters={
 						original_tag = USA
 					}
 				}
+				visible = {
+					always = no
+				}
 				available = {
-					USA = {
-						NOT = {
-							OR = {
-								has_country_flag = douglas_macarthur_sent_to_china
-								has_country_leader = {
-									ruling_only = yes
-									character = USA_douglas_macarthur
-								}
-							}
-						}
-					}
+					always = no
 				}
 				traits = {
 					army_chief_offensive_2
@@ -400,17 +387,11 @@ characters={
 						original_tag = USA
 					}
 				}
+				visible = {
+					always = no
+				}
 				available = {
-					NOT = {
-						
-						OR = {
-							has_country_flag = douglas_macarthur_sent_to_china
-							has_country_leader = {
-								ruling_only = yes
-								character = USA_douglas_macarthur
-							}
-						}
-					}
+					always = no
 				}
 				traits = {
 					army_chief_offensive_2
@@ -703,7 +684,7 @@ characters={
 		
 	}
 
-	USA_ernest_king={
+	USA_navy_chief_1_ernest_king={
 		name=USA_ernest_king
 		portraits={
 			navy={
@@ -739,7 +720,29 @@ characters={
 		}
 	}
 
-	USA_chester_w_nimitz={
+	USA_theorist_2_curtis_lemay={
+		name=USA_curtis_lemay
+		portraits={
+			army={
+				small="GFX_idea_curtis_lemay"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = curtis_lemay
+			ledger = air
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				theorist_usa_lemay
+			}
+			can_be_fired = no
+		}
+	}
+
+	USA_theorist_3_chester_w_nimitz={
 		name=USA_chester_w_nimitz
 		portraits={
 			army={
@@ -758,7 +761,7 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				naval_theorist
+				theorist_usa_nimitz
 			}
 			can_be_fired = no
 		}
@@ -774,7 +777,40 @@ characters={
 		}
 	}
 
-	USA_william_halsey_jr={
+	USA_navy_chief_2_harold_rainsford_stark={
+		name=USA_harold_rainsford_stark
+		portraits={
+			army={
+				large=GFX_portrait_USA_harold_rainsford_stark
+				small=GFX_portrait_USA_harold_rainsford_stark_small
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = USA_harold_rainsford_stark
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits = { blockade_runner seawolf spotter }
+			skill = 6
+			attack_skill = 8
+			defense_skill = 8
+			maneuvering_skill = 8
+			coordination_skill = 8
+			legacy_id=0
+		}
+	}
+
+	USA_navy_chief_3_william_halsey_jr={
 		name=USA_william_halsey_jr
 		portraits={
 			navy={
@@ -858,24 +894,6 @@ characters={
 	
 	}
 
-	USA_harold_rainsford_stark={
-		name=USA_harold_rainsford_stark
-		portraits={
-			army={
-				large=GFX_portrait_USA_harold_rainsford_stark
-				small=GFX_portrait_USA_harold_rainsford_stark_small
-			}
-		}
-		navy_leader={
-			traits = { blockade_runner seawolf spotter }
-			skill = 6
-			attack_skill = 8
-			defense_skill = 8
-			maneuvering_skill = 8
-			coordination_skill = 8
-			legacy_id=0
-		}
-	}
 
 	USA_arleigh_burke={
 		name=USA_arleigh_burke
@@ -927,27 +945,6 @@ characters={
 		}
 	}
 
-	USA_curtis_lemay={
-		name=USA_curtis_lemay
-		portraits={
-			army={
-				small="GFX_idea_curtis_lemay"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = curtis_lemay
-			ledger = air
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			can_be_fired = no
-		}
-	}
 
 	USA_harold_mcclelland={
 		name=USA_harold_mcclelland
@@ -967,7 +964,7 @@ characters={
 
 	# Krueger up there
 
-	USA_george_marshall={
+	USA_army_chief_2_george_marshall={
 		name=USA_george_marshall
 		portraits={
 			army={
@@ -1004,30 +1001,7 @@ characters={
 
 	### AIR CHIEFS
 
-	USA_henry_arnold={
-		name=USA_henry_arnold
-		portraits={
-			army={
-				small="GFX_idea_henry_arnold"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = henry_arnold
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	USA_carl_spaatz={
+	USA_air_chief_1_carl_spaatz={
 		name=USA_carl_spaatz
 		portraits={
 			army={
@@ -1042,6 +1016,29 @@ characters={
 			}
 			traits = {
 				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	USA_air_chief_2_henry_arnold={
+		name=USA_henry_arnold
+		portraits={
+			army={
+				small="GFX_idea_henry_arnold"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = henry_arnold
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				air_chief_night_operations_2
 			}
 			cost = 150
 			ai_will_do = {

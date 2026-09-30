@@ -551,6 +551,12 @@ characters={
 				allowed = {
 					original_tag = AST
 				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
+				}
 				traits = {
 					army_chief_defensive_2
 				}
@@ -581,6 +587,12 @@ characters={
 				idea_token = AST_thomas_blamey
 				allowed = {
 					original_tag = AST
+				}
+				visible = {
+					always = no
+				}
+				available = {
+					always = no
 				}
 				traits = {
 					army_chief_defensive_2
@@ -1372,29 +1384,7 @@ characters={
 	### THEORISTS ###
 	#################
 
-	AST_leighton_bracegirdle={
-		name=AST_leighton_bracegirdle
-		portraits={
-			army={
-				small=GFX_portrait_AST_leighton_bracegirdle_small 
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = AST_leighton_bracegirdle
-			ledger = navy
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				naval_theorist
-			}
-			can_be_fired = no
-		}
-	}
-
-	AST_henry_wynter={
+	AST_theorist_1_henry_wynter={
 		name=AST_henry_wynter
 		portraits={
 			army={
@@ -1412,13 +1402,13 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				military_theorist
+				theorist_minor_tank_expert
 			}
 			can_be_fired = no
 		}
 	}
 
-	AST_james_fairbairn={
+	AST_theorist_2_james_fairbairn={
 		name=AST_james_fairbairn
 		portraits={
 			army={
@@ -1434,7 +1424,29 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				air_warfare_theorist
+				theorist_minor_air_superiority
+			}
+			can_be_fired = no
+		}
+	}
+
+	AST_theorist_3_leighton_bracegirdle={
+		name=AST_leighton_bracegirdle
+		portraits={
+			army={
+				small=GFX_portrait_AST_leighton_bracegirdle_small 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = AST_leighton_bracegirdle
+			ledger = navy
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				theorist_minor_shore_bombardment
 			}
 			can_be_fired = no
 		}
@@ -1452,6 +1464,56 @@ characters={
 	#######################
 	#### CHIEF OF ARMY ####
 	#######################
+
+	AST_army_chief_1_john_lavarack={
+		name=AST_john_lavarack
+		portraits={
+			army={
+				small=GFX_portrait_AST_john_lavarack_small
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AST_john_lavarack
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+
+			ai_will_do = {
+
+				factor = 1
+			}
+		}
+	}
+
+	AST_army_chief_2_vernon_sturdee={
+		name=AST_vernon_sturdee
+		portraits={
+			army={
+				small=GFX_portrait_AST_vernon_sturdee_small
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AST_vernon_sturdee
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+
+			ai_will_do = {
+
+				factor = 1
+			}
+		}
+	}
 
 	AST_brudenell_white={
 
@@ -1488,31 +1550,6 @@ characters={
 
 	}
 
-	AST_john_lavarack={
-		name=AST_john_lavarack
-		portraits={
-			army={
-				small=GFX_portrait_AST_john_lavarack_small
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = AST_john_lavarack
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 150
-
-			ai_will_do = {
-
-				factor = 1
-			}
-		}
-	}
-
 	AST_sydney_rowell={
 		name=AST_sydney_rowell
 		portraits={
@@ -1544,96 +1581,11 @@ characters={
 		}
 	}
 
-	AST_vernon_sturdee={
-		name=AST_vernon_sturdee
-		portraits={
-			army={
-				small=GFX_portrait_AST_vernon_sturdee_small
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = AST_vernon_sturdee
-			allowed = {
-				original_tag = AST
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				army_chief_defensive_1
-			}
-			cost =  50
-
-			ai_will_do = {
-
-				factor = 1
-			}
-		}
-	}
-
 	#######################
 	#### CHIEF OF NAVY ####
 	#######################
 
-	AST_percival_mcneil={
-		name=AST_percival_mcneil
-		portraits={
-			army={
-				small=GFX_portrait_AST_percival_mcneil_small
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = AST_percival_mcneil
-			allowed = {
-				original_tag = AST
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				AST_naval_engineer
-			}
-			cost = 100
-
-			ai_will_do = {
-				factor = 2
-			}
-		}
-	}
-
-	AST_guy_royle={
-		name=AST_guy_royle
-		portraits={
-			army={
-				small=GFX_portrait_AST_guy_royle_small
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = AST_guy_royle
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 150
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	AST_ragnar_colvin={
+	AST_navy_chief_1_ragnar_colvin={
 		name=AST_ragnar_colvin
 		portraits={
 			army={
@@ -1658,11 +1610,59 @@ characters={
 		}
 	}
 
+	AST_navy_chief_2_percival_mcneil={
+		name=AST_percival_mcneil
+		portraits={
+			army={
+				small=GFX_portrait_AST_percival_mcneil_small
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = AST_percival_mcneil
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	AST_navy_chief_3_guy_royle={
+		name=AST_guy_royle
+		portraits={
+			army={
+				small=GFX_portrait_AST_guy_royle_small
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = AST_guy_royle
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 150
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	######################
 	#### CHIEF OF AIR ####
 	######################
 
-	AST_george_jones={
+	AST_air_chief_1_george_jones={
 		name=AST_george_jones
 		portraits={
 			army={
@@ -1686,6 +1686,31 @@ characters={
 			}
 		}	
 
+	}
+
+	AST_air_chief_2_richard_williams={
+		name=AST_richard_williams
+		portraits={
+			army={
+				small=GFX_portrait_AST_richard_williams_small
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = AST_richard_williams
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 150
+
+			ai_will_do = {
+
+				factor = 2
+			}
+		}		
 	}
 
 	AST_stanley_goble={
@@ -1744,31 +1769,6 @@ characters={
 				factor = 1.5
 			}
 		}	
-	}
-
-	AST_richard_williams={
-		name=AST_richard_williams
-		portraits={
-			army={
-				small=GFX_portrait_AST_richard_williams_small
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = AST_richard_williams
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 150
-
-			ai_will_do = {
-
-				factor = 2
-			}
-		}		
 	}
 
 	AST_charles_burnett={

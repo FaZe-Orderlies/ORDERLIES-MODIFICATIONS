@@ -488,7 +488,7 @@ ideas = {
 		ITA_italo_balbo_traits = { #HIDDEN ITALO BALBO LEADER AIR RESEARCH TRAIT
 			name = ITA_italo_balbo
 
-			picture = ITA_italo_balbo
+			picture = ITA_air_chief_1_italo_balbo
 
 			removal_cost = -1	
 	
@@ -497,7 +497,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_character = ITA_italo_balbo
+				has_character = ITA_air_chief_1_italo_balbo
 			}
 	
 			research_bonus = {

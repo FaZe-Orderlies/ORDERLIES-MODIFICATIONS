@@ -1884,17 +1884,17 @@ ITA_characters_to_purge_effect = {
 	#GENERALS
 	if = {#First alternative for purge
 		limit = {
-			has_character = ITA_rodolfo_graziani
-			ITA_rodolfo_graziani = { has_character_flag = ITA_character_can_be_purged }
+			has_character = ITA_theorist_1_rodolfo_graziani
+			ITA_theorist_1_rodolfo_graziani = { has_character_flag = ITA_character_can_be_purged }
 		}
-		ITA_rodolfo_graziani = { set_character_flag = ITA_purge_general }
+		ITA_theorist_1_rodolfo_graziani = { set_character_flag = ITA_purge_general }
 	}
 	else_if = {#Second alternative if the first one isn't available
 		limit = {
-			has_character = ITA_ugo_cavallero
-			ITA_ugo_cavallero = { has_character_flag = ITA_character_can_be_purged }
+			has_character = ITA_army_chief_1_ugo_cavallero
+			ITA_army_chief_1_ugo_cavallero = { has_character_flag = ITA_character_can_be_purged }
 		}
-		ITA_ugo_cavallero = { set_character_flag = ITA_purge_general }
+		ITA_army_chief_1_ugo_cavallero = { set_character_flag = ITA_purge_general }
 	}
 	else = {#Third, random alternative if the first two aren't available
 		random_character = {

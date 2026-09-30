@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_germany
+add_namespace = wtt_germany
 
 # Event starting neutral civil war
 country_event = {
@@ -275,11 +275,11 @@ country_event = {
 				            set_nationality = PREV.PREV
 				            # Transfers to breakaway
 				        }
-				        GER_erich_raeder = { # Character
+				        GER_navy_chief_1_erich_raeder = { # Character
 				            set_nationality = PREV.PREV
 				            # Transfers to breakaway
 				        }
-				        GER_karl_donitz = { # Character
+				        GER_navy_chief_3_karl_donitz = { # Character
 				            set_nationality = PREV.PREV
 				            # Transfers to breakaway
 				        }

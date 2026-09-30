@@ -149,7 +149,7 @@ characters = {
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
 
-	ITA_rodolfo_graziani = {
+	ITA_theorist_1_rodolfo_graziani = {
 		name = ITA_rodolfo_graziani
 		portraits = {
 			army = {
@@ -167,7 +167,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				military_theorist
+				theorist_ita_graziani
 			}
 			can_be_fired = no
 		}
@@ -205,7 +205,48 @@ characters = {
 		}
 	}
 
-	ITA_pietro_badoglio = {
+	ITA_army_chief_1_ugo_cavallero = {
+		name = ITA_ugo_cavallero
+		portraits = {
+			army = {
+				small = GFX_idea_ugo_cavallero
+				large = GFX_portrait_ITA_ugo_cavallero
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = ugo_cavallero
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		corps_commander = {
+			skill = 6
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 6
+            logistics_skill = 4
+
+            traits = {
+                infantry_leader
+                hill_fighter
+                urban_assault_specialist
+                trickster
+            } 
+			legacy_id = 0
+		}
+	}
+
+	ITA_army_chief_2_pietro_badoglio = {
 		name = ITA_pietro_badoglio
 		portraits = {
 			army = {
@@ -279,7 +320,7 @@ characters = {
 		
 	}
 
-	ITA_italo_balbo = {
+	ITA_air_chief_1_italo_balbo = {
 		name = ITA_italo_balbo
 		portraits = {
 			army = {
@@ -297,16 +338,10 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -338,47 +373,6 @@ characters = {
                 urban_assault_specialist
                 trickster
             }
-			legacy_id = 0
-		}
-	}
-
-	ITA_ugo_cavallero = {
-		name = ITA_ugo_cavallero
-		portraits = {
-			army = {
-				small = GFX_idea_ugo_cavallero
-				large = GFX_portrait_ITA_ugo_cavallero
-			}
-		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = ugo_cavallero
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 150
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		
-		corps_commander = {
-			skill = 6
-            attack_skill = 4
-            defense_skill = 6
-            planning_skill = 6
-            logistics_skill = 4
-
-            traits = {
-                infantry_leader
-                hill_fighter
-                urban_assault_specialist
-                trickster
-            } 
 			legacy_id = 0
 		}
 	}
@@ -727,7 +721,7 @@ characters = {
                                                                                              
 
 
-	ITA_inigo_campioni = {
+	ITA_navy_chief_1_inigo_campioni = {
 		name = ITA_inigo_campioni
 		portraits = {
 			navy = {
@@ -861,7 +855,30 @@ characters = {
 		
 	}
 
-	ITA_angelo_iachino = {
+	ITA_theorist_2_renato_sandalli = {
+		name = ITA_renato_sandalli
+		portraits = {
+			army = {
+				small = GFX_idea_renato_sandalli
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = renato_sandalli
+			ledger = air
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			traits = {
+				theorist_ita_sandalli
+			}
+			can_be_fired = no
+		}		
+	}
+
+	ITA_theorist_3_angelo_iachino = {
 		name = ITA_angelo_iachino
 		portraits = {
 			navy = {
@@ -879,7 +896,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				naval_theorist
+				theorist_ita_iachino
 			}
 			can_be_fired = no
 		}
@@ -929,28 +946,6 @@ characters = {
 		}
 	}
 
-	ITA_renato_sandalli = {
-		name = ITA_renato_sandalli
-		portraits = {
-			army = {
-				small = GFX_idea_renato_sandalli
-			}
-		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = renato_sandalli
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			can_be_fired = no
-		}		
-	}
 	
 	ITA_romeo_bernotti = {
 		name = ITA_romeo_bernotti
@@ -1005,7 +1000,31 @@ characters = {
 
 	# Campioni up there
 
-	ITA_domenico_cavagnari = {
+	ITA_navy_chief_2_raffaele_de_courten = {
+		name = ITA_raffaele_de_courten
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_raffaele_de_courten_small
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = ITA_raffaele_de_courten
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			traits = {
+				navy_chief_screen_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	ITA_navy_chief_3_domenico_cavagnari = {
 		name = ITA_domenico_cavagnari
 		portraits = {
 			army = {
@@ -1059,42 +1078,12 @@ characters = {
 		}
 	}
 
-	ITA_raffaele_de_courten = {
-		name = ITA_raffaele_de_courten
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_raffaele_de_courten_small
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = ITA_raffaele_de_courten
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			visible = {
-				always = no
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-	}
-
 
 	### AIR CHIEFS ###
 
 	# Balbo up there
 
-	ITA_rino_corso_fougier = {
+	ITA_air_chief_2_rino_corso_fougier = {
 		name = ITA_rino_corso_fougier
 		portraits = {
 			army = {
@@ -1162,10 +1151,16 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			visible = {
+				always = no
+			}
+			available = {
+				always = no
+			}
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				base = 1.000
 			}

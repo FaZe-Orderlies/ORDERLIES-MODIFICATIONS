@@ -2732,9 +2732,9 @@ form_roman_empire_category = {
 				}
 				#else_if = { #Skipping Balbo and Grandi for now since they have no roman emperor portraits
 				#	limit = {
-				#		has_country_leader = { ruling_only = yes character = ITA_italo_balbo }
+				#		has_country_leader = { ruling_only = yes character = ITA_air_chief_1_italo_balbo }
 				#	}
-				#	ITA_italo_balbo = {
+				#	ITA_air_chief_1_italo_balbo = {
 				#		set_character_name = {
 				#			name = ITA_italo_balbo_roman_emperor
 				#		}

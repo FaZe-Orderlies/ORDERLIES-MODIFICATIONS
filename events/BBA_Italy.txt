@@ -4593,7 +4593,7 @@ country_event = {
 	}
 
 	trigger = {
-		has_character = ITA_italo_balbo
+		has_character = ITA_air_chief_1_italo_balbo
 		NOT = { always = no }
 	}
 
@@ -4601,7 +4601,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_air_accident.01.a
 
-		retire_character = ITA_italo_balbo
+		retire_character = ITA_air_chief_1_italo_balbo
 		
 		if = {
 			limit = {
@@ -4633,7 +4633,7 @@ country_event = {
 
 	trigger = {
 		has_character = ITA_giuseppe_tellera
-		has_character = ITA_italo_balbo
+		has_character = ITA_air_chief_1_italo_balbo
 	}
 
 	# Sayonara Tellera
@@ -4642,7 +4642,7 @@ country_event = {
 
 		retire_character = ITA_giuseppe_tellera
 
-		ITA_italo_balbo = {
+		ITA_air_chief_1_italo_balbo = {
 			add_trait = { trait = harsh_leader }
 		}
 	}
@@ -4666,14 +4666,14 @@ country_event = {
 	}
 
 	trigger = {
-		has_character = ITA_italo_balbo
+		has_character = ITA_air_chief_1_italo_balbo
 	}
 
 	# Lucky bois
 	option = { 
 		name = BBA_italy_air_accident.03.a
 
-		ITA_italo_balbo = {
+		ITA_air_chief_1_italo_balbo = {
 			add_trait = { trait = inspirational_leader }
 		}
 	}
@@ -6345,7 +6345,7 @@ country_event = {
 			modifier = {
 				add = 20
 				has_country_leader = {
-					character = ITA_italo_balbo
+					character = ITA_air_chief_1_italo_balbo
 					ruling_only = yes
 				}
 			}
@@ -6416,7 +6416,7 @@ country_event = {
 			modifier = {
 				add = 10
 				has_country_leader = {
-					character = ITA_italo_balbo
+					character = ITA_air_chief_1_italo_balbo
 					ruling_only = yes
 				}
 			}
