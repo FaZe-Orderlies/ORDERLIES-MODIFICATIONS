@@ -2367,85 +2367,6 @@ characters = {
 					small = GFX_idea_kijuro_shidehara
 				}
 			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = kijuro_shidehara
-				available = {
-					if = {
-						limit = {
-							has_dlc = "Waking the Tiger"
-						}
-						has_completed_focus = JAP_strengthen_civilian_government 
-					}
-					if = {
-						limit = {
-							has_dlc = "Man the Guns"
-						}
-						NOT = {
-							has_autonomy_state = autonomy_supervised_state
-						}
-					}
-				}
-				allowed = {
-					original_tag = JAP
-				}
-				traits = {
-					democratic_reformer 
-				}
-				do_effect = {
-					NOT = {
-						has_government = democratic 
-					}
-				}
-				ai_will_do = {
-					base = 0.5
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				has_dlc = "No Compromise, No Surrender"
-			}
-			name = JAP_kijuro_shidehara
-
-			portraits = {
-				civilian = {
-					small = GFX_idea_kijuro_shidehara
-				}
-			}
-
-			advisor = {
-
-				slot = political_advisor
-				idea_token = kijuro_shidehara
-
-				allowed = {
-					original_tag = JAP
-				}
-
-				visible = {
-					NOT = {
-						has_government = fascism
-						has_government = communism
-						has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					}
-				}
-
-				available = {
-					has_government = democratic
-				}
-				
-				traits = {
-					JAP_pacifist_baron 
-				}
-
-				ai_will_do = {
-					base = 0.5
-				}
-
-			}
-
 		}
 
 	}
@@ -2466,81 +2387,7 @@ characters = {
 					small = GFX_idea_kingoro_hashimoto
 				}
 			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = kingoro_hashimoto
-
-				allowed = {
-					original_tag = JAP
-				}
-
-				available = {
-					has_completed_focus = JAP_integrate_the_great_japan_youth_party
-				}
-
-				traits = {
-					JAP_paramilitary_leader 
-				}
-				
-				ai_will_do = {
-					base = 0.5
-				}
-			}	
-
-			
-
 		}
-		instance = {
-			allowed = {
-				has_dlc = "No Compromise, No Surrender"
-			}
-			name = JAP_kingoro_hashimoto
-
-			portraits = {
-				army = {
-					large = GFX_portrait_JAP_kingoro_hashimoto
-					small = GFX_portrait_JAP_kingoro_hashimoto_military_small
-				}
-				civilian = {
-					small = GFX_portrait_JAP_kingoro_hashimoto_civilian_small
-				}
-			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = kingoro_hashimoto
-
-				allowed = {
-					original_tag = JAP
-				}
-
-				visible = {
-					NOT = {
-						has_completed_focus = JAP_okadas_military_purge_speech
-					}
-				}
-
-				available = {
-					OR = {
-						has_completed_focus = JAP_integrate_the_great_japan_youth_party
-						has_completed_focus = JAP_contact_former_sakurakai_members
-					}
-				}
-
-				traits = {
-					JAP_paramilitary_leader 
-				}
-				
-				ai_will_do = {
-					base = 1.5
-				}
-			}	
-
-			
-
-		}
-
 	}
 
 	# Mitsumasa Yonai
@@ -2701,75 +2548,7 @@ characters = {
 				}
 			}
 
-			advisor = {
-				slot = political_advisor
-				idea_token = JAP_hiroshi_oshima
-
-				allowed = {
-					original_tag = JAP
-				}
-
-				available = {
-					has_completed_focus = JAP_sea_tripartite_pact
-				}
-
-				traits = {
-					JAP_ambassador_to_germany 
-				}
-
-				ai_will_do = {
-					base = 0.3
-				}
-			}
-
 		}
-		instance = {
-			allowed = {
-				has_dlc = "No Compromise, No Surrender"
-			}
-			name = JAP_hiroshi_oshima
-
-			portraits = {
-				army = {
-					small = GFX_portrait_JAP_hiroshi_oshima_small
-				}
-			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = JAP_hiroshi_oshima
-
-				allowed = {
-					original_tag = JAP
-				}
-
-				visible = {
-					NOT = {
-						has_completed_focus = JAP_okadas_military_purge_speech
-					}
-				}
-
-				available = {
-					NOT = {
-						has_war_with = GER
-					}
-					OR = {
-						has_completed_focus = JAP_sea_tripartite_pact
-						has_completed_focus = JAP_the_enemy_of_our_enemy
-					}
-				}
-
-				traits = {
-					JAP_ambassador_to_germany 
-				}
-
-				ai_will_do = {
-					base = 0.1
-				}
-			}
-
-		}
-		
 
 	}
 
@@ -2839,29 +2618,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_shun_akikusa
-
-			available  = {
-				has_intelligence_agency  = yes 
-			}
-
-			allowed  = {
-				original_tag  = JAP
-				has_dlc = "La Resistance"
-			}
-
-			traits  = {
-				head_of_intelligence 
-			}
-
-			ai_will_do  = {
-				base = 0.25
-			}
-
-		}
-
 	}
 
 	# Taketora Ogata
@@ -2871,37 +2627,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_taketora_ogata_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_taketora_ogata
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-				}
-			}
-
-			available = {
-				#OR = {
-					#has_completed_focus = JAP_found_the_great_japan_press_association
-					#has_completed_focus = JAP_propagandize_the_nihon_shoki
-					has_completed_focus = JAP_reform_the_education_system
-				#}
-			}
-			traits = {
-				JAP_asahi_shimbun_editor
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -2916,34 +2641,6 @@ characters = {
 				small = GFX_portrait_JAP_morihei_ueshiba_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_morihei_ueshiba
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
-			}
-
-			traits = {
-				JAP_kaiso
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Takahashi Korekiyo
@@ -3005,39 +2702,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_naoki_hoshino
-
-			allowed = {
-				OR = {
-					original_tag = JAP
-					original_tag = MAN
-				}
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_form_the_great_japan_industrial_patriotic_association
-					tag = MAN
-				}
-			}
-
-			traits = {
-				FRA_national_syndicalist
-			}
-			ai_will_do = {
-				base = 2
-			}
-		}
-
 	}
 
 	# Fukumoto Kazuo
@@ -3047,35 +2711,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_fukumoto_kazuo_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_fukumoto_kazuo
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_fukumotoism
-			}
-
-			traits = {
-				JAP_marxist_theoretician
-			}
-
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3091,36 +2726,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_koichi_kido
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_draft_the_showa_constitution
-					has_completed_focus = JAP_imperial_rule_assistance_association
-				}
-			}
-
-			traits = {
-				JAP_lord_keeper_of_the_privy_seal
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Shigenori Tōgō
@@ -3130,33 +2735,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_shigenori_togo_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_shigenori_togo
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_ministry_of_greater_east_asia
-			}
-
-			traits = {
-				JAP_minister_for_greater_east_asia
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3172,33 +2750,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_nissho_inoue
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_ally_the_league_of_blood
-			}
-
-			traits = {
-				JAP_radical_nichiren_preacher
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Bin Akao
@@ -3208,33 +2759,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_bin_akao_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_bin_akao
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_integrate_the_kenkokutai
-			}
-
-			traits = {
-				JAP_pan_asianist_national_socialist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3249,34 +2773,6 @@ characters = {
 				small = GFX_portrait_JAP_yukio_ozaki_small
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_yukio_ozaki
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
-			}
-
-			traits = {
-				JAP_god_of_constitutional_politics
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Tōyama Mitsuru
@@ -3286,33 +2782,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_toyama_mitsuru_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_toyama_mitsuru
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
-			}
-
-			traits = {
-				JAP_shadow_shogun
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3328,34 +2797,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hajime_kawakami
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_the_uno_school_of_economics
-			}
-
-			traits = {
-				socialist_economist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Osamu Shimomura
@@ -3365,34 +2806,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_osamu_shimomura_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_osamu_shimomura
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_launch_the_income_doubling_plan
-			}
-
-			traits = {
-				liberal_economist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3480,30 +2893,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_yosuke_matsuoka
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-
-			}
-
-			available = {
-				has_completed_focus = JAP_eastern_road_and_steel_expansion
-			}
-
-			traits = {
-				JAP_south_manchuria_railway_president
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Genki Abe
@@ -3516,33 +2905,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_genki_abe
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_organize_a_general_election
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_empower_the_thought_police
-			}
-
-			traits = {
-				JAP_tokko_chief
-			}
-			ai_will_do = {
-				base = 1.5
-			}
-		}
-
 	}
 
 	# Nobusuke Kishi
@@ -3552,33 +2914,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_nobusuke_kishi_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_nobusuke_kishi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_national_defense_brotherhood
-			}
-
-			traits = {
-				JAP_showa_no_youkai
-			}
-			ai_will_do = {
-				base = 2
 			}
 		}
 
@@ -3630,34 +2965,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hideo_shima
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_shinkansen
-			}
-
-			traits = {
-				JAP_head_of_the_shinkansen_project
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Shūmei Ōkawa
@@ -3667,33 +2974,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_shumei_okawa_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_shumei_okawa
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_promote_pan_asianism
-			}
-
-			traits = {
-				JAP_pan_asianist_writer
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3709,34 +2989,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_ichikawa_fusae
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_democratic_womens_suffrage
-			}
-
-			traits = {
-				womens_rights_activist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Komakichi Matsuoka
@@ -3746,38 +2998,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_komakichi_matsuoka_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_komakichi_matsuoka
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_raise_support_within_the_proletarian_class
-				NOT = {
-					has_country_flag = JAP_IJA_arrested_advisors_flag
-				}
-			}
-
-			cost = 50
-
-			traits = {
-				COG_trade_unionist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3793,34 +3013,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_yoshio_shiga
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_raise_the_red_flag_high
-			}
-
-			traits = {
-				devoted_communist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Hisachi Aso
@@ -3833,36 +3025,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hisachi_aso
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_social_and_cultural_revolution
-					has_completed_focus = JAP_uplift_labor_unions
-				}
-			}
-
-			traits = {
-				resolute_social_democrat
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Suzuki Bunji
@@ -3872,36 +3034,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_suzuki_bunji_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_suzuki_bunji
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_adopt_syndicalist_ideas
-					has_completed_focus = JAP_uplift_labor_unions
-				}
-			}
-
-			traits = {
-				JAP_yuakai_organizer
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -3955,33 +3087,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_hakamada_satomi_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hakamada_satomi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-				}
-			}
-
-			available = {
-				has_government = communism
-			}
-
-			traits = {
-				marxist_fundamentalist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4079,36 +3184,6 @@ characters = {
 			civilian = {
 				small = GFX_portrait_JAP_noboru_yamaguchi_small
 				# GFX_portrait_JAP_noboru_yamaguchi_imprisoned
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_noboru_yamaguchi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_seek_yakuza_support
-				NOT = {
-					has_country_flag = JAP_IJA_arrested_advisors_flag
-				}
-			}
-
-			traits = {
-				JAP_godfather_of_the_yamaguchi_gumi
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4212,36 +3287,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_yoshihige_abe
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_reform_the_education_system
-					has_completed_focus = JAP_overhaul_the_education_system
-				}
-			}
-
-			traits = {
-				IRQ_minister_of_education
-			}
-			ai_will_do = {
-				base = 5
-			}
-		}
-
 	}
 
 	# Uzō Nishiyama
@@ -4251,33 +3296,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_uzo_nishiyama_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_uzo_nishiyama
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_the_five_great_cities
-					has_completed_focus = JAP_taiheyo_belt
-				}
-			}
-
-			traits = {
-				BRA_modernist_architect
-			}
-			ai_will_do = {
-				base = 2.5
 			}
 		}
 
@@ -4293,34 +3311,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_tsuji_jun
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_cooperate_with_anarchists
-			}
-
-			traits = {
-				JAP_dadaist_nihilist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Hiratsuka Raichō
@@ -4330,34 +3320,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_hiratsuka_raicho_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hiratsuka_raicho
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_kikues_new_model
-			}
-
-			traits = {
-				JAP_anarcha_feminist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4373,34 +3335,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_masamichi_royama
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_the_labor_farmer_faction_ascendant
-			}
-
-			traits = {
-				JAP_democratic_socialist
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Minoru Takano
@@ -4410,33 +3344,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_minoru_takano_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_minoru_takano
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_sea_nationalize_the_zaibatsus
-			}
-
-			traits = {
-				veteran_trade_unionist
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4452,33 +3359,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_kojiro_fukushi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-
-			available = {
-				has_government = fascism
-			}
-
-			traits = {
-				JAP_fascist_poet
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Gōtarō Ogawa
@@ -4488,35 +3368,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_gotaro_ogawa_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_gotaro_ogawa
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_give_it_your_all_for_the_emperor
-					has_completed_focus = JAP_form_the_great_japan_industrial_patriotic_association
-				}
-			}
-
-			traits = {
-				technocrat
-			}
-			ai_will_do = {
-				base = 2
 			}
 		}
 
@@ -4532,35 +3383,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_hotsumi_ozaki
-
-			allowed = {
-				original_tag = JAP
-				has_dlc = "La Resistance"
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_the_lecture_group_ascendant
-			}
-
-			traits = {
-				HUN_stalinist_agent
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Kōzō Sasaki
@@ -4571,39 +3393,6 @@ characters = {
 			civilian = {
 				small = GFX_portrait_JAP_kozo_sasaki_small
 				# GFX_portrait_JAP_kozo_sasaki_imprisoned
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_kozo_sasaki
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			cost = 50
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_secretly_rebuild_the_party
-				NOT = {
-					has_country_flag = JAP_IJA_arrested_advisors_flag
-				}
-			}
-
-			traits = {
-				JAP_kozo_the_ogre_trait
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4626,38 +3415,6 @@ characters = {
 		#	id = -1
 		#}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_giro_senoo
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					has_country_leader = {
-						ruling_only = yes
-						character = JAP_giro_senoo
-					}	
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_incorporate_buddhist_socialism
-			}
-
-			traits = {
-				JAP_buddhist_socialist_trait
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Kiichirō Hiranuma
@@ -4667,35 +3424,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_kiichiro_hiranuma_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_kiichiro_hiranuma
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = JAP_embrace_kokutai
-					has_completed_focus = JAP_new_order_movement
-				}
-			}
-
-			traits = {
-				JAP_militarist
-			}
-			ai_will_do = {
-				base = 2
 			}
 		}
 
@@ -4711,33 +3439,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_yamauchi_sachiko
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_form_the_dai_nippon_fujinkai
-			}
-
-			traits = {
-				JAP_expert_propaganda_artist
-			}
-			ai_will_do = {
-				base = 1.5
-			}
-		}
-
 	}
 
 	# Onisaburo Deguchi
@@ -4747,33 +3448,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_onisaburo_deguchi_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_onisaburo_deguchi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
-			}
-
-			traits = {
-				JAP_oomoto_preacher
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4789,34 +3463,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_saionji_kinmochi
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_limit_the_emperors_power
-			}
-
-			traits = {
-				JAP_genro
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Akira Kurosawa
@@ -4829,34 +3475,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_akira_kurosawa
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {	
-				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_ensure_civil_liberties
-			}
-
-			traits = {
-				HUN_filmmaker
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-
 	}
 
 	# Gempō Yamamoto
@@ -4866,33 +3484,6 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_gempo_yamamoto_small
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_gempo_yamamoto
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-				}
-			}
-
-			available = {
-				has_completed_focus = JAP_ally_the_league_of_blood
-			}
-
-			traits = {
-				JAP_nichiren_abbot
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 
@@ -4983,30 +3574,6 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = political_advisor
-			idea_token = JAP_shinji_sogo
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-
-			}
-
-			available = {
-				has_completed_focus = JAP_danganressha
-			}
-
-			traits = {
-				JAP_JNR_president
-			}
-			ai_will_do = {
-				base = 1.5
-			}
-		}
-
 	}
 
 	# Jōtarō Watanabe
@@ -5016,32 +3583,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_JAP_jotaro_watanabe_small
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = JAP_jotaro_watanabe
-			ledger = army
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			visible = {
-				always = no
-			}
-
-			available = {
-				always = no
-			}
-
-			traits = {
-				army_artillery_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 0.5
 			}
 		}
 

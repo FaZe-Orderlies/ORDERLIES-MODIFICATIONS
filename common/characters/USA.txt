@@ -1252,9 +1252,6 @@ characters={
 			}
 			available  = {
 				has_completed_focus = USA_strategic_supply_planning
-				NOT  = {
-					has_idea  = victor_perlo
-				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1289,9 +1286,6 @@ characters={
 			}
 			available  = {
 				has_completed_focus = USA_strategic_supply_planning
-				NOT = {
-					has_idea = harry_white
-				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1318,28 +1312,6 @@ characters={
 				small="GFX_idea_USA_whittaker_chambers"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = whittaker_chambers
-			allowed  = {
-				original_tag = USA
-			}
-			available  = {
-				always = no
-			}
-			visible  = {
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				editor
-			}
-			cost  = 0.000
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
 		allowed_civil_war  = {
 			has_government  = communism
 		}
@@ -1350,33 +1322,6 @@ characters={
 		portraits={
 			army={
 				small=GFX_portrait_USA_william_regnery_small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = USA_william_regnery
-			allowed  = {
-				original_tag  = USA
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					always = no
-				}
-			}
-			visible  = {
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				captain_of_industry
-			}
-			cost  = 150.000
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 		allowed_civil_war  = {
@@ -1487,19 +1432,6 @@ characters={
 				small=GFX_portrait_USA_henry_morgenthau_small
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = USA_henry_morgenthau
-			allowed  = {
-				original_tag  = USA
-			}
-			available  = {
-				always = no
-			}
-			traits  = {
-				financial_expert
-			}
-		}
 	}
 
 	USA_henry_stimson={
@@ -1545,21 +1477,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_usa_william_donovan"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = usa_william_donovan
-			available  = {
-				has_intelligence_agency  = yes
-				threat > 0.500
-			}
-			allowed  = {
-				original_tag  = USA
-				has_dlc = "La Resistance"
-			}
-			traits  = {
-				head_of_intelligence
 			}
 		}
 	}

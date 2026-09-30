@@ -9,62 +9,6 @@ characters={
 				small="GFX_idea_ENG_winston_churchill"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_winston_churchill
-			available  = {
-				if = {
-					limit = {
-						original_tag = ENG
-					}
-					has_government  = neutrality 
-					has_completed_focus  = ENG_the_kings_party 
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						NOT = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						original_tag = RAJ
-					}
-					OR = {
-						has_government = neutrality
-						has_government = democratic
-					}
-				}
-			}
-			allowed  = {
-				OR = {
-					AND = {
-						has_dlc = "Man the Guns"
-						original_tag = ENG
-					}
-					AND = {
-						has_dlc = "Graveyard of Empires"
-						original_tag = RAJ
-					}
-				}
-			}
-			visible = {
-				if = {
-					limit = {
-						original_tag = RAJ
-					}
-					NOT = { has_character_flag = RAJ_churchill_as_country_leader_flag }
-				}
-			}
-			traits  = {
-				royalist_bulldog 
-			}
-			ai_will_do  = {
-				base = 1
-			}
-		}
 
 		country_leader={ #This country leader role is copied as Non-Aligned if Churchill is sent to RAJ - Changes here should be applied in event GOE_RAJ_loyalist.11
 			ideology=conservatism
@@ -101,24 +45,6 @@ characters={
 				small="GFX_idea_ENG_oswald_mosley"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_oswald_mosley
-			available  = {
-				has_government  = neutrality 
-				has_completed_focus  = ENG_the_kings_party 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				economic_organizer 
-			}
-			ai_will_do  = {
-				base = 1
-			}
-		}
 		
 		country_leader={
 			ideology=fascism_ideology
@@ -136,40 +62,6 @@ characters={
 			}
 			army={
 				small="GFX_idea_harry_pollitt"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = harry_pollitt
-			allowed  = {
-				original_tag  = ENG
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_government  = communism 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				NOT = {
-					has_government  = communism 
-				}
-			}
-			ai_will_do  = {
-				base = 0
 			}
 		}
 		
@@ -1447,40 +1339,6 @@ characters={
 				small="GFX_idea_john_beckett"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = john_beckett
-			allowed  = {
-				original_tag  = ENG
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_government  = fascism 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			do_effect  = {
-				NOT = {
-					has_government  = fascism 
-				}
-			}
-			ai_will_do  = {
-				base = 0
-			}
-		}
 	}
 
 	ENG_philip_kerr={
@@ -1618,23 +1476,6 @@ characters={
 				small="GFX_idea_ENG_mary_sophia_allen"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_mary_sophia_allen
-			available  = {
-				has_government  = fascism 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				princess_of_terror 
-			}
-			ai_will_do  = {
-				base = 1.5
-			}
-		}
 	}
 
 	ENG_george_orwell={
@@ -1642,31 +1483,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_ENG_george_orwell"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_george_orwell
-			available  = {
-				has_government  = communism 
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				socialist_novelist 
-			}
-			ai_will_do  = {
-				base = 1.5
 			}
 		}
 	}
@@ -1679,55 +1495,6 @@ characters={
 			}
 		}
 		gender = female
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_sylvia_pankhurst
-			available  = {
-				OR = {
-					has_government  = communism 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
-			}
-			allowed  = {
-				OR = {
-					AND = {
-						original_tag  = ENG
-						has_dlc = "Man the Guns"
-					}
-					AND = {
-						original_tag = ETH
-						has_dlc = "By Blood Alone"
-					}
-
-					AND = {
-						original_tag = SWE
-						has_aat = yes
-					}
-				}
-				
-			}
-			traits  = {
-				red_suffragette 
-			}
-			ai_will_do  = {
-				base = 1
-			}
-			on_add = {
-				owner = {
-					IF = {
-						limit = {
-							has_power_balance = {
-								id = ETH_centralization_balance
-							}
-						}
-						
-						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
-						}
-					}				
-				}
-			}
-		}
 	}
 
 	ENG_david_lloyd_george={
@@ -1735,24 +1502,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_ENG_david_lloyd_george"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_david_lloyd_george
-			available  = {
-				has_government  = neutrality 
-				has_completed_focus  = ENG_the_kings_party 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				old_figurehead 
-			}
-			ai_will_do  = {
-				base = 1
 			}
 		}
 	}
@@ -2143,23 +1892,6 @@ characters={
 				small="GFX_idea_eng_stewart_menzies"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = eng_stewart_menzies
-			available  = {
-				has_intelligence_agency  = yes 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "La Resistance"
-			}
-			traits  = {
-				head_of_intelligence 
-			}
-			ai_will_do  = {
-				base = 0.5
-			}
-		}
 	}
 
 	ENG_alan_turing={
@@ -2167,31 +1899,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_eng_alan_turing"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = eng_alan_turing
-			available  = {
-				has_intelligence_agency  = yes 
-				custom_trigger_tooltip  = {
-					tooltip  = cyptology_tooltip_tt
-					has_done_agency_upgrade  = upgrade_form_department 
-				}
-			}
-			ai_will_do  = {
-				base = 1
-				modifier  = {
-					has_political_power < 200
-					factor = 0
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "La Resistance"
-			}
-			traits  = {
-				mastermind_code_cracker 
 			}
 		}
 	}

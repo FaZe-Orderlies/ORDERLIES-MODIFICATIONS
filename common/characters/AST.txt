@@ -174,95 +174,6 @@ characters={
 		}
 	}
 
-	AST_ben_chifley={
-		instance = {
-			allowed = {
-				has_dlc = "Thunder at Our Gates"
-			}
-			name=AST_ben_chifley
-			portraits={
-				civilian={
-				large = GFX_portrait_AST_ben_chifley
-				small = GFX_portrait_AST_ben_chifley_small
-				}
-			}
-			#country_leader = {
-			#	ideology = socialism
-			#	expire = "1989.1.1.1"
-			#	id = -1
-			#}
-			advisor={
-				slot = political_advisor
-				idea_token = AST_ben_chifley
-				allowed = {
-					original_tag = AST
-				}
-				traits = {
-					AST_war_funder
-				}
-				available = {
-					is_country_leader = no
-					custom_trigger_tooltip = {
-						tooltip = AST_alp_advisor_tt
-						check_variable = {
-							var = AST_ruling_party
-							value = 1
-							compare = equals
-						}
-					}
-				}
-				on_remove = {
-					owner = { 
-	               		IF = {
-	               			limit = {
-	               				has_completed_focus = AST_war_is_coming
-	               				has_country_leader = { 
-	               					ruling_only = yes 
-	               					character = AST_joseph_lyons 
-	               				}
-	               			}
-	               			AST = { add_political_power = 35 }
-	               		}
-	               		ELSE_IF = {
-	               			limit = {
-	               				has_completed_focus = AST_war_is_coming
-	               			}
-	               			add_political_power = 50 
-	               		}
-	               	}
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Thunder at Our Gates"
-				}
-			}
-			name=AST_ben_chifley
-			portraits={
-				army={
-					small="GFX_idea_AST_ben_chifley" #small="GFX_idea_generic_political_advisor_europe_3"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = AST_ben_chifley
-				allowed = {
-					original_tag = AST
-					has_dlc = "Together for Victory"
-				}
-				cost = 100.000
-				traits = {
-					smooth_talking_charmer 
-				}
-				available = {
-					has_completed_focus = AST_never_another_gallipoli 
-				}
-			}
-		}	
-	}
-
 	AST_jack_miles={
 		name=AST_jack_miles
 		portraits={
@@ -311,20 +222,6 @@ characters={
 		#	expire="1989.1.1.1"
 		#	id=-1
 		#}
-		advisor={
-			slot = political_advisor
-			idea_token = AST_percy_stephensen
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				AST_motherland_advocate_pa
-			}
-			available = {
-				is_country_leader = no
-				has_completed_focus = AST_in_from_the_cold
-			}
-		}
 	}
 
 	AST_adela_walsh={
@@ -343,20 +240,6 @@ characters={
 		#	expire="1989.1.1.1"
 		#	id=-1
 		#}
-		advisor={
-			slot = political_advisor
-			idea_token = AST_adela_walsh
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				AST_the_matriarch_pa
-			}
-			available = {
-				is_country_leader = no
-				has_completed_focus = AST_in_from_the_cold
-			}
-		}
 	}
 
 	AST_alexander_hore_ruthven={
@@ -2094,7 +1977,6 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2135,22 +2017,6 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_portrait_AST_jacob_vouza_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_jacob_vouza
-			allowed  = {
-				original_tag  = AST
-			}
-			traits  = {
-				AST_indomitable_scout
-			}
-			available = {
-				has_completed_focus = AST_coast_watchers
-			}
-			ai_will_do = {
-				factor = 1
 			}
 		}
 	}
@@ -2222,22 +2088,6 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_portrait_AST_eric_l_lloyd_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_eric_l._lloyd
-			allowed  = {
-				original_tag  = AST
-			}
-			available = {
-				has_intelligence_agency = yes
-			}
-			traits  = {
-				AST_intelligence_director
-			}
-			ai_will_do = {
-				factor = 1
 			}
 		}
 	}
@@ -2362,64 +2212,6 @@ characters={
 				small=GFX_portrait_AST_james_scullin_small
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_james_scullin
-			allowed  = {
-				original_tag  = AST
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = AST_alp_advisor_tt
-					check_variable = {
-						var = AST_ruling_party
-						value = 1
-						compare = equals
-					}
-				}
-			}
-			traits  = {
-				AST_tax_reformer
-			}
-			always_show_on_actions_tooltip = yes
-			on_add = {
-               	add_to_variable = {
-               		var = AST_alp_votes_daily_var
-                    value = 0.01 
-               	}
-               	AST_votes_change_effect = yes
-			}
-			on_remove = {
-               	add_to_variable = {
-               		var = AST_alp_votes_daily_var
-                    value = -0.01 
-               	}
-               	AST_votes_change_effect = yes
-
-               	owner = { 
-               		IF = {
-               			limit = {
-               				has_completed_focus = AST_war_is_coming
-               				has_country_leader = { 
-               					ruling_only = yes 
-               					character = AST_joseph_lyons 
-               				}
-               			}
-               			AST = { add_political_power = 35 }
-               		}
-               		ELSE_IF = {
-               			limit = {
-               				has_completed_focus = AST_war_is_coming
-               			}
-               			add_political_power = 50 
-               		}
-               	}
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 
 	AST_maurice_blackburn={
@@ -2427,107 +2219,6 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_portrait_AST_maurice_blackburn_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_maurice_blackburn
-			allowed  = {
-				original_tag  = AST
-			}
-			cost = 75
-			on_add = {
-				IF = {
-					limit = {
-						ROOT = {
-							has_completed_focus = AST_war_is_coming
-							has_government = democratic
-						}
-						check_variable = {
-							var = AST_ruling_party
-							value = 0 #UAP
-							compare = equals
-						}
-					}
-					add_to_variable = {
-		               	var = AST_uap_votes_daily_var
-		                value = -0.01 
-		            }
-		            AST_votes_change_effect = yes
-	               	ELSE_IF = {
-	               		limit = {
-	               			ROOT = {
-								has_completed_focus = AST_war_is_coming
-								has_government = democratic
-							}
-							check_variable = {
-								var = AST_ruling_party
-								value = 1 #ALP
-								compare = equals
-							}
-						}
-						add_to_variable = {
-		               		var = AST_alp_votes_daily_var
-		                    value = -0.01 
-		               	}
-		               	AST_votes_change_effect = yes
-		            }
-				}	
-			}
-			on_remove = {
-				IF = {
-					limit = {
-						ROOT = {
-							has_completed_focus = AST_war_is_coming
-							has_government = democratic
-						}
-						check_variable = {
-							var = AST_ruling_party
-							value = 0 #UAP
-							compare = equals
-						}
-					}
-					add_to_variable = {
-	                    var = AST_uap_votes_daily_var
-	                    value = 0.01 
-	                }
-	                AST_votes_change_effect = yes
-
-	               	ELSE_IF = {
-	               		limit = {
-	               			ROOT = {
-								has_completed_focus = AST_war_is_coming
-								has_government = democratic
-							}
-							check_variable = {
-								var = AST_ruling_party
-								value = 1 #ALP
-								compare = equals
-							}
-						}
-						add_to_variable = {
-		                    var = AST_alp_votes_daily_var
-		                    value = 0.01 
-		                }
-		                AST_votes_change_effect = yes
-	               	}
-				}	
-			}
-			traits  = {
-				AST_irrepressible_freethinker
-			}
-			available = {
-				OR = {
-					has_completed_focus = AST_a_controversial_recruitment
-					has_completed_focus = AST_a_democratic_bulwark
-				}
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					NOT = { has_completed_focus = AST_against_war_and_fascism }
-					factor = 0
-				}
 			}
 		}
 	}
@@ -2539,26 +2230,6 @@ characters={
 				small=GFX_portrait_AST_alexander_rud_mills_small
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_alexander_rud_mills
-			allowed  = {
-				original_tag  = AST
-			}
-			traits  = {
-				AST_soldier_rights_promoter
-			}
-			available = {
-				has_completed_focus = AST_in_from_the_cold
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					is_historical_focus_on = yes
-					factor = 0
-				}
-			}
-		}
 	}
 
 	AST_rex_ingamells={
@@ -2568,26 +2239,6 @@ characters={
 				small=GFX_portrait_AST_rex_ingamells_small
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_rex_ingamells
-			allowed  = {
-				original_tag  = AST
-			}
-			traits  = {
-				AST_cultural_visionary
-			}
-			available = {
-				has_completed_focus = AST_in_from_the_cold
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					is_historical_focus_on = yes
-					factor = 0
-				}
-			}
-		}
 	}
 
 	AST_clare_stevenson={
@@ -2595,22 +2246,6 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_portrait_AST_clare_stevenson_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AST_clare_stevenson
-			allowed  = {
-				original_tag  = AST
-			}
-			traits  = {
-				AST_womens_services_director
-			}
-			available = {
-				has_completed_focus = AST_womens_armed_services
-			}
-			ai_will_do = {
-				factor = 1
 			}
 		}
 	}
@@ -2625,45 +2260,6 @@ characters={
 				civilian={
 					small=GFX_portrait_AST_richard_dixon_small
 				}
-			}
-			advisor = {
-				slot = political_advisor
-				idea_token = AST_richard_dixon
-				allowed  = {
-					original_tag  = AST
-				}
-				available = {
-					NOT = { has_completed_focus = AST_australia_first }
-				}
-				traits  = {
-					AST_revolutionary_equalist
-				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						NOT = { has_completed_focus = AST_against_war_and_fascism }
-						factor = 0
-
-					}
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Thunder at Our Gates"
-				}
-			}
-			name=AST_richard_dixon
-			portraits={
-				civilian={
-					large="GFX_AST_richard_dixon"
-				}
-			}
-			country_leader={
-				ideology=stalinism
-				expire="1965.1.1.1"
-				id=-1
 			}
 		}
 	}	
@@ -2840,28 +2436,6 @@ characters={
 					small=GFX_portrait_AST_lance_sharkey_small
 				}
 			}
-			advisor={
-				slot = political_advisor
-				idea_token = AST_lance_sharkey
-				allowed = {
-					original_tag = AST
-				}
-				available = {
-					has_completed_focus = AST_against_war_and_fascism
-				}
-				traits = {
-					AST_orthodox_stalinist
-				}
-				ai_will_do = {
-
-					factor = 1
-					modifier = {
-						NOT = { has_completed_focus = AST_against_war_and_fascism }
-						factor = 0
-
-					}
-				}
-			}	
 		}
 		instance = {
 			allowed = {

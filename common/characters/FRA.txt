@@ -54,47 +54,6 @@ characters={
 				large="GFX_portrait_fra_maurice_thorez"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = maurice_thorez
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				or  = {
-					has_completed_focus  = FRA_leftist_rhetoric 
-					has_completed_focus  = FRA_invite_communist_ministers 
-				}
-				not  = {
-					has_country_leader  = {
-						character  = FRA_philippe_petain
-						ruling_only  = yes 
-					}
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = communism 
-				}
-			}
-			on_add  = {
-				FRA_right_wing_riot_effect = yes 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
 		
 		country_leader={
 			ideology=stalinism
@@ -1163,51 +1122,6 @@ characters={
 			expire = "1949.1.1.12"
 			id = -1
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = marcel_bucard
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				OR = {
-					has_completed_focus  = FRA_right_wing_rhetoric 
-					has_completed_focus  = FRA_utilize_the_leagues 
-					has_focus_tree  = vichy_french_focus
-				}
-				IF  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			do_effect  = {
-				NOT  = {
-					has_government  = fascism 
-				}
-			}
-			on_add  = {
-				IF  = {
-					limit  = {
-						NOT  = {
-							owner = { tag = VIC }
-						}
-					}
-					owner = {
-						country_event = lar_france_political_violence.2
-					}
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
 	}
 
 	FRA_marcel_deat = {
@@ -1224,28 +1138,7 @@ characters={
 		#	expire = "1949.1.1.12"
 		#	id = -1
 		#}
-		advisor = {
-			slot = political_advisor
-			idea_token = FRA_marcel_deat
-			allowed  = {
-				original_tag = FRA
-			}
-			available  = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-			cost = 150
-			traits  = {
-				FRA_neo_jacobin
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				base = 1.000
-			}
-		}
+
 	}
 
 	FRA_rene_massigli={
@@ -1255,26 +1148,6 @@ characters={
 				small="GFX_idea_rene_massigli"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = rene_massigli
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_confirm_eastern_commitments 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				hawk 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 	}
 
 	FRA_georges_bonnet={
@@ -1282,26 +1155,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_georges_bonnet"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = georges_bonnet
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_buy_time 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				appeaser 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 	}
@@ -1320,37 +1173,6 @@ characters={
 			expire = "1949.1.1.12"
 			id = -1
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = charles_maurras
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				OR = {
-					OR = {
-						has_completed_focus = FRA_integralism 
-						has_completed_focus = FRA_orleanist_restoration 
-					}
-					OR  = {
-						has_government  = fascism 
-						has_government  = neutrality 
-					}
-				}
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			cost  = 75.000
-			traits  = {
-				national_integralist 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}		
 	}
 
 	FRA_philippe_henriot={
@@ -1358,31 +1180,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_FRA_philippe_henriot"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_philippe_henriot
-			allowed  = {
-				original_tag  = FRA
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			available  = {
-				OR = {
-					has_completed_focus  = FRA_national_regeneration 
-					has_government  = fascism 
-				}
-			}
-			cost  = 75.000
-			traits  = {
-				propaganda_expert 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 	}
@@ -1422,28 +1219,6 @@ characters={
 		portraits = {
 			army = {
 				small = GFX_portrait_FRA_georges_valois_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = FRA_georges_valois
-			allowed  = {
-				original_tag = FRA
-			}
-			available  = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-			cost = 150
-			traits  = {
-				FRA_national_syndicalist 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				base = 1.000
 			}
 		}
 	}
@@ -1530,26 +1305,6 @@ characters={
 				small="GFX_idea_FRA_vincent_auriol"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_vincent_auriol
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
-			}
-			traits  = {
-				financial_expert 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 	}
 
 	FRA_roger_salengro={
@@ -1557,26 +1312,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_FRA_roger_salengro"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_roger_salengro
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
-			}
-			traits  = {
-				compassionate_gentleman 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor = 0.5
 			}
 		}
 	}
