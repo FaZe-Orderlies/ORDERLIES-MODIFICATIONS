@@ -27030,6 +27030,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			army_experience = 35
 			custom_effect_tooltip = JAP_first_strike_principle_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = JAP_kantai_kessen_tt

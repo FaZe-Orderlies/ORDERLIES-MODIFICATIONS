@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = french_focus
 	
 	country = {
@@ -698,6 +698,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			army_experience = 35
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -1157,7 +1158,7 @@
 			factor = 0.2
 		}
 		completion_reward = {
-			army_experience = 25
+			army_experience = 35
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
 		}

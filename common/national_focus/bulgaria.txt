@@ -720,6 +720,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			army_experience = 35
 			remove_ideas = BUL_army_restrictions_aat
 		}
 	}
@@ -1138,7 +1139,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 15
+			army_experience = 35
 			add_doctrine_cost_reduction = {
 				name = BUL_national_military_academy
 			    cost_reduction = 0.5

@@ -2873,7 +2873,7 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = SAF_army
 			}
-			army_experience = 10
+			army_experience = 35
 			add_doctrine_cost_reduction = {
 				name = SAF_special_service_battalion
 				cost_reduction = 0.25
