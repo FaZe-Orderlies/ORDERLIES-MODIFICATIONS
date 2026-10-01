@@ -1770,6 +1770,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 35
 			USA_PENTAGON_mod = yes 
 			add_to_variable = {
 				production_speed_arms_factory_factor_factor_war_time = 0.05

@@ -15215,7 +15215,7 @@ focus_tree = {
 				}
 			}
 
-			army_experience = 30
+			army_experience = 35
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -15332,7 +15332,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			army_experience = 40
+			army_experience = 35
 
 			add_doctrine_cost_reduction = {
 				name = HUN_army_maneuvers

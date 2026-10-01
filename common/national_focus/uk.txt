@@ -225,6 +225,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			army_experience = 35
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

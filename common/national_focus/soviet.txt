@@ -4535,6 +4535,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			army_experience = 35
 			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
 			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
 			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt

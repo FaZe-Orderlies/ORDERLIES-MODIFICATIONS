@@ -236,3 +236,41 @@ NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW = 0 -- Базово
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW_MIN = 0 -- Минимальное время восстановления при отзыве командира даже для очень малых штабных шаблонов
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_REFERENCE_MANPOWER = 0 -- Опорное значение численности личного состава для масштабирования задержки развертывания/отзыва. При этом значении задержка равна базовой
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_MANPOWER_EXPONENT = 0 -- Экспонента для масштабирования численности личного состава (значение > 1 сильнее наказывает крупные дивизии увеличенным временем восстановления)
+
+---ПОЛНОЕ ОТКЛЮЧЕНИЕ ПОЛУЧЕНИЯ ОПЫТА (XP) И ДОКТРИН ОТ ТРЕНИРОВОК, БОЕВ И АТТАШЕ
+-- Армия (наземка)
+NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 0.0 -- Базовый множитель опыта страны от учений дивизий (обнуляет прирост)
+NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. опыт страны от тренировок дивизий
+NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от сухопутных боев
+NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт от экспедиционных сил
+NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт от ленд-лиза в боях
+NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.0 -- Передача доктринального мастерства от атташе
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.0 -- Опыт доктрин (мастерство) от тренировок
+NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.0
+NDefines.NFactions.THEATER_COMMANDER_LAND_EXPERIENCE_SCALE = 0.0
+NDefines.NFactions.THEATER_COMMANDER_NAVY_EXPERIENCE_SCALE = 0.0
+NDefines.NCountry.ATTACHE_XP_SHARE = 0.0 -- Доля опыта от атташе
+
+-- Авиация
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0 -- Опыт страны от тренировок авиакрыльев
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от воздушных боев и вылетов
+NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.0 -- Общий множитель опыта авиации от миссий
+NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0 -- Опыт от CAS
+NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.0 -- Опыт от парашютистов
+NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0 -- Опыт от бомбардировок
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NO_TRUCK_CONSUMERS = 0.0
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NODE_AND_TRAINS = 0.0
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_TRUCKS = 0.0
+
+-- Флот
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от тренировок флота
+NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. суточный опыт флота от учений
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.0
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.0
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от выполнения морских миссий
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 0.0
+NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от морских боев
+NDefines.NNavy.FIELD_EXPERIENCE_FACTOR = 0.0 -- Общий множитель опыта флота от миссий
