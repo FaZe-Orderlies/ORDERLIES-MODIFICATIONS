@@ -253,24 +253,11 @@ NDefines.NCountry.ATTACHE_XP_SHARE = 0.0 -- Доля опыта от атташ�
 
 -- Авиация
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0 -- Опыт страны от тренировок авиакрыльев
-NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от воздушных боев и вылетов
-NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.0 -- Общий множитель опыта авиации от миссий
-NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0 -- Опыт от CAS
-NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.0 -- Опыт от парашютистов
-NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0 -- Опыт от бомбардировок
-NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NO_TRUCK_CONSUMERS = 0.0
-NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NODE_AND_TRAINS = 0.0
-NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_TRUCKS = 0.0
 
 -- Флот
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от тренировок флота
-NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. суточный опыт флота от учений
-NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.0
-NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.0
-NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 0.0
-NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от выполнения морских миссий
-NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.0
-NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.0
-NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 0.0
-NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от морских боев
-NDefines.NNavy.FIELD_EXPERIENCE_FACTOR = 0.0 -- Общий множитель опыта флота от миссий
+
+NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 99 -- Базово 4. При 99 генералы никогда не получат роль Специалиста
+NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 99     -- Базово 6. При 99 генералы никогда не получат роль Эксперта
+NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 99     -- Базово 8. При 99 генералы никогда не получат роль Гения
+NDefines.NCharacter.ADVISOR_PROMOTION_COST = 999     -- Базово 5. Стоимость назначения в очках командного ресурса (CP)
