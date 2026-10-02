@@ -6858,9 +6858,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Kamenev
 			if = {
 				limit = {
@@ -6870,9 +6868,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Smirnov
 			if = {
 				limit = {
@@ -6882,9 +6878,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 
 			#NOT-SO-HISTORICAL
 			#Sokolnikov
@@ -6896,9 +6890,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Shlyapnikov
 			if = {
 				limit = {
@@ -6908,16 +6900,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #FIRST MOSCOW TRIAL -> Zinovyev & friends
-			}
-			custom_effect_tooltip = SOV_trigger_first_moscow_trial_tt
 		}
 	}
 
@@ -7131,9 +7116,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#NOT-SO-HISTORICAL
 			#Smilga
 			if = {
@@ -7144,9 +7127,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Preobrazhensky
 			if = {
 				limit = {
@@ -7156,9 +7137,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Ryutin
 			if = {
 				limit = {
@@ -7168,9 +7147,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Ustryalov
 			if = {
 				limit = {
@@ -7184,16 +7161,9 @@ focus_tree = {
 						set_character_flag = SOV_targeted_for_purge_flag
 					}
 				}
-				else = {
-					SOV_add_random_character_to_purge_targets_effect = yes
-				}
 			}
 
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
-			}
 			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
 
 			hidden_effect = {
@@ -7429,9 +7399,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#NOT-SO-HISTORICAL
 			#Yegorov
 			if = {
@@ -7442,9 +7410,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Blyukher
 			if = {
 				limit = {
@@ -7454,9 +7420,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Primakov
 			if = {
 				limit = {
@@ -7466,9 +7430,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}			
+					
 
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
@@ -7526,9 +7488,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Rykov
 			if = {
 				limit = {
@@ -7538,9 +7498,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#NOT-SO-HISTORICAL
 			#Tomsky
 			if = {
@@ -7551,9 +7509,7 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 			#Litvinov
 			if = {
 				limit = {
@@ -7563,15 +7519,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			
 
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #THIRD MOSCOW TRIAL -> Right Opposition
-			}
 			custom_effect_tooltip = SOV_trigger_third_moscow_trial_tt
 
 			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
