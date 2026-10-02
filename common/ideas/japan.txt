@@ -6589,7 +6589,6 @@ ideas = {
 			traits = { zaibatsu_bank } 
 
 			modifier = {
-				political_power_factor = -0.1
 				consumer_goods_factor = -0.2
 			}
 		}

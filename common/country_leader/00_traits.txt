@@ -11328,7 +11328,7 @@ leader_traits = {
 	armament_zaibatsu = {
 		random = no
 		
-		political_power_factor = -0.1
+		political_power_factor = -0.05
 		production_speed_dockyard_factor = 0.05
 		production_speed_arms_factory_factor = 0.05
 		industrial_capacity_factory = 0.05
@@ -11353,7 +11353,7 @@ leader_traits = {
 	mining_zaibatsu = {
 		random = no
 
-		political_power_factor = -0.1
+		political_power_factor = -0.05
 		local_resources_factor = 0.1
 		production_factory_max_efficiency_factor = 0.05
 		production_factory_start_efficiency_factor = 0.1
