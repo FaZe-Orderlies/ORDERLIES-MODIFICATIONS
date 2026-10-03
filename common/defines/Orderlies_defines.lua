@@ -256,6 +256,8 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0 -- Опыт стр�
 
 -- Флот
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от тренировок флота
+NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. суточный опыт флота от учений
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от выполнения морских миссий
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 99 -- Базово 4. При 99 генералы никогда не получат роль Специалиста
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 99     -- Базово 6. При 99 генералы никогда не получат роль Эксперта

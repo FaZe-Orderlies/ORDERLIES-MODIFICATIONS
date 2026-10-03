@@ -126,12 +126,6 @@ focus_tree = {
 
 			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HUN_jusztinian_seredi
-			show_ideas_tooltip = HUN_gusztav_gratz
-
 			hidden_effect = {
 				IF = {
 					limit = {

@@ -8108,11 +8108,6 @@ focus_tree = {
 				}
 				#custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_genki_abe
-				
-			
 		}
 	}
 
@@ -8304,11 +8299,6 @@ focus_tree = {
 			add_to_variable = { JAP_industry_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 				
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_naoki_hoshino
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_gotaro_ogawa
 			
 		}
 	}
@@ -8549,13 +8539,6 @@ focus_tree = {
 			JAP_add_or_modify_showa_statism = yes
 
 			add_to_variable = { JAP_showa_statism_political_power_factor = 0.1 tooltip = political_power_factor_tt }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_kiichiro_hiranuma
-				
-			
 		}
 	}
 
@@ -8679,8 +8662,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_hiroshi_oshima
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_harukichi_shimoi
 			
@@ -8871,9 +8852,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_koichi_kido
 				
 			hidden_effect = {
 				IF = {
@@ -8966,11 +8944,6 @@ focus_tree = {
 			JAP_add_or_modify_showa_statism = yes
 
 			add_to_variable = { JAP_showa_statism_conscription_factor = 0.05 tooltip = conscription_factor_tt }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = kingoro_hashimoto
 			
 		}
 	}
@@ -10049,11 +10022,6 @@ focus_tree = {
 
 			add_ideas = JAP_national_defense_brotherhood_idea
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_nobusuke_kishi
-
 			hidden_effect = {
 				set_country_flag = JAP_national_defense_brotherhood_started_flag # Timer for collapse event
 			}	
@@ -10379,11 +10347,6 @@ focus_tree = {
 			unlock_decision_tooltip = JAP_collect_civilian_donations_decision
 			unlock_decision_tooltip = JAP_raise_military_moreale_decision
 			unlock_decision_tooltip = JAP_women_in_military_production_decision
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_yamauchi_sachiko
 				
 			
 		}
@@ -25379,11 +25342,6 @@ focus_tree = {
 				days = 545
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_shinji_sogo
-
 		}
 	}
 
@@ -25566,12 +25524,6 @@ focus_tree = {
 
 			JAP_add_or_modify_early_industrialization = yes
 			add_to_variable = { JAP_industry_industry_air_damage_factor = -0.05 tooltip = industry_air_damage_factor_tt }
-	
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_uzo_nishiyama
-			
 		}
 
 	}
@@ -26106,11 +26058,6 @@ focus_tree = {
 				}
 			}
 			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_yosuke_matsuoka
-
 		}
 
 	}
