@@ -14,6 +14,22 @@ state = {
 			3529 30 # Stalingrad
 		}
 
+		victory_points = {
+			13458 5
+		}
+
+		victory_points = {
+			13459 5
+		}
+
+		victory_points = {
+			13457 5
+		}
+
+		victory_points = {
+			11474 5
+		}
+
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 2
@@ -22,7 +38,6 @@ state = {
 
 			# 22nd Congress of the CPSU Stalingrad Hydroelectric Power Station
 			#3555 = { dam = 1 }
-
 		}
 		
 		1939.1.1 = {
