@@ -1,4 +1,4 @@
-﻿capital = 16 # Paris/Ile de France
+capital = 16 # Paris/Ile de France
 
 if = {
 	limit = {
@@ -75,10 +75,18 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.5
 	}
-	else = {
-		puppet = SYR
-		puppet = LEB
+}
+if = {
+	limit = {
+		NOT = {
+			OR = {
+				has_dlc = "Together for Victory"
+				has_dlc = "Man the Guns"
+			}
+		}
 	}
+	puppet = SYR
+	puppet = LEB
 }
 
 set_research_slots = 3
@@ -342,11 +350,11 @@ if = {
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
 set_grand_doctrine = new_operational_integrity
-set_sub_doctrine = great_war_infantry
-add_mastery = {
-    amount = 100
-    sub_doctrine = great_war_infantry
-}
+#set_sub_doctrine = great_war_infantry
+#add_mastery = {
+#    amount = 100
+#    sub_doctrine = great_war_infantry
+#}
 
 	complete_special_project = {
 		project = sp:sp_air_radar
@@ -446,34 +454,34 @@ recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_jean_de_lattre_de_tassigny
 recruit_character = FRA_alphonse_juin
-recruit_character = FRA_maurice_gamelin
-recruit_character = FRA_maxime_weygand
+recruit_character = FRA_army_chief_2_maurice_gamelin
+recruit_character = FRA_army_chief_1_maxime_weygand
 recruit_character = FRA_alphonse_georges
 recruit_character = FRA_antoinemariebenoit_besson
-recruit_character = FRA_charles_de_gaulle
+recruit_character = FRA_theorist_1_charles_de_gaulle
 recruit_character = FRA_philippe_leclerc
 recruit_character = FRA_henri_giraud
 recruit_character = FRA_charles_huntziger
 recruit_character = FRA_gastonhenri_billotte
 recruit_character = FRA_henry_freydenberg
 recruit_character = FRA_rene_olry
-recruit_character = FRA_francois_darlan
+recruit_character = FRA_navy_chief_1_francois_darlan
 recruit_character = FRA_jeanmarie_charles_abrial
 recruit_character = FRA_jeanpierre_esteva
 recruit_character = FRA_jean_de_laborde
-recruit_character = FRA_jean_romatet
+recruit_character = FRA_air_chief_1_jean_romatet
 recruit_character = FRA_emile_laure
 recruit_character = FRA_joseph_doumenc
 # recruit_character = FRA_denis_guillaumat # Has been removed to make way for Charles Maurras, but might be readded
 recruit_character = FRA_philippe_fequant
-recruit_character = FRA_victor_denain
-recruit_character = FRA_jean_marie_abrial
-recruit_character = FRA_jean_decoux
+recruit_character = FRA_theorist_2_victor_denain
+recruit_character = FRA_navy_chief_2_jean_marie_abrial
+recruit_character = FRA_theorist_3_jean_decoux
 recruit_character = FRA_jean_marie_bergeret
-recruit_character = FRA_marcel_gensoul
+recruit_character = FRA_navy_chief_3_marcel_gensoul
 recruit_character = FRA_martial_valin
 recruit_character = FRA_rene_emile_godfroy
-recruit_character = FRA_joseph_vuillemin
+recruit_character = FRA_air_chief_2_joseph_vuillemin
 recruit_character = FRA_henri_marie_auguste_bineau
 recruit_character = FRA_louis_kahn
 recruit_character = FRA_robert_odic
@@ -1196,7 +1204,8 @@ if = {
 		amount = 600
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
 		amount = 600
@@ -1264,7 +1273,8 @@ if = {
 		amount = 20
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		amount = 432

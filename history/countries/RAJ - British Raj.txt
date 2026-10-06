@@ -271,7 +271,8 @@ if = {
 		amount = 3870
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "Graveyard of Empires" } }
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 		amount = 2970
@@ -286,7 +287,8 @@ if = {
 		amount = 80
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = CAS_equipment_1
 		amount = 80

@@ -1577,7 +1577,8 @@ if = {
 		amount = 360
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
 		amount = 360
@@ -1625,7 +1626,8 @@ if = {
 		amount = 80
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		amount = 280

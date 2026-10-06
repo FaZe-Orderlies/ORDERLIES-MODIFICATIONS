@@ -1,4 +1,4 @@
-﻿capital = 2 # Rome
+capital = 2 # Rome
 
 ETH_set_up_lon_arms_resolution_effect = yes 
 
@@ -1328,7 +1328,8 @@ if = {
 		amount = 90
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
 		amount = 90
@@ -1377,7 +1378,8 @@ if = {
 		amount = 48
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		amount = 300

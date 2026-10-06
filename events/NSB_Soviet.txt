@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # NSB Soviet Events
 ###########################
 
@@ -29,122 +29,242 @@ add_namespace = NSB_soviet_nationalist
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.01
+	title = NSB_soviet_paranoia_system_events.01.t
+	desc = NSB_soviet_paranoia_system_events.01.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.11
+	title = NSB_soviet_paranoia_system_events.11.t
+	desc = NSB_soviet_paranoia_system_events.11.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.12
+	title = NSB_soviet_paranoia_system_events.12.t
+	desc = NSB_soviet_paranoia_system_events.12.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.13
+	title = NSB_soviet_paranoia_system_events.13.t
+	desc = NSB_soviet_paranoia_system_events.13.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.19
+	title = NSB_soviet_paranoia_system_events.19.t
+	desc = NSB_soviet_paranoia_system_events.19.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 unit_leader_event = {
 	id = NSB_soviet_paranoia_system_events.21
+	title = NSB_soviet_paranoia_system_events.21.t
+	desc = NSB_soviet_paranoia_system_events.21.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.22
+	title = NSB_soviet_paranoia_system_events.22.t
+	desc = NSB_soviet_paranoia_system_events.22.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.23
+	title = NSB_soviet_paranoia_system_events.23.t
+	desc = NSB_soviet_paranoia_system_events.23.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 unit_leader_event = {
 	id = NSB_soviet_paranoia_system_events.24
+	title = NSB_soviet_paranoia_system_events.24.t
+	desc = NSB_soviet_paranoia_system_events.24.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.28
+	title = NSB_soviet_paranoia_system_events.28.t
+	desc = NSB_soviet_paranoia_system_events.28.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.29
+	title = NSB_soviet_paranoia_system_events.29.t
+	desc = NSB_soviet_paranoia_system_events.29.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 unit_leader_event = {
 	id = NSB_soviet_paranoia_system_events.31
+	title = NSB_soviet_paranoia_system_events.31.t
+	desc = NSB_soviet_paranoia_system_events.31.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.32
+	title = NSB_soviet_paranoia_system_events.32.t
+	desc = NSB_soviet_paranoia_system_events.32.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.33
+	title = NSB_soviet_paranoia_system_events.33.t
+	desc = NSB_soviet_paranoia_system_events.33.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.38
+	title = NSB_soviet_paranoia_system_events.38.t
+	desc = NSB_soviet_paranoia_system_events.38.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.39
+	title = NSB_soviet_paranoia_system_events.39.t
+	desc = NSB_soviet_paranoia_system_events.39.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.41
+	title = NSB_soviet_paranoia_system_events.41.t
+	desc = NSB_soviet_paranoia_system_events.41.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.42
+	title = NSB_soviet_paranoia_system_events.42.t
+	desc = NSB_soviet_paranoia_system_events.42.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.48
+	title = NSB_soviet_paranoia_system_events.48.t
+	desc = NSB_soviet_paranoia_system_events.48.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {
 	id = NSB_soviet_paranoia_system_events.49
+	title = NSB_soviet_paranoia_system_events.49.t
+	desc = NSB_soviet_paranoia_system_events.49.desc
+	hidden = yes
 	is_triggered_only = yes
 	trigger = { always = no }
+	option = {
+		name = ok
+	}
 }
 
 country_event = {

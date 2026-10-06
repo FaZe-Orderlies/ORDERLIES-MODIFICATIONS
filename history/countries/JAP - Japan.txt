@@ -1,4 +1,4 @@
-﻿capital = 282 # Tokyo/Kanto
+capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
@@ -2081,7 +2081,8 @@ if = {
 		amount = 173
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 		amount = 39590
@@ -2152,7 +2153,8 @@ if = {
 		amount = 113
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		amount = 216

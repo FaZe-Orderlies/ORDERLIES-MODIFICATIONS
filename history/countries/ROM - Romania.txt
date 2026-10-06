@@ -1,4 +1,4 @@
-﻿capital = 46
+capital = 46
 
 if = {
 	limit = {
@@ -305,7 +305,8 @@ if = {
 		amount = 60
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
 		amount = 60
@@ -330,7 +331,8 @@ if = {
 		amount = 24
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		producer = POL

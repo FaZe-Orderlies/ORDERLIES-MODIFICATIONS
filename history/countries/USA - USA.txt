@@ -1,4 +1,4 @@
-﻿capital = 361 # Washington DC
+capital = 361 # Washington DC
 
 oob = "USA_1936"
 
@@ -442,8 +442,8 @@ recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_george_s_patton
-recruit_character = USA_omar_bradley
-recruit_character = USA_dwight_d_eisenhower
+recruit_character = USA_theorist_1_omar_bradley
+recruit_character = USA_army_chief_1_dwight_d_eisenhower
 recruit_character = USA_geoffrey_keyes
 recruit_character = USA_lucian_truscott
 recruit_character = USA_mark_clark
@@ -463,27 +463,27 @@ recruit_character = USA_joseph_stilwell
 recruit_character = USA_oscar_griswold
 recruit_character = USA_maurice_rose
 recruit_character = USA_alexander_vandegrift
-recruit_character = USA_ernest_king
-recruit_character = USA_chester_w_nimitz
-recruit_character = USA_william_halsey_jr
+recruit_character = USA_navy_chief_1_ernest_king
+recruit_character = USA_theorist_3_chester_w_nimitz
+recruit_character = USA_navy_chief_3_william_halsey_jr
 recruit_character = USA_frank_jack_fletcher
 recruit_character = USA_raymond_a_spruance
-recruit_character = USA_harold_rainsford_stark
+recruit_character = USA_navy_chief_2_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
 recruit_character = USA_carnot_wheeler
 recruit_character = USA_robert_goddard
 recruit_character = USA_robert_oppenheimer
-recruit_character = USA_curtis_lemay
+recruit_character = USA_theorist_2_curtis_lemay
 recruit_character = USA_thomas_kinkaid
-recruit_character = USA_henry_arnold
+recruit_character = USA_air_chief_2_henry_arnold
 recruit_character = USA_dewitt_clinton_ramsey
 recruit_character = USA_harold_mcclelland
 recruit_character = USA_charles_lindbergh
 recruit_character = USA_george_kenney
 recruit_character = USA_john_cannon
-recruit_character = USA_george_marshall
-recruit_character = USA_carl_spaatz
+recruit_character = USA_army_chief_2_george_marshall
+recruit_character = USA_air_chief_1_carl_spaatz
 recruit_character = USA_marc_mitscher
 recruit_character = USA_jimmy_doolittle
 recruit_character = USA_claire_lee_chennault
@@ -1305,7 +1305,8 @@ if = {
 		amount = 12
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
 		amount = 12
@@ -1366,7 +1367,8 @@ if = {
 		amount = 24
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		amount = 384

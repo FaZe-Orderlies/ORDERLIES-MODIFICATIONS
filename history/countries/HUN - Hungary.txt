@@ -514,7 +514,8 @@ if = {
 		amount = 55
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "Gotterdammerung" } }
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 		amount = 4720
@@ -551,7 +552,8 @@ if = {
 		amount = 12
 	}
 }
-else = {
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_0
 		producer = ITA
