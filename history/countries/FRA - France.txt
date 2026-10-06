@@ -1,4 +1,4 @@
-capital = 16 # Paris/Ile de France
+﻿capital = 16 # Paris/Ile de France
 
 if = {
 	limit = {
@@ -55,6 +55,29 @@ if = {
 			CAS1 = 1
 			early_transport_plane = 1
 		}
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = LEB
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = SYR
+		puppet = LEB
 	}
 }
 
@@ -181,8 +204,7 @@ if = {
 		basic_dp_light_battery = 1
 		#cruiser_submarines = 1
 	}
-	
-	
+	add_ideas = MTG_naval_treaty_adherent
 }
 
 
@@ -320,11 +342,11 @@ if = {
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
 set_grand_doctrine = new_operational_integrity
-#set_sub_doctrine = great_war_infantry
-#add_mastery = {
-#    amount = 100
-#    sub_doctrine = great_war_infantry
-#}
+set_sub_doctrine = great_war_infantry
+add_mastery = {
+    amount = 100
+    sub_doctrine = great_war_infantry
+}
 
 	complete_special_project = {
 		project = sp:sp_air_radar
@@ -372,6 +394,8 @@ set_grand_doctrine = new_operational_integrity
 			basic_heavy_battery = 1
 			improved_ship_torpedo_launcher = 1
 		}
+		remove_ideas = MTG_naval_treaty_adherent
+		add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 	if = {
 		limit = {
@@ -422,34 +446,34 @@ recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_jean_de_lattre_de_tassigny
 recruit_character = FRA_alphonse_juin
-recruit_character = FRA_army_chief_2_maurice_gamelin
-recruit_character = FRA_army_chief_1_maxime_weygand
+recruit_character = FRA_maurice_gamelin
+recruit_character = FRA_maxime_weygand
 recruit_character = FRA_alphonse_georges
 recruit_character = FRA_antoinemariebenoit_besson
-recruit_character = FRA_theorist_1_charles_de_gaulle
+recruit_character = FRA_charles_de_gaulle
 recruit_character = FRA_philippe_leclerc
 recruit_character = FRA_henri_giraud
 recruit_character = FRA_charles_huntziger
 recruit_character = FRA_gastonhenri_billotte
 recruit_character = FRA_henry_freydenberg
 recruit_character = FRA_rene_olry
-recruit_character = FRA_navy_chief_1_francois_darlan
+recruit_character = FRA_francois_darlan
 recruit_character = FRA_jeanmarie_charles_abrial
 recruit_character = FRA_jeanpierre_esteva
 recruit_character = FRA_jean_de_laborde
-recruit_character = FRA_air_chief_1_jean_romatet
+recruit_character = FRA_jean_romatet
 recruit_character = FRA_emile_laure
 recruit_character = FRA_joseph_doumenc
 # recruit_character = FRA_denis_guillaumat # Has been removed to make way for Charles Maurras, but might be readded
 recruit_character = FRA_philippe_fequant
-recruit_character = FRA_theorist_2_victor_denain
-recruit_character = FRA_navy_chief_2_jean_marie_abrial
-recruit_character = FRA_theorist_3_jean_decoux
+recruit_character = FRA_victor_denain
+recruit_character = FRA_jean_marie_abrial
+recruit_character = FRA_jean_decoux
 recruit_character = FRA_jean_marie_bergeret
-recruit_character = FRA_navy_chief_3_marcel_gensoul
+recruit_character = FRA_marcel_gensoul
 recruit_character = FRA_martial_valin
 recruit_character = FRA_rene_emile_godfroy
-recruit_character = FRA_air_chief_2_joseph_vuillemin
+recruit_character = FRA_joseph_vuillemin
 recruit_character = FRA_henri_marie_auguste_bineau
 recruit_character = FRA_louis_kahn
 recruit_character = FRA_robert_odic
@@ -1137,6 +1161,133 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = empty
 		}
+	}
+}
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 34967
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 856
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 560
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 455
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "H-35"
+		producer = FRA
+		amount = 600
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		variant_name = "FT mod. 31"
+		producer = FRA
+		amount = 600
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 600
+	}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 600
+	}
+}
+if = {
+	limit = { has_dlc = "La Resistance" }
+	add_equipment_to_stockpile = {
+		type = gw_armored_car_equipment
+		amount = 460
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "D.500"
+		producer = FRA
+		amount = 96
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "D.510"
+		producer = FRA
+		amount = 192
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "NiD 62"
+		producer = FRA
+		amount = 144
+	}
+	add_equipment_to_stockpile = {
+		type = large_plane_airframe_0
+		variant_name = "F.222"
+		producer = FRA
+		amount = 84
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Amiot 143"
+		producer = FRA
+		amount = 120
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_naval_bomber_airframe_0
+		variant_name = "Latecoere 296"
+		producer = FRA
+		amount = 24
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_airframe_0
+		variant_name = "D.371"
+		producer = FRA
+		amount = 20
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_naval_bomber_airframe_0
+		variant_name = "PL.7"
+		producer = FRA
+		amount = 20
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 432
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_1
+		amount = 180
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 24
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_1
+		amount = 24
+	}
+	add_equipment_to_stockpile = {
+		type = cv_fighter_equipment_0
+		amount = 20
+	}
+	add_equipment_to_stockpile = {
+		type = cv_nav_bomber_equipment_1
+		amount = 20
 	}
 }
 

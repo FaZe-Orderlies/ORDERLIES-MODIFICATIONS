@@ -1,5 +1,4 @@
-capital = 361 # Washington DC
-
+﻿capital = 361 # Washington DC
 
 oob = "USA_1936"
 
@@ -41,6 +40,13 @@ if = {
 			early_transport_plane = 1
 		}
 	}
+}
+
+IF = {
+	limit = {
+		has_dlc = "No Compromise, No Surrender"
+	}
+	create_faction_from_template = faction_template_usa_commonwealth
 }
 
 set_research_slots = 5
@@ -115,7 +121,7 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 	}
-	
+	add_ideas = bureau_of_ordnance_spirit
 }
 
 if = {
@@ -161,6 +167,7 @@ if = {
 		#improved_airplane_launcher = 1
 		basic_dp_light_battery = 1
 	}
+	add_ideas = MTG_naval_treaty_adherent
 }
 ##Monroe Doctrine - We are trying to just remove the dlc check and see what, if any, things break. Will ask QA and BETAs to test new system both with and without ToA
 #IF = {
@@ -210,6 +217,7 @@ if = {
 		#laws
 		isolation
 		volunteer_only
+		great_depression_3
 		new_deal
 	}
 	remove_ideas = {
@@ -221,7 +229,7 @@ if = {
 	unlock_national_focus = USA_wpa
 	complete_national_focus = USA_war_department
 	complete_national_focus = USA_air_war_plans_division
-	# complete_national_focus = USA_war_plans_division
+	complete_national_focus = USA_war_plans_division
 	complete_national_focus = USA_agricultural_adjustment_act
 	unlock_national_focus = USA_neutrality_act
 	#Dont want neutrality act event to fire
@@ -242,9 +250,9 @@ if = {
 		}
 	}
 	complete_national_focus = USA_intervention_in_asia	
-	# complete_national_focus = USA_war_plan_orange
+	complete_national_focus = USA_war_plan_orange
 	complete_national_focus = USA_intervention_in_europe		
-	# complete_national_focus = USA_war_plan_black
+	complete_national_focus = USA_war_plan_black
 	complete_national_focus = USA_strategic_bombing
  	complete_national_focus = USA_fair_labour_standards_act
 
@@ -366,6 +374,8 @@ if = {
 			improved_heavy_battery = 1
 			advanced_dp_light_battery = 3
 		}
+		remove_ideas = MTG_naval_treaty_adherent
+		add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 }
 
@@ -406,9 +416,17 @@ set_popularities = {
 
 add_ideas = {
 	undisturbed_isolation
+	great_depression
 	disarmed_nation
 	free_trade
 	home_of_the_free
+}
+
+
+# DIPLOMACY
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_colony
 }
 
 1939.1.1 = {
@@ -424,8 +442,8 @@ recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_george_s_patton
-recruit_character = USA_theorist_1_omar_bradley
-recruit_character = USA_army_chief_1_dwight_d_eisenhower
+recruit_character = USA_omar_bradley
+recruit_character = USA_dwight_d_eisenhower
 recruit_character = USA_geoffrey_keyes
 recruit_character = USA_lucian_truscott
 recruit_character = USA_mark_clark
@@ -445,27 +463,27 @@ recruit_character = USA_joseph_stilwell
 recruit_character = USA_oscar_griswold
 recruit_character = USA_maurice_rose
 recruit_character = USA_alexander_vandegrift
-recruit_character = USA_navy_chief_1_ernest_king
-recruit_character = USA_theorist_3_chester_w_nimitz
-recruit_character = USA_navy_chief_3_william_halsey_jr
+recruit_character = USA_ernest_king
+recruit_character = USA_chester_w_nimitz
+recruit_character = USA_william_halsey_jr
 recruit_character = USA_frank_jack_fletcher
 recruit_character = USA_raymond_a_spruance
-recruit_character = USA_navy_chief_2_harold_rainsford_stark
+recruit_character = USA_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
 recruit_character = USA_carnot_wheeler
 recruit_character = USA_robert_goddard
 recruit_character = USA_robert_oppenheimer
-recruit_character = USA_theorist_2_curtis_lemay
+recruit_character = USA_curtis_lemay
 recruit_character = USA_thomas_kinkaid
-recruit_character = USA_air_chief_2_henry_arnold
+recruit_character = USA_henry_arnold
 recruit_character = USA_dewitt_clinton_ramsey
 recruit_character = USA_harold_mcclelland
 recruit_character = USA_charles_lindbergh
 recruit_character = USA_george_kenney
 recruit_character = USA_john_cannon
-recruit_character = USA_army_chief_2_george_marshall
-recruit_character = USA_air_chief_1_carl_spaatz
+recruit_character = USA_george_marshall
+recruit_character = USA_carl_spaatz
 recruit_character = USA_marc_mitscher
 recruit_character = USA_jimmy_doolittle
 recruit_character = USA_claire_lee_chennault
@@ -1259,6 +1277,126 @@ if = {
 }
 
 
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 11061
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 333
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 105
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "M2A2"
+		producer = USA
+		amount = 12
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "M1 Combat Car"
+		producer = USA
+		amount = 12
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 12
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_2
+		amount = 12
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "P-26A"
+		producer = USA
+		amount = 384
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "A-12"
+		producer = USA
+		amount = 96
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "B-6A"
+		producer = USA
+		amount = 96
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_1
+		variant_name = "B-10"
+		producer = USA
+		amount = 108
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "P2Y"
+		producer = USA
+		amount = 108
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_airframe_0
+		variant_name = "F4B"
+		producer = USA
+		amount = 24
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_cas_airframe_0
+		variant_name = "SBU Corsair"
+		producer = USA
+		amount = 42
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_naval_bomber_airframe_0
+		variant_name = "BM-2"
+		producer = USA
+		amount = 24
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 384
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 96
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 204
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_1
+		amount = 108
+	}
+	add_equipment_to_stockpile = {
+		type = cv_fighter_equipment_0
+		amount = 24
+	}
+	add_equipment_to_stockpile = {
+		type = cv_CAS_equipment_1
+		amount = 42
+	}
+	add_equipment_to_stockpile = {
+		type = cv_nav_bomber_equipment_1
+		amount = 24
+	}
+}
+
 # 1939 Start #
 1939.1.1 = {
 	if = {
@@ -1562,7 +1700,3 @@ set_rule = {
 	can_send_volunteers = no
 }
 ### ВПА ресы ###
-
-
-
-

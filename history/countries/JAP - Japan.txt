@@ -1,4 +1,4 @@
-capital = 282 # Tokyo/Kanto
+﻿capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
@@ -818,6 +818,7 @@ JAP_theorist_3_isoroku_yamamoto = {
 
 
 # Setup 1939 Start Date
+
 1939.1.1 = {
 
 	set_country_flag = JAP_1939_start_date_initiated
@@ -2047,6 +2048,136 @@ create_equipment_variant = {
 }
 
 
+
+### REFUNDED STARTING EQUIPMENT ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 39988
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 762
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 228
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 880
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_chassis_0
+		variant_name = "Type 89 I-Go"
+		producer = JAP
+		amount = 174
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "Type 94 Tankette"
+		producer = JAP
+		amount = 173
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 39590
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 800
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 240
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 880
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 216
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_2
+		amount = 216
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "Ki-10"
+		producer = JAP
+		amount = 216
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Ki-2"
+		producer = JAP
+		amount = 54
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Ki-3"
+		producer = JAP
+		amount = 108
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Ki-1"
+		producer = JAP
+		amount = 54
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_cas_airframe_0
+		variant_name = "Aichi D1A2"
+		producer = JAP
+		amount = 165
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_airframe_0
+		variant_name = "A4N"
+		producer = JAP
+		amount = 121
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_naval_bomber_airframe_0
+		variant_name = "B2M"
+		producer = JAP
+		amount = 113
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 216
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 162
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 54
+	}
+	add_equipment_to_stockpile = {
+		type = cv_CAS_equipment_1
+		amount = 165
+	}
+	add_equipment_to_stockpile = {
+		type = cv_fighter_equipment_0
+		amount = 123
+	}
+	add_equipment_to_stockpile = {
+		type = cv_nav_bomber_equipment_1
+		amount = 101
+	}
+}
 
 # 1939 Start #			
 1939.1.1 = {

@@ -451,6 +451,17 @@ if = {
 
 set_convoys = 5
 
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2565
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 156
+}
+
 1939.1.1 = {
 	add_political_power = 1198
 	add_command_power = 100

@@ -497,6 +497,77 @@ add_breakthrough_progress = {
 
 
 # SETUP THE 1939 SCENARIO
+
+### REFUNDED STARTING EQUIPMENT ###
+if = {
+	limit = { has_dlc = "Gotterdammerung" }
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 3464
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 56
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 55
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 4720
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 10
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "CR.32"
+		producer = ITA
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "Weiss WM-10 Г–lyv"
+		producer = HUN
+		amount = 14
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Weiss WM-16 Budapest"
+		producer = HUN
+		amount = 12
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Ca.101"
+		producer = ITA
+		amount = 12
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		producer = ITA
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 12
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		producer = ITA
+		amount = 12
+	}
+}
+
 1939.1.1 = {
 
 	# WITHOUT THE WW DLC

@@ -1,4 +1,4 @@
-capital = 2 # Rome
+﻿capital = 2 # Rome
 
 ETH_set_up_lon_arms_resolution_effect = yes 
 
@@ -1294,6 +1294,107 @@ if = {
 	}
 }
 
+
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 32126
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 810
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 250
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 210
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "L3/35"
+		producer = ITA
+		amount = 90
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		variant_name = "Fiat 3000"
+		producer = ITA
+		amount = 90
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 90
+	}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 90
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "CR.32"
+		producer = ITA
+		amount = 300
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Ca.101"
+		producer = ITA
+		amount = 64
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Ca.133"
+		producer = ITA
+		amount = 192
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_1
+		variant_name = "SM.79"
+		producer = ITA
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_1
+		variant_name = "SM.81"
+		producer = ITA
+		amount = 32
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Ca.111"
+		producer = ITA
+		amount = 48
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 300
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 288
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_1
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 48
+	}
+}
 
 1939.1.1 = {
 	if = {

@@ -262,6 +262,37 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
+
+### REFUNDED STARTING EQUIPMENT ###
+if = {
+	limit = { has_dlc = "Graveyard of Empires" }
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 3870
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 2970
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Fairey Gordon"
+		producer = ENG
+		amount = 80
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 80
+	}
+}
+
 1939.1.1 = {
 	
 	if = {

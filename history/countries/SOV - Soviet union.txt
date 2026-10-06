@@ -1,4 +1,4 @@
-
+﻿
 ####
 #### NO STEP BACK
 ####
@@ -409,60 +409,10 @@ set_variable = { SOV_propaganda_happy_life_cost = SOV_propaganda_cost } # ID = 2
 set_variable = { SOV_propaganda_campaigns_taken = 0 } #Used as a requirement for certain focuses
 
 
-###PARANOIA ###
-set_variable = { SOV_paranoia = 0 } # Intitial Paranoia value
-set_variable = { SOV_paranoia_very_low_increase = 5 } #Paranoia very low increment
-set_variable = { SOV_paranoia_low_increase = 10 } #Paranoia low increment
-set_variable = { SOV_paranoia_medium_increase = 20 } #Paranoia medium increment
-set_variable = { SOV_paranoia_high_increase = 30 } #Paranoia high increment
-set_variable = { SOV_paranoia_very_high_increase = 50 } #Paranoia very high increment
-set_variable = { SOV_paranoia_low_decrease = -10 } #Paranoia low decrement --------> (prev -5)
-set_variable = { SOV_paranoia_medium_decrease = -20 } #Paranoia medium decrement --------> (prev -10)
-set_variable = { SOV_paranoia_high_decrease = -30 } #Paranoia high decrement --------> (prev -15)
-set_variable = { SOV_paranoia_very_high_decrease = -50 } #Paranoia very high decrement --------> (prev -25)
-set_variable = { SOV_paranoia_lower_threshold = 25 } #Lower Threshold -> Below Stalin doesn't purge
-set_variable = { SOV_paranoia_higher_threshold = 75 } #Higher Threshold -> Below Stalin purges occasionally / Above Stalin can start a Great Purge
-set_variable = { SOV_paranoia_modifier_increase = 1 } #Paranoia weekly increase via modifiers (Stalin's Paranoid leader trait) // WARNING: CUSTOM TOOLTIP DOES NOT WORK WITH VARS so needs to be updated
-set_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } #Number of Weekly Paranoia Modifiers currently active (Stalin's trait, Heads of NKVD, etc.). This value will be mulptiplied by SOV_paranoia_modifier_increase in order to apply the final weekly modifier
-SOV_paranoia_modifier_update_gui_tooltip = yes #Used in the Paranoia GUI to show total weekly increase/decrease of Paranoia
-set_country_flag = SOV_paranoia_modifier_active_flag
-set_variable = { SOV_paranoia_great_purge_administration_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
-set_variable = { SOV_paranoia_great_purge_army_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
-set_variable = { SOV_paranoia_great_purge_navy_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
-set_variable = { SOV_paranoia_great_purge_air_number_of_targets = 3 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
-set_variable = { SOV_specific_random_purge_targets_override = -1 } #-1 = default random people will be purged // 0+ = that many chars will be randomly targeted - Then the var is reset to -1
-
-#Purge-Related Decs Vars
-set_variable = { SOV_reinforce_officer_ranks_days = 360 }
-set_variable = { SOV_reinstate_aircraft_designer_days = 180 }
-
-set_variable = { SOV_total_purge_counter = 0 } #Total Purges Counter
-set_variable = { SOV_regular_purge_counter = 0 } #Regular Purges Counter
-set_variable = { SOV_great_purge_counter = 0 } #Great Purges Counter
-set_country_flag = SOV_last_purge_flag #Used for Cooldown between purges
-set_variable = { SOV_paranoia_weekly_bucket = 0 }
-set_variable = { SOV_medium_paranoia_days = 0 }
-set_variable = { SOV_high_paranoia_days = 0 }
-
-set_variable = { SOV_paranoia_based_on_level_multiplier = 5 } #Used in certain situations where unit leaders are purged and paranoia should be affected based on their level
-
-set_variable = { SOV_moscow_trial_index = 1 }
-
-set_variable = { SOV_last_regular_purge_area = 0 } # 1=ADMIN | 2=ARMY | 3=NAVY | 4=AIRFORCE // Used to prevent an area (army, administration...) to be purged twice in a row
-set_variable = { SOV_last_great_purge_area = 0 } # 1=ADMIN | 2=ARMY | 3=NAVY | 4=AIRFORCE // Used to prevent an area (army, administration...) to be GREATLY purged twice in a row
-
-set_variable = { SOV_purge_event_pp_to_avoid_regular = 0 } #PP Required to show the option to avoid a regular purge
-set_variable = { SOV_purge_event_pp_to_avoid_great = 0 } #PP Required to show the option to avoid a great purge
-set_variable = { SOV_purge_event_pp_to_avoid_regular_pay = -60 } #PP to be paid to avoid a regular purge
-set_variable = { SOV_purge_event_pp_to_avoid_great_pay = -120 } #PP to be paid to avoid a great purge
-
-set_variable = { SOV_paranoia_calm_down_stalin_re_enable_days = 180 } #Calm Down Stalin decision cooldown
-set_variable = { SOV_paranoia_calm_down_stalin_decision_cost = 25 } #Calm Down Stalin decision cost
-set_variable = { SOV_paranoia_inspection_re_enable_days = 180 } #Inpsection decisions cooldown
-set_variable = { SOV_paranoia_inspection_remove_days = 7 } #Inspection decisions time to complete
-set_variable = { SOV_paranoia_inspection_decision_cost = 50 } #Inspection decisions cost
-
-country_event = { id = NSB_soviet_paranoia_system_events.01 days = 90 random_days = 10 } # EVENT ACTIVATING THE PARANOIA SYSTEM
+###PARANOIA DISABLED###
+set_variable = { SOV_paranoia = 0 }
+clr_country_flag = SOV_paranoia_system_active_flag
+clr_country_flag = SOV_paranoia_modifier_active_flag
 
 # Civil war preparation 
 set_variable = { SOV_army_framejob_decision_cost = 25 } #Frame general decisions cost
@@ -477,28 +427,6 @@ set_variable = { SOV_influence_army_decision_cost = 40 } #Influence army decisio
 set_variable = { SOV_influence_navy_decision_cost = 40 } #Influence navy decisions cost
 set_variable = { SOV_influence_aiforce_decision_cost = 40 } #Influence airforce decisions cost
 
-#UI Elements
-set_variable = { SOV_paranoia_photo_zinovyev = 1 }
-set_variable = { SOV_paranoia_photo_radek = 1 }
-set_variable = { SOV_paranoia_photo_bukharin = 1 }
-set_variable = { SOV_paranoia_photo_trotsky = 1 }
-set_variable = { SOV_paranoia_photo_tukhachevsky = 1 }
-set_variable = { SOV_paranoia_main_paranoiameter = 1 }
-#Generic portraits
-add_to_array = {
-	array = SOV_paranoia_generic_portraits_array
-	value = 0
-	index = 0
-}
-set_temp_variable = { i = 0 }
-while_loop_effect = {
-	limit = {
-		check_variable = { i = 12 compare = less_than }
-	}
-	add_to_array = { SOV_paranoia_generic_portraits_array = 1 } # 1 = NO PORTRAIT
-	add_to_temp_variable = { i = 1 }
-}
-set_variable = { SOV_paranoia_portrait_index = 1 }
 
 
 #GOSPROYEKTSTROY
@@ -890,6 +818,7 @@ add_ideas = {
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
+
 
 1939.1.1 = {
 
@@ -1830,6 +1759,98 @@ if = {
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
+	}
+}
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 122494
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 814
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 401
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1603
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "T-26TU mod. 1933"
+		producer = SOV
+		amount = 1493
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "BT-5"
+		producer = SOV
+		amount = 1492
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 1493
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_2
+		amount = 1492
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "I-15"
+		producer = SOV
+		amount = 470
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_1
+		variant_name = "I-16"
+		producer = SOV
+		amount = 188
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "DB-3"
+		producer = SOV
+		amount = 348
+	}
+	add_equipment_to_stockpile = {
+		type = large_plane_airframe_0
+		variant_name = "TB-3"
+		producer = SOV
+		amount = 72
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 470
+	}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 188
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 240
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_1
+		amount = 108
+	}
+	add_equipment_to_stockpile = {
+		type = strat_bomber_equipment_1
+		amount = 72
 	}
 }
 

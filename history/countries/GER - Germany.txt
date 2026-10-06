@@ -439,6 +439,7 @@ set_war_support = 0.3
 
 
 # SETUP THE 1939 SCENARIO
+
 1939.1.1 = {
 
 	# Setting up the required world tension
@@ -1541,6 +1542,113 @@ if = {
 			special_type_slot_2 = floats
 		}
 		icon = "GFX_GER_naval_bomber1_medium"
+	}
+}
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 26580
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 890
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 348
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 605
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		variant_name = "Panzer I Ausf. A"
+		producer = GER
+		amount = 360
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_2
+		variant_name = "Panzer II Ausf. A"
+		producer = GER
+		amount = 360
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 360
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_2
+		amount = 360
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "He 51"
+		producer = GER
+		amount = 280
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Do 23"
+		producer = GER
+		amount = 440
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		variant_name = "Ju 86"
+		producer = GER
+		amount = 40
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_0
+		variant_name = "Hs 123"
+		producer = GER
+		amount = 80
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_naval_bomber_airframe_1
+		variant_name = "Do 22"
+		producer = GER
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane_equipment_1
+		producer = GER
+		amount = 80
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 280
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 400
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_1
+		amount = 80
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_1
+		amount = 80
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_1
+		amount = 72
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane_equipment_1
+		amount = 80
 	}
 }
 

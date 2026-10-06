@@ -358,6 +358,37 @@ if = {
 ##############
 #### 1939 ####
 ##############
+
+### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 3138
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 90
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 42
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "He 51"
+		producer = GER
+		amount = 48
+	}
+}
+else = {
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		producer = GER
+		amount = 48
+	}
+}
+
 1939.1.1 = {
 	
 	#POLIICS
