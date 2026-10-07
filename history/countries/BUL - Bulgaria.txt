@@ -341,6 +341,7 @@ set_technology = { #VANILLA & DLC
 	fuel_silos = 1
 	basic_train = 1
 	tech_mountaineers = 1
+	photo_reconnaisance = 1
 }
 
 if = {

@@ -28,6 +28,7 @@ if = {
 			iw_small_airframe = 1
 			aa_lmg = 1
 			engines_1 = 1
+			photo_reconnaisance = 1
 			bba_early_transport_plane = 1
 		}
 	else = {

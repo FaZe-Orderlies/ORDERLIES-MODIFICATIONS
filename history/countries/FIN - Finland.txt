@@ -1,4 +1,4 @@
-capital = 111
+﻿capital = 111
 
 set_oob = "FIN_1936"
 
@@ -476,9 +476,9 @@ add_equipment_to_stockpile = {
 
 		#Air
 		iw_small_airframe = 1
-		basic_small_airframe = 1
 		aa_lmg = 1
 		engines_1 = 1
+		photo_reconnaisance = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -688,7 +688,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Väinämöinen Class"				
+		name = "VГ¤inГ¤mГ¶inen Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = FIN_CA_HISTORICAL
 		parent_version = 0

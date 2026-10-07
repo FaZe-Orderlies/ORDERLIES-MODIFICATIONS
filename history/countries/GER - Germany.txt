@@ -1,4 +1,4 @@
-
+﻿
 capital = 64 # Berlin/Brandeburg
 
 
@@ -56,7 +56,6 @@ if = {
 			early_bombs = 1
 			aircraft_construction = 1
 			iw_small_airframe = 1
-			basic_small_airframe = 1
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
@@ -339,7 +338,7 @@ set_variable = { GER_communist_intel_intel_network_gain = 0 }
 set_variable = { GER_communist_intel_decryption_factor = 0 }
 set_variable = { GER_communist_intel_encryption_factor = 0 }
 
-#POLITBÜRO MODIFIER
+#POLITBГњRO MODIFIER
 set_variable = { GER_politburo_defensive_war_stability_factor = 0}
 set_variable = { GER_politburo_offensive_war_stability_factor = 0}
 set_variable = { GER_politburo_party_popularity_stability_factor = 0}
@@ -1038,7 +1037,7 @@ if = {
 	## 1936 Start ##
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Königsberg"
+		name = "KГ¶nigsberg"
 		type = light_cruiser_1
 		parent_version = 0
 		upgrades = {
@@ -1199,7 +1198,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934"
+		name = "ZerstГ¶rer 1934"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -1216,7 +1215,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934A"
+		name = "ZerstГ¶rer 1934A"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -1255,7 +1254,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Königsberg"
+		name = "KГ¶nigsberg"
 		type = ship_hull_cruiser_1
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -1674,7 +1673,7 @@ if = {
 		}
 		# Destroyer #
 		create_equipment_variant = {
-			name = "Zerstörer 1936"
+			name = "ZerstГ¶rer 1936"
 			type = destroyer_2
 			parent_version = 0
 			upgrades = {
@@ -1690,7 +1689,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 		create_equipment_variant = {
-			name = "Zerstörer 1936"
+			name = "ZerstГ¶rer 1936"
 			type = ship_hull_light_2
 			name_group = GER_DD_HISTORICAL
 			parent_version = 0

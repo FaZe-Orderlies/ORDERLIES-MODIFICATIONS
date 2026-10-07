@@ -1,4 +1,4 @@
-capital = 361 # Washington DC
+﻿capital = 361 # Washington DC
 
 oob = "USA_1936"
 
@@ -16,7 +16,6 @@ if = {
 		set_air_oob = "USA_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
-			basic_small_airframe = 1
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			engines_1 = 1
@@ -25,6 +24,7 @@ if = {
 			early_bombs = 1
 			aircraft_construction = 1
 			air_torpedoe_1 = 1
+			photo_reconnaisance = 1
 			bba_early_transport_plane = 1
 		}
 	else = {
@@ -1671,7 +1671,7 @@ set_variable = {
 	USA_min_export_mod = -1
 }
 
-##АРМИЯ##
+##РђР РњРРЇ##
 add_dynamic_modifier = {
 	modifier = USA_army
 }
@@ -1692,7 +1692,7 @@ set_variable = {
 	USA_production_speed_dockyard_factor_mod = 0.15
 }
 
-###Не может создавать новые алики сама по себе
+###РќРµ РјРѕР¶РµС‚ СЃРѕР·РґР°РІР°С‚СЊ РЅРѕРІС‹Рµ Р°Р»РёРєРё СЃР°РјР° РїРѕ СЃРµР±Рµ
 set_rule = {
 	desc = USA_my_rule_description
     can_create_factions = no
@@ -1701,4 +1701,4 @@ set_rule = {
 	desc = USA_my_rule_description
 	can_send_volunteers = no
 }
-### ВПА ресы ###
+### Р’РџРђ СЂРµСЃС‹ ###

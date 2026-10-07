@@ -17,4 +17,12 @@ spriteTypes = {
 		name = "GFX_orderlies_swaptech_medium"
 		texturefile = "gfx/interface/technologies/basic_encryption.dds"
 	}
+	SpriteType = {
+		name = "GFX_air_rocket_rails_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_rocket_rails.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_anti_tank_gun_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_tank_buster.dds"
+	}
 }

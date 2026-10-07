@@ -1,4 +1,4 @@
-
+﻿
 ####
 #### NO STEP BACK
 ####
@@ -17,7 +17,7 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
-###Стейт модификатор на крупные города от фокуса на дисциплину
+###РЎС‚РµР№С‚ РјРѕРґРёС„РёРєР°С‚РѕСЂ РЅР° РєСЂСѓРїРЅС‹Рµ РіРѕСЂРѕРґР° РѕС‚ С„РѕРєСѓСЃР° РЅР° РґРёСЃС†РёРїР»РёРЅСѓ
 set_variable = {SOV_production_speed_buildings_factor_dicipline = 0.05}
 
 add_ideas = SOV_economy
@@ -476,8 +476,8 @@ set_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = 0.3 }
 set_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.1 }
 set_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = -0.1 }
 
-#Стартовый дебафф ВВС (снимается фокусами SOV_women_in_aviation / SOV_raskovas_aviation_group)
-set_variable = { SOV_soviet_airforce_air_superiority_efficiency = -0.15 } #-15% эффективности истребителей
+#РЎС‚Р°СЂС‚РѕРІС‹Р№ РґРµР±Р°С„С„ Р’Р’РЎ (СЃРЅРёРјР°РµС‚СЃСЏ С„РѕРєСѓСЃР°РјРё SOV_women_in_aviation / SOV_raskovas_aviation_group)
+set_variable = { SOV_soviet_airforce_air_superiority_efficiency = -0.15 } #-15% СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚Рё РёСЃС‚СЂРµР±РёС‚РµР»РµР№
 
 set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = 0 } #-> Expand the Aircraft Industry
 set_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = 0 } #-> Modernize Aircraft Factories / Intensify Pilot Training Program
@@ -528,10 +528,10 @@ set_variable = { SOV_the_red_army_army_org_factor = -0.15 } # -> Restore Cossack
 set_variable = { SOV_the_red_army_experience_gain_army_factor = -0.1 }
 set_variable = { SOV_the_red_army_experience_loss_factor = 0.25 }
 
-#Стартовые дебаффы Красной Армии (снимаются по частям фокусами SOV_military_reorganization / SOV_an_adaptable_army / SOV_lessons_of_war)
-set_variable = { SOV_the_red_army_army_attack_factor = -0.15 } #-15% атаки всех дивизий (-5% за фокус)
-set_variable = { SOV_the_red_army_breakthrough_factor = -0.10 } #-10% прорыва (-4%/-3%/-3%)
-set_variable = { SOV_the_red_army_army_morale_factor = -0.10 } #-10% боевого духа армии (-4%/-3%/-3%)
+#РЎС‚Р°СЂС‚РѕРІС‹Рµ РґРµР±Р°С„С„С‹ РљСЂР°СЃРЅРѕР№ РђСЂРјРёРё (СЃРЅРёРјР°СЋС‚СЃСЏ РїРѕ С‡Р°СЃС‚СЏРј С„РѕРєСѓСЃР°РјРё SOV_military_reorganization / SOV_an_adaptable_army / SOV_lessons_of_war)
+set_variable = { SOV_the_red_army_army_attack_factor = -0.15 } #-15% Р°С‚Р°РєРё РІСЃРµС… РґРёРІРёР·РёР№ (-5% Р·Р° С„РѕРєСѓСЃ)
+set_variable = { SOV_the_red_army_breakthrough_factor = -0.10 } #-10% РїСЂРѕСЂС‹РІР° (-4%/-3%/-3%)
+set_variable = { SOV_the_red_army_army_morale_factor = -0.10 } #-10% Р±РѕРµРІРѕРіРѕ РґСѓС…Р° Р°СЂРјРёРё (-4%/-3%/-3%)
 
 set_variable = { SOV_the_red_army_mobilization_speed = 0 } #-> Strengthen the Mobilization Plan
 set_variable = { SOV_the_red_army_conscription_factor = 0 } #-> Strengthen the Mobilization Plan
@@ -686,11 +686,11 @@ if = {
 			engines_2 = 1
 			iw_medium_airframe = 1
 			iw_large_airframe = 1
-			basic_small_airframe = 1
 			basic_medium_airframe = 1
 			aircraft_construction = 1
 			air_torpedoe_1 = 1
 			bba_early_transport_plane = 1
+			photo_reconnaisance = 1
 		}
 	else = {
 		set_air_oob = "SOV_1936_air_legacy"
@@ -983,7 +983,7 @@ add_ideas = {
 	add_state_claim = 146 #KARELIA (FIN)
 	#add_state_claim = 147 #SALLA (FIN) # Claim removed from MR pact (AAT)
 	#add_state_claim = 722 #PETSAMO (FIN) # Claim removed from MR pact (AAT)
-	add_state_claim = 13 #PÄRNU (EST)
+	add_state_claim = 13 #PГ„RNU (EST)
 	add_state_claim = 191 #TARTU (EST)
 	add_state_claim = 811 #SAAREMAA (EST)
 	add_state_claim = 813 #VIRUMAA (EST)

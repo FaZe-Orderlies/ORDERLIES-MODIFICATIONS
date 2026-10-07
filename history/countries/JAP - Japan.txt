@@ -1,4 +1,4 @@
-capital = 282 # Tokyo/Kanto
+﻿capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
@@ -531,8 +531,8 @@ IF = {
 		aircraft_construction = 1
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
-		basic_small_airframe = 1
 		air_torpedoe_1 = 1
+		photo_reconnaisance = 1
 		bba_early_transport_plane = 1
 	}
 	ELSE = {
@@ -2008,7 +2008,7 @@ create_equipment_variant = {
 }	
 
 create_equipment_variant = {
-	name = "Kaichū IV Class"
+	name = "KaichЕ« IV Class"
 	type = ship_hull_submarine_1
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	parent_version = 0
