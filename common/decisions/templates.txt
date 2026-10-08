@@ -78,9 +78,9 @@ template_decisions = {
 					armored_signal = { x = 0 y = 4 }
                 }
                 regimental_support = {
-                    medium_tank_destroyer_support = { x = 0 y = 0 }
-                    medium_tank_destroyer_support = { x = 0 y = 1 }
-                    medium_tank_destroyer_support = { x = 0 y = 2 }
+                    anti_air_battery = { x = 0 y = 0 }
+                    anti_air_battery = { x = 0 y = 1 }
+                    anti_air_battery = { x = 0 y = 2 }
                     anti_air_battery = { x = 0 y = 3 }
                     anti_air_battery = { x = 0 y = 4 }
                 }		
@@ -101,9 +101,9 @@ template_decisions = {
 					anti_air = { x = 0 y = 4 }
                 }
                 regimental_support = {
-                    medium_tank_destroyer_support = { x = 0 y = 0 }
-                    medium_tank_destroyer_support = { x = 0 y = 1 }
-                    medium_tank_destroyer_support = { x = 0 y = 2 }
+                    anti_air_battery = { x = 0 y = 0 }
+                    anti_air_battery = { x = 0 y = 1 }
+                    anti_air_battery = { x = 0 y = 2 }
                     anti_air_battery = { x = 0 y = 3 }
                     anti_air_battery = { x = 0 y = 4 }
                 }		

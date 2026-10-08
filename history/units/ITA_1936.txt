@@ -75,7 +75,7 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		motorized = { x = 2 y = 0 }													# (elite) Bersaglieri Regiment
 		motorized = { x = 2 y = 1 }
-		light_armor = { x = 3 y = 0 }												# L3/35 Tankette Battalion
+		cavalry = { x = 3 y = 0 }
 	}
 
 	priority = 2 

@@ -46,6 +46,7 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 999 -- лимит на фильда
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 999 -- лимит на гена
+NDefines.NMilitary.BASE_REINFORCE_CHANCE = 0.06 -- базовая ротация дивизий в бою (было 0.02)
 
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.175 -- Маленькая река [feels.]
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.225 -- Большая река
@@ -64,8 +65,8 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
 
 ---зсу/пво
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.45 ---СЗУ режет пво
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.2 ---дамаг пво по самолетам (ванила 0.8)
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.03 ---шанс попадания пво по самолетам (ванила 0.1)
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.1 ---дамаг пво по самолетам (порезан на 50%, было 0.2, ванила 0.8)
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.0225 ---шанс попадания пво по самолетам (порезан на 25%, было 0.03, ванила 0.1)
 
 ---Аир
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
@@ -237,27 +238,54 @@ NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW_MIN = 0 -- Мини
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_REFERENCE_MANPOWER = 0 -- Опорное значение численности личного состава для масштабирования задержки развертывания/отзыва. При этом значении задержка равна базовой
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_MANPOWER_EXPONENT = 0 -- Экспонента для масштабирования численности личного состава (значение > 1 сильнее наказывает крупные дивизии увеличенным временем восстановления)
 
----ПОЛНОЕ ОТКЛЮЧЕНИЕ ПОЛУЧЕНИЯ ОПЫТА (XP) И ДОКТРИН ОТ ТРЕНИРОВОК, БОЕВ И АТТАШЕ
+---ПОЛНОЕ ОТКЛЮЧЕНИЕ ПОЛУЧЕНИЯ ОПЫТА (XP) И ДОКТРИН ОТ ВСЕХ ВОЗМОЖНЫХ ДЕЙСТВИЙ
+-- Доктрины и мастерство (NDoctrines)
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 0.0 -- Максимальное получение мастерства в месяц (запрещает прокачку доктрин)
+NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 0.0
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.0 -- Опыт доктрин (мастерство) от тренировок
+NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0
+NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.0
+NDefines.NDoctrines.MASTERY_BANK_MAX = 0.0
+NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.0 -- Передача доктринального мастерства от атташе
+NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.0
+NDefines.NDoctrines.NAVAL_MISSION_MASTERY_GAIN_FACTORS = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } -- Мастерство от всех морских миссий
+NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 0 -- Обмен доктринами во фракциях
+NDefines.NFactions.DOCTRINE_SHARING_MONTHLY_MASTERY_GAIN_PER_COMMANDER = 0
+NDefines.NFactions.FACTION_DOCTRINE_SHARING_UNLOCK_COST = 99999
+
 -- Армия (наземка)
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 0.0 -- Базовый множитель опыта страны от учений дивизий (обнуляет прирост)
 NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. опыт страны от тренировок дивизий
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от сухопутных боев
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 0.0 -- Макс. опыт страны в день от боев
 NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт от экспедиционных сил
 NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт от ленд-лиза в боях
-NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.0 -- Передача доктринального мастерства от атташе
-NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.0 -- Опыт доктрин (мастерство) от тренировок
-NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.0
 NDefines.NFactions.THEATER_COMMANDER_LAND_EXPERIENCE_SCALE = 0.0
 NDefines.NFactions.THEATER_COMMANDER_NAVY_EXPERIENCE_SCALE = 0.0
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.0 -- Доля опыта от атташе
 
 -- Авиация
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0 -- Опыт страны от тренировок авиакрыльев
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от боевых вылетов
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 0.0
+NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0
+NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.0
+NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NO_TRUCK_CONSUMERS = 0.0
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NODE_AND_TRAINS = 0.0
+NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_TRUCKS = 0.0
+NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.0
 
 -- Флот
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от тренировок флота
 NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.0 -- Макс. суточный опыт флота от учений
 NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.0 -- Опыт страны от выполнения морских миссий
+NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0.0 -- Опыт страны от морских боев
+NDefines.NNavy.FIELD_EXPERIENCE_MAX_PER_DAY = 0.0
+NDefines.NNavy.FIELD_EXPERIENCE_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.0
+NDefines.NNavy.MISSION_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 0.0
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 99 -- Базово 4. При 99 генералы никогда не получат роль Специалиста
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 99     -- Базово 6. При 99 генералы никогда не получат роль Эксперта

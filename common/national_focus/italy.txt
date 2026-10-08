@@ -2463,7 +2463,6 @@ focus_tree = {
 				bonus = 0.50
 				uses = 2
 				category = motorized_equipment
-				category = light_air
 			}
 		}
 	}
@@ -2543,12 +2542,6 @@ focus_tree = {
 				value = 1
 			}
 
-			add_tech_bonus = {
-				name = ITA_thermojet_research
-				bonus = 1
-				uses = 1
-				category = air_equipment
-			}
 			add_tech_bonus = {
 				name = ITA_thermojet_research
 				ahead_reduction = 1
@@ -3615,12 +3608,6 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 
-			add_tech_bonus = {
-				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 0.5
-				uses = 1
-				category = light_fighter
-			}
 
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
@@ -3648,12 +3635,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_tech_bonus = {
-				name = ITA_citta_dell_aria
-				bonus = 0.25
-				uses = 3 # was 4
-				category = air_equipment
-			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -3801,12 +3782,6 @@ focus_tree = {
 				}
 			}
 
-			add_tech_bonus = {
-				name = ITA_reggianes_exports
-				bonus = 0.50
-				uses = 1
-				category = air_equipment #Maybe more specific stuff? (Light/Medium bombers, fighters...)
-			}
 
 			if = {
 				limit = {
@@ -3845,15 +3820,6 @@ focus_tree = {
 					producer = GER
 					variant_name = "Ju 87"
 				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = ITA_diving_bombers
-					bonus = 0.5
-					uses = 1
-					category = cas_bomber
-					category = naval_bomber
-				}	
 			}
 			#NTH_Manu: Sends a request to Germany to purchase CAS and/or licensing design templates (historically 100 Ju87)
 		}
@@ -3960,15 +3926,6 @@ focus_tree = {
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-		
-			add_tech_bonus = {
-				name = ITA_standardization
-				bonus = 0.75
-				uses = 1
-				category = tactical_bomber
-				category = light_fighter
-				category = cat_strategic_bomber
-			}
 
 			random_core_state = {
 				limit = {
@@ -4020,12 +3977,6 @@ focus_tree = {
 
 			air_experience = 15
 	
-			add_tech_bonus = {
-				name = ITA_specialization
-				bonus = 0.5
-				uses = 2
-				category = air_equipment
-			}
 
 			random_core_state = {
 				limit = {
@@ -5131,12 +5082,6 @@ focus_tree = {
 			air_experience = 25
 			navy_experience = 25
 
-			add_tech_bonus = {
-				name = ITA_naval_air_coordination
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
 
 			if = {
 				limit = {

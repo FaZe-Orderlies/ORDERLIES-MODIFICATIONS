@@ -2176,10 +2176,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_ground_support
-				bonus = 0.75
-				uses = 2
-				category = light_fighter
-				category = cas_bomber
+				bonus = 0.7
+				uses = 1
+				technology = basic_small_airframe
 			}
 		}
 	}
@@ -6805,6 +6804,10 @@ focus_tree = {
 			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
 
 			add_political_power = 25
+			swap_ideas = {
+				remove_idea = trotskyite_plot_1
+				add_idea = trotskyite_plot_2
+			}
 			
 			#HISTORICAL
 			#Zinovyev
@@ -7051,6 +7054,10 @@ focus_tree = {
 			set_country_flag = SOV_second_moscow_trial_flag #Used to unlock the next purge focus
 
 			add_political_power = 25
+			swap_ideas = {
+				remove_idea = trotskyite_plot_2
+				add_idea = trotskyite_plot_3
+			}
 
 			#HISTORICAL
 			#Radek
@@ -7317,6 +7324,7 @@ focus_tree = {
 			set_country_flag = SOV_trial_of_the_generals_flag #Used to unlock the next purge focus
 
 			add_political_power = 25
+			remove_ideas = trotskyite_plot_3
 
 			set_country_flag = SOV_stalinist_military_flag #New Generals have more chances of being Stalinists after this
 		}
@@ -11609,96 +11617,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_policy_of_collective_security
-		icon = GFX_SOV_policy_of_collective_security_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_the_comintern }
-		x = -1
-		y = 1
-		relative_position_id = SOV_the_comintern
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_policy_of_individual_security }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			add_political_power = 35
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SOV_maksim_litvinov
-		}
-	}
-
-	focus = {
-		id = SOV_anti_fascist_policies
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = SOV_the_comintern }
-		x = 2
-		y = 0
-		relative_position_id = SOV_policy_of_collective_security
-		cost = 2
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-				
-		search_filters = {FOCUS_FILTER_PROPAGANDA}
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					is_major = yes
-					OR = {
-						has_government = democratic
-						has_government = communism
-					}
-					NOT = { has_war_with = ROOT }
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_good } 
-			}
-
-			every_other_country = {
-				limit = {
-					is_major = yes
-					has_government = fascism
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_bad } 
-			}
-
-			if = {
-				limit = {
-					has_government = communism
-				}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				unlock_decision_tooltip = SOV_propaganda_anti_fascism
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_seek_a_defense_pact_with_the_allies
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SOV_anti_fascist_policies }
-		x = 0
-		y = 1
-		relative_position_id = SOV_anti_fascist_policies
+		x = -1
+		y = 2
+		relative_position_id = SOV_the_comintern
 		cost = 5
 
 		ai_will_do = {
@@ -11946,8 +11869,6 @@ focus_tree = {
 				has_civil_war = yes
 			}	
 		}
-		
-		mutually_exclusive = { focus = SOV_policy_of_collective_security }
 
 		allow_branch = {
 			always = no
@@ -12736,11 +12657,10 @@ focus_tree = {
 	focus = {
 		id = SOV_claims_in_baltic
 		icon = GFX_SOV_claims_in_baltic_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_policy_of_collective_security }
-		prerequisite = { focus = SOV_anti_fascist_policies }
-		x = 1
+		prerequisite = { focus = SOV_the_comintern }
+		x = 0
 		y = 1
-		relative_position_id = SOV_policy_of_collective_security
+		relative_position_id = SOV_the_comintern
 		cost = 2
 
 		ai_will_do = {

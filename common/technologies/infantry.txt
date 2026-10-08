@@ -2486,13 +2486,13 @@ technologies = {
 		}
 
 		amphibious_mechanized = {
-			soft_attack = 0.4
-			hard_attack = 0.4
-			defense = 0.4
-			breakthrough = 0.4
-			armor_value = 0.4
-			ap_attack = 0.4
-			hardness = 0.4
+			soft_attack = 0.1
+			hard_attack = 0.1
+			defense = 0.1
+			breakthrough = 0.1
+			armor_value = 0.1
+			ap_attack = 0.1
+			hardness = 0.1
 		}
 
 		research_cost = 2
@@ -2524,18 +2524,13 @@ technologies = {
 		}
 
 		mechanized = {
-			soft_attack = 0.4
-			hard_attack = 0.4
-			defense = 0.4
-			breakthrough = 0.4
-			armor_value = 0.4
-			ap_attack = 0.4
-			hardness = 0.4
-		}
-
-		mot_fire_support = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+			defense = 0.1
 			breakthrough = 0.1
-			soft_attack = 0.05
+			armor_value = 0.1
+			ap_attack = 0.1
+			hardness = 0.1
 		}
 
 		path = {
@@ -2574,18 +2569,13 @@ technologies = {
 		}
 
 		mechanized = {
-			soft_attack = 0.4
-			hard_attack = 0.4
-			defense = 0.4
-			breakthrough = 0.4
-			armor_value = 0.4
-			ap_attack = 0.4
-			hardness = 0.4
-		}
-
-		mot_fire_support = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+			defense = 0.1
 			breakthrough = 0.1
-			soft_attack = 0.05
+			armor_value = 0.1
+			ap_attack = 0.1
+			hardness = 0.1
 		}
 
 		research_cost = 3

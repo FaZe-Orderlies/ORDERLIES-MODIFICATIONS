@@ -1314,10 +1314,9 @@ focus_tree = {
 				air_experience = 25
 				add_tech_bonus = {
 					name = fighter_command_focus
-					bonus = 1.0
+					bonus = 0.7
 					uses = 1
-				technology = improved_small_airframe
-					
+					technology = basic_small_airframe
 				}
 				add_doctrine_cost_reduction = {
 					name = fighter_command_focus #land_doc_bonus

@@ -1,4 +1,4 @@
-﻿capital = 361 # Washington DC
+capital = 361 # Washington DC
 
 oob = "USA_1936"
 
@@ -17,7 +17,6 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
-			basic_medium_airframe = 1
 			engines_1 = 1
 			engines_2 = 1
 			aa_lmg = 1

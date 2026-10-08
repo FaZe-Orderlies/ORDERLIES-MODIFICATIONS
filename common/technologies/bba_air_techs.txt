@@ -179,7 +179,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.7
+		research_cost = 12
 		start_year = 1938
 
 		folder = {
@@ -259,8 +259,9 @@ technologies = {
 			
 		}				
 
-		research_cost = 1.7
+		research_cost = 16.5
 		start_year = 1941
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 8 y = 0 }
@@ -339,12 +340,8 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}		
-		research_cost = 2
+		research_cost = 11
 		start_year = 1943
-
-		allow = {
-			date>1941.1.1
-		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -396,15 +393,6 @@ technologies = {
 	}
 	
 	modern_small_airframe = {
-
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
-		is_special_project_tech = yes
-
 		enable_equipments = {
 			small_plane_airframe_4
 			small_plane_cas_airframe_4
@@ -416,7 +404,7 @@ technologies = {
 			cv_small_plane_suicide_airframe_4
 		}
 
-		research_cost = 2
+		research_cost = 5.5
 		start_year = 1944
 
 		folder = {
@@ -526,7 +514,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.7
+		research_cost = 12
 		start_year = 1938
 
 		folder = {
@@ -590,8 +578,9 @@ technologies = {
 				PROJECT = sp_air_jet_engine	
 			}
 		}		
-		research_cost = 1.7
+		research_cost = 16.5
 		start_year = 1941
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 8 y = 0 }
@@ -653,12 +642,8 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}
-		research_cost = 2
+		research_cost = 11
 		start_year = 1943
-
-		allow = {
-			date>1941.1.1
-		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -698,22 +683,13 @@ technologies = {
 	}
 	
 	modern_medium_airframe = {
-
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
-		is_special_project_tech = yes
-
 		enable_equipments = {
 			medium_plane_airframe_4
 			medium_plane_fighter_airframe_4
 			medium_plane_scout_plane_airframe_4
 		}
 		
-		research_cost = 2
+		research_cost = 5.5
 		start_year = 1944
 		
 		folder = {
@@ -800,8 +776,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.7
+		research_cost = 12
 		start_year = 1938
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 0 }
@@ -856,8 +833,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.7
+		research_cost = 16.5
 		start_year = 1941
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 8 y = 0 }
@@ -899,12 +877,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 11
 		start_year = 1943
-
-		allow = {
-			date>1941.1.1
-		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -936,21 +910,12 @@ technologies = {
 	}
 	
 	modern_large_airframe = {
-
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
-		is_special_project_tech = yes
-
 		enable_equipments = {
 			large_plane_airframe_4
 			large_plane_maritime_patrol_plane_airframe_4
 		}
 		
-		research_cost = 2
+		research_cost = 5.5
 		start_year = 1944
 
 		folder = {
@@ -1082,7 +1047,11 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1941
+		start_year = 1940
+
+		allow = {
+			date > 1940.6.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1127,8 +1096,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1943
+		research_cost = 4
+		start_year = 1941
+
+		allow = {
+			date > 1941.3.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1161,8 +1134,12 @@ technologies = {
 			tank_buster_2
 		}
 			
-		research_cost = 1.5
-		start_year = 1944
+		research_cost = 7
+		start_year = 1942
+
+		allow = {
+			date > 1942.6.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1403,7 +1380,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 6 y = 0 }
+			position = { x = 6 y = 1 }
 		}
 
 		path = {
@@ -1451,12 +1428,12 @@ technologies = {
 			hmg_defense_turret_2x
 		}
 		
-		research_cost = 1
-		start_year = 1942
+		research_cost = 12
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 10 y = 0 }
+			position = { x = 8 y = 0 }
 		}
 
 		path = {
@@ -1510,6 +1487,10 @@ technologies = {
 			position = { x = 4 y = 0 }
 		}
 		path = {
+			leads_to_tech = aa_hmg
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = survivability_studies
 			research_cost_coeff = 1
 		}
@@ -1555,8 +1536,12 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1.5
-		start_year = 1943
+		research_cost = 4
+		start_year = 1941
+
+		allow = {
+			date > 1941.3.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1609,8 +1594,12 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 2
-		start_year = 1944
+		research_cost = 7
+		start_year = 1942
+
+		allow = {
+			date > 1942.6.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1734,7 +1723,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1800,7 +1789,11 @@ technologies = {
 			}
 		}		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1941
+
+		allow = {
+			date > 1939.12.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1868,7 +1861,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1943
 
 		allow = {
 			date>1941.1.1
@@ -1927,17 +1920,13 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 8 y = 0 }
+			position = { x = 10 y = 1 }
 		}
 
-		path = {
-			leads_to_tech = aa_hmg
-			research_cost_coeff = 1
-		}
 
 		categories = {
 			air_equipment

@@ -2224,6 +2224,12 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
+			add_tech_bonus = {
+				name = USA_air_support
+				bonus = 0.7
+				uses = 1
+				technology = basic_small_airframe
+			}
 		}
 	}
 

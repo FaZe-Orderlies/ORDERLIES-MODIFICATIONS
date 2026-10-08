@@ -1,4 +1,4 @@
-﻿capital = 282 # Tokyo/Kanto
+capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 0.2 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game
@@ -1092,7 +1092,6 @@ add_mastery = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "JAP_1939_air_bba"
 			set_technology = {
-				basic_medium_airframe = 1
 				range_improvements = 1
 			}
 		ELSE = {
