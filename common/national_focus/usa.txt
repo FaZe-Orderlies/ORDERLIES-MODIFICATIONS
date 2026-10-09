@@ -1890,6 +1890,12 @@ focus_tree = {
 				bonus = 1.0
 				technology = advanced_medium_tank_chassis
 			}
+			add_tech_bonus = {
+				name = USA_tank_experiments_heavy
+				uses = 1
+				bonus = 1.0
+				technology = improved_heavy_tank_chassis
+			}
 		}
 	}
 
@@ -2226,7 +2232,7 @@ focus_tree = {
 			add_ideas = air_support_focus
 			add_tech_bonus = {
 				name = USA_air_support
-				bonus = 0.7
+				bonus = 1.0
 				uses = 1
 				technology = basic_small_airframe
 			}

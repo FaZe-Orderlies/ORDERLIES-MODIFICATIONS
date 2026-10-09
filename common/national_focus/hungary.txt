@@ -3929,9 +3929,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
-				category = light_fighter
+				technology = basic_small_airframe
 			}
 		}
 	}
@@ -4481,6 +4480,12 @@ focus_tree = {
 				ahead_reduction = 2
 				uses = 1
 				category = armor
+			}
+			add_tech_bonus = {
+				name = HUN_develop_tanks_heavy
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
 			}
 
 			IF = {

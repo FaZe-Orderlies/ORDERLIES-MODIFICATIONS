@@ -16944,6 +16944,12 @@ focus_tree = {
 				uses = 1
 				category = cat_medium_armor
 			}
+			add_tech_bonus = {
+				name = HUN_develop_tanks_heavy
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 
 			IF = {
 				limit = {

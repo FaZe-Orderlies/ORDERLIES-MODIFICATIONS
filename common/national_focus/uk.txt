@@ -310,6 +310,12 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			add_tech_bonus = {
+				name = ENG_heavy_tank_bonus
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 		}
 	}
 
@@ -1314,9 +1320,9 @@ focus_tree = {
 				air_experience = 25
 				add_tech_bonus = {
 					name = fighter_command_focus
-					bonus = 0.7
+					bonus = 1.0
 					uses = 1
-					technology = basic_small_airframe
+					category = light_fighter
 				}
 				add_doctrine_cost_reduction = {
 					name = fighter_command_focus #land_doc_bonus

@@ -2176,9 +2176,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_ground_support
-				bonus = 0.7
+				bonus = 1.0
 				uses = 1
-				technology = basic_small_airframe
+				category = light_fighter
 			}
 		}
 	}
@@ -3901,6 +3901,12 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = armor
+			}
+			add_tech_bonus = {
+				name = SOV_superior_war_machines_heavy
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
 			}
 			if = {
 				limit = {

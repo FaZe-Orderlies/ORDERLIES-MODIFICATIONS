@@ -10038,6 +10038,12 @@ focus = {
 			    uses = 1
 				category = cat_medium_armor
 			}
+			add_tech_bonus = {
+				name = AST_sentinel_heavy_tank
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {

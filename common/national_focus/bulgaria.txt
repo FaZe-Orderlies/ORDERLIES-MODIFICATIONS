@@ -851,6 +851,12 @@ focus_tree = {
 				category = infantry_weapons
 				category = support_tech
 			}
+			add_tech_bonus = {
+				name = BUL_heavy_tank_bonus
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"

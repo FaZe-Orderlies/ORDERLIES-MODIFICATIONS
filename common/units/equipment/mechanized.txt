@@ -63,6 +63,7 @@ equipments = {
 		visual_level = 1
 
 		maximum_speed = 10
+		reliability = 0.9
 
 		#Defensive Abilities
 		defense = 30
@@ -91,6 +92,7 @@ equipments = {
 		visual_level = 2
 
 		maximum_speed = 12
+		reliability = 1.0
 
 		#Defensive Abilities
 		defense = 34

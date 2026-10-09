@@ -3532,6 +3532,12 @@ focus_tree = {
 				uses = 2
 				category = armor
 			}
+			add_tech_bonus = {
+				name = ITA_heavy_tank_bonus
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 
 			random_core_state = {
 				limit = {
@@ -3608,6 +3614,12 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 
+			add_tech_bonus = {
+				name = ITA_air_innovations_bba
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
 
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus

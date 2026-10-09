@@ -3034,16 +3034,9 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_expand_kummersdorfs_capacity
-				ahead_reduction = 1
-				bonus = 1
+				bonus = 1.0
 				uses = 1
-				category = cat_heavy_armor
-			}
-			add_tech_bonus = {
-				name = GER_expand_kummersdorfs_capacity
-				bonus = 1
-				uses = 1
-				category = cat_heavy_armor
+				technology = improved_heavy_tank_chassis
 			}
 			add_breakthrough_progress = {
 				specialization = specialization_land
@@ -3366,9 +3359,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
-				bonus = 0.7
+				bonus = 1.0
 				uses = 1
-				technology = basic_small_airframe
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute

@@ -933,7 +933,7 @@ focus_tree = {
 				name = FRA_heavy_armor_focus
 				bonus = 1.0
 				uses = 1
-				category = cat_heavy_armor
+				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
