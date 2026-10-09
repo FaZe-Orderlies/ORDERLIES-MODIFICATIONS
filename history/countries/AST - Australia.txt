@@ -206,6 +206,390 @@ if = {
 add_to_tech_sharing_group = commonwealth_research
 add_ideas = AST_unratified_westminster_act_idea
 
+IF = {
+	limit = {
+		has_dlc = "Thunder at Our Gates"
+		has_dlc = "Arms Against Tyranny"
+	}
+	create_equipment_variant = {
+		type = infantry_equipment_0
+		design_team = mio:AST_lithgow_arms_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = infantry_equipment_1
+		design_team = mio:AST_lithgow_arms_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = support_equipment_1
+		design_team = mio:AST_lysaght_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = motorized_equipment_1
+		design_team = mio:AST_holden_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = artillery_equipment_1
+		design_team = mio:AST_vickers-ruwolt_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = anti_air_equipment_1
+		design_team = mio:AST_vickers-ruwolt_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+
+	create_equipment_variant = {
+		type = transport_plane_equipment_1
+		design_team = mio:AST_de_havilland_australia_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.9.15"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 98
+	communism = 2
+}
+
+set_convoys = 100
+
+IF = {
+	limit = {
+		has_dlc = "Thunder at Our Gates"
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	#light cruisers
+	create_equipment_variant = {
+		name = "Sydney Class"
+		type = ship_hull_cruiser_2
+		name_group = AST_CL_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_cockatoo_docks_organization
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		optional_assets = {
+			{
+				icon = "GFX_commonwealth_light_cruiser_hobart"
+				model = "commonwealth_gfx_light_cruiser_entity"
+			}
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Town Class"
+		type = ship_hull_cruiser_1
+		name_group = AST_CL_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_cockatoo_docks_organization
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Leander Class"
+		type = ship_hull_cruiser_2
+		name_group = AST_CL_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_cockatoo_docks_organization
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
+
+	#heavy cruisers
+	create_equipment_variant = {
+		name = "Canberra Class"
+		type = ship_hull_cruiser_1
+		name_group = AST_CA_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_cockatoo_docks_organization
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+		optional_assets = {
+			{
+				icon = "GFX_commonwealth_heavy_cruiser_australia"
+				model = "commonwealth_gfx_heavy_cruiser_entity"
+			}
+		}
+	}
+	create_equipment_variant = {
+		name = "County Class"
+		type = ship_hull_cruiser_1
+		name_group = AST_CA_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_cockatoo_docks_organization
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+
+	# Destroyers #
+	create_equipment_variant = {
+		name = "V/W Class"
+		type = ship_hull_light_1
+		name_group = AST_DD_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_morts_dock_organization
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		optional_assets = {
+			{
+				icon = "GFX_commonwealth_destroyer_vampire"
+				model = "commonwealth_gfx_destroyer_1_entity"
+			}
+		}
+	}
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_light_1
+		name_group = AST_DD_HISTORICAL
+		parent_version = 0
+		design_team = mio:AST_morts_dock_organization
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+
+	ELSE = {
+		create_equipment_variant = {
+			name = "Sydney Class"
+			type = ship_hull_cruiser_2
+			name_group = AST_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_light_medium_battery_2
+			}
+			optional_assets = {
+				{
+					icon = "GFX_commonwealth_light_cruiser_hobart"
+					model = "commonwealth_gfx_light_cruiser_entity"
+				}
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Town Class"
+			type = ship_hull_cruiser_1
+			name_group = AST_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		
+		create_equipment_variant = {
+			name = "Leander Class"
+			type = ship_hull_cruiser_2
+			name_group = AST_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_light_medium_battery_2
+			}
+		}
+
+		#heavy cruisers
+		create_equipment_variant = {
+			name = "Canberra Class"
+			type = ship_hull_cruiser_1
+			name_group = AST_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_medium_battery_2
+			}
+			optional_assets = {
+				{
+					icon = "GFX_commonwealth_heavy_cruiser_australia"
+					model = "commonwealth_gfx_heavy_cruiser_entity"
+				}
+			}
+		}
+		create_equipment_variant = {
+			name = "County Class"
+			type = ship_hull_cruiser_1
+			name_group = AST_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_medium_battery_2
+			}
+		}
+		
+		# Destroyers #
+		create_equipment_variant = {
+			name = "V/W Class"
+			type = ship_hull_light_1
+			name_group = AST_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			optional_assets = {
+				{
+					icon = "GFX_commonwealth_destroyer_vampire"
+					model = "commonwealth_gfx_destroyer_1_entity"
+				}
+			}
+		}
+		create_equipment_variant = {
+			name = "S Class"
+			type = ship_hull_light_1
+			name_group = AST_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			obsolete = yes
+		}
+	}
+}
+
 
 ########## Flags & Variables ##########
 
@@ -362,6 +746,10 @@ set_variable = { AST_vichy_transfer_count = 0 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2082
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 50
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }

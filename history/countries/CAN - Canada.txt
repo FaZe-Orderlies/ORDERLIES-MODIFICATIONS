@@ -171,6 +171,22 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 98
+	fascism = 1
+	communism = 1
+}
+
+set_convoys = 100
+set_stability = 0.75
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -233,6 +249,10 @@ if = {
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2700
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 50
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }

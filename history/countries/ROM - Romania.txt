@@ -197,6 +197,19 @@ if = {
 
 set_convoys = 10
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 60
+	fascism = 18
+	communism = 2
+	neutrality = 20
+}
+
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -294,6 +307,10 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 70
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 30
 }
 if = {
 	limit = { has_dlc = "No Step Back" }

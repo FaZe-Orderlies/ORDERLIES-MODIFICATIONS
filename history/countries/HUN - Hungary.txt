@@ -499,6 +499,10 @@ add_breakthrough_progress = {
 # SETUP THE 1939 SCENARIO
 
 ### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 20
+}
 if = {
 	limit = { has_dlc = "Gotterdammerung" }
 	add_equipment_to_stockpile = {

@@ -1,4 +1,4 @@
-﻿capital = 111
+capital = 111
 
 set_oob = "FIN_1936"
 
@@ -460,6 +460,10 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = support_equipment_1
 	amount = 156
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 20
 }
 
 1939.1.1 = {

@@ -1,4 +1,4 @@
-﻿capital = 1035 # Nanjing
+capital = 1035 # Nanjing
 
 recruit_character = CHI_chiang_kaishek
 
@@ -20,3 +20,5 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_convoys = 40

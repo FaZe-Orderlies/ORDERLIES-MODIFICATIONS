@@ -1172,6 +1172,10 @@ if = {
 
 ### REFUNDED STARTING EQUIPMENT ###
 add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 100
+}
+add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 34967
 }

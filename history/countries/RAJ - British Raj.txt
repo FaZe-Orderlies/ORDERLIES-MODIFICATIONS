@@ -265,6 +265,10 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 
 ### REFUNDED STARTING EQUIPMENT ###
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 50
+}
 if = {
 	limit = { has_dlc = "Graveyard of Empires" }
 	add_equipment_to_stockpile = {

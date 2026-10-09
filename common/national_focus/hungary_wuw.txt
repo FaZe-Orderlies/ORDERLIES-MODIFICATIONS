@@ -15038,19 +15038,20 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
+
+			
+			add_tech_bonus = {
+				name = HUN_aeronautical_research_institute
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
 
 			IF = {
 				limit = {
@@ -15110,20 +15111,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					wuw_HUN_does_not_have_trianon = no
-				}
-				custom_effect_tooltip = available_theorist
-				show_ideas_tooltip = HUN_theorist_2_gyorgy_jendrassik
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = HUN_theorist_3_sandor_magyarossy
-			}
 
 		}
 	}
@@ -15210,16 +15197,6 @@ focus_tree = {
 			}
 
 			army_experience = 35
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					wuw_HUN_does_not_have_trianon = no
-				}
-				custom_effect_tooltip = available_theorist
-				show_ideas_tooltip = HUN_theorist_1_shvoy_kalman
-			}
 
 		}
 	}
