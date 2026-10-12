@@ -310,13 +310,13 @@ FIN_is_democratic_ai = {
 }
 
 has_air_academy = {
-	always = yes
+	always = no
 }
 
 has_air_force_command = {
-	always = yes
+	always = no
 }
 
 has_naval_academy = {
-	always = yes
+	always = no
 }
