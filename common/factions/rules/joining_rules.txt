@@ -899,7 +899,7 @@ joining_rule_east_asia_only = {
 			original_tag = OKN   
 			original_tag = EZO    
 			original_tag = ANU     
-			WTT_is_chinese_country = yes 
+			original_tag = CHI 
 		}
 	}
 	can_remove = {
@@ -919,7 +919,7 @@ joining_rule_east_asia_only = {
 				original_tag = OKN 
 				original_tag = EZO 
 				original_tag = ANU 
-				WTT_is_chinese_country = yes 
+				original_tag = CHI 
 			}
 		}
 	}

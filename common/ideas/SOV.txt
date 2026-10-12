@@ -4448,60 +4448,16 @@ ideas = {
 			picture = morozov_design_bureau
 
 			allowed = {
-				OR = {
-					original_tag = SOV
-					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
-				}
+				original_tag = SOV
 			}
 
 			visible = {
-				hidden_trigger = {
-					NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
-					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
-					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
-				}
-				IF = {
-					limit = {
-						has_dlc = "No Compromise, No Surrender"
-						FROM = { original_tag = CHI }
-					}
-					FROM = { 
-						always = no 
-						NOT = {
-							has_country_flag = SOV_accepted_Astrov
-							has_country_flag = SOV_accepted_OKMO
-						}
-					}
-				}	
+				NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
+				NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
+				NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
 			}
 
 			available = {
-				IF = {
-					limit = {
-						NOT = { has_dlc = "No Compromise, No Surrender" }
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-					}
-					always = no
-					NOT = {
-						has_war_with = SOV
-					}
-				}
-				IF = {
-					limit = {
-						has_dlc = "No Compromise, No Surrender" 
-						original_tag = CHI
-					}
-					has_country_flag = SOV_accepted_Morozov
-				}
 			}
 
 			research_bonus = {

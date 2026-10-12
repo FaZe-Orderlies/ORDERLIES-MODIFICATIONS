@@ -14397,7 +14397,7 @@ focus_tree = {
 
         available = {
             any_country = {
-                is_literally_china = yes
+                original_tag = CHI
                 exists = yes
                 NOT = { is_subject_of = ROOT }
             }
@@ -14417,7 +14417,7 @@ focus_tree = {
         completion_reward = {
             every_country = {
                 limit = {
-                    is_literally_china = yes
+                    original_tag = CHI
                 }
                 ROOT = {
                     create_wargoal = {
@@ -24021,7 +24021,7 @@ focus = {
                     JAP = {
                         OR = {
                             any_enemy_country = {
-                                is_literally_china = yes
+                                tag = CHI
                             } 
                             is_in_faction_with = SIA
                             has_government = fascism

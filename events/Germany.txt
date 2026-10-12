@@ -148,7 +148,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				is_literally_china = yes
+				original_tag = CHI
 				JAP = { has_completed_focus = JAP_sea_purge_the_kodoha_faction }
 			}
 			modifier = {
@@ -3846,14 +3846,6 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
 					GER_ludwig_beck = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
@@ -3956,14 +3948,6 @@ country_event = {
 
 				PREV = {	# Original country
 					GER_wilhelm_iv = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4102,14 +4086,6 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
 					GER_ludwig_beck = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
@@ -4212,14 +4188,6 @@ country_event = {
 
 				PREV = {	# Original country
 					GER_wilhelm_iv = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
@@ -4352,14 +4320,6 @@ country_event = {
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
 					GER_ludwig_beck = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
@@ -4462,14 +4422,6 @@ country_event = {
 
 				PREV = {	# Original country
 					GER_wilhelm_iv = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_wilhelm_canaris = { # Character
-					    set_nationality = PREV.PREV
-					    # Transfers to breakaway
-					}
-					GER_hans_oster = { # Character
 					    set_nationality = PREV.PREV
 					    # Transfers to breakaway
 					}

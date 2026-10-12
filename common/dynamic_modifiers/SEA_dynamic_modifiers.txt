@@ -506,13 +506,8 @@ JAP_advanced_weapon_projects_dm = {
 	sp_tag_tank_speed_factor = JAP_advanced_weapons_sp_tag_tank_speed_factor
 	sp_tag_artillery_speed_factor = JAP_advanced_weapons_sp_tag_artillery_speed_factor
 	sp_tag_surface_ship_speed_factor = JAP_advanced_weapons_sp_tag_surface_ship_speed_factor
-	sp_commercial_nuclear_reactor_speed_factor = JAP_advanced_weapons_sp_commercial_nuclear_reactor_speed_factor
-	sp_nuclear_warheads_speed_factor = JAP_advanced_weapons_sp_nuclear_warheads_speed_factor
 	sp_nuclear_bomb_speed_factor = JAP_advanced_weapons_sp_nuclear_bomb_speed_factor
 	production_speed_nuclear_reactor_factor = JAP_advanced_weapons_production_speed_nuclear_reactor_factor
-	sp_air_intercontinental_bomber_speed_factor = JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor
-	sp_air_mothership_aircraft_speed_factor = JAP_advanced_weapons_sp_air_mothership_aircraft_speed_factor
-	sp_nuclear_engines_speed_factor = JAP_advanced_weapons_sp_nuclear_engines_speed_factor
 }
 
 JAP_industrial_relocation_resources = {
@@ -1069,10 +1064,7 @@ CHI_electrification_and_mass_education_modifier = {
 	remove_trigger = {
 		ROOT = { 
 			OWNER = {
-				OR = {
-					is_literally_china = no
-					has_war_with = CHI
-				}
+				NOT = { tag = CHI }
 			} # ROOT refers to the state on which the modifier is added
 		}
 	}

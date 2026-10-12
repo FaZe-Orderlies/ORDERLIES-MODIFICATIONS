@@ -1699,12 +1699,6 @@ technologies = {
 				factor = 4
 				tag = USA
 			}
-
-			modifier = {
-				add = 50
-				PHI_SEA = yes
-				always = no
-			}
 		}
 		
 		categories = {

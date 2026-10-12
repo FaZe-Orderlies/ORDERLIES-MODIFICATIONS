@@ -206,7 +206,6 @@ every_possible_country = {
 		NOT = { original_tag = CHI }
 		# Germany as Wilhelm Canaris
 		NOT = { original_tag = GER }
-		NOT = { is_chinese_warlord = yes }
 		IF = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"

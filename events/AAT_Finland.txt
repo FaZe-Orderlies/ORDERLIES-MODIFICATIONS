@@ -4708,17 +4708,6 @@ country_event = {
 				}
 			}
 			KAR = {
-				# Add extra country leader trait to the possible leaders (fascist & non-aligned)
-				KAR_ukki_vainamoinen = {
-					add_country_leader_trait = {
-					 	ideology = fascism_ideology
-					 	trait = veteran_guerrilla_fighter
-					 }
-				}
-				KAR_jalmari_takkinen = {
-					add_country_leader_trait = veteran_guerrilla_fighter
-				}
-
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = FIN_support_for_east_karealian_independence_big
@@ -5004,17 +4993,6 @@ country_event = {
 				}
 			}
 			KAR = {
-				# Add extra country leader trait to the possible leaders (fascist & non-aligned)
-				KAR_ukki_vainamoinen = {
-					add_country_leader_trait = {
-					 	ideology = fascism_ideology
-					 	trait = veteran_guerrilla_fighter
-					 }
-				}
-				KAR_jalmari_takkinen = {
-					add_country_leader_trait = veteran_guerrilla_fighter
-				}
-
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = FIN_support_for_east_karealian_independence_small
@@ -5414,10 +5392,6 @@ country_event = {
 		hidden_effect = {
 			ROOT = {
 				set_rule = { can_send_volunteers = yes }
-				add_timed_idea = {
-					idea = ETH_aid_SPC
-					days = 730
-				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
 					id = KAR

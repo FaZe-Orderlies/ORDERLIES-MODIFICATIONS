@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_japan
+add_namespace = wtt_japan
 add_namespace = goe_japan
 
 #Jakob ID 1-100
@@ -1110,7 +1110,7 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					is_literally_china = yes
+					original_tag = CHI
 				}
 				event_target:ITA_fascism = {
 					add_ai_strategy = {
@@ -1682,7 +1682,7 @@ country_event = {
 								tag = MAN
 								is_in_faction_with = event_target:WTT_current_china_leader
 							}
-							is_literally_china = yes
+							original_tag = CHI
 						}
 						has_war_with = ROOT
 						is_in_faction_with = event_target:WTT_current_china_leader
@@ -1704,7 +1704,7 @@ country_event = {
 				}
 				every_other_country = {
 					limit = {
-						is_literally_china = yes
+						original_tag = CHI
 						has_war_with = ROOT
 						is_in_faction_with = event_target:WTT_current_china_leader
 					}
@@ -1719,7 +1719,7 @@ country_event = {
 								tag = MAN
 								is_in_faction_with = event_target:WTT_current_china_leader
 							}
-							is_literally_china = yes
+							original_tag = CHI
 						}
 						has_war_with = ROOT
 					}
@@ -1745,7 +1745,7 @@ country_event = {
 								tag = MAN
 								is_in_faction_with = event_target:WTT_current_china_leader
 							}
-							is_literally_china = yes
+							original_tag = CHI
 						}
 						has_war_with = ROOT
 					}
@@ -1855,7 +1855,7 @@ country_event = {
 			}
 			every_other_country = {
 				limit = {
-					is_literally_china = yes
+					original_tag = CHI
 					has_war_with = KOR
 				}
 				white_peace = KOR
@@ -1899,7 +1899,7 @@ country_event = {
 							tag = MAN
 							is_in_faction_with = event_target:WTT_current_china_leader
 						}
-						is_literally_china = yes
+						original_tag = CHI
 					}
 					has_war_with = KOR
 				}
@@ -1952,7 +1952,7 @@ country_event = {
 							original_tag = MAN
 							is_in_faction_with = event_target:WTT_current_china_leader
 						}
-						is_literally_china = yes
+						original_tag = CHI
 					}
 					has_war_with = ROOT
 					is_in_faction_with = event_target:WTT_current_china_leader
@@ -1979,7 +1979,7 @@ country_event = {
 							original_tag = MAN
 							is_in_faction_with = event_target:WTT_current_china_leader
 						}
-						is_literally_china = yes
+						original_tag = CHI
 					}
 					has_war_with = ROOT
 					is_in_faction_with = event_target:WTT_current_china_leader
@@ -2009,7 +2009,7 @@ country_event = {
 							original_tag = MAN
 							is_in_faction_with = event_target:WTT_current_china_leader
 						}
-						is_literally_china = yes
+						original_tag = CHI
 					}
 					has_war_with = ROOT
 				}
@@ -2035,7 +2035,7 @@ country_event = {
 							original_tag = MAN
 							is_in_faction_with = event_target:WTT_current_china_leader
 						}
-						is_literally_china = yes
+						original_tag = CHI
 					}
 					has_war_with = ROOT
 				}
@@ -2306,7 +2306,7 @@ country_event = {
 				limit = {
 					NOT = {
 						any_country = {
-							is_literally_china = yes
+							original_tag = CHI
 							controls_state = 525
 							controls_state = 527
 							controls_state = 1029
@@ -2427,7 +2427,7 @@ country_event = {
 			limit = {
 				NOT = {
 					any_country = {
-						is_literally_china = yes
+						original_tag = CHI
 						controls_state = 525
 						controls_state = 527
 						controls_state = 1029

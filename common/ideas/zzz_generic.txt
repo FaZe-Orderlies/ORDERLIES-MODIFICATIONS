@@ -1475,15 +1475,6 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
-				}
-				NOT = {
-					AND = {
 						OR = { tag = MEX }
 						has_dlc = "Man the Guns"
 					}
@@ -1513,8 +1504,6 @@ ideas = {
 						has_dlc = "Gotterdammerung"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -1598,8 +1587,6 @@ ideas = {
 						has_dlc = "Thunder at Our Gates"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -1683,8 +1670,6 @@ ideas = {
 						has_dlc = "Thunder at Our Gates"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -1763,8 +1748,6 @@ ideas = {
 						has_dlc = "Thunder at Our Gates"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -1842,8 +1825,6 @@ ideas = {
 						has_dlc = "Thunder at Our Gates"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -1918,8 +1899,6 @@ ideas = {
 						has_dlc = "Thunder at Our Gates"
 					}
 				}
-
-				PHI_SEA = no
 			}
 			
 			cost = 150
@@ -2004,24 +1983,6 @@ ideas = {
 						has_dlc = "Graveyard of Empires"
 					}
 				}
-
-				NOT = {
-					AND = {
-						OR = {
-							original_tag = PHI
-							original_tag = SND
-							original_tag = HBC
-							original_tag = XIC
-							original_tag = GDC
-							original_tag = SIC
-							original_tag = NXM
-							original_tag = GSM
-							original_tag = KHM
-							original_tag = KUM
-						}
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
 			NOT = {
 					AND = {
 						OR = {
@@ -2052,15 +2013,6 @@ ideas = {
 				NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = FIN } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
-				}
-				NOT = {
-					AND = {
-						has_DLC = "Waking the Tiger"
-						OR = {
-							original_tag = MAN
-							is_literally_china = yes
-						}
-					}
 				}
 				NOT = {
 					AND = {
@@ -2114,15 +2066,6 @@ ideas = {
 							original_tag = RAJ
 						}
 						has_dlc = "Graveyard of Empires"
-					}
-				}
-
-				NOT = {
-					AND = {
-#						OR = {
-							original_tag = PHI
-#						}
-						has_dlc = "No Compromise, No Surrender"
 					}
 				}
 

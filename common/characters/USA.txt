@@ -210,10 +210,7 @@ characters={
 			slot = army_chief
 			idea_token = dwight_eisenhower
 			allowed = {
-				OR = {
-					original_tag = USA
-					is_literally_china = yes
-				}
+				original_tag = USA
 			}
 			traits = {
 				army_chief_offensive_2
@@ -316,10 +313,7 @@ characters={
 				slot = army_chief
 				idea_token = douglas_macarthur
 				allowed = {
-					OR = {
-						is_literally_china = yes
-						original_tag = USA
-					}
+					original_tag = USA
 				}
 				visible = {
 					always = no
@@ -382,10 +376,7 @@ characters={
 				slot = army_chief
 				idea_token = douglas_macarthur
 				allowed = {
-					OR = {
-						is_literally_china = yes
-						original_tag = USA
-					}
+					original_tag = USA
 				}
 				visible = {
 					always = no
@@ -645,10 +636,7 @@ characters={
 			idea_token = joseph_stilwell
 			ledger = army
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = USA
-				}
+				original_tag = USA
 			}
 			visible = {
 				always = no

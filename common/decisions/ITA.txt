@@ -63,7 +63,6 @@ debug_decisions = {
 		}
 
 		complete_effect = {
-			ITA_set_up_character_cw_flags_effect = yes
 			#activate_mission = ITA_conquer_the_north_mission
 			#activate_mission = ITA_conquer_the_south_mission
 
@@ -105,9 +104,7 @@ debug_decisions = {
 			is_debug = yes
 		}
 
-		complete_effect = {
-			ITA_initiate_balance_of_power_effect = yes
-		}
+		complete_effect = {}
 	}
 }
 
@@ -1444,7 +1441,7 @@ ITA_missiolinis = {
 				tooltip = ITA_missiolini_bolster_political_cabinet_trigger_tt
 				amount_taken_ideas = {
 					amount > 2
-					slots = { political_advisor }
+					slot = political_advisor
 				}
 				OR = {
 					has_idea = ITA_gian_galeazzo_ciano
@@ -1502,7 +1499,7 @@ ITA_missiolinis = {
 				amount_taken_ideas = {
 					amount > 2
 					#category = { military_staff }
-					slots = { high_command }
+					slot = high_command
 				}
 			}
 		}

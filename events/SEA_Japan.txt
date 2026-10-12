@@ -126,25 +126,6 @@ country_event = {
 			}
 		}
 
-		IF = {
-			limit = {
-				FROM = {
-					has_government = neutrality
-				}
-			}
-			effect_tooltip = {
-				MEN_prince_demchugdongrub = {
-					add_country_leader_role = {
-						promote_leader = yes
-						country_leader = {
-							ideology = despotism
-							expire = "1965.1.1.1"
-							traits = { MEN_borjigin_descendant } 
-						}
-					}	
-				}
-			}
-		}
 		custom_effect_tooltip = MEN_li_shouxin_available_tt
 
 		effect_tooltip = {
@@ -240,23 +221,6 @@ country_event = {
 			end_civil_wars = no
 		}
 
-		IF = {
-			limit = {
-				has_government = neutrality
-			}
-			MEN = {
-				MEN_prince_demchugdongrub = {
-					add_country_leader_role = {
-						promote_leader = yes
-						country_leader = {
-							ideology = despotism
-							expire = "1965.1.1.1"
-							traits = { MEN_borjigin_descendant } 
-						}
-					}	
-				}
-			}
-		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -329,9 +293,6 @@ country_event = {
 	# We will be stronger together 
 	option = { 
 		name = SEA_japan_foreign_policy.4.a
-		trigger = {
-			NOT = { has_active_mission = SIA_limited_war_indochina }
-		}
 		ai_chance = {
 			base = 70
 			modifier = {
@@ -361,26 +322,11 @@ country_event = {
 			}
 		}
 
-		#Make sure reluctant submission is triggered via this event
-		if = {
-			limit = {
-				has_dlc = "Thunder at Our Gates"
-				NOT = { 
-					always = no 
-					always = no
-				}
-			} 
-			# complete_national_focus = SIA_reluctant_submission
-		}
-
 	}
 
 	# That would go against our principals of neutrality!
 	option = { 
 		name = SEA_japan_foreign_policy.4.b
-		trigger = {
-			NOT = { has_active_mission = SIA_limited_war_indochina }
-		}
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -409,14 +355,6 @@ country_event = {
 			}
 		}
 
-	}
-
-	option = { 
-		name = SEA_japan_foreign_policy.4.c
-		trigger = { has_active_mission = SIA_limited_war_indochina }
-
-		JAP = { SIA = { country_event = { id = SEA_japan_foreign_policy.4 days = 181 } } } #Scoping to JAP first for loc to work with FROM
-		custom_effect_tooltip = SEA_japan_foreign_policy.4.c_tt
 	}
 }
 
@@ -1481,12 +1419,6 @@ country_event = {
 			ruling_party = ROOT
 			size = 0.6
 			keep_all_characters = yes 
-			PREV = {  # Original country
-	            TIB_thubten_kunpela = { # Character
-	                set_nationality = PREV.PREV
-	                # Transfers to breakaway
-	            }
-	        }
 		}
 
 	}
@@ -2012,28 +1944,6 @@ country_event = {
 		name = SEA_japan_foreign_policy.33.a
 
 		add_political_power = 50
-
-		IF = {
-			limit = {
-				has_active_mission = JAP_kwantung_army_impatience
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_days_mission_timeout = {
-			    mission = JAP_kwantung_army_impatience
-			    days = 360 
-			}
-			hidden_effect = {
-				CHI = {
-					add_days_mission_timeout = {
-					    mission = CHI_kwantung_army_impatience_dummy
-					    days = 360 
-					}
-				}
-			}
-		}
-
 	}
 
 }
@@ -2483,34 +2393,6 @@ country_event = {
 			target = FROM
 			modifier = signed_the_sino_japanese_pact_opm
 		}	
-
-		CHI = {
-			declare_war_on = {
-				target = PRC
-				type = annex_everything
-			}	
-		}
-
-		IF = {
-			limit = {
-				has_active_mission = JAP_kwantung_army_impatience
-			}
-
-			add_days_mission_timeout = {
-			    mission = JAP_kwantung_army_impatience
-			    days = 730 
-			}
-			hidden_effect = {
-				CHI = {
-					add_days_mission_timeout = {
-					    mission = CHI_kwantung_army_impatience_dummy
-					    days = 730 
-					}
-				}
-			}
-
-		}
-
 		JAP_setup_faction_wide_aoe_effects_root = yes
 
 	}
@@ -2528,27 +2410,6 @@ country_event = {
 	option = {
 		# Nothing can be done about it
 		name = SEA_japan_foreign_policy.44.a
-		
-		IF = {
-			limit = {
-				has_active_mission = JAP_kwantung_army_impatience
-			}
-
-			add_days_mission_timeout = {
-			    mission = JAP_kwantung_army_impatience
-			    days = -360 
-			}
-
-			hidden_effect = {
-				CHI = {
-					add_days_mission_timeout = {
-					    mission = CHI_kwantung_army_impatience_dummy
-					    days = -360 
-					}
-				}
-			}
-		}
-
 	}
 }
 
@@ -2999,16 +2860,6 @@ country_event = {
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
-		every_possible_country = {
-			limit = {
-				has_character = MEN_jodbajab
-			}
-			set_nationality = {
-			    target_country = ROOT
-			    character = MEN_jodbajab
-			}
-		}
-
 		set_country_flag = MON_jodbajab_arrived_in_the_country_flag
 
 	}
@@ -3038,16 +2889,6 @@ country_event = {
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		every_possible_country = {
-			limit = {
-				has_character = MAN_jonjurjab
-			}
-			set_nationality = {
-			    target_country = ROOT
-			    character = MAN_jonjurjab
-			}
-		}
 
 		set_country_flag = MON_jonjurjab_arrived_in_the_country_flag
 
@@ -3098,53 +2939,6 @@ country_event = {
 		army_experience = 50
 		add_political_power = 100
 
-		IF = {
-			limit = {
-				has_country_flag = MON_jonjurjab_arrived_in_the_country_flag
-			}
-			add_country_leader_role = {
-				character = MAN_jonjurjab
-				promote_leader = yes
-				country_leader = {
-					ideology = japan_militarism_ideology
-					expire = "1952.1.1.1"
-					traits = { spirit_of_genghis } 
-				}
-			}
-			add_country_leader_role = {
-				character = MAN_jonjurjab
-				promote_leader = yes
-				country_leader = {
-					ideology = emperor_fascism
-					expire = "1952.1.1.1"
-					traits = { spirit_of_genghis } 
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				has_country_flag = MON_jodbajab_arrived_in_the_country_flag
-			}
-			add_country_leader_role = {
-				character = MEN_jodbajab
-				promote_leader = yes
-				country_leader = {
-					ideology = japan_militarism_ideology
-					expire = "1952.1.1.1"
-					traits = { spirit_of_genghis } 
-				}
-			}
-			add_country_leader_role = {
-				character = MEN_jodbajab
-				promote_leader = yes
-				country_leader = {
-					ideology = emperor_fascism
-					expire = "1952.1.1.1"
-					traits = { spirit_of_genghis } 
-				}
-			}
-		}
-
 		JAP_setup_faction_wide_aoe_effects_from = yes
 
 	}
@@ -3186,46 +2980,6 @@ country_event = {
 				        is_controlled_by = ROOT
 				    }
 
-			    	PREV = {  # Original country
-			            MAN_jonjurjab = { # Character
-			                set_nationality = PREV.PREV
-			                # Transfers to breakaway
-			            }
-		        	}
-		        	IF = {
-		        		limit = {
-		        			PREV.PREV = {
-		        				NOT = {
-		        					has_country_leader = {
-		        						ruling_only = yes
-		        						character = MAN_jonjurjab
-		        					}
-		        				}
-		        				has_civil_war = yes
-		        			}
-		        		}
-		        		PREV.PREV = {
-		        			add_country_leader_role = {
-		        				character = MAN_jonjurjab
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = japan_militarism_ideology
-		        					expire = "1952.1.1.1"
-		        					traits = { spirit_of_genghis } 
-		        				}
-		        			}
-		        			add_country_leader_role = {
-		        				character = MAN_jonjurjab
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = emperor_fascism
-		        					expire = "1952.1.1.1"
-		        					traits = { spirit_of_genghis } 
-		        				}
-		        			}
-		        		}
-		        	}
-
 		        	PREV.PREV = {
 		        		FROM = {
 		        			puppet = {
@@ -3257,46 +3011,6 @@ country_event = {
 				        }
 				        is_controlled_by = ROOT
 				    }
-
-			    	PREV = {  # Original country
-			            MEN_jodbajab = { # Character
-			                set_nationality = PREV.PREV
-			                # Transfers to breakaway
-			            }
-		        	}
-		        	IF = {
-		        		limit = {
-		        			PREV.PREV = {
-		        				NOT = {
-		        					has_country_leader = {
-		        						ruling_only = yes
-		        						character = MEN_jodbajab
-		        					}
-		        				}
-		        				has_civil_war = yes
-		        			}
-		        		}
-		        		PREV.PREV = {
-		        			add_country_leader_role = {
-		        				character = MEN_jodbajab
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = japan_militarism_ideology
-		        					expire = "1952.1.1.1"
-		        					traits = { spirit_of_genghis } 
-		        				}
-		        			}
-		        			add_country_leader_role = {
-		        				character = MEN_jodbajab
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = emperor_fascism
-		        					expire = "1952.1.1.1"
-		        					traits = { spirit_of_genghis } 
-		        				}
-		        			}
-		        		}
-		        	}
 
 		        	PREV.PREV = {
 		        		FROM = {
@@ -3534,39 +3248,6 @@ country_event = {
 				    }
 				    keep_all_characters = yes
 				    set_country_flag = BRM_japanese_burma_flag
-				    PREV = {  # Original country
-			            BRM_ba_maw = { # Character
-			                set_nationality = PREV.PREV
-			                # Transfers to breakaway
-			            }
-		        	}
-		        	IF = {
-		        		limit = {
-		        			PREV.PREV = {
-		        				NOT = {
-		        					has_country_leader = {
-		        						ruling_only = yes
-		        						character = BRM_ba_maw
-		        					}
-		        				}
-		        			}
-		        		}
-		        		PREV.PREV = {
-		        			add_country_leader_role = {
-		        				character = BRM_ba_maw
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = japan_militarism_ideology
-		        					expire = "1952.1.1.1"
-		        					traits = { mon_dynasty_descendant } 
-		        				}
-		        			}
-		        			promote_character = {
-		        				character = BRM_ba_maw 
-		        				ideology = fascism_ideology 
-		        			}	
-		        		}
-		        	}
 				}
 
 				random_country = {
@@ -3625,39 +3306,6 @@ country_event = {
 				    }
 				    keep_all_characters = yes
 				    set_country_flag = BRM_japanese_burma_flag
-				    PREV = {  # Original country
-			            BRM_ba_maw = { # Character
-			                set_nationality = PREV.PREV
-			                # Transfers to breakaway
-			            }
-		        	}
-		        	IF = {
-		        		limit = {
-		        			PREV.PREV = {
-		        				NOT = {
-		        					has_country_leader = {
-		        						ruling_only = yes
-		        						character = BRM_ba_maw
-		        					}
-		        				}
-		        			}
-		        		}
-		        		PREV.PREV = {
-		        			add_country_leader_role = {
-		        				character = BRM_ba_maw
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = japan_militarism_ideology
-		        					expire = "1952.1.1.1"
-		        					traits = { mon_dynasty_descendant } 
-		        				}
-		        			}
-		        			promote_character = {
-		        				character = BRM_ba_maw 
-		        				ideology = fascism_ideology 
-		        			}	
-		        		}
-		        	}
 				}
 				random_country = {
 					limit = {
@@ -3711,39 +3359,6 @@ country_event = {
 				    }
 				    keep_all_characters = yes
 				    set_country_flag = BRM_japanese_burma_flag
-				    PREV = {  # Original country
-			            BRM_myat_phaya_lat = { # Character
-			                set_nationality = PREV.PREV
-			                # Transfers to breakaway
-			            }
-		        	}
-		        	IF = {
-		        		limit = {
-		        			PREV.PREV = {
-		        				NOT = {
-		        					has_country_leader = {
-		        						ruling_only = yes
-		        						character = BRM_myat_phaya_lat
-		        					}
-		        				}
-		        			}
-		        		}
-		        		PREV.PREV = {
-		        			add_country_leader_role = {
-		        				character = BRM_myat_phaya_lat
-		        				promote_leader = yes
-		        				country_leader = {
-		        					ideology = emperor_fascism
-		        					expire = "1952.1.1.1"
-		        					traits = { konbuang_dynasty_descendant } 
-		        				}
-		        			}
-		        			promote_character = {
-		        				character = BRM_myat_phaya_lat 
-		        				ideology = despotism 
-		        			}	
-		        		}
-		        	}
 				}
 				random_country = {
 					limit = {
@@ -3822,39 +3437,6 @@ country_event = {
 					    }
 					    keep_all_characters = yes
 					    set_country_flag = BRM_japanese_burma_flag
-					    PREV = {  # Original country
-				            BRM_ba_maw = { # Character
-				                set_nationality = PREV.PREV
-				                # Transfers to breakaway
-				            }
-			        	}
-			        	IF = {
-			        		limit = {
-			        			PREV.PREV = {
-			        				NOT = {
-			        					has_country_leader = {
-			        						ruling_only = yes
-			        						character = BRM_ba_maw
-			        					}
-			        				}
-			        			}
-			        		}
-			        		PREV.PREV = {
-			        			add_country_leader_role = {
-			        				character = BRM_ba_maw
-			        				promote_leader = yes
-			        				country_leader = {
-			        					ideology = japan_militarism_ideology
-			        					expire = "1952.1.1.1"
-			        					traits = { mon_dynasty_descendant } 
-			        				}
-			        			}
-			        			promote_character = {
-			        				character = BRM_ba_maw 
-			        				ideology = fascism_ideology 
-			        			}	
-			        		}
-			        	}
 					}
 
 					random_country = {
@@ -3913,39 +3495,6 @@ country_event = {
 					    }
 					    keep_all_characters = yes
 					    set_country_flag = BRM_japanese_burma_flag
-					    PREV = {  # Original country
-				            BRM_ba_maw = { # Character
-				                set_nationality = PREV.PREV
-				                # Transfers to breakaway
-				            }
-			        	}
-			        	IF = {
-			        		limit = {
-			        			PREV.PREV = {
-			        				NOT = {
-			        					has_country_leader = {
-			        						ruling_only = yes
-			        						character = BRM_ba_maw
-			        					}
-			        				}
-			        			}
-			        		}
-			        		PREV.PREV = {
-			        			add_country_leader_role = {
-			        				character = BRM_ba_maw
-			        				promote_leader = yes
-			        				country_leader = {
-			        					ideology = japan_militarism_ideology
-			        					expire = "1952.1.1.1"
-			        					traits = { mon_dynasty_descendant } 
-			        				}
-			        			}
-			        			promote_character = {
-			        				character = BRM_ba_maw 
-			        				ideology = fascism_ideology 
-			        			}	
-			        		}
-			        	}
 					}
 					random_country = {
 						limit = {
@@ -3999,39 +3548,6 @@ country_event = {
 					    }
 					    keep_all_characters = yes
 					    set_country_flag = BRM_japanese_burma_flag
-					    PREV = {  # Original country
-				            BRM_myat_phaya_lat = { # Character
-				                set_nationality = PREV.PREV
-				                # Transfers to breakaway
-				            }
-			        	}
-			        	IF = {
-			        		limit = {
-			        			PREV.PREV = {
-			        				NOT = {
-			        					has_country_leader = {
-			        						ruling_only = yes
-			        						character = BRM_myat_phaya_lat
-			        					}
-			        				}
-			        			}
-			        		}
-			        		PREV.PREV = {
-			        			add_country_leader_role = {
-			        				character = BRM_myat_phaya_lat
-			        				promote_leader = yes
-			        				country_leader = {
-			        					ideology = emperor_fascism
-			        					expire = "1952.1.1.1"
-			        					traits = { konbuang_dynasty_descendant } 
-			        				}
-			        			}
-			        			promote_character = {
-			        				character = BRM_myat_phaya_lat 
-			        				ideology = despotism 
-			        			}	
-			        		}
-			        	}
 					}
 					random_country = {
 						limit = {
@@ -5143,44 +4659,6 @@ country_event = {
 			    }
 			    keep_all_characters = yes
 			    set_country_flag = PHI_japanese_philippines_flag
-			    PREV = {  # Original country
-		            PHI_jose_laurel = { # Character
-		                set_nationality = PREV.PREV
-		                # Transfers to breakaway
-		            }
-	        	}
-	        	IF = {
-	        		limit = {
-	        			PREV.PREV = {
-	        				NOT = {
-	        					has_country_leader = {
-	        						ruling_only = yes
-	        						character = PHI_jose_laurel
-	        					}
-	        				}
-	        			}
-	        		}
-	        		PREV.PREV = {
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = japan_militarism_ideology
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = fascism_ideology
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}
-	        		}
-	        	}
 			}
 
 			random_country = {
@@ -5228,44 +4706,6 @@ country_event = {
 			    }
 			    keep_all_characters = yes
 			    set_country_flag = PHI_japanese_philippines_flag
-			    PREV = {  # Original country
-		            PHI_jose_laurel = { # Character
-		                set_nationality = PREV.PREV
-		                # Transfers to breakaway
-		            }
-	        	}
-	        	IF = {
-	        		limit = {
-	        			PREV.PREV = {
-	        				NOT = {
-	        					has_country_leader = {
-	        						ruling_only = yes
-	        						character = PHI_jose_laurel
-	        					}
-	        				}
-	        			}
-	        		}
-	        		PREV.PREV = {
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = japan_militarism_ideology
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = fascism_ideology
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}
-	        		}
-	        	}
 			}
 			random_country = {
 				limit = {
@@ -5308,44 +4748,6 @@ country_event = {
 			    }
 			    keep_all_characters = yes
 			    set_country_flag = PHI_japanese_philippines_flag
-			    PREV = {  # Original country
-		            PHI_jose_laurel = { # Character
-		                set_nationality = PREV.PREV
-		                # Transfers to breakaway
-		            }
-	        	}
-	        	IF = {
-	        		limit = {
-	        			PREV.PREV = {
-	        				NOT = {
-	        					has_country_leader = {
-	        						ruling_only = yes
-	        						character = PHI_jose_laurel
-	        					}
-	        				}
-	        			}
-	        		}
-	        		PREV.PREV = {
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = emperor_fascism
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}
-	        			add_country_leader_role = {
-	        				character = PHI_jose_laurel
-	        				promote_leader = yes
-	        				country_leader = {
-	        					ideology = oligarchism
-	        					expire = "1952.1.1.1"
-	        					traits = { PHI_puppet_president } 
-	        				}
-	        			}	
-	        		}
-	        	}
 			}
 			random_country = {
 				limit = {
@@ -8402,16 +7804,6 @@ country_event = {
 			}
 		}
 
-		add_country_leader_role = {
-			character = KOR_pak_hon_yong
-			promote_leader = yes
-			country_leader = {
-				ideology = stalinism
-				expire = "1952.1.1.1"
-				traits = { JAP_socialist_revolutionary } 
-			}
-		}
-
 		random_country = {
 			limit = {
 				original_tag = KOR
@@ -8473,36 +7865,6 @@ country_event = {
 			    	state = 1029
 			    }
 			    is_controlled_by = ROOT
-			}
-			PREV = {  # Original country
-				KOR_pak_hon_yong = { # Character
-				    set_nationality = PREV.PREV
-				    # Transfers to breakaway
-				}
-			}
-			IF = {
-				limit = {
-					PREV.PREV = {
-						NOT = {
-							has_country_leader = {
-								ruling_only = yes
-								character = KOR_pak_hon_yong
-							}
-						}
-						has_civil_war = yes
-					}
-				}
-				PREV.PREV = {
-					add_country_leader_role = {
-						character = KOR_pak_hon_yong
-						promote_leader = yes
-						country_leader = {
-							ideology = stalinism
-							expire = "1952.1.1.1"
-							traits = { JAP_socialist_revolutionary } 
-						}
-					}	
-				}
 			}
 			PREV.PREV = {
 				set_party_name = {
@@ -8717,88 +8079,6 @@ country_event = { # Proclamation of the Second Philippine Republic - event for P
 	option = { # Prosperity is within sight!
 		name = SEA_japan_foreign_policy.135.a	
 		    
-    	IF = {
-    		limit = {
-    			ROOT = {
-    				NOT = {
-    					has_country_leader = {
-    						ruling_only = yes
-    						character = PHI_jose_laurel
-    					}
-    				}
-    				has_character = PHI_jose_laurel
-    			}
-    		}
-    		PREV.PREV = {
-    			add_country_leader_role = {
-    				character = PHI_jose_laurel
-    				promote_leader = yes
-    				country_leader = {
-    					ideology = japan_militarism_ideology
-    					expire = "1952.1.1.1"
-    					traits = { PHI_puppet_president } 
-    				}
-    			}
-    			promote_character = {
-    				character = PHI_jose_laurel 
-    				ideology = japan_militarism_ideology 
-    			}
-    			add_country_leader_role = {
-    				character = PHI_jose_laurel
-    				promote_leader = yes
-    				country_leader = {
-    					ideology = falangism
-    					expire = "1952.1.1.1"
-    					traits = { PHI_puppet_president } 
-    				}
-    			}
-    			promote_character = {
-    				character = PHI_jose_laurel 
-    				ideology = falangism 
-    			}
-    		}
-    	}
-    	ELSE_IF = {
-    		limit = {
-    			ROOT = {
-    				NOT = {
-    					has_country_leader = {
-    						ruling_only = yes
-    						character = PHI_artemio_ricarte
-    					}
-    				}
-    				has_character = PHI_artemio_ricarte
-    			}
-    		}
-    		add_country_leader_role = {
-    			character = PHI_artemio_ricarte
-    			promote_leader = yes
-    			country_leader = {
-    				ideology = japan_militarism_ideology
-    				expire = "1952.1.1.1"
-    				traits = { PHI_philippine_nationalist_leader } 
-    			}
-    		}
-    		promote_character = {
-    			character = PHI_artemio_ricarte 
-    			ideology = japan_militarism_ideology 
-    		}
-    		add_country_leader_role = {
-    			character = PHI_artemio_ricarte
-    			promote_leader = yes
-    			country_leader = {
-    				ideology = fascism_ideology
-    				expire = "1952.1.1.1"
-    				traits = { PHI_philippine_nationalist_leader } 
-    			}
-    		}
-    		promote_character = {
-    			character = PHI_artemio_ricarte 
-    			ideology = fascism_ideology 
-    		}
-    	}
-		
-
 		custom_effect_tooltip = generic_skip_one_line_tt
 		
 		JAP_setup_faction_wide_aoe_effects_from = yes	
@@ -11700,10 +10980,7 @@ country_event = {
 			is_subject = no
 			has_added_tension_amount > 10 
 			has_offensive_war = yes
-			any_country = {
-				is_literally_china = yes
-				has_war_with = PREV
-			}
+			has_war_with = CHI
 		}
 
 		OR = {

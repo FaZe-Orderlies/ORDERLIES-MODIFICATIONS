@@ -1357,29 +1357,10 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
+				original_tag = USA
 			}
 			
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
 			}
 			
 			research_bonus = {
@@ -1395,39 +1376,9 @@ ideas = {
 			
 			picture = generic_industrial_concern_1
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
+				original_tag = USA
 			}
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
-				if = {
-					limit = {
-						original_tag = USA
-					}
-					always = no
-				}
-				else = {
-					USA = {
-						always = no
-					}
-				}
 			}
 
 			
@@ -1537,29 +1488,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {
@@ -1619,29 +1548,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {
@@ -1677,29 +1584,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {
@@ -1798,29 +1683,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {
@@ -1838,29 +1701,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {
@@ -1879,29 +1720,7 @@ ideas = {
 			
 			
 			allowed = {
-				OR = {
-					original_tag = USA
-					PHI_SEA = yes
-				}
-			}
-			
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					if = {
-						limit = {
-							NOT = {
-								always = no
-							}
-						}
-						always = no
-						else = {
-							always = no
-						}
-					}
-				}
+				original_tag = USA
 			}
 			
 			research_bonus = {

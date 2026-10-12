@@ -37,7 +37,7 @@ CZE_skoda_works_german_organization = { ## DA
 }
 
 CZE_ckd_praga_organization = {
-	include = generic_light_tank_organization
+	include = generic_mobile_tank_organization
 	icon = GFX_idea_generic_tank_manufacturer_1
 	allowed = {
 		OR = {

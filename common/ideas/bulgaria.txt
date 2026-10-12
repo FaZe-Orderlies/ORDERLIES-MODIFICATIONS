@@ -2300,14 +2300,6 @@ ideas = {
 				has_dlc = "Battle for the Bosporus"
 			}
 
-			visible = {
-				NOT = { has_completed_focus = BUL_an_aegean_sea_fleet }
-			}
-
-			available = {
-				has_completed_focus = BUL_expand_varna_naval_base
-			}
-
 			research_bonus = {
 				naval_equipment = 0.1
 			}
@@ -2317,36 +2309,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = BUL_national_naval_designer_upgrade_tt
 				repair_speed_factor = 0.05
-			}
-		}
-
-		BUL_varna_naval_dockyard_improved = {
-			name = BUL_varna_naval_dockyard
-
-			picture = generic_naval_manufacturer_2
-			
-			allowed = {
-				original_tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			visible = {
-				has_completed_focus = BUL_an_aegean_sea_fleet
-			}
-
-			available = {
-				has_completed_focus = BUL_expand_varna_naval_base
-			}
-
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-
-			modifier = {
-				repair_speed_factor = 0.1
-				refit_speed = 0.1
 			}
 		}
 
@@ -2567,10 +2529,6 @@ ideas = {
 			visible = {
 				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
 			}
-
-			available = {
-				has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa
-			}
 						
 			research_bonus = {
 				air_equipment = 0.1
@@ -2600,10 +2558,6 @@ ideas = {
 			visible = {
 				has_completed_focus = BUL_prussia_of_the_balkans
 			}
-
-			available = {
-				has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa
-			}
 						
 			research_bonus = {
 				air_equipment = 0.15
@@ -2630,10 +2584,6 @@ ideas = {
 			visible = {
 				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
 			}
-
-			available = {
-				has_completed_focus = BUL_kaproni_bulgarski
-			}
 						
 			research_bonus = {
 				air_equipment = 0.1
@@ -2658,10 +2608,6 @@ ideas = {
 
 			visible = {
 				has_completed_focus = BUL_prussia_of_the_balkans
-			}
-
-			available = {
-				has_completed_focus = BUL_kaproni_bulgarski
 			}
 						
 			research_bonus = {

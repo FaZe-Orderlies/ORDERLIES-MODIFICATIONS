@@ -465,11 +465,6 @@ ITA_regio_esercito_dynamic_modifier = { #NATIONAL SPIRIT
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
-
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack
 	motorized_attack_factor = ITA_re_motorized_attack
@@ -526,11 +521,6 @@ ITA_regio_esercito_2_dynamic_modifier = { #NATIONAL SPIRIT
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
-
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack
 	motorized_attack_factor = ITA_re_motorized_attack
@@ -586,11 +576,6 @@ ITA_regio_esercito_3_dynamic_modifier = { #NATIONAL SPIRIT
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
-
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
 
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack
@@ -651,11 +636,6 @@ ITA_regio_esercito_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
-
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack
 	motorized_attack_factor = ITA_re_motorized_attack
@@ -713,11 +693,6 @@ ITA_regio_esercito_2_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
-
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack
 	motorized_attack_factor = ITA_re_motorized_attack
@@ -774,11 +749,6 @@ ITA_regio_esercito_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
 	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
-
-	#SP Stuff (Gotterdammerung)
-	sp_land_land_cruiser_speed_factor = ITA_re_sp_land_land_cruiser_speed_factor
-
-
 
 	#DANNES STUFF
 	army_infantry_attack_factor = ITA_re_infantry_attack

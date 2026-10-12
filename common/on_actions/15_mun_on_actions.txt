@@ -256,80 +256,9 @@ on_actions = {
 	}
 
 	on_civil_war_end_before_annexation = {
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						original_tag = SPR
-						has_volunteers_amount_from = {
-							tag = CZE
-							count > 0
-						}
-					}
-				}
-				CZE = {
-					set_country_flag = CZE_support_scw_faction_lost
-					country_event = MUN_czech.1025
-				}
-			}
-			if = {
-				limit = {
-					original_tag = SPR
-					has_volunteers_amount_from = {
-						tag = CZE
-						count > 0
-					}
-					NOT = {
-						any_other_country = {
-							original_tag = SPR
-							NOT = {
-								tag = FROM
-							}
-						}
-					}
-				}
-				save_event_target_as = CZE_supported_spanish_faction
-				CZE = {
-					set_country_flag = CZE_support_scw_faction_won
-					country_event = MUN_czech.1025
-				}
-			}
-		}
 	}
 
 	on_declare_war = {
-		effect = {
-			if = {
-				limit = {
-					threat < 0.76
-					OR = {
-						tag = HUN
-						has_country_flag = CZE_pfot_rut_war_news_event_flag
-					}
-					FROM = {
-						tag = RUT
-						is_subject = no
-						is_in_faction = no
-						has_idea = CZE_back_against_the_mountains_RUT
-					}
-				}
-				every_country = {
-					limit = {
-						exists = yes
-						OR = {
-							capital_scope = {
-								is_on_continent = europe
-							}
-							is_subject_of = ROOT
-						}
-					}
-					news_event = {
-						id = MUN_czech.news.2
-						hours = 1
-					}
-				}
-			}
-		}
 	}
 
 	on_release_as_puppet = {

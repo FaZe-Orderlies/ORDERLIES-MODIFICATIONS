@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Japanese Events
 ###########################
 
@@ -400,7 +400,7 @@ country_event = {
 			limit = {
 				608 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 						NOT = { 
 							original_tag = FROM 
 							original_tag = ROOT 
@@ -435,7 +435,7 @@ country_event = {
 			limit = {
 				614 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 						NOT = { 
 							original_tag = FROM 
 							original_tag = ROOT 
@@ -498,7 +498,7 @@ country_event = {
 			limit = {
 				1039 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 
 						NOT = {
 							original_tag = ROOT 
@@ -547,7 +547,7 @@ country_event = {
 			limit = {
 				597 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 						NOT = { 
 							original_tag = FROM 
 							original_tag = ROOT 
@@ -581,7 +581,7 @@ country_event = {
 			limit = {
 				1038 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 						NOT = { 
 							original_tag = FROM 
 							original_tag = ROOT 
@@ -637,7 +637,7 @@ country_event = {
 			limit = {
 				743 = {
 					OWNER = {
-						is_literally_china = yes
+						original_tag = CHI
 						NOT = { 
 							original_tag = FROM 
 							original_tag = ROOT 

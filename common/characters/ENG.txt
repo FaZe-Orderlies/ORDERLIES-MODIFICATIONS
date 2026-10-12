@@ -676,7 +676,7 @@ characters={
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
-						slots = { army_chief }
+						slot = army_chief
 					}
 				}
 			}
@@ -945,7 +945,7 @@ characters={
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
-						slots = { army_chief }
+						slot = army_chief
 					}
 				}
 			}
@@ -976,7 +976,7 @@ characters={
 					factor = 2
 					amount_taken_ideas = {
 						amount > 0
-						slots = { army_chief }
+						slot = army_chief
 					}
 				}
 			}
@@ -1008,7 +1008,7 @@ characters={
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0
-						slots = { navy_chief }
+						slot = navy_chief
 					}
 				}
 			}
@@ -1039,7 +1039,7 @@ characters={
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0
-						slots = { navy_chief }
+						slot = navy_chief
 					}
 				}
 			}
@@ -1076,7 +1076,7 @@ characters={
 					factor = 3
 					amount_taken_ideas = {
 						amount > 0
-						slots = { navy_chief }
+						slot = navy_chief
 					}
 				}
 			}

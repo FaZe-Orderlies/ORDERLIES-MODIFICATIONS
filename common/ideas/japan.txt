@@ -6261,27 +6261,10 @@ ideas = {
 		sasebo_naval_arsenal = {
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
 			}
 			
 			research_bonus = {
@@ -6331,33 +6314,11 @@ ideas = {
 			picture = JAP_mitsubishi_airplanes
 						
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 			
 			available = {
-				if = {
-					limit = {
-						original_tag = JAP
-					}
-					has_completed_focus = JAP_develop_new_fighters
-				}
-				else_if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
+				has_completed_focus = JAP_develop_new_fighters
 			}
 			
 			research_bonus = {
@@ -6868,27 +6829,10 @@ ideas = {
 			picture = tokyo_arsenal
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
 			}
 			
 			research_bonus = {
@@ -6901,27 +6845,10 @@ ideas = {
 		nissan = {
 						
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
 			}
 						
 			research_bonus = {
@@ -6936,27 +6863,10 @@ ideas = {
 			picture = JAP_nagoya_arsenal
 			
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
 			}
 			
 			cost = 150
@@ -7103,27 +7013,10 @@ ideas = {
 			picture = JAP_mitsubishi_tanks
 
 			allowed = {
-				OR = {
-					original_tag = JAP
-					PHI_SEA = yes
-				}
+				original_tag = JAP
 			}
 
 			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-					always = no
-					if = {	#Easter egg so dont always show the requirement
-						limit = {
-							always = no
-						}
-						NOT = {
-							always = no
-						}
-					}
-				}
 			}
 
 			research_bonus = {

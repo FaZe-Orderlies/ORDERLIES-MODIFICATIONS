@@ -480,7 +480,7 @@ HUN_mwg_raba_organization = {
 }
 
 AUS_ELIN_organization = {
-	include = generic_industrial_concern_organization
+	include = generic_support_equipment_organization
 	icon = GFX_idea_generic_industrial_concern_1
 	allowed = {
 		OR = {

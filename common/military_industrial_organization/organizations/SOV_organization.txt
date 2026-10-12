@@ -84,13 +84,6 @@ SOV_morozov_design_bureau_organization = {
 				tag = MEX 
 				has_dlc = "Man the Guns"
 			}
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				} 
-				has_dlc = "Waking the Tiger"
-			}
 			NOR_AAT = yes
 			AND = {
 				original_tag = PHI 
@@ -124,77 +117,6 @@ SOV_morozov_design_bureau_organization = {
 				FROM = { tag = MEX }
 			}
 			FROM = { is_in_faction_with = SOV }
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					NOT = { has_dlc = "No Compromise, No Surrender" }
-				}
-				FROM = {
-					OR = {
-						is_literally_china = yes
-						tag = MAN
-						tag = MEN
-					}
-				} 
-			}
-			FROM = { always = no }
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					has_dlc = "No Compromise, No Surrender"
-					FROM = {
-						OR = {
-							is_literally_china_not_prc = yes
-							tag = MAN
-							tag = MEN
-						}
-					}
-				}
-			}
-			FROM = {
-				OR = {
-					has_country_flag = SOV_accepted_Morozov
-					always = no
-				}
-			} 
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					has_dlc = "No Compromise, No Surrender"
-					FROM = {
-						tag = PRC
-					}
-				}
-			}
-			PRC = {
-				custom_trigger_tooltip = {
-					tooltip = PRC_neighboring_SOV_tt
-					any_neighbor_country = {
-						OR = {
-							original_tag = SOV
-							AND = {
-								is_in_faction_with = SOV
-								is_neighbor_of = SOV
-							}
-							AND = {
-								is_in_faction_with = PRC
-								any_neighbor_country = {
-									OR = {
-										original_tag = SOV
-										AND = {
-											is_in_faction_with = SOV
-											is_neighbor_of = SOV
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 		ELSE_IF = {
 			limit = {

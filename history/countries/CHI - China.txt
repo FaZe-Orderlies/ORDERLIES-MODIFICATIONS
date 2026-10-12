@@ -1,6 +1,7 @@
 capital = 1035 # Nanjing
 
 recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_wang_jingwei
 
 set_stability = 1
 set_war_support = 1

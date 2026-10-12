@@ -9409,16 +9409,8 @@ focus_tree = {
 		id = SOV_concessions_to_foreign_powers
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SOV_reverse_the_collectivization_process }
-		mutually_exclusive = { focus = SOV_covert_support_for_spanish_poum }
-		x = -1
+		x = 0
 		y = 2
-		offset = {
-			x = 1
-			y = -1 
-			trigger = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-		}
 		relative_position_id = SOV_reverse_the_collectivization_process
 		cost = 5
 		available = {
@@ -9427,67 +9419,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = SOV_concessions_to_foreign_powers_tt
-		}
-	}
-
-	focus = {
-		id = SOV_covert_support_for_spanish_poum
-		icon = GFX_focus_SOV_support_spanish_poum
-		prerequisite = { focus = SOV_reverse_the_collectivization_process }
-		mutually_exclusive = { focus = SOV_concessions_to_foreign_powers }
-		x = 1
-		y = 2
-		relative_position_id = SOV_reverse_the_collectivization_process
-		cost = 5
-		available = {
-			SOV_soviet_civil_war_not_started = yes
-			NOT = { has_global_flag = scw_over } #Allowed Soviets to do this before SCW starts, so that they can make Spanish AI go POUM
-			OR = {
-				NOT = { has_global_flag = SPR_anarchist_uprising_flag }
-				AND = {
-					country_exists = SPC
-					NOT = { has_war_with = SPC }
-					SPC = { always = no }
-				}
-			}
-			
-		}
-		allow_branch = {
-			always = no
-			has_dlc = "La Resistance"
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = SOV_the_centre } 
-				NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
-			}
-		}
-		bypass = {
-			SPR = { #Tooltip purposes
-				OR = {
-					has_global_flag = scw_over
-					AND = {
-						has_global_flag = SPR_anarchist_uprising_flag
-						OR = {
-							NOT = { SPC = { always = no } }
-							NOT = { country_exists = SPC }
-						}
-					}
-				}
-			}
-		}
-		completion_reward = {
-
-			set_global_flag = SOV_covert_support_for_poum_flag
-			custom_effect_tooltip = SOV_covert_support_for_spanish_poum_tt
-			unlock_decision_category_tooltip = SOV_soviet_aid_to_poum_decision_category
-
-			custom_effect_tooltip = SOV_if_poum_wins_tt
 		}
 	}
 
@@ -9554,94 +9485,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_the_socialist_bulwark
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = SOV_covert_support_for_spanish_poum }
-		x = 0
-		y = 2
-		relative_position_id = SOV_covert_support_for_spanish_poum
-		cost = 5
-		available = {
-			has_global_flag = SOV_soviet_civil_war_over 
-			custom_trigger_tooltip = {
-				tooltip = SOV_poum_exists_tt
-				SPC = { 
-					exists = yes 
-					always = no
-				}
-			}
-		}
 
-		search_filters = {}
-
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.1
-			add_war_support	= 0.1
-			IF = { 
-				limit = { 
-					NOT = { has_rule = can_join_factions } 
-				} 
-				set_rule = { can_join_factions = yes } 
-			}
-		
-			#Join SCW if still ongoing
-			if = {
-				limit = {
-					SPR_scw_in_progress = yes
-				}
-				if = {
-					limit = { country_exists = SPA }
-					add_to_war = { targeted_alliance = SPC enemy = SPA hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPC }
-					add_to_war = { targeted_alliance = SPC enemy = SPD hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPB }
-					add_to_war = { targeted_alliance = SPC enemy = SPB hostility_reason = asked_to_join }
-				}
-				effect_tooltip = {
-					give_military_access = SPC
-					SPC = { give_military_access = ROOT }
-				}
-				hidden_effect = {
-					diplomatic_relation = {
-						country = SPC
-						relation = military_access
-						active = yes
-					}
-					SPC = {
-						diplomatic_relation = {
-							country = SOV
-							relation = military_access
-							active = yes
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_global_flag = scw_over }
-				}
-				custom_effect_tooltip = SOV_the_socialist_bulwark_join_war_tt
-			}
-
-			#Invite to faction if SCW is over
-			if = {
-				limit = {
-					is_in_faction = yes
-					NOT = { is_in_faction_with = SPC }
-					has_global_flag = scw_over
-				}
-				SPC = {
-					country_event = { id = generic.5 hours = 8 random_hours = 4 }
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = SOV_coup_detat

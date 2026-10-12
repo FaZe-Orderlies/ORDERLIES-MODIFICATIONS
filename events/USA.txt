@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -224,14 +224,11 @@ country_event = {
 			}
 		}		
 		add_ideas = new_deal
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 
 }
@@ -258,23 +255,11 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 
 }
@@ -299,23 +284,11 @@ country_event = {
 	option = { 
 		name = usa.8.a
 		add_political_power = -40
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 }
 
@@ -343,23 +316,11 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 
 }
@@ -384,23 +345,11 @@ country_event = {
 	option = { 
 		name = usa.10.a
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 
 }
@@ -432,23 +381,11 @@ country_event = {
 			factor = 25
 		}	
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 	}
 
 }

@@ -1591,20 +1591,6 @@ focus_tree = {
 				custom_effect_tooltip = FIN_defensive_preparations_coastal_garrisons_dec_tt
 			}
 
-			#Reduce cost and time if already unlocked
-			if = {
-				limit = {
-					has_completed_focus = FIN_coastal_defense
-				}
-				divide_variable = { FIN_coastal_garrisons_pp_xp_cost = 2 }
-				set_variable = { FIN_coastal_garrisons_pp_xp_cost_trigger = FIN_coastal_garrisons_pp_xp_cost }
-				add_to_variable = { FIN_coastal_garrisons_pp_xp_cost_trigger = -1 }
-				divide_variable = { FIN_coastal_garrisons_cp_cost = 2 }
-				set_variable = { FIN_coastal_garrisons_cp_cost_trigger = FIN_coastal_garrisons_cp_cost }
-				add_to_variable = { FIN_coastal_garrisons_cp_cost_trigger = -1 }
-				divide_variable = { FIN_coastal_garrisons_time = 2 }
-			}
-
 			# Tooltip for unlocking Mine the Sea dec
 			if = {
 				limit = {
@@ -1612,20 +1598,6 @@ focus_tree = {
 					NOT = { has_country_flag = FIN_sea_mines_deployed_flag }
 				}
 				custom_effect_tooltip = FIN_defensive_preparations_mining_the_sea_dec_tt
-			}
-
-			#Reduce cost and time if already unlocked
-			if = {
-				limit = {
-					has_completed_focus = FIN_sea_mines_strategy
-				}
-				divide_variable = { FIN_mining_the_sea_pp_xp_cost = 2 }
-				set_variable = { FIN_mining_the_sea_pp_xp_cost_trigger = FIN_mining_the_sea_pp_xp_cost }
-				add_to_variable = { FIN_mining_the_sea_pp_xp_cost_trigger = -1 }
-				divide_variable = { FIN_mining_the_sea_cp_cost = 2 }
-				set_variable = { FIN_mining_the_sea_cp_cost_trigger = FIN_mining_the_sea_cp_cost }
-				add_to_variable = { FIN_mining_the_sea_cp_cost_trigger = -1 }
-				divide_variable = { FIN_mining_the_sea_time = 2 }
 			}
 		}
 	}

@@ -36,16 +36,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 30 y = 1600 }
 
-	inlay_window = { #Empty version to show before ast_right_vs_left_campaign_inlay_window is unlocked
-		id = ast_right_vs_left_campaign_empty_inlay_window
-		position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_inlay_window if changed
-	}
-
-	inlay_window = {
-		id = ast_right_vs_left_campaign_inlay_window
-		position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_empty_inlay_window if changed
-	}
-
 #### Template ###
 
 #	focus = {
@@ -3191,7 +3181,6 @@ focus_tree = {
 			USA = { country_event = { id = AST_diplomatic_events.7 days = 3 } }
 			custom_effect_tooltip = AST_bring_on_the_giant_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
-			PRC_USA_lend_lease_strategy = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }

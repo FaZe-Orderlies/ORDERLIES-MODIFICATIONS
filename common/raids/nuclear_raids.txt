@@ -559,7 +559,6 @@ types = {
 							province = var:ROOT.target_province #optional use either province or state
 							use_nuke = no #will consume nuke if specified
 						}
-						PHI_cobalt_sea_achievement = yes
 					}
 				}
 			}
@@ -582,7 +581,6 @@ types = {
 							province = var:ROOT.target_province #optional use either province or state
 							use_nuke = no #will consume nuke if specified
 						}
-						PHI_cobalt_sea_achievement = yes
 					}
 				}
 			}
@@ -1162,7 +1160,6 @@ types = {
 							use_nuke = no #will consume nuke if specified
 							nuke_type = thermonuclear_bomb
 						}
-						PHI_cobalt_sea_achievement = yes
 					}
 				}
 			}
@@ -1185,7 +1182,6 @@ types = {
 							use_nuke = no #will consume nuke if specified
 							nuke_type = thermonuclear_bomb
 						}
-						PHI_cobalt_sea_achievement = yes
 					}
 				}
 			}

@@ -5070,7 +5070,7 @@ JAP_kodoha_insurgency_decisions = {
 }
 
 # The Kwantung Army
-JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
+JAP_intervene_in_china = {
 
 	# The Suiyuan Campaign
 	JAP_the_suiyuan_offensive_mission = {
@@ -5151,7 +5151,7 @@ JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
 			}
 			613 = {
 				OWNER = {
-					is_literally_china = yes
+					original_tag = CHI
 					NOT = {
 						is_ally_with = ROOT
 						has_war_with = ROOT # In case someone other than CHI owns this for example 
@@ -5229,7 +5229,7 @@ JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
 		target_trigger = {
 			#Target is FROM
 			FROM = {
-				is_literally_china = yes
+				original_tag = CHI
 				NOT = {
 					is_ally_with = ROOT
 					has_war_with = ROOT
@@ -5347,7 +5347,7 @@ JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
 	    target_trigger = {
 	        FROM = {
 	        	controller = {
-	        		is_literally_china = yes
+	        		original_tag = CHI
 	        		has_war_with = ROOT
 	        	}
 	        	any_neighbor_state = {
@@ -5364,7 +5364,7 @@ JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
 		visible = { 
 			has_completed_focus = JAP_strategic_offensives
 			any_enemy_country = {
-				is_literally_china = yes
+				original_tag = CHI
 			}
 		}
 	
@@ -5396,7 +5396,7 @@ JAP_kwantung_army_decisions = { ## ВЕРНУЛ, by feels.
 					is_controlled_by = ROOT
 					controller = {
 						NOT = {
-							is_literally_china = yes
+							original_tag = CHI
 							has_war_with = ROOT
 						}
 					}
@@ -9366,7 +9366,7 @@ propaganda_efforts = {
 		available = {
 			has_war_support < 0.8
 			any_enemy_country = {
-				is_literally_china = yes
+				original_tag = CHI
 			}
 		}
 
