@@ -8,10 +8,18 @@ mobile_infantry = {
     xp_type = army
 
     available = {
-        NOT = {
-            original_tag = ROM
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_mass_infantry_tt
+            NOT = {
+                OR = {
+                    tag = ROM
+                    tag = SAF
+                    tag = RAJ
+                    original_tag = ROM
+                    original_tag = SAF
+                    original_tag = RAJ
+                }
+            }
         }
     }
 
@@ -63,7 +71,13 @@ defensive_postures = {
     xp_type = army
 
     available = {
-        original_tag = ROM
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_rom_only_tt
+            OR = {
+                tag = ROM
+                original_tag = ROM
+            }
+        }
     }
 
     ai_will_do = {
@@ -114,9 +128,14 @@ assault_infantry = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_saf_raj_tt
+            OR = {
+                tag = SAF
+                tag = RAJ
+                original_tag = SAF
+                original_tag = RAJ
+            }
         }
     }
 

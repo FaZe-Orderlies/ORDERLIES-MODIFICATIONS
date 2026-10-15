@@ -8,7 +8,13 @@ air_subdoctrine_fighter_homeland_defense = {
     xp_type = air
 
     available = {
-        original_tag = SOV
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_sov_only_tt
+            OR = {
+                tag = SOV
+                original_tag = SOV
+            }
+        }
     }
 
     ai_will_do = { base = 1 }
@@ -42,7 +48,7 @@ air_subdoctrine_fighter_homeland_defense = {
                 air_agility = 0.055
             }
             air_superiority_efficiency = 0.05
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }
 }
@@ -57,14 +63,24 @@ air_subdoctrine_tactical_flexibility = {
     xp_type = air
 
     available = {
-        OR = {
-            original_tag = GER
-            original_tag = ITA
-            original_tag = JAP
-            original_tag = HUN
-            original_tag = ROM
-            original_tag = BUL
-            original_tag = FIN
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_axis_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = JAP
+                tag = HUN
+                tag = ROM
+                tag = BUL
+                tag = FIN
+                original_tag = GER
+                original_tag = ITA
+                original_tag = JAP
+                original_tag = HUN
+                original_tag = ROM
+                original_tag = BUL
+                original_tag = FIN
+            }
         }
     }
 
@@ -95,7 +111,7 @@ air_subdoctrine_tactical_flexibility = {
                 air_attack = 0.03
             }
             air_superiority_efficiency = 0.05
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }	
 }
@@ -110,14 +126,24 @@ air_subdoctrine_escort_fighter = {
     xp_type = air
 
     available = {
-        OR = {
-            original_tag = ENG
-            original_tag = USA
-            original_tag = FRA
-            original_tag = CAN
-            original_tag = AST
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_allies_tt
+            OR = {
+                tag = ENG
+                tag = USA
+                tag = FRA
+                tag = CAN
+                tag = AST
+                tag = SAF
+                tag = RAJ
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+                original_tag = SAF
+                original_tag = RAJ
+            }
         }
     }
 
@@ -144,9 +170,8 @@ air_subdoctrine_escort_fighter = {
             air_power_projection_factor = 0.05
         }
         constant_air_offensive = {
-            air_weather_penalty = -0.10
             air_superiority_efficiency = 0.05
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }
 }

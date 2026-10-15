@@ -8,12 +8,20 @@ armored_spearhead = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = GER
-            original_tag = ITA
-            original_tag = HUN
-            original_tag = BUL
-            original_tag = FIN
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_armor_axis_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = HUN
+                tag = BUL
+                tag = FIN
+                original_tag = GER
+                original_tag = ITA
+                original_tag = HUN
+                original_tag = BUL
+                original_tag = FIN
+            }
         }
     }
 
@@ -61,15 +69,26 @@ armored_infantry_support = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = SOV
-            original_tag = ROM
-            original_tag = RAJ
-            original_tag = SAF
-            original_tag = ENG
-            original_tag = FRA
-            original_tag = CAN
-            original_tag = AST
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_armor_inf_support_tt
+            OR = {
+                tag = SOV
+                tag = ROM
+                tag = RAJ
+                tag = SAF
+                tag = ENG
+                tag = FRA
+                tag = CAN
+                tag = AST
+                original_tag = SOV
+                original_tag = ROM
+                original_tag = RAJ
+                original_tag = SAF
+                original_tag = ENG
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+            }
         }
     }
 
@@ -124,9 +143,14 @@ streamlined_deployment = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = USA
-            original_tag = JAP
+        custom_trigger_tooltip = {
+            tooltip = land_grand_doctrine_usa_jap_tt
+            OR = {
+                tag = USA
+                tag = JAP
+                original_tag = USA
+                original_tag = JAP
+            }
         }
     }
 

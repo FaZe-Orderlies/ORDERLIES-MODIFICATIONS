@@ -1007,7 +1007,7 @@ add_mastery = {
     amount = 200
     sub_doctrine = massed_carrier_fleet
 }
-set_grand_doctrine = new_operational_integrity
+set_grand_doctrine = new_battlefield_support
 
 set_sub_doctrine = defensive_postures
 add_mastery = {

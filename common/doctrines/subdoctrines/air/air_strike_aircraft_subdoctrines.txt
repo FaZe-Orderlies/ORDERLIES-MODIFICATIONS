@@ -8,7 +8,13 @@ air_subdoctrine_flying_artillery = {
     xp_type = air
 
     available = {
-        original_tag = SOV
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_sov_only_tt
+            OR = {
+                tag = SOV
+                original_tag = SOV
+            }
+        }
     }
 
     ai_will_do = { base = 1 }
@@ -17,7 +23,6 @@ air_subdoctrine_flying_artillery = {
         suppression_runs = {
             category_cas = {
                 air_ground_attack = 0.03
-                reliability = 0.03
             }
         }
         terrain_familiarity = {
@@ -38,10 +43,7 @@ air_subdoctrine_flying_artillery = {
             }
         }
         movement_interdiction = {
-            category_cas = {
-                reliability = 0.03
-            }
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }
 }
@@ -56,14 +58,24 @@ air_subdoctrine_dive_bombers = {
     xp_type = air
 
     available = {
-        OR = {
-            original_tag = GER
-            original_tag = ITA
-            original_tag = JAP
-            original_tag = HUN
-            original_tag = ROM
-            original_tag = BUL
-            original_tag = FIN
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_axis_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = JAP
+                tag = HUN
+                tag = ROM
+                tag = BUL
+                tag = FIN
+                original_tag = GER
+                original_tag = ITA
+                original_tag = JAP
+                original_tag = HUN
+                original_tag = ROM
+                original_tag = BUL
+                original_tag = FIN
+            }
         }
     }
 
@@ -73,7 +85,6 @@ air_subdoctrine_dive_bombers = {
         forward_air_controllers = {
             category_cas = {
                 air_ground_attack = 0.08
-                reliability = 0.08
             }
         }
         all_weather_drills = {
@@ -84,7 +95,6 @@ air_subdoctrine_dive_bombers = {
         }
         terrifying_precision = { 
             category_cas = {
-                reliability = 0.03
                 maximum_speed = 0.03
             }
             air_power_projection_factor = 0.025
@@ -99,7 +109,7 @@ air_subdoctrine_dive_bombers = {
                 air_ground_attack = 0.03
             }
             air_cas_efficiency = 0.05
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }
 }
@@ -114,14 +124,24 @@ air_subdoctrine_flexible_fire_support = {
     xp_type = air
 
     available = {
-        OR = {
-            original_tag = ENG
-            original_tag = USA
-            original_tag = FRA
-            original_tag = CAN
-            original_tag = AST
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_allies_tt
+            OR = {
+                tag = ENG
+                tag = USA
+                tag = FRA
+                tag = CAN
+                tag = AST
+                tag = SAF
+                tag = RAJ
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+                original_tag = SAF
+                original_tag = RAJ
+            }
         }
     }
 
@@ -131,7 +151,6 @@ air_subdoctrine_flexible_fire_support = {
         cas_preservation = {
             category_cas = {
                 air_ground_attack = 0.03
-                reliability = 0.03
             }
         }
         adaptable_nav_bombers = {
@@ -141,9 +160,6 @@ air_subdoctrine_flexible_fire_support = {
         }
         forward_spotters = { 
             air_cas_efficiency = 0.05
-            category_cas = {
-                reliability = 0.03
-            }
         }
         continuous_fire_support = {
             category_cas = {
@@ -155,7 +171,7 @@ air_subdoctrine_flexible_fire_support = {
             category_cas = {
                 air_ground_attack = 0.03
             }
-            air_mission_efficiency = 0.015
+            air_mission_efficiency = 0.025
         }
     }
 }

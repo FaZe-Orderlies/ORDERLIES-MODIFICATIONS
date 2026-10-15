@@ -8,11 +8,18 @@ self_propelled_support = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = GER
-            original_tag = HUN
-            original_tag = BUL
-            original_tag = FIN
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_artillery_axis_tt
+            OR = {
+                tag = GER
+                tag = HUN
+                tag = BUL
+                tag = FIN
+                original_tag = GER
+                original_tag = HUN
+                original_tag = BUL
+                original_tag = FIN
+            }
         }
     }
 
@@ -71,13 +78,22 @@ mobile_recon_assault_units = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = SOV
-            original_tag = USA
-            original_tag = ENG
-            original_tag = FRA
-            original_tag = CAN
-            original_tag = AST
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_support_coord_tt
+            OR = {
+                tag = SOV
+                tag = USA
+                tag = ENG
+                tag = FRA
+                tag = CAN
+                tag = AST
+                original_tag = SOV
+                original_tag = USA
+                original_tag = ENG
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+            }
         }
     }
 
@@ -131,7 +147,13 @@ siege_artillery = {
     xp_type = army
 
     available = {
-        original_tag = ITA
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_ita_only_tt
+            OR = {
+                tag = ITA
+                original_tag = ITA
+            }
+        }
     }
 
     ai_will_do = { base = 1 }
@@ -206,9 +228,14 @@ field_engineering_works = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_saf_raj_tt
+            OR = {
+                tag = SAF
+                tag = RAJ
+                original_tag = SAF
+                original_tag = RAJ
+            }
         }
     }
 
@@ -269,7 +296,13 @@ anti_tank_frontline = {
     xp_type = army
 
     available = {
-        original_tag = ROM
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_rom_only_tt
+            OR = {
+                tag = ROM
+                original_tag = ROM
+            }
+        }
     }
 
     ai_will_do = { base = 1 }

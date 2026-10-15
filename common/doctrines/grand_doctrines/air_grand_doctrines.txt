@@ -5,7 +5,27 @@ new_strategic_destruction = {
     description = GRAND_DOCTRINE_STRATEGIC_DESTRUCTION_DESC
     icon = GFX_doctrine_strategic_destruction_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = grand_doctrine_allies_air_tt
+            OR = {
+                tag = ENG
+                tag = USA
+                tag = FRA
+                tag = CAN
+                tag = AST
+                tag = SAF
+                tag = RAJ
+                tag = SOV
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+                original_tag = SAF
+                original_tag = RAJ
+                original_tag = SOV
+            }
+        }
     }
 
     xp_cost = 0
@@ -23,17 +43,11 @@ new_strategic_destruction = {
     }
 
     # EFFECTS
-	air_escort_efficiency = 0.25
-    air_strategic_bomber_bombing_factor = 0.2
+    air_mission_efficiency = 0.05
 	
     milestones = {
         {
             #1 Fighters
-			category_fighter = {
-                air_agility = 0.1
-            }
-            air_intercept_efficiency = 0.2
-
             effect = {
                 if = {
                     limit = {
@@ -50,9 +64,6 @@ new_strategic_destruction = {
         }
         {
             #2 Strike Aircraft
-	        army_bonus_air_superiority_factor = 0.15
-            air_nav_efficiency = 0.15
-
             effect = {
                 if = {
                     limit = {
@@ -69,11 +80,6 @@ new_strategic_destruction = {
         }
         {
             #3 Medium Aircraft
-			category_heavy_fighter = {
-                air_agility = 0.1
-            }
-            air_strategic_bomber_defence_factor = 0.25
-
             effect = {
                 if = {
                     limit = {
@@ -90,8 +96,11 @@ new_strategic_destruction = {
         }
         {
             #4 Heavy Aircraft
-	        air_strategic_bomber_bombing_factor = 0.2
-			air_mission_xp_gain_factor = 0.05
+            air_mission_efficiency = 0.20
+            air_detection = 0.30
+            air_superiority_efficiency = 0.25
+            air_weather_penalty = -0.05
+            air_night_penalty = -0.05
 
             effect = {
                 if = {
@@ -117,7 +126,25 @@ new_battlefield_support = {
     description = GRAND_DOCTRINE_BATTLEFIELD_SUPPORT_DESC
     icon = GFX_doctrine_direct_ground_support_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = grand_doctrine_axis_air_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = JAP
+                tag = FIN
+                tag = HUN
+                tag = BUL
+                tag = ROM
+                original_tag = GER
+                original_tag = ITA
+                original_tag = JAP
+                original_tag = FIN
+                original_tag = HUN
+                original_tag = BUL
+                original_tag = ROM
+            }
+        }
     }
 
     xp_cost = 0
@@ -140,16 +167,12 @@ new_battlefield_support = {
     }
 
     # EFFECTS
-	
-	air_superiority_detect_factor = 0.15
-	air_cas_efficiency = 0.2
+    air_mission_efficiency = 0.10
+    air_range_factor = 0.05
 	
     milestones = {
         {
             #1 Fighters
-			air_ace_generation_chance_factor = 0.15
-            army_bonus_air_superiority_factor = 0.15
-
             effect = {
                 if = {
                     limit = {
@@ -166,11 +189,6 @@ new_battlefield_support = {
         }
         {
             #2 Strike Aircraft
-	        air_cas_present_factor = 0.20
-			category_cas = {
-                air_agility = 0.2
-            }
-
             effect = {
                 if = {
                     limit = {
@@ -187,11 +205,6 @@ new_battlefield_support = {
         }
         {
             #3 Medium Aircraft
-			air_mission_xp_gain_factor = 0.1
-            tac_bomber = {
-                air_bombing = 0.10
-            }
-
             effect = {
                 if = {
                     limit = {
@@ -208,124 +221,11 @@ new_battlefield_support = {
         }
         {
             #4 Heavy Aircraft
-	        air_strategic_bomber_bombing_factor = 0.15
-			air_interception_detect_factor = 0.1
-
-            effect = {
-                if = {
-                    limit = {
-                        NOT = {
-                            has_variable = heavies_milestone_var
-                        }
-                    }
-                    set_variable = { heavies_milestone_var = 1 }
-                }
-                else = {
-                    add_to_variable = { heavies_milestone_var = 1 }
-                }
-            }
-        }
-    }
-}
-
-new_operational_integrity = {
-    folder = air
-
-    name = GRAND_DOCTRINE_OPERATIONAL_INTEGRITY
-    description = GRAND_DOCTRINE_OPERATIONAL_INTEGRITY_DESC
-    icon = GFX_doctrine_operational_destruction_medium
-    available = {
-        always = yes
-    }
-
-    xp_cost = 0
-    xp_type = air
-
-    ai_will_do = {
-        base = 1
-    }
-
-    tracks = {
-        fighter_aircraft
-        strike_aircraft
-        medium_aircraft
-        heavy_aircraft
-    }
-
-    # EFFECTS
-	
-	
-	air_interception_detect_factor = 0.2
-    air_superiority_efficiency = 0.1
-	
-    milestones = {
-        {
-            #1 Fighters
-			 category_fighter = {
-                air_agility = 0.1
-            }
-            air_mission_xp_gain_factor = 0.15
-
-            effect = {
-                if = {
-                    limit = {
-                        NOT = {
-                            has_variable = fighters_milestone_var
-                        }
-                    }
-                    set_variable = { fighters_milestone_var = 1 }
-                }
-                else = {
-                    add_to_variable = { fighters_milestone_var = 1 }
-                }
-            }
-        }
-        {
-            #2 Strike Aircraft
-	        air_ace_generation_chance_factor = 0.10
-			army_bonus_air_superiority_factor = 0.1
-
-            effect = {
-                if = {
-                    limit = {
-                        NOT = {
-                            has_variable = strikers_milestone_var
-                        }
-                    }
-                    set_variable = { strikers_milestone_var = 1 }
-                }
-                else = {
-                    add_to_variable = { strikers_milestone_var = 1 }
-                }
-            }
-        }
-        {
-            #3 Medium Aircraft
-			category_tac_bomber = {
-                air_bombing = 0.2
-            }
-			category_heavy_fighter = {
-                air_agility = 0.1
-            }
-
-            effect = {
-                if = {
-                    limit = {
-                        NOT = {
-                            has_variable = mediums_milestone_var
-                        }
-                    }
-                    set_variable = { mediums_milestone_var = 1 }
-                }
-                else = {
-                    add_to_variable = { mediums_milestone_var = 1 }
-                }
-            }
-        }
-        {
-            #4 Heavy Aircraft
-	        air_strategic_bomber_defence_factor = 0.15
-			strategic_bomb_visibility = -0.4
+            air_mission_efficiency = 0.10
+            air_detection = 0.25
+            air_superiority_efficiency = 0.20
+            air_weather_penalty = -0.05
+            air_night_penalty = -0.05
 
             effect = {
                 if = {

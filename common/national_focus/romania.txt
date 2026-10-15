@@ -3758,7 +3758,7 @@ focus_tree = {
 				name = ROM_air_defense
 				bonus = 0.2
 				days = 240
-				grand_doctrine = new_operational_integrity
+				grand_doctrine = new_battlefield_support
 			}
 			add_doctrine_cost_reduction = {
 				name = ROM_air_defense

@@ -3574,7 +3574,7 @@ focus_tree = {
 				name = GER_tactical_bombers
 				bonus = 0.15
 				days = 180
-				grand_doctrine = new_operational_integrity
+				grand_doctrine = new_battlefield_support
 			}
 			add_mastery_bonus = {
 				name = GER_tactical_bombers

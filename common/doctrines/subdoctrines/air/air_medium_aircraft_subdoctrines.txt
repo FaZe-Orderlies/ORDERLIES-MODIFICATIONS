@@ -38,7 +38,7 @@ air_subdoctrine_torpedo_bombers = {
         surface_recon_mastery = {
             air_surface_ship_detect_factor = 0.10
             air_nav_efficiency = 0.05
-            air_mission_efficiency = 0.0225
+            air_mission_efficiency = 0.025
         }
     }
 }
@@ -60,9 +60,7 @@ air_subdoctrine_all_weather_bombing = {
 
     rewards = {
         rugged_bomber_frames = {
-            category_tac_bomber = {
-                reliability = 0.08
-            }
+            air_weather_penalty = -0.05
         }
         bad_weather_drills = {
             air_weather_penalty = -0.05
@@ -73,13 +71,13 @@ air_subdoctrine_all_weather_bombing = {
             }
         }
         storm_strike_tactics = {
-            air_weather_penalty = -0.10
+            air_weather_penalty = -0.05
             air_power_projection_factor = 0.025
         }
         theater_observation = {
             air_intel_factor = 0.10
             air_strategic_bomber_bombing_factor = 0.05
-            air_mission_efficiency = 0.0225
+            air_mission_efficiency = 0.025
         }
     }
 }

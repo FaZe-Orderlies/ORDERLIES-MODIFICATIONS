@@ -9,13 +9,7 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
-			10061 = {
-				naval_base = 5
-			}
 			9989 = {
-				naval_base = 3
-			}
-			1071 = {
 				naval_base = 3
 			}
 		}
@@ -23,14 +17,10 @@ state={
 		victory_points = {
 			9989 1 #Sidi Barrani
 		}
-
-		victory_points = {
-			10061 2 # Mersa Matruh
-		}
 	}
 
 	provinces={
-		7079 9989 5078 12033 11967 10061 11910 1071 13483 13484
+		7079 9989 5078 12033 13483 13484 13418 13417 13419 12764 13485 13460 13461
 	}
 
 

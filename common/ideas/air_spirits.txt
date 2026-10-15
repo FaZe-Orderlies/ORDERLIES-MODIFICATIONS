@@ -68,7 +68,10 @@ ideas = {
 			available = { 
 				AND = {
 					has_air_academy = yes
-					has_doctrine = new_operational_integrity
+					OR = {
+						has_doctrine = new_strategic_destruction
+						has_doctrine = new_battlefield_support
+					}
 				}
 			}
 			research_bonus = {
@@ -268,7 +271,10 @@ ideas = {
 			available = { 
 				AND = {
 					has_air_force_command = yes
-					has_doctrine = new_operational_integrity
+					OR = {
+						has_doctrine = new_strategic_destruction
+						has_doctrine = new_battlefield_support
+					}
 				}
 			}
 			modifier = {

@@ -8,7 +8,13 @@ deep_battle = {
     xp_type = army
 
     available = {
-        original_tag = SOV
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_sov_only_tt
+            OR = {
+                tag = SOV
+                original_tag = SOV
+            }
+        }
     }
 
     ai_will_do = { base = 1 }
@@ -62,14 +68,24 @@ rapid_dominance = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = GER
-            original_tag = ITA
-            original_tag = JAP
-            original_tag = HUN
-            original_tag = ROM
-            original_tag = BUL
-            original_tag = FIN
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_axis_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = JAP
+                tag = HUN
+                tag = ROM
+                tag = BUL
+                tag = FIN
+                original_tag = GER
+                original_tag = ITA
+                original_tag = JAP
+                original_tag = HUN
+                original_tag = ROM
+                original_tag = BUL
+                original_tag = FIN
+            }
         }
     }
 
@@ -119,14 +135,24 @@ operational_tactics = {
     xp_type = army
 
     available = {
-        OR = {
-            original_tag = ENG
-            original_tag = USA
-            original_tag = FRA
-            original_tag = CAN
-            original_tag = AST
-            original_tag = SAF
-            original_tag = RAJ
+        custom_trigger_tooltip = {
+            tooltip = subdoctrine_allies_tt
+            OR = {
+                tag = ENG
+                tag = USA
+                tag = FRA
+                tag = CAN
+                tag = AST
+                tag = SAF
+                tag = RAJ
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = AST
+                original_tag = SAF
+                original_tag = RAJ
+            }
         }
     }
 

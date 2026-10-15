@@ -307,16 +307,4 @@ FIN_is_democratic_ai = {
 			option = FIN_DEMOCRATIC_PLAN
 		}
 	}
-}
-
-has_air_academy = {
-	always = no
-}
-
-has_air_force_command = {
-	always = no
-}
-
-has_naval_academy = {
-	always = no
 }

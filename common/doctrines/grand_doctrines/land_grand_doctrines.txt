@@ -5,7 +5,23 @@ new_mobile_warfare = {
     description = GRAND_DOCTRINE_MOBILE_WARFARE_DESC
     icon = GFX_doctrine_mobile_warfare_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = land_grand_doctrine_axis_tt
+            OR = {
+                tag = GER
+                tag = ITA
+                tag = FIN
+                tag = HUN
+                tag = BUL
+                tag = ROM
+                original_tag = GER
+                original_tag = ITA
+                original_tag = FIN
+                original_tag = HUN
+                original_tag = BUL
+                original_tag = ROM
+            }
+        }
     }
     xp_cost = 0
     xp_type = army
@@ -30,6 +46,9 @@ new_mobile_warfare = {
 	planning_speed = 0.20
 	army_speed_factor = 0.10
 	enable_tactic = tactic_unexpected_thrust
+	enable_tactic = tactic_blitz
+	enable_tactic = tactic_backhand_blow
+	enable_tactic = tactic_breakthrough
     
 	
 
@@ -75,7 +94,6 @@ new_mobile_warfare = {
         {
             #Armor
 	        additional_brigade_column_size = 1
-            enable_tactic = tactic_blitz
             army_armor_attack_factor = 0.10
             army_armor_defence_factor = 0.05
 
@@ -96,7 +114,6 @@ new_mobile_warfare = {
         {
             #Operations
 	        planning_speed = 0.2
-            enable_tactic = tactic_backhand_blow   
             category_regimental_support_battalions = {
                 max_organisation = 10
                 breakthrough = 0.1
@@ -125,7 +142,15 @@ superior_firepower = {
     description = GRAND_DOCTRINE_SUPERIOR_FIREPOWER_DESC
     icon = GFX_doctrine_superior_firepower_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = land_grand_doctrine_usa_jap_tt
+            OR = {
+                tag = USA
+                tag = JAP
+                original_tag = USA
+                original_tag = JAP
+            }
+        }
     }
 
     xp_cost = 0
@@ -149,6 +174,10 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
+    enable_tactic = tactic_breakthrough
+    enable_tactic = tactic_blitz
+    enable_tactic = tactic_tactical_withdrawal
+    enable_tactic = tactic_backhand_blow
     category_line_artillery = {
         soft_attack = 0.1
     }
@@ -161,9 +190,13 @@ superior_firepower = {
         {
             #Infantry
             enable_tactic = tactic_elastic_defense
-            supply_consumption_factor = -0.1
+            supply_consumption_factor = -0.20
             category_line_artillery = {
                 soft_attack = 0.025
+            }
+            special_forces_attack_factor = 0.05
+            category_special_forces = {
+                max_organisation = 5
             }
 
             effect = {
@@ -217,6 +250,9 @@ superior_firepower = {
             category_line_artillery = {
                 soft_attack = 0.025
             }
+            amphibious_medium_armor = {
+               hard_attack = 0.05
+            }
             
 
             effect = {
@@ -235,7 +271,6 @@ superior_firepower = {
         }
         {
             #Operations
-            enable_tactic = tactic_tactical_withdrawal
             experience_loss_factor = -0.05
             category_army = {
                 default_morale = 0.25
@@ -270,7 +305,23 @@ grand_battleplan = {
     description = GRAND_DOCTRINE_GRAND_BATTLEPLAN_DESC
     icon = GFX_doctrine_grand_battleplan_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = land_grand_doctrine_allies_tt
+            OR = {
+                tag = ENG
+                tag = FRA
+                tag = CAN
+                tag = SAF
+                tag = RAJ
+                tag = AST
+                original_tag = ENG
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = SAF
+                original_tag = RAJ
+                original_tag = AST
+            }
+        }
     }
 
     xp_cost = 0
@@ -289,6 +340,9 @@ grand_battleplan = {
 
     # EFFECTS
     enable_tactic = tactic_planned_attack
+    enable_tactic = tactic_backhand_blow
+    enable_tactic = tactic_blitz
+    enable_tactic = tactic_tactical_withdrawal
     
     max_planning = 0.15
     command_power_gain = 0.25
@@ -300,7 +354,8 @@ grand_battleplan = {
             additional_brigade_column_size = 1
             enable_tactic = tactic_elastic_defense
             max_dig_in_factor = 0.05
-            special_forces_attack_factor = 0.05
+            army_infantry_attack_factor = 0.05
+            army_infantry_defence_factor = 0.10
             
 
             effect = {
@@ -340,9 +395,6 @@ grand_battleplan = {
             #Armor
             land_reinforce_rate = 0.02
             enable_tactic = tactic_breakthrough
-            amphibious_medium_armor = {
-               hard_attack = 0.05
-            }
             effect = {
                 if = {
                     limit = {
@@ -387,7 +439,13 @@ mass_assault = {
     description = GRAND_DOCTRINE_MASS_ASSAULT_DESC
     icon = GFX_doctrine_mass_assault_medium
     available = {
-        always = yes
+        custom_trigger_tooltip = {
+            tooltip = land_grand_doctrine_sov_tt
+            OR = {
+                tag = SOV
+                original_tag = SOV
+            }
+        }
     }
 
     xp_cost = 0
@@ -409,6 +467,7 @@ mass_assault = {
     out_of_supply_factor = -0.10
     enable_tactic = tactic_relentless_assault
     experience_loss_factor = -0.15
+    minimum_training_level = -0.50
     
 
     milestones = {
@@ -436,7 +495,6 @@ mass_assault = {
             #Artillery/Support
             enable_tactic = tactic_elastic_defense
             out_of_supply_factor = -0.05
-            minimum_training_level = -0.05
             dig_in_speed_factor = 0.10
 
             effect = {
@@ -476,8 +534,13 @@ mass_assault = {
             #Operations
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
-            minimum_training_level = -0.05
             dig_in_speed_factor = 0.05
+            army_infantry_attack_factor = 0.05
+            army_infantry_defence_factor = 0.05
+            army_armor_attack_factor = 0.10
+            enable_tactic = tactic_blitz
+            enable_tactic = tactic_guerrilla_tactics
+            enable_tactic = tactic_tactical_withdrawal
 
             effect = {
                 if = {
