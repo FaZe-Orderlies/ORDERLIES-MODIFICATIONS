@@ -179,8 +179,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 12
-		start_year = 1938
+		research_cost = 14.2
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -259,8 +259,8 @@ technologies = {
 			
 		}				
 
-		research_cost = 16.5
-		start_year = 1941
+		research_cost = 6.0
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -340,7 +340,7 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}		
-		research_cost = 11
+		research_cost = 8.2
 		start_year = 1943
 
 		folder = {
@@ -404,7 +404,7 @@ technologies = {
 			cv_small_plane_suicide_airframe_4
 		}
 
-		research_cost = 5.5
+		research_cost = 1.0
 		start_year = 1944
 
 		folder = {
@@ -514,8 +514,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 12
-		start_year = 1938
+		research_cost = 9.4
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -578,8 +578,8 @@ technologies = {
 				PROJECT = sp_air_jet_engine	
 			}
 		}		
-		research_cost = 16.5
-		start_year = 1941
+		research_cost = 6.0
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -642,7 +642,7 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}
-		research_cost = 11
+		research_cost = 8.2
 		start_year = 1943
 
 		folder = {
@@ -689,7 +689,7 @@ technologies = {
 			medium_plane_scout_plane_airframe_4
 		}
 		
-		research_cost = 5.5
+		research_cost = 1.0
 		start_year = 1944
 		
 		folder = {
@@ -776,8 +776,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 12
-		start_year = 1938
+		research_cost = 9.4
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -833,8 +833,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 16.5
-		start_year = 1941
+		research_cost = 6.0
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -877,7 +877,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 11
+		research_cost = 8.2
 		start_year = 1943
 
 		folder = {
@@ -915,7 +915,7 @@ technologies = {
 			large_plane_maritime_patrol_plane_airframe_4
 		}
 		
-		research_cost = 5.5
+		research_cost = 1.0
 		start_year = 1944
 
 		folder = {
@@ -1428,8 +1428,12 @@ technologies = {
 			hmg_defense_turret_2x
 		}
 		
-		research_cost = 12
-		start_year = 1940
+		research_cost = 1
+		start_year = 1939
+
+		allow = {
+			date > 1939.9.1
+		}
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1788,7 +1792,7 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1941
 
 		allow = {
@@ -1860,7 +1864,7 @@ technologies = {
 			engine_4_6x	
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1943
 
 		allow = {

@@ -29,9 +29,7 @@ mountaineers_1 = {
         modifier = {
             factor = 25
            	OR = {
-           		original_tag = SWE
            		original_tag = FIN
-           		original_tag = NOR
            	} 
         }
     }
@@ -117,9 +115,7 @@ mountaineers_2 = {
             OR = {
             	original_tag = GER
             	original_tag = SOV
-            	original_tag = POL
             	original_tag = ITA
-            	original_tag = BEL
             }           
         }
     }
@@ -231,7 +227,6 @@ marines_1 = {
             	original_tag = ENG
             	original_tag = CAN
             	original_tag = AST
-            	original_tag = NZL
             	original_tag = SAF
             }
         }
@@ -546,7 +541,6 @@ paratroopers_2 = {
             OR = {
             	original_tag = GER
             	original_tag = ENG
-            	original_tag = POL
             	original_tag = USA
             }
         }
@@ -634,9 +628,6 @@ rangers_1 = {
             factor = 25
             OR = {
             	original_tag = FIN
-            	original_tag = SWE
-            	original_tag = NOR
-            	original_tag = BEL
             }          
         }
     }
@@ -742,9 +733,7 @@ rangers_2 = {
         modifier = {
             factor = 25
             OR = {
-            	original_tag = SIA
             	original_tag = RAJ
-            	original_tag = BRM 
             }         
         }
     }

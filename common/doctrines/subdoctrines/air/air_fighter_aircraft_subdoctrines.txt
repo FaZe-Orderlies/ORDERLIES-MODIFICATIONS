@@ -2,44 +2,102 @@ air_subdoctrine_fighter_homeland_defense = {
     track = fighter_aircraft
     name = SUBDOCTRINE_FIGHTER_HOMELAND_DEFENSE
     description = SUBDOCTRINE_FIGHTER_HOMELAND_DEFENSE_DESC
-    icon = GFX_doctrine_forward_interception_medium
+    icon = GFX_dogfighting_experience_medium
 
     xp_cost = 0
     xp_type = air
 
     available = {
-        always = yes
+        original_tag = SOV
     }
 
-    ai_will_do = {
+    ai_will_do = { base = 1 }
 
-        base = 1
-        modifier = {
-            factor = 95
-			is_major = no 
+    rewards = {
+        interception_priority = {
+            category_fighter = {
+                air_attack = 0.055
+                maximum_speed = 0.105
+            }
+        }
+        air_defense_grids = {
+            air_power_projection_factor = 0.05
+        }
+        air_wing_knowledge_transfer = {
+            category_fighter = {
+                air_defence = 0.105
+            }
+            equipment_bonus = {
+                small_plane_airframe = {
+                    instant = yes
+                    build_cost_ic = -0.01
+                }
+            }
+        }
+        experienced_pilots_protection = {
+            air_power_projection_factor = 0.05
+        }
+        mass_sorties = {
+            category_fighter = {
+                air_agility = 0.055
+            }
+            air_superiority_efficiency = 0.05
+            air_mission_efficiency = 0.015
+        }
+    }
+}
+
+air_subdoctrine_tactical_flexibility = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_TACTICAL_FLEXIBILITY
+    description = SUBDOCTRINE_TACTICAL_FLEXIBILITY_DESC
+    icon = GFX_fighter_baiting_medium
+
+    xp_cost = 0
+    xp_type = air
+
+    available = {
+        OR = {
+            original_tag = GER
+            original_tag = ITA
+            original_tag = JAP
+            original_tag = HUN
+            original_tag = ROM
+            original_tag = BUL
+            original_tag = FIN
         }
     }
 
-    # EFFECTS
-	air_home_defence_factor = 0.1
+    ai_will_do = { base = 1 }
 
     rewards = {
-		interception_priority = {
-			air_intercept_efficiency = 0.15
-		}
-		air_defense_grids = {
-			air_interception_detect_factor = 0.2
-		}
-		air_wing_knowledge_transfer = {
-			air_untrained_pilots_penalty_factor = -0.15
-		}
-        experienced_pilots_protection = {
-			air_ace_generation_chance_factor = 0.1
-		}
-		mass_sorties = {
-			air_mission_efficiency = 0.05
-		}
-    }
+        loose_formation = {
+            category_fighter = {
+                air_attack = 0.08
+                air_defence = 0.08
+            }
+        }
+        high_altitude_approach = {
+            air_power_projection_factor = 0.05
+        }
+        combat_discipline = {
+            category_fighter = {
+                maximum_speed = 0.13
+                air_agility = 0.08
+            }
+        }
+        high_speed_dive = {
+            air_power_projection_factor = 0.05
+        }
+        aces_of_the_sky = {
+            category_fighter = {
+                air_agility = 0.03
+                air_attack = 0.03
+            }
+            air_superiority_efficiency = 0.05
+            air_mission_efficiency = 0.015
+        }
+    }	
 }
 
 air_subdoctrine_escort_fighter = {
@@ -52,246 +110,43 @@ air_subdoctrine_escort_fighter = {
     xp_type = air
 
     available = {
-        always = yes
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 95
-            original_tag = USA 
-        }
-        modifier = {
-            factor = 0.5
-            is_major = no 
+        OR = {
+            original_tag = ENG
+            original_tag = USA
+            original_tag = FRA
+            original_tag = CAN
+            original_tag = AST
+            original_tag = SAF
+            original_tag = RAJ
         }
     }
 
-    # EFFECTS
-    category_fighter = {
-    	air_range = 0.1
-    }
+    ai_will_do = { base = 1 }
 
     rewards = {
-		escort_procedures = {
-			air_escort_efficiency = 0.1
-		}
-		extended_search_patterns = {
-			air_superiority_efficiency = 0.1
-		}
-		improved_maintenance_protocols = {
-			air_accidents_factor = -0.2
-		}
-        increased_sky_presence = {
-			air_power_projection_factor = 0.1
-		}
-		constant_air_offensive = {
-			air_weather_penalty = -0.1
-			air_night_penalty = -0.1
-		}
-    }
-}
-
-air_subdoctrine_fighter_bombers = {
-track = fighter_aircraft
-    name = SUBDOCTRINE_FIGHTER_BOMBERS
-    description = SUBDOCTRINE_FIGHTER_BOMBERS_DESC
-    icon = GFX_doctrine_low_echelon_support_medium
-
-    visible = {
-    	has_dlc = "By Blood Alone"
-    }
-
-    xp_cost = 0
-    xp_type = air
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = { base = 0 }
-
-    # EFFECTS
-    category_fighter = {
-    	air_ground_attack = 0.1
-    }
-
-    rewards = {
-		target_prioritization = {
-			air_cas_efficiency = 0.1
-		}
-		strafing_runs = {
-			air_cas_present_factor = 0.1
-		}
-		versatile_experience = {
-			air_mission_xp_gain_factor = 0.1
-		}
-        multi_mission_assignment = {
-			air_mission_efficiency = 0.05
-		}
-		night_target_search = {
-			air_night_penalty = -0.1
-		}
-    }	
-}
-
-air_subdoctrine_tactical_flexibility = {
-track = fighter_aircraft
-    name = SUBDOCTRINE_TACTICAL_FLEXIBILITY
-    description = SUBDOCTRINE_TACTICAL_FLEXIBILITY_DESC
-    icon = GFX_doctrine_formation_flying_medium
-
-    xp_cost = 0
-    xp_type = air
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 95
-            original_tag = GER  
-        }
-        modifier = {
-            factor = 0.5
-            is_major = no 
-        }
-    }
-
-    # EFFECTS
-    air_superiority_efficiency = 0.1
-
-    rewards = {
-		loose_formation = {
-			category_fighter = {
-				air_agility = 0.05
-				air_attack = 0.05
-			}
-		}
-		high_altitude_approach = {
-			air_superiority_detect_factor = 0.15
-		}
-		combat_discipline = {
-			air_wing_xp_loss_when_killed_factor = -0.1
-		}
-        high_speed_dive = {
-			category_fighter = {
-				maximum_speed = 0.05
-			}
-		}
-		aces_of_the_sky = {
-			ace_effectiveness_factor = 0.15
-		}
-    }	
-}
-
-air_subdoctrine_dogfighting_mastery = {
-track = fighter_aircraft
-    name = SUBDOCTRINE_DOGFIGHTING_MASTERY
-    description = SUBDOCTRINE_DOGFIGHTING_MASTERY_DESC
-    icon = GFX_doctrine_air_skirmish_medium
-
-    xp_cost = 0
-    xp_type = air
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 95
-            OR = {
-            	original_tag = ENG 
-            	original_tag = FRA 
-            	original_tag = SOV 
-            	original_tag = ITA 
+        escort_procedures = {
+            category_fighter = {
+                air_attack = 0.03
+                air_defence = 0.13
             }
         }
-    }
-
-    # EFFECTS
-    air_ace_generation_chance_factor = 0.1
-
-    rewards = {
-		pilot_quality_focus = {
-			air_mission_xp_gain_factor = 0.1
-			air_training_xp_gain_factor = 0.1
-		}
-		force_rotation = {
-			air_interception_detect_factor = 0.15
-		}
-		fighter_command_system = {
-			category_fighter = {
-				air_agility = 0.1
-			}
-		}
-        combat_routines = {
-			air_superiority_efficiency = 0.15
-		}
-		improved_support_integration = {
-			air_accidents_factor = -0.1
-			air_manpower_requirement_factor = -0.1
-		}
-    }	
-}
-
-air_subdoctrine_fighter_central_field = {
-track = fighter_aircraft
-    name = SUBDOCTRINE_FIGHTER_CENTRAL_FIELD
-    description = SUBDOCTRINE_FIGHTER_CENTRAL_FIELD_DESC
-    icon = GFX_doctrine_naval_air_operations_medium
-
-    xp_cost = 0
-    xp_type = air
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 95
-            original_tag = JAP 
+        extended_search_patterns = {
+            air_power_projection_factor = 0.05
         }
-        modifier = {
-            factor = 0
-            is_major = no 
+        improved_maintenance_protocols = {
+            category_fighter = {
+                air_defence = 0.03
+                maximum_speed = 0.08
+                air_agility = 0.03
+            }
+        }
+        increased_sky_presence = {
+            air_power_projection_factor = 0.05
+        }
+        constant_air_offensive = {
+            air_weather_penalty = -0.10
+            air_superiority_efficiency = 0.05
+            air_mission_efficiency = 0.015
         }
     }
-
-    # EFFECTS
-    sortie_efficiency = 0.15
-
-    rewards = {
-		decoy_tactic = {
-			air_superiority_detect_factor = 0.1
-			air_superiority_efficiency = 0.05
-		}
-		three_plane_formation = {
-			category_carrier_fighter = {
-				air_agility = 0.1
-				maximum_speed = 0.1
-			}
-		}
-		aggressive_spirit = {
-			air_ace_generation_chance_factor = 0.05
-			ace_effectiveness_factor  = 0.1
-		}
-        naval_expertise = {
-			naval_strike_targetting_factor = 0.1
-		}
-		all_weather_operations = {
-			air_weather_penalty = -0.1
-			carrier_traffic = 0.15
-		}
-    }	
 }

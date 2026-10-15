@@ -1,341 +1,166 @@
-mission_type_tactics = {
+deep_battle = {
     track = operations
-    name = SUBDOCTRINE_MISSION_TYPE_TACTICS
-    description = SUBDOCTRINE_MISSION_TYPE_TACTICS_DESC
-    icon = GFX_doctrine_mission_type_tactics_medium
+    name = SUBDOCTRINE_DEEP_BATTLE
+    description = SUBDOCTRINE_DEEP_BATTLE_DESC
+    icon = GFX_doctrine_deep_battle_medium
 
     xp_cost = 0
     xp_type = army
 
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 50
-            original_tag = GER
-        }
-
-        modifier = {
-            factor = 0.5
-            is_major = no 
-        }
-
-    }
-
     available = {
-        always = yes
-    }
-    # EFFECTS
-    command_power_gain = 0.02
-    category_all_infantry = {
-        max_organisation = 15
+        original_tag = SOV
     }
 
-    
+    ai_will_do = { base = 1 }
 
-     rewards = {
-        low_level_delegation ={
-        #1
+    rewards = {
+        echeloned_offensive = {
             category_all_infantry = {
-                default_morale = 0.2
+                breakthrough = 0.05
+                soft_attack = 0.05
+            }
+            category_vehicle_infantry = {
+                breakthrough = 0.05
+                soft_attack = 0.05
             }
         }
-        flexible_command = {
-        #2
-            org_loss_when_moving = -0.15
-        }
-        maneouver_drills = {
-        #3
-            category_all_infantry= {
-                default_morale = 0.2
+        mobile_operational_groups = {
+            category_vehicle_infantry = {
+                max_organisation = 5
+                maximum_speed = 0.05
             }
             category_all_armor = {
-                maximum_speed = 0.1
-            }
-            
-        }
-        flexible_combat_formations = {
-        #4
-
-            category_all_infantry = {
-                breakthrough = 0.1
-                max_organisation = 10
+                max_organisation = 5
+                maximum_speed = 0.05
             }
         }
-        control_zone_responsibilities = {
-        #5
-        
-            category_all_infantry = {
-                default_morale = 0.4
+        logistical_depth = {
+            out_of_supply_factor = -0.15
+            supply_consumption_factor = -0.05
+        }
+        shock_army_resilience = {
+            org_loss_when_moving = -0.15
+            army_morale = 0.30
+        }
+        decisive_deep_penetration = {
+            category_army = {
+                breakthrough = 0.10
             }
-            category_tanks = {
-                default_morale = 0.4
-            }
-
+            coordination_bonus = 0.05
+            enemy_army_bonus_air_superiority_factor = -0.15
         }
     }
 }
 
-last_stand = {
+rapid_dominance = {
     track = operations
-    name = SUBDOCTRINE_LAST_STAND
-    description = SUBDOCTRINE_LAST_STAND_DESC
-    icon = GFX_doctrine_last_stand_medium
+    name = SUBDOCTRINE_RAPID_DOMINANCE
+    description = SUBDOCTRINE_RAPID_DOMINANCE_DESC
+    icon = GFX_doctrine_shock_and_awe_medium
+
     xp_cost = 0
     xp_type = army
 
     available = {
-        always = yes
-    }
-    # EFFECTS
-    conscription = 0.02
-
-    ai_will_do = {
-
-        base = 0
-
+        OR = {
+            original_tag = GER
+            original_tag = ITA
+            original_tag = JAP
+            original_tag = HUN
+            original_tag = ROM
+            original_tag = BUL
+            original_tag = FIN
         }
+    }
+
+    ai_will_do = { base = 1 }
 
     rewards = {
-        werwolf_groups = {
-        #1
-            resistance_damage_to_garrison_on_our_occupied_states = 0.25
+        spearhead_momentum = {
+            category_army = {
+                soft_attack = 0.05
+                breakthrough = 0.05
+            }
         }
-
-        pocket_consolidation = {
-        #2
+        command_initiative = {
+            initiative = 0.05
+            max_planning = 0.10
+        }
+        air_ground_dominance = {
+            enemy_army_bonus_air_superiority_factor = -0.15
+        }
+        panzer_dash = {
+            category_all_armor = {
+                maximum_speed = 0.10
+                max_organisation = 4
+            }
+        }
+        fluid_mechanized_lines = {
             category_all_infantry = {
-                defense = 0.2
+                defense = 0.10
+                breakthrough = 0.05
+            }
+            category_vehicle_infantry = {
+                defense = 0.10
+                breakthrough = 0.05
+            }
+            org_loss_when_moving = -0.10
+        }
+    }
+}
+
+operational_tactics = {
+    track = operations
+    name = SUBDOCTRINE_OPERATIONAL_TACTICS
+    description = SUBDOCTRINE_OPERATIONAL_TACTICS_DESC
+    icon = GFX_doctrine_mobile_defense_medium
+
+    xp_cost = 0
+    xp_type = army
+
+    available = {
+        OR = {
+            original_tag = ENG
+            original_tag = USA
+            original_tag = FRA
+            original_tag = CAN
+            original_tag = AST
+            original_tag = SAF
+            original_tag = RAJ
+        }
+    }
+
+    ai_will_do = { base = 1 }
+
+    rewards = {
+        methodical_planning = {
+            planning_speed = 0.10
+            out_of_supply_factor = -0.10
+        }
+        integrated_battery_fire = {
+            artillery = {
+                soft_attack = 0.10
                 max_organisation = 5
             }
         }
-        digging_in = {
-        #3
-            out_of_supply_factor = -0.20
-            category_all_infantry = {
-                entrenchment = 0.1
-            }
-        }
-        stocking_up = {
-        #4
-            no_supply_grace = 72 
-        }
-        breaking_out = {
-        #5
-            category_army = {
-                soft_attack = 0.2
-            }
-        }
-    }
-}
-
-grand_assault = {
-    track = operations
-    name = SUBDOCTRINE_GRAND_ASSAULT
-    description = SUBDOCTRINE_GRAND_ASSAULT_DESC
-    icon = GFX_doctrine_grand_assault_medium
-    xp_cost = 0
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 50
-            OR = {
-                original_tag = ENG
-                original_tag = FRA
-                original_tag = ITA
-            }
-        }
-
-    }
-
-    # EFFECTS
-    max_planning = 0.1
-    category_army = {
-        breakthrough = 0.1
-        soft_attack = 0.05
-    }
-
-    ai_will_do = { }
-
-    rewards = {
-        central_planning = {
-        #1
-            
-            max_command_power = 30
-
-            logistics_company = {
-                battalion_mult = {
-                    category = category_all_infantry
-                    defense = 0.05
-                }
-            }
-        }
-        multiple_attack_directions = {
-        #2
-            category_army = {
-                breakthrough = 0.15
-            }
-        }
-        combined_arms_integration = {
-        #3
-            army_bonus_air_superiority_factor = 0.05 
-            coordination_bonus = 0.1
-            category_tanks = {
-                max_organisation = 4
-            }
-
+        air_screen_integration = {
             anti_air = {
-                air_attack = 0.1
+                air_attack = 0.05
             }
+            enemy_army_bonus_air_superiority_factor = -0.15
         }
-        forward_command_posts = {
-       #4
-            logistics_company = {
-                battalion_mult = {
-                    category = category_all_infantry 
-                    supply_consumption = -0.05
-                }
-            }
-            category_recon = {
-               recon = 0.1
-            }
-        }
-        c3i_theory = {
-       #5
-
-            max_planning = 0.1
+        defensive_offensive_flexibility = {
             category_all_infantry = {
-                max_organisation = 8
+                defense = 0.10
+                breakthrough = 0.05
             }
-       }
-    }
-}
-
-
-
-
-guerilla_war = {
-    track = operations
-    name = SUBDOCTRINE_GUERILLA_WAR
-    description = SUBDOCTRINE_GUERILLA_WAR_DESC
-    icon = GFX_doctrine_guerilla_warfare_medium
-    
-    xp_cost = 0
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
-
-    ai_will_do = { 
-        base = 1
-        modifier = {
-            factor = 0
-            is_major = yes
-        }
-        modifier = {
-            factor = 2
-            is_major = no
-        }
-        modifier = {
-            factor = 0
-            NOT = {
-                OR = {
-                has_template_containing_unit = irregular_infantry
-                has_template_containing_unit = militia
-                }
+            category_vehicle_infantry = {
+                defense = 0.10
+                breakthrough = 0.05
             }
         }
-    
-    }
-
-    # EFFECTS
-    enable_tactic = tactic_guerrilla_tactics
-    irregular_infantry = {
-        soft_attack = 0.1
-        defense = 0.2
-    }
-    militia = {
-        soft_attack = 0.1
-        defense = 0.2
-    }
-
-    rewards = {
-        catch_and_seize = {
-        #1
-            category_cavalry = {
-                equipment_capture_factor = 0.01
-                plains = {
-                    movement = 0.1
-                }   
-            }
-            category_light_infantry = { 
-                equipment_capture_factor = 0.01
-                plains = {
-                    movement = 0.1
-                } 
-            }
-            pocket_penalty = -0.1
-
-
-        }
-        galvanize_support = {
-        #2
-            army_intel_to_others = -10.0
-            army_intel_factor = 0.05
-            war_support_factor = 0.1
-            political_power_factor = 0.1
-            mobilization_speed = 0.15
-
-        }
-        scorched_earth = {
-        #3
-           resistance_damage_to_garrison_on_our_occupied_states = 0.1
-           resistance_target_on_our_occupied_states = 0.1
-           category_army = {
-                defense = 0.1
-            }
-        }
-
-        
-        urban_assaults = {
-        #4
-            militia = {
-                urban = {
-                    attack = 0.10
-                    defence = 0.10
-                }
-            }
-            infantry = {
-                urban = {
-                    attack = 0.10
-                    defence = 0.10
-                }
-            }
-
-  
-        }
-        defense_of_gained_power = {
-        #5
-            stability_factor = 0.1
-            party_popularity_stability_factor = 0.05
-            category_army = {
-                defense = 0.1
-            }
-
-            
+        grand_theater_planning = {
+            max_planning = 0.10
         }
     }
 }
-
-#shock & awe or airland battle

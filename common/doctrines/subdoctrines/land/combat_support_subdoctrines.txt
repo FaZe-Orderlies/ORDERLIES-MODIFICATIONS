@@ -1,81 +1,259 @@
-fire_concentration = {
+self_propelled_support = {
     track = combat_support
-    name = SUBDOCTRINE_FIRE_CONCENTRATION
-    description = SUBDOCTRINE_FIRE_CONCENTRATION_DESC
-    icon = GFX_doctrine_fire_concentration_medium
+    name = SUBDOCTRINE_SELF_PROPELLED_SUPPORT
+    description = SUBDOCTRINE_SELF_PROPELLED_SUPPORT_DESC
+    icon = GFX_doctrine_self_propelled_support_medium
 
     xp_cost = 0
     xp_type = army
 
     available = {
-        always = yes
+        OR = {
+            original_tag = GER
+            original_tag = HUN
+            original_tag = BUL
+            original_tag = FIN
+        }
     }
 
-    ai_will_do = {
+    ai_will_do = { base = 1 }
 
-        base = 1
-        modifier = {
-            factor = 75
+    rewards = {
+        mobile_battery_management_platoons = {
+            category_tank_destroyers = {
+                max_organisation = 2
+                soft_attack = 0.05
+            }
+        }
+        screening_attacks = {
+            category_tank_destroyers = {
+                max_organisation = 2
+                hard_attack = 0.05
+            }
+        }
+        all_terrain_mobility = {
+            category_tank_destroyers = {
+                max_organisation = 2
+                soft_attack = 0.05
+                hard_attack = 0.05
+            }
+        }
+        multirole_support_vehicles = {
+            category_tank_destroyers = {
+                maximum_speed = 0.10
+                hard_attack = 0.02
+            }
+        }
+        shoot_and_scoot = {
+            category_self_propelled_anti_air = {
+                max_organisation = 2
+            }
+            medium_armor = {
+                soft_attack = 0.05
+                breakthrough = 0.05
+            }
+            category_tank_destroyers = {
+                hard_attack = 0.02
+                max_organisation = 2
+                default_morale = 0.30
+            }
+        }
+    }
+}
+
+mobile_recon_assault_units = {
+    track = combat_support
+    name = SUBDOCTRINE_MOBILE_RECON_ASSAULT_UNITS
+    description = SUBDOCTRINE_MOBILE_RECON_ASSAULT_UNITS_DESC
+    icon = GFX_doctrine_armored_cavalry_medium
+
+    xp_cost = 0
+    xp_type = army
+
+    available = {
+        OR = {
             original_tag = SOV
-        }
-        modifier = {
-            factor = 75
+            original_tag = USA
             original_tag = ENG
-        }
-        modifier = {
-            factor = 75
             original_tag = FRA
-        }   
+            original_tag = CAN
+            original_tag = AST
+        }
     }
 
-     # EFFECTS
-     enable_tactic = tactic_overwhelming_fire
+    ai_will_do = { base = 1 }
 
-     artillery_brigade = {
-        combat_width = -0.8
-     }
-     rocket_artillery_brigade = {
-        combat_width = -0.8
-     }
-     category_line_artillery = {
-        max_organisation = 5
-     }
-
-     rewards = {
-        standing_barrage = {
-        #1
-            category_line_artillery = {
-                defense = 0.1
+    rewards = {
+        recon_spearhead = {
+            medium_armor = {
+                max_organisation = 2
+                hard_attack = 0.05
             }
         }
-        predicted_fire = {
-        #2
-            category_line_artillery = {
-                soft_attack = 0.1
+        mobile_vanguard = {
+            medium_armor = {
+                maximum_speed = 0.10
+                hard_attack = 0.02
             }
         }
-        artillery_groups = {
-        #3
-            category_line_artillery = {
-                breakthrough = 0.1
+        breakthrough_recon = {
+            medium_armor = {
+                hard_attack = 0.05
+                breakthrough = 0.05
+                default_morale = 0.30
+            }
+        }
+        hunter_killer_groups = {
+            category_tank_destroyers = {
+                hard_attack = 0.10
+                max_organisation = 2
+            }
+        }
+        heavy_assault_coordination = {
+            heavy_armor = {
+                hard_attack = 0.05
+                max_organisation = 7
+            }
+            category_self_propelled_anti_air = {
+                air_attack = 0.05
+            }
+        }
+    }
+}
+
+siege_artillery = {
+    track = combat_support
+    name = SUBDOCTRINE_SIEGE_ARTILLERY
+    description = SUBDOCTRINE_SIEGE_ARTILLERY_DESC
+    icon = GFX_doctrine_siege_artillery_medium
+
+    xp_cost = 0
+    xp_type = army
+
+    available = {
+        original_tag = ITA
+    }
+
+    ai_will_do = { base = 1 }
+
+    rewards = {
+        fortress_busters = {
+            medium_armor = {
+                max_organisation = 5
+            }
+            category_tank_destroyers = {
+                max_organisation = 5
+            }
+        }
+        urban_strongpoint_sieges = {
+            medium_armor = {
+                breakthrough = 0.10
+                soft_attack = 0.10
+            }
+        }
+        terrain_adaptation = {
+            medium_armor = {
+                desert = {
+                    attack = 0.05
+                    defense = 0.15
+                }
+                hills = {
+                    attack = 0.05
+                    defense = 0.15
+                }
+            }
+            category_tank_destroyers = {
+                hard_attack = 0.05
+                desert = {
+                    attack = 0.05
+                    defense = 0.15
+                }
+                hills = {
+                    attack = 0.05
+                    defense = 0.15
+                }
+            }
+        }
+        siege_specialization = {
+            category_army = {
+                fort = {
+                    attack = 0.25
+                }
+                urban = {
+                    attack = 0.20
+                }
+            }
+            category_self_propelled_anti_air = {
+                air_attack = 0.10
+            }
+        }
+        endurance_bombardment = {
+            category_tank_destroyers = {
+                default_morale = 0.30
+                hard_attack = 0.05
+            }
+        }
+    }
+}
+
+field_engineering_works = {
+    track = combat_support
+    name = SUBDOCTRINE_FIELD_ENGINEERING_WORKS
+    description = SUBDOCTRINE_FIELD_ENGINEERING_WORKS_DESC
+    icon = GFX_doctrine_field_engineering_medium
+
+    xp_cost = 0
+    xp_type = army
+
+    available = {
+        OR = {
+            original_tag = SAF
+            original_tag = RAJ
+        }
+    }
+
+    ai_will_do = { base = 1 }
+
+    rewards = {
+        field_fortifications = {
+            category_army = {
+                defense = 0.05
+            }
+            engineer = {
                 defense = 0.05
             }
         }
-        dedicated_air_support = {
-        #4
-            category_anti_air = {
-                air_attack = 0.1
+        machine_gun_emplacements = {
+            fire_support = {
+                defense = 0.05
+            }
+            category_all_infantry = {
+                max_organisation = 5
             }
         }
-        weakpoint_studies = {
-        #5
-            rocket_artillery_brigade = {
-                soft_attack = 0.2
-                breakthrough = 0.1
-                defense = 0.10
+        infantry_fire_coordination = {
+            fire_support = {
+                soft_attack = 0.05
             }
-            artillery_brigade = {
-                hard_attack = 0.1
+            category_all_infantry = {
+                defense = 0.05
+            }
+        }
+        defense_consolidation = {
+            fire_support = {
+                defense = 0.05
+            }
+            category_all_infantry = {
+                max_organisation = 2
+            }
+        }
+        sapper_river_crossings = {
+            engineer = {
+                defense = 0.05
+                maximum_speed = 0.10
+                river = {
+                    movement = 0.20
+                }
             }
         }
     }
@@ -91,302 +269,50 @@ anti_tank_frontline = {
     xp_type = army
 
     available = {
-        always = yes
+        original_tag = ROM
     }
 
-    ai_will_do = { base = 0 }
-
-     # EFFECTS
-     
-
-    engineer = {
-        battalion_mult = {
-            category = category_line_artillery
-            entrenchment = 0.2
-            add = yes
-        }
-    }
+    ai_will_do = { base = 1 }
 
     rewards = {
         pakfront = {
-        #1
-            anti_tank_brigade = {
-                defense = 0.2
-                ap_attack = 0.1
-                soft_attack = 0.2
+            engineer = {
+                entrenchment = 1
             }
         }
-        emplacement_rotation = {
-        #2
-            anti_tank_brigade = {
-                max_organisation = 10
-            }
-        }
-        weakpoint_studies = {
-        #3
-            anti_tank_brigade = {
-                ap_attack = 0.1
-                hard_attack = 0.2
-            }
-        }
-        offensive_deployments = {
-        #4
-            mot_anti_tank_brigade = {
-                breakthrough = 0.2
-                ap_attack = 0.2
-            }
-        }
-        assault_anti_tank = {
-        #5
-            mot_anti_tank_brigade = {
-                soft_attack = 0.2
-                hard_attack = 0.2
-            }
-        }
-    }
-}
-
-self_propelled_support = {
-
-    track = combat_support
-    name = SUBDOCTRINE_SELF_PROPELLED_SUPPORT
-    description = SUBDOCTRINE_SELF_PROPELLED_SUPPORT_DESC
-    icon = GFX_doctrine_self_propelled_support_medium
-
-    xp_cost = 0
-    xp_type = army
-
-    available = {
-       
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
-
-
-    ai_will_do = { base = 0 }
-
-
-    category_self_propelled_artillery = {
-        soft_attack = 0.1
-    }
-    category_self_propelled_anti_air= {
-        air_attack = 0.1
-    }
-    category_tank_destroyers = {
-        hard_attack = 0.05
-    }
-
-
-    rewards = {
-
-        mobile_battery_management_platoons = {
-            category_self_propelled_artillery = {
-                max_organisation = 10
-            }
-            category_self_propelled_anti_air= {
-                max_organisation = 10
-            }
-            category_tank_destroyers = {
-                max_organisation = 10
-            }
-        }
-        screening_attacks = {
-            
-            recon = {
-                battalion_mult = {
-                    category = category_self_propelled_artillery
-                    soft_attack = 0.1
-                    default_morale = 0.2
+        coastal_and_infantry_defense = {
+            engineer = {
+                amphibious = {
+                    defense = 0.15
                 }
             }
-            mot_recon = {
-                battalion_mult = {
-                    category = category_self_propelled_artillery
-                    soft_attack = 0.1
-                    default_morale = 0.2
-                }
-            }
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_self_propelled_artillery
-                    soft_attack = 0.1
-                    default_morale = 0.2
-                }
-            }
-        }
-        all_terrain_mobility = {
-            category_self_propelled_artillery = {
-                maximum_speed = 0.3
-            }
-            category_self_propelled_anti_air = {
-                maximum_speed = 0.3
-            }
-            category_tank_destroyers = {
-                maximum_speed = 0.3
-            }
-        }
-        multirole_support_vehicles = {
-            category_self_propelled_artillery = {
-                hard_attack = 0.05
-            }
-            category_self_propelled_anti_air = {
-                soft_attack = 0.1
-                hard_attack = 0.05
-            }
-            category_tank_destroyers = {
-                soft_attack = 0.1
-            }
-        }
-        shoot_and_scoot = {
-            category_self_propelled_artillery = {
-                max_organisation = 10
-                default_morale = 0.4
-            }
-            category_self_propelled_anti_air = {
-                max_organisation = 10
-                default_morale = 0.4
-            }
-            category_tank_destroyers = {
-                max_organisation = 5
-                hard_attack = 0.15
-                default_morale = 0.4
-            }
-            medium_armor = {
-                max_organisation = 5
-                soft_attack = 0.15
-                default_morale = 0.4
-                breakthrough = 0.15
-            }
-        }
-
-    }
-
-    
-}
-
-siege_artillery = {
-    track = combat_support
-    name = SUBDOCTRINE_SIEGE_ARTILLERY
-    description = SUBDOCTRINE_SIEGE_ARTILLERY_DESC
-    icon = GFX_doctrine_siege_artillery_medium
-
-    xp_cost = 0
-    xp_type = army
-
-    
-    visible = {
-        has_dlc = "Gotterdammerung"
-    }
-
-    ai_will_do = { base = 0 }
-
-    super_heavy_artillery = {
-        battalion_mult = {
-            category = category_army
-            soft_attack = 0.1
-            defense = 0.1
-        }
-    }
-
-    equipment_bonus = {
-        railway_gun_equipment = {
-            railway_gun_attack = 0.25
-            instant = yes
-        }
-        super_heavy_railway_gun_equipment = {
-            railway_gun_attack = 0.25
-            instant = yes
-        }
-    }
-
-    rewards = {
-
-        fortress_busters = {
-            super_heavy_artillery = {
-                fort = {
-                    attack = 0.25
-                }
-            }
-            self_propelled_super_heavy_artillery = {
-                fort = {
-                    attack = 0.25
-                }
-            }
-        }
-        improved_transport_preparation = {
-            category_line_artillery = {
-                default_morale = 0.2
-            }
-            super_heavy_artillery = {
-                plains = {
-                    movement = 0.1
-                }
-            }
-            self_propelled_super_heavy_artillery = {
-                plains = {
-                    movement = 0.1
-                }
-            }
-
-            equipment_bonus = {
-                railway_gun_equipment = {
-                    railway_gun_hours_between_redistribution = -0.5
-                    instant = yes
-                }
-                super_heavy_railway_gun_equipment = {
-                    railway_gun_hours_between_redistribution = -0.5
-                    instant = yes
-                }
-                
-            }
-        }
-        precomputed_firing_data = {
-            super_heavy_artillery = {
-                max_organisation = 10
-                defense = 0.2
-            }
-            self_propelled_super_heavy_artillery = {
-                max_organisation = 10
-                defense = 0.2
-            }
-
-        }
-        urban_strongpoint_sieges = {
-
-            category_artillery = {
+            category_all_infantry = {
                 soft_attack = 0.05
             }
-            super_heavy_artillery = {
-                urban = {
-                    attack = 0.2
-                }
+        }
+        mg_defensive_networks = {
+            category_all_infantry = {
+                max_organisation = 5
             }
-            self_propelled_super_heavy_artillery = {
-                urban = {
-                    attack = 0.2
-                }
+            fire_support = {
+                defense = 0.10
             }
         }
-        mobile_artillery_command = {
-            category_support_artillery = {
-                max_organisation = 10
+        heavy_fire_coverage = {
+            fire_support = {
+                soft_attack = 0.10
             }
-            self_propelled_super_heavy_artillery = {
-                max_organisation = 10
-                maximum_speed = 0.5
+            category_all_infantry = {
+                soft_attack = 0.05
             }
-
-            equipment_bonus = {
-                railway_gun_equipment = {
-                    maximum_speed = 1
-                    instant = yes
+        }
+        advanced_river_defense = {
+            engineer = {
+                defense = 0.05
+                maximum_speed = 0.15
+                river = {
+                    movement = 0.20
                 }
-                super_heavy_railway_gun_equipment = {
-                    maximum_speed = 1
-                    instant = yes
-                }
-
             }
         }
     }
