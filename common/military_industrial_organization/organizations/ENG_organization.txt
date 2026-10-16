@@ -20,10 +20,6 @@ ENG_vickers_armstrong_eng_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
@@ -48,27 +44,13 @@ ENG_vickers_armstrong_eng_organization = {
 
 		IF = {
 			limit = { 
-				OR = { 
-					FROM = { original_tag = BUL }
-					FROM = { original_tag = ETH }
-				}  
+				FROM = { original_tag = ETH }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_vickers_mio_flag 
 				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -89,36 +71,8 @@ ENG_vauxhall_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_vauxhall
 
-	allowed = {	
-		OR = {
-			tag = ENG
-			tag = SAF
-			tag = CAN
-			tag = AST
-			AND = {
-				tag = POL # If Poland sets up a local one
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = BRA 
-				has_dlc = "Trial of Allegiance"
-			}
-			AND = {
-				tag = IRQ 
-				has_dlc = "Graveyard of Empires"
-			}
-		}
+	allowed = {
+		always = no
 	}
 
 	visible = {
@@ -148,27 +102,13 @@ ENG_vauxhall_organization = {
 
 		IF = {
 			limit = { 
-				OR = { 
-					FROM = { original_tag = BUL }
-					FROM = { original_tag = ETH }
-				}  
-			}
+				FROM = { original_tag = ETH }
+			}  
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_vauxhall_mio_flag 
 				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 		IF = {
@@ -443,7 +383,7 @@ ENG_john_brown_organization = {
 
 
 ENG_supermarine_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_supermarine
 	
 	allowed = {	
@@ -503,10 +443,6 @@ ENG_fairey_aviation_organization = {
 		OR = {
 			tag = ENG 
 			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
@@ -530,23 +466,6 @@ ENG_fairey_aviation_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_fairey_aviation_mio_flag 
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-		ELSE_IF = {
 			limit = {
 				FROM = { original_tag = ETH }
 			}

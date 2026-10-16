@@ -38,8 +38,7 @@ RAJ_supermarine_organization = {
 	icon = GFX_idea_supermarine
 	
 	allowed = {	
-		tag = RAJ
-		has_dlc = "Arms Against Tyranny"
+		always = no
 	}
 
 	equipment_type = {
@@ -343,15 +342,10 @@ RAJ_ordnance_factory_medak_organization = {
 
 RAJ_vickers_armstrong_organization = {
 	name = CAN_vickers_armstrong_can_organization
-	include = generic_medium_tank_organization
+	include = orderlies_allies_tank_organization
 	icon = GFX_idea_vickers_armstrong_can
 	allowed = {
-		OR = {
-			ROOT = { original_tag = BAN }
-			ROOT = { original_tag = PAK }
-			ROOT = { original_tag = RAJ }
-		}
-		#has_dlc = "Together for Victory"
+		always = no
 	}
 }
 
@@ -372,8 +366,7 @@ RAJ_vauxhall_organization = {
 	icon = GFX_idea_vauxhall
 
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		original_tag = RAJ
+		always = no
 	}
 
 
@@ -431,8 +424,7 @@ RAJ_hawker_organization = {
 	icon = GFX_idea_hawker
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		original_tag = RAJ
+		always = no
 	}
 
 }
@@ -442,8 +434,7 @@ RAJ_de_havilland_organization = {
 	icon = GFX_idea_de_havilland
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		original_tag = RAJ
+		always = no
 	}
 
 
@@ -454,8 +445,7 @@ RAJ_fairey_aviation_organization = {
 	icon = GFX_idea_fairey_aviation
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		original_tag = RAJ
+		always = no
 	}
 
 }
@@ -465,8 +455,7 @@ RAJ_avro_organization = {
 	icon = GFX_idea_avro
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		original_tag = RAJ
+		always = no
 	}
 }
 

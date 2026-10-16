@@ -212,37 +212,13 @@ HUN_mw_aircraft_organization = {
 		original_tag = HUN
 		has_dlc = "Arms Against Tyranny"
 	}
-
-	available = {
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			FROM = {
-				has_completed_focus = wuw_HUN_the_matyasfold_fighter_factory
-			}
-		}
-		ELSE = {
-			FROM = {
-				has_completed_focus = HUN_establish_the_air_force
-			}
-		}
-	}
 }
 
 HUN_mavag_aircraft_organization = {
 	include = generic_range_focused_aircraft_organization
 	icon = GFX_idea_HUN_mavag_aircraft
 	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-		has_dlc = "Gotterdammerung"
-	}
-
-	available = {
-		FROM = {
-			has_completed_focus = wuw_HUN_establish_the_mavag_aircraft_factory
-		}
+		always = no
 	}
 }
 
@@ -250,28 +226,7 @@ HUN_mrt_aircraft_organization = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_HUN_mrt_aircraft
 	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-	}
-
-	initial_trait = {
-		name = HUN_mio_trait_aircraft_production_plant
-		
-		limit_to_equipment_type = { 
-			mio_cat_eq_all_small_plane
-			mio_cat_eq_all_medium_plane
-			mio_cat_eq_all_large_plane
-		}
-		
-		equipment_bonus = {
-			
-		}
-
-		production_bonus = {
-			production_cost_factor = -0.05
-			production_resource_need_factor = -0.1
-			production_capacity_factor = 0.05
-		}
+		always = no
 	}
 }
 

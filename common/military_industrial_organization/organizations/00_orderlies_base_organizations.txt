@@ -805,6 +805,257 @@ orderlies_soviet_tank_organization = {
 }
 
 #######################################################
+### USA TANKS (Medium & Light + Heavy branch) ###
+#######################################################
+
+orderlies_usa_tank_organization = {
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {
+		always = no
+	}
+	equipment_type = {
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+	}
+	research_categories = {
+		mio_cat_tech_light_armor_and_modules
+		mio_cat_tech_medium_armor_and_modules
+		mio_cat_tech_heavy_armor_and_modules
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_stats
+		x = 1
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_production
+		x = 3
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_heavy
+		x = 5.5
+	}
+
+	initial_trait = {
+		name = orderlies_usa_tank_initial_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	# 1: Root (+10 reliability)
+	trait = {
+		token = orderlies_usa_tank_trait_1
+		name = orderlies_usa_tank_trait_1
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=3 y=0 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			reliability = 0.10
+		}
+	}
+
+	# 2: Row 2, Shield (+10 defense)
+	trait = {
+		token = orderlies_usa_tank_trait_2
+		name = orderlies_usa_tank_trait_2
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=1 y=1 }
+		any_parent = { orderlies_usa_tank_trait_1 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			defense = 0.10
+		}
+	}
+
+	# 3: Row 2, Graph (+5 eff gain, halved from +10)
+	trait = {
+		token = orderlies_usa_tank_trait_3
+		name = orderlies_usa_tank_trait_3
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		position = { x=3 y=1 }
+		any_parent = { orderlies_usa_tank_trait_1 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	# 4: Row 2, Wrench with plus (+5 reliability heavy)
+	trait = {
+		token = orderlies_usa_tank_trait_5
+		name = orderlies_usa_tank_trait_5
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=5 y=1 }
+		any_parent = { orderlies_usa_tank_trait_1 }
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# 5: Row 2, Red target (+5 soft attack heavy)
+	trait = {
+		token = orderlies_usa_tank_trait_6
+		name = orderlies_usa_tank_trait_6
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		position = { x=6 y=1 }
+		any_parent = { orderlies_usa_tank_trait_1 }
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+
+	# 6: Left branch, crossed (-5 resources, halved from -10)
+	trait = {
+		token = orderlies_usa_tank_trait_12
+		name = orderlies_usa_tank_trait_12
+		icon = GFX_generic_mio_trait_icon_resources
+		position = { x=0 y=3 }
+		any_parent = { orderlies_usa_tank_trait_11 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_resource_need_factor = -0.05
+		}
+	}
+
+	# 7: Left branch, armor plate (+5 armor)
+	trait = {
+		token = orderlies_usa_tank_trait_10
+		name = orderlies_usa_tank_trait_10
+		icon = GFX_generic_mio_trait_icon_armor_value
+		position = { x=1 y=2 }
+		any_parent = { orderlies_usa_tank_trait_2 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
+
+	# 8: Center, green graph top (+2.5 max cap, halved from +5)
+	trait = {
+		token = orderlies_usa_tank_trait_8
+		name = orderlies_usa_tank_trait_8
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		position = { x=2 y=2 }
+		any_parent = { orderlies_usa_tank_trait_3 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.025
+		}
+	}
+
+	# 9: Center, tank ring top (+5 hard attack)
+	trait = {
+		token = orderlies_usa_tank_trait_9
+		name = orderlies_usa_tank_trait_9
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		position = { x=3 y=2 }
+		any_parent = { orderlies_usa_tank_trait_3 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			hard_attack = 0.05
+		}
+	}
+
+	# 10: Center, red graph top (+2.5 gain, halved from +5)
+	trait = {
+		token = orderlies_usa_tank_trait_7
+		name = orderlies_usa_tank_trait_7
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		position = { x=4 y=2 }
+		any_parent = { orderlies_usa_tank_trait_3 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.025
+		}
+	}
+
+	# 11: Right armor plate, heavy (+5 defense)
+	trait = {
+		token = orderlies_usa_tank_trait_17
+		name = orderlies_usa_tank_trait_17
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=5 y=2 }
+		any_parent = { orderlies_usa_tank_trait_5 orderlies_usa_tank_trait_6 }
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+		equipment_bonus = {
+			defense = 0.05
+		}
+	}
+
+	# 12: Left branch, red tank (+5 breakthrough)
+	trait = {
+		token = orderlies_usa_tank_trait_11
+		name = orderlies_usa_tank_trait_11
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		position = { x=0 y=2 }
+		any_parent = { orderlies_usa_tank_trait_10 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+
+	# 13: Center, green graph bottom (+2.5 capacity, halved from +5)
+	trait = {
+		token = orderlies_usa_tank_trait_13
+		name = orderlies_usa_tank_trait_13
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = { x=2 y=3 }
+		any_parent = { orderlies_usa_tank_trait_8 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_capacity_factor = 0.025
+		}
+	}
+
+	# 14: Center, red target bottom (+5 hard attack)
+	trait = {
+		token = orderlies_usa_tank_trait_14
+		name = orderlies_usa_tank_trait_14
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		position = { x=3 y=3 }
+		any_parent = { orderlies_usa_tank_trait_9 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			hard_attack = 0.05
+		}
+	}
+
+	# 15: Center, red graph bottom (+2.5 max cap, halved from +5)
+	trait = {
+		token = orderlies_usa_tank_trait_15
+		name = orderlies_usa_tank_trait_15
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		position = { x=4 y=3 }
+		any_parent = { orderlies_usa_tank_trait_7 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.025
+		}
+	}
+
+	# 16: Capstone crossed (-2.5 resources, +2.5 capacity, halved from -5 and +5)
+	trait = {
+		token = orderlies_usa_tank_trait_16
+		name = orderlies_usa_tank_trait_16
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = { x=3 y=4 }
+		all_parents = { orderlies_usa_tank_trait_13 orderlies_usa_tank_trait_14 orderlies_usa_tank_trait_15 }
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
+		production_bonus = {
+			production_resource_need_factor = -0.025
+			production_capacity_factor = 0.025
+		}
+	}
+}
+
+#######################################################
 ### ALLIED AIRCRAFT ###
 #######################################################
 
@@ -815,11 +1066,9 @@ orderlies_allies_aircraft_organization = {
 	}
 	equipment_type = {
 		mio_cat_eq_all_small_plane
-		mio_cat_eq_all_medium_plane
 	}
 	research_categories = {
 		mio_cat_all_light_aircraft_and_modules
-		mio_cat_all_medium_aircraft_and_modules
 	}
 
 	tree_header_text = {
@@ -839,7 +1088,7 @@ orderlies_allies_aircraft_organization = {
 
 	tree_header_text = {
 		text = orderlies_mio_header_weapons
-		x = 7
+		x = 7.5
 	}
 
 	initial_trait = {
@@ -849,8 +1098,8 @@ orderlies_allies_aircraft_organization = {
 		}
 	}
 
-	### Branch A: Production (x=0, 1) ###
-	# A1: Root (+5 gain)
+	### Row 0: Roots ###
+	# Production Root (+5% gain)
 	trait = {
 		token = orderlies_allies_air_trait_10
 		name = orderlies_allies_air_trait_10
@@ -861,11 +1110,34 @@ orderlies_allies_aircraft_organization = {
 		}
 	}
 
-	# A3: Icon left (-5 resources)
+	# Engines Root (+5% speed)
+	trait = {
+		token = orderlies_allies_air_trait_3
+		name = orderlies_allies_air_trait_3
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=3 y=0 }
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	# Wings Root (+10% defense)
+	trait = {
+		token = orderlies_allies_air_trait_2
+		name = orderlies_allies_air_trait_2
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=5 y=0 }
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+	}
+
+	### Row 1 ###
+	# Production Left: -5% resources
 	trait = {
 		token = orderlies_allies_air_trait_11
 		name = orderlies_allies_air_trait_11
-		icon = GFX_generic_mio_trait_icon_resources
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
 		position = { x=0 y=1 }
 		any_parent = { orderlies_allies_air_trait_10 }
 		production_bonus = {
@@ -873,11 +1145,11 @@ orderlies_allies_aircraft_organization = {
 		}
 	}
 
-	# A2: Graph (+5 max cap)
+	# Production Center: +5% eff cap
 	trait = {
 		token = orderlies_allies_air_trait_12
 		name = orderlies_allies_air_trait_12
-		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		icon = GFX_generic_mio_trait_icon_reliability
 		position = { x=1 y=1 }
 		any_parent = { orderlies_allies_air_trait_10 }
 		production_bonus = {
@@ -885,103 +1157,68 @@ orderlies_allies_aircraft_organization = {
 		}
 	}
 
-	# A4: Bottom (+5 capacity)
-	trait = {
-		token = orderlies_allies_air_trait_15
-		name = orderlies_allies_air_trait_15
-		icon = GFX_generic_mio_trait_icon_production_capacity
-		position = { x=1 y=2 }
-		any_parent = { orderlies_allies_air_trait_11 orderlies_allies_air_trait_12 }
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-	}
-
-	### Branch B: Speed (x=2, 3) ###
-	# B1: Root (+5 speed)
-	trait = {
-		token = orderlies_allies_air_trait_3
-		name = orderlies_allies_air_trait_3
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		position = { x=3 y=0 }
-		equipment_bonus = {
-			air_maximum_speed = 0.05
-		}
-	}
-
-	# B2: Green arrow (+5 agility)
+	# Engines Mid: +5% agility
 	trait = {
 		token = orderlies_allies_air_trait_6
 		name = orderlies_allies_air_trait_6
 		icon = GFX_generic_mio_trait_icon_air_agility
-		position = { x=2 y=1 }
+		position = { x=3 y=1 }
 		any_parent = { orderlies_allies_air_trait_3 }
 		equipment_bonus = {
 			air_agility = 0.05
 		}
 	}
 
-	# B3: Propeller (+5 reliability)
-	trait = {
-		token = orderlies_allies_air_trait_7
-		name = orderlies_allies_air_trait_7
-		icon = GFX_generic_mio_department_icon_plane_general_engine
-		position = { x=3 y=1 }
-		any_parent = { orderlies_allies_air_trait_3 }
-		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
-
-	# B4: Chevron (+5 speed)
-	trait = {
-		token = orderlies_allies_air_trait_19
-		name = orderlies_allies_air_trait_19
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		position = { x=3 y=2 }
-		any_parent = { orderlies_allies_air_trait_6 orderlies_allies_air_trait_7 }
-		equipment_bonus = {
-			air_maximum_speed = 0.05
-		}
-	}
-
-	### Branch C: Survivability (x=4, 5) ###
-	# C1: Root Shield (+10 defense)
-	trait = {
-		token = orderlies_allies_air_trait_2
-		name = orderlies_allies_air_trait_2
-		icon = GFX_generic_mio_trait_icon_air_defence
-		position = { x=5 y=0 }
-		equipment_bonus = {
-			air_defence = 0.10
-		}
-	}
-
-	# C2: Green arrow (+5 agility)
+	# Wings Shield: +5% agility
 	trait = {
 		token = orderlies_allies_air_trait_4
 		name = orderlies_allies_air_trait_4
-		icon = GFX_generic_mio_trait_icon_air_agility
-		position = { x=4 y=1 }
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=5 y=1 }
 		any_parent = { orderlies_allies_air_trait_2 }
 		equipment_bonus = {
 			air_agility = 0.05
 		}
 	}
 
-	# C3: Shield (+5 defense)
+	# Wings Factory: +5% defense
 	trait = {
 		token = orderlies_allies_air_trait_5
 		name = orderlies_allies_air_trait_5
-		icon = GFX_generic_mio_trait_icon_defense
-		position = { x=5 y=1 }
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = { x=6 y=1 }
 		any_parent = { orderlies_allies_air_trait_2 }
 		equipment_bonus = {
 			air_defence = 0.05
 		}
 	}
 
-	# C4: Green arrow bottom (+5 agility)
+	# Weapons Root/Air Attack: +5% attack
+	trait = {
+		token = orderlies_allies_air_trait_1
+		name = orderlies_allies_air_trait_1
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=8 y=1 }
+		any_parent = { orderlies_allies_air_trait_2 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	### Row 2 ###
+	# Engine Propeller: +5% reliability
+	trait = {
+		token = orderlies_allies_air_trait_7
+		name = orderlies_allies_air_trait_7
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+		position = { x=3 y=2 }
+		any_parent = { orderlies_allies_air_trait_6 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# Wings Turn: +5% agility
 	trait = {
 		token = orderlies_allies_air_trait_16
 		name = orderlies_allies_air_trait_16
@@ -993,63 +1230,76 @@ orderlies_allies_aircraft_organization = {
 		}
 	}
 
-	### Branch D: Attack (x=6, 7) ###
-	# D1: Root (+5 attack)
-	trait = {
-		token = orderlies_allies_air_trait_1
-		name = orderlies_allies_air_trait_1
-		icon = GFX_generic_mio_trait_icon_air_attack
-		position = { x=7 y=0 }
-		equipment_bonus = {
-			air_attack = 0.05
-		}
-	}
-
-	# D2: Red circle (+5 air defense)
+	# Weapons Target Left: +5% defense
 	trait = {
 		token = orderlies_allies_air_trait_13
 		name = orderlies_allies_air_trait_13
 		icon = GFX_generic_mio_trait_icon_air_defence
-		position = { x=6 y=1 }
-		any_parent = { orderlies_allies_air_trait_1 }
+		position = { x=7 y=2 }
+		any_parent = { orderlies_allies_air_trait_5 orderlies_allies_air_trait_1 }
 		equipment_bonus = {
 			air_defence = 0.05
 		}
 	}
 
-	# D3: Red circle (+5 attack)
+	# Weapons Target Right: +5% attack
 	trait = {
 		token = orderlies_allies_air_trait_8
 		name = orderlies_allies_air_trait_8
 		icon = GFX_generic_mio_trait_icon_air_attack
-		position = { x=7 y=1 }
+		position = { x=8 y=2 }
 		any_parent = { orderlies_allies_air_trait_1 }
 		equipment_bonus = {
 			air_attack = 0.05
 		}
 	}
 
-	# D4: Red circle bottom (+5 air defense)
+	### Row 3 ###
+	# Production Lower: +5% capacity
+	trait = {
+		token = orderlies_allies_air_trait_15
+		name = orderlies_allies_air_trait_15
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=3 }
+		any_parent = { orderlies_allies_air_trait_11 orderlies_allies_air_trait_12 }
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	# Engines Lower: +5% speed
+	trait = {
+		token = orderlies_allies_air_trait_19
+		name = orderlies_allies_air_trait_19
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		position = { x=3 y=3 }
+		any_parent = { orderlies_allies_air_trait_7 }
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	# Weapons Lower: +5% defense
 	trait = {
 		token = orderlies_allies_air_trait_14
 		name = orderlies_allies_air_trait_14
-		icon = GFX_generic_mio_trait_icon_air_defence
-		position = { x=7 y=2 }
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+		position = { x=8 y=3 }
 		any_parent = { orderlies_allies_air_trait_13 orderlies_allies_air_trait_8 }
 		equipment_bonus = {
 			air_defence = 0.05
 		}
 	}
 
-	### Capstone ###
-	# в… Capstone (-5 resources, +5 gain)
+	### Row 4: Capstone ###
+	# Specialization Capstone: -5% resources, +5% eff gain
 	trait = {
 		token = orderlies_allies_air_trait_9
 		name = orderlies_allies_air_trait_9
 		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		special_trait_background = yes
-		position = { x=6 y=3 }
-		all_parents = { orderlies_allies_air_trait_16 orderlies_allies_air_trait_14 }
+		position = { x=6 y=4 }
+		any_parent = { orderlies_allies_air_trait_16 orderlies_allies_air_trait_13 }
 		production_bonus = {
 			production_resource_need_factor = -0.05
 			production_efficiency_gain_factor = 0.05
@@ -1068,11 +1318,9 @@ orderlies_axis_aircraft_organization = {
 	}
 	equipment_type = {
 		mio_cat_eq_all_small_plane
-		mio_cat_eq_all_medium_plane
 	}
 	research_categories = {
 		mio_cat_all_light_aircraft_and_modules
-		mio_cat_all_medium_aircraft_and_modules
 	}
 
 	tree_header_text = {
@@ -1158,7 +1406,7 @@ orderlies_axis_aircraft_organization = {
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 		position = { x=3 y=0 }
 		equipment_bonus = {
-			air_maximum_speed = 0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -1182,7 +1430,7 @@ orderlies_axis_aircraft_organization = {
 		position = { x=3 y=1 }
 		any_parent = { orderlies_axis_air_trait_3 }
 		equipment_bonus = {
-			air_maximum_speed = 0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -1194,7 +1442,7 @@ orderlies_axis_aircraft_organization = {
 		position = { x=3 y=2 }
 		any_parent = { orderlies_axis_air_trait_6 orderlies_axis_air_trait_7 }
 		equipment_bonus = {
-			air_maximum_speed = 0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -1321,11 +1569,9 @@ orderlies_soviet_aircraft_organization = {
 	}
 	equipment_type = {
 		mio_cat_eq_all_small_plane
-		mio_cat_eq_all_medium_plane
 	}
 	research_categories = {
 		mio_cat_all_light_aircraft_and_modules
-		mio_cat_all_medium_aircraft_and_modules
 	}
 
 	tree_header_text = {
@@ -1345,7 +1591,7 @@ orderlies_soviet_aircraft_organization = {
 
 	tree_header_text = {
 		text = orderlies_mio_header_weapons
-		x = 7
+		x = 7.5
 	}
 
 	initial_trait = {
@@ -1355,8 +1601,8 @@ orderlies_soviet_aircraft_organization = {
 		}
 	}
 
-	### Branch A: Production (x=0, 1) ###
-	# A1: Root (+5 gain)
+	### Row 0: Roots ###
+	# Production Root (+5% gain)
 	trait = {
 		token = orderlies_soviet_air_trait_10
 		name = orderlies_soviet_air_trait_10
@@ -1367,7 +1613,30 @@ orderlies_soviet_aircraft_organization = {
 		}
 	}
 
-	# A3: Icon left (-5 resources)
+	# Engines Root (+5% speed)
+	trait = {
+		token = orderlies_soviet_air_trait_3
+		name = orderlies_soviet_air_trait_3
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=3 y=0 }
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	# Wings Root (+5% defense)
+	trait = {
+		token = orderlies_soviet_air_trait_2
+		name = orderlies_soviet_air_trait_2
+		icon = GFX_generic_mio_trait_icon_air_defence
+		position = { x=5 y=0 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	### Row 1 ###
+	# Production Left: -5% resources
 	trait = {
 		token = orderlies_soviet_air_trait_11
 		name = orderlies_soviet_air_trait_11
@@ -1379,7 +1648,7 @@ orderlies_soviet_aircraft_organization = {
 		}
 	}
 
-	# A2: Graph (+5 max cap)
+	# Production Center: +5% eff cap
 	trait = {
 		token = orderlies_soviet_air_trait_12
 		name = orderlies_soviet_air_trait_12
@@ -1391,103 +1660,68 @@ orderlies_soviet_aircraft_organization = {
 		}
 	}
 
-	# A4: Bottom (+5 gain)
-	trait = {
-		token = orderlies_soviet_air_trait_15
-		name = orderlies_soviet_air_trait_15
-		icon = GFX_generic_mio_trait_icon_efficiency_gain
-		position = { x=1 y=2 }
-		any_parent = { orderlies_soviet_air_trait_11 orderlies_soviet_air_trait_12 }
-		production_bonus = {
-			production_efficiency_gain_factor = 0.05
-		}
-	}
-
-	### Branch B: Speed (x=2, 3) ###
-	# B1: Root (+5 speed)
-	trait = {
-		token = orderlies_soviet_air_trait_3
-		name = orderlies_soviet_air_trait_3
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		position = { x=3 y=0 }
-		equipment_bonus = {
-			air_maximum_speed = 0.05
-		}
-	}
-
-	# B2: Green arrow (+5 agility)
+	# Engines Mid: +5% agility
 	trait = {
 		token = orderlies_soviet_air_trait_6
 		name = orderlies_soviet_air_trait_6
 		icon = GFX_generic_mio_trait_icon_air_agility
-		position = { x=2 y=1 }
-		any_parent = { orderlies_soviet_air_trait_3 }
-		equipment_bonus = {
-			air_agility = 0.05
-		}
-	}
-
-	# B3: Propeller (+5 speed)
-	trait = {
-		token = orderlies_soviet_air_trait_7
-		name = orderlies_soviet_air_trait_7
-		icon = GFX_generic_mio_department_icon_plane_general_engine
 		position = { x=3 y=1 }
 		any_parent = { orderlies_soviet_air_trait_3 }
 		equipment_bonus = {
-			air_maximum_speed = 0.05
-		}
-	}
-
-	# B4: Chevron (+5 speed)
-	trait = {
-		token = orderlies_soviet_air_trait_19
-		name = orderlies_soviet_air_trait_19
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		position = { x=3 y=2 }
-		any_parent = { orderlies_soviet_air_trait_6 orderlies_soviet_air_trait_7 }
-		equipment_bonus = {
-			air_maximum_speed = 0.05
-		}
-	}
-
-	### Branch C: Survivability (x=4, 5) ###
-	# C1: Root Shield (+5 defense)
-	trait = {
-		token = orderlies_soviet_air_trait_2
-		name = orderlies_soviet_air_trait_2
-		icon = GFX_generic_mio_trait_icon_air_defence
-		position = { x=5 y=0 }
-		equipment_bonus = {
-			air_defence = 0.05
-		}
-	}
-
-	# C2: Green arrow (+5 agility)
-	trait = {
-		token = orderlies_soviet_air_trait_4
-		name = orderlies_soviet_air_trait_4
-		icon = GFX_generic_mio_trait_icon_air_agility
-		position = { x=4 y=1 }
-		any_parent = { orderlies_soviet_air_trait_2 }
-		equipment_bonus = {
 			air_agility = 0.05
 		}
 	}
 
-	# C3: Shield (+5 defense)
+	# Wings Left: +5% reliability
+	trait = {
+		token = orderlies_soviet_air_trait_4
+		name = orderlies_soviet_air_trait_4
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=5 y=1 }
+		any_parent = { orderlies_soviet_air_trait_2 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# Wings Right: +5% defense
 	trait = {
 		token = orderlies_soviet_air_trait_5
 		name = orderlies_soviet_air_trait_5
 		icon = GFX_generic_mio_trait_icon_defense
-		position = { x=5 y=1 }
+		position = { x=6 y=1 }
 		any_parent = { orderlies_soviet_air_trait_2 }
 		equipment_bonus = {
 			air_defence = 0.05
 		}
 	}
 
-	# C4: Green arrow bottom (+5 agility)
+	# Weapons Root: +5% attack
+	trait = {
+		token = orderlies_soviet_air_trait_1
+		name = orderlies_soviet_air_trait_1
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=8 y=1 }
+		any_parent = { orderlies_soviet_air_trait_2 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	### Row 2 ###
+	# Engine Propeller: +5% reliability
+	trait = {
+		token = orderlies_soviet_air_trait_7
+		name = orderlies_soviet_air_trait_7
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+		position = { x=3 y=2 }
+		any_parent = { orderlies_soviet_air_trait_6 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# Wings Lower: +5% agility
 	trait = {
 		token = orderlies_soviet_air_trait_16
 		name = orderlies_soviet_air_trait_16
@@ -1499,66 +1733,584 @@ orderlies_soviet_aircraft_organization = {
 		}
 	}
 
-	### Branch D: Attack (x=6, 7) ###
-	# D1: Root (+5 attack)
-	trait = {
-		token = orderlies_soviet_air_trait_1
-		name = orderlies_soviet_air_trait_1
-		icon = GFX_generic_mio_trait_icon_air_attack
-		position = { x=7 y=0 }
-		equipment_bonus = {
-			air_attack = 0.05
-		}
-	}
-
-	# D2: Red circle (+5 attack)
+	# Weapons Cross: +5% air ground attack
 	trait = {
 		token = orderlies_soviet_air_trait_13
 		name = orderlies_soviet_air_trait_13
-		icon = GFX_generic_mio_trait_icon_air_attack
-		position = { x=6 y=1 }
-		any_parent = { orderlies_soviet_air_trait_1 }
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+		position = { x=7 y=2 }
+		any_parent = { orderlies_soviet_air_trait_5 orderlies_soviet_air_trait_1 }
 		equipment_bonus = {
-			air_attack = 0.05
+			air_ground_attack = 0.05
 		}
 	}
 
-	# D3: Red circle (+5 air defense)
+	# Weapons Mid: +5% air ground attack
 	trait = {
 		token = orderlies_soviet_air_trait_8
 		name = orderlies_soviet_air_trait_8
-		icon = GFX_generic_mio_trait_icon_air_defence
-		position = { x=7 y=1 }
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+		position = { x=8 y=2 }
 		any_parent = { orderlies_soviet_air_trait_1 }
 		equipment_bonus = {
-			air_defence = 0.05
+			air_ground_attack = 0.05
 		}
 	}
 
-	# D4: Red circle bottom (+5 attack)
+	### Row 3 ###
+	# Production Lower: +14% capacity
+	trait = {
+		token = orderlies_soviet_air_trait_15
+		name = orderlies_soviet_air_trait_15
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=3 }
+		any_parent = { orderlies_soviet_air_trait_11 orderlies_soviet_air_trait_12 }
+		production_bonus = {
+			production_capacity_factor = 0.14
+		}
+	}
+
+	# Engines Lower: +5% reliability
+	trait = {
+		token = orderlies_soviet_air_trait_19
+		name = orderlies_soviet_air_trait_19
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		position = { x=3 y=3 }
+		any_parent = { orderlies_soviet_air_trait_7 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# Weapons Lower: +5% air ground attack
 	trait = {
 		token = orderlies_soviet_air_trait_14
 		name = orderlies_soviet_air_trait_14
-		icon = GFX_generic_mio_trait_icon_air_attack
-		position = { x=7 y=2 }
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+		position = { x=8 y=3 }
 		any_parent = { orderlies_soviet_air_trait_13 orderlies_soviet_air_trait_8 }
 		equipment_bonus = {
-			air_attack = 0.05
+			air_ground_attack = 0.05
 		}
 	}
 
-	### Capstone ###
-	# в… Capstone (-5 resources, +5 gain)
+	### Row 4: Capstone ###
 	trait = {
 		token = orderlies_soviet_air_trait_9
 		name = orderlies_soviet_air_trait_9
 		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		special_trait_background = yes
-		position = { x=6 y=3 }
-		all_parents = { orderlies_soviet_air_trait_16 orderlies_soviet_air_trait_14 }
+		position = { x=6 y=4 }
+		any_parent = { orderlies_soviet_air_trait_16 orderlies_soviet_air_trait_13 }
 		production_bonus = {
 			production_resource_need_factor = -0.05
 			production_efficiency_gain_factor = 0.05
+		}
+	}
+}
+
+#######################################################
+### USA AIRCRAFT ###
+#######################################################
+
+orderlies_usa_aircraft_organization = {
+	icon = GFX_idea_generic_air_manufacturer_1
+	allowed = {
+		always = no
+	}
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+	}
+	research_categories = {
+		mio_cat_all_light_aircraft_and_modules
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_production
+		x = 1
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_engines
+		x = 3
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_wings
+		x = 5
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_weapons
+		x = 7.5
+	}
+
+	initial_trait = {
+		name = orderlies_usa_air_initial_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	### Branch A: Production (x=0, 1) ###
+	# A1: Root (+5% gain)
+	trait = {
+		token = orderlies_usa_air_trait_10
+		name = orderlies_usa_air_trait_10
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=0 }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	# A3: Icon left (-5% resources)
+	trait = {
+		token = orderlies_usa_air_trait_11
+		name = orderlies_usa_air_trait_11
+		icon = GFX_generic_mio_trait_icon_resources
+		position = { x=0 y=1 }
+		any_parent = { orderlies_usa_air_trait_10 }
+		production_bonus = {
+			production_resource_need_factor = -0.05
+		}
+	}
+
+	# A2: Graph (+5% eff cap)
+	trait = {
+		token = orderlies_usa_air_trait_12
+		name = orderlies_usa_air_trait_12
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		position = { x=1 y=1 }
+		any_parent = { orderlies_usa_air_trait_10 }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	# A4: Bottom (+5% capacity)
+	trait = {
+		token = orderlies_usa_air_trait_15
+		name = orderlies_usa_air_trait_15
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=2 }
+		any_parent = { orderlies_usa_air_trait_11 orderlies_usa_air_trait_12 }
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	### Branch B: Speed / Engines (x=2.5, 3.5) ###
+	# B1: Root (+5% speed)
+	trait = {
+		token = orderlies_usa_air_trait_3
+		name = orderlies_usa_air_trait_3
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=3 y=0 }
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	# B2: Green arrow (+5% agility)
+	trait = {
+		token = orderlies_usa_air_trait_6
+		name = orderlies_usa_air_trait_6
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=2.5 y=1 }
+		any_parent = { orderlies_usa_air_trait_3 }
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+	}
+
+	# B3: Propeller (+5% range)
+	trait = {
+		token = orderlies_usa_air_trait_7
+		name = orderlies_usa_air_trait_7
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+		position = { x=3.5 y=1 }
+		any_parent = { orderlies_usa_air_trait_3 }
+		equipment_bonus = {
+			air_range = 0.05
+		}
+	}
+
+	# B4: Chevron (+5% range)
+	trait = {
+		token = orderlies_usa_air_trait_19
+		name = orderlies_usa_air_trait_19
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		position = { x=3 y=2 }
+		any_parent = { orderlies_usa_air_trait_6 orderlies_usa_air_trait_7 }
+		equipment_bonus = {
+			air_range = 0.05
+		}
+	}
+
+	### Branch C: Survivability / Wings (x=4.5, 5.5) ###
+	# C1: Shield Root (+10% air defense)
+	trait = {
+		token = orderlies_usa_air_trait_2
+		name = orderlies_usa_air_trait_2
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=5 y=0 }
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+	}
+
+	# C2: Green arrow (+5% agility)
+	trait = {
+		token = orderlies_usa_air_trait_4
+		name = orderlies_usa_air_trait_4
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=4.5 y=1 }
+		any_parent = { orderlies_usa_air_trait_2 }
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+	}
+
+	# C3: Shield (+5% air defense)
+	trait = {
+		token = orderlies_usa_air_trait_5
+		name = orderlies_usa_air_trait_5
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=5.5 y=1 }
+		any_parent = { orderlies_usa_air_trait_2 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	# C4: Green arrow bottom (+5% reliability)
+	trait = {
+		token = orderlies_usa_air_trait_16
+		name = orderlies_usa_air_trait_16
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=5 y=2 }
+		any_parent = { orderlies_usa_air_trait_4 orderlies_usa_air_trait_5 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	### Branch D: Attack / Weapons (x=7, 8) ###
+	# D1: Root (+5% attack)
+	trait = {
+		token = orderlies_usa_air_trait_1
+		name = orderlies_usa_air_trait_1
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=7.5 y=0 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	# D2: Red circle (+5% attack)
+	trait = {
+		token = orderlies_usa_air_trait_13
+		name = orderlies_usa_air_trait_13
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=7 y=1 }
+		any_parent = { orderlies_usa_air_trait_1 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	# D3: Red circle (+5% air defense)
+	trait = {
+		token = orderlies_usa_air_trait_8
+		name = orderlies_usa_air_trait_8
+		icon = GFX_generic_mio_trait_icon_air_defence
+		position = { x=8 y=1 }
+		any_parent = { orderlies_usa_air_trait_1 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	# D4: Red circle bottom (+5% air defense)
+	trait = {
+		token = orderlies_usa_air_trait_14
+		name = orderlies_usa_air_trait_14
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+		position = { x=7.5 y=2 }
+		any_parent = { orderlies_usa_air_trait_13 orderlies_usa_air_trait_8 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	### Capstone ###
+	# ★ Capstone (-10 resources, +5% gain, +5% capacity)
+	trait = {
+		token = orderlies_usa_air_trait_9
+		name = orderlies_usa_air_trait_9
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+		special_trait_background = yes
+		position = { x=6.25 y=3 }
+		all_parents = { orderlies_usa_air_trait_16 orderlies_usa_air_trait_14 }
+		production_bonus = {
+			production_resource_need_factor = -0.10
+			production_efficiency_gain_factor = 0.05
+			production_capacity_factor = 0.05
+		}
+	}
+}
+
+#######################################################
+### JAPAN AIRCRAFT ###
+#######################################################
+
+orderlies_japan_aircraft_organization = {
+	icon = GFX_idea_generic_air_manufacturer_2
+	allowed = {
+		always = no
+	}
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+	}
+	research_categories = {
+		mio_cat_all_light_aircraft_and_modules
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_production
+		x = 1
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_engines
+		x = 3
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_wings
+		x = 5.5
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_weapons
+		x = 8
+	}
+
+	initial_trait = {
+		name = orderlies_japan_air_initial_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	### Branch A: Production (x=0, 1) ###
+	# A1: Root (+5% gain)
+	trait = {
+		token = orderlies_japan_air_trait_10
+		name = orderlies_japan_air_trait_10
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=0 }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	# A2: Graph (+5% eff cap)
+	trait = {
+		token = orderlies_japan_air_trait_12
+		name = orderlies_japan_air_trait_12
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		position = { x=1 y=1 }
+		any_parent = { orderlies_japan_air_trait_10 }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	# A3: Icon left (-5% resources)
+	trait = {
+		token = orderlies_japan_air_trait_11
+		name = orderlies_japan_air_trait_11
+		icon = GFX_generic_mio_trait_icon_resources
+		position = { x=0 y=2 }
+		any_parent = { orderlies_japan_air_trait_12 }
+		production_bonus = {
+			production_resource_need_factor = -0.05
+		}
+	}
+
+	# A4: Bottom (+5% capacity)
+	trait = {
+		token = orderlies_japan_air_trait_15
+		name = orderlies_japan_air_trait_15
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		position = { x=1 y=2 }
+		any_parent = { orderlies_japan_air_trait_12 }
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	### Branch B: Engines / Range & Speed (x=2.5, 3.5) ###
+	# B1: Root (+5% range)
+	trait = {
+		token = orderlies_japan_air_trait_3
+		name = orderlies_japan_air_trait_3
+		icon = GFX_generic_mio_trait_icon_naval_range
+		position = { x=3 y=0 }
+		equipment_bonus = {
+			air_range = 0.05
+		}
+	}
+
+	# B2: Green arrow (+5% agility)
+	trait = {
+		token = orderlies_japan_air_trait_6
+		name = orderlies_japan_air_trait_6
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=3 y=1 }
+		any_parent = { orderlies_japan_air_trait_3 }
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+	}
+
+	# B3: Propeller (+5% range)
+	trait = {
+		token = orderlies_japan_air_trait_7
+		name = orderlies_japan_air_trait_7
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+		position = { x=2.5 y=2 }
+		any_parent = { orderlies_japan_air_trait_6 }
+		equipment_bonus = {
+			air_range = 0.05
+		}
+	}
+
+	# B4: Chevron (+5% speed)
+	trait = {
+		token = orderlies_japan_air_trait_19
+		name = orderlies_japan_air_trait_19
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		position = { x=3.5 y=2 }
+		any_parent = { orderlies_japan_air_trait_6 }
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	### Branch C: Wings / Survivability (x=5, 6) ###
+	# C1: Shield Root (+5% air defense)
+	trait = {
+		token = orderlies_japan_air_trait_2
+		name = orderlies_japan_air_trait_2
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=5.5 y=0 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	# C2: Green arrow (+5% agility)
+	trait = {
+		token = orderlies_japan_air_trait_4
+		name = orderlies_japan_air_trait_4
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=5 y=1 }
+		any_parent = { orderlies_japan_air_trait_2 }
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+	}
+
+	# C3: Shield / Wrench (+5% reliability)
+	trait = {
+		token = orderlies_japan_air_trait_5
+		name = orderlies_japan_air_trait_5
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=6 y=1 }
+		any_parent = { orderlies_japan_air_trait_2 }
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	# C4: Green arrow bottom (+5% agility)
+	trait = {
+		token = orderlies_japan_air_trait_16
+		name = orderlies_japan_air_trait_16
+		icon = GFX_generic_mio_trait_icon_air_agility
+		position = { x=5.5 y=2 }
+		any_parent = { orderlies_japan_air_trait_4 orderlies_japan_air_trait_5 }
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+	}
+
+	### Branch D: Attack / Weapons (x=7.5, 8.5) ###
+	# D1: Root (+5% attack)
+	trait = {
+		token = orderlies_japan_air_trait_1
+		name = orderlies_japan_air_trait_1
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=8 y=0 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	# D2: Red circle (+5% attack)
+	trait = {
+		token = orderlies_japan_air_trait_13
+		name = orderlies_japan_air_trait_13
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=7.5 y=1 }
+		any_parent = { orderlies_japan_air_trait_1 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	# D3: Red circle (+5% attack)
+	trait = {
+		token = orderlies_japan_air_trait_8
+		name = orderlies_japan_air_trait_8
+		icon = GFX_generic_mio_trait_icon_air_attack
+		position = { x=8.5 y=1 }
+		any_parent = { orderlies_japan_air_trait_1 }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+
+	# D4: Red circle bottom (+5% air defense)
+	trait = {
+		token = orderlies_japan_air_trait_14
+		name = orderlies_japan_air_trait_14
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+		position = { x=8 y=2 }
+		any_parent = { orderlies_japan_air_trait_13 orderlies_japan_air_trait_8 }
+		equipment_bonus = {
+			air_defence = 0.05
+		}
+	}
+
+	### Capstone ###
+	# ★ Capstone (+5% range, +5% gain, -5% resources)
+	trait = {
+		token = orderlies_japan_air_trait_9
+		name = orderlies_japan_air_trait_9
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+		special_trait_background = yes
+		position = { x=6.75 y=3 }
+		all_parents = { orderlies_japan_air_trait_16 orderlies_japan_air_trait_14 }
+		equipment_bonus = {
+			air_range = 0.05
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_resource_need_factor = -0.05
 		}
 	}
 }
@@ -1642,7 +2394,7 @@ orderlies_allies_motorized_organization = {
 		}
 	}
 
-	# 4: Row 2, Crossed Right (-5 resources)
+	# 4: Row 2, Crossed Right (-1.5% resources)
 	trait = {
 		token = orderlies_allies_mot_trait_4
 		name = orderlies_allies_mot_trait_4
@@ -1650,7 +2402,7 @@ orderlies_allies_motorized_organization = {
 		position = { x=6 y=1 }
 		any_parent = { orderlies_allies_mot_trait_1 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
@@ -1666,7 +2418,7 @@ orderlies_allies_motorized_organization = {
 		}
 	}
 
-	# 6: Row 3, Crossed (-5 resources)
+	# 6: Row 3, Crossed (-1.5% resources)
 	trait = {
 		token = orderlies_allies_mot_trait_6
 		name = orderlies_allies_mot_trait_6
@@ -1674,11 +2426,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=1 y=2 }
 		any_parent = { orderlies_allies_mot_trait_2 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
-	# 7: Row 3, Red Graph (+5 gain)
+	# 7: Row 3, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_allies_mot_trait_7
 		name = orderlies_allies_mot_trait_7
@@ -1686,11 +2438,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=4 y=2 }
 		any_parent = { orderlies_allies_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 8: Row 3, Green Graph (+5 max cap)
+	# 8: Row 3, Green Graph (+2.5% max cap)
 	trait = {
 		token = orderlies_allies_mot_trait_8
 		name = orderlies_allies_mot_trait_8
@@ -1698,11 +2450,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=5 y=2 }
 		any_parent = { orderlies_allies_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
+			production_efficiency_cap_factor = 0.025
 		}
 	}
 
-	# 9: Row 3, Green Graph Right (+5 capacity)
+	# 9: Row 3, Green Graph Right (+1.5% capacity)
 	trait = {
 		token = orderlies_allies_mot_trait_9
 		name = orderlies_allies_mot_trait_9
@@ -1710,11 +2462,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=7 y=2 }
 		any_parent = { orderlies_allies_mot_trait_4 }
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
 		}
 	}
 
-	# 10: Row 4, Crossed (-5 resources)
+	# 10: Row 4, Crossed (-1.5% resources)
 	trait = {
 		token = orderlies_allies_mot_trait_10
 		name = orderlies_allies_mot_trait_10
@@ -1722,11 +2474,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=2 y=3 }
 		any_parent = { orderlies_allies_mot_trait_6 orderlies_allies_mot_trait_5 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
-	# 11: Row 4, Red Graph (+5 gain)
+	# 11: Row 4, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_allies_mot_trait_11
 		name = orderlies_allies_mot_trait_11
@@ -1734,11 +2486,11 @@ orderlies_allies_motorized_organization = {
 		position = { x=4 y=3 }
 		any_parent = { orderlies_allies_mot_trait_7 orderlies_allies_mot_trait_8 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 12: Row 4, Green Graph (+5 capacity, +5 max cap)
+	# 12: Row 4, Green Graph (+1.5% capacity, +2.5% max cap)
 	trait = {
 		token = orderlies_allies_mot_trait_12
 		name = orderlies_allies_mot_trait_12
@@ -1746,8 +2498,8 @@ orderlies_allies_motorized_organization = {
 		position = { x=6 y=3 }
 		any_parent = { orderlies_allies_mot_trait_8 orderlies_allies_mot_trait_9 }
 		production_bonus = {
-			production_capacity_factor = 0.05
-			production_efficiency_cap_factor = 0.05
+			production_capacity_factor = 0.015
+			production_efficiency_cap_factor = 0.025
 		}
 	}
 }
@@ -1830,7 +2582,7 @@ orderlies_axis_motorized_organization = {
 		}
 	}
 
-	# 4: Row 2, Crossed Right (-5 resources)
+	# 4: Row 2, Crossed Right (-1.5% resources)
 	trait = {
 		token = orderlies_axis_mot_trait_4
 		name = orderlies_axis_mot_trait_4
@@ -1838,7 +2590,7 @@ orderlies_axis_motorized_organization = {
 		position = { x=6 y=1 }
 		any_parent = { orderlies_axis_mot_trait_1 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
@@ -1854,7 +2606,7 @@ orderlies_axis_motorized_organization = {
 		}
 	}
 
-	# 6: Row 3, Crossed (-5 resources)
+	# 6: Row 3, Crossed (-1.5% resources)
 	trait = {
 		token = orderlies_axis_mot_trait_6
 		name = orderlies_axis_mot_trait_6
@@ -1862,11 +2614,11 @@ orderlies_axis_motorized_organization = {
 		position = { x=1 y=2 }
 		any_parent = { orderlies_axis_mot_trait_2 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
-	# 7: Row 3, Red Graph (+5 gain)
+	# 7: Row 3, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_axis_mot_trait_7
 		name = orderlies_axis_mot_trait_7
@@ -1874,11 +2626,11 @@ orderlies_axis_motorized_organization = {
 		position = { x=4 y=2 }
 		any_parent = { orderlies_axis_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 8: Row 3, Green Graph (+5 max cap)
+	# 8: Row 3, Green Graph (+2.5% max cap)
 	trait = {
 		token = orderlies_axis_mot_trait_8
 		name = orderlies_axis_mot_trait_8
@@ -1886,11 +2638,11 @@ orderlies_axis_motorized_organization = {
 		position = { x=5 y=2 }
 		any_parent = { orderlies_axis_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
+			production_efficiency_cap_factor = 0.025
 		}
 	}
 
-	# 9: Row 3, Green Graph Right (+5 capacity)
+	# 9: Row 3, Green Graph Right (+1.5% capacity)
 	trait = {
 		token = orderlies_axis_mot_trait_9
 		name = orderlies_axis_mot_trait_9
@@ -1898,7 +2650,7 @@ orderlies_axis_motorized_organization = {
 		position = { x=7 y=2 }
 		any_parent = { orderlies_axis_mot_trait_4 }
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
 		}
 	}
 
@@ -1914,7 +2666,7 @@ orderlies_axis_motorized_organization = {
 		}
 	}
 
-	# 11: Row 4, Red Graph (+5 gain)
+	# 11: Row 4, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_axis_mot_trait_11
 		name = orderlies_axis_mot_trait_11
@@ -1922,11 +2674,11 @@ orderlies_axis_motorized_organization = {
 		position = { x=4 y=3 }
 		any_parent = { orderlies_axis_mot_trait_7 orderlies_axis_mot_trait_8 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 12: Row 4, Green Graph (+5 capacity, +5 breakthrough)
+	# 12: Row 4, Green Graph (+1.5% capacity, +5 breakthrough)
 	trait = {
 		token = orderlies_axis_mot_trait_12
 		name = orderlies_axis_mot_trait_12
@@ -1934,7 +2686,7 @@ orderlies_axis_motorized_organization = {
 		position = { x=6 y=3 }
 		any_parent = { orderlies_axis_mot_trait_8 orderlies_axis_mot_trait_9 }
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
 		}
 		equipment_bonus = {
 			breakthrough = 0.05
@@ -2020,7 +2772,7 @@ orderlies_soviet_motorized_organization = {
 		}
 	}
 
-	# 4: Row 2, Crossed Right (-5 resources)
+	# 4: Row 2, Crossed Right (-1.5% resources)
 	trait = {
 		token = orderlies_soviet_mot_trait_4
 		name = orderlies_soviet_mot_trait_4
@@ -2028,7 +2780,7 @@ orderlies_soviet_motorized_organization = {
 		position = { x=6 y=1 }
 		any_parent = { orderlies_soviet_mot_trait_1 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
@@ -2044,7 +2796,7 @@ orderlies_soviet_motorized_organization = {
 		}
 	}
 
-	# 6: Row 3, Crossed (-5 resources)
+	# 6: Row 3, Crossed (-1.5% resources)
 	trait = {
 		token = orderlies_soviet_mot_trait_6
 		name = orderlies_soviet_mot_trait_6
@@ -2052,11 +2804,11 @@ orderlies_soviet_motorized_organization = {
 		position = { x=1 y=2 }
 		any_parent = { orderlies_soviet_mot_trait_2 }
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.015
 		}
 	}
 
-	# 7: Row 3, Red Graph (+5 gain)
+	# 7: Row 3, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_soviet_mot_trait_7
 		name = orderlies_soviet_mot_trait_7
@@ -2064,11 +2816,11 @@ orderlies_soviet_motorized_organization = {
 		position = { x=4 y=2 }
 		any_parent = { orderlies_soviet_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 8: Row 3, Green Graph (+5 max cap)
+	# 8: Row 3, Green Graph (+2.5% max cap)
 	trait = {
 		token = orderlies_soviet_mot_trait_8
 		name = orderlies_soviet_mot_trait_8
@@ -2076,11 +2828,11 @@ orderlies_soviet_motorized_organization = {
 		position = { x=5 y=2 }
 		any_parent = { orderlies_soviet_mot_trait_3 }
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
+			production_efficiency_cap_factor = 0.025
 		}
 	}
 
-	# 9: Row 3, Green Graph Right (+5 capacity)
+	# 9: Row 3, Green Graph Right (+1.5% capacity)
 	trait = {
 		token = orderlies_soviet_mot_trait_9
 		name = orderlies_soviet_mot_trait_9
@@ -2088,7 +2840,7 @@ orderlies_soviet_motorized_organization = {
 		position = { x=7 y=2 }
 		any_parent = { orderlies_soviet_mot_trait_4 }
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
 		}
 	}
 
@@ -2104,7 +2856,7 @@ orderlies_soviet_motorized_organization = {
 		}
 	}
 
-	# 11: Row 4, Red Graph (+5 gain)
+	# 11: Row 4, Red Graph (+2.5% gain)
 	trait = {
 		token = orderlies_soviet_mot_trait_11
 		name = orderlies_soviet_mot_trait_11
@@ -2112,11 +2864,11 @@ orderlies_soviet_motorized_organization = {
 		position = { x=4 y=3 }
 		any_parent = { orderlies_soviet_mot_trait_7 orderlies_soviet_mot_trait_8 }
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
-	# 12: Row 4, Green Graph (+5 capacity, +5 breakthrough)
+	# 12: Row 4, Green Graph (+1.5% capacity, +5 breakthrough)
 	trait = {
 		token = orderlies_soviet_mot_trait_12
 		name = orderlies_soviet_mot_trait_12
@@ -2124,7 +2876,7 @@ orderlies_soviet_motorized_organization = {
 		position = { x=6 y=3 }
 		any_parent = { orderlies_soviet_mot_trait_8 orderlies_soviet_mot_trait_9 }
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
 		}
 		equipment_bonus = {
 			breakthrough = 0.05

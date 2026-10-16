@@ -10,7 +10,7 @@
  #################### 
 
 FIN_valtion_panssaritehdas_organization = {
-	include = generic_infantry_tank_organization
+	include = orderlies_axis_tank_organization
 	icon = GFX_idea_FIN_valtion_panssaritehdas
 	allowed = {	
 		original_tag = FIN
@@ -18,36 +18,8 @@ FIN_valtion_panssaritehdas_organization = {
 	}
 
 	tree_header_text = {
-		text = mio_header_light_tank_department
-		x = 0.1
-	}
-
-	tree_header_text = {
-		text = mio_header_medium_tank_department
-		x = 4
-	}
-
-	tree_header_text = {
-		text = mio_header_production_department
-		x = 8.5
-	}
-
-	remove_trait = { generic_mio_trait_heavy_tank_specialization }
-
-	override_trait = {
-		token = generic_mio_trait_light_tank_specialization
-
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_adaptable_chassis
-		mutually_exclusive= { generic_mio_trait_medium_tank_specialization }
-	}
-	
-	override_trait = {
-		token = generic_mio_trait_medium_tank_specialization
-
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_adaptable_chassis
-		mutually_exclusive= { generic_mio_trait_light_tank_specialization }
+		text = orderlies_mio_header_unique
+		x = 8
 	}
 
 	add_trait = { 
@@ -56,7 +28,7 @@ FIN_valtion_panssaritehdas_organization = {
 		icon = GFX_generic_mio_department_icon_tank_general_materials
 		special_trait_background = yes
 
-		position = { x=8 y=0 }
+		position = { x=8 y=1 }
 		
 		available = {
 			owner = {
@@ -71,15 +43,32 @@ FIN_valtion_panssaritehdas_organization = {
 	}
 
 	add_trait = { 
+		token = FIN_mio_trait_modernization_program
+		name = FIN_mio_trait_modernization_program
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		position = { x=8 y=2 }
+		
+		available = {
+			owner = {
+				has_completed_focus = FIN_modernize_the_industry
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	add_trait = { 
 		token = FIN_mio_trait_wartsila_engine_production
 		name = FIN_mio_trait_wartsila_engine_production
 		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_adaptable_chassis
-		
-		any_parent = { generic_mio_trait_adaptable_chassis }
+		position = { x=8 y=3 }
+		any_parent = { FIN_mio_trait_modernization_program }
 		
 		available = {
 			owner = {
@@ -90,25 +79,6 @@ FIN_valtion_panssaritehdas_organization = {
 		production_bonus = {
 			production_capacity_factor = 0.05
 			production_efficiency_gain_factor = 0.05
-		}
-	}
-
-	add_trait = { 
-		token = FIN_mio_trait_modernization_program
-		name = FIN_mio_trait_modernization_program
-		icon = GFX_generic_mio_department_icon_tank_general_production
-		special_trait_background = yes
-
-		position = { x=9 y=0 }
-		
-		available = {
-			owner = {
-				has_completed_focus = FIN_modernize_the_industry
-			}
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -284,71 +254,7 @@ FIN_valtion_lentokonetehdas_organization = { #Light Aircraft
 	include = generic_general_aircraft_organization
 	icon = GFX_idea_FIN_valtion_lentokonetehdas
 	allowed = {	
-		original_tag = FIN
-		has_dlc = "Arms Against Tyranny"
-	}
-
-	tree_header_text = {
-		text = mio_header_fighter_aircraft
-		x = 1
-	}
-
-	tree_header_text = {
-		text = mio_header_bomber_aircraft
-		x = 4
-	}
-
-	tree_header_text = {
-		text = mio_header_naval_aircraft
-		x = 7
-	}
-
-	tree_header_text = {
-		text = mio_header_production
-		x = 9
-	}
-
-	add_trait = { 
-		token = FIN_mio_trait_modernization_program
-		name = FIN_mio_trait_modernization_program
-		icon = GFX_generic_mio_department_icon_plane_general_production
-		special_trait_background = yes
-
-		position = { x=5 y=0 }
-		relative_position_id = generic_mio_trait_conservative_designs
-		
-		available = {
-			owner = {
-				has_completed_focus = FIN_modernize_the_industry
-			}
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-	}
-
-		add_trait = { 
-		token = FIN_mio_trait_wartsila_engine_production
-		name = FIN_mio_trait_wartsila_engine_production
-		icon = GFX_generic_mio_department_icon_plane_general_line_efficiency
-		special_trait_background = yes
-
-		position = { x=5 y=1 }
-		relative_position_id = generic_mio_trait_conservative_designs
-		
-		any_parent = { generic_mio_trait_conservative_designs }
-		
-		available = {
-			owner = {
-				has_completed_focus = FIN_wartsila_engine_production
-			}
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.05
-			production_efficiency_gain_factor = 0.05
-		}
+		always = no
 	}
 }
 

@@ -87,13 +87,7 @@ SOV_astrov_design_bureau_organization = {
 	icon = GFX_idea_astrov_design_bureau
 	
 	allowed = {
-		OR = {
-			original_tag = SOV
-			AND = {
-				original_tag = CHI
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}	
+		always = no
 	}
 	available = {
 		IF = {
@@ -138,10 +132,6 @@ SOV_okmo_organization = {
 		OR = {
 			tag = SOV 
 			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
 				FROM = { original_tag = CHI }
 				has_dlc = "No Compromise, No Surrender"
 			}
@@ -157,23 +147,6 @@ SOV_okmo_organization = {
 			FROM = { NOT = { has_war_with = SOV } }
 		}
 
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_okmo_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
 		IF = {
 			limit = {
 				FROM = { original_tag = CHI }
@@ -317,13 +290,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 	icon = GFX_idea_SOV_mytishchy_machine_building_plant
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-		}
+		always = no
 	}
 
 	visible = {
@@ -460,17 +427,7 @@ SOV_kirov_organization = {
 	icon = GFX_idea_SOV_kirov
 	
 	allowed = {	
-		OR = {
-			original_tag = SOV
-			AND = {
-				tag = BEL
-				has_dlc = "Gotterdammerung"
-			}
-			AND = {
-			    tag = AST
-			    has_dlc = "Thunder at Our Gates"
-			}
-		}
+		always = no
 	}
 
 	available = {
@@ -1435,13 +1392,7 @@ SOV_ilyushin_design_bureau_organization = {
 	icon = GFX_idea_ilyushin_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		tag = SOV 
 	}
 	
 	available = {
@@ -1457,24 +1408,6 @@ SOV_ilyushin_design_bureau_organization = {
 				FROM = { NOT = { original_tag = SOV } }
 			}
 			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_ilyushin_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
 		}
 	}
 

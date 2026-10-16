@@ -78,25 +78,7 @@ FRA_hotchkiss_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_generic_tank_manufacturer_3
 	allowed = {	
-		tag = FRA 
-		has_dlc = "Arms Against Tyranny"
-	}
-	add_trait = { 
-		token = FRA_mio_trait_l_35
-		name = FRA_mio_trait_l_35
-		icon = GFX_generic_mio_department_icon_tank_general_weapons
-		any_parent = { generic_mio_enlarged_breech }
-		relative_position_id = generic_mio_enlarged_breech
-		position = { x=1 y=2 }  
-		equipment_bonus = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}  
-	}
-
-	override_trait = {
-		token = generic_mio_gunner_sight_improvements
-		position = { x=-1 y=2}
+		always = no
 	}
 }
 
@@ -104,8 +86,7 @@ FRA_apx_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_FRA_atelier_puteaux
 	allowed = {	
-		tag = FRA 
-		has_dlc = "Arms Against Tyranny"
+		always = no
 	}
 }
 
@@ -113,15 +94,7 @@ FRA_amx_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_generic_tank_manufacturer_2
 	allowed = {	
-		tag = FRA 
-	}
-	available = {
-		IF = {
-			limit = {
-				FROM = { original_tag = FRA } 
-			}
-			FROM = { has_completed_focus = FRA_form_the_state_arsenals }
-		}
+		always = no
 	}
 }
 
@@ -218,17 +191,7 @@ FRA_bloch_organization = {
 	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_bloch
 	allowed = {	
-		OR = {
-			tag = FRA 
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		always = no
 	}
 
 	visible = {

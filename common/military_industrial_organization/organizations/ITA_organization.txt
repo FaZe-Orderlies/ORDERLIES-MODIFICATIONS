@@ -711,13 +711,7 @@ ITA_fiat_aviazione_organization = {
 	icon = GFX_idea_ITA_fiat_aviazione
 
 	allowed = {	 
-		OR = {
-			tag = ITA
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-		} 
+		always = no
 	}
 	
 	available = {
@@ -1002,8 +996,7 @@ ITA_officine_meccaniche_organization = {
 	icon = GFX_idea_ITA_officine_meccaniche
 	
 	allowed = {
-		original_tag = ITA
-		has_dlc = "By Blood Alone"
+		always = no
 	}
 	
 	available = {
