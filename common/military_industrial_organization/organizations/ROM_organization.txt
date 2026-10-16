@@ -11,7 +11,7 @@
 ### POL_pzinz_organization -> see POL_organizations.txt
 
 ROM_leonidas_works_organization = {
-	include = generic_infantry_tank_organization
+	include = orderlies_axis_tank_organization
 	icon = GFX_idea_ROM_leonidas_works
 	allowed = { 
 		tag = ROM
@@ -83,7 +83,7 @@ ROM_Braila_organization = {
 ###########################
 
 ROM_iar_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_axis_aircraft_organization
 	icon = GFX_idea_ROM_iar
 	allowed = { 
 		tag = ROM
@@ -94,28 +94,6 @@ ROM_iar_organization = {
 				has_dlc = "Death or Dishonor"
 			}
 			FROM = { has_completed_focus = ROM_invest_in_the_iar }
-		}
-	}
-
-	add_trait = {
-		token = generic_mio_trait_heavily_armed_aircraft
-		name = generic_mio_trait_heavily_armed_aircraft
-		icon = GFX_generic_mio_department_icon_plane_fighter_combat
-
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_advanced_aerodynamics
-
-		visible = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		available = {
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
-		}
-
-		equipment_bonus = {
-			air_attack = 0.05
-			air_ground_attack = 0.05
 		}
 	}
 }
@@ -167,7 +145,7 @@ ROM_resita_works_organization = {
 }
 
 ROM_malaxa_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_axis_motorized_organization
 	icon = GFX_idea_ROM_malaxa
 	allowed = { 
 		tag = ROM

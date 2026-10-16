@@ -4762,7 +4762,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_country_flag = AST_a_convenient_disaster_flag
 			has_government = fascism
 			NOT = {
 				has_war_with = ENG
@@ -5323,7 +5322,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_country_flag = AST_a_convenient_disaster_flag
 			custom_trigger_tooltip = {
 				tooltip = AST_naurus_return_to_german_hands_tt_2
 				GER = {
@@ -5379,7 +5377,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_country_flag = AST_a_convenient_disaster_flag
 			has_government = fascism
 			is_subject = no
 		}
@@ -5877,7 +5874,6 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 			unlock_decision_category_tooltip = AST_union_control_1_cat
-			set_country_flag = AST_com_late_canberra #Canberra Air disaster will not trigger before having turned communist
 			custom_effect_tooltip = AST_union_control_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6129,19 +6125,6 @@ focus_tree = {
 			}
 
 			hidden_effect = { 
-			#Canberra Air Disaster
-				IF = { #Canberra will trigger at historical date
-					limit = {
-						NOT = { 
-							date > 1940.02.12
-						}
-					}
-					clr_country_flag = AST_com_late_canberra 
-				}
-
-				ELSE = { #If becoming communist late, trigger Canberra Air Disaster later than historical
-					country_event = { id = AST_canberra_air_disaster_events.1 days = 540 random_days = 175 }
-				}	
 				remove_ideas = AST_strike_ongoing
 			}
 		}

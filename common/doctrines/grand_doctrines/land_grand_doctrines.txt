@@ -245,7 +245,7 @@ superior_firepower = {
             #Armor
             enable_tactic = tactic_delay
             category_army = {
-                default_morale = 0.2
+                default_morale = 0.20
             }
             category_line_artillery = {
                 soft_attack = 0.025
@@ -273,7 +273,7 @@ superior_firepower = {
             #Operations
             experience_loss_factor = -0.05
             category_army = {
-                default_morale = 0.25
+                default_morale = 0.20
             }
             planning_decay_rate_factor = -0.1
             category_line_artillery = {
@@ -394,7 +394,6 @@ grand_battleplan = {
         {
             #Armor
             land_reinforce_rate = 0.02
-            enable_tactic = tactic_breakthrough
             effect = {
                 if = {
                     limit = {

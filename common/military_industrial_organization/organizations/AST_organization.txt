@@ -1142,7 +1142,7 @@ AST_ford_australia_organization = {
 
 AST_holden_organization = {
 	name = AST_holden_organization
-	include = generic_motorized_mechanized_organization
+	include = orderlies_allies_motorized_organization
 	icon = GFX_idea_AST_holden
 	allowed = {
 		original_TAG = AST

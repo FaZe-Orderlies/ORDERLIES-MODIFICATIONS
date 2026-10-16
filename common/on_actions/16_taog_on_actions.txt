@@ -811,20 +811,6 @@
 			}
 		}
 
-		effect = { #Communist: Launch Canberra Air Disaster on historical date if not launched before
-			IF = {
-				limit = {
-					date > 1940.08.12
-					has_completed_focus = AST_against_war_and_fascism
-					NOT = { #Event has not been/waiting on to be triggered yet
-						has_country_flag = AST_com_late_canberra
-					}
-				}
-				country_event = { id = AST_canberra_air_disaster_events.1 hours = 1 }
-				set_country_flag = AST_com_late_canberra #Make sure it doesn't trigger again, although it's not actually late canberra
-			}
-		}
-
 		effect = { #Launch event The 1938 Sesquicentenary 
 			IF = {
 				limit = {

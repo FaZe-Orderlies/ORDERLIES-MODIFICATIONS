@@ -108,7 +108,6 @@ air_subdoctrine_dive_bombers = {
             category_cas = {
                 air_ground_attack = 0.03
             }
-            air_cas_efficiency = 0.05
             air_mission_efficiency = 0.025
         }
     }

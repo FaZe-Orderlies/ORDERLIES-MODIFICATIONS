@@ -2837,7 +2837,7 @@ country_event = { #USA doesn't give PHI
     }
 }
 
-country_event = { #Triggers War is Coming decisions and Canberra for 1939 start
+country_event = { #Triggers War is Coming decisions for 1939 start
     id = AST_diplomatic_events.77
     is_triggered_only = yes
     hidden = yes
@@ -3189,69 +3189,6 @@ country_event = { #Dalfram Dispute
 	}
 }
 
-#### Canberra Air Disaster Events ####
-
-country_event = { #Canberra Air Crash
-	id = AST_canberra_air_disaster_events.1
-	title = AST_canberra_air_disaster_events.1.t
-	desc = AST_canberra_air_disaster_events.1.desc
-	picture = GFX_report_event_AST_canberra_air_disaster
-
-	is_triggered_only = yes
-
-
-	immediate = {
-	    hidden_effect = { 
-	        random_character = {
-	            limit = {
-	                is_army_chief = yes
-	                is_hired_as_advisor = yes
-	            }
-	            set_character_flag = AST_army_chief_dead
-	            remove_advisor_role = { slot = army_chief }
-	        }
-	        IF = {
-	            limit = {
-	                NOT = { has_government = communism }
-	            }
-	            add_ideas = AST_cabinet_trust_state_3_idea
-	            activate_mission = AST_castle_crumbling_mission
-	            set_country_flag = AST_canberra_air_disaster_flag
-	        }
-	        IF = {
-	        	limit = {
-	        		has_completed_focus = AST_australia_first
-	        	}
-				set_country_flag = AST_a_convenient_disaster_flag
-	        }
-	    }
-	}
-
-
-	option = { 
-		name = AST_canberra_air_disaster_events.1.a
-
-		effect_tooltip = {
-			random_character = {
-				limit = {
-					has_character_flag = AST_army_chief_dead
-				}
-				remove_advisor_role = { slot = army_chief }
-			}
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-		army_experience = -15
-
-		IF = {
-		    limit = {
-		        NOT = { has_government = communism }
-		    }
-		    custom_effect_tooltip = generic_skip_one_line_tt
-		    custom_effect_tooltip = AST_canberra_air_disaster_events.1.a.tt
-		}
-	}
-}
 
 country_event = { #Governments sits
 	id = AST_canberra_air_disaster_events.2

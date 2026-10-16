@@ -9,7 +9,7 @@
  #################### 
 
 USA_marmon_herrington_organization = {
-	include = generic_mobile_tank_organization
+	include = orderlies_allies_tank_organization
 	icon = GFX_idea_marmon_herrington
 	allowed = {	
 		OR = {
@@ -41,7 +41,7 @@ USA_marmon_herrington_organization = {
 }
 
 USA_chrysler_organization = {
-	include = generic_medium_tank_organization
+	include = orderlies_allies_tank_organization
 	icon = GFX_idea_chrysler
 	
 	allowed = {	
@@ -90,51 +90,6 @@ USA_chrysler_organization = {
 			soft_attack = 0.02
 			hard_attack = 0.03
 			defense = -0.15
-		}
-	}
-
-	add_trait = { 
-		token = USA_mio_trait_strict_design_specifications
-		name = USA_mio_trait_strict_design_specifications
-		icon = GFX_generic_mio_trait_icon_reliability
-		special_trait_background = yes
-
-		visible = {
-			FROM = { 
-				original_tag = USA
-			}
-		}
-
-		position = { x=2 y=1 }
-		relative_position_id = generic_mio_trait_simplified_turret_design
-
-		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-
-		equipment_bonus = {
-			reliability = 0.1
-		}
-	}
-
-	add_trait = { 
-		token = USA_mio_trait_expanded_production_facilities
-		name = USA_mio_trait_expanded_production_facilities
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		special_trait_background = yes
-
-		visible = {
-			FROM = { 
-				original_tag = USA
-			}
-		}
-
-		position = { x=0 y=1 }
-		relative_position_id = USA_mio_trait_strict_design_specifications
-
-		all_parents = { USA_mio_trait_strict_design_specifications }
-		production_bonus = {
-			production_cost_factor = -0.1
-			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -391,7 +346,7 @@ USA_newport_news_shipbuilding_organization = {
 ###########################
 
 USA_north_american_aviation_organization = {
-	include = generic_range_focused_aircraft_organization
+	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_north_american_aviation
 	
 	allowed = {	
@@ -422,118 +377,14 @@ USA_north_american_aviation_organization = {
 			}
 		}
 	}
-
-	initial_trait = {
-		name = USA_mio_trait_light_long_range_aircraft
-	}
-	
-	add_trait = {
-		token = USA_mio_trait_outsourced_engines
-		name = USA_mio_trait_outsourced_engines
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
-		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_advanced_production_techniques
-		
-		any_parent = { generic_mio_trait_advanced_production_techniques }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-
-		available = {
-			FROM = {
-				is_in_faction_with = ENG	
-			}
-		}
-
-		visible = {
-			FROM = { original_tag = USA }
-		}
-		
-		equipment_bonus = {
-			air_agility = 0.05
-			maximum_speed = 0.05
-		}
-	}
-
-	add_trait = {
-		token = USA_mio_trait_light_aircraft_development
-		name = USA_mio_trait_light_aircraft_development
-		icon = GFX_generic_mio_department_icon_plane_light_combat
-		special_trait_background = yes
-
-		visible = {
-			FROM = { original_tag = USA }
-		}
-		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_strafing_techniques
-		
-		any_parent = { generic_mio_trait_strafing_techniques }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-
-		equipment_bonus = {
-			air_agility = 0.05
-			air_ground_attack = 0.05
-			air_attack = 0.02
-		}
-	}
 }
 
 USA_lockheed_organization = {
-	include = generic_medium_aircraft_organization
+	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_lockheed
 	
 	allowed = {	
 		tag = USA 
-	}
-	
-	equipment_type = {
-		mio_cat_eq_all_medium_plane 
-		transport_plane_equipment
-	}
-	
-	initial_trait = {
-		name = USA_mio_trait_medium_long_range_aircraft
-		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
-
-		equipment_bonus = {
-			air_range = 0.15
-			air_attack = 0.05
-		}
-	}
-	
-	add_trait = {
-		token = USA_mio_trait_mechanized_production
-		name = USA_mio_trait_mechanized_production
-		icon = GFX_generic_mio_department_icon_plane_medium_technology
-		special_trait_background = yes
-
-		visible = {
-			FROM = { 
-				original_tag = USA
-			}
-		}
-		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_narrow_build
-		
-		any_parent = { generic_mio_trait_narrow_build }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
-		
-		production_bonus = {
-			production_efficiency_cap_factor = 0.05
-		} 
-	}
-	
-	override_trait = {
-		token = generic_mio_trait_heavy_fighter_specialization
-		equipment_bonus = {
-			air_range = 0.1
-			air_attack = 0.05
-		}
 	}
 }
 
@@ -708,7 +559,7 @@ USA_springfield_armory_organization = {
 }
 
 USA_ford_motor_company_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_allies_motorized_organization
 	icon = GFX_idea_ford_motor_company
 	
 	allowed = {	 

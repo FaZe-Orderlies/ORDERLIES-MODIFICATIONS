@@ -1159,7 +1159,7 @@ AST_war_is_coming_cat = {
 	AST_summon_the_cabinet_mission = {  
 		name = AST_summon_the_cabinet_mission
 		desc = AST_summon_the_cabinet_mission_desc
-		icon = GFX_decision_generic_air  
+		icon = GFX_decision_generic_political_address  
 
 		available = {  
 		}
@@ -1175,13 +1175,10 @@ AST_war_is_coming_cat = {
 		days_mission_timeout = 180
 
 		timeout_effect = {
-			country_event = { id = AST_canberra_air_disaster_events.1 days = 1 }
 			set_country_flag = AST_summon_the_cabinet_flag
 		}
 
 		complete_effect = {
-			country_event = { id = AST_canberra_air_disaster_events.1 days = 1 }
-			custom_effect_tooltip = AST_summon_the_cabinet_tt1 
 			set_country_flag = AST_summon_the_cabinet_flag
 		}
 
@@ -2502,30 +2499,6 @@ AST_australia_first_movement_cat = {
 		}
 	}
 
-	AST_a_convenient_disaster = {
-		icon = GFX_decision_generic_air
-
-		visible = {
-		}
-
-		cost = 20
-
-		available = {
-			has_completed_focus = AST_australia_first_party_focus
-			fascism > 0.3
-		}
-
-		ai_will_do = {
-			base = 30
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = { id = AST_canberra_air_disaster_events.1 days = 1 }
-			custom_effect_tooltip = AST_a_convenient_disaster_tt 
-		}
-	}
 
 	AST_insufficient_funds_mission = {
 		icon = GFX_decision_generic_welfare  

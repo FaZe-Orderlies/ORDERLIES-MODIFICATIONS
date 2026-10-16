@@ -139,7 +139,7 @@ NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 20 ---дни на апгрейд аг
 
 ---чуток боевки
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 1000 -- Пополнение снаряги в дивках, объем пополнения
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 25 --Модификатор скорости доставки подкрепления для армии (время в пути)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 100000.0 --Модификатор скорости доставки подкрепления для армии (время в пути)
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.85 -- потери в боях
 

@@ -10,7 +10,7 @@
 
 
 ITA_fiat_organization = {
-	include = generic_infantry_tank_organization
+	include = orderlies_axis_tank_organization
 	icon = GFX_idea_fiat
 	
 	allowed = {	
@@ -89,34 +89,6 @@ ITA_fiat_organization = {
 			FROM = {
 				always = no
 			}
-		}
-	}
-	
-	add_trait = { 
-		token = ITA_mio_trait_new_industrialization_program
-		name = ITA_new_industrialization_program
-		icon = GFX_generic_mio_department_icon_tank_general_production
-		special_trait_background = yes
-
-		position = { x=9 y=0 }
-
-		visible = {
-			FROM = { original_tag = ITA }
-		}
-		
-		available = {
-			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.1
 		}
 	}
 }
@@ -395,7 +367,7 @@ ITA_cantieri_navali_tosi_organization = {
 
 
 ITA_macchi_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_axis_aircraft_organization
 	icon = GFX_idea_macchi
 	
 	allowed = {	
@@ -428,30 +400,6 @@ ITA_macchi_organization = {
 				controls_state = 159 #LOMBARDIA
 			}
 			ITA_is_northern_designer = yes
-		}
-	}
-
-	add_trait = { 
-		token = ITA_mio_trait_new_industrialization_program
-		name = ITA_new_industrialization_program
-		icon = GFX_generic_mio_department_icon_plane_fighter_production
-		special_trait_background = yes
-
-		position = { x=9 y=0 }
-		
-		available = {
-			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.1
 		}
 	}
 }
@@ -759,11 +707,9 @@ ITA_crda_cant_organization = {
 }
 
 ITA_fiat_aviazione_organization = {
-	include = generic_range_focused_aircraft_organization
+	include = orderlies_axis_aircraft_organization
 	icon = GFX_idea_ITA_fiat_aviazione
 
-
-	
 	allowed = {	 
 		OR = {
 			tag = ITA
@@ -800,58 +746,6 @@ ITA_fiat_aviazione_organization = {
 		equipment_bonus = {
 			naval_strike_attack = -0.1
 			maximum_speed = 0.1
-		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_extra_cargo_doors
-
-		position = { x=8 y=0 }
-	}
-
-	add_trait = {
-		token = ITA_mio_trait_high_altitude_fighter_development
-		name = ITA_mio_trait_high_altitude_fighter_development
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
-		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_low_drag_wings
-		
-		any_parent = { generic_mio_trait_low_drag_wings }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.03
-		}
-	}
-
-	add_trait = { 
-		token = ITA_mio_trait_new_industrialization_program
-		name = ITA_new_industrialization_program
-		icon = GFX_generic_mio_department_icon_plane_general_production
-		special_trait_background = yes
-
-		position = { x=9 y=0 }
-
-		visible = {
-			FROM = { original_tag = ITA }
-		}
-		
-		available = {
-			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
-			}
-		}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
-		}
-
-		production_bonus = {
-			production_capacity_factor = 0.1
 		}
 	}
 }
@@ -932,7 +826,7 @@ ITA_beretta_organization = {
 }
 
 ITA_lancia_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_axis_motorized_organization
 	icon = GFX_idea_lancia
 	
 	allowed = {	 
@@ -1104,7 +998,7 @@ ITA_brescia_arsenal_organization = {
 }
 
 ITA_officine_meccaniche_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_axis_motorized_organization
 	icon = GFX_idea_ITA_officine_meccaniche
 	
 	allowed = {

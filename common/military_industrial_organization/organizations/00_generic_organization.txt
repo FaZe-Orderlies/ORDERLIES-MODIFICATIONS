@@ -8039,299 +8039,218 @@ generic_motorized_mechanized_organization = {
 	equipment_type = {
 		motorized_equipment
 		mechanized_equipment
+		amphibious_mechanized_equipment
 		motorized_rocket_equipment
+		armored_car_equipment
 	}
 	
 	research_categories = {
 		mio_cat_tech_all_motorized_mechanized
-	}
-
-	
-
-	tree_header_text = {
-		text = mio_header_motorized
-		x = 1
+		cat_armored_cars
 	}
 
 	tree_header_text = {
-		text = mio_header_mechanized
-		x = 7
+		text = orderlies_mio_header_resources
+		x = 1.5
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_stats
+		x = 4
+	}
+
+	tree_header_text = {
+		text = orderlies_mio_header_production
+		x = 6.5
 	}
 	
 	initial_trait = {
-		name = generic_mio_initial_trait_motorized_mechanized_manufacturer
+		name = orderlies_mot_initial_trait
 
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 
+	# [1] +10 надеги (вверху в центре)
 	trait = {
-		token = generic_mio_trait_composite_cargo_bed
-		name = generic_mio_trait_composite_cargo_bed
-		icon = GFX_generic_mio_department_icon_motorized_production
-		
-		position = { x=0 y=0 }
-		
-		mutually_exclusive = { generic_mio_trait_steel_cargo_bed }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
-
-		equipment_bonus = {
-			reliability = -0.07
-			build_cost_ic = -0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_steel_cargo_bed
-		name = generic_mio_trait_steel_cargo_bed
+		token = orderlies_mot_trait_1
+		name = orderlies_mot_trait_1
 		icon = GFX_generic_mio_trait_icon_reliability
 		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_composite_cargo_bed
-		
-		mutually_exclusive = { generic_mio_trait_composite_cargo_bed }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		position = { x=4 y=0 }
 
 		equipment_bonus = {
-			reliability = 0.05
-		}
-		production_bonus = {
-			production_resource_need_factor = 0.02
+			reliability = 0.10
 		}
 	}
 
+	# [2] +5 скорости (слева)
 	trait = {
-		token = generic_mio_trait_all_wheel_drive
-		name = generic_mio_trait_all_wheel_drive
-		icon = GFX_generic_mio_trait_icon_breakthrough
-		
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_composite_cargo_bed
-		
-		any_parent = { generic_mio_trait_composite_cargo_bed generic_mio_trait_steel_cargo_bed }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
-		
-		equipment_bonus = {
-			breakthrough = 0.035
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_attached_wood_gas_generator
-		name = generic_mio_trait_attached_wood_gas_generator
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_all_wheel_drive
-		
-		all_parents = { generic_mio_trait_all_wheel_drive }
-		
-		mutually_exclusive = { generic_mio_trait_high_powered_engine }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
-
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_high_powered_engine
-		name = generic_mio_trait_high_powered_engine
+		token = orderlies_mot_trait_2
+		name = orderlies_mot_trait_2
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_attached_wood_gas_generator
+		position = { x=2 y=1 }
 		
-		all_parents = { generic_mio_trait_all_wheel_drive }
-		
-		mutually_exclusive = { generic_mio_trait_attached_wood_gas_generator }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
+		any_parent = { orderlies_mot_trait_1 }
 
 		equipment_bonus = {
-			fuel_consumption = 0.05
 			maximum_speed = 0.05
 		}
 	}
 
+	# [3] +5 прорыва (справа)
 	trait = {
-		token = generic_mio_trait_medium_machinegun_mounts
-		name = generic_mio_trait_medium_machinegun_mounts
+		token = orderlies_mot_trait_3
+		name = orderlies_mot_trait_3
 		icon = GFX_generic_mio_trait_icon_breakthrough
 		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_steel_cargo_bed
+		position = { x=6 y=1 }
+
+		any_parent = { orderlies_mot_trait_1 }
 
 		equipment_bonus = {
-			breakthrough = 0.03
+			breakthrough = 0.05
 		}
 	}
 
+	# [4] +5 доли техники (в центре)
 	trait = {
-		token = generic_mio_trait_armored_pulpit_mount
-		name = generic_mio_trait_armored_pulpit_mount
+		token = orderlies_mot_trait_4
+		name = orderlies_mot_trait_4
 		icon = GFX_generic_mio_trait_icon_hardness
 		
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_medium_machinegun_mounts
+		position = { x=4 y=1 }
 
-		all_parents = { generic_mio_trait_medium_machinegun_mounts }
+		any_parent = { orderlies_mot_trait_1 }
 
 		equipment_bonus = {
 			hardness = 0.05
 		}
 	}
 
+	# [5] +5 макс (в центре внизу, от 4)
 	trait = {
-		token = generic_mio_trait_advanced_artillery_racks
-		name = generic_mio_trait_advanced_artillery_racks
-		icon = GFX_generic_mio_trait_icon_soft_attack
+		token = orderlies_mot_trait_5
+		name = orderlies_mot_trait_5
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
 		
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_armored_pulpit_mount
-		
-		all_parents = { generic_mio_trait_armored_pulpit_mount }
-		
-		mutually_exclusive = { generic_mio_trait_heavy_machinegun_mount generic_mio_trait_mounted_light_anti_tank_gun }
-		
-		limit_to_equipment_type = { motorized_rocket_equipment }
+		position = { x=4 y=2 }
 
-		equipment_bonus = {
-			soft_attack = 0.035
-			build_cost_ic = 0.06
+		any_parent = { orderlies_mot_trait_4 }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
 		}
 	}
 
+	# [6] +5 объемы (правее центра внизу, от 4)
 	trait = {
-		token = generic_mio_trait_heavy_machinegun_mount
-		name = generic_mio_trait_heavy_machinegun_mount
+		token = orderlies_mot_trait_6
+		name = orderlies_mot_trait_6
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		
+		position = { x=5 y=2 }
+
+		any_parent = { orderlies_mot_trait_4 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	# [7] +5 прорыва +5 доли техники (левее центра внизу, от 4)
+	trait = {
+		token = orderlies_mot_trait_7
+		name = orderlies_mot_trait_7
 		icon = GFX_generic_mio_trait_icon_breakthrough
 		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_advanced_artillery_racks
-		
-		all_parents = { generic_mio_trait_armored_pulpit_mount }
-		
-		mutually_exclusive = { generic_mio_trait_advanced_artillery_racks generic_mio_trait_mounted_light_anti_tank_gun }
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment motorized_equipment }
-		
-		equipment_bonus = {
-			breakthrough = 0.04
-			build_cost_ic = 0.01
-		}
-	}
+		position = { x=3 y=2 }
 
-	trait = {
-		token = generic_mio_trait_mounted_light_anti_tank_gun #elephant gun
-		name = generic_mio_trait_mounted_light_anti_tank_gun
-		icon = GFX_generic_mio_trait_icon_ap_attack
-		
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_heavy_machinegun_mount
-		
-		mutually_exclusive = { generic_mio_trait_advanced_artillery_racks generic_mio_trait_heavy_machinegun_mount }
-		
-		all_parents = { generic_mio_trait_bulletproof_panels }
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
+		any_parent = { orderlies_mot_trait_4 }
 
 		equipment_bonus = {
-			ap_attack = 0.1
-			hard_attack = 0.02
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_open_chassi
-		name = generic_mio_trait_open_chassi
-		icon = GFX_generic_mio_department_icon_mechanized_production
-		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_medium_machinegun_mounts
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		mutually_exclusive = { generic_mio_trait_closed_chassi }
-
-		equipment_bonus = {
-			defense = -0.02
-			build_cost_ic = -0.03
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_closed_chassi
-		name = generic_mio_trait_closed_chassi
-		icon = GFX_generic_mio_department_icon_mechanized_hull
-		
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_open_chassi
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		mutually_exclusive = { generic_mio_trait_open_chassi }
-
-		equipment_bonus = {
-			armor_value = 0.05
-		}
-	}
-
-
-	trait = {
-		token = generic_mio_trait_bulletproof_panels
-		name = generic_mio_trait_bulletproof_panels
-		icon = GFX_generic_mio_trait_icon_hardness
-		
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_closed_chassi
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		any_parent = { generic_mio_trait_closed_chassi generic_mio_trait_open_chassi }
-
-		equipment_bonus = {
+			breakthrough = 0.05
 			hardness = 0.05
 		}
 	}
 
+	# [8] +5 объемов (справа внизу, от 3)
 	trait = {
-		token = generic_mio_trait_light_flame_projectors
-		name = generic_mio_trait_light_flame_projectors
-		icon = GFX_generic_mio_trait_icon_breakthrough
+		token = orderlies_mot_trait_8
+		name = orderlies_mot_trait_8
+		icon = GFX_generic_mio_trait_icon_production_capacity
 		
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_bulletproof_panels
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		all_parents = { generic_mio_trait_bulletproof_panels }
+		position = { x=7 y=2 }
 
-		equipment_bonus = {
-			breakthrough = 0.035
+		any_parent = { orderlies_mot_trait_3 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
 		}
 	}
 
+	# [9] -20 ресы +5 рост (слева внизу, от 2)
 	trait = {
-		token = generic_mio_trait_land_mine_racks
-		name = generic_mio_trait_land_mine_racks
-		icon = GFX_generic_mio_department_icon_mechanized_hull
+		token = orderlies_mot_trait_9
+		name = orderlies_mot_trait_9
+		icon = GFX_generic_mio_trait_icon_resources
 		
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_light_flame_projectors
+		position = { x=1 y=2 }
+
+		any_parent = { orderlies_mot_trait_2 }
+
+		production_bonus = {
+			production_resource_need_factor = -0.20
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	# [10] Штурмовая подвижность (слева внизу, под 7 и 9)
+	trait = {
+		token = orderlies_mot_trait_10
+		name = orderlies_mot_trait_10
+		icon = GFX_generic_mio_trait_icon_breakthrough
 		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		all_parents = { generic_mio_trait_bulletproof_panels }
+		position = { x=2 y=3 }
+
+		any_parent = { orderlies_mot_trait_7 orderlies_mot_trait_9 }
 
 		equipment_bonus = {
-			defense = 0.06
-			maximum_speed = -0.02
+			breakthrough = 0.05
+			maximum_speed = 0.05
+		}
+	}
+
+	# [11] Технологический оптимум (в центре внизу, под 5)
+	trait = {
+		token = orderlies_mot_trait_11
+		name = orderlies_mot_trait_11
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		
+		position = { x=4 y=3 }
+
+		any_parent = { orderlies_mot_trait_5 }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	# [12] Индустриальный конвейер (справа внизу, под 6 и 8)
+	trait = {
+		token = orderlies_mot_trait_12
+		name = orderlies_mot_trait_12
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		
+		position = { x=6 y=3 }
+
+		any_parent = { orderlies_mot_trait_6 orderlies_mot_trait_8 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
 		}
 	}
 }

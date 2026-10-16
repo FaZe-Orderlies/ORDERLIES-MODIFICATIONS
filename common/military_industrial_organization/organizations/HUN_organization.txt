@@ -9,7 +9,7 @@
  #################### 
 
  HUN_hti_turan_organization = {
- 	include = generic_infantry_tank_organization
+ 	include = orderlies_axis_tank_organization
  	icon = GFX_idea_mw_aircraft #GFX_idea_HUN_hti_turan
  	
  	allowed = {	
@@ -206,7 +206,7 @@ HUN_obudai_hajogyar_organization = {
 ###########################
 
 HUN_mw_aircraft_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_axis_aircraft_organization
 	icon = GFX_idea_mw_aircraft
 	allowed = { 
 		original_tag = HUN
@@ -470,7 +470,7 @@ HUN_digep_artillery = {
 }
 
 HUN_mwg_raba_organization = {
-	include = generic_motorized_mechanized_organization 
+	include = orderlies_axis_motorized_organization
 	icon = GFX_idea_HUN_mwg_raba
 	allowed = {	 
 		original_tag = HUN

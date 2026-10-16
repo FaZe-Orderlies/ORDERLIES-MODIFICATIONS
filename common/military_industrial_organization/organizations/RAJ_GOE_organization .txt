@@ -291,7 +291,7 @@ RAJ_ordnance_factory_kanpur_organization = {
 }
 # Heavy Vehicles Factory, Avadi generic_infantry_tank_organization
 RAJ_ordnance_factory_medak_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_allies_motorized_organization
 	icon = GFX_idea_raj_ordnance_factory_medak
 	allowed = {	
 

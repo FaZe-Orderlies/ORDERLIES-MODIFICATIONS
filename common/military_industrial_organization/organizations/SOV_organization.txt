@@ -74,190 +74,16 @@
 
 
 SOV_morozov_design_bureau_organization = {
-	include = generic_mobile_tank_organization
+	include = orderlies_soviet_tank_organization
 	icon = GFX_idea_morozov_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-			NOR_AAT = yes
-			AND = {
-				original_tag = PHI 
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				always = no
-			}
-		}
-
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = SOV }
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { always = no }
-		}
-	}
-	visible = {
-		IF = {
-			limit = {
-				has_dlc = "No Compromise, No Surrender"
-				FROM = { original_tag = CHI }
-			}
-			FROM = { 
-				OR ={
-					always = no
-					always = no
-				} 
-				NOT = {
-					has_country_flag = SOV_accepted_Astrov
-					has_country_flag = SOV_accepted_OKMO
-				}
-			}
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_174
-		name = SOV_merge_tank_plant
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		special_trait_background = yes
-
-		position = { x=@tank_1_X y=@tank_1_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = { #Three FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_174_flag
-			}
-		}
-
-		equipment_bonus = {
-			maximum_speed = @tank_max_speed
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_112
-		name = SOV_merge_tank_plant_2
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_production_capacity
-		special_trait_background = yes
-
-		position = { x=@tank_2_X y=@tank_2_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 252 #GORKY
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_112_flag
-			}
-		}
-
-		production_bonus = {
-			production_capacity_factor = @tank_production_capacity_factor
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_ural_heavy_machine_building_plant
-		name = SOV_merge_tank_plant_3
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_soft_attack
-		special_trait_background = yes
-
-		position = { x=@tank_3_X y=@tank_3_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 653 #SVERDLOVSK
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
-			}
-		}
-
-		equipment_bonus = {
-			soft_attack = @tank_soft_attack
-		}
+		always = no
 	}
 }
 
 SOV_astrov_design_bureau_organization = {
-	include = generic_medium_tank_organization
+	include = orderlies_soviet_tank_organization
 	icon = GFX_idea_astrov_design_bureau
 	
 	allowed = {
@@ -302,121 +128,10 @@ SOV_astrov_design_bureau_organization = {
 			}
 		}
 	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_174
-		name = SOV_merge_tank_plant
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		special_trait_background = yes
-
-		position = { x=@tank_1_X y=@tank_1_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = { #Two FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_174_flag
-			}
-		}
-
-		equipment_bonus = {
-			maximum_speed = @tank_max_speed
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_112
-		name = SOV_merge_tank_plant_2
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_production_capacity
-		special_trait_background = yes
-
-		position = { x=@tank_2_X y=@tank_2_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 252 #GORKY
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_112_flag
-			}
-		}
-
-		production_bonus = {
-			production_capacity_factor = @tank_production_capacity_factor
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_ural_heavy_machine_building_plant
-		name = SOV_merge_tank_plant_3
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_soft_attack
-		special_trait_background = yes
-
-		position = { x=@tank_3_X y=@tank_3_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 653 #SVERDLOVSK
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
-			}
-		}
-
-		equipment_bonus = {
-			soft_attack = @tank_soft_attack
-		}
-	}
 }
 
 SOV_okmo_organization = {
-	include = generic_infantry_tank_organization
+	include = orderlies_soviet_tank_organization
 	icon = GFX_idea_okmo
 	
 	allowed = {	
@@ -483,11 +198,6 @@ SOV_okmo_organization = {
 				}
 			}
 		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_thick_armor
-		position = { x=2 y=1 }
 	}
 
 	add_trait = { 
@@ -1657,7 +1367,7 @@ SOV_sevastopol_marine_plant_organization = {
 ##        ######## ##     ## ##    ## ########  ######  
 
 SOV_mig_design_bureau_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_soviet_aircraft_organization
 	icon = GFX_idea_mig_design_bureau
 	
 	allowed = {	
@@ -1718,134 +1428,10 @@ SOV_mig_design_bureau_organization = {
 			FROM = { always = no }
 		}
 	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_28
-		name = SOV_merge_aircraft_plant_1
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		special_trait_background = yes
-
-		position = { x=@aircraft_1_X y=@aircraft_1_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 251 #KUYBYSHEV
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_28_flag
-			}
-		}
-
-		production_bonus = {
-			production_cost_factor = @aircraft_production_cost_factor
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_150
-		name = SOV_merge_aircraft_plant_2
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
-
-		position = { x=@aircraft_2_X y=@aircraft_2_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 219 #MOSCOW
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_150_flag
-				add_resource = {
-					type = aluminium
-					amount = 3
-					state = 219
-				}
-			}
-		}
-
-		equipment_bonus = {
-			air_agility = @aircraft_air_agility
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_vef_plant
-		name = SOV_merge_aircraft_plant_3
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_detection
-		special_trait_background = yes
-
-		position = { x=@aircraft_3_X y=@aircraft_3_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-
-		available = {
-			FROM = {
-				has_full_control_of_state = 808 #RIGA
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_vef_plant_flag
-				add_tech_bonus = {
-					name = SOV_mio_trait_merge_vef_plant
-					bonus = 1
-					uses = 1
-					category = radar_tech
-				}
-			}
-		}
-
-		equipment_bonus = {
-			air_defence = @aircraft_air_defence
-			surface_detection = @aircraft_surface_detection
-			sub_detection = @aircraft_sub_detection
-		}
-	}
 }
 
 SOV_ilyushin_design_bureau_organization = {
-	include = generic_medium_aircraft_organization
+	include = generic_cas_aircraft_organization
 	icon = GFX_idea_ilyushin_design_bureau
 	
 	allowed = {	
@@ -2018,7 +1604,7 @@ SOV_ilyushin_design_bureau_organization = {
 }
 
 SOV_yakovlev_design_bureau_organization = {
-	include = generic_naval_aircraft_organization
+	include = generic_medium_aircraft_organization
 	icon = GFX_idea_yakovlev_design_bureau
 	
 	allowed = {	
@@ -2041,130 +1627,6 @@ SOV_yakovlev_design_bureau_organization = {
 		if = {
 		    limit = { FROM = { original_tag = AST } }
 		    FROM = { has_completed_focus = AST_westward_battles }
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_28
-		name = SOV_merge_aircraft_plant_1
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		special_trait_background = yes
-
-		position = { x=@aircraft_1_X y=@aircraft_1_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-		
-		available = {
-			FROM = {
-				has_full_control_of_state = 251 #KUYBYSHEV
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_28_flag
-			}
-		}
-
-		production_bonus = {
-			production_cost_factor = @aircraft_production_cost_factor
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_plant_no_150
-		name = SOV_merge_aircraft_plant_2
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
-
-		position = { x=@aircraft_2_X y=@aircraft_2_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-		
-		available = {
-			FROM = {
-				has_full_control_of_state = 219 #MOSCOW
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_150_flag
-				add_resource = {
-					type = aluminium
-					amount = 3
-					state = 219
-				}
-			}
-		}
-
-		equipment_bonus = {
-			air_agility = @aircraft_air_agility
-		}
-	}
-
-	add_trait = { 
-		token = SOV_mio_trait_merge_vef_plant
-		name = SOV_merge_aircraft_plant_3
-		#icon = GFX_generic_mio_department_icon_facilities
-		icon = GFX_generic_mio_trait_icon_detection
-		special_trait_background = yes
-
-		position = { x=@aircraft_3_X y=@aircraft_3_Y }
-		
-		visible = {
-			FROM = { original_tag = SOV }
-		}
-		
-		available = {
-			FROM = {
-				has_full_control_of_state = 808 #RIGA
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_vef_plant_flag
-				add_tech_bonus = {
-					name = SOV_mio_trait_merge_vef_plant
-					bonus = 1
-					uses = 1
-					category = radar_tech
-				}
-			}
-		}
-
-		equipment_bonus = {
-			air_defence = @aircraft_air_defence
-			surface_detection = @aircraft_surface_detection
-			sub_detection = @aircraft_sub_detection
 		}
 	}
 }
@@ -2666,7 +2128,7 @@ SOV_tula_arms_plant_organization = {
 }
 
 SOV_gaz_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_soviet_motorized_organization
 	icon = GFX_idea_gaz
 	
 	allowed = {	

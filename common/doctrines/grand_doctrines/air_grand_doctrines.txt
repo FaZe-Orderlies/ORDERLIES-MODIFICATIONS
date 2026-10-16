@@ -48,6 +48,10 @@ new_strategic_destruction = {
     milestones = {
         {
             #1 Fighters
+            air_mission_efficiency = 0.05
+            air_superiority_efficiency = 0.05
+            air_detection = 0.05
+
             effect = {
                 if = {
                     limit = {
@@ -64,6 +68,11 @@ new_strategic_destruction = {
         }
         {
             #2 Strike Aircraft
+            air_mission_efficiency = 0.05
+            air_superiority_efficiency = 0.05
+            air_detection = 0.05
+            air_weather_penalty = -0.05
+
             effect = {
                 if = {
                     limit = {
@@ -80,6 +89,11 @@ new_strategic_destruction = {
         }
         {
             #3 Medium Aircraft
+            air_mission_efficiency = 0.05
+            air_superiority_efficiency = 0.05
+            air_detection = 0.10
+            air_night_penalty = -0.05
+
             effect = {
                 if = {
                     limit = {
@@ -96,11 +110,9 @@ new_strategic_destruction = {
         }
         {
             #4 Heavy Aircraft
-            air_mission_efficiency = 0.20
-            air_detection = 0.30
-            air_superiority_efficiency = 0.25
-            air_weather_penalty = -0.05
-            air_night_penalty = -0.05
+            air_mission_efficiency = 0.05
+            air_superiority_efficiency = 0.10
+            air_detection = 0.10
 
             effect = {
                 if = {
@@ -173,6 +185,10 @@ new_battlefield_support = {
     milestones = {
         {
             #1 Fighters
+            air_mission_efficiency = 0.025
+            air_superiority_efficiency = 0.05
+            air_detection = 0.05
+
             effect = {
                 if = {
                     limit = {
@@ -189,6 +205,11 @@ new_battlefield_support = {
         }
         {
             #2 Strike Aircraft
+            air_mission_efficiency = 0.025
+            air_superiority_efficiency = 0.05
+            air_detection = 0.05
+            air_weather_penalty = -0.05
+
             effect = {
                 if = {
                     limit = {
@@ -205,6 +226,11 @@ new_battlefield_support = {
         }
         {
             #3 Medium Aircraft
+            air_mission_efficiency = 0.025
+            air_superiority_efficiency = 0.05
+            air_detection = 0.05
+            air_night_penalty = -0.05
+
             effect = {
                 if = {
                     limit = {
@@ -221,11 +247,9 @@ new_battlefield_support = {
         }
         {
             #4 Heavy Aircraft
-            air_mission_efficiency = 0.10
-            air_detection = 0.25
-            air_superiority_efficiency = 0.20
-            air_weather_penalty = -0.05
-            air_night_penalty = -0.05
+            air_mission_efficiency = 0.025
+            air_superiority_efficiency = 0.05
+            air_detection = 0.10
 
             effect = {
                 if = {

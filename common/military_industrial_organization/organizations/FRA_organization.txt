@@ -10,7 +10,7 @@
 
 
 FRA_renault_organization = {
-	include = generic_infantry_tank_organization
+	include = orderlies_allies_tank_organization
 	icon = GFX_idea_renault
 	allowed = {	
 		OR = {
@@ -71,41 +71,6 @@ FRA_renault_organization = {
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
-	}
-
-	add_trait = { 
-		token = FRA_mio_trait_automitrailleuses
-		name = FRA_mio_trait_automitrailleuses
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		special_trait_background = yes
-		
-		position = { x=5 y=0 }   
-		
-		limit_to_equipment_type = { medium_tank_chassis }
-		
-		equipment_bonus = {
-			maximum_speed = 0.1
-			armor_value = -0.05
-		} 
-
-	}
-	add_trait = {
-		token = FRA_mio_trait_b1_bis_suspension
-		name = FRA_mio_trait_b1_bis_suspension
-		icon = GFX_generic_mio_trait_icon_breakthrough
-		special_trait_background = yes
-		
-		position = { x=1 y=1 }  
-		relative_position_id = generic_mio_trait_single_engine
-		
-		any_parent = { generic_mio_trait_single_engine generic_mio_trait_dual_engine_redundancy }
-		
-		limit_to_equipment_type = { heavy_tank_chassis }
-		
-		equipment_bonus = {
-			maximum_speed = 0.05
-			breakthrough = 0.1 
-		} 
 	}
 }
 
@@ -241,7 +206,7 @@ FRA_acf_organization = {
 ###########################
 
 FRA_morane_saulnier_organization = {
-	include = generic_light_aircraft_organization
+	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_morane_saulnier
 	allowed = {	
 		tag = FRA 
@@ -250,7 +215,7 @@ FRA_morane_saulnier_organization = {
 }
 
 FRA_bloch_organization = {
-	include = generic_medium_aircraft_organization
+	include = orderlies_allies_aircraft_organization
 	icon = GFX_idea_bloch
 	allowed = {	
 		OR = {
@@ -362,7 +327,7 @@ FRA_panhard_organization = {
 }
 
 FRA_somua_organization = {
-	include = generic_motorized_mechanized_organization
+	include = orderlies_allies_motorized_organization
 	icon = GFX_idea_somua
 	
 	allowed = {	
