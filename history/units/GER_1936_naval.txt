@@ -1,4 +1,4 @@
-﻿
+
 units= {
 	##### NAVAL UNITS #####
 	fleet = {
@@ -81,101 +81,10 @@ instant_effect = {
 
 	### Ships Under Contruction ###
 	# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.55
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.45
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
 	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "GER"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "GER"
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
-	}
 	# CA: "Graf Spee"
-	add_equipment_production = {
-		equipment = {
-			type = heavy_cruiser_1
-			creator = "GER"
-			version_name = "Deutschland"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
-	}
 	# Scharnhorst
-	add_equipment_production = {
-		equipment = {
-			type = battleship_2
-			creator = "GER"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
-	}
 	# Gneisenau
-	add_equipment_production = {
-		equipment = {
-			type = battleship_2
-			creator = "GER"
-		}
-		requested_factories = 1
-		progress = 0.1
-		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
-	}
 }
 
 #####################

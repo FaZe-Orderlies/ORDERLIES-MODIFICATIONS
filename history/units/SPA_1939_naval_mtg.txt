@@ -1,4 +1,4 @@
-﻿
+
 units= {
 
 	##### NAVAL UNITS #####
@@ -92,15 +92,4 @@ units= {
 instant_effect = {
 
 	# DD: Júpiter class (x1) (minelayers) ("ARE Neptuno")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "SPR"
-			version_name = "Júpiter Class"
-		}
-		name = "ARE Neptuno" 
-		requested_factories = 1
-		progress = 0.85
-		amount = 1
-	}
 }

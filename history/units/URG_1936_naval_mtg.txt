@@ -1,15 +1,11 @@
-﻿
-units= {
-
-	##### Naval OOB #####
+units = {
 	fleet = {
 		name = "Armada Nacional"
-		naval_base = 10362 # Montevideo
-		task_force = {				
-			name = "Armada Nacional"			
-			location = 10362 # Montevideo
-			ship = { name = "ROU Uruguay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URG version_name = "Uruguay Class" } } }
-		}				
+		naval_base = 10362
+		task_force = {
+			name = "Armada Nacional"
+			location = 10362
+			ship = { name = "ROU Uruguay" pride_of_the_fleet = yes definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URG version_name = "Uruguay Class" } } }
+		}
 	}
-} 
-
+}

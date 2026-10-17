@@ -1,4 +1,4 @@
-﻿
+
 units= {
 
 	##### NAVAL UNITS #####
@@ -454,82 +454,10 @@ instant_effect = {
 
 	### Under Contruction Notes ###
 	# BB: RN Caio Duilio (BB_2: Caio Duilio Class) (Refit, Recomm. 1940)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_1
-			creator = "ITA"
-			version_name = "Caio Duilio Class"
-		}
-		name = "RN Caio Duilio"
-		requested_factories = 2
-		progress = 0.80
-		amount = 1
-		industrial_manufacturer = mio:ITA_crda_organization
-	}
 	# BB: RN Andrea Doria (BB_2: Caio Duilio Class) (Refit, Recomm. 1940)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_1
-			creator = "ITA"
-			version_name = "Caio Duilio Class"
-		}
-		name = "RN Andrea Doria"
-		requested_factories = 2
-		progress = 0.80
-		amount = 1
-		industrial_manufacturer = mio:ITA_crda_organization
-	}
 	# BB: RN Littorio (BB_3: Littorio Class)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "ITA"
-			version_name = "Littorio Class"
-		}
-		name = "RN Littorio"
-		requested_factories = 2
-		progress = 0.60
-		amount = 1
-		industrial_manufacturer = mio:ITA_crda_organization
-	}
 	# BB: RN Vittorio Veneto (BB_3: Littorio Class)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "ITA"
-			version_name = "Littorio Class"
-		}
-		name = "RN Vittorio Veneto"
-		requested_factories = 2
-		progress = 0.60
-		amount = 1
-		industrial_manufacturer = mio:ITA_crda_organization
-	}
 	# SS: Marcello variant (x2) ("RSmg Comandante Cappellini", "RSmg Comandante Faà di Bruno")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "ITA"
-			version_name = "Marcello Class"
-		}
-		name = "RSmg Comandante Cappellini"
-		requested_factories = 1
-		progress = 0.75
-		amount = 1
-		industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "ITA"
-			version_name = "Marcello Class"
-		}
-		name = "RSmg Comandante Faà di Bruno"
-		requested_factories = 1
-		progress = 0.65
-		amount = 1
-		industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
-	}
 }
 
 #####################

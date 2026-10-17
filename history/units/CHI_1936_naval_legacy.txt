@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 
 	##### ROCN #####
 	fleet = {
@@ -22,13 +22,4 @@
 instant_effect = {
 #Under Construction in Shanghai
 	# Light Cruiser 
-	add_equipment_production = { 		# "Pinghai"
-		equipment = {
-			type = light_cruiser_1
-			creator = "CHI" 
-		}
-		requested_factories = 1
-		progress = 0.33
-		amount = 1
-	}
 }

@@ -85,7 +85,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.95
 
 		start_year = 1936
 
@@ -133,7 +133,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		dependencies = {
+		sonar = 1
+	}
+
+	research_cost = 2.7
 
 		start_year = 1939
 
@@ -183,7 +187,11 @@ technologies = {
 			light_ship_engine_4
 		}
 
-		research_cost = 2
+		dependencies = {
+		improved_sonar = 1
+	}
+
+	research_cost = 3.75
 
 		start_year = 1943
 
@@ -763,7 +771,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1.95
 
 		start_year = 1936
 
@@ -808,7 +816,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		dependencies = {
+		basic_fire_control_system = 1
+	}
+
+	research_cost = 2.7
 
 		start_year = 1939
 
@@ -857,7 +869,12 @@ technologies = {
 		enable_equipment_modules = {
 			cruiser_ship_engine_4
 		}
-		research_cost = 1.5
+		dependencies = {
+		improved_fire_control_system = 1
+		decimetric_radar = 1
+	}
+
+	research_cost = 3.75
 
 		start_year = 1943
 
@@ -1021,7 +1038,7 @@ technologies = {
 				PROJECT = sp_naval_super_heavy_battleship	
 			}
 		}
-		research_cost = 1.75
+		research_cost = 1.5
 
 		start_year = 1922
 
@@ -1079,7 +1096,7 @@ technologies = {
 			ignore_for_layout = yes
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.95
 
 		start_year = 1936
 
@@ -1168,7 +1185,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		dependencies = {
+		basic_fire_control_system = 1
+	}
+
+	research_cost = 2.7
 
 		start_year = 1939
 
@@ -1225,7 +1246,12 @@ technologies = {
 				}
 			}	
 		}
-		research_cost = 1.5
+		dependencies = {
+		improved_fire_control_system = 1
+		decimetric_radar = 1
+	}
+
+	research_cost = 3.75
 
 		start_year = 1943
 
@@ -1510,7 +1536,11 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		dependencies = {
+		basic_ship_hull_carrier = 1
+	}
+
+	research_cost = 2.3
 
 		start_year = 1939
 
@@ -1566,7 +1596,12 @@ early_ship_hull_carrier = {
 				}
 			}
 		}
-		research_cost = 1.5
+		dependencies = {
+		improved_ship_hull_carrier = 1
+		decimetric_radar = 1
+	}
+
+	research_cost = 3.75
 
 		start_year = 1943
 
@@ -1689,7 +1724,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.95
 
 		start_year = 1936
 
@@ -1738,7 +1773,11 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		dependencies = {
+		basic_submarine_snorkel = 1
+	}
+
+	research_cost = 2.7
 
 		start_year = 1939
 
@@ -1785,7 +1824,11 @@ early_ship_hull_carrier = {
 			sub_ship_engine_4
 		}
 
-		research_cost = 2.0
+		dependencies = {
+		improved_submarine_snorkel = 1
+	}
+
+	research_cost = 3.75
 
 		start_year = 1943
 

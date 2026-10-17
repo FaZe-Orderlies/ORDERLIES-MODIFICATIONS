@@ -29,7 +29,8 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 
 ---дропы
 NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 25 -- старые дропы
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- стартовое кол дивизией,доступные для дропа
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 999 -- снятие ограничения на количество дивизий для дропа
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 999 -- снятие ограничения на количество планов вторжения
 
 ---Фокусы 70 дней
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35 -- засол фокуса
@@ -65,8 +66,8 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
 
 ---зсу/пво
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.45 ---СЗУ режет пво
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.1 ---дамаг пво по самолетам (порезан на 50%, было 0.2, ванила 0.8)
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.0225 ---шанс попадания пво по самолетам (порезан на 25%, было 0.03, ванила 0.1)
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.05 ---дамаг пво по самолетам ( ванила 0.8)
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.015 ---шанс попадания пво по самолетам ( ванила 0.1)
 
 ---Аир
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
@@ -288,3 +289,31 @@ NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 99 -- Базово 4. При 9
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 99     -- Базово 6. При 99 генералы никогда не получат роль Эксперта
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 99     -- Базово 8. При 99 генералы никогда не получат роль Гения
 NDefines.NCharacter.ADVISOR_PROMOTION_COST = 999     -- Базово 5. Стоимость назначения в очках командного ресурса (CP)
+
+--- FLEET OVERHAUL
+-- 1. Размер стака и позиционирование (16-32 корабля)
+NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 33
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 1.0
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.99
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.99
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9
+
+-- 2. Авианосцы
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8
+NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.4
+NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 8
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.4
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.3
+
+-- 3. Конвои и присоединение кораблей к бою
+NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS = 0
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.1
+NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS = 0.5
+NDefines.NNavy.DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT = 0.25
+ 
+-- 4. Бомбардировка с моря (+40% к бонусу)
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.462 -- базовый кап 0.33 * 1.4 = +40% к бонусу бомбардировки
+NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.0357 -- на 40% эффективнее набор бонуса от тяжелых орудий
+NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.0179 -- на 40% эффективнее набор бонуса от легких орудий
+

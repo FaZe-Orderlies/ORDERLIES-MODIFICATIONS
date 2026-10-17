@@ -236,4 +236,64 @@ ORDL_decisions = {
         ai_will_do = { factor = 10 }
     }
 
+    GER_invite_finland_to_axis = {
+        icon = generic_operation
+
+        allowed = { original_tag = GER }
+
+        visible = {
+            country_exists = FIN
+            FIN = {
+                exists = yes
+                NOT = { is_in_faction_with = ROOT }
+                NOT = { has_war_with = ROOT }
+            }
+        }
+
+        available = {
+            OR = {
+                195 = {
+                    controller = {
+                        OR = {
+                            tag = ROOT
+                            is_in_faction_with = ROOT
+                            tag = FIN
+                        }
+                    }
+                }
+                controls_province = 3151
+                any_country = {
+                    OR = {
+                        is_in_faction_with = ROOT
+                        tag = FIN
+                    }
+                    controls_province = 3151
+                }
+                date > 1942.5.31
+            }
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        complete_effect = {
+            if = {
+                limit = { FIN = { has_idea = FIN_the_lone_wolf } }
+                FIN = { remove_ideas = FIN_the_lone_wolf }
+            }
+            if = {
+                limit = { FIN = { is_in_faction = yes } }
+                FIN = { leave_faction = yes }
+            }
+            if = {
+                limit = { is_in_faction = no }
+                create_faction = Axis
+            }
+            add_to_faction = FIN
+        }
+
+        ai_will_do = { factor = 100 }
+    }
+
 }

@@ -2037,66 +2037,6 @@ focus_tree = {
 			#Частичное снятие стартового дебаффа ВВС (по 1/2 за фокус)
 			add_to_variable = { SOV_soviet_airforce_air_superiority_efficiency = 0.075 }
 			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
-
-			custom_effect_tooltip = SOV_night_witches_nsb_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					create_equipment_variant = {
-						name = "U-2" #
-						type = small_plane_cas_airframe_0
-						modules = {
-							fixed_main_weapon_slot = bomb_locks
-							fixed_auxiliary_weapon_slot_1 = empty
-							engine_type_slot = engine_1_1x
-							special_type_slot_1 = non_strategic_materials_small
-						}
-					}
-					create_equipment_variant = {
-						name = "Pe-2" #
-						type = small_plane_cas_airframe_2
-						allow_without_tech = yes
-						modules = {
-							fixed_main_weapon_slot = small_bomb_bay
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_2x
-							special_type_slot_1 = lmg_defense_turret
-							special_type_slot_2 = dive_brakes_small
-						}
-					}
-					create_equipment_variant = {
-						name = "Yak-1" #
-						type = small_plane_airframe_1
-						modules = {
-							fixed_main_weapon_slot = aircraft_cannon_1_1x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = non_strategic_materials_small
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_government = communism }
-						}
-						
-						load_oob = "SOV_night_witches_nsb_alt_bba"
-						else = {
-							load_oob = "SOV_night_witches_nsb_bba" #nested here because otherwise it is considered a nested else for the higher level if
-						}
-					}
-				}
-				else_if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					load_oob = "SOV_night_witches_nsb_alt"
-				}
-				else = { #DEFAULT COMMUNISM
-					load_oob = "SOV_night_witches_nsb"
-				}
-			}
 		}
 	}
 

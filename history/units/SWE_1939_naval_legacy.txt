@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 
 	##### NAVAL UNITS #####
 	fleet = {
@@ -75,23 +75,5 @@ instant_effect = {
 
 	### Under Construction Notes ###
 	# DD: Göteborg class (x1) ("HMS Karlskrona")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "SWE"
-		}
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-	}
 	# SS: Sjölejonet class (x1) ("HMS Sjöhunden")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "SWE"
-		}
-		requested_factories = 2
-		progress = 0.30
-		amount = 1
-	}
 }
